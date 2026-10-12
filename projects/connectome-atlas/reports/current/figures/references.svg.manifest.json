@@ -1,0 +1,64 @@
+{
+  "available_counts": {
+    "parameters": [
+      33152,
+      17216,
+      52924
+    ]
+  },
+  "code_revision": "f27023f287578f22139f77618e1516d10d80ce05f2c06966be72d0dd89183968",
+  "export_sha256": "c20aeb91d7da5102c0aa376c0a1d4a82c0c7ca9bbdf135792d906ca88d700426",
+  "export_time": "2026-10-05T20:53:37.757988+00:00",
+  "filters": "none",
+  "graph_scope": "untrained illustrative architectures",
+  "inputs": {
+    "reference_configs": [
+      {
+        "context": "last 8 bytes; zero embedding padding",
+        "embedding": 16,
+        "hidden": [
+          64,
+          64
+        ],
+        "nonlinearities": "ReLU",
+        "window": 8
+      },
+      {
+        "channels": [
+          32,
+          32
+        ],
+        "dilations": [
+          1,
+          2
+        ],
+        "embedding": 16,
+        "kernel": 3,
+        "left_padding": [
+          2,
+          4
+        ],
+        "receptive_field": 7,
+        "stride": 1
+      },
+      {
+        "context": 128,
+        "d": 32,
+        "dropout": 0.0,
+        "ff": 412,
+        "ff_activation": "ReLU",
+        "heads": 4,
+        "layers": 1,
+        "norm": "post-norm LayerNorm",
+        "position": "learned absolute embedding",
+        "readout_rank": 32
+      }
+    ]
+  },
+  "node_ordering": "saved model index",
+  "reduction": "explicit implementation-derived schematic",
+  "rendered_counts": {
+    "reference_architectures": 3
+  },
+  "renderer_version": "1"
+}

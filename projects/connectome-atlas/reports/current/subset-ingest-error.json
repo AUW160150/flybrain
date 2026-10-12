@@ -1,0 +1,17 @@
+{
+  "code": "E_RESOURCE_BUDGET",
+  "coverage": "incomplete",
+  "evidence": {
+    "peak_rss": 537280512,
+    "storage_bytes": 15605760
+  },
+  "last_committed_progress": {
+    "batch": 739,
+    "raw_contacts": 199168002,
+    "raw_rows": 48431104,
+    "retained_rows": 147799
+  },
+  "message": "Bound reached; committed batches remain resumable",
+  "panel": "ingestion",
+  "recovery": "Rerun the same command during a quiet period; increase only measured-safe limits"
+}

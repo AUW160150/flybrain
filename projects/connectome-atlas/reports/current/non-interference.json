@@ -1,0 +1,80 @@
+{
+  "checkpoint_snapshots": [
+    {
+      "reported_step": 20000,
+      "run_id": "confirmation-g101-s33-fly-topology-k0-441b7753ad8e",
+      "sha256": "04025e071fa2532b705ea27e9c3587d7fbc10ad36c2f0fb369b1f251a6844860",
+      "status": "blocked"
+    },
+    {
+      "reported_step": 20000,
+      "run_id": "confirmation-g101-s44-fly-topology-k0-c1ad62d7f5e0",
+      "sha256": "ac8d200a94856829c81e24621e0749d6322393c75a58f469fc525f0e59c08412",
+      "status": "blocked"
+    },
+    {
+      "reported_step": 2000,
+      "run_id": "development-g101-s901-fly-topology-k0-652a6445d303",
+      "sha256": "6a08a8e1db225221c2cb8b37441c934bf0cc519649822753b62c85fa691a1d84",
+      "status": "blocked"
+    },
+    {
+      "reported_step": 2000,
+      "run_id": "development-g101-s901-fly-topology-k0-b4cd8c1e580e",
+      "sha256": "aee1288bba596b7d06827782b11ffd115d9c04e3956797528b153e981d53b56d",
+      "status": "blocked"
+    },
+    {
+      "reported_step": 2000,
+      "run_id": "development-g101-s901-fly-topology-k0-c8024f37abea",
+      "sha256": "12dc5db21ba6e6ba0337e8d7a59116becc4e2642ace1ddd62bf56dd2f05497aa",
+      "status": "blocked"
+    },
+    {
+      "reported_step": 2000,
+      "run_id": "development-g101-s902-fly-topology-k0-23f43d511d14",
+      "sha256": "f8fee7a6d73836f5add8fd9ec8ea68fc8154db97edef88d6102b0fb04781ebe7",
+      "status": "blocked"
+    },
+    {
+      "reported_step": 2000,
+      "run_id": "development-g101-s902-fly-topology-k0-4cdf0ea947d6",
+      "sha256": "4131da6ab297b93db6997cff4f0ff45102636cb2a393901688257952d1664bab",
+      "status": "blocked"
+    },
+    {
+      "reported_step": 2000,
+      "run_id": "development-g101-s902-fly-topology-k0-9f540865dcfb",
+      "sha256": "75eeda0cb31a6495727d4b0f339a744330228f3653ccad3df535373685bade3b",
+      "status": "blocked"
+    },
+    {
+      "reported_step": 2000,
+      "run_id": "pilot-g101-s1-fly-topology-k0-82567b47f645",
+      "sha256": "1f498a179df2398905d1261d511499cde808bbf42d34960aeb2810c18360a3ab",
+      "status": "blocked"
+    },
+    {
+      "reported_step": 2000,
+      "run_id": "pilot-g101-s2-fly-topology-k0-37cb1cd72628",
+      "sha256": "59fb588205216221dcebc2cc3b62bbd14dd28f39a1bc49de7476b38b7b6dae9e",
+      "status": "blocked"
+    },
+    {
+      "reported_step": 2000,
+      "run_id": "pilot-g101-s3-fly-topology-k0-5b2e9e8d034b",
+      "sha256": "bdff17b7c48930479b189943d89775046da5355ba2b2781860b43c58a42511b4",
+      "status": "blocked"
+    }
+  ],
+  "external_checkpoint_writes": "Allowed; no claims made about writer-owned files remaining fixed",
+  "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+  "no_training_or_optimizer_or_test_loader": true,
+  "protected_file_count": 38,
+  "raw_products_rehashed": {
+    "annotations": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "weights": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1"
+  },
+  "static_protected_hashes_match": true,
+  "utc": "2026-10-05T20:45:46.637953+00:00"
+}

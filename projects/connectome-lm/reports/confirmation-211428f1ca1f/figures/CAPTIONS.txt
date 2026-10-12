@@ -1,0 +1,18 @@
+MaleCNS confirmation: scientific figure collection
+
+01-results-overview: Final test performance and the predeclared paired effect. The interval crosses zero; five seeds offer limited uncertainty.
+
+02-paired-comparison: All five matched comparisons and all 15 rewired test scores, with the primary seed-level bootstrap interval.
+
+03-learning-curves: Validation curves versus training-byte exposures. Shaded ranges show seed variability, with a separate late-training view.
+
+04-learning-versus-time: Measured validation trajectories against CPU training time. This is not the separately planned fixed-time protocol.
+
+05-parameters-and-runtime: Complete active parameter accounting and observed training time, with all individual run timings visible.
+
+06-recurrence-diagnostics: Validation-only changes after disrupting recurrence. Positive values show worse prediction; they do not establish a special fly-wiring benefit.
+
+07-wiring-and-control: Actual 512-node fly and rewired graphs, a common abstract layout, and directed adjacency matrices. Layout is not anatomy.
+
+Reproduce from workspace root:
+PYTHONPATH=fly_connectome_lm/src .venv/bin/python fly_connectome_lm/reports/confirmation-211428f1ca1f/make_figures.py

@@ -1,0 +1,5 @@
+{
+  "status": "skipped",
+  "reason": "Error: Local server unavailable: {\n  \"code\": \"E_LOCAL_SERVER_UNAVAILABLE\",\n  \"message\": \"This execution sandbox forbids listening sockets. Launch the same loopback-only command from your terminal.\",\n  \"panel\": \"application\",\n  \"recovery\": \"./visualization/viz serve --host 127.0.0.1 --port 18765\",\n  \"evidence\": null\n}\n",
+  "tests": []
+}

@@ -1,0 +1,58 @@
+{
+  "completed_runs": 15,
+  "condition_means": [
+    {
+      "condition": "FLY-TOPOLOGY",
+      "mean_best_validation_bpb": 3.187733442395178,
+      "mean_final_validation_bpb": 3.187733442395178,
+      "mean_training_seconds": 40.61590971514428,
+      "parameters": 52981
+    },
+    {
+      "condition": "DEGREE-REWIRED",
+      "mean_best_validation_bpb": 3.190772894927144,
+      "mean_final_validation_bpb": 3.190772894927144,
+      "mean_training_seconds": 40.8006423258145,
+      "parameters": 52981
+    },
+    {
+      "condition": "RANDOM-DENSITY",
+      "mean_best_validation_bpb": 3.166653862227983,
+      "mean_final_validation_bpb": 3.167464777689091,
+      "mean_training_seconds": 40.61215068300953,
+      "parameters": 52981
+    },
+    {
+      "condition": "PARAMETER-MATCHED-GRU",
+      "mean_best_validation_bpb": 2.9149262827770546,
+      "mean_final_validation_bpb": 2.9149262827770546,
+      "mean_training_seconds": 12.867135675197156,
+      "parameters": 53000
+    },
+    {
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "mean_best_validation_bpb": 3.2705158619546757,
+      "mean_final_validation_bpb": 3.2705158619546757,
+      "mean_training_seconds": 40.695405385476384,
+      "parameters": 50432
+    }
+  ],
+  "failures": 0,
+  "interpretation": "No practically meaningful fly-topology advantage established by this three-seed validation pilot; not a confirmatory test result.",
+  "next_stage": "Development-only fixed learning-rate grid, seeds 901/902; not launched.",
+  "paired_seed_effect": {
+    "ci95": [
+      -0.0013800394634051472,
+      0.008537979913643579
+    ],
+    "interpretation": "Insufficient confirmation seeds; descriptive only.",
+    "mean_delta": 0.003039452531965914,
+    "training_seed_count": 3
+  },
+  "reviewed_utc": "2026-10-05T18:23:29.443024+00:00",
+  "source": "pilot-f66c5c98ba1e",
+  "total_training_seconds": 526.7737313539255,
+  "total_validation_seconds": 40.41781453753356,
+  "training_byte_exposures": 15360000,
+  "validation_only": true
+}

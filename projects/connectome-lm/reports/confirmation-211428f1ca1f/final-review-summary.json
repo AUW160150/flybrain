@@ -1,0 +1,252 @@
+{
+  "conclusion": "No fly-topology advantage is established under this frozen experiment. The mean favors degree-preserving rewiring, but the 95% paired bootstrap interval includes zero, so a clear disadvantage is also not established. This is not proof of equality or a result about biological learning.",
+  "condition_summaries": [
+    {
+      "condition": "FLY-TOPOLOGY",
+      "mean_accuracy_validation_selected": 0.4692069070630637,
+      "mean_byte_perplexity_validation_selected": 6.228458655449176,
+      "mean_test_bpb_final_checkpoint": 2.6433721525154295,
+      "mean_test_bpb_validation_selected": 2.63884664290858,
+      "parameters": 52981,
+      "runs": 5
+    },
+    {
+      "condition": "DEGREE-REWIRED",
+      "mean_accuracy_validation_selected": 0.4711386851715708,
+      "mean_byte_perplexity_validation_selected": 6.184316797887223,
+      "mean_test_bpb_final_checkpoint": 2.6337251373546127,
+      "mean_test_bpb_validation_selected": 2.628559917465275,
+      "parameters": 52981,
+      "runs": 15
+    },
+    {
+      "condition": "RANDOM-DENSITY",
+      "mean_accuracy_validation_selected": 0.47651921318295115,
+      "mean_byte_perplexity_validation_selected": 5.990552320019534,
+      "mean_test_bpb_final_checkpoint": 2.5884645013612784,
+      "mean_test_bpb_validation_selected": 2.5826849130514358,
+      "parameters": 52981,
+      "runs": 5
+    },
+    {
+      "condition": "PARAMETER-MATCHED-GRU",
+      "mean_accuracy_validation_selected": 0.4941454930158332,
+      "mean_byte_perplexity_validation_selected": 5.887395678704915,
+      "mean_test_bpb_final_checkpoint": 2.570288641147093,
+      "mean_test_bpb_validation_selected": 2.5575360103860576,
+      "parameters": 53000,
+      "runs": 5
+    },
+    {
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "mean_accuracy_validation_selected": 0.4592300381932615,
+      "mean_byte_perplexity_validation_selected": 6.3813212951108245,
+      "mean_test_bpb_final_checkpoint": 2.6822960392804864,
+      "mean_test_bpb_validation_selected": 2.6738070703067427,
+      "parameters": 50432,
+      "runs": 5
+    }
+  ],
+  "diagnostic_records": 35,
+  "freeze_sha256": "ffb133aefbbdcfba44463ba1303d2834c7d449332aaca4358516bca15d6b52e5",
+  "primary_test_contrast": {
+    "bootstrap_seed": 1729,
+    "hierarchical": null,
+    "incomplete_pairs": [],
+    "pairs": [
+      {
+        "delta": -0.019270309198490043,
+        "fly_bpb": 2.636703111432854,
+        "rewired_bpbs": [
+          2.6081873896753325,
+          2.6238819913615896,
+          2.62022902566617
+        ],
+        "sampling_seed": 101,
+        "training_seed": 11
+      },
+      {
+        "delta": -0.0012704392370115336,
+        "fly_bpb": 2.6271093062762674,
+        "rewired_bpbs": [
+          2.6317835159094995,
+          2.637873091006544,
+          2.6078599942017235
+        ],
+        "sampling_seed": 101,
+        "training_seed": 22
+      },
+      {
+        "delta": 0.010907071454579143,
+        "fly_bpb": 2.632541867061699,
+        "rewired_bpbs": [
+          2.629375918406868,
+          2.6527547431540985,
+          2.6482161539878684
+        ],
+        "sampling_seed": 101,
+        "training_seed": 33
+      },
+      {
+        "delta": -0.02278817309626424,
+        "fly_bpb": 2.652526735838914,
+        "rewired_bpbs": [
+          2.6319033203378366,
+          2.6199859937702263,
+          2.6373263741198874
+        ],
+        "sampling_seed": 101,
+        "training_seed": 44
+      },
+      {
+        "delta": -0.019011777139341213,
+        "fly_bpb": 2.645352193933168,
+        "rewired_bpbs": [
+          2.6329506241925893,
+          2.6158374016510666,
+          2.6302332245378253
+        ],
+        "sampling_seed": 101,
+        "training_seed": 55
+      }
+    ],
+    "per_graph": {
+      "101": {
+        "ci95": [
+          -0.020625748345769957,
+          0.0017325204060923305
+        ],
+        "interpretation": "Fly wiring may be worse under this protocol; inspect uncertainty.",
+        "mean_delta": -0.010286725443305578,
+        "training_seed_count": 5
+      }
+    },
+    "resamples": 10000,
+    "warning": "Five seeds offer limited uncertainty; never bootstrap individual test bytes."
+  },
+  "replication_launched": false,
+  "reviewed_utc": "2026-10-05T23:46:11.309842+00:00",
+  "secondary_final_checkpoint_contrast": {
+    "bootstrap_seed": 1729,
+    "hierarchical": null,
+    "incomplete_pairs": [],
+    "pairs": [
+      {
+        "delta": -0.01498149497796275,
+        "fly_bpb": 2.6316710226885345,
+        "rewired_bpbs": [
+          2.6121646498046984,
+          2.6127897890066962,
+          2.6251141443203205
+        ],
+        "sampling_seed": 101,
+        "training_seed": 11
+      },
+      {
+        "delta": -0.003920755382396113,
+        "fly_bpb": 2.6494708559839535,
+        "rewired_bpbs": [
+          2.649709894289969,
+          2.6576735252232253,
+          2.6292668822914784
+        ],
+        "sampling_seed": 101,
+        "training_seed": 22
+      },
+      {
+        "delta": 0.006709507054310393,
+        "fly_bpb": 2.6375282068152925,
+        "rewired_bpbs": [
+          2.628815258009056,
+          2.645983866052006,
+          2.657914017547747
+        ],
+        "sampling_seed": 101,
+        "training_seed": 33
+      },
+      {
+        "delta": -0.011346876966167319,
+        "fly_bpb": 2.6429405044953667,
+        "rewired_bpbs": [
+          2.6319033203378366,
+          2.6199859937702263,
+          2.6428915684795364
+        ],
+        "sampling_seed": 101,
+        "training_seed": 44
+      },
+      {
+        "delta": -0.024695455531865473,
+        "fly_bpb": 2.655250172594,
+        "rewired_bpbs": [
+          2.633122436230049,
+          2.6283084904185303,
+          2.6302332245378253
+        ],
+        "sampling_seed": 101,
+        "training_seed": 55
+      }
+    ],
+    "per_graph": {
+      "101": {
+        "ci95": [
+          -0.018597723391191055,
+          0.00024525416051446314
+        ],
+        "interpretation": "Fly wiring may be worse under this protocol; inspect uncertainty.",
+        "mean_delta": -0.009647015160816253,
+        "training_seed_count": 5
+      }
+    },
+    "resamples": 10000,
+    "warning": "Five seeds offer limited uncertainty; never bootstrap individual test bytes."
+  },
+  "source_code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+  "stage": "confirmation final test complete and audited",
+  "test_audit": "final-audit.json",
+  "test_predictions_replayed_by_review": false,
+  "test_scoring_completed_utc": "2026-10-05T23:41:17.766877+00:00",
+  "training_launched_by_review": false,
+  "validation_interventions": [
+    {
+      "baseline_validation_bpb": 2.4961824438709046,
+      "condition": "FLY-TOPOLOGY",
+      "perturb_10_percent": 2.893222452275901,
+      "reset_each_byte": 3.8210591725031833,
+      "runs": 5,
+      "zero_core": 4.396036218762065
+    },
+    {
+      "baseline_validation_bpb": 2.4816100112780317,
+      "condition": "DEGREE-REWIRED",
+      "perturb_10_percent": 2.8339998772707173,
+      "reset_each_byte": 3.814739609018095,
+      "runs": 15,
+      "zero_core": 4.3808608996033
+    },
+    {
+      "baseline_validation_bpb": 2.4461792374776605,
+      "condition": "RANDOM-DENSITY",
+      "perturb_10_percent": 2.7638361947002976,
+      "reset_each_byte": 3.8037869069146204,
+      "runs": 5,
+      "zero_core": 4.332601340106957
+    },
+    {
+      "baseline_validation_bpb": 2.3590590862165564,
+      "condition": "PARAMETER-MATCHED-GRU",
+      "perturb_10_percent": null,
+      "reset_each_byte": 3.7547065521672436,
+      "runs": 5,
+      "zero_core": 4.471449948188291
+    },
+    {
+      "baseline_validation_bpb": 2.5318050041600815,
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "perturb_10_percent": 2.991357785610767,
+      "reset_each_byte": 3.8200161172362046,
+      "runs": 5,
+      "zero_core": 4.875773519018485
+    }
+  ]
+}

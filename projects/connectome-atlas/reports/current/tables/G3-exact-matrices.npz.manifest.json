@@ -1,0 +1,22 @@
+{
+  "available_counts": {
+    "allowed_pairs": 3061,
+    "nodes": 512
+  },
+  "code_revision": "f27023f287578f22139f77618e1516d10d80ce05f2c06966be72d0dd89183968",
+  "export_sha256": "bd9c8e8f58961de386158b650dd319d1a6543a48dd67444467b7b0b017e54ea3",
+  "export_time": "2026-10-05T20:53:37.877900+00:00",
+  "filters": "none",
+  "graph_scope": "G3",
+  "inputs": {
+    "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b"
+  },
+  "matrix_convention": "rows receive; columns send; body_ids NPZ stored as int64; JSON/CSV IDs are decimal strings",
+  "node_ordering": "exact saved model index",
+  "reduction": "none: one cell per directed pair",
+  "rendered_counts": {
+    "allowed_pairs": 3061,
+    "nodes": 512
+  },
+  "renderer_version": "1"
+}

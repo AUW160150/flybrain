@@ -1,0 +1,32 @@
+{
+  "accelerator": "disabled",
+  "active_workload": "Documented Shakespeare confirmation; treat as active. Never stop or alter it.",
+  "available_ram_bytes": null,
+  "command": "./visualization/viz ingest-full --rss-mib 512 --storage-gib 64 --max-seconds 300",
+  "cpu_threads": 1,
+  "environment": {
+    "isolation": "Separate visualization/.venv; read-only .pth reuse of existing packages. No package installed or changed in training environment.",
+    "python": "3.12.13",
+    "versions": {
+      "numpy": "2.5.3",
+      "pillow": "12.3.0",
+      "pyarrow": "25.0.1",
+      "pytest": "9.1.1",
+      "torch": "2.14.0"
+    }
+  },
+  "estimates": {
+    "compressed_input_bytes": 1065725260,
+    "decompressed_edge_columns_bytes": 3644560416,
+    "morphology_download_cap_mib": 256,
+    "sqlite_and_indexes_peak_gib": 64,
+    "tile_cache_cap_mib": 64
+  },
+  "free_disk_bytes": 694155325440,
+  "full_ingest_reason": "151,856,684 rows plus exact bidirectional indexes and sorting are deferred alongside training. Estimates are not measurements.",
+  "full_ingest_run": false,
+  "ram_note": "Current RAM/process queries denied by sandbox; vm_stat observed compression and swap. Historical capacity is not available memory.",
+  "resume": "Repeat the command to resume committed batches. Then build-indexes and build-views. Verify 512 MiB <= 20% of available RAM before running.",
+  "safe_work_rss_budget_mib": 512,
+  "utc": "2026-10-05T20:16:34.028028+00:00"
+}

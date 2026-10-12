@@ -1,0 +1,2680 @@
+{
+  "code_revision": "5e1a867257c71ff326f9b9fc45d59a24a04894bf0097cbeeec3f262ebfc1388a",
+  "inspected_utc": "2026-10-05T20:16:33.959490+00:00",
+  "products": [
+    {
+      "name": "body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "official_md5_base64": "UKdxh3DFciDxYLpPQxq4ng==",
+      "origin": "existing local cache; original retrieval time unknown; official HTTP headers verified",
+      "path": "/Users/Rodela1/Code/Flybrain/data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "retrieved_utc": null,
+      "schema": {
+        "fields": {
+          "assignedOlHex1": "double",
+          "assignedOlHex2": "double",
+          "birthtime": "string",
+          "bodyId": "int64",
+          "class": "string",
+          "dimorphism": "string",
+          "entryNerve": "string",
+          "exitNerve": "string",
+          "flywireType": "string",
+          "fruDsx": "string",
+          "group": "double",
+          "hemibrainType": "string",
+          "instance": "string",
+          "itoleeHl": "string",
+          "mancBodyid": "double",
+          "mancGroup": "double",
+          "mancSerial": "double",
+          "mancType": "string",
+          "matchingNotes": "string",
+          "mcnsSerial": "double",
+          "receptorType": "string",
+          "rootSide": "string",
+          "serialMotif": "string",
+          "somaLocation": "list<item: int64>",
+          "somaNeuromere": "string",
+          "somaSide": "string",
+          "status": "string",
+          "statusLabel": "dictionary<values=string, indices=int8, ordered=1>",
+          "subclass": "string",
+          "superclass": "string",
+          "supertype": "string",
+          "synonyms": "string",
+          "tosomaLocation": "list<item: int64>",
+          "trumanHl": "string",
+          "type": "string",
+          "vfbId": "string"
+        },
+        "record_batches": 4,
+        "rows": 211577
+      },
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "size_bytes": 14483314,
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "verified_utc": "2026-10-05T17:06:43.456751+00:00"
+    },
+    {
+      "name": "connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "official_md5_base64": "8w6dzKJc/QIb8eez2XVZng==",
+      "origin": "existing local cache; original retrieval time unknown; official HTTP headers verified",
+      "path": "/Users/Rodela1/Code/Flybrain/data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "retrieved_utc": null,
+      "schema": {
+        "fields": {
+          "body_post": "int64",
+          "body_pre": "int64",
+          "weight": "int64"
+        },
+        "record_batches": 2318,
+        "rows": 151856684
+      },
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "size_bytes": 1051241946,
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "verified_utc": "2026-10-05T17:06:45.056973+00:00"
+    }
+  ],
+  "protected": {
+    "fly_connectome_lm/configs/confirmation-frozen.json": "ffb133aefbbdcfba44463ba1303d2834c7d449332aaca4358516bca15d6b52e5",
+    "fly_connectome_lm/configs/confirmation.yaml": "8048d1b07b46dfa84711aa74538a84ba0441b510b5d49a2bf9d307fdad599b60",
+    "fly_connectome_lm/configs/development-selection.json": "b8e1080653f588e9beabf3eb65ba524072dd8beacadc7fb84828cd81d99efa4c",
+    "fly_connectome_lm/configs/pilot.yaml": "4b1c427bfc5dc1374d7b894c1ac385b031cff72814d4c6a19142e4e83605a06c",
+    "fly_connectome_lm/configs/replication.yaml": "7ff9379b1a75e18f571f7d346e677c68a801d10599af03f3aaaa2873cb9cea79",
+    "fly_connectome_lm/configs/smoke.yaml": "95f211d9db4c6ea8e6010321c43ce523f7378511f2306c9cf49e4c861a52fbcb",
+    "fly_connectome_lm/data/processed/fly-n512-sample101.edges.tsv": "befbfe7ba7bc0cad70606bbe99d8995c674748f90d23606174723798e81144d1",
+    "fly_connectome_lm/data/processed/fly-n512-sample101.json": "b0041c75a2e37c00d37f6ccb617cd36f9d670f5b0ea464f8e4ba7014ea980178",
+    "fly_connectome_lm/data/processed/fly-n512-sample101.nodes.tsv": "75b2e08c14f3e79479c6bbd54544f16b4412990a48b076a7cc49bf6cc8005e9f",
+    "fly_connectome_lm/data/processed/fly-n512-sample101.npz": "59598775bcd6da1f63ca417b10aee07ce13ba4ef1e4a03395660f22c446d3911",
+    "fly_connectome_lm/data/processed/fly-n64-sample101.edges.tsv": "ee1ff57a040ccb0f5b78baa8b0f676ae3a16810a21db97a85a657605ff810bbf",
+    "fly_connectome_lm/data/processed/fly-n64-sample101.json": "c7669c713d87539bc2c21d645b50f3ba8773402ca970a572481757efce308d6a",
+    "fly_connectome_lm/data/processed/fly-n64-sample101.nodes.tsv": "17c3f94722da2bc2bc80eedce53051d4fceeaa3de5dd9a4da0718045e4ef9457",
+    "fly_connectome_lm/data/processed/fly-n64-sample101.npz": "2d36b6939e3b0b9888d86e6e14ab67542be412291246d4e7eac839f740d6e2ce",
+    "fly_connectome_lm/docs/analysis_plan.md": "181384189b8fcd4b9c51ba9596549e9d9e94e2650eadd2ed09eb28f542265c15",
+    "fly_connectome_lm/pyproject.toml": "be8ec2f4d31e1c47610f734ed9948e489d31f9ffa8b084baee1ff82692a5ec4a",
+    "fly_connectome_lm/requirements.lock": "7e544c681422cb61d5571dc14bf616078eed1d4e348902f131fbd548a5c4bd33",
+    "fly_connectome_lm/src/fly_connectome_lm/__init__.py": "1b9c055d372e30d720ed8c2a1cf560d0e5db1744f09421df3cf7fa72fab4bbdf",
+    "fly_connectome_lm/src/fly_connectome_lm/cli.py": "651d1f83253f51171d5f458db07c05212c7defc61f2fda848122e4c82f8e11d4",
+    "fly_connectome_lm/src/fly_connectome_lm/data_download.py": "c56664cf38e7053e556cca2175d3449070ee905763a0126631040d05bc2cd04f",
+    "fly_connectome_lm/src/fly_connectome_lm/diagnostics.py": "ec4967ab5a1b881b5c1d2b92afbc04e5812540f98223b12f58338076c1250b07",
+    "fly_connectome_lm/src/fly_connectome_lm/evaluate.py": "ccf25921255b43c7d67918843f3c3e32867b0529b1795a83d4cee73e3891cf05",
+    "fly_connectome_lm/src/fly_connectome_lm/experiment.py": "8368fb99ba8921b3ab758f3265675f1850d5f260b002b0952a9eb306529c8a79",
+    "fly_connectome_lm/src/fly_connectome_lm/final_evaluation.py": "c7da32194856b668c9f55e45ddf9e8a61105380c3866aee5972bb716f2976269",
+    "fly_connectome_lm/src/fly_connectome_lm/graph_controls.py": "5cc4481bb667937d1d1799c50dc820ddd3e8d25746647b5bb8bdc967062efb4a",
+    "fly_connectome_lm/src/fly_connectome_lm/graph_extract.py": "ec6f5cd929502b5b7ab46c858e680838745bcf7f4c4ff94ffbc124707bbc43cc",
+    "fly_connectome_lm/src/fly_connectome_lm/import_cache.py": "6ec258fabc5bbef9a7f471f1fc5b2966bdbcd36eb71c64f03a3971c356891a6f",
+    "fly_connectome_lm/src/fly_connectome_lm/models/__init__.py": "d134291a1d8b72753f709c6ce98a1cb90233e645c9f8e60ff87120adfce6c2f1",
+    "fly_connectome_lm/src/fly_connectome_lm/models/diagonal_lm.py": "87c8c74b9d562da75f6cca21e856e9228f606093750c01cab2cd0d9fc9e2db91",
+    "fly_connectome_lm/src/fly_connectome_lm/models/graph_rnn.py": "016e8465e4833455bde77ef4cbd36b41202f99fd35214fc3200e3344c8b29198",
+    "fly_connectome_lm/src/fly_connectome_lm/models/gru_lm.py": "d2aaedc04b1b80df4680495943c90a395a177ae4ae98b1e7581b50093e3908cd",
+    "fly_connectome_lm/src/fly_connectome_lm/models/transformer_lm.py": "102489f30293d49d5d16cedc727735b6e709062f0c4e6d2c40d04e6ac5201573",
+    "fly_connectome_lm/src/fly_connectome_lm/report.py": "9fff6386c373eb8b7b26f8d55c085d78fbb0ba18e1b0f3fb5a02b0885ab9d4ca",
+    "fly_connectome_lm/src/fly_connectome_lm/statistics.py": "0bd98fb391caf8f7f6ef7bf83fad600725383b123c8715703c38856eb478bc83",
+    "fly_connectome_lm/src/fly_connectome_lm/text_data.py": "123bec3a21156824538de0ed1b5cbbf61468010889a326d99786392a6f479f8c",
+    "fly_connectome_lm/src/fly_connectome_lm/train.py": "b5016eaa6d9433e6144a4972dbc7d81c3ef617f8f22bd543e34c5878f22d0926",
+    "fly_connectome_lm/src/fly_connectome_lm/tuning.py": "edbebc53dedeb0333b2a17be5030cbf2a297b173b0aa37fb49572b5d087f316e",
+    "fly_connectome_lm/src/fly_connectome_lm/util.py": "00e272b98609fcc5c591e058c8efd7d58ca514b005eb40caba4e3410d3bbff22"
+  },
+  "runs": [
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 2142979
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 2301545
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 2301583
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "f50a50a231d090356919dc482abe55eabfc6c357b7dede87500b03ad3daac1d2",
+      "manifest_sha256": "da300f9c99d174888554f83af1dffe2012b7fa25ce9ee844bc330100f3f413f7",
+      "path": "fly_connectome_lm/runs/confirmation-g101-s11-degree-rewired-k2-433b3c519d06",
+      "run_id": "confirmation-g101-s11-degree-rewired-k2-433b3c519d06",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 2143043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 2301609
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 2301647
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "2abf0f70953f8192ec01025b7140c13419fdd1a99d88455f47b48eff48070420",
+      "manifest_sha256": "1ca8a225ed7752513f5c985c8acadb134413c0170094fcdf2ba954bab7440d4d",
+      "path": "fly_connectome_lm/runs/confirmation-g101-s22-degree-rewired-k3-e636f5e7f341",
+      "run_id": "confirmation-g101-s22-degree-rewired-k3-e636f5e7f341",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 1938048
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 2080551
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 2080590
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "6ff0095e615b286af043030a123e8aee1f8440bc9aed99e6c372720c7a3e1e1d",
+      "path": "fly_connectome_lm/runs/confirmation-g101-s22-parameter-matched-gru-k0-cc0f8c65e228",
+      "run_id": "confirmation-g101-s22-parameter-matched-gru-k0-cc0f8c65e228",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 2222147
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 2301673
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 2301711
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "15a1700514bac64e790d8cb4e19de5d15df354258fbe83ee44df2c6bdfd0fff1",
+      "manifest_sha256": "6d949cb0f3a78852953b4f8d7c91c8eacd6500c316453083e12ed15ac39b2848",
+      "path": "fly_connectome_lm/runs/confirmation-g101-s33-degree-rewired-k1-179fd9d1549d",
+      "run_id": "confirmation-g101-s33-degree-rewired-k1-179fd9d1549d",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 2143107
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 2301673
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 2301711
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "19ceeba596e3b3bbbacd28e54dc68d0d67fcbf8b1b27306ec4c61ff2aa0be38c",
+      "manifest_sha256": "7280887700805f6e6d7cf221c4adb836a1ff0b79493608d22ee8fda437ef0729",
+      "path": "fly_connectome_lm/runs/confirmation-g101-s33-degree-rewired-k2-5ca50db997c9",
+      "run_id": "confirmation-g101-s33-degree-rewired-k2-5ca50db997c9",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 2143107
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 2301673
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 2301711
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "FLY-TOPOLOGY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "178f7c05c790a7db34cad4ba9360aeb9535e2c62ff41031a620745e185980989",
+      "path": "fly_connectome_lm/runs/confirmation-g101-s33-fly-topology-k0-441b7753ad8e",
+      "run_id": "confirmation-g101-s33-fly-topology-k0-441b7753ad8e",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 2143107
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 2301673
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 2301711
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "6ce2b6fc8652eb525dc7469b7d9ac89449da848fd00a04c9ef59063ffa7cb3d5",
+      "manifest_sha256": "b1e40d216be64f53ec9f826f45e40a68993b4d27adde16e0d753821d04d4810a",
+      "path": "fly_connectome_lm/runs/confirmation-g101-s33-random-density-k0-9438131a27ed",
+      "run_id": "confirmation-g101-s33-random-density-k0-9438131a27ed",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 2301187
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 2301609
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 2301647
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "f63beba17807716046d2548ce9cd99e77a975f45811f95461052eeede48a11b2",
+      "manifest_sha256": "11593e8f67122b5ddefff20dd29d41c22afc68ee794d20c216661b3873734adc",
+      "path": "fly_connectome_lm/runs/confirmation-g101-s44-degree-rewired-k1-7173fb89a8cc",
+      "run_id": "confirmation-g101-s44-degree-rewired-k1-7173fb89a8cc",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 2222083
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 2301609
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 2301647
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "FLY-TOPOLOGY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "0ba625d9300ac75beeda4475f843370d225a489bf5161a32c774922227d26e8a",
+      "path": "fly_connectome_lm/runs/confirmation-g101-s44-fly-topology-k0-c1ad62d7f5e0",
+      "run_id": "confirmation-g101-s44-fly-topology-k0-c1ad62d7f5e0",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 2301187
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 2301609
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 2301647
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "49dd22eb2d18d84fad11f45cf789f11aaebfd305e11920ef4c7f47a6bc897e74",
+      "manifest_sha256": "92e152ea9ec2973a32d7ce4e48760287df62a371afc0c3da1e393f11e404006c",
+      "path": "fly_connectome_lm/runs/confirmation-g101-s44-random-density-k0-9bc741527523",
+      "run_id": "confirmation-g101-s44-random-density-k0-9bc741527523",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 1035907
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 1036431
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "1a0880b0fe78088eb768a9f42a8ff847f8cb9a2dd8abdb53cc1e9a9df1c04940",
+      "manifest_sha256": "62b061fe39eb2b3004fb1f18067e8d27381548d945c3652ee60ecacd382b1ff6",
+      "path": "fly_connectome_lm/runs/confirmation-g101-s55-random-density-k0-092b284e9d5e",
+      "run_id": "confirmation-g101-s55-random-density-k0-092b284e9d5e",
+      "status_at_inspection": "running",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 871043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "9fdfecfb1f1f18ea9b95192f99f292afbfc5eecd99a1d01f9d9af6ba6ab215d1",
+      "manifest_sha256": "14d5bbfb0d0d8392a4883811cfbf566444372d0794639b2786bff5f12195eb36",
+      "path": "fly_connectome_lm/runs/development-g101-s901-degree-rewired-k1-538831dd1233",
+      "run_id": "development-g101-s901-degree-rewired-k1-538831dd1233",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "9fdfecfb1f1f18ea9b95192f99f292afbfc5eecd99a1d01f9d9af6ba6ab215d1",
+      "manifest_sha256": "45a815fd4bc9f2c76fdfebd28dffdb21ab8ed188be14599d58ec9d0554b1a036",
+      "path": "fly_connectome_lm/runs/development-g101-s901-degree-rewired-k1-5e6de1b81fc7",
+      "run_id": "development-g101-s901-degree-rewired-k1-5e6de1b81fc7",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.0003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "9fdfecfb1f1f18ea9b95192f99f292afbfc5eecd99a1d01f9d9af6ba6ab215d1",
+      "manifest_sha256": "eea7c1d121af08184bba3c58473cfa7c8ade04c3f04b4cff582057d9ef9753c1",
+      "path": "fly_connectome_lm/runs/development-g101-s901-degree-rewired-k1-81e54297d8c5",
+      "run_id": "development-g101-s901-degree-rewired-k1-81e54297d8c5",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 871043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "FLY-TOPOLOGY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "40c220536a8c6a95f2b5ec3b77923627096dfacc6189b9682a43958375bf13b8",
+      "path": "fly_connectome_lm/runs/development-g101-s901-fly-topology-k0-652a6445d303",
+      "run_id": "development-g101-s901-fly-topology-k0-652a6445d303",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "FLY-TOPOLOGY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.0003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "96539514b13f8ea8441e6093ea5e283a64b0c898fe773219caa1484bc88bbfa0",
+      "path": "fly_connectome_lm/runs/development-g101-s901-fly-topology-k0-b4cd8c1e580e",
+      "run_id": "development-g101-s901-fly-topology-k0-b4cd8c1e580e",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "FLY-TOPOLOGY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "f7b5856ae65326ccebeaeacc22b347dfdbe2dddaed17af9a69e87f77eabc8555",
+      "path": "fly_connectome_lm/runs/development-g101-s901-fly-topology-k0-c8024f37abea",
+      "run_id": "development-g101-s901-fly-topology-k0-c8024f37abea",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 789443
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 798057
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 798095
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "87ae1f9ab2ea6f22cce48da7d3302959fd4543202a44003c71eba0532c45f633",
+      "path": "fly_connectome_lm/runs/development-g101-s901-no-cross-node-recurrence-k0-943eaf59c247",
+      "run_id": "development-g101-s901-no-cross-node-recurrence-k0-943eaf59c247",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 797443
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 798057
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 798095
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "80df34045ce3c888c581a79c0df5952f460e4139130011e4ff6d22c364d3f986",
+      "path": "fly_connectome_lm/runs/development-g101-s901-no-cross-node-recurrence-k0-99a235ddb825",
+      "run_id": "development-g101-s901-no-cross-node-recurrence-k0-99a235ddb825",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 797443
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 798057
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 798095
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.0003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "f66ebed7753cb9949ce3d5d96c7137d7759e0aece95a0219495ae51b6121a90f",
+      "path": "fly_connectome_lm/runs/development-g101-s901-no-cross-node-recurrence-k0-e6b196c03edc",
+      "run_id": "development-g101-s901-no-cross-node-recurrence-k0-e6b196c03edc",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 802048
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 802407
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 802446
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "bdf16c68b7e7ffde412fb94bc889fef6c6fdd738ba35e28207dea5ee8b775f37",
+      "path": "fly_connectome_lm/runs/development-g101-s901-parameter-matched-gru-k0-95cef0616176",
+      "run_id": "development-g101-s901-parameter-matched-gru-k0-95cef0616176",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 802048
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 802407
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 802446
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.0003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "1891a62bffcced11770be9a44a3d02b0063b254af824fae8ee06b0e9df3a1035",
+      "path": "fly_connectome_lm/runs/development-g101-s901-parameter-matched-gru-k0-c668f4816e42",
+      "run_id": "development-g101-s901-parameter-matched-gru-k0-c668f4816e42",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 802048
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 802407
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 802446
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "9125feec6d5be406e2c045d72b2b6797075b584f6868cfc4807f720c76ab1ea5",
+      "path": "fly_connectome_lm/runs/development-g101-s901-parameter-matched-gru-k0-d7a6edf3ffec",
+      "run_id": "development-g101-s901-parameter-matched-gru-k0-d7a6edf3ffec",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "31d939bce0c5553ec0df4ea19d3b1e03be2603600db8f468aef2b4610ab5d1bb",
+      "manifest_sha256": "bb3a140031e77559de080b0ece7e631d9c3aa066a1a4581f674aea3d2613cdcd",
+      "path": "fly_connectome_lm/runs/development-g101-s901-random-density-k0-548dec53b0af",
+      "run_id": "development-g101-s901-random-density-k0-548dec53b0af",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.0003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "31d939bce0c5553ec0df4ea19d3b1e03be2603600db8f468aef2b4610ab5d1bb",
+      "manifest_sha256": "b0903a97c52737c00795d611faff3fdede849ac6b3962f9a9ce250b896c2bf20",
+      "path": "fly_connectome_lm/runs/development-g101-s901-random-density-k0-779760bbee11",
+      "run_id": "development-g101-s901-random-density-k0-779760bbee11",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 871043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "31d939bce0c5553ec0df4ea19d3b1e03be2603600db8f468aef2b4610ab5d1bb",
+      "manifest_sha256": "399a01e9f7e559aaf8ed52aee2a8eb7f6360be1413aa297b796ae4ce7b7f28d8",
+      "path": "fly_connectome_lm/runs/development-g101-s901-random-density-k0-95d30aba3335",
+      "run_id": "development-g101-s901-random-density-k0-95d30aba3335",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "48b49a546c2dd55953a79bc9a3a3decaccd685d4379db6d60137910d3029d978",
+      "manifest_sha256": "8f8a8013f0cf91f1e37ff069daa6be2448721796d41968de6619cb86296a3ebc",
+      "path": "fly_connectome_lm/runs/development-g101-s902-degree-rewired-k1-3ec67784c820",
+      "run_id": "development-g101-s902-degree-rewired-k1-3ec67784c820",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.0003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "48b49a546c2dd55953a79bc9a3a3decaccd685d4379db6d60137910d3029d978",
+      "manifest_sha256": "6c7e0e70581b5571bf28f46abbca150d2310f6165c8feee0a0e50ffbb990537a",
+      "path": "fly_connectome_lm/runs/development-g101-s902-degree-rewired-k1-5fde45e695ad",
+      "run_id": "development-g101-s902-degree-rewired-k1-5fde45e695ad",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "48b49a546c2dd55953a79bc9a3a3decaccd685d4379db6d60137910d3029d978",
+      "manifest_sha256": "e7952ab0167a7c3afcc3a943725ee3b7d88cf1b78eddd38b3c555f3dc4672384",
+      "path": "fly_connectome_lm/runs/development-g101-s902-degree-rewired-k1-c60d91236bec",
+      "run_id": "development-g101-s902-degree-rewired-k1-c60d91236bec",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "FLY-TOPOLOGY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "e39b3f28ec4dfaf756321f84d59d9662d396d6dba9523a6de8204a86dedbebbd",
+      "path": "fly_connectome_lm/runs/development-g101-s902-fly-topology-k0-23f43d511d14",
+      "run_id": "development-g101-s902-fly-topology-k0-23f43d511d14",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "FLY-TOPOLOGY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.0003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "f2d87e6d35d4db45272d52c3f69f87bbfe7b758e09bd7d8f139b5ac412fcc9bb",
+      "path": "fly_connectome_lm/runs/development-g101-s902-fly-topology-k0-4cdf0ea947d6",
+      "run_id": "development-g101-s902-fly-topology-k0-4cdf0ea947d6",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "FLY-TOPOLOGY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "8524bfd3ddb6b9db5eddf59648a31f75cab80d5759534724b157609b860872b7",
+      "path": "fly_connectome_lm/runs/development-g101-s902-fly-topology-k0-9f540865dcfb",
+      "run_id": "development-g101-s902-fly-topology-k0-9f540865dcfb",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 797443
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 798057
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 798095
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.0003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "d614699ca50cfcd00c2e9c3db8f9e491c095f32adbdcbd073c800bfd734fa9e1",
+      "path": "fly_connectome_lm/runs/development-g101-s902-no-cross-node-recurrence-k0-5b894c6804d9",
+      "run_id": "development-g101-s902-no-cross-node-recurrence-k0-5b894c6804d9",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 797443
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 798057
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 798095
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "033c81e2464f6dfafdd72b784709f3452e702ab69828cbc1db8f80d85f7b1bcb",
+      "path": "fly_connectome_lm/runs/development-g101-s902-no-cross-node-recurrence-k0-835674aba479",
+      "run_id": "development-g101-s902-no-cross-node-recurrence-k0-835674aba479",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 797443
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 798057
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 798095
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "03e01f81b3827f491ee6a03057a18b7c418101753686cb56dd97f859ae5fd523",
+      "path": "fly_connectome_lm/runs/development-g101-s902-no-cross-node-recurrence-k0-9e957b931c55",
+      "run_id": "development-g101-s902-no-cross-node-recurrence-k0-9e957b931c55",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 802048
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 802407
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 802446
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "1b75f8c5170797647c99a1c9f14edae22c8b8d7120cf20046df4f3014253eef3",
+      "path": "fly_connectome_lm/runs/development-g101-s902-parameter-matched-gru-k0-164d88a85f95",
+      "run_id": "development-g101-s902-parameter-matched-gru-k0-164d88a85f95",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 802048
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 802407
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 802446
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "e06955cf33cfc7d89bef1b2dcc48ec1769daf6ddc7563dffcc202d3ba0d59bec",
+      "path": "fly_connectome_lm/runs/development-g101-s902-parameter-matched-gru-k0-401c39b83e29",
+      "run_id": "development-g101-s902-parameter-matched-gru-k0-401c39b83e29",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 802048
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 802407
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 802446
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.0003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "52ce0d61f54027d47563009ab279d608ee58e4a9dc2c871f2b86ba3e603bfd68",
+      "path": "fly_connectome_lm/runs/development-g101-s902-parameter-matched-gru-k0-4a096b6ce7ff",
+      "run_id": "development-g101-s902-parameter-matched-gru-k0-4a096b6ce7ff",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.0003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "2942dcc654a9e4841c4a7199175b379ecea5a9f141b19e6bf28add182f93f0c6",
+      "manifest_sha256": "07d168a4ee7c5ff1c1076cde8be748a9a28c0a322557181ffe88923c2d02607c",
+      "path": "fly_connectome_lm/runs/development-g101-s902-random-density-k0-1631f6bb8648",
+      "run_id": "development-g101-s902-random-density-k0-1631f6bb8648",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "2942dcc654a9e4841c4a7199175b379ecea5a9f141b19e6bf28add182f93f0c6",
+      "manifest_sha256": "64f493ff0364c8a5e4abba57c98ab1bf7f1e0b0ecd9652ba03c78cebd71c245c",
+      "path": "fly_connectome_lm/runs/development-g101-s902-random-density-k0-56182a7ddc33",
+      "run_id": "development-g101-s902-random-density-k0-56182a7ddc33",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "2942dcc654a9e4841c4a7199175b379ecea5a9f141b19e6bf28add182f93f0c6",
+      "manifest_sha256": "c5b43369c5888e3dfb8e723cdc1b95e01e2a03c75d7138e8fbf64ad92f44dff1",
+      "path": "fly_connectome_lm/runs/development-g101-s902-random-density-k0-c9e8310974f3",
+      "run_id": "development-g101-s902-random-density-k0-c9e8310974f3",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "72e8525d9b377cc07c63b9433e8daa9fcecd7b2c3c572381ec2a29c7faea049d",
+      "manifest_sha256": "34c1b1ecde436849ca1218ce0d03b670130e4bebf2de65a105c138090d6d9fd3",
+      "path": "fly_connectome_lm/runs/pilot-g101-s1-degree-rewired-k1-f2c655d9ebe4",
+      "run_id": "pilot-g101-s1-degree-rewired-k1-f2c655d9ebe4",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "FLY-TOPOLOGY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "88e1fe14d6e3737e56900a6ec526e6d673c63345354de1b683b59d7416a65231",
+      "path": "fly_connectome_lm/runs/pilot-g101-s1-fly-topology-k0-82567b47f645",
+      "run_id": "pilot-g101-s1-fly-topology-k0-82567b47f645",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 797443
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 798057
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 798095
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "4ddd03d6d52a78626f3b2e9b9a96b42141692006e2b9d7f5ef4e49eac2c24179",
+      "path": "fly_connectome_lm/runs/pilot-g101-s1-no-cross-node-recurrence-k0-603aa5abba66",
+      "run_id": "pilot-g101-s1-no-cross-node-recurrence-k0-603aa5abba66",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 802048
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 802407
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 802446
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "b8d1f6c2f6c1c4479f9c4d7a1b84236a52f64c7d186cd1523ae27ddc0d34bf90",
+      "path": "fly_connectome_lm/runs/pilot-g101-s1-parameter-matched-gru-k0-c3e821a15993",
+      "run_id": "pilot-g101-s1-parameter-matched-gru-k0-c3e821a15993",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "ceff2d1055b4b069d767caaadbef049f54aa6a0dd93bbe0bbdd36c240f544d48",
+      "manifest_sha256": "0e54c66def5b78535c7110aaff10a503b26b44530797bf9d53899f59a63f23cb",
+      "path": "fly_connectome_lm/runs/pilot-g101-s1-random-density-k0-0e7a350e8640",
+      "run_id": "pilot-g101-s1-random-density-k0-0e7a350e8640",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 878979
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879401
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879439
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "70120b0e60b0218f2e012b1606952e8d1e0b696ed52f2fed9d558e949754ee27",
+      "manifest_sha256": "b9661bcefeca5a00cfb91cbd97da4b7c6fa73d00b7293a1246eb5b27afa82b89",
+      "path": "fly_connectome_lm/runs/pilot-g101-s2-degree-rewired-k1-5320befd3e7b",
+      "run_id": "pilot-g101-s2-degree-rewired-k1-5320befd3e7b",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 878979
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879401
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879439
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "FLY-TOPOLOGY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "8ff4c1fecd7e60ee316c8296808d841f41092ba62d0f3d2bb7b5d70a397880cb",
+      "path": "fly_connectome_lm/runs/pilot-g101-s2-fly-topology-k0-37cb1cd72628",
+      "run_id": "pilot-g101-s2-fly-topology-k0-37cb1cd72628",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 797379
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 797993
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 798031
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "aa5325e2133c3c80a7f46678dadaf7522c935510ecc1fd25787e30015a65a560",
+      "path": "fly_connectome_lm/runs/pilot-g101-s2-no-cross-node-recurrence-k0-971ba03dda6e",
+      "run_id": "pilot-g101-s2-no-cross-node-recurrence-k0-971ba03dda6e",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 801984
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 802343
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 802382
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "ad900a1ba5a3793537a6651cde219d9ab0a01ed456cc737f1929eec8ca62d3b9",
+      "path": "fly_connectome_lm/runs/pilot-g101-s2-parameter-matched-gru-k0-fd392af2a62b",
+      "run_id": "pilot-g101-s2-parameter-matched-gru-k0-fd392af2a62b",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 878979
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879401
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879439
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "0981a27e0a0584cb631db744e1bf63eda33c127933a5aceb728f889313eb1fc4",
+      "manifest_sha256": "387cfd9a521a9d9c4307f45d92c926cf2a81e0b4ef19a15783a8ad68f19d3477",
+      "path": "fly_connectome_lm/runs/pilot-g101-s2-random-density-k0-1a714944f7b2",
+      "run_id": "pilot-g101-s2-random-density-k0-1a714944f7b2",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "92c0132fd5f1ab96be344c7fd26a21de188a274bd32400648b7121a88a3ebbe6",
+      "manifest_sha256": "0142926d8c43c032d41175ada4355540dd39adbb86915b19a930e45adc1ff46a",
+      "path": "fly_connectome_lm/runs/pilot-g101-s3-degree-rewired-k1-3963b2dfd8fa",
+      "run_id": "pilot-g101-s3-degree-rewired-k1-3963b2dfd8fa",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 879043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "FLY-TOPOLOGY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "bb9d4264d2fbed858e642371d20ec123451dcecf8effd4afe1d5958e396fb3bd",
+      "path": "fly_connectome_lm/runs/pilot-g101-s3-fly-topology-k0-5b2e9e8d034b",
+      "run_id": "pilot-g101-s3-fly-topology-k0-5b2e9e8d034b",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 797443
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 798057
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 798095
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "99aaaff5ad887e175dbdebb695bc1d69ca287eeb20fb9ae99640efa31d1270e8",
+      "path": "fly_connectome_lm/runs/pilot-g101-s3-no-cross-node-recurrence-k0-324204b3360d",
+      "run_id": "pilot-g101-s3-no-cross-node-recurrence-k0-324204b3360d",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 802112
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 802471
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 802510
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+      "manifest_sha256": "d210a29551e21c3ee17be39b3440f5fe49342dcafce1c702bf5892f50100d4fc",
+      "path": "fly_connectome_lm/runs/pilot-g101-s3-parameter-matched-gru-k0-c08c359483cb",
+      "run_id": "pilot-g101-s3-parameter-matched-gru-k0-c08c359483cb",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 871107
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 879465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 879503
+        }
+      ],
+      "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "f8e3e2e045dfdd97400e60a1e989afbf4995ec2f9330f3f30a518aade6cf13b8",
+      "manifest_sha256": "5b7d73a59d84468dd3dc0b14d0bacf40bde09b2c87b3e5db4262fdabd7e409f4",
+      "path": "fly_connectome_lm/runs/pilot-g101-s3-random-density-k0-81598b91cfd8",
+      "run_id": "pilot-g101-s3-random-density-k0-81598b91cfd8",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 167043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 167465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 167503
+        }
+      ],
+      "code_hash": "25220a7f1ba7225708fa8fc6bd6e3c773461eff8fb642c7d1fd79cbafa75afe8",
+      "condition": "DEGREE-REWIRED",
+      "config": {
+        "alpha": 0.5,
+        "batch": 2,
+        "context": 32,
+        "d": 16,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 64,
+        "profile": "smoke",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20,
+        "validate_every": 10,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "59f3ab6e6d5ed39df2493483384dde118d8b5e3b76278154b92e5a43a2beb5fe",
+      "manifest_sha256": "63cb44f5047b750b41f7bb1a0f4d759afb3195aa689dfd2c58e9e8d2372ec831",
+      "path": "fly_connectome_lm/runs/smoke-g101-s1-degree-rewired-k1-ab1c6b7b80d8",
+      "run_id": "smoke-g101-s1-degree-rewired-k1-ab1c6b7b80d8",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 167043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 167465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 167503
+        }
+      ],
+      "code_hash": "25220a7f1ba7225708fa8fc6bd6e3c773461eff8fb642c7d1fd79cbafa75afe8",
+      "condition": "FLY-TOPOLOGY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 2,
+        "context": 32,
+        "d": 16,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 64,
+        "profile": "smoke",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20,
+        "validate_every": 10,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "37c402500e92e69de1a3522ab1f4495bcec6576d206c1113344018277f917ed0",
+      "manifest_sha256": "a7b119fab56db8c73335f8170a2f3438526ca44389435c2836caa3f134ebdf03",
+      "path": "fly_connectome_lm/runs/smoke-g101-s1-fly-topology-k0-67e774eb72aa",
+      "run_id": "smoke-g101-s1-fly-topology-k0-67e774eb72aa",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 153411
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 154025
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 154063
+        }
+      ],
+      "code_hash": "25220a7f1ba7225708fa8fc6bd6e3c773461eff8fb642c7d1fd79cbafa75afe8",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "config": {
+        "alpha": 0.5,
+        "batch": 2,
+        "context": 32,
+        "d": 16,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 64,
+        "profile": "smoke",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20,
+        "validate_every": 10,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "37c402500e92e69de1a3522ab1f4495bcec6576d206c1113344018277f917ed0",
+      "manifest_sha256": "03c2514b79b9bf760164b55a2da9c940d5f325284a675cff0d8c9c256936d945",
+      "path": "fly_connectome_lm/runs/smoke-g101-s1-no-cross-node-recurrence-k0-7912e88411e5",
+      "run_id": "smoke-g101-s1-no-cross-node-recurrence-k0-7912e88411e5",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 157248
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 157671
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 157710
+        }
+      ],
+      "code_hash": "25220a7f1ba7225708fa8fc6bd6e3c773461eff8fb642c7d1fd79cbafa75afe8",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "config": {
+        "alpha": 0.5,
+        "batch": 2,
+        "context": 32,
+        "d": 16,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 64,
+        "profile": "smoke",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20,
+        "validate_every": 10,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "37c402500e92e69de1a3522ab1f4495bcec6576d206c1113344018277f917ed0",
+      "manifest_sha256": "e68e52e87ab36182732dc0a5bdbf8da10ad41b47899282646f12fb98c2cb4162",
+      "path": "fly_connectome_lm/runs/smoke-g101-s1-parameter-matched-gru-k0-50a6f409e9f0",
+      "run_id": "smoke-g101-s1-parameter-matched-gru-k0-50a6f409e9f0",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    },
+    {
+      "checkpoints": [
+        {
+          "name": "best.pt",
+          "size_bytes": 167043
+        },
+        {
+          "name": "final.pt",
+          "size_bytes": 167465
+        },
+        {
+          "name": "latest.pt",
+          "size_bytes": 167503
+        }
+      ],
+      "code_hash": "25220a7f1ba7225708fa8fc6bd6e3c773461eff8fb642c7d1fd79cbafa75afe8",
+      "condition": "RANDOM-DENSITY",
+      "config": {
+        "alpha": 0.5,
+        "batch": 2,
+        "context": 32,
+        "d": 16,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 64,
+        "profile": "smoke",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20,
+        "validate_every": 10,
+        "weight_decay": 0.0
+      },
+      "graph_hash": "46734aaef2a883ddd305bd467768fd38f9d75ad93bf20a605ddff624001ae5f7",
+      "manifest_sha256": "ac9054156f129d877d6cb734cd01bac5f1a2c27209745892726e4d8177e0c05a",
+      "path": "fly_connectome_lm/runs/smoke-g101-s1-random-density-k0-ad53035619ec",
+      "run_id": "smoke-g101-s1-random-density-k0-ad53035619ec",
+      "status_at_inspection": "complete",
+      "synthetic": false
+    }
+  ],
+  "selection_policy": "Shared topology only when one compatible graph hash; no automatic trained weight selection"
+}

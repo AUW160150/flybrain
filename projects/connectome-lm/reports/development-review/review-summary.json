@@ -1,0 +1,189 @@
+{
+  "analysis_plan_sha256": "181384189b8fcd4b9c51ba9596549e9d9e94e2650eadd2ed09eb28f542265c15",
+  "checkpoint_steps": {
+    "1900": 4,
+    "2000": 26
+  },
+  "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+  "condition_means": [
+    {
+      "condition": "FLY-TOPOLOGY",
+      "lr": 0.0003,
+      "mean_best_validation_bpb": 3.4815213153653435,
+      "mean_final_validation_bpb": 3.4815213153653435,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "DEGREE-REWIRED",
+      "lr": 0.0003,
+      "mean_best_validation_bpb": 3.4753548252742785,
+      "mean_final_validation_bpb": 3.4753548252742785,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "RANDOM-DENSITY",
+      "lr": 0.0003,
+      "mean_best_validation_bpb": 3.4535296467183203,
+      "mean_final_validation_bpb": 3.4535296467183203,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "PARAMETER-MATCHED-GRU",
+      "lr": 0.0003,
+      "mean_best_validation_bpb": 3.344571624282101,
+      "mean_final_validation_bpb": 3.344571624282101,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "lr": 0.0003,
+      "mean_best_validation_bpb": 3.5280994116011017,
+      "mean_final_validation_bpb": 3.5280994116011017,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "FLY-TOPOLOGY",
+      "lr": 0.001,
+      "mean_best_validation_bpb": 3.179190886007702,
+      "mean_final_validation_bpb": 3.179190886007702,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "DEGREE-REWIRED",
+      "lr": 0.001,
+      "mean_best_validation_bpb": 3.193549312061857,
+      "mean_final_validation_bpb": 3.193549312061857,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "RANDOM-DENSITY",
+      "lr": 0.001,
+      "mean_best_validation_bpb": 3.176052993456831,
+      "mean_final_validation_bpb": 3.176052993456831,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "PARAMETER-MATCHED-GRU",
+      "lr": 0.001,
+      "mean_best_validation_bpb": 2.924730089377303,
+      "mean_final_validation_bpb": 2.924730089377303,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "lr": 0.001,
+      "mean_best_validation_bpb": 3.2712076844230227,
+      "mean_final_validation_bpb": 3.2712076844230227,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "FLY-TOPOLOGY",
+      "lr": 0.003,
+      "mean_best_validation_bpb": 2.9279104209856204,
+      "mean_final_validation_bpb": 2.9334760640946467,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "DEGREE-REWIRED",
+      "lr": 0.003,
+      "mean_best_validation_bpb": 2.93822073048657,
+      "mean_final_validation_bpb": 2.9465010517486876,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "RANDOM-DENSITY",
+      "lr": 0.003,
+      "mean_best_validation_bpb": 2.921081998546365,
+      "mean_final_validation_bpb": 2.921665132942816,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "PARAMETER-MATCHED-GRU",
+      "lr": 0.003,
+      "mean_best_validation_bpb": 2.698201989693084,
+      "mean_final_validation_bpb": 2.698201989693084,
+      "training_seeds": [
+        901,
+        902
+      ]
+    },
+    {
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "lr": 0.003,
+      "mean_best_validation_bpb": 3.0107595239937552,
+      "mean_final_validation_bpb": 3.011242465358322,
+      "training_seeds": [
+        901,
+        902
+      ]
+    }
+  ],
+  "confirmation_prediction_bytes": 716800000,
+  "confirmation_run_count": 35,
+  "confirmation_started": false,
+  "development_runs": 30,
+  "freeze_sha256": "ffb133aefbbdcfba44463ba1303d2834c7d449332aaca4358516bca15d6b52e5",
+  "interpretation": "Development data selected hyperparameters only. No confirmatory topology inference or grid expansion.",
+  "reviewed_utc": "2026-10-05T18:51:39.686351+00:00",
+  "selected_learning_rates": {
+    "PARAMETER-MATCHED-GRU": 0.003,
+    "graph": 0.003
+  },
+  "selection_score_means": {
+    "PARAMETER-MATCHED-GRU": {
+      "0.0003": 3.344571624282101,
+      "0.001": 2.924730089377303,
+      "0.003": 2.698201989693084
+    },
+    "graph": {
+      "0.0003": 3.478438070319811,
+      "0.001": 3.1863700990347796,
+      "0.003": 2.9330655757360953
+    }
+  },
+  "selection_sha256": "b8e1080653f588e9beabf3eb65ba524072dd8beacadc7fb84828cd81d99efa4c",
+  "status": "complete_and_audited",
+  "test_evaluated": false,
+  "training_byte_exposures": 30720000,
+  "training_seconds": 1054.9269339041202,
+  "validation_seconds": 80.54262553842273
+}

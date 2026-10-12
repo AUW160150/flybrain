@@ -1,0 +1,36 @@
+{
+  "browser": {
+    "reason": "Error: Local server unavailable: {\n  \"code\": \"E_LOCAL_SERVER_UNAVAILABLE\",\n  \"message\": \"This execution sandbox forbids listening sockets. Launch the same loopback-only command from your terminal.\",\n  \"panel\": \"application\",\n  \"recovery\": \"./visualization/viz serve --host 127.0.0.1 --port 18765\",\n  \"evidence\": null\n}\n",
+    "status": "skipped",
+    "tests": []
+  },
+  "code_revision": "f27023f287578f22139f77618e1516d10d80ce05f2c06966be72d0dd89183968",
+  "failed": 0,
+  "passed": 35,
+  "protected_static_hashes_match": true,
+  "skipped": [
+    {
+      "reason": "CPU-only task; accelerator deliberately unused",
+      "test": "accelerator"
+    },
+    {
+      "reason": "Resource-heavy ingestion not run; fixture coverage separate from production completeness",
+      "test": "full-production-G0/G1 index conservation"
+    },
+    {
+      "reason": "Safe loader rejected NumPy RNG pickle state; no unsafe fallback",
+      "test": "checkpoint weight/activity numerical replay"
+    },
+    {
+      "reason": "neuprint not installed or used; topology comes from verified bulk schema",
+      "test": "neuPrint fetch_adjacencies installed-schema check"
+    }
+  ],
+  "unit": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 35
+  },
+  "utc": "2026-10-05T20:53:40.531740+00:00"
+}

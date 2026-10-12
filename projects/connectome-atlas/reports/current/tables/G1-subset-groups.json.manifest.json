@@ -1,0 +1,22 @@
+{
+  "available_counts": {
+    "see": "identity.json and per-scope summary"
+  },
+  "code_revision": "80827efbc94a126d4aeb8f6c38365da55b8dc98a5fe1fb4226e27bcdad546d8e",
+  "export_sha256": "ea93e1062ad19c8ccd73bd1c2a772f9cb42b264c2c4c4527e803b8eacdd1e4ac",
+  "export_time": "2026-10-05T20:52:47.002677+00:00",
+  "filters": "none",
+  "graph_scope": "G1-subset",
+  "inputs": {
+    "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+    "index_identity": "ace36203e99f1d21847fa6b1ae67e83a862728a3d0dfff6a6e9e1da7c5982243"
+  },
+  "node_ordering": "body ID / saved index recorded in payload",
+  "reduction": "disjoint published superclass (canonical annotation_class), null \u2192 Unknown; within-group edges retained",
+  "rendered_counts": {
+    "contacts": 47404,
+    "pairs": 7405,
+    "rows": 0
+  },
+  "renderer_version": "1"
+}

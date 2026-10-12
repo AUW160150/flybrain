@@ -1,0 +1,59 @@
+{
+  "annotations": {
+    "fields": {
+      "assignedOlHex1": "double",
+      "assignedOlHex2": "double",
+      "birthtime": "string",
+      "bodyId": "int64",
+      "class": "string",
+      "dimorphism": "string",
+      "entryNerve": "string",
+      "exitNerve": "string",
+      "flywireType": "string",
+      "fruDsx": "string",
+      "group": "double",
+      "hemibrainType": "string",
+      "instance": "string",
+      "itoleeHl": "string",
+      "mancBodyid": "double",
+      "mancGroup": "double",
+      "mancSerial": "double",
+      "mancType": "string",
+      "matchingNotes": "string",
+      "mcnsSerial": "double",
+      "receptorType": "string",
+      "rootSide": "string",
+      "serialMotif": "string",
+      "somaLocation": "list<item: int64>",
+      "somaNeuromere": "string",
+      "somaSide": "string",
+      "status": "string",
+      "statusLabel": "dictionary<values=string, indices=int8, ordered=1>",
+      "subclass": "string",
+      "superclass": "string",
+      "supertype": "string",
+      "synonyms": "string",
+      "tosomaLocation": "list<item: int64>",
+      "trumanHl": "string",
+      "type": "string",
+      "vfbId": "string"
+    },
+    "record_batches": 4,
+    "row_count_source": "read annotations; saved previously audited weights manifest",
+    "rows": 211577,
+    "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather"
+  },
+  "weights": {
+    "fields": {
+      "body_post": "int64",
+      "body_pre": "int64",
+      "weight": "int64"
+    },
+    "record_batches": 2318,
+    "row_count_source": "read annotations; saved previously audited weights manifest",
+    "rows": 151856684,
+    "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+    "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather"
+  }
+}

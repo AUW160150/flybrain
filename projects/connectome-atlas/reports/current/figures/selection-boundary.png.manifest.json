@@ -1,0 +1,36 @@
+{
+  "available_counts": {
+    "selected_nodes": 512
+  },
+  "code_revision": "f27023f287578f22139f77618e1516d10d80ce05f2c06966be72d0dd89183968",
+  "export_sha256": "00c164b802b1e1f46db4af82c081ec8cac0d5afe40d65166f663c954ce0fa7b9",
+  "export_time": "2026-10-05T20:53:38.365880+00:00",
+  "filters": [
+    "outside subset",
+    "internal contacts < 5",
+    "internal self edge",
+    "retained G3"
+  ],
+  "graph_scope": "G1 selected-neuron incidence vs G3",
+  "inputs": {
+    "ledger_sha256": "7fa545742cecf96529907bb628f55aa3833a9ffdc3575e39ecc9309dcf3c65b5"
+  },
+  "node_ordering": "exact saved subset",
+  "rasterization": "Pillow companion of explicit SVG primitives; browser rasterization not available in this sandbox",
+  "reduction": "sum of contacts by disjoint removal category, per direction",
+  "rendered_counts": {
+    "incoming": {
+      "internal_below_threshold": 8696,
+      "internal_self_edge": 0,
+      "outside_subset": 615116,
+      "retained_G3": 38708
+    },
+    "outgoing": {
+      "internal_below_threshold": 8696,
+      "internal_self_edge": 0,
+      "outside_subset": 571093,
+      "retained_G3": 38708
+    }
+  },
+  "renderer_version": "1"
+}

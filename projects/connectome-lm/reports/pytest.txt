@@ -1,0 +1,5 @@
+.......................ss........                                        [100%]
+=========================== short test summary info ============================
+SKIPPED [1] fly_connectome_lm/tests/test_correctness.py:182: CUDA unavailable
+SKIPPED [1] fly_connectome_lm/tests/test_correctness.py:183: MPS unavailable in this process
+31 passed, 2 skipped in 1.53s

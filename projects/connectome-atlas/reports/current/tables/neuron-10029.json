@@ -1,0 +1,17 @@
+{
+  "annotation_class": "visual_centrifugal",
+  "annotation_type": "LoVC16",
+  "body_id": "10029",
+  "coordinate_provenance": null,
+  "curated": 1,
+  "dataset": "MaleCNS",
+  "g0": 0,
+  "in_experiment": true,
+  "is_curated_neuron": true,
+  "model_index": 0,
+  "release": "male-cns:v1.0",
+  "scope": "G3",
+  "side": "R",
+  "source_record_reference": "annotations:row:22",
+  "status": "found"
+}

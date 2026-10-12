@@ -1,0 +1,512 @@
+{
+  "actual": {
+    "active_trainable": 52981,
+    "allowed_recurrent_pairs": 3061,
+    "alpha": 0.5,
+    "biological_nodes": 512,
+    "context": 128,
+    "executed_code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+    "execution": "dense",
+    "frozen": 0,
+    "name": "Actual GraphRNN",
+    "nontrainable_storage_bytes": 48976,
+    "parameter_sharing": "Same E,B,W,b,R,O,c at every byte; no interface weight tying",
+    "parameters": [
+      {
+        "elements": 512,
+        "name": "bias",
+        "shape": [
+          512
+        ],
+        "trainable": true
+      },
+      {
+        "elements": 3061,
+        "name": "theta",
+        "shape": [
+          3061
+        ],
+        "trainable": true
+      },
+      {
+        "elements": 8192,
+        "name": "embedding.weight",
+        "shape": [
+          256,
+          32
+        ],
+        "trainable": true
+      },
+      {
+        "elements": 16384,
+        "name": "input.weight",
+        "shape": [
+          512,
+          32
+        ],
+        "trainable": true
+      },
+      {
+        "elements": 16384,
+        "name": "readout.weight",
+        "shape": [
+          32,
+          512
+        ],
+        "trainable": true
+      },
+      {
+        "elements": 8192,
+        "name": "output.weight",
+        "shape": [
+          256,
+          32
+        ],
+        "trainable": true
+      },
+      {
+        "elements": 256,
+        "name": "output.bias",
+        "shape": [
+          256
+        ],
+        "trainable": true
+      }
+    ],
+    "routing": "Fixed anatomical mask; artificial signed recurrent coefficients",
+    "shapes": {
+      "changed_suffix_start": 5,
+      "input_bytes": [
+        97,
+        98,
+        99,
+        32,
+        100,
+        101,
+        102,
+        46
+      ],
+      "prefix_max_abs_error": 0.0,
+      "shape": [
+        1,
+        8,
+        256
+      ],
+      "status": "passed"
+    },
+    "source_archive_sha256": "3c1424882f2da4d318df8d757c95b060c6019da2ff410e7be7414e8b07b3ab48",
+    "state_width": 512,
+    "status": "Executed source/config verified; no checkpoint chosen"
+  },
+  "anatomical_parameter_count": "not defined until a computational model is chosen",
+  "checkpoint_selection": "none; explicit run selector",
+  "discrepancies": [
+    "Model factory does not pass config alpha; executed GraphRNN uses constructor default 0.5. Observed configs also specify 0.5.",
+    "MLP and CNN absent in experiment; visualization-only references, not parameter matched.",
+    "Transformer exists in repository; no trained transformer run found. Its repository counting rule selects layers/ff; this reference remains untrained."
+  ],
+  "inference": "CPU float32, eval/inference_mode, zero recurrent state, fixed ASCII; no corpus read",
+  "initial_reconstruction_used": false,
+  "reference_seed": 1,
+  "references": [
+    {
+      "active_trainable": 33152,
+      "biological_nodes": null,
+      "causality": {
+        "changed_suffix_start": 5,
+        "input_bytes": [
+          97,
+          98,
+          99,
+          32,
+          100,
+          101,
+          102,
+          46
+        ],
+        "prefix_max_abs_error": 0.0,
+        "shape": [
+          1,
+          8,
+          256
+        ],
+        "status": "passed"
+      },
+      "config": {
+        "context": "last 8 bytes; zero embedding padding",
+        "embedding": 16,
+        "hidden": [
+          64,
+          64
+        ],
+        "nonlinearities": "ReLU",
+        "window": 8
+      },
+      "frozen": 0,
+      "name": "Window MLP",
+      "nontrainable_storage_bytes": 0,
+      "parameters": [
+        {
+          "elements": 4096,
+          "name": "embedding.weight",
+          "shape": [
+            256,
+            16
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 8192,
+          "name": "hidden1.weight",
+          "shape": [
+            64,
+            128
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 64,
+          "name": "hidden1.bias",
+          "shape": [
+            64
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 4096,
+          "name": "hidden2.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 64,
+          "name": "hidden2.bias",
+          "shape": [
+            64
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 16384,
+          "name": "output.weight",
+          "shape": [
+            256,
+            64
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 256,
+          "name": "output.bias",
+          "shape": [
+            256
+          ],
+          "trainable": true
+        }
+      ],
+      "sharing": "Each dense coefficient separate; weights reused at each window",
+      "status": "UNTRAINED illustrative reference; no trained checkpoint found"
+    },
+    {
+      "active_trainable": 17216,
+      "biological_nodes": null,
+      "causality": {
+        "changed_suffix_start": 5,
+        "input_bytes": [
+          97,
+          98,
+          99,
+          32,
+          100,
+          101,
+          102,
+          46
+        ],
+        "prefix_max_abs_error": 0.0,
+        "shape": [
+          1,
+          8,
+          256
+        ],
+        "status": "passed"
+      },
+      "config": {
+        "channels": [
+          32,
+          32
+        ],
+        "dilations": [
+          1,
+          2
+        ],
+        "embedding": 16,
+        "kernel": 3,
+        "left_padding": [
+          2,
+          4
+        ],
+        "receptive_field": 7,
+        "stride": 1
+      },
+      "frozen": 0,
+      "name": "Causal 1D CNN",
+      "nontrainable_storage_bytes": 0,
+      "parameters": [
+        {
+          "elements": 4096,
+          "name": "embedding.weight",
+          "shape": [
+            256,
+            16
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 1536,
+          "name": "conv1.weight",
+          "shape": [
+            32,
+            16,
+            3
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 32,
+          "name": "conv1.bias",
+          "shape": [
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 3072,
+          "name": "conv2.weight",
+          "shape": [
+            32,
+            32,
+            3
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 32,
+          "name": "conv2.bias",
+          "shape": [
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 8192,
+          "name": "output.weight",
+          "shape": [
+            256,
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 256,
+          "name": "output.bias",
+          "shape": [
+            256
+          ],
+          "trainable": true
+        }
+      ],
+      "sharing": "Kernels shared across positions, not multiplied by sequence length",
+      "status": "UNTRAINED illustrative reference; no trained checkpoint found"
+    },
+    {
+      "active_trainable": 52924,
+      "biological_nodes": null,
+      "causality": {
+        "changed_suffix_start": 5,
+        "input_bytes": [
+          97,
+          98,
+          99,
+          32,
+          100,
+          101,
+          102,
+          46
+        ],
+        "prefix_max_abs_error": 0.0,
+        "shape": [
+          1,
+          8,
+          256
+        ],
+        "status": "passed"
+      },
+      "config": {
+        "context": 128,
+        "d": 32,
+        "dropout": 0.0,
+        "ff": 412,
+        "ff_activation": "ReLU",
+        "heads": 4,
+        "layers": 1,
+        "norm": "post-norm LayerNorm",
+        "position": "learned absolute embedding",
+        "readout_rank": 32
+      },
+      "frozen": 0,
+      "name": "Decoder-only transformer (repository implementation)",
+      "nontrainable_storage_bytes": 0,
+      "parameters": [
+        {
+          "elements": 8192,
+          "name": "embedding.weight",
+          "shape": [
+            256,
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 4096,
+          "name": "position.weight",
+          "shape": [
+            128,
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 3072,
+          "name": "blocks.0.self_attn.in_proj_weight",
+          "shape": [
+            96,
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 96,
+          "name": "blocks.0.self_attn.in_proj_bias",
+          "shape": [
+            96
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 1024,
+          "name": "blocks.0.self_attn.out_proj.weight",
+          "shape": [
+            32,
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 32,
+          "name": "blocks.0.self_attn.out_proj.bias",
+          "shape": [
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 13184,
+          "name": "blocks.0.linear1.weight",
+          "shape": [
+            412,
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 412,
+          "name": "blocks.0.linear1.bias",
+          "shape": [
+            412
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 13184,
+          "name": "blocks.0.linear2.weight",
+          "shape": [
+            32,
+            412
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 32,
+          "name": "blocks.0.linear2.bias",
+          "shape": [
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 32,
+          "name": "blocks.0.norm1.weight",
+          "shape": [
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 32,
+          "name": "blocks.0.norm1.bias",
+          "shape": [
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 32,
+          "name": "blocks.0.norm2.weight",
+          "shape": [
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 32,
+          "name": "blocks.0.norm2.bias",
+          "shape": [
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 1024,
+          "name": "readout.weight",
+          "shape": [
+            32,
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 8192,
+          "name": "output.weight",
+          "shape": [
+            256,
+            32
+          ],
+          "trainable": true
+        },
+        {
+          "elements": 256,
+          "name": "output.bias",
+          "shape": [
+            256
+          ],
+          "trainable": true
+        }
+      ],
+      "sharing": "Projection/FFN weights shared across positions; causal mask; coefficients input-dependent",
+      "status": "UNTRAINED illustrative reference; no trained checkpoint found"
+    }
+  ]
+}

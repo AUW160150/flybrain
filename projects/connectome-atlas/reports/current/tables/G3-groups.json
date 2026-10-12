@@ -1,0 +1,90 @@
+{
+  "contacts": 38708,
+  "edges": [
+    {
+      "contacts": 21,
+      "pairs": 2,
+      "source_group": "descending_neuron",
+      "target_group": "ol_intrinsic"
+    },
+    {
+      "contacts": 33214,
+      "pairs": 2566,
+      "source_group": "ol_intrinsic",
+      "target_group": "ol_intrinsic"
+    },
+    {
+      "contacts": 7,
+      "pairs": 1,
+      "source_group": "ol_intrinsic",
+      "target_group": "visual_centrifugal"
+    },
+    {
+      "contacts": 3271,
+      "pairs": 281,
+      "source_group": "ol_intrinsic",
+      "target_group": "visual_projection"
+    },
+    {
+      "contacts": 1008,
+      "pairs": 122,
+      "source_group": "visual_centrifugal",
+      "target_group": "ol_intrinsic"
+    },
+    {
+      "contacts": 32,
+      "pairs": 2,
+      "source_group": "visual_centrifugal",
+      "target_group": "visual_centrifugal"
+    },
+    {
+      "contacts": 299,
+      "pairs": 20,
+      "source_group": "visual_centrifugal",
+      "target_group": "visual_projection"
+    },
+    {
+      "contacts": 330,
+      "pairs": 27,
+      "source_group": "visual_projection",
+      "target_group": "ol_intrinsic"
+    },
+    {
+      "contacts": 393,
+      "pairs": 22,
+      "source_group": "visual_projection",
+      "target_group": "visual_centrifugal"
+    },
+    {
+      "contacts": 133,
+      "pairs": 18,
+      "source_group": "visual_projection",
+      "target_group": "visual_projection"
+    }
+  ],
+  "grouping": "disjoint published superclass (canonical annotation_class), null \u2192 Unknown; within-group edges retained",
+  "nodes": [
+    {
+      "in_experiment": 1,
+      "name": "descending_neuron",
+      "nodes": 1
+    },
+    {
+      "in_experiment": 488,
+      "name": "ol_intrinsic",
+      "nodes": 488
+    },
+    {
+      "in_experiment": 2,
+      "name": "visual_centrifugal",
+      "nodes": 2
+    },
+    {
+      "in_experiment": 21,
+      "name": "visual_projection",
+      "nodes": 21
+    }
+  ],
+  "pairs": 3061,
+  "scope": "G3"
+}

@@ -1,0 +1,80 @@
+{
+  "checks": {
+    "checks": {
+      "DEGREE-REWIRED": {
+        "compared_to_cpu": true,
+        "forward_backward": "passed"
+      },
+      "FLY-TOPOLOGY": {
+        "compared_to_cpu": true,
+        "forward_backward": "passed"
+      },
+      "NO-CROSS-NODE-RECURRENCE": {
+        "compared_to_cpu": true,
+        "forward_backward": "passed"
+      },
+      "PARAMETER-MATCHED-GRU": {
+        "compared_to_cpu": true,
+        "forward_backward": "passed"
+      },
+      "RANDOM-DENSITY": {
+        "compared_to_cpu": true,
+        "forward_backward": "passed"
+      }
+    },
+    "device": "cpu",
+    "execution": "dense"
+  },
+  "config": {
+    "alpha": 0.5,
+    "batch": 2,
+    "context": 32,
+    "d": 16,
+    "device": "cpu",
+    "evaluation_batch": 32,
+    "execution": "dense",
+    "gradient_clip": 1.0,
+    "lr": 0.001,
+    "n": 64,
+    "nulls_per_seed": 1,
+    "profile": "smoke",
+    "protocol": "fixed-bytes",
+    "sampling_seeds": [
+      101
+    ],
+    "threads": 2,
+    "training_seeds": [
+      1
+    ],
+    "updates": 20,
+    "validate_every": 10,
+    "weight_decay": 0.0
+  },
+  "profiles": [
+    {
+      "condition": "FLY-TOPOLOGY",
+      "mean_forward_backward_seconds": 0.0010210413408155243,
+      "note": "Synthetic token microbenchmark; no training or accuracy result"
+    },
+    {
+      "condition": "DEGREE-REWIRED",
+      "mean_forward_backward_seconds": 0.0009778610159022112,
+      "note": "Synthetic token microbenchmark; no training or accuracy result"
+    },
+    {
+      "condition": "RANDOM-DENSITY",
+      "mean_forward_backward_seconds": 0.0010028610122390091,
+      "note": "Synthetic token microbenchmark; no training or accuracy result"
+    },
+    {
+      "condition": "PARAMETER-MATCHED-GRU",
+      "mean_forward_backward_seconds": 0.001215458323713392,
+      "note": "Synthetic token microbenchmark; no training or accuracy result"
+    },
+    {
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "mean_forward_backward_seconds": 0.0009998749980392556,
+      "note": "Synthetic token microbenchmark; no training or accuracy result"
+    }
+  ]
+}

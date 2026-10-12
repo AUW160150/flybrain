@@ -1,0 +1,500 @@
+{
+  "blockers": [
+    {
+      "code": "E_INCOMPLETE_INGEST",
+      "evidence": null,
+      "message": "G0 not indexed. This panel is unavailable, not empty.",
+      "panel": "G0",
+      "recovery": "./visualization/viz ingest-full --rss-mib 512 --storage-gib 64 --max-seconds 300"
+    },
+    {
+      "code": "E_INCOMPLETE_INGEST",
+      "evidence": null,
+      "message": "G1 not indexed. This panel is unavailable, not empty.",
+      "panel": "G1",
+      "recovery": "./visualization/viz ingest-full --rss-mib 512 --storage-gib 64 --max-seconds 300"
+    },
+    {
+      "code": "E_INCOMPLETE_INGEST",
+      "evidence": null,
+      "message": "G2 not indexed. This panel is unavailable, not empty.",
+      "panel": "G2",
+      "recovery": "./visualization/viz ingest-full --rss-mib 512 --storage-gib 64 --max-seconds 300"
+    },
+    {
+      "code": "E_CHECKPOINT_UNSTABLE_OR_UNSAFE",
+      "message": "Completed checkpoints include NumPy RNG pickle state rejected by tensor-only loading. No unsafe fallback. Exact copied bytes are retained.",
+      "panel": "weights/activity",
+      "recovery": "Use snapshot-run --safe-export with a trusted tensor-only export; schema in docs/ERRORS.md."
+    }
+  ],
+  "built_utc": "2026-10-05T20:53:38.372124+00:00",
+  "code_revision": "f27023f287578f22139f77618e1516d10d80ce05f2c06966be72d0dd89183968",
+  "geometry_coverage": "8/512 exact-subset skeletons loaded; whole-CNS geometry not loaded",
+  "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+  "neighborhood": {
+    "description": "Lowest saved biological ID plus first seven distinct incoming/outgoing partners ordered by biological ID; real induced detail, not full model.",
+    "edges": [
+      {
+        "source_body_id": "10053",
+        "synapse_count": 23,
+        "target_body_id": "10029"
+      },
+      {
+        "source_body_id": "10029",
+        "synapse_count": 9,
+        "target_body_id": "10053"
+      },
+      {
+        "source_body_id": "10029",
+        "synapse_count": 5,
+        "target_body_id": "12638"
+      },
+      {
+        "source_body_id": "10029",
+        "synapse_count": 9,
+        "target_body_id": "14581"
+      },
+      {
+        "source_body_id": "10053",
+        "synapse_count": 9,
+        "target_body_id": "14581"
+      },
+      {
+        "source_body_id": "10029",
+        "synapse_count": 11,
+        "target_body_id": "15497"
+      },
+      {
+        "source_body_id": "10029",
+        "synapse_count": 5,
+        "target_body_id": "15910"
+      },
+      {
+        "source_body_id": "10029",
+        "synapse_count": 8,
+        "target_body_id": "17010"
+      },
+      {
+        "source_body_id": "10053",
+        "synapse_count": 10,
+        "target_body_id": "17010"
+      },
+      {
+        "source_body_id": "10029",
+        "synapse_count": 9,
+        "target_body_id": "18428"
+      },
+      {
+        "source_body_id": "10053",
+        "synapse_count": 10,
+        "target_body_id": "18428"
+      }
+    ],
+    "ids": [
+      "10029",
+      "10053",
+      "12638",
+      "14581",
+      "15497",
+      "15910",
+      "17010",
+      "18428"
+    ]
+  },
+  "products": [
+    {
+      "name": "G0 full released segment connectivity",
+      "note": "Official bulk file verified; full 151,856,684-row disk index deferred; no additional count threshold",
+      "status": "not indexed"
+    },
+    {
+      "name": "G1 curated-neuron graph",
+      "note": "Complete Traced inventory eligibility; valid isolates and null types preserved by implementation",
+      "status": "not indexed"
+    },
+    {
+      "name": "G3 exact saved subset",
+      "note": "512 IDs; 3061 directed pairs; 38708 contacts",
+      "status": "verified / complete"
+    },
+    {
+      "name": "G1 subset and selected-neuron boundary evidence",
+      "note": "Complete source scan, only curated edges incident to exact selected IDs retained; not a full G1 index",
+      "status": "complete"
+    },
+    {
+      "name": "Native skeleton geometry",
+      "note": "Real SWC, source 8nm units \u2192 micrometres exactly once; whole-CNS geometry/context not loaded",
+      "status": "8/512 subset skeletons"
+    },
+    {
+      "name": "Synapse coordinates / microscopy / meshes",
+      "note": "Not prerequisites for exact released pair access; large optional evidence products",
+      "status": "not loaded"
+    },
+    {
+      "name": "Neurotransmitter predictions",
+      "note": "Learned model weight sign is not biological transmitter identity",
+      "status": "not loaded"
+    }
+  ],
+  "release": "male-cns:v1.0",
+  "runs": [
+    {
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "manifest_sha256": "86a01fdf3d8d97a95b433481906b725b34e6170a8fdf772e0d63e6034dee1876",
+      "run_id": "confirmation-g101-s11-fly-topology-k0-0e7e467b04a2",
+      "snapshot_sha256": null,
+      "snapshot_status": "not snapshotted",
+      "step": null
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "manifest_sha256": "178f7c05c790a7db34cad4ba9360aeb9535e2c62ff41031a620745e185980989",
+      "run_id": "confirmation-g101-s33-fly-topology-k0-441b7753ad8e",
+      "snapshot_sha256": "04025e071fa2532b705ea27e9c3587d7fbc10ad36c2f0fb369b1f251a6844860",
+      "snapshot_status": "blocked",
+      "step": null
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "batch": 8,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "confirmation",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 20000,
+        "validate_every": 1000,
+        "weight_decay": 0.0
+      },
+      "manifest_sha256": "0ba625d9300ac75beeda4475f843370d225a489bf5161a32c774922227d26e8a",
+      "run_id": "confirmation-g101-s44-fly-topology-k0-c1ad62d7f5e0",
+      "snapshot_sha256": "ac8d200a94856829c81e24621e0749d6322393c75a58f469fc525f0e59c08412",
+      "snapshot_status": "blocked",
+      "step": null
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "manifest_sha256": "40c220536a8c6a95f2b5ec3b77923627096dfacc6189b9682a43958375bf13b8",
+      "run_id": "development-g101-s901-fly-topology-k0-652a6445d303",
+      "snapshot_sha256": "6a08a8e1db225221c2cb8b37441c934bf0cc519649822753b62c85fa691a1d84",
+      "snapshot_status": "blocked",
+      "step": null
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.0003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "manifest_sha256": "96539514b13f8ea8441e6093ea5e283a64b0c898fe773219caa1484bc88bbfa0",
+      "run_id": "development-g101-s901-fly-topology-k0-b4cd8c1e580e",
+      "snapshot_sha256": "aee1288bba596b7d06827782b11ffd115d9c04e3956797528b153e981d53b56d",
+      "snapshot_status": "blocked",
+      "step": null
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "manifest_sha256": "f7b5856ae65326ccebeaeacc22b347dfdbe2dddaed17af9a69e87f77eabc8555",
+      "run_id": "development-g101-s901-fly-topology-k0-c8024f37abea",
+      "snapshot_sha256": "12dc5db21ba6e6ba0337e8d7a59116becc4e2642ace1ddd62bf56dd2f05497aa",
+      "snapshot_status": "blocked",
+      "step": null
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "manifest_sha256": "e39b3f28ec4dfaf756321f84d59d9662d396d6dba9523a6de8204a86dedbebbd",
+      "run_id": "development-g101-s902-fly-topology-k0-23f43d511d14",
+      "snapshot_sha256": "f8fee7a6d73836f5add8fd9ec8ea68fc8154db97edef88d6102b0fb04781ebe7",
+      "snapshot_status": "blocked",
+      "step": null
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.0003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "manifest_sha256": "f2d87e6d35d4db45272d52c3f69f87bbfe7b758e09bd7d8f139b5ac412fcc9bb",
+      "run_id": "development-g101-s902-fly-topology-k0-4cdf0ea947d6",
+      "snapshot_sha256": "4131da6ab297b93db6997cff4f0ff45102636cb2a393901688257952d1664bab",
+      "snapshot_status": "blocked",
+      "step": null
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.003,
+        "n": 512,
+        "profile": "development",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "manifest_sha256": "8524bfd3ddb6b9db5eddf59648a31f75cab80d5759534724b157609b860872b7",
+      "run_id": "development-g101-s902-fly-topology-k0-9f540865dcfb",
+      "snapshot_sha256": "75eeda0cb31a6495727d4b0f339a744330228f3653ccad3df535373685bade3b",
+      "snapshot_status": "blocked",
+      "step": null
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "manifest_sha256": "88e1fe14d6e3737e56900a6ec526e6d673c63345354de1b683b59d7416a65231",
+      "run_id": "pilot-g101-s1-fly-topology-k0-82567b47f645",
+      "snapshot_sha256": "1f498a179df2398905d1261d511499cde808bbf42d34960aeb2810c18360a3ab",
+      "snapshot_status": "blocked",
+      "step": null
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "manifest_sha256": "8ff4c1fecd7e60ee316c8296808d841f41092ba62d0f3d2bb7b5d70a397880cb",
+      "run_id": "pilot-g101-s2-fly-topology-k0-37cb1cd72628",
+      "snapshot_sha256": "59fb588205216221dcebc2cc3b62bbd14dd28f39a1bc49de7476b38b7b6dae9e",
+      "snapshot_status": "blocked",
+      "step": null
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "batch": 4,
+        "context": 128,
+        "d": 32,
+        "device": "cpu",
+        "evaluation_batch": 32,
+        "execution": "dense",
+        "gradient_clip": 1.0,
+        "lr": 0.001,
+        "n": 512,
+        "profile": "pilot",
+        "protocol": "fixed-bytes",
+        "threads": 2,
+        "updates": 2000,
+        "validate_every": 100,
+        "weight_decay": 0.0
+      },
+      "manifest_sha256": "bb9d4264d2fbed858e642371d20ec123451dcecf8effd4afe1d5958e396fb3bd",
+      "run_id": "pilot-g101-s3-fly-topology-k0-5b2e9e8d034b",
+      "snapshot_sha256": "bdff17b7c48930479b189943d89775046da5355ba2b2781860b43c58a42511b4",
+      "snapshot_status": "blocked",
+      "step": null
+    }
+  ],
+  "scopes": {
+    "G0": {
+      "error": {
+        "code": "E_INCOMPLETE_INGEST",
+        "evidence": null,
+        "message": "G0 not indexed. This panel is unavailable, not empty.",
+        "panel": "G0",
+        "recovery": "./visualization/viz ingest-full --rss-mib 512 --storage-gib 64 --max-seconds 300"
+      },
+      "status": "blocked"
+    },
+    "G1": {
+      "error": {
+        "code": "E_INCOMPLETE_INGEST",
+        "evidence": null,
+        "message": "G1 not indexed. This panel is unavailable, not empty.",
+        "panel": "G1",
+        "recovery": "./visualization/viz ingest-full --rss-mib 512 --storage-gib 64 --max-seconds 300"
+      },
+      "status": "blocked"
+    },
+    "G1-subset": {
+      "contacts": 47404,
+      "coverage": "complete for named scope",
+      "filters": "G1 induced on exact saved IDs before threshold",
+      "loops": 0,
+      "nodes": 512,
+      "pairs": 7405,
+      "release": "male-cns:v1.0",
+      "scope": "G1-subset",
+      "unknown_annotations": 0
+    },
+    "G2": {
+      "error": {
+        "code": "E_INCOMPLETE_INGEST",
+        "evidence": null,
+        "message": "G2 not indexed. This panel is unavailable, not empty.",
+        "panel": "G2",
+        "recovery": "./visualization/viz ingest-full --rss-mib 512 --storage-gib 64 --max-seconds 300"
+      },
+      "status": "blocked"
+    },
+    "G3": {
+      "contacts": 38708,
+      "coverage": "complete for named scope",
+      "filters": "exact saved graph, contacts >= 5, no self-edges",
+      "loops": 0,
+      "nodes": 512,
+      "pairs": 3061,
+      "release": "male-cns:v1.0",
+      "scope": "G3",
+      "unknown_annotations": 0
+    }
+  },
+  "snapshot_selection": "none by default"
+}

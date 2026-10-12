@@ -1,0 +1,47 @@
+{
+  "bootstrap_seed": 1729,
+  "hierarchical": null,
+  "incomplete_pairs": [],
+  "pairs": [
+    {
+      "delta": 0.008537979913643579,
+      "fly_bpb": 3.181319460693187,
+      "rewired_bpbs": [
+        3.1898574406068305
+      ],
+      "sampling_seed": 101,
+      "training_seed": 1
+    },
+    {
+      "delta": 0.00196041714565931,
+      "fly_bpb": 3.194525940911819,
+      "rewired_bpbs": [
+        3.1964863580574785
+      ],
+      "sampling_seed": 101,
+      "training_seed": 2
+    },
+    {
+      "delta": -0.0013800394634051472,
+      "fly_bpb": 3.187354925580528,
+      "rewired_bpbs": [
+        3.1859748861171227
+      ],
+      "sampling_seed": 101,
+      "training_seed": 3
+    }
+  ],
+  "per_graph": {
+    "101": {
+      "ci95": [
+        -0.0013800394634051472,
+        0.008537979913643579
+      ],
+      "interpretation": "Insufficient confirmation seeds; descriptive only.",
+      "mean_delta": 0.003039452531965914,
+      "training_seed_count": 3
+    }
+  },
+  "resamples": 10000,
+  "warning": "Five seeds offer limited uncertainty; never bootstrap individual test bytes."
+}

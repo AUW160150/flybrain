@@ -1,0 +1,22 @@
+{
+  "available_counts": {
+    "see": "identity.json and per-scope summary"
+  },
+  "code_revision": "80827efbc94a126d4aeb8f6c38365da55b8dc98a5fe1fb4226e27bcdad546d8e",
+  "export_sha256": "9dba4452373ec94b1780c8631df43211ac39e4d1e08010df32bfbf1d0becc460",
+  "export_time": "2026-10-05T20:52:47.009305+00:00",
+  "filters": "none",
+  "graph_scope": "G3",
+  "inputs": {
+    "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+    "index_identity": "ace36203e99f1d21847fa6b1ae67e83a862728a3d0dfff6a6e9e1da7c5982243"
+  },
+  "node_ordering": "body ID / saved index recorded in payload",
+  "reduction": "exact structured records",
+  "rendered_counts": {
+    "contacts": null,
+    "pairs": null,
+    "rows": 0
+  },
+  "renderer_version": "1"
+}

@@ -1,0 +1,102 @@
+{
+  "contacts": 47404,
+  "edges": [
+    {
+      "contacts": 31,
+      "pairs": 12,
+      "source_group": "descending_neuron",
+      "target_group": "ol_intrinsic"
+    },
+    {
+      "contacts": 1,
+      "pairs": 1,
+      "source_group": "descending_neuron",
+      "target_group": "visual_projection"
+    },
+    {
+      "contacts": 8,
+      "pairs": 7,
+      "source_group": "ol_intrinsic",
+      "target_group": "descending_neuron"
+    },
+    {
+      "contacts": 40375,
+      "pairs": 6160,
+      "source_group": "ol_intrinsic",
+      "target_group": "ol_intrinsic"
+    },
+    {
+      "contacts": 129,
+      "pairs": 80,
+      "source_group": "ol_intrinsic",
+      "target_group": "visual_centrifugal"
+    },
+    {
+      "contacts": 4076,
+      "pairs": 649,
+      "source_group": "ol_intrinsic",
+      "target_group": "visual_projection"
+    },
+    {
+      "contacts": 1323,
+      "pairs": 259,
+      "source_group": "visual_centrifugal",
+      "target_group": "ol_intrinsic"
+    },
+    {
+      "contacts": 32,
+      "pairs": 2,
+      "source_group": "visual_centrifugal",
+      "target_group": "visual_centrifugal"
+    },
+    {
+      "contacts": 338,
+      "pairs": 35,
+      "source_group": "visual_centrifugal",
+      "target_group": "visual_projection"
+    },
+    {
+      "contacts": 427,
+      "pairs": 91,
+      "source_group": "visual_projection",
+      "target_group": "ol_intrinsic"
+    },
+    {
+      "contacts": 405,
+      "pairs": 27,
+      "source_group": "visual_projection",
+      "target_group": "visual_centrifugal"
+    },
+    {
+      "contacts": 259,
+      "pairs": 82,
+      "source_group": "visual_projection",
+      "target_group": "visual_projection"
+    }
+  ],
+  "grouping": "disjoint published superclass (canonical annotation_class), null \u2192 Unknown; within-group edges retained",
+  "nodes": [
+    {
+      "in_experiment": 1,
+      "name": "descending_neuron",
+      "nodes": 1
+    },
+    {
+      "in_experiment": 488,
+      "name": "ol_intrinsic",
+      "nodes": 488
+    },
+    {
+      "in_experiment": 2,
+      "name": "visual_centrifugal",
+      "nodes": 2
+    },
+    {
+      "in_experiment": 21,
+      "name": "visual_projection",
+      "nodes": 21
+    }
+  ],
+  "pairs": 7405,
+  "scope": "G1-subset"
+}

@@ -1,0 +1,75 @@
+{
+  "bootstrap_seed": 1729,
+  "hierarchical": null,
+  "incomplete_pairs": [],
+  "pairs": [
+    {
+      "delta": -0.019270309198490043,
+      "fly_bpb": 2.636703111432854,
+      "rewired_bpbs": [
+        2.6081873896753325,
+        2.6238819913615896,
+        2.62022902566617
+      ],
+      "sampling_seed": 101,
+      "training_seed": 11
+    },
+    {
+      "delta": -0.0012704392370115336,
+      "fly_bpb": 2.6271093062762674,
+      "rewired_bpbs": [
+        2.6317835159094995,
+        2.637873091006544,
+        2.6078599942017235
+      ],
+      "sampling_seed": 101,
+      "training_seed": 22
+    },
+    {
+      "delta": 0.010907071454579143,
+      "fly_bpb": 2.632541867061699,
+      "rewired_bpbs": [
+        2.629375918406868,
+        2.6527547431540985,
+        2.6482161539878684
+      ],
+      "sampling_seed": 101,
+      "training_seed": 33
+    },
+    {
+      "delta": -0.02278817309626424,
+      "fly_bpb": 2.652526735838914,
+      "rewired_bpbs": [
+        2.6319033203378366,
+        2.6199859937702263,
+        2.6373263741198874
+      ],
+      "sampling_seed": 101,
+      "training_seed": 44
+    },
+    {
+      "delta": -0.019011777139341213,
+      "fly_bpb": 2.645352193933168,
+      "rewired_bpbs": [
+        2.6329506241925893,
+        2.6158374016510666,
+        2.6302332245378253
+      ],
+      "sampling_seed": 101,
+      "training_seed": 55
+    }
+  ],
+  "per_graph": {
+    "101": {
+      "ci95": [
+        -0.020625748345769957,
+        0.0017325204060923305
+      ],
+      "interpretation": "Fly wiring may be worse under this protocol; inspect uncertainty.",
+      "mean_delta": -0.010286725443305578,
+      "training_seed_count": 5
+    }
+  },
+  "resamples": 10000,
+  "warning": "Five seeds offer limited uncertainty; never bootstrap individual test bytes."
+}

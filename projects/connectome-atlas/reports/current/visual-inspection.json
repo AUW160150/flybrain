@@ -1,0 +1,19 @@
+{
+  "browser": "skipped: loopback socket denied; standalone Chrome aborted (exit 134)",
+  "figures": [
+    "folded.png",
+    "unrolled.png",
+    "references.png",
+    "rules.png",
+    "native-skeletons.png",
+    "selection-boundary.png"
+  ],
+  "findings": [
+    "Missing Unicode subscript glyphs found and replaced with bracketed time notation",
+    "Native spatial projection keeps equal axis scale and states micrometre bounds",
+    "Architecture labels and local-rule legends inspected",
+    "Static node arrowheads offset to remain visible outside node markers"
+  ],
+  "method": "Pillow raster companions of explicit SVG primitives viewed through image viewer; not browser screenshots",
+  "utc": "2026-10-05T20:45:46.648829+00:00"
+}

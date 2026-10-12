@@ -1,0 +1,1396 @@
+{
+  "analysis_plan_sha256": "181384189b8fcd4b9c51ba9596549e9d9e94e2650eadd2ed09eb28f542265c15",
+  "audit_script_sha256": "415fa3c0ed224c703e515a8b66cc722233cea707391ebd36c901a4f27aebccd6",
+  "bundle_sha256": "8dfc7fe9214947efdd011459e11579b783f69ef7e754fa019f7650694e2e7670",
+  "checks": [
+    {
+      "checkpoint_sha256": {
+        "best": "baa01c9033b8b94bae1f99918581dd12c471a335c870b793f9f4e0bb69d232b2",
+        "final": "13c58de7c08267cf4991ad48211113af9a539db328720a36f72d4635c458fcbd"
+      },
+      "run_id": "confirmation-g101-s33-random-density-k0-9438131a27ed",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49898689235955457,
+            "bpb": 2.4472695258519606,
+            "byte_perplexity": 5.45382922425053,
+            "nll_sum": 94601.95697570313,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.501515178683498,
+            "bpb": 2.4510910027235817,
+            "byte_perplexity": 5.468294727521562,
+            "nll_sum": 94749.68046376761,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "be65916d7dfa265faf81b65952ffa8436788ca9626991f336daab9b8ffe64573",
+        "final": "e085f4dcb26a7ed24cc84e3ea03023344f3ce73466f1e263f8f10d412033dea5"
+      },
+      "run_id": "confirmation-g101-s11-degree-rewired-k2-433b3c519d06",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4963689504922089,
+            "bpb": 2.4702459068819773,
+            "byte_perplexity": 5.541382318693947,
+            "nll_sum": 95490.13483543531,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49577722390575407,
+            "bpb": 2.4832713667257202,
+            "byte_perplexity": 5.591639559571145,
+            "nll_sum": 95993.64864080481,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "4878ee6995828727c6e5ede6011d5ff708a678359e050110efbc0d7865edd529",
+        "final": "c40349ccaf93db19dd10182a202d5057c20bf58906abefbd94a3efc5c6b7e113"
+      },
+      "run_id": "confirmation-g101-s44-random-density-k0-9bc741527523",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.5028600118345318,
+            "bpb": 2.4405572505002104,
+            "byte_perplexity": 5.428513704209001,
+            "nll_sum": 94342.48641991532,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "152483c5efac10f21ceb202a449de00325db200db874146683212ecb65f9a155",
+        "final": "50b860f47fee74dec7718f1e8792202f0234fc21c6ac0ef99074427c78f35f79"
+      },
+      "run_id": "confirmation-g101-s22-degree-rewired-k3-e636f5e7f341",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4960282594272804,
+            "bpb": 2.4716461504525857,
+            "byte_perplexity": 5.54676325606885,
+            "nll_sum": 95544.26282608893,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49280065986479943,
+            "bpb": 2.498562974570449,
+            "byte_perplexity": 5.6512224312821955,
+            "nll_sum": 96584.7629468242,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "050e49e456a1beb2b03d6a92a8267cb540845b10e9424e1cf74132dcc0af8ae1",
+        "final": "c3386edda95ecac7be5f58442f3743c745d158d4eaa883231cc304fdfde36484"
+      },
+      "run_id": "confirmation-g101-s33-degree-rewired-k1-179fd9d1549d",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4918144488873747,
+            "bpb": 2.486990040917637,
+            "byte_perplexity": 5.60607109686474,
+            "nll_sum": 96137.3981756207,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4907027201491868,
+            "bpb": 2.496276174471909,
+            "byte_perplexity": 5.642271836158362,
+            "nll_sum": 96496.3641161074,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "91d895dd47fbcc30087a10701a196a01179963d7e200074226d2850b3380dbe1",
+        "final": "04025e071fa2532b705ea27e9c3587d7fbc10ad36c2f0fb369b1f251a6844860"
+      },
+      "run_id": "confirmation-g101-s33-fly-topology-k0-441b7753ad8e",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4907027201491868,
+            "bpb": 2.4816927716328157,
+            "byte_perplexity": 5.585524540755358,
+            "nll_sum": 95932.62627139129,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49161720669188974,
+            "bpb": 2.4946661245672033,
+            "byte_perplexity": 5.63597856433609,
+            "nll_sum": 96434.12582555349,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "1bda1c72d90e9401c1b074d7c1c6588adb927f4ceec0d578ca4b3ce837a2b02a",
+        "final": "a1483ddb3239ce6acf6b0f65711524f361da1d68f9d1940adc33045bffca9aa5"
+      },
+      "run_id": "confirmation-g101-s33-degree-rewired-k2-5ca50db997c9",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49125858451828075,
+            "bpb": 2.485834497351223,
+            "byte_perplexity": 5.601582646042572,
+            "nll_sum": 96092.72933894431,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49211927773494235,
+            "bpb": 2.4918535044957446,
+            "byte_perplexity": 5.625001591420503,
+            "nll_sum": 96325.40083217685,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "30bef750fa1eff06b2d12ffbe66491b56afa052598312f55c5d0b7be46bce94e",
+        "final": "ba004947eef6e61cbca0a2c14d83b5f2cdd8f4d7def7b24f47684932165f7913"
+      },
+      "run_id": "confirmation-g101-s44-degree-rewired-k1-7173fb89a8cc",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49335652423389337,
+            "bpb": 2.4815637282130565,
+            "byte_perplexity": 5.585024959809168,
+            "nll_sum": 95927.6379528121,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "7d26959ec95ca799e4f26d49bc925916f6e6c5febba50d94e9b172b834b4d493",
+        "final": "ac8d200a94856829c81e24621e0749d6322393c75a58f469fc525f0e59c08412"
+      },
+      "run_id": "confirmation-g101-s44-fly-topology-k0-c1ad62d7f5e0",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4944861840807617,
+            "bpb": 2.501371985976537,
+            "byte_perplexity": 5.6622364099772415,
+            "nll_sum": 96693.34844318079,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.493858595276946,
+            "bpb": 2.5035940391536267,
+            "byte_perplexity": 5.670964162082035,
+            "nll_sum": 96779.24440880131,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "e70b86ea68397d1dc82196bb2d983e33be6e7e83a8cc730e9d0b17b8978fb658",
+        "final": "5c6f9c9337bd691b370f14fbafccd1ce2cca19eaf1a33d826a85d866c5c38bd4"
+      },
+      "run_id": "confirmation-g101-s22-parameter-matched-gru-k0-cc0f8c65e228",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.5183524897344403,
+            "bpb": 2.3513519368944715,
+            "byte_perplexity": 5.103022266890771,
+            "nll_sum": 90894.15465645894,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.5183524897344403,
+            "bpb": 2.3595200089219275,
+            "byte_perplexity": 5.13199586825731,
+            "nll_sum": 91209.90067068138,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "d6254fe9d6a51a69d3f441e15d3124aea66a860e637303f2dd55670b0a6ad18a",
+        "final": "1a4ea204b2038204d2160548d3084b3d689dc402988fc35031b6d88f01686846"
+      },
+      "run_id": "confirmation-g101-s55-random-density-k0-092b284e9d5e",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49575929279707365,
+            "bpb": 2.4603538153445195,
+            "byte_perplexity": 5.503516823150096,
+            "nll_sum": 95107.74490733759,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4976958525345622,
+            "bpb": 2.469851533890119,
+            "byte_perplexity": 5.539867741604286,
+            "nll_sum": 95474.88990372099,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "5c55876c5165e246b71f928734da8a6abe47a78aeade4af7f1a4866295caa89b",
+        "final": "0a1287308ddc32f5e7c12af17c39d8716adde1f91834c6ef8936be66898de38b"
+      },
+      "run_id": "confirmation-g101-s55-parameter-matched-gru-k0-a4a6bfda6469",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.5266725241621689,
+            "bpb": 2.33724603780379,
+            "byte_perplexity": 5.05337077782555,
+            "nll_sum": 90348.87525638315,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.5202531872545679,
+            "bpb": 2.35341244062462,
+            "byte_perplexity": 5.110315775553364,
+            "nll_sum": 90973.80574644663,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "f3b95cb8a287b3d4679c6600a51925fc362330aabce1108afed517353b8b40d2",
+        "final": "073251540d15f452f15de054ab648edd9a32bf80770f50bc7579a7b4a2ee6d25"
+      },
+      "run_id": "confirmation-g101-s55-degree-rewired-k2-d5134214f31b",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4915992755832093,
+            "bpb": 2.4888253567103273,
+            "byte_perplexity": 5.6132073646075415,
+            "nll_sum": 96208.34437252418,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49179651777869426,
+            "bpb": 2.494340091718727,
+            "byte_perplexity": 5.6347050404934995,
+            "nll_sum": 96421.52265897197,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "e4e5747ae4d1283051459e35e1134e9d61b1f85dc0732c46a031cc208fa5d96e",
+        "final": "98fcb9d9b529c240d1c49b0dbcc8bfe48dd6d53b4768b601d61be93af410754d"
+      },
+      "run_id": "confirmation-g101-s11-fly-topology-k0-0e7e467b04a2",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.48955512919363803,
+            "bpb": 2.503778240539975,
+            "byte_perplexity": 5.671688269478507,
+            "nll_sum": 96786.36492063792,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4873675339346232,
+            "bpb": 2.5070459422006004,
+            "byte_perplexity": 5.684549192645575,
+            "nll_sum": 96912.68160486186,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "cb55cfe3126e1be0cee615812bef5167fa1568ed7efaa8b4a4cf9a27a30142c5",
+        "final": "fde2685bd48322e78c068f93b6702412266fbd81c65c63debd689d78f3b287cf"
+      },
+      "run_id": "confirmation-g101-s33-parameter-matched-gru-k0-606ee820776e",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.5182090408649966,
+            "bpb": 2.360112816822504,
+            "byte_perplexity": 5.134105054702516,
+            "nll_sum": 91232.81632705384,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "c6f8cfedc10948d7197a83341a95fa3b12b905532990ce930060ac31ec458e94",
+        "final": "38075f9abb3be9f2b8f22d0a7af1c8ff8453bc50d558c56d1c72ee6c4338ef0f"
+      },
+      "run_id": "confirmation-g101-s33-no-cross-node-recurrence-k0-ea6386659d61",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.48399648550269864,
+            "bpb": 2.5206013279085107,
+            "byte_perplexity": 5.73821223071895,
+            "nll_sum": 97436.68029073704,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4802130215711237,
+            "bpb": 2.5479012424736367,
+            "byte_perplexity": 5.8478294754980995,
+            "nll_sum": 98491.98920373115,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "e503f078ed313a9b5b8a89ca9affcfb38104ac3430ea71979bb61e0ad2fe65fb",
+        "final": "b411f2f5afee008a69280618dfb7a82ebab0db8a087920f5cc271963ae813066"
+      },
+      "run_id": "confirmation-g101-s11-degree-rewired-k3-287ca1ae66b9",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49550825727554737,
+            "bpb": 2.470944509488172,
+            "byte_perplexity": 5.544066296569604,
+            "nll_sum": 95517.1401051844,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49118686008355894,
+            "bpb": 2.478846081143395,
+            "byte_perplexity": 5.5745141869038415,
+            "nll_sum": 95822.58424767526,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "97e99334ebdafae3529d043ddeb2cc9a0e2064338c83c576edd2961bcdf2d8be",
+        "final": "970b2b8545acdf9f082c7d5f48463f57991cbb92bba4e39ea987d9756be86b14"
+      },
+      "run_id": "confirmation-g101-s11-degree-rewired-k1-fa1b878851d5",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49740895479567504,
+            "bpb": 2.4730524111813845,
+            "byte_perplexity": 5.552172575402837,
+            "nll_sum": 95598.62341676239,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.48971650917176207,
+            "bpb": 2.490695060027396,
+            "byte_perplexity": 5.620486682650529,
+            "nll_sum": 96280.61985787231,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "890d9f1d47e20c46440a882ad956bbd197f1dc6788620ec3a2ae47cacc2bab09",
+        "final": "0649ad1b7443a43d45a05ea162a85fc9545de0e306fee3390cc16586f95ca124"
+      },
+      "run_id": "confirmation-g101-s22-fly-topology-k0-b3143798f03f",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4911330667575176,
+            "bpb": 2.4925572872352264,
+            "byte_perplexity": 5.627746277352137,
+            "nll_sum": 96352.60634580639,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4899496135846079,
+            "bpb": 2.512287503381125,
+            "byte_perplexity": 5.705239708658126,
+            "nll_sum": 97115.30004964181,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "adf03f0bf17886e63940054ec182b54e4db91bcf36686eed141f57a5e1c6f1f3",
+        "final": "02ae181a91dbf5aa740fe2a620e6a30fbe16d93ab3928375f7dfa48fa816b091"
+      },
+      "run_id": "confirmation-g101-s55-degree-rewired-k1-4128dcbedf59",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49055927127974325,
+            "bpb": 2.4834726703828127,
+            "byte_perplexity": 5.592419832598126,
+            "nll_sum": 96001.43026015902,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4934820419946565,
+            "bpb": 2.4857445200188892,
+            "byte_perplexity": 5.6012333000392385,
+            "nll_sum": 96089.2511639283,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "dbde703ffd4936528bd1e1168811c16200aa56de057bb28fb094b0f21e2f9b33",
+        "final": "a1aa49596010a101aaa42bc244124aaab13b901b314b91d7827ff193befa7fac"
+      },
+      "run_id": "confirmation-g101-s55-no-cross-node-recurrence-k0-b660723cb173",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.47877853287668776,
+            "bpb": 2.5481596953140344,
+            "byte_perplexity": 5.848877183768255,
+            "nll_sum": 98501.97998906526,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.47757714859509764,
+            "bpb": 2.5630663773897524,
+            "byte_perplexity": 5.9096241457489445,
+            "nll_sum": 99078.21455639869,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "b7b9e84f93769d0c31d8feefa0006d371e11ef7211e66fb8cabc32698b6e6c0c",
+        "final": "18f82223027dc51d295dd12ee1bdd35796daade0d3587ba4e2766d9986076b0e"
+      },
+      "run_id": "confirmation-g101-s55-degree-rewired-k3-5492e03de7b5",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4939482508203482,
+            "bpb": 2.492803685972517,
+            "byte_perplexity": 5.628707525543214,
+            "nll_sum": 96362.13116622268,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "7ed0c40acb03048fbe850161f7ecb424a9dfd16d743ca79544efe995b556d663",
+        "final": "c6c9cfeef2b37815e973df7dcbc0607db9aaa4e398b9ee89cd7eb6d3011f26f9"
+      },
+      "run_id": "confirmation-g101-s55-fly-topology-k0-c2120cf559b9",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.48645304739192025,
+            "bpb": 2.5015119339699683,
+            "byte_perplexity": 5.662785699353583,
+            "nll_sum": 96698.75829032413,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4871164984130969,
+            "bpb": 2.505972872164557,
+            "byte_perplexity": 5.6803226227535655,
+            "nll_sum": 96871.20087529393,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "228aa4663de65b75eb8fa63fd9a54e1474bdc153057324f2bf8b55476138846a",
+        "final": "42bb6eb890f5f8643bbe4b67820552c68475f808d04bb266428ad313dcc98d3c"
+      },
+      "run_id": "confirmation-g101-s22-degree-rewired-k1-e089e6113d5a",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49161720669188974,
+            "bpb": 2.48691488866732,
+            "byte_perplexity": 5.6057790754234125,
+            "nll_sum": 96134.49308082997,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49014685578009287,
+            "bpb": 2.5072582633329725,
+            "byte_perplexity": 5.685385848144513,
+            "nll_sum": 96920.8891171189,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "e0cb2dbb178d9eb654d4a89c514f75bdfad2f98847585845ea7cc270d75b78a5",
+        "final": "9ff54e6ada096c8e6ebc67bca4cd8031c7754a05d7f90ac38141cc6910fce2fe"
+      },
+      "run_id": "confirmation-g101-s22-random-density-k0-71ad53bd4904",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.5018917319657874,
+            "bpb": 2.4381137724974815,
+            "byte_perplexity": 5.419327267123211,
+            "nll_sum": 94248.03102853184,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4971937814915096,
+            "bpb": 2.4588046753670985,
+            "byte_perplexity": 5.497610417470227,
+            "nll_sum": 95047.8611585534,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "c0e42efeb43573d7b1246ca0dd8c4b6a2d66b1372ed94691451914d04919402f",
+        "final": "e7b4b8a589353c89967c29fa60ed5c8d21607fd1d746958ff4a85cc0b89d6369"
+      },
+      "run_id": "confirmation-g101-s22-degree-rewired-k2-f39a97b7053f",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4926751421040363,
+            "bpb": 2.479268183973341,
+            "byte_perplexity": 5.576145413464585,
+            "nll_sum": 95838.90110748005,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.48890960928114185,
+            "bpb": 2.506054585744592,
+            "byte_perplexity": 5.680644362711937,
+            "nll_sum": 96874.35960566718,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "c9a38cc6b1c8950fc5ebcd604204ab5a8a985159dbf70c8fb352f8dd414f1d4e",
+        "final": "ceb55ae81bcf04b9b585797ae6b7c7ea017eb440e52a221cc290c58aaf61849e"
+      },
+      "run_id": "confirmation-g101-s22-no-cross-node-recurrence-k0-b204a2b28a73",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4786171528985637,
+            "bpb": 2.542465298154664,
+            "byte_perplexity": 5.825836842533911,
+            "nll_sum": 98281.85666003154,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.480302677114526,
+            "bpb": 2.556015008282113,
+            "byte_perplexity": 5.880810523006558,
+            "nll_sum": 98805.63594995833,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "9491feb4cff2606c4a705faafa3644c19e0974e32719d0f6e9ea3ee1991d5a74",
+        "final": "95a8db56d73438a478fd946765de1c0652ad61814fa09abd616cd8820ef4df8b"
+      },
+      "run_id": "confirmation-g101-s44-degree-rewired-k2-edb3ad03131c",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49253169323459267,
+            "bpb": 2.482895196728461,
+            "byte_perplexity": 5.590181778973296,
+            "nll_sum": 95979.10736632714,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "ebffc42e1750983f9d96c818478558a8348522ba3ace26d32e5171fd81e86929",
+        "final": "9cd9eae83d197faa8dc61a330fa7994f225dbc95df38683814d9c406d2e1c6b2"
+      },
+      "run_id": "confirmation-g101-s33-degree-rewired-k3-0ec5caed242a",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49489859958041205,
+            "bpb": 2.4676337929451617,
+            "byte_perplexity": 5.531358283355823,
+            "nll_sum": 95389.16063228529,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4953468772974233,
+            "bpb": 2.4879940058999934,
+            "byte_perplexity": 5.6099736942388345,
+            "nll_sum": 96176.20757158741,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "02a5f2840ceb345393646b3da010123ecf4cab03fdce758c0f03e5507c1d3cb7",
+        "final": "3003c22e527368a4d8bfa850e1f25262128650da0dd41bcc0fc694f11814c0a0"
+      },
+      "run_id": "confirmation-g101-s44-degree-rewired-k3-ed56d4a88014",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.48767236278219084,
+            "bpb": 2.502059149304496,
+            "byte_perplexity": 5.664934005710034,
+            "nll_sum": 96719.91151475918,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4931234198210475,
+            "bpb": 2.504693423139218,
+            "byte_perplexity": 5.675287281721544,
+            "nll_sum": 96821.74233369518,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "183ff7d49c8e2a67b5ca098bcfb8eeeb70d6e6a72fab4f09797afa72bc68c358",
+        "final": "f9b725dc66fd76ec4ce432cd47d0f72d87be91f3a3aeacea9dedec14fbddf0d6"
+      },
+      "run_id": "confirmation-g101-s44-no-cross-node-recurrence-k0-b05ef61d768a",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4821675124172928,
+            "bpb": 2.531434065149069,
+            "byte_perplexity": 5.781460804133314,
+            "nll_sum": 97855.4319368205,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "bcddcaf9e9ef9972414228869b7b968e3bae130ce3cbc8047e76bd47da61ef8c",
+        "final": "d5e69218c89aa4f804538c0ea2ffb1f3b8c51c65be5b68b217b4d85c61048f91"
+      },
+      "run_id": "confirmation-g101-s11-parameter-matched-gru-k0-2192e194ea54",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.5143179902813391,
+            "bpb": 2.3699086795622404,
+            "byte_perplexity": 5.169084116902818,
+            "nll_sum": 91611.4864227074,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.5116462550879521,
+            "bpb": 2.390017794794481,
+            "byte_perplexity": 5.241638267558701,
+            "nll_sum": 92388.82689702956,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "10796297ee295c43963b6334ff7952517a987b702c19e4d4637065badec421d6",
+        "final": "3160a6a823c3d0d3c9868674885f3f512b6c77bc2caa02593178f108561e52eb"
+      },
+      "run_id": "confirmation-g101-s44-parameter-matched-gru-k0-bd994cf5ce71",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.513995230325091,
+            "bpb": 2.376675959999776,
+            "byte_perplexity": 5.193387806512884,
+            "nll_sum": 91873.08326197317,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "552a66222b2e4593634e607dd7bb2df2246f79b3245532bcafcaa16ddafa9c88",
+        "final": "2e05460795687e7cba8cf2cd4024e086dbb99a6f9324df6b58a7abab6bdd1bec"
+      },
+      "run_id": "confirmation-g101-s11-random-density-k0-d36dbfd142da",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.5025731140956445,
+            "bpb": 2.4446018231941324,
+            "byte_perplexity": 5.443753809102295,
+            "nll_sum": 94498.83392799878,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.49900482346823505,
+            "bpb": 2.4507571761006566,
+            "byte_perplexity": 5.467029559811935,
+            "nll_sum": 94736.77602006588,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "e44677c97341cfb54491c1c7544ec93b6557267e1e44b17cfdcb18e9c5ebde6e",
+        "final": "310de460797365a895b80d79f22496cfeff561eeb9b4963af3fd75c448e27c8c"
+      },
+      "run_id": "confirmation-g101-s11-no-cross-node-recurrence-k0-60825e575b44",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.4831537233947175,
+            "bpb": 2.51636463427413,
+            "byte_perplexity": 5.721385815631911,
+            "nll_sum": 97272.90613154246,
+            "scored_bytes": 55769
+          }
+        },
+        "final": {
+          "absolute_differences": {
+            "accuracy": 0.0,
+            "bpb": 0.0,
+            "byte_perplexity": 0.0,
+            "nll_sum": 0.0,
+            "scored_bytes": 0
+          },
+          "score": {
+            "accuracy": 0.479226810593699,
+            "bpb": 2.5433560240643014,
+            "byte_perplexity": 5.829434848992479,
+            "nll_sum": 98316.28867223556,
+            "scored_bytes": 55769
+          }
+        }
+      }
+    }
+  ],
+  "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+  "completed_runs": 35,
+  "freeze_sha256": "ffb133aefbbdcfba44463ba1303d2834c7d449332aaca4358516bca15d6b52e5",
+  "matched_controls": "Exact labelled degrees, counts, initial recurrent slots and interfaces, optimizer, full budgets and sampler RNG states verified.",
+  "reviewed_utc": "2026-10-05T23:32:22.992897+00:00",
+  "status": "passed",
+  "test_data_loaded": false,
+  "test_result_files_found": 0,
+  "training_byte_exposures": 716800000,
+  "training_launched": false
+}

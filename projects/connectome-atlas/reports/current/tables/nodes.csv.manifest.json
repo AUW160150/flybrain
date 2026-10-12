@@ -1,0 +1,19 @@
+{
+  "available_counts": {
+    "nodes": 512
+  },
+  "code_revision": "f27023f287578f22139f77618e1516d10d80ce05f2c06966be72d0dd89183968",
+  "export_sha256": "bb8509fcac9611bab48d7ba3a2b7df1c2fe16e4233b5704d8355080119c18f53",
+  "export_time": "2026-10-05T20:53:37.386205+00:00",
+  "filters": "none",
+  "graph_scope": "G3",
+  "inputs": {
+    "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b"
+  },
+  "node_ordering": "saved model index",
+  "reduction": "none",
+  "rendered_counts": {
+    "nodes": 512
+  },
+  "renderer_version": "1"
+}

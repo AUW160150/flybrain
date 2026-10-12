@@ -1,0 +1,76 @@
+{
+  "analysis_stage": "Validation only; checkpoints selected on these data. Primary test outcome not evaluated.",
+  "bootstrap_seed": 1729,
+  "hierarchical": null,
+  "incomplete_pairs": [],
+  "pairs": [
+    {
+      "delta": -0.032363964689463565,
+      "fly_bpb": 2.503778240539975,
+      "rewired_bpbs": [
+        2.4702459068819773,
+        2.470944509488172,
+        2.4730524111813845
+      ],
+      "sampling_seed": 101,
+      "training_seed": 11
+    },
+    {
+      "delta": -0.013280879537477919,
+      "fly_bpb": 2.4925572872352264,
+      "rewired_bpbs": [
+        2.4716461504525857,
+        2.48691488866732,
+        2.479268183973341
+      ],
+      "sampling_seed": 101,
+      "training_seed": 22
+    },
+    {
+      "delta": -0.0015399945614751331,
+      "fly_bpb": 2.4816927716328157,
+      "rewired_bpbs": [
+        2.486990040917637,
+        2.485834497351223,
+        2.4676337929451617
+      ],
+      "sampling_seed": 101,
+      "training_seed": 33
+    },
+    {
+      "delta": -0.012532627894532578,
+      "fly_bpb": 2.501371985976537,
+      "rewired_bpbs": [
+        2.4815637282130565,
+        2.482895196728461,
+        2.502059149304496
+      ],
+      "sampling_seed": 101,
+      "training_seed": 44
+    },
+    {
+      "delta": -0.013144696281416124,
+      "fly_bpb": 2.5015119339699683,
+      "rewired_bpbs": [
+        2.4888253567103273,
+        2.4834726703828127,
+        2.492803685972517
+      ],
+      "sampling_seed": 101,
+      "training_seed": 55
+    }
+  ],
+  "per_graph": {
+    "101": {
+      "ci95": [
+        -0.024581080300080237,
+        -0.00618187524945153
+      ],
+      "interpretation": "Descriptive validation comparison only; no confirmatory test inference.",
+      "mean_delta": -0.014572432592873063,
+      "training_seed_count": 5
+    }
+  },
+  "resamples": 10000,
+  "warning": "Five seeds offer limited uncertainty; never bootstrap individual test bytes."
+}

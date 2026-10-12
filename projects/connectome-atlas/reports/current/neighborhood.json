@@ -1,0 +1,70 @@
+{
+  "description": "Lowest saved biological ID plus first seven distinct incoming/outgoing partners ordered by biological ID; real induced detail, not full model.",
+  "edges": [
+    {
+      "source_body_id": "10053",
+      "synapse_count": 23,
+      "target_body_id": "10029"
+    },
+    {
+      "source_body_id": "10029",
+      "synapse_count": 9,
+      "target_body_id": "10053"
+    },
+    {
+      "source_body_id": "10029",
+      "synapse_count": 5,
+      "target_body_id": "12638"
+    },
+    {
+      "source_body_id": "10029",
+      "synapse_count": 9,
+      "target_body_id": "14581"
+    },
+    {
+      "source_body_id": "10053",
+      "synapse_count": 9,
+      "target_body_id": "14581"
+    },
+    {
+      "source_body_id": "10029",
+      "synapse_count": 11,
+      "target_body_id": "15497"
+    },
+    {
+      "source_body_id": "10029",
+      "synapse_count": 5,
+      "target_body_id": "15910"
+    },
+    {
+      "source_body_id": "10029",
+      "synapse_count": 8,
+      "target_body_id": "17010"
+    },
+    {
+      "source_body_id": "10053",
+      "synapse_count": 10,
+      "target_body_id": "17010"
+    },
+    {
+      "source_body_id": "10029",
+      "synapse_count": 9,
+      "target_body_id": "18428"
+    },
+    {
+      "source_body_id": "10053",
+      "synapse_count": 10,
+      "target_body_id": "18428"
+    }
+  ],
+  "ids": [
+    "10029",
+    "10053",
+    "12638",
+    "14581",
+    "15497",
+    "15910",
+    "17010",
+    "18428"
+  ]
+}

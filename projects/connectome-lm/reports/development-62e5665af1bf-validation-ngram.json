@@ -1,0 +1,18 @@
+{
+  "bigram": {
+    "accuracy": 0.26900249242410657,
+    "bpb": 3.585333106483105,
+    "byte_perplexity": 12.003083008039216,
+    "nll_sum": 138595.08513472835,
+    "scored_bytes": 55769
+  },
+  "fit_split": "train only",
+  "smoothing": 1.0,
+  "unigram": {
+    "accuracy": 0.1520020082841722,
+    "bpb": 4.808269063891069,
+    "byte_perplexity": 28.017747397456773,
+    "nll_sum": 185869.05050904606,
+    "scored_bytes": 55769
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "available_counts": {
+    "G3_nodes": 512,
+    "G3_pairs": 3061
+  },
+  "code_revision": "f27023f287578f22139f77618e1516d10d80ce05f2c06966be72d0dd89183968",
+  "export_sha256": "9a904772a3495d3cdcff64411bfbe936ccacba1fcd9cb2d20cbd2554a8dc12cc",
+  "export_time": "2026-10-05T20:53:37.869977+00:00",
+  "filters": "deterministic local detail",
+  "graph_scope": "G3 induced detail + separately labelled schematics",
+  "inputs": {
+    "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b"
+  },
+  "node_ordering": "recorded selected IDs",
+  "rasterization": "Pillow companion of explicit SVG primitives; browser rasterization not available in this sandbox",
+  "reduction": "none",
+  "rendered_counts": {
+    "real_nodes": 8,
+    "real_pairs": 11
+  },
+  "renderer_version": "1"
+}

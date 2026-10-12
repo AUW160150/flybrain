@@ -5,8 +5,8 @@ __pycache__/
 data/raw/*
 data/processed/*
 runs/*
-reports/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !runs/.gitkeep
-!reports/.gitkeep
+
+# curated copies for the portfolio keep selected reports/runs; large arrays stay out

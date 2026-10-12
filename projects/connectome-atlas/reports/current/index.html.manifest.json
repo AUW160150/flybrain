@@ -1,0 +1,25 @@
+{
+  "available_counts": {
+    "scopes": [
+      "G0",
+      "G1",
+      "G2",
+      "G3",
+      "G1-subset"
+    ]
+  },
+  "code_revision": "f27023f287578f22139f77618e1516d10d80ce05f2c06966be72d0dd89183968",
+  "export_sha256": "6f5290de9f41f2d83dbb73d134bb0bf6e213ee9bed54a2a6028ec8e38ebfe7fd",
+  "export_time": "2026-10-05T20:53:38.374133+00:00",
+  "filters": "per-panel manifest",
+  "graph_scope": "explicitly named panels",
+  "inputs": {
+    "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b"
+  },
+  "node_ordering": "per-panel manifest",
+  "reduction": "per-panel manifest",
+  "rendered_counts": {
+    "panels": 5
+  },
+  "renderer_version": "1"
+}

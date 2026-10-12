@@ -1,0 +1,563 @@
+{
+  "audit_script_sha256": "9a6ba2959c2dfcad7fe93989477048343768f8b6341fc8a980c3eb51310f31c6",
+  "bundles": [
+    {
+      "lr": 0.003,
+      "path": "runs/development-61a97ac45aec.json",
+      "sha256": "a5166a9ab59d6670e2d7f8504f137b8ce2fb50f08913115158e9f12c98fa80b2"
+    },
+    {
+      "lr": 0.001,
+      "path": "runs/development-62e5665af1bf.json",
+      "sha256": "2e9ffaea64f4a19020df1c83b4a441bb44943d7e9ab18e0bd453a294a8688aca"
+    },
+    {
+      "lr": 0.0003,
+      "path": "runs/development-63e04511192f.json",
+      "sha256": "a79b6d85b780915fb25c12598d9472b18bd3573a55d8cb520438c35e41991d5c"
+    }
+  ],
+  "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+  "completed_runs": 30,
+  "fixed_time_budget_seconds_recomputed": 35.164231130137345,
+  "learning_rates": {
+    "PARAMETER-MATCHED-GRU": 0.003,
+    "graph": 0.003
+  },
+  "matched_controls": "Exact labelled degrees, edge count, initial edge slots and final sampler RNG states verified; graph realization shared across rates",
+  "reviewed_utc": "2026-10-05T18:49:33.141239+00:00",
+  "runs": [
+    {
+      "checkpoint_sha256": {
+        "best": "4d7e7b3367c2a441e7500642c2fbe3c10b77ef16f65935307675e9b002751380",
+        "final": "d50f8b2b7dd98a79acaa591d9365da957f76256c53fd37706c80dc8bbb2df91d"
+      },
+      "run_id": "development-g101-s901-random-density-k0-95d30aba3335",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.9179058025977116
+        },
+        "final": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.9190720713906133
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "b34532de9bf0b6702fbe48dc9607e536a2c61576d079df7e911fd5123f558670",
+        "final": "9858e027fc4209d5ac164509e6ed22e4a6841a859e214d88aaeb07c64f9642fb"
+      },
+      "run_id": "development-g101-s902-parameter-matched-gru-k0-164d88a85f95",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.7087406586953713
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "4b8484ade10d7b9538c9083562251e99b8d23b7a703e0b4cc9fb3d51e6c0ed70",
+        "final": "9664cef169ea05556877a43e9f9e036322a56d989f8e6c367b08c9bafd533a0c"
+      },
+      "run_id": "development-g101-s902-degree-rewired-k1-c60d91236bec",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.948792775712935
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "01a49bf687ce228679e1d26031afc4049a0f1bef447aba0d870aa8435cd12100",
+        "final": "f3bcf6417c072bb1d5d7d3ab367f393b34c36c0f5924a703afad32e7f94cf646"
+      },
+      "run_id": "development-g101-s902-no-cross-node-recurrence-k0-9e957b931c55",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.0178445748999905
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "40cd9fff37f73fc808a844b178cffa401fba827c3e7bf084623c094bc4839415",
+        "final": "6a08a8e1db225221c2cb8b37441c934bf0cc519649822753b62c85fa691a1d84"
+      },
+      "run_id": "development-g101-s901-fly-topology-k0-652a6445d303",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.9229320531376084
+        },
+        "final": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.934063339355662
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "ce03bd3c53460da2ea3f1863efc366834c8f98cec64b2dc545a0265b6ef92de4",
+        "final": "f6624268db31747fa46867ea3e0e0820e95b698ef5e9bb5075887e690185c43a"
+      },
+      "run_id": "development-g101-s902-random-density-k0-56182a7ddc33",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.924258194495019
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "e08f333172ef1b42825d8ff0840cad4b2145d70a67f8f6886f717db2e882cfe2",
+        "final": "d49f46659902df14ab3de6f32f1a8c5c3cdbadfe6c8a4d08500a623003f21606"
+      },
+      "run_id": "development-g101-s901-degree-rewired-k1-538831dd1233",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.927648685260206
+        },
+        "final": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.9442093277844403
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "e051c31eaa2dc3c96ba6f59a409d7a95c2786460e3dc77501dca0d7cb3f10585",
+        "final": "885c8189bb54ba055c5f4c0c3611514e99eacf7e1bc83fd93aace102b753069c"
+      },
+      "run_id": "development-g101-s901-parameter-matched-gru-k0-d7a6edf3ffec",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.687663320690797
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "156b62ee38cd4c2296791a65b7bf295ed049823cddc2918af92c1a69b018b12c",
+        "final": "0a5c8d0460990863c09fab0c17706737c7e9d84becea65d7290a78d7c05b8ffb"
+      },
+      "run_id": "development-g101-s901-no-cross-node-recurrence-k0-943eaf59c247",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.00367447308752
+        },
+        "final": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.0046403558166537
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "cb3e09a0226638bf1d6c6594affd2bee573d7d29624171eb9cb99093494b8708",
+        "final": "75eeda0cb31a6495727d4b0f339a744330228f3653ccad3df535373685bade3b"
+      },
+      "run_id": "development-g101-s902-fly-topology-k0-9f540865dcfb",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.932888788833632
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "0bbfba6a611bf5d4aae3c00a4852fb6f98ac1ff328cfecddb6be999016acd1b0",
+        "final": "df45d9f2189b943e7e83187e651925fff8d04bae3371a4d79a519ce9c0434c63"
+      },
+      "run_id": "development-g101-s901-random-density-k0-548dec53b0af",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.1844164085130298
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "6addb3cb10d3f7d275acf35b3fa5362d08cbdb719b972cd6ab1da7f00242a644",
+        "final": "ed7d8ec74e7e701d8fef03100e1ffa9794045f8fe2e70f9054ee6057559a5801"
+      },
+      "run_id": "development-g101-s902-parameter-matched-gru-k0-401c39b83e29",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.9224702381495224
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "b60d34b323417fdaf61a0a6dbd06560644670d45126e32f7ebbc1297539b1a89",
+        "final": "84aff5f53d4f7b492d52f83905ca31760f7a6a8cc169b73295b97bde9a8ddd49"
+      },
+      "run_id": "development-g101-s902-degree-rewired-k1-3ec67784c820",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.1893682357267537
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "967fafbbf1fde0cd634d93c4c5c4a60ca0683a4b458c075c7e86cf6ece229949",
+        "final": "5485a78330c44c5002570c8950341a5c6bac1ee438f12756a606ccca4af90b47"
+      },
+      "run_id": "development-g101-s902-no-cross-node-recurrence-k0-835674aba479",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.265916685712567
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "f0e46ea20949d13f659192790d05fda41e5d94ce942d2d215f299332bc10c077",
+        "final": "12dc5db21ba6e6ba0337e8d7a59116becc4e2642ace1ddd62bf56dd2f05497aa"
+      },
+      "run_id": "development-g101-s901-fly-topology-k0-c8024f37abea",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.1845151205731805
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "cb3a00ce1000f8477e0477c7539b47c7b56149cf58fbe9463865102015e978b2",
+        "final": "ae989c76ca2e9dc5ce21b88088d56d323206c1a3b1f0f27da7a9033922a0c6e8"
+      },
+      "run_id": "development-g101-s902-random-density-k0-c9e8310974f3",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.1676895784006316
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "0e11664fa67f7059599d3828c7054531f1a0915a4be488f4b5b321d3210ca0b0",
+        "final": "ddc2413f69b698971195406a595b81c6bc99117c850be2173a6797f5a343952c"
+      },
+      "run_id": "development-g101-s901-degree-rewired-k1-5e6de1b81fc7",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.1977303883969603
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "142dc2c4edb3bc167e95bfa42c474c77223e35fcdedf3e609a1461b120a3cbd6",
+        "final": "6181b70cc4a56e65ce191a7e46b931d93dbe7848bbcdb925a5c219c27215dab3"
+      },
+      "run_id": "development-g101-s901-parameter-matched-gru-k0-95cef0616176",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.9269899406050834
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "2434301b53cdedc471e5dd3172e393bf899f1947c8675c00c4357950fbfa5136",
+        "final": "6e91aec31e7c3f6b553b71123a06b68951de158adec0e4e65a5c851c021aebf4"
+      },
+      "run_id": "development-g101-s901-no-cross-node-recurrence-k0-99a235ddb825",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.2764986831334784
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "3fb632bba161078bcf31d8fa8b4a9e2666aecb5ce8583a5de623bd43612cae8f",
+        "final": "f8fee7a6d73836f5add8fd9ec8ea68fc8154db97edef88d6102b0fb04781ebe7"
+      },
+      "run_id": "development-g101-s902-fly-topology-k0-23f43d511d14",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.173866651442223
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "0718537db3897587ffaf9b337b6615592cd1e9b1ae459d55a9bb03db84ef9b10",
+        "final": "aa672bf8ed02a607e9ab2633046cbffbf47b3d966cf4820505f86589b6ef8786"
+      },
+      "run_id": "development-g101-s901-random-density-k0-779760bbee11",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.4570032989659474
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "fb6e8d793910175886163e21981974a7abe19190095c4f78cec7bc4e178940c7",
+        "final": "29cb788bd5650777c9f914d746870057bc93718512d59f5cec7a734b81e1fc46"
+      },
+      "run_id": "development-g101-s902-parameter-matched-gru-k0-4a096b6ce7ff",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.3425138320892134
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "d21bb8a1368c00751e2c20a47b3ae7f19790c2d637f1f86e5ccf0e9e7b0efbc0",
+        "final": "dbf7e03a12a1e77dd16573a7204e0b2cc7fdb78acc495bed5f676879fd114637"
+      },
+      "run_id": "development-g101-s902-degree-rewired-k1-5fde45e695ad",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.473581623199021
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "cf967f6303a9dbb57d5364bbbee615dc51b5e18b1d14926dfd5ded4b66936ab4",
+        "final": "5e461f783055bc3c2d22acd923b6de9ca010821464f388e8ad37addffd6b45cc"
+      },
+      "run_id": "development-g101-s902-no-cross-node-recurrence-k0-5b894c6804d9",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.522148808577589
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "d3cb17a890c23fc77fbdddaa4631d8ec605ae535f82cdb45e2a036274f459063",
+        "final": "aee1288bba596b7d06827782b11ffd115d9c04e3956797528b153e981d53b56d"
+      },
+      "run_id": "development-g101-s901-fly-topology-k0-b4cd8c1e580e",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.4836351559608505
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "0207c45ad1bf311b2e9063a4832069460e9691c2586af20cd0d808391c80fb77",
+        "final": "3023e9ea64e5981e86719ca715bb032b76f0a11aa2d36d28bec9698124aaa931"
+      },
+      "run_id": "development-g101-s902-random-density-k0-1631f6bb8648",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.450055994470693
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "d091d944283ee2720d62746fe9a9050f4b2daa90db001588f27015db7c269112",
+        "final": "18a887927550ad87b32f7777483c452bc4c1af6605faf459454a182cc4185e3f"
+      },
+      "run_id": "development-g101-s901-degree-rewired-k1-81e54297d8c5",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.477128027349536
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "c1c395668d05975b2bed166b38ae9c35dfe1d6c48455082176becccdf6fc9e2f",
+        "final": "cdaafa2e891bbfec2275c0146a5576d04b2db3017116fe1425bb45fe187e174a"
+      },
+      "run_id": "development-g101-s901-parameter-matched-gru-k0-c668f4816e42",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.346629416474989
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "82c6fc1d088b6cb447b473fde21af300e49c723496cae30de375685929283976",
+        "final": "78132472e2916482bdaad25d9e82ceb260037df8092c4f4341040fc55352e87d"
+      },
+      "run_id": "development-g101-s901-no-cross-node-recurrence-k0-e6b196c03edc",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.534050014624614
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "checkpoint_sha256": {
+        "best": "5c31127e96ae26da9c3bf5d00a400c63be4744fcfc8f35639e736b85eff1a80b",
+        "final": "4131da6ab297b93db6997cff4f0ff45102636cb2a393901688257952d1664bab"
+      },
+      "run_id": "development-g101-s902-fly-topology-k0-4cdf0ea947d6",
+      "status": "passed",
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.4794074747698365
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    }
+  ],
+  "selection_recomputed": {
+    "PARAMETER-MATCHED-GRU": {
+      "0.0003": 3.344571624282101,
+      "0.001": 2.924730089377303,
+      "0.003": 2.698201989693084
+    },
+    "graph": {
+      "0.0003": 3.478438070319811,
+      "0.001": 3.1863700990347796,
+      "0.003": 2.9330655757360953
+    }
+  },
+  "selection_sha256": "b8e1080653f588e9beabf3eb65ba524072dd8beacadc7fb84828cd81d99efa4c",
+  "status": "passed",
+  "test_data_loaded": false,
+  "test_result_files_found": 0,
+  "training_bytes": 30720000,
+  "training_launched": false
+}

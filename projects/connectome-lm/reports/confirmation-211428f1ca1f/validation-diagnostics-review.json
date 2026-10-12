@@ -1,0 +1,1749 @@
+{
+  "interpretation": "Prespecified artificial-model dependence checks and fixed prompt illustrations; no checkpoint selection or topology inference.",
+  "records": [
+    {
+      "checkpoint_sha256": "baa01c9033b8b94bae1f99918581dd12c471a335c870b793f9f4e0bb69d232b2",
+      "condition": "RANDOM-DENSITY",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.49898689235955457,
+          "bpb": 2.4472695258519606,
+          "byte_perplexity": 5.45382922425053,
+          "nll_sum": 94601.95697570313,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.43888181606268717,
+          "bpb": 2.731820561094108,
+          "byte_perplexity": 6.642933909354038,
+          "nll_sum": 105601.59739495697,
+          "scored_bytes": 55769,
+          "seed": 1107006960,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.25322311678531084,
+          "bpb": 3.7779225425841947,
+          "byte_perplexity": 13.717280093983831,
+          "nll_sum": 146039.84647202631,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " fir landous some being and for her'st.\n\nMENENIUS:\nThe should the not a stage.\n\nTRANIO:\nAs believed the remands the daith.\n\nBRUT",
+          "generated_hex": "20666972206c616e646f757320736f6d65206265696e6720616e6420666f72206865722773742e0a0a4d454e454e4955533a0a5468652073686f756c6420746865206e6f7420612073746167652e0a0a5452414e494f3a0a41732062656c6965766564207468652072656d616e6473207468652064616974682e0a0a42525554",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 1863770611,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.23505890369201526,
+          "bpb": 4.329178802866573,
+          "byte_perplexity": 20.100769166980953,
+          "nll_sum": 167349.27743863215,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "a98dcec25d5b5e16c9ff5b8c12249f358e7d2db076002fb967b9544c8d651461",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s33-random-density-k0-9438131a27ed",
+      "training_seed": 33
+    },
+    {
+      "checkpoint_sha256": "be65916d7dfa265faf81b65952ffa8436788ca9626991f336daab9b8ffe64573",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.4963689504922089,
+          "bpb": 2.4702459068819773,
+          "byte_perplexity": 5.541382318693947,
+          "nll_sum": 95490.13483543531,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.4167548279510122,
+          "bpb": 2.867926228026695,
+          "byte_perplexity": 7.300150606804391,
+          "nll_sum": 110862.9150844434,
+          "scored_bytes": 55769,
+          "seed": 418609569,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.23724649895103014,
+          "bpb": 3.797167725494933,
+          "byte_perplexity": 13.901491034321985,
+          "nll_sum": 146783.7906704396,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": "er stoner bagaster.\n\nSecond Will:\nHere our power some if Henromy to the stator's treath.\nNow for the hands, Courniing for a head",
+          "generated_hex": "65722073746f6e65722062616761737465722e0a0a5365636f6e642057696c6c3a0a48657265206f757220706f77657220736f6d652069662048656e726f6d7920746f2074686520737461746f722773207472656174682e0a4e6f7720666f72207468652068616e64732c20436f75726e69696e6720666f7220612068656164",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 548057659,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.21248363786332908,
+          "bpb": 4.399864319501925,
+          "byte_perplexity": 21.110141142962703,
+          "nll_sum": 170081.70561334048,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "87c91b3995531a5fa2725c600a80f0307ad163b27d21e14ad0ddd5756274387b",
+      "null_index": 2,
+      "run_id": "confirmation-g101-s11-degree-rewired-k2-433b3c519d06",
+      "training_seed": 11
+    },
+    {
+      "checkpoint_sha256": "4878ee6995828727c6e5ede6011d5ff708a678359e050110efbc0d7865edd529",
+      "condition": "RANDOM-DENSITY",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.5028600118345318,
+          "bpb": 2.4405572505002104,
+          "byte_perplexity": 5.428513704209001,
+          "nll_sum": 94342.48641991532,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.4404776847352472,
+          "bpb": 2.8132266543002626,
+          "byte_perplexity": 7.028547877705057,
+          "nll_sum": 108748.44151886593,
+          "scored_bytes": 55769,
+          "seed": 544472800,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.2483817174415894,
+          "bpb": 3.799940859046329,
+          "byte_perplexity": 13.928238035406686,
+          "nll_sum": 146890.98926795647,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": ", gastel of the matter's foe,\nAnd that me like thee to this onour own,\nAnd to can to smere thus is the rest shore of they though",
+          "generated_hex": "2c2067617374656c206f6620746865206d6174746572277320666f652c0a416e642074686174206d65206c696b65207468656520746f2074686973206f6e6f7572206f776e2c0a416e6420746f2063616e20746f20736d65726520746875732069732074686520726573742073686f7265206f6620746865792074686f756768",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 656298217,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.2524162168946906,
+          "bpb": 4.2915778217918845,
+          "byte_perplexity": 19.583650644115032,
+          "nll_sum": 165895.7692098507,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "d378670760804d0c93d9911ca60b34aa949622b055608db8bc2e9fcf6d685a6e",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s44-random-density-k0-9bc741527523",
+      "training_seed": 44
+    },
+    {
+      "checkpoint_sha256": "152483c5efac10f21ceb202a449de00325db200db874146683212ecb65f9a155",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.4960282594272804,
+          "bpb": 2.4716461504525857,
+          "byte_perplexity": 5.54676325606885,
+          "nll_sum": 95544.26282608893,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.42579210672595885,
+          "bpb": 2.859217592022928,
+          "byte_perplexity": 7.256216955504754,
+          "nll_sum": 110526.27296152129,
+          "scored_bytes": 55769,
+          "seed": 708222458,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.23882443651490973,
+          "bpb": 3.8129380562709043,
+          "byte_perplexity": 14.054284042416304,
+          "nll_sum": 147393.41054998338,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " in the someth fill thy breaks to bone.\n\nQUEEN ELIZABETH:\nWhat be should him wonth your trume, on the passidate.\n\nClift But, uns",
+          "generated_hex": "20696e2074686520736f6d6574682066696c6c2074687920627265616b7320746f20626f6e652e0a0a515545454e20454c495a41424554483a0a576861742062652073686f756c642068696d20776f6e746820796f7572207472756d652c206f6e20746865207061737369646174652e0a0a436c696674204275742c20756e73",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 235146078,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.21477881977442664,
+          "bpb": 4.396889552759198,
+          "byte_perplexity": 21.066657908071527,
+          "nll_sum": 169966.71265795268,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "e4c32d6dd0c194efb88144bdc18852b3146b9dfe1f867397a2cbf991cb17f127",
+      "null_index": 3,
+      "run_id": "confirmation-g101-s22-degree-rewired-k3-e636f5e7f341",
+      "training_seed": 22
+    },
+    {
+      "checkpoint_sha256": "050e49e456a1beb2b03d6a92a8267cb540845b10e9424e1cf74132dcc0af8ae1",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.4918144488873747,
+          "bpb": 2.486990040917637,
+          "byte_perplexity": 5.60607109686474,
+          "nll_sum": 96137.3981756207,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.41826104108017,
+          "bpb": 2.8747286293003596,
+          "byte_perplexity": 7.334652568933043,
+          "nll_sum": 111125.8695591446,
+          "scored_bytes": 55769,
+          "seed": 1107006960,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.2315623374993276,
+          "bpb": 3.8211558281029983,
+          "byte_perplexity": 14.13456744147197,
+          "nll_sum": 147711.077766072,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": "s is fear unto, thou instrage.\nThe 'stright and make the viercest not a stapth\nOf a covest beliver'd pot\nAnd far my ladys.\n\nDUKI",
+          "generated_hex": "73206973206665617220756e746f2c2074686f7520696e7374726167652e0a54686520277374726967687420616e64206d616b6520746865207669657263657374206e6f742061207374617074680a4f66206120636f766573742062656c69766572276420706f740a416e6420666172206d79206c616479732e0a0a44554b49",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 1863770611,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.21436640427477632,
+          "bpb": 4.379116725684045,
+          "byte_perplexity": 20.808725870701707,
+          "nll_sum": 169279.6840309301,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "fe2641c1345c5e61cd00f91573e1df8050935e41bd313dac9f3c74455378bacd",
+      "null_index": 1,
+      "run_id": "confirmation-g101-s33-degree-rewired-k1-179fd9d1549d",
+      "training_seed": 33
+    },
+    {
+      "checkpoint_sha256": "91d895dd47fbcc30087a10701a196a01179963d7e200074226d2850b3380dbe1",
+      "condition": "FLY-TOPOLOGY",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.4907027201491868,
+          "bpb": 2.4816927716328157,
+          "byte_perplexity": 5.585524540755358,
+          "nll_sum": 95932.62627139129,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.41449550825727555,
+          "bpb": 2.916284929752167,
+          "byte_perplexity": 7.548996773631201,
+          "nll_sum": 112732.27510862844,
+          "scored_bytes": 55769,
+          "seed": 1107006960,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.23853753877602252,
+          "bpb": 3.820727413280818,
+          "byte_perplexity": 14.130370740841164,
+          "nll_sum": 147694.5169091057,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " you land, hose eyes in that daught'st.\n\nMENENIUS:\nThe should the not a stanthink the gost\nAll have thou duke and done the warwa",
+          "generated_hex": "20796f75206c616e642c20686f7365206579657320696e2074686174206461756768742773742e0a0a4d454e454e4955533a0a5468652073686f756c6420746865206e6f742061207374616e7468696e6b2074686520676f73740a416c6c20686176652074686f752064756b6520616e6420646f6e6520746865207761727761",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 1863770611,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.23312234395452672,
+          "bpb": 4.333322559519121,
+          "byte_perplexity": 20.15858625668033,
+          "nll_sum": 167509.45901422942,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "a1bc1bddfaf13c4a2ba82ed5cc799cc3e5d87a4cb99cb2ad823c880db55bc18b",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s33-fly-topology-k0-441b7753ad8e",
+      "training_seed": 33
+    },
+    {
+      "checkpoint_sha256": "1bda1c72d90e9401c1b074d7c1c6588adb927f4ceec0d578ca4b3ce837a2b02a",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.49125858451828075,
+          "bpb": 2.485834497351223,
+          "byte_perplexity": 5.601582646042572,
+          "nll_sum": 96092.72933894431,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.43145833706898096,
+          "bpb": 2.8137588458667224,
+          "byte_perplexity": 7.031141096508132,
+          "nll_sum": 108769.01398264291,
+          "scored_bytes": 55769,
+          "seed": 1107006960,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.2457817066829242,
+          "bpb": 3.8270383377888897,
+          "byte_perplexity": 14.192318020254485,
+          "nll_sum": 147938.4727964662,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " yie less thy commone:\nIt all the to this bear ome, go sid.\n\nLEONTES:\nFor hath chanks anstribly that powred,\nWhence it the the b",
+          "generated_hex": "20796965206c6573732074687920636f6d6d6f6e653a0a497420616c6c2074686520746f20746869732062656172206f6d652c20676f207369642e0a0a4c454f4e5445533a0a466f722068617468206368616e6b7320616e73747269626c79207468617420706f777265642c0a5768656e636520697420746865207468652062",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 1863770611,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.238716849862827,
+          "bpb": 4.264755165510518,
+          "byte_perplexity": 19.222914265252783,
+          "nll_sum": 164858.90925278468,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "e60a7ece3027e300a29ec774633e932b3658afdf75acf52db1eef6a40163e7b2",
+      "null_index": 2,
+      "run_id": "confirmation-g101-s33-degree-rewired-k2-5ca50db997c9",
+      "training_seed": 33
+    },
+    {
+      "checkpoint_sha256": "30bef750fa1eff06b2d12ffbe66491b56afa052598312f55c5d0b7be46bce94e",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.49335652423389337,
+          "bpb": 2.4815637282130565,
+          "byte_perplexity": 5.585024959809168,
+          "nll_sum": 95927.6379528121,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.4215065717513314,
+          "bpb": 2.91245226281722,
+          "byte_perplexity": 7.528968706674018,
+          "nll_sum": 112584.11905607604,
+          "scored_bytes": 55769,
+          "seed": 544472800,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.24547687783535657,
+          "bpb": 3.8028167293213864,
+          "byte_perplexity": 13.956030295589064,
+          "nll_sum": 147002.15926911682,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " his beluch in the\nwill to be.\n\nMENENIUS:\nI know, let it is on it.\n\nBUCKINGHAMARD:\nI see, I subject that enestere comptiant.\n\nLU",
+          "generated_hex": "206869732062656c75636820696e207468650a77696c6c20746f2062652e0a0a4d454e454e4955533a0a49206b6e6f772c206c6574206974206973206f6e2069742e0a0a4255434b494e4748414d4152443a0a49207365652c2049207375626a656374207468617420656e65737465726520636f6d707469616e742e0a0a4c55",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 656298217,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.2330506195198049,
+          "bpb": 4.386560738572543,
+          "byte_perplexity": 20.916372140168143,
+          "nll_sum": 169567.44072448806,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "37fde4c9ce27ff3232797b4d49d84f26be4fb2e788137a03192f3fcd32688e82",
+      "null_index": 1,
+      "run_id": "confirmation-g101-s44-degree-rewired-k1-7173fb89a8cc",
+      "training_seed": 44
+    },
+    {
+      "checkpoint_sha256": "7d26959ec95ca799e4f26d49bc925916f6e6c5febba50d94e9b172b834b4d493",
+      "condition": "FLY-TOPOLOGY",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.4944861840807617,
+          "bpb": 2.501371985976537,
+          "byte_perplexity": 5.6622364099772415,
+          "nll_sum": 96693.34844318079,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.4241065825099966,
+          "bpb": 2.8589995002470965,
+          "byte_perplexity": 7.255120118274297,
+          "nll_sum": 110517.8423785487,
+          "scored_bytes": 55769,
+          "seed": 544472800,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.24074306514371785,
+          "bpb": 3.8312661539649,
+          "byte_perplexity": 14.233969592200701,
+          "nll_sum": 148101.90378751932,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " so suclulsher hath sour,\nIt so lies are this, indeed in Peains,\nI would to my speak sor, I suffict heard to mere for\nthat to du",
+          "generated_hex": "20736f207375636c756c73686572206861746820736f75722c0a497420736f206c6965732061726520746869732c20696e6465656420696e20506561696e732c0a4920776f756c6420746f206d7920737065616b20736f722c2049207375666669637420686561726420746f206d65726520666f720a7468617420746f206475",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 656298217,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.2305223331958615,
+          "bpb": 4.392268460632287,
+          "byte_perplexity": 20.999287314644185,
+          "nll_sum": 169788.0791425377,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "9c239c5cc5d40b8f4c8bbee7b32b5e26887ac78efc8891b1c78322a3dcde0dda",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s44-fly-topology-k0-c1ad62d7f5e0",
+      "training_seed": 44
+    },
+    {
+      "checkpoint_sha256": "e70b86ea68397d1dc82196bb2d983e33be6e7e83a8cc730e9d0b17b8978fb658",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.5183524897344403,
+          "bpb": 2.3513519368944715,
+          "byte_perplexity": 5.103022266890771,
+          "nll_sum": 90894.15465645894,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "reset_each_byte": {
+          "accuracy": 0.24954723950581864,
+          "bpb": 3.7632237843472556,
+          "byte_perplexity": 13.578232458123415,
+          "nll_sum": 145471.64943461865,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " is thee the could quick;\nHere not one are shall for you at thou lord; I'll peria\nDo not come, on the passing master I soul, upo",
+          "generated_hex": "20697320746865652074686520636f756c6420717569636b3b0a48657265206e6f74206f6e6520617265207368616c6c20666f7220796f752061742074686f75206c6f72643b2049276c6c2070657269610a446f206e6f7420636f6d652c206f6e207468652070617373696e67206d6173746572204920736f756c2c2075706f",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 235146078,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.1824848930409367,
+          "bpb": 4.766913362192097,
+          "byte_perplexity": 27.226004298623643,
+          "nll_sum": 184270.3993300493,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "8d9ad45c8a38dbff0d146870ff05a3fe559cceb59ce1d0176f3ea55eb0207a6c",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s22-parameter-matched-gru-k0-cc0f8c65e228",
+      "training_seed": 22
+    },
+    {
+      "checkpoint_sha256": "d6254fe9d6a51a69d3f441e15d3124aea66a860e637303f2dd55670b0a6ad18a",
+      "condition": "RANDOM-DENSITY",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.49575929279707365,
+          "bpb": 2.4603538153445195,
+          "byte_perplexity": 5.503516823150096,
+          "nll_sum": 95107.74490733759,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.44442252864494614,
+          "bpb": 2.745303416185264,
+          "byte_perplexity": 6.705307136108456,
+          "nll_sum": 106122.79232823639,
+          "scored_bytes": 55769,
+          "seed": 1120852130,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.24429342466244688,
+          "bpb": 3.807368454287671,
+          "byte_perplexity": 14.000131318195514,
+          "nll_sum": 147178.11131889187,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": "s not see him, sick and\nDeserves since of will unclier tell regs,\nUnelliegt here it shall need best riberious as hast are the tr",
+          "generated_hex": "73206e6f74207365652068696d2c207369636b20616e640a44657365727665732073696e6365206f662077696c6c20756e636c6965722074656c6c20726567732c0a556e656c6c696567742068657265206974207368616c6c206e6565642062657374207269626572696f757320617320686173742061726520746865207472",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 2137888738,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.23093474869551184,
+          "bpb": 4.421686012734497,
+          "byte_perplexity": 21.431872711571234,
+          "nll_sum": 170925.24771710858,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "4e41e69493451989f90b6b0c77346715262432a99ce8a25125d43b172f02d000",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s55-random-density-k0-092b284e9d5e",
+      "training_seed": 55
+    },
+    {
+      "checkpoint_sha256": "5c55876c5165e246b71f928734da8a6abe47a78aeade4af7f1a4866295caa89b",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.5266725241621689,
+          "bpb": 2.33724603780379,
+          "byte_perplexity": 5.05337077782555,
+          "nll_sum": 90348.87525638315,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "reset_each_byte": {
+          "accuracy": 0.2533844967634349,
+          "bpb": 3.7629336567783835,
+          "byte_perplexity": 13.57550213509828,
+          "nll_sum": 145460.4342270177,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " we would have sin?\n\nKING RICHARD III:\nWhy, and let wretched forcester.\n\nSecond Sith\nThee is my melience, of his hand his father",
+          "generated_hex": "20776520776f756c6420686176652073696e3f0a0a4b494e472052494348415244204949493a0a5768792c20616e64206c657420777265746368656420666f726365737465722e0a0a5365636f6e6420536974680a54686565206973206d79206d656c69656e63652c206f66206869732068616e642068697320666174686572",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 2137888738,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.21151535799458482,
+          "bpb": 4.350952270191953,
+          "byte_perplexity": 20.40643513363995,
+          "nll_sum": 168190.95531569817,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "bcd579e4d17cb715e0f0d04c4f965927d8e5d408dc10f2a89c9703ddc786529f",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s55-parameter-matched-gru-k0-a4a6bfda6469",
+      "training_seed": 55
+    },
+    {
+      "checkpoint_sha256": "f3b95cb8a287b3d4679c6600a51925fc362330aabce1108afed517353b8b40d2",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.4915992755832093,
+          "bpb": 2.4888253567103273,
+          "byte_perplexity": 5.6132073646075415,
+          "nll_sum": 96208.34437252418,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.4320500636554358,
+          "bpb": 2.8046838822527205,
+          "byte_perplexity": 6.9870520238241705,
+          "nll_sum": 108418.21105378732,
+          "scored_bytes": 55769,
+          "seed": 1120852130,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.2393265075579623,
+          "bpb": 3.829848449745203,
+          "byte_perplexity": 14.219989058249878,
+          "nll_sum": 148047.10083582997,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": "s now dear thee in would men a their?\n\nKING EDWARD IV:\nWere you chate of go drabbit the clore have I womend\nWhat have his the tr",
+          "generated_hex": "73206e6f772064656172207468656520696e20776f756c64206d656e20612074686569723f0a0a4b494e47204544574152442049563a0a5765726520796f75206368617465206f6620676f20647261626269742074686520636c6f72652068617665204920776f6d656e640a5768617420686176652068697320746865207472",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 2137888738,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.22819128906740305,
+          "bpb": 4.499846408745239,
+          "byte_perplexity": 22.625008180942828,
+          "nll_sum": 173946.6257641539,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "ffbc99c75255ecc72266b899efacfd4819dc41b7fd7a549d13a5df667f07e6d2",
+      "null_index": 2,
+      "run_id": "confirmation-g101-s55-degree-rewired-k2-d5134214f31b",
+      "training_seed": 55
+    },
+    {
+      "checkpoint_sha256": "e4e5747ae4d1283051459e35e1134e9d61b1f85dc0732c46a031cc208fa5d96e",
+      "condition": "FLY-TOPOLOGY",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.48955512919363803,
+          "bpb": 2.503778240539975,
+          "byte_perplexity": 5.671688269478507,
+          "nll_sum": 96786.36492063792,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.408255482436479,
+          "bpb": 2.9165620142595494,
+          "byte_perplexity": 7.55044677579597,
+          "nll_sum": 112742.9861220126,
+          "scored_bytes": 55769,
+          "seed": 418609569,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.22923129337086912,
+          "bpb": 3.8092669624615736,
+          "byte_perplexity": 14.018566856657593,
+          "nll_sum": 147251.50028838962,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": ", as say both to the feelloud,\nWhat the suppoft aster if thine; and the stress'd that\nFor thou are my fortune.\n\nBRUTUS:\nThat the",
+          "generated_hex": "2c2061732073617920626f746820746f20746865206665656c6c6f75642c0a576861742074686520737570706f6674206173746572206966207468696e653b20616e642074686520737472657373276420746861740a466f722074686f7520617265206d7920666f7274756e652e0a0a4252555455533a0a5468617420746865",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 548057659,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.2283526690455271,
+          "bpb": 4.503441546526825,
+          "byte_perplexity": 22.681459095151308,
+          "nll_sum": 174085.5998600361,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "6ab7ddca7aa618fab1376c5a8c94e7747cf1882eef36fbe7f6bbdb275a78f2e6",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s11-fly-topology-k0-0e7e467b04a2",
+      "training_seed": 11
+    },
+    {
+      "checkpoint_sha256": "cb55cfe3126e1be0cee615812bef5167fa1568ed7efaa8b4a4cf9a27a30142c5",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.5182090408649966,
+          "bpb": 2.360112816822504,
+          "byte_perplexity": 5.134105054702516,
+          "nll_sum": 91232.81632705384,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "reset_each_byte": {
+          "accuracy": 0.246929297638473,
+          "bpb": 3.7519773287747666,
+          "byte_perplexity": 13.472795537881552,
+          "nll_sum": 145036.90504093468,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " you feat,\nAnd meet upon you have to the prince make the diedness not ere herefore as answer of the mother:\nNor the queen.\n\nDUKE",
+          "generated_hex": "20796f7520666561742c0a416e64206d6565742075706f6e20796f75206861766520746f20746865207072696e6365206d616b652074686520646965646e657373206e6f74206572652068657265666f726520617320616e73776572206f6620746865206d6f746865723a0a4e6f722074686520717565656e2e0a0a44554b45",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 1863770611,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.22257885205042227,
+          "bpb": 4.290647625118062,
+          "byte_perplexity": 19.571027896601134,
+          "nll_sum": 165859.81141084805,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "afd2437c40cdeaba647f94a7f147fed4c4b9c04d9630b3a70a336784932ceda4",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s33-parameter-matched-gru-k0-606ee820776e",
+      "training_seed": 33
+    },
+    {
+      "checkpoint_sha256": "c6f8cfedc10948d7197a83341a95fa3b12b905532990ce930060ac31ec458e94",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.48399648550269864,
+          "bpb": 2.5206013279085107,
+          "byte_perplexity": 5.73821223071895,
+          "nll_sum": 97436.68029073704,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.41731069232010615,
+          "bpb": 2.9355894140495025,
+          "byte_perplexity": 7.650687596005007,
+          "nll_sum": 113478.51166886139,
+          "scored_bytes": 55769,
+          "seed": 1107006960,
+          "selected_edges": 51
+        },
+        "reset_each_byte": {
+          "accuracy": 0.22840646237156845,
+          "bpb": 3.7839696360471247,
+          "byte_perplexity": 13.774897094405686,
+          "nll_sum": 146273.60367349721,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " and fenes. Good to live,\nYou are to this by his accam of he canton.\nWe shall fear and the being stance and by your had\nIn the b",
+          "generated_hex": "20616e642066656e65732e20476f6f6420746f206c6976652c0a596f752061726520746f20746869732062792068697320616363616d206f662068652063616e746f6e2e0a5765207368616c6c206665617220616e6420746865206265696e67207374616e636520616e6420627920796f7572206861640a496e207468652062",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 1863770611,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.22476644730943715,
+          "bpb": 4.77730665571576,
+          "byte_perplexity": 27.422850866997397,
+          "nll_sum": 184672.16378483246,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "54e71488475d795128626576d0366b103135b7c7b2ff37017b3ae4fdc9943108",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s33-no-cross-node-recurrence-k0-ea6386659d61",
+      "training_seed": 33
+    },
+    {
+      "checkpoint_sha256": "e503f078ed313a9b5b8a89ca9affcfb38104ac3430ea71979bb61e0ad2fe65fb",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.49550825727554737,
+          "bpb": 2.470944509488172,
+          "byte_perplexity": 5.544066296569604,
+          "nll_sum": 95517.1401051844,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.43274937689397336,
+          "bpb": 2.8200736458310223,
+          "byte_perplexity": 7.061984457070519,
+          "nll_sum": 109013.11968012422,
+          "scored_bytes": 55769,
+          "seed": 418609569,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.2433610070110635,
+          "bpb": 3.815979681526709,
+          "byte_perplexity": 14.08394586165128,
+          "nll_sum": 147510.98799641756,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": ", as sir, but to the fight out fook to our cofford,\nIt do give your walse of bear,\nWhat to the greamentos do then?\n\nSecond Murde",
+          "generated_hex": "2c206173207369722c2062757420746f20746865206669676874206f757420666f6f6b20746f206f757220636f66666f72642c0a497420646f206769766520796f75722077616c7365206f6620626561722c0a5768617420746f2074686520677265616d656e746f7320646f207468656e3f0a0a5365636f6e64204d75726465",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 548057659,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.23685201456006025,
+          "bpb": 4.267066689451854,
+          "byte_perplexity": 19.25373841113828,
+          "nll_sum": 164948.2638114618,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "1a61121d5458a99980a0a07f97aaedc1dc5ffe153cec689f5c7cb9ec4910cdc3",
+      "null_index": 3,
+      "run_id": "confirmation-g101-s11-degree-rewired-k3-287ca1ae66b9",
+      "training_seed": 11
+    },
+    {
+      "checkpoint_sha256": "97e99334ebdafae3529d043ddeb2cc9a0e2064338c83c576edd2961bcdf2d8be",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.49740895479567504,
+          "bpb": 2.4730524111813845,
+          "byte_perplexity": 5.552172575402837,
+          "nll_sum": 95598.62341676239,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.43798526062866466,
+          "bpb": 2.778830382326135,
+          "byte_perplexity": 6.862957318018274,
+          "nll_sum": 107418.8149260254,
+          "scored_bytes": 55769,
+          "seed": 418609569,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.24778999085513456,
+          "bpb": 3.7857562118394186,
+          "byte_perplexity": 13.791965942111107,
+          "nll_sum": 146342.66577084735,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": ", as I\nrea, the partinggar them.\n\nNurse:\nI to garve his come. By thy good from him;\nAre a those you shall do then woll drancher\n",
+          "generated_hex": "2c20617320490a7265612c207468652070617274696e67676172207468656d2e0a0a4e757273653a0a4920746f2067617276652068697320636f6d652e2042792074687920676f6f642066726f6d2068696d3b0a41726520612074686f736520796f75207368616c6c20646f207468656e20776f6c6c206472616e636865720a",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 548057659,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.24262583155516507,
+          "bpb": 4.4024232107489185,
+          "byte_perplexity": 21.14761717790825,
+          "nll_sum": 170180.6224335339,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "db918500b3f1a425ebf61288a99e477977e161f74717e881171e1d8cf472d354",
+      "null_index": 1,
+      "run_id": "confirmation-g101-s11-degree-rewired-k1-fa1b878851d5",
+      "training_seed": 11
+    },
+    {
+      "checkpoint_sha256": "890d9f1d47e20c46440a882ad956bbd197f1dc6788620ec3a2ae47cacc2bab09",
+      "condition": "FLY-TOPOLOGY",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.4911330667575176,
+          "bpb": 2.4925572872352264,
+          "byte_perplexity": 5.627746277352137,
+          "nll_sum": 96352.60634580639,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.42507486237874087,
+          "bpb": 2.8730983701188504,
+          "byte_perplexity": 7.32636902257047,
+          "nll_sum": 111062.85005625815,
+          "scored_bytes": 55769,
+          "seed": 708222458,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.23955961197080816,
+          "bpb": 3.826569085492328,
+          "byte_perplexity": 14.187702564686571,
+          "nll_sum": 147920.3333209809,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " is the some than a king;\nHere sun of thou servosce: must there from I know me\nThat his trumber's sigh.\n\nQUEEN:\nI would of Harra",
+          "generated_hex": "2069732074686520736f6d65207468616e2061206b696e673b0a486572652073756e206f662074686f7520736572766f7363653a206d7573742074686572652066726f6d2049206b6e6f77206d650a5468617420686973207472756d626572277320736967682e0a0a515545454e3a0a4920776f756c64206f66204861727261",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 235146078,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.22275816313722677,
+          "bpb": 4.4112366126302955,
+          "byte_perplexity": 21.277203063037994,
+          "nll_sum": 170521.31439932843,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "a2ae331f6993c5fde99ff8398175618cd7f8592528ffe30655ac874cb1d706cd",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s22-fly-topology-k0-b3143798f03f",
+      "training_seed": 22
+    },
+    {
+      "checkpoint_sha256": "adf03f0bf17886e63940054ec182b54e4db91bcf36686eed141f57a5e1c6f1f3",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.49055927127974325,
+          "bpb": 2.4834726703828127,
+          "byte_perplexity": 5.592419832598126,
+          "nll_sum": 96001.43026015902,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.44200182897308543,
+          "bpb": 2.776082599402685,
+          "byte_perplexity": 6.84989844610082,
+          "nll_sum": 107312.59628555411,
+          "scored_bytes": 55769,
+          "seed": 1120852130,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.2352561458875002,
+          "bpb": 3.8021176878610126,
+          "byte_perplexity": 13.949269697983485,
+          "nll_sum": 146975.13703496568,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " with dear thee in would me detter?\n\nCORIOLANUS:\nYour brether's chance. But wrothings weep,\nAs best your in his neart his the tr",
+          "generated_hex": "20776974682064656172207468656520696e20776f756c64206d65206465747465723f0a0a434f52494f4c414e55533a0a596f757220627265746865722773206368616e63652e204275742077726f7468696e677320776565702c0a4173206265737420796f757220696e20686973206e656172742068697320746865207472",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 2137888738,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.22311678531083576,
+          "bpb": 4.434387000211903,
+          "byte_perplexity": 21.621384470162223,
+          "nll_sum": 171416.21867808932,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "02914af54daf4f586194de4cee42ccf0e0c7c4b080da36a2223d774586d202b6",
+      "null_index": 1,
+      "run_id": "confirmation-g101-s55-degree-rewired-k1-4128dcbedf59",
+      "training_seed": 55
+    },
+    {
+      "checkpoint_sha256": "dbde703ffd4936528bd1e1168811c16200aa56de057bb28fb094b0f21e2f9b33",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.47877853287668776,
+          "bpb": 2.5481596953140344,
+          "byte_perplexity": 5.848877183768255,
+          "nll_sum": 98501.97998906526,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.3927988667539314,
+          "bpb": 3.0285042158650377,
+          "byte_perplexity": 8.159632723114013,
+          "nll_sum": 117070.23787265958,
+          "scored_bytes": 55769,
+          "seed": 1120852130,
+          "selected_edges": 51
+        },
+        "reset_each_byte": {
+          "accuracy": 0.24009754523122165,
+          "bpb": 3.8331552695989095,
+          "byte_perplexity": 14.252620260927173,
+          "nll_sum": 148174.92967781983,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " were dell my eself and\nWill retheir was not and in ere every gives and well!\n\nMENIUS:\nThere epalso retent,\nWhat have his the tr",
+          "generated_hex": "20776572652064656c6c206d79206573656c6620616e640a57696c6c207265746865697220776173206e6f7420616e6420696e2065726520657665727920676976657320616e642077656c6c210a0a4d454e4955533a0a5468657265206570616c736f20726574656e742c0a5768617420686176652068697320746865207472",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 2137888738,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.21718158833760692,
+          "bpb": 5.062640839016739,
+          "byte_perplexity": 33.42002341355358,
+          "nll_sum": 195702.0776734302,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "8cc00daf1a6e037ebea29e229dcc6c70f16684687765a07faa668368b91a8bb7",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s55-no-cross-node-recurrence-k0-b660723cb173",
+      "training_seed": 55
+    },
+    {
+      "checkpoint_sha256": "b7b9e84f93769d0c31d8feefa0006d371e11ef7211e66fb8cabc32698b6e6c0c",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.4939482508203482,
+          "bpb": 2.492803685972517,
+          "byte_perplexity": 5.628707525543214,
+          "nll_sum": 96362.13116622268,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.430543850526278,
+          "bpb": 2.8399232990013408,
+          "byte_perplexity": 7.1598199048999405,
+          "nll_sum": 109780.43035651871,
+          "scored_bytes": 55769,
+          "seed": 1120852130,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.24587136222632647,
+          "bpb": 3.8149493444770703,
+          "byte_perplexity": 14.073891047380187,
+          "nll_sum": 147471.15915851854,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " we would he grown wond\nHe shouthold the counterled with there is confule,\nThat hip shall not pressing pridon royal:\nShall be th",
+          "generated_hex": "20776520776f756c642068652067726f776e20776f6e640a48652073686f7574686f6c642074686520636f756e7465726c6564207769746820746865726520697320636f6e66756c652c0a5468617420686970207368616c6c206e6f74207072657373696e6720707269646f6e20726f79616c3a0a5368616c6c206265207468",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 2137888738,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.22706162922053472,
+          "bpb": 4.352312654359262,
+          "byte_perplexity": 20.425686384230136,
+          "nll_sum": 168243.54249627097,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "c4d03c866df0a5aa4d7e12018a0cf9445a6893ac15fa7fd45745d2c391b69db7",
+      "null_index": 3,
+      "run_id": "confirmation-g101-s55-degree-rewired-k3-5492e03de7b5",
+      "training_seed": 55
+    },
+    {
+      "checkpoint_sha256": "7ed0c40acb03048fbe850161f7ecb424a9dfd16d743ca79544efe995b556d663",
+      "condition": "FLY-TOPOLOGY",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.48645304739192025,
+          "bpb": 2.5015119339699683,
+          "byte_perplexity": 5.662785699353583,
+          "nll_sum": 96698.75829032413,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.42134519177320734,
+          "bpb": 2.901167447001841,
+          "byte_perplexity": 7.470306553254384,
+          "nll_sum": 112147.89180404355,
+          "scored_bytes": 55769,
+          "seed": 1120852130,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.2388961609496315,
+          "bpb": 3.817466247316296,
+          "byte_perplexity": 14.098465563944265,
+          "nll_sum": 147568.45286956802,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": "s now dear this shall parted\nAnd mine your brance tier, but you chided.\n\nSheprethip shall prother, and mand mirdreant his the tr",
+          "generated_hex": "73206e6f7720646561722074686973207368616c6c207061727465640a416e64206d696e6520796f7572206272616e636520746965722c2062757420796f75206368696465642e0a0a53686570726574686970207368616c6c2070726f746865722c20616e64206d616e64206d6972647265616e742068697320746865207472",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 2137888738,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.22743818250282416,
+          "bpb": 4.3399119145018,
+          "byte_perplexity": 20.25086902436997,
+          "nll_sum": 167764.17794485152,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "33bd14934a4639644ad01e29cbefbeea276981bd0b553e8ad71ea6a250c06222",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s55-fly-topology-k0-c2120cf559b9",
+      "training_seed": 55
+    },
+    {
+      "checkpoint_sha256": "228aa4663de65b75eb8fa63fd9a54e1474bdc153057324f2bf8b55476138846a",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.49161720669188974,
+          "bpb": 2.48691488866732,
+          "byte_perplexity": 5.6057790754234125,
+          "nll_sum": 96134.49308082997,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.43430938334917246,
+          "bpb": 2.7811793754323055,
+          "byte_perplexity": 6.874140672932615,
+          "nll_sum": 107509.61789742627,
+          "scored_bytes": 55769,
+          "seed": 708222458,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.23667270347325575,
+          "bpb": 3.7896283495155787,
+          "byte_perplexity": 13.829032765838617,
+          "nll_sum": 146492.3476093104,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " is the some that and there is none\nI say is dost, the king servils, I know?\n\nKING RICHARD II:\nAn a gone at the sorried of Haurs",
+          "generated_hex": "2069732074686520736f6d65207468617420616e64207468657265206973206e6f6e650a492073617920697320646f73742c20746865206b696e672073657276696c732c2049206b6e6f773f0a0a4b494e4720524943484152442049493a0a416e206120676f6e652061742074686520736f7272696564206f66204861757273",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 235146078,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.2211085011386254,
+          "bpb": 4.366288197900372,
+          "byte_perplexity": 20.6245137025956,
+          "nll_sum": 168783.78285591336,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "d0401af97767c6144452ddedd31a9176847e385e0f5bc370f6b74ba2f1538a61",
+      "null_index": 1,
+      "run_id": "confirmation-g101-s22-degree-rewired-k1-e089e6113d5a",
+      "training_seed": 22
+    },
+    {
+      "checkpoint_sha256": "e0cb2dbb178d9eb654d4a89c514f75bdfad2f98847585845ea7cc270d75b78a5",
+      "condition": "RANDOM-DENSITY",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.5018917319657874,
+          "bpb": 2.4381137724974815,
+          "byte_perplexity": 5.419327267123211,
+          "nll_sum": 94248.03102853184,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.4351880076745145,
+          "bpb": 2.7859162463488505,
+          "byte_perplexity": 6.8967479674216055,
+          "nll_sum": 107692.72697221872,
+          "scored_bytes": 55769,
+          "seed": 708222458,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.24241065825099967,
+          "bpb": 3.846923968103492,
+          "byte_perplexity": 14.389294639923772,
+          "nll_sum": 148707.1742098513,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " is the somet have queen;\nHere sun of thou shall for his kin.\n\nBALINDIUS:\nOf would you mectines you foul sitly as rege.\nBean up ",
+          "generated_hex": "2069732074686520736f6d6574206861766520717565656e3b0a486572652073756e206f662074686f75207368616c6c20666f7220686973206b696e2e0a0a42414c494e444955533a0a4f6620776f756c6420796f75206d656374696e657320796f7520666f756c207369746c7920617320726567652e0a4265616e20757020",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 235146078,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.22910577561010598,
+          "bpb": 4.276110586392506,
+          "byte_perplexity": 19.374814417084913,
+          "nll_sum": 165297.86582310556,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "af4af088cf522b7dbe3627d4b9439e538b8e955401b525d26efbcfde4dc714af",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s22-random-density-k0-71ad53bd4904",
+      "training_seed": 22
+    },
+    {
+      "checkpoint_sha256": "c0e42efeb43573d7b1246ca0dd8c4b6a2d66b1372ed94691451914d04919402f",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.4926751421040363,
+          "bpb": 2.479268183973341,
+          "byte_perplexity": 5.576145413464585,
+          "nll_sum": 95838.90110748005,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.42704728433359035,
+          "bpb": 2.8354649651285326,
+          "byte_perplexity": 7.137728197896697,
+          "nll_sum": 109608.08844453748,
+          "scored_bytes": 55769,
+          "seed": 708222458,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.24540515340063476,
+          "bpb": 3.8376401353964207,
+          "byte_perplexity": 14.29699592259181,
+          "nll_sum": 148348.29721120186,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " in the something and there is now of the post\nso, the highreed from I know me that house?\nWhere is nother, as as I geneoral up\n",
+          "generated_hex": "20696e2074686520736f6d657468696e6720616e64207468657265206973206e6f77206f662074686520706f73740a736f2c207468652068696768726565642066726f6d2049206b6e6f77206d65207468617420686f7573653f0a5768657265206973206e6f746865722c20617320617320492067656e656f72616c2075700a",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 235146078,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.2234933385931252,
+          "bpb": 4.408011623962803,
+          "byte_perplexity": 21.229693298989222,
+          "nll_sum": 170396.648833911,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "b96a162b175d1722997b77292c7b754e5036d6577e45fcb15395ff1fe1a1af92",
+      "null_index": 2,
+      "run_id": "confirmation-g101-s22-degree-rewired-k2-f39a97b7053f",
+      "training_seed": 22
+    },
+    {
+      "checkpoint_sha256": "c9a38cc6b1c8950fc5ebcd604204ab5a8a985159dbf70c8fb352f8dd414f1d4e",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.4786171528985637,
+          "bpb": 2.542465298154664,
+          "byte_perplexity": 5.825836842533911,
+          "nll_sum": 98281.85666003154,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.3926554178844878,
+          "bpb": 3.112047752794995,
+          "byte_perplexity": 8.646089394675258,
+          "nll_sum": 120299.70728857708,
+          "scored_bytes": 55769,
+          "seed": 708222458,
+          "selected_edges": 51
+        },
+        "reset_each_byte": {
+          "accuracy": 0.23835822768921802,
+          "bpb": 3.865789361316134,
+          "byte_perplexity": 14.578691793170792,
+          "nll_sum": 149436.43721017847,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " in thee the fault quice;\nAnd groud worsh possold, the his pardon who\nin him would pany tralies in in?\n\nBUCHESS OF YORK:\nI maugh",
+          "generated_hex": "20696e207468656520746865206661756c742071756963653b0a416e642067726f756420776f72736820706f73736f6c642c207468652068697320706172646f6e2077686f0a696e2068696d20776f756c642070616e79207472616c69657320696e20696e3f0a0a42554348455353204f4620594f524b3a0a49206d61756768",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 235146078,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.2063153364772544,
+          "bpb": 4.854524734755806,
+          "byte_perplexity": 28.930607937544213,
+          "nll_sum": 187657.11550916277,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "dc9504aefcda82c759a9cd13bb3156a0580414e0adda99fd88c7f14a67d3ec0e",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s22-no-cross-node-recurrence-k0-b204a2b28a73",
+      "training_seed": 22
+    },
+    {
+      "checkpoint_sha256": "9491feb4cff2606c4a705faafa3644c19e0974e32719d0f6e9ea3ee1991d5a74",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.49253169323459267,
+          "bpb": 2.482895196728461,
+          "byte_perplexity": 5.590181778973296,
+          "nll_sum": 95979.10736632714,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.4196417364485646,
+          "bpb": 2.905877187354027,
+          "byte_perplexity": 7.494733541847133,
+          "nll_sum": 112329.95211634575,
+          "scored_bytes": 55769,
+          "seed": 544472800,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.2562355430436264,
+          "bpb": 3.813056193503841,
+          "byte_perplexity": 14.05543494552607,
+          "nll_sum": 147397.97727764025,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": ", gay though there\nwill the this in cormss inchilse and thear's show\nIn wised unnot there: you risterant to shere for\nthan to du",
+          "generated_hex": "2c206761792074686f7567682074686572650a77696c6c20746865207468697320696e20636f726d737320696e6368696c736520616e6420746865617227732073686f770a496e20776973656420756e6e6f742074686572653a20796f7520726973746572616e7420746f20736865726520666f720a7468616e20746f206475",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 656298217,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.24018720077462388,
+          "bpb": 4.417853709420305,
+          "byte_perplexity": 21.375017698254165,
+          "nll_sum": 170777.10572072555,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "0193db29b9b217094d7a942e1002b0cdb9faad3fbe29ec85ef6354b736e138ce",
+      "null_index": 2,
+      "run_id": "confirmation-g101-s44-degree-rewired-k2-edb3ad03131c",
+      "training_seed": 44
+    },
+    {
+      "checkpoint_sha256": "ebffc42e1750983f9d96c818478558a8348522ba3ace26d32e5171fd81e86929",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.49489859958041205,
+          "bpb": 2.4676337929451617,
+          "byte_perplexity": 5.531358283355823,
+          "nll_sum": 95389.16063228529,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.43438110778389427,
+          "bpb": 2.7727276072375804,
+          "byte_perplexity": 6.83398749190767,
+          "nll_sum": 107182.90528866788,
+          "scored_bytes": 55769,
+          "seed": 1107006960,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.23251268625939142,
+          "bpb": 3.8149042318969983,
+          "byte_perplexity": 14.073450968505437,
+          "nll_sum": 147469.41528097913,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " it is nee. I'll roge:\nI came an at'st thou artome compand.\n\nLEONTES:\nHast with the counst be your hip ere the king and\nI was we",
+          "generated_hex": "206974206973206e65652e2049276c6c20726f67653a0a492063616d6520616e2061742773742074686f75206172746f6d6520636f6d70616e642e0a0a4c454f4e5445533a0a4861737420776974682074686520636f756e737420626520796f7572206869702065726520746865206b696e6720616e640a4920776173207765",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 1863770611,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.23735408560311283,
+          "bpb": 4.412228435057154,
+          "byte_perplexity": 21.29183572084027,
+          "nll_sum": 170559.6544111506,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "2dbe4094c7e1da1c817475f5a21ec442856bcb1fbb07abb48f4b6529cc43201d",
+      "null_index": 3,
+      "run_id": "confirmation-g101-s33-degree-rewired-k3-0ec5caed242a",
+      "training_seed": 33
+    },
+    {
+      "checkpoint_sha256": "02a5f2840ceb345393646b3da010123ecf4cab03fdce758c0f03e5507c1d3cb7",
+      "condition": "DEGREE-REWIRED",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.48767236278219084,
+          "bpb": 2.502059149304496,
+          "byte_perplexity": 5.664934005710034,
+          "nll_sum": 96719.91151475918,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.4170058634725385,
+          "bpb": 2.8670716570604884,
+          "byte_perplexity": 7.295827690817886,
+          "nll_sum": 110829.88068225607,
+          "scored_bytes": 55769,
+          "seed": 544472800,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.24486722014022128,
+          "bpb": 3.8560971725300575,
+          "byte_perplexity": 14.481078744386547,
+          "nll_sum": 149061.7747478485,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": ", gasted of the matter'd,\nHathing prace:\nI do thee some to a bring with a mome and from\nThe suffict him hence: is for thy the du",
+          "generated_hex": "2c20676173746564206f6620746865206d617474657227642c0a48617468696e672070726163653a0a4920646f207468656520736f6d6520746f2061206272696e6720776974682061206d6f6d6520616e642066726f6d0a54686520737566666963742068696d2068656e63653a20697320666f722074687920746865206475",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 656298217,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.23201061521633884,
+          "bpb": 4.325309062163454,
+          "byte_perplexity": 20.046925121921372,
+          "nll_sum": 167199.68825785886,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "02434ca3ff0579e111dbff9be08c1fd0dd8fdca3be0eac661ddd47e64a65d21d",
+      "null_index": 3,
+      "run_id": "confirmation-g101-s44-degree-rewired-k3-ed56d4a88014",
+      "training_seed": 44
+    },
+    {
+      "checkpoint_sha256": "183ff7d49c8e2a67b5ca098bcfb8eeeb70d6e6a72fab4f09797afa72bc68c358",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.4821675124172928,
+          "bpb": 2.531434065149069,
+          "byte_perplexity": 5.781460804133314,
+          "nll_sum": 97855.4319368205,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.4309383349172479,
+          "bpb": 2.8747217608625135,
+          "byte_perplexity": 7.3346176499210936,
+          "nll_sum": 111125.6040519519,
+          "scored_bytes": 55769,
+          "seed": 544472800,
+          "selected_edges": 51
+        },
+        "reset_each_byte": {
+          "accuracy": 0.25164517922143126,
+          "bpb": 3.7929883948623786,
+          "byte_perplexity": 13.861278200882667,
+          "nll_sum": 146622.23394262046,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": "isgard, and there it is to be.\n\nMERCUTIO:\nI have sleart you on is death!\n\nKING HENRY VORT:\nAs friends are to threath to doth him",
+          "generated_hex": "6973676172642c20616e6420746865726520697420697320746f2062652e0a0a4d4552435554494f3a0a49206861766520736c6561727420796f75206f6e206973206465617468210a0a4b494e472048454e525920564f52543a0a417320667269656e64732061726520746f207468726561746820746f20646f74682068696d",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 656298217,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.2244974806792304,
+          "bpb": 4.811935636578726,
+          "byte_perplexity": 28.089044349914627,
+          "nll_sum": 186010.78600159474,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "a9d1e8a407476c107f19f2e4b93815cd21790d9bab6ec87ecdfa7fbac91d09fc",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s44-no-cross-node-recurrence-k0-b05ef61d768a",
+      "training_seed": 44
+    },
+    {
+      "checkpoint_sha256": "bcddcaf9e9ef9972414228869b7b968e3bae130ce3cbc8047e76bd47da61ef8c",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.5143179902813391,
+          "bpb": 2.3699086795622404,
+          "byte_perplexity": 5.169084116902818,
+          "nll_sum": 91611.4864227074,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "reset_each_byte": {
+          "accuracy": 0.264035575319622,
+          "bpb": 3.7425516194042774,
+          "byte_perplexity": 13.385059243718084,
+          "nll_sum": 144672.54364023358,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": ", as sir, be the trempery\nAnd, disport of Romeo, so have gointer to the mants for all for those peace for your remail, and it on",
+          "generated_hex": "2c206173207369722c20626520746865207472656d706572790a416e642c20646973706f7274206f6620526f6d656f2c20736f206861766520676f696e74657220746f20746865206d616e747320666f7220616c6c20666f722074686f736520706561636520666f7220796f75722072656d61696c2c20616e64206974206f6e",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 548057659,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.19630977783356346,
+          "bpb": 4.55382205398431,
+          "byte_perplexity": 23.48751298275068,
+          "nll_sum": 176033.11505955132,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "66e682e5312915f69058e75f335fd29ff0d53d068b8513fb314158011478b33d",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s11-parameter-matched-gru-k0-2192e194ea54",
+      "training_seed": 11
+    },
+    {
+      "checkpoint_sha256": "10796297ee295c43963b6334ff7952517a987b702c19e4d4637065badec421d6",
+      "condition": "PARAMETER-MATCHED-GRU",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.513995230325091,
+          "bpb": 2.376675959999776,
+          "byte_perplexity": 5.193387806512884,
+          "nll_sum": 91873.08326197317,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "reset_each_byte": {
+          "accuracy": 0.25279277017698004,
+          "bpb": 3.752846371531538,
+          "byte_perplexity": 13.480913651678,
+          "nll_sum": 145070.49886646867,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": "oughs thunghing me; I were but\nthis cormishing insteap that on it sweet some furny for the stuffient are enough of opeth,\nFor th",
+          "generated_hex": "6f75676873207468756e6768696e67206d653b20492077657265206275740a7468697320636f726d697368696e6720696e73746561702074686174206f6e20697420737765657420736f6d65206675726e7920666f722074686520737475666669656e742061726520656e6f756768206f66206f706574682c0a466f72207468",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 656298217,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.22447954957054994,
+          "bpb": 4.394914429455035,
+          "byte_perplexity": 21.03783630946858,
+          "nll_sum": 169890.36204439402,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "8b204858dcc1802d19a59665dd7e6b15c634fd3d46dbeee99ca3b8bbf73e5f87",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s44-parameter-matched-gru-k0-bd994cf5ce71",
+      "training_seed": 44
+    },
+    {
+      "checkpoint_sha256": "552a66222b2e4593634e607dd7bb2df2246f79b3245532bcafcaa16ddafa9c88",
+      "condition": "RANDOM-DENSITY",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.5025731140956445,
+          "bpb": 2.4446018231941324,
+          "byte_perplexity": 5.443753809102295,
+          "nll_sum": 94498.83392799878,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.4462873639477129,
+          "bpb": 2.742914095573002,
+          "byte_perplexity": 6.694211326726563,
+          "nll_sum": 106030.43045171455,
+          "scored_bytes": 55769,
+          "seed": 418609569,
+          "selected_edges": 306
+        },
+        "reset_each_byte": {
+          "accuracy": 0.24506446233570622,
+          "bpb": 3.786778710551417,
+          "byte_perplexity": 13.80174435378374,
+          "nll_sum": 146382.1916089859,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": " to the raught of this gainst,\nWhat there of for soverious in my teal last\nTo love;\nAnd to the appare his do but his beart it\non",
+          "generated_hex": "20746f2074686520726175676874206f662074686973206761696e73742c0a57686174207468657265206f6620666f7220736f766572696f757320696e206d79207465616c206c6173740a546f206c6f76653b0a416e6420746f20746865206170706172652068697320646f20627574206869732062656172742069740a6f6e",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 548057659,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.2402589252093457,
+          "bpb": 4.344453476749326,
+          "byte_perplexity": 20.31471861975637,
+          "nll_sum": 167939.73714329873,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "e4cd7046bbd604f3ca3b1a7d2bbea2042995f403600ed1d79eec4753c13c85ac",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s11-random-density-k0-d36dbfd142da",
+      "training_seed": 11
+    },
+    {
+      "checkpoint_sha256": "e44677c97341cfb54491c1c7544ec93b6557267e1e44b17cfdcb18e9c5ebde6e",
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "diagnostics": {
+        "baseline_validation": {
+          "accuracy": 0.4831537233947175,
+          "bpb": 2.51636463427413,
+          "byte_perplexity": 5.721385815631911,
+          "nll_sum": 97272.90613154246,
+          "scored_bytes": 55769
+        },
+        "interpretation": "Artificial-model dependence interventions; parameter damage is not special-connectome evidence",
+        "perturb_10_percent": {
+          "accuracy": 0.4071616848069716,
+          "bpb": 3.0059257844817853,
+          "byte_perplexity": 8.032927103219997,
+          "nll_sum": 116197.44320426125,
+          "scored_bytes": 55769,
+          "seed": 418609569,
+          "selected_edges": 51
+        },
+        "reset_each_byte": {
+          "accuracy": 0.23089888647815093,
+          "bpb": 3.8241779243564746,
+          "byte_perplexity": 14.16420696556305,
+          "nll_sum": 147827.90029694885,
+          "scored_bytes": 55769
+        },
+        "sample": {
+          "context_policy": "Recompute zero-state sliding context up to fixed context length",
+          "display_utf8_with_replacement": ", as sirray sight tege.\n\nBRUTUS:\nBut meouse, for see hide of thy may, lainsts\nThat late a thou are my fortune.\nIn wold in a her ",
+          "generated_hex": "2c2061732073697272617920736967687420746567652e0a0a4252555455533a0a427574206d656f7573652c20666f72207365652068696465206f6620746879206d61792c206c61696e7374730a54686174206c61746520612074686f7520617265206d7920666f7274756e652e0a496e20776f6c6420696e20612068657220",
+          "interpretation": "Illustration only, no claim about topology benefit",
+          "length_bytes": 128,
+          "prompt_hex": "466972737420436974697a656e3a0a4265666f72652077652070726f63656564",
+          "sampling_seed": 548057659,
+          "temperature": 0.8
+        },
+        "zero_core": {
+          "accuracy": 0.22037332568272697,
+          "bpb": 4.872459729025396,
+          "byte_perplexity": 29.2925062394688,
+          "nll_sum": 188350.41289154266,
+          "scored_bytes": 55769
+        }
+      },
+      "diagnostics_sha256": "fa6dc210b0c910d3501d7d3779cd7049b68f47db0a540824068ea0c47fcaa87b",
+      "null_index": 0,
+      "run_id": "confirmation-g101-s11-no-cross-node-recurrence-k0-60825e575b44",
+      "training_seed": 11
+    }
+  ],
+  "reviewed_utc": "2026-10-05T23:45:09.667575+00:00",
+  "status": "complete",
+  "test_data_loaded": false,
+  "training_launched": false
+}

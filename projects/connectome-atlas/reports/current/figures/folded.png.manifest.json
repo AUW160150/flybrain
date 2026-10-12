@@ -1,0 +1,23 @@
+{
+  "available_counts": {
+    "active_parameters": 52981
+  },
+  "code_revision": "f27023f287578f22139f77618e1516d10d80ce05f2c06966be72d0dd89183968",
+  "export_sha256": "e8cf53d94a7eec5529c0831926cb4161cbd6752d5ee8d32b5e5d35abf158cf15",
+  "export_time": "2026-10-05T20:53:37.717025+00:00",
+  "filters": "none",
+  "graph_scope": "G3 computational architecture",
+  "inputs": {
+    "executed_code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+    "graph_hash": "354ccf91b989f38883c0f72a0acb678f99ef7f7a4a52695197c2e7dca710534b",
+    "source_archive_sha256": "3c1424882f2da4d318df8d757c95b060c6019da2ff410e7be7414e8b07b3ab48"
+  },
+  "node_ordering": "saved model index",
+  "rasterization": "Pillow companion of explicit SVG primitives; browser rasterization not available in this sandbox",
+  "reduction": "explicit implementation-derived schematic",
+  "rendered_counts": {
+    "recurrent_parameters": 3061,
+    "state_units": 512
+  },
+  "renderer_version": "1"
+}

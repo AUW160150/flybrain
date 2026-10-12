@@ -1,0 +1,30 @@
+{
+  "available_counts": {
+    "nodes": 512
+  },
+  "code_revision": "f27023f287578f22139f77618e1516d10d80ce05f2c06966be72d0dd89183968",
+  "colour_transform": "log1p display only",
+  "export_sha256": "2f83a6f8628adfd9108f166132723d611802a157b04b68641cea407fd34961da",
+  "export_time": "2026-10-05T20:53:37.426387+00:00",
+  "filters": {
+    "bounds": [
+      0,
+      512,
+      0,
+      512
+    ]
+  },
+  "graph_scope": "G3",
+  "inputs": {
+    "index_identity": "ace36203e99f1d21847fa6b1ae67e83a862728a3d0dfff6a6e9e1da7c5982243"
+  },
+  "matrix_convention": "row target, column source",
+  "node_ordering": "model",
+  "reduction": "pairs",
+  "rendered_counts": {
+    "bins": 1945,
+    "contacts": 38708,
+    "pairs": 3061
+  },
+  "renderer_version": "1"
+}

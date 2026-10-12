@@ -1,0 +1,29 @@
+{
+  "available_counts": {
+    "downloaded_skeletons": 8,
+    "saved_ids": 512
+  },
+  "code_revision": "f27023f287578f22139f77618e1516d10d80ce05f2c06966be72d0dd89183968",
+  "coordinate_units": "source 8nm; target micrometre; multiply 0.008 once; no transform",
+  "export_sha256": "0395d91f1ad526b9d596a4c6fc48ee2888bd96435f076d51cae230e9cd6b4c78",
+  "export_time": "2026-10-05T20:53:38.321311+00:00",
+  "filters": "first 8 saved IDs within acquisition budget",
+  "graph_scope": "exact-subset geometry: partial coverage",
+  "inputs": {
+    "10029": "1a03b734ad50843b66b803280c31caf6654f241132c6ece6816cbfab420666a8",
+    "10053": "7edc3e057bcb0ff65effe6321b514249b9de4007717993ed04dd56914a1a0018",
+    "10093": "7a1b5efb8be358dc0cafadaae248514bc6495408e5f6c62132b25b8ef62ce924",
+    "10807": "41e96979c7c8b0e5e08a2de424cabb15caf9798e989087462ce07ddc09d275ab",
+    "11029": "2a86557a73807402cca89b1954de4070deec06210589bc916306da421ae1b48f",
+    "11369": "10cb3852a833bec4c7e4cecd43eeb6cbb50d83e05e5c6882a04418f657f9802d",
+    "12638": "e215bd06c6338e809cf7e4aca18f211b7b8a66ad1a6236cd9ad89468f894698b",
+    "12912": "1791f4d1981460903e99c263e74a57ca97fd00162d92f6a9c9eeb5d13e18c838"
+  },
+  "node_ordering": "biological ID",
+  "reduction": "native x/z orthographic projection",
+  "rendered_counts": {
+    "branch_segments": 205973,
+    "skeletons": 8
+  },
+  "renderer_version": "1"
+}

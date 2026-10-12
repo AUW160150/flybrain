@@ -1,0 +1,332 @@
+{
+  "audit_script_sha256": "c3909298da2906c1f6501a943fd20bacdb352b2b0c2c6ce0a22cf6c036c47cd1",
+  "bundle_sha256": "5429688659dd03890f2f17d26ea653f8e4aa13eef3a7bbd2f130e2c8963d2ec4",
+  "checks": [
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "412ace324be9fa9b210f18471807ae30f02979c3bad8e125847d67e5b94ded53",
+        "final": "31efd499371277a324970a16cccd2f01a6c69de54f57d0c9de700fe0dd183e2c"
+      },
+      "condition": "DEGREE-REWIRED",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s3-degree-rewired-k1-3963b2dfd8fa",
+      "status": "passed",
+      "training_seed": 3,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.1859748861171227
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "6269da1074b93a927b20d12ff47672237f353a0210c9cc17af04407ecd2a9586",
+        "final": "6c0a5f5c5bd9cc3936c057bdcca44f48860789aaa1213c19bef345c354d8df54"
+      },
+      "condition": "PARAMETER-MATCHED-GRU",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s2-parameter-matched-gru-k0-fd392af2a62b",
+      "status": "passed",
+      "training_seed": 2,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.9195093548695863
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "9b6eee6f71dec24d364e4ad534eede878a97e8b1c6415233ccc177a228318c2f",
+        "final": "d5e1390f65cf1f4a67547627de1410cfb2d7ac3e4f5b8d450b61f95c38fb65c4"
+      },
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s1-no-cross-node-recurrence-k0-603aa5abba66",
+      "status": "passed",
+      "training_seed": 1,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.274374540824522
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "a7675fb14bcd8819d4103524ebe6ea2adf44a90ca92f2227e8030e4d953143cb",
+        "final": "ef452d40be906393cbca770ba0b517d03cafd17bbaf3e0ff1e938e30c1cf3b58"
+      },
+      "condition": "PARAMETER-MATCHED-GRU",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s3-parameter-matched-gru-k0-c08c359483cb",
+      "status": "passed",
+      "training_seed": 3,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.905855560220461
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 1900,
+      "checkpoint_sha256": {
+        "best": "b8416a761c7125befd10ebbdfbc93b25df08f31c2f5ce5217ac038a8e7538a61",
+        "final": "e8d6f76fb22857a101a90ced8cd9e2bdca4011ea6aa116bed65dde3e7c4acb0d"
+      },
+      "condition": "RANDOM-DENSITY",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s3-random-density-k0-81598b91cfd8",
+      "status": "passed",
+      "training_seed": 3,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.1778912265565102
+        },
+        "final": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.180323972939835
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "8f8683c03a82924975b929614739dd66e4d07d6c1ce00738157cf4cef9567ebc",
+        "final": "158ad07ba6b69686ecf74d69efb2b9e3d89508d991afeab42d72571add10876c"
+      },
+      "condition": "PARAMETER-MATCHED-GRU",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s1-parameter-matched-gru-k0-c3e821a15993",
+      "status": "passed",
+      "training_seed": 1,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 2.919413933241116
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "38141510108eb31acd021e6c3320d3b26b99565e4d359809660fcc3408b28706",
+        "final": "1f498a179df2398905d1261d511499cde808bbf42d34960aeb2810c18360a3ab"
+      },
+      "condition": "FLY-TOPOLOGY",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s1-fly-topology-k0-82567b47f645",
+      "status": "passed",
+      "training_seed": 1,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.181319460693187
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "e99b755872aeb567acc85962bf4b6612b5509e97550ef7c7dbd233f9dc1b0b0b",
+        "final": "bdff17b7c48930479b189943d89775046da5355ba2b2781860b43c58a42511b4"
+      },
+      "condition": "FLY-TOPOLOGY",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s3-fly-topology-k0-5b2e9e8d034b",
+      "status": "passed",
+      "training_seed": 3,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.187354925580528
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "96610f13fde9f53f59a586bfea7157a4cfa1434f34acd9b2163f4043ec9a03b7",
+        "final": "59fb588205216221dcebc2cc3b62bbd14dd28f39a1bc49de7476b38b7b6dae9e"
+      },
+      "condition": "FLY-TOPOLOGY",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s2-fly-topology-k0-37cb1cd72628",
+      "status": "passed",
+      "training_seed": 2,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.194525940911819
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "60542e19e80562fd26674fecfff4b18b072cdfeb306ea7a663a126663af9cfce",
+        "final": "6012887773dc0071f85c9bf349d5c9aa388749f7711e603ef93d504618f9877d"
+      },
+      "condition": "DEGREE-REWIRED",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s1-degree-rewired-k1-f2c655d9ebe4",
+      "status": "passed",
+      "training_seed": 1,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.1898574406068305
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "0f7de5bbfe2a1da9f7495283e46276f6ee3dcd3d5896f2f67fadd02cc93e6038",
+        "final": "18e4ded3ac6a2601bb54701adc45ce3386aa4748549c8e288daca237b2eccebf"
+      },
+      "condition": "RANDOM-DENSITY",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s1-random-density-k0-0e7a350e8640",
+      "status": "passed",
+      "training_seed": 1,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.1538205159405934
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "18d6ba44c90068e2db7bba1462378231f05741523c6f7e882508d28d0bc69240",
+        "final": "2f7bb9ff490ec65e0a4db3857b239131661b3fdd988561aea3356c73614fd04d"
+      },
+      "condition": "RANDOM-DENSITY",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s2-random-density-k0-1a714944f7b2",
+      "status": "passed",
+      "training_seed": 2,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.1682498441868447
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "eb709caa9c0f739d7b7559038382731128555695a041fd72aeea1174e5477e3d",
+        "final": "aebcb45fa8fc3232f111cee4cb69eb06f570fa3331343aa6438e194259e53e8b"
+      },
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s3-no-cross-node-recurrence-k0-324204b3360d",
+      "status": "passed",
+      "training_seed": 3,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.26576632056377
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "922217495bc9cd07d9cd84a8d5c2aff813fc91b8faa504e9701574a77d6cebf8",
+        "final": "15c0af428804318df5ff2e97e68204d352e4b72b1a798205774c318fb41fd178"
+      },
+      "condition": "NO-CROSS-NODE-RECURRENCE",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s2-no-cross-node-recurrence-k0-971ba03dda6e",
+      "status": "passed",
+      "training_seed": 2,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.271406724475735
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    },
+    {
+      "best_step": 2000,
+      "checkpoint_sha256": {
+        "best": "06d8ddbdfffc0533f87c84cfbd8349e5d4dd300ae41e2b471ef677918e48b1bf",
+        "final": "f1fb4b531ffe59fec4365acd65371baa8d9b8be6ac65832f5779acaecb1d63fa"
+      },
+      "condition": "DEGREE-REWIRED",
+      "matched_sampler": true,
+      "run_id": "pilot-g101-s2-degree-rewired-k1-5320befd3e7b",
+      "status": "passed",
+      "training_seed": 2,
+      "validation_replay": {
+        "best": {
+          "absolute_bpb_difference": 0.0,
+          "bpb": 3.1964863580574785
+        },
+        "final": {
+          "same_model_as_replayed_best": true
+        }
+      }
+    }
+  ],
+  "code_hash": "be167f981fada51829a4d6519e42adf2481c08e85c5d753781c58918bdbd41e8",
+  "completed_runs": 15,
+  "matched_controls": "Exact labelled degrees, count, initial edge slots and final sampler RNG states verified",
+  "metric_check": "All best-checkpoint validation metrics replayed; final separately replayed when selected step differed",
+  "reviewed_utc": "2026-10-05T18:21:47.422411+00:00",
+  "status": "passed",
+  "test_data_loaded": false,
+  "test_result_files_found": 0,
+  "training_byte_exposures": 15360000,
+  "training_launched": false
+}
