@@ -38,12 +38,6 @@ cd site/public && python3 -m http.server 8787
 
 Open http://127.0.0.1:8787. `site/build.sh` copies `site/src`, builds the studio with `FLYWORLD_BASE=/flyworld/`, and copies the three static explorers into place.
 
-## Deploy
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/AUW160150/flybrain)
-
-Render reads `render.yaml` (a static site: build `bash site/build.sh`, publish `site/public`, `NODE_VERSION=22.20.0`). The same Blueprint deploys the mirror at https://github.com/prove-ai/flybrain from the prove-ai workspace: https://render.com/deploy?repo=https://github.com/prove-ai/flybrain. There is no server and no environment secret; a first build takes a few minutes (npm install plus the Vite build).
-
 ## Data
 
 All projects read the MaleCNS v1.0 flat files (FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research), distributed under CC BY 4.0 at https://male-cns.janelia.org/download/. The raw tables (~1.1 GB) are not in this repository; each project's README says how to fetch them. The browser demos use bounded, pre-extracted subsets committed here.
