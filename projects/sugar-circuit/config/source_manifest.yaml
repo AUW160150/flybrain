@@ -1,0 +1,494 @@
+{
+  "created_at": "2026-10-06T17:22:13.972145+00:00",
+  "scope": "INITIAL_VALIDATION_STRUCTURAL_AND_METHOD_RECOVERY",
+  "paper_doi": "10.1016/j.cell.2026.08.016",
+  "paper_full_text_status": "RELEVANT_FINAL_METHODS_INDEXED; COMPLETE_FINAL_DOCUMENT_UNAVAILABLE",
+  "paper_analysis_snapshot": "UNVERIFIED",
+  "target_dataset": "male-cns:v1.0",
+  "dataset_uuid": "4b2087c0fbe046bfaf0d60bc970e3e5d",
+  "analysis_code_repository": null,
+  "analysis_code_commit": null,
+  "sources": [
+    {
+      "source_id": "P01",
+      "path": "paper/primary/elsevier_article.xml",
+      "url": "https://api.elsevier.com/content/article/pii/S0092867426009438?httpAccept=text/xml",
+      "description": "Final publisher bibliographic metadata; no article body",
+      "sha256": "60f959a5469f8befa3a0b2b5f8f8b3d05831e29b3fda9740da5576f658dd300a",
+      "bytes": 1849,
+      "retrieval_completed_utc": "2026-10-06T17:04:52.660317+00:00"
+    },
+    {
+      "source_id": "P02",
+      "path": "paper/supplement/supplemental_information.pdf",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867426009438-mmc1.pdf",
+      "description": "Final supplemental information; 28 pages; title/authors matched",
+      "sha256": "099586a04f8ff0f02bf0fd9bcf8cedfa7531cffced664720e43d6800011d71a7",
+      "bytes": 16121775,
+      "retrieval_completed_utc": "2026-10-06T17:07:21.082215+00:00"
+    },
+    {
+      "source_id": "P03",
+      "path": "paper/supplement/table_s1.xlsx",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867426009438-mmc2.xlsx",
+      "description": "Final Table S1 workbook: GRNs and MNs sheets",
+      "sha256": "7b28d5f3ae45d68c510b8a3616700f0df2a5a6f2e2d2dba490d172939f2b64c9",
+      "bytes": 186967,
+      "retrieval_completed_utc": "2026-10-06T17:07:17.180424+00:00"
+    },
+    {
+      "source_id": "P04",
+      "path": "paper/primary/figure2.jpg",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867426009438-gr2_lrg.jpg",
+      "description": "Final Figure 2; visually inspected",
+      "sha256": "90e7fd0a43bab43dab1b86beeb734f259294b29a2c2ab38442b1c363d3af2236",
+      "bytes": 1456389,
+      "retrieval_completed_utc": "2026-10-06T17:09:10.297183+00:00"
+    },
+    {
+      "source_id": "P05",
+      "path": "paper/primary/figure6.jpg",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867426009438-gr6_lrg.jpg",
+      "description": "Final Figure 6; visually inspected",
+      "sha256": "3acb01cdd3d1853d0b8221276ef02ee0f4739dc65109a9c31938d444ffa6e812",
+      "bytes": 1814981,
+      "retrieval_completed_utc": "2026-10-06T17:09:10.324959+00:00"
+    },
+    {
+      "source_id": "P06",
+      "path": "paper/primary/crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/j.cell.2026.08.016",
+      "description": "DOI metadata, version-of-record links and correction relations",
+      "sha256": "4c3041b6a814b1ae6869cce88702cc37e8abd21d5151a670559571afb595ec10",
+      "bytes": 43239,
+      "retrieval_completed_utc": "2026-10-06T17:04:52.392823+00:00"
+    },
+    {
+      "source_id": "P07",
+      "path": "paper/primary/malecns_download.html",
+      "url": "https://male-cns.janelia.org/download/",
+      "description": "Official dataset access and download documentation",
+      "sha256": "51144922891ccdc5cda2490d55b39ef69222134ed6944bbff2766379e403ad3c",
+      "bytes": 44208,
+      "retrieval_completed_utc": "2026-10-06T17:03:09.036087+00:00"
+    },
+    {
+      "source_id": "P08",
+      "path": "data/raw/neuprint_datasets.json",
+      "url": "https://neuprint.janelia.org/api/dbmeta/datasets",
+      "description": "Public dataset inventory and UUID",
+      "sha256": "d76a0b5d3ef40eb79f666376e7fe15dcc4ddcd85fb3ea6bfe3a105668896edcb",
+      "bytes": 299285,
+      "retrieval_completed_utc": "2026-10-06T17:04:52.568339+00:00"
+    },
+    {
+      "source_id": "P09",
+      "path": "data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "description": "Official v1.0 annotation table",
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "bytes": 14483314,
+      "retrieval_completed_utc": "2026-10-06T17:04:56.743468+00:00"
+    },
+    {
+      "source_id": "P10",
+      "path": "data/raw/body-neurotransmitters-male-cns-v1.0.feather",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+      "description": "Official body and type NT predictions plus consensus",
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+      "bytes": 43282834,
+      "retrieval_completed_utc": "2026-10-06T17:05:00.501051+00:00"
+    },
+    {
+      "source_id": "P11",
+      "path": "data/raw/neuprint_meta_authenticated.json",
+      "url": "https://neuprint.janelia.org/api/custom/custom",
+      "description": "Authenticated Meta response; request data/raw/query_meta.json",
+      "sha256": "357608a5c1ddaa186bd2c1ce14ed37b0dfc1c3975679543e4ba7f33d1cffd4c4",
+      "bytes": 1248553,
+      "retrieval_completed_utc": "2026-10-06T17:17:32.402958+00:00"
+    },
+    {
+      "source_id": "P12",
+      "path": "data/raw/neuprint_neurons_authenticated.json",
+      "url": "https://neuprint.janelia.org/api/custom/custom",
+      "description": "Authenticated 95 neuron records; request data/raw/query_neurons_full_properties.json",
+      "sha256": "c9fbd299a8647edda1cc5fe2ba3ea2f6f862a90100c73fab887fcd6da90be903",
+      "bytes": 98586,
+      "retrieval_completed_utc": "2026-10-06T17:17:53.762251+00:00"
+    },
+    {
+      "source_id": "P13",
+      "path": "data/raw/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "description": "Complete official released segment connection graph",
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "bytes": 1051241946,
+      "retrieval_completed_utc": "2026-10-06T18:03:09.631417+00:00"
+    },
+    {
+      "source_id": "P14",
+      "path": "results/structural/20261006T180116Z/raw/meta_start.json",
+      "url": "https://neuprint.janelia.org/api/custom/custom",
+      "description": "Authenticated structural run meta_start; exact query saved alongside",
+      "sha256": "764391995d5ecf8008ded9bad567a22fdaa9ed64c6eb2f1b4799df299db17325",
+      "bytes": 635,
+      "retrieval_completed_utc": "2026-10-06T18:01:23.508738+00:00"
+    },
+    {
+      "source_id": "P15",
+      "path": "results/structural/20261006T180116Z/raw/meta_end.json",
+      "url": "https://neuprint.janelia.org/api/custom/custom",
+      "description": "Authenticated structural run meta_end; exact query saved alongside",
+      "sha256": "c7c17c8b0f7969886ebda2edf7a36cdd19e14706582d669370d6086a389c93be",
+      "bytes": 757,
+      "retrieval_completed_utc": "2026-10-06T18:31:25.536261+00:00"
+    },
+    {
+      "source_id": "P16",
+      "path": "results/structural/20261006T180116Z/raw/sensory_out.json",
+      "url": "https://neuprint.janelia.org/api/custom/custom",
+      "description": "Authenticated structural run sensory_out; exact query saved alongside",
+      "sha256": "824f67f091e8acf2d3a8bec228bbb496aaf74b66471b57bd3bdd4c454f40e176",
+      "bytes": 1169233,
+      "retrieval_completed_utc": "2026-10-06T18:04:06.141865+00:00"
+    },
+    {
+      "source_id": "P17",
+      "path": "results/structural/20261006T180116Z/raw/motor_in.json",
+      "url": "https://neuprint.janelia.org/api/custom/custom",
+      "description": "Authenticated structural run motor_in; exact query saved alongside",
+      "sha256": "b3e6796469f002d5c151bb462f6635a145b4d4ba5694af03248e4d41a5691611",
+      "bytes": 57312,
+      "retrieval_completed_utc": "2026-10-06T18:04:05.695491+00:00"
+    },
+    {
+      "source_id": "P18",
+      "path": "results/structural/20261006T180116Z/raw/named_out.json",
+      "url": "https://neuprint.janelia.org/api/custom/custom",
+      "description": "Authenticated structural run named_out; exact query saved alongside",
+      "sha256": "7593c5d93843f7923dc9f44852afe6a9535d7b3897c7f1f289a0cfee8938f545",
+      "bytes": 833249,
+      "retrieval_completed_utc": "2026-10-06T18:04:06.045901+00:00"
+    },
+    {
+      "source_id": "P19",
+      "path": "results/structural/20261006T180116Z/raw/gng021_in.json",
+      "url": "https://neuprint.janelia.org/api/custom/custom",
+      "description": "Authenticated structural run gng021_in; exact query saved alongside",
+      "sha256": "480ced4c57a7774e3b4fbfa3e2b423ceef80373b1d89e01622a2a0e08898702f",
+      "bytes": 26661,
+      "retrieval_completed_utc": "2026-10-06T18:04:05.682862+00:00"
+    },
+    {
+      "source_id": "P20",
+      "path": "results/structural/20261006T180116Z/raw/additional_named_out.json",
+      "url": "https://neuprint.janelia.org/api/custom/custom",
+      "description": "Authenticated structural run additional_named_out; exact query saved alongside",
+      "sha256": "1dcc50e0cdea730233d6dc8b42678a39d1392cae3064c7205de8f0f84e42a222",
+      "bytes": 803035,
+      "retrieval_completed_utc": "2026-10-06T18:07:54.242449+00:00"
+    },
+    {
+      "source_id": "P21",
+      "path": "results/structural/20261006T180116Z/raw/additional_named_metadata.json",
+      "url": "https://neuprint.janelia.org/api/custom/custom",
+      "description": "Authenticated structural run additional_named_metadata; exact query saved alongside",
+      "sha256": "91e98fc6ea93dec99e5dc785a39c3b6181503dad979c50c0835f6d935a33f4e1",
+      "bytes": 13456,
+      "retrieval_completed_utc": "2026-10-06T18:07:53.936952+00:00"
+    },
+    {
+      "source_id": "P22",
+      "path": "results/structural/20261006T180116Z/raw/puddle_alias.json",
+      "url": "https://neuprint.janelia.org/api/custom/custom",
+      "description": "Authenticated structural run puddle_alias; exact query saved alongside",
+      "sha256": "fa92118380a82e53199ee945f9e41c79d32dba4fe08c48a913c8e0cab107abd9",
+      "bytes": 201,
+      "retrieval_completed_utc": "2026-10-06T18:04:06.108570+00:00"
+    },
+    {
+      "source_id": "P23",
+      "path": "results/method_recovery/20261006T214639Z/meta_retry.json",
+      "url": "https://neuprint.janelia.org/api/custom/custom",
+      "description": "Authenticated live dataset verification",
+      "sha256": "764391995d5ecf8008ded9bad567a22fdaa9ed64c6eb2f1b4799df299db17325",
+      "bytes": 635,
+      "audit_recorded_utc": "2026-10-06T21:56:58.644297+00:00"
+    },
+    {
+      "source_id": "P24",
+      "path": "results/method_recovery/20261006T214639Z/sources/supplement.pdf",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867426009438-mmc1.pdf",
+      "description": "Re-fetched final supplement; same hash as P02",
+      "sha256": "099586a04f8ff0f02bf0fd9bcf8cedfa7531cffced664720e43d6800011d71a7",
+      "bytes": 16121775,
+      "audit_recorded_utc": "2026-10-06T21:56:58.644297+00:00"
+    },
+    {
+      "source_id": "P25",
+      "path": "results/method_recovery/20261006T214639Z/sources/table_s1.xlsx",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867426009438-mmc2.xlsx",
+      "description": "Re-fetched Table S1; same hash as P03",
+      "sha256": "7b28d5f3ae45d68c510b8a3616700f0df2a5a6f2e2d2dba490d172939f2b64c9",
+      "bytes": 186967,
+      "audit_recorded_utc": "2026-10-06T21:56:58.644297+00:00"
+    },
+    {
+      "source_id": "P26",
+      "path": "results/method_recovery/20261006T214639Z/crossref_direct.json",
+      "url": "https://api.crossref.org/works/10.1016/j.cell.2026.08.016",
+      "description": "Rechecked final publication/correction metadata",
+      "sha256": "4c3041b6a814b1ae6869cce88702cc37e8abd21d5151a670559571afb595ec10",
+      "bytes": 43239,
+      "audit_recorded_utc": "2026-10-06T21:56:58.644297+00:00"
+    },
+    {
+      "source_id": "P27",
+      "path": "results/method_recovery/20261006T214639Z/sources/europepmc.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42691996%20AND%20SRC:MED&format=json&resultType=core",
+      "description": "Final metadata/full-text route inventory",
+      "sha256": "e9d475c8c86014f72c099b47d5b38ad0813861a463014e42f1c1d52094d99155",
+      "bytes": 10092,
+      "audit_recorded_utc": "2026-10-06T21:56:58.644297+00:00"
+    },
+    {
+      "source_id": "P28",
+      "path": "results/method_recovery/20261006T214639Z/sources/ribeiro_repos.json",
+      "url": "https://api.github.com/orgs/ribeiro-lab/repos?per_page=100",
+      "description": "Public lab repository inventory",
+      "sha256": "447a6e86db2bda5645c9c3c973b0ce86901e83511a1f9d5a333460eab9a86fd2",
+      "bytes": 27391,
+      "audit_recorded_utc": "2026-10-06T21:56:58.644297+00:00"
+    },
+    {
+      "source_id": "P29",
+      "path": "results/method_recovery/20261006T214639Z/sources/tastekin_repos.json",
+      "url": "https://api.github.com/users/ibrahimtastekin/repos?per_page=100",
+      "description": "Public author repository inventory",
+      "sha256": "9baea924698602de1d4b6fa0af78dba523b46c4dd12ea107d44ae7c644bd30a9",
+      "bytes": 19055,
+      "audit_recorded_utc": "2026-10-06T21:56:58.644297+00:00"
+    },
+    {
+      "source_id": "P30",
+      "path": "results/method_recovery/20261006T220302Z/source_pack.md",
+      "url": null,
+      "description": "User supplied source-recovery instructions; not primary scientific evidence",
+      "sha256": "682a2ffb9626d6eab2159536d72f5104d33c5cf5b82764b1e3b1ae93d096e56b",
+      "bytes": 3796,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P31",
+      "path": "results/method_recovery/20261006T220302Z/sources/indexed_final_methods_search2.txt",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0092867426009438",
+      "description": "Indexed final Methods: EC, bootstrap, significant paths and reachability",
+      "sha256": "7f1f0e3c7a629105ed79171ee2eeec828976e596312d1cf8b8dc46d06bb526f1",
+      "bytes": 35174,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P32",
+      "path": "results/method_recovery/20261006T220302Z/sources/indexed_search4.txt",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0092867426009438",
+      "description": "Indexed final Results and Limitations: motifs and unsigned metric",
+      "sha256": "da5771eaa38f94471c6a7f03f8d405ab188568c24a94f4101cc4e764b9df3690",
+      "bytes": 37065,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P33",
+      "path": "results/method_recovery/20261006T220302Z/sources/indexed_search5.txt",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0092867426009438",
+      "description": "Indexed final Figure6 legend and connectomic partner Methods",
+      "sha256": "7d98cd885f58da5ff7e0f492c912f271a87b17f0fecbcfa4f0c732b20f74ea3c",
+      "bytes": 32924,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P34",
+      "path": "results/method_recovery/20261006T220302Z/sources/preprint_v2_response.xml",
+      "url": "https://www.biorxiv.org/content/early/2025/12/13/2025.08.25.671814.source.xml",
+      "description": "Full bioRxiv v2 XML; DOI/version/date verified",
+      "sha256": "2e6197a20be30b257c42056ec846d989e137b0c811a9abf837e4a6c5540f1b81",
+      "bytes": 455775,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P35",
+      "path": "results/method_recovery/20261006T220302Z/sources/biorxiv_metadata.json",
+      "url": "https://api.biorxiv.org/details/biorxiv/10.1101/2025.08.25.671814",
+      "description": "bioRxiv version metadata",
+      "sha256": "c6ef2fb8432c0f76d833f07c865c425e0aab3b053279c545303312f969fa2ceb",
+      "bytes": 3850,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P36",
+      "path": "results/method_recovery/20261006T220302Z/sources/cited_method_code_tree.json",
+      "url": "https://api.github.com/repos/flyconnectome/2023neckconnective/git/trees/main?recursive=1",
+      "description": "Cited Stuerner repository tree; not Tastekin code",
+      "sha256": "0d275d59d58a9afce67f88c184f8ede4229b7d5dae86f593acca7c52915f3dac",
+      "bytes": 17671,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P37",
+      "path": "results/method_recovery/20261006T220302Z/sources/cited_1_Plot_DNs_across_datasets.Rmd",
+      "url": "https://raw.githubusercontent.com/flyconnectome/2023neckconnective/94637d7d82920234ef0bfdbf383c000e74a8b45a/code/1_Plot_DNs_across_datasets.Rmd",
+      "description": "Pinned cited-method code inspected; does not implement Tastekin selection",
+      "sha256": "34078052563f70e199dcda7519b8c87b13920d29b16452884ecceedce5111d29",
+      "bytes": 6063,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P38",
+      "path": "results/method_recovery/20261006T220302Z/sources/cited_2_FAFB_DNs.Rmd",
+      "url": "https://raw.githubusercontent.com/flyconnectome/2023neckconnective/94637d7d82920234ef0bfdbf383c000e74a8b45a/code/2_FAFB_DNs.Rmd",
+      "description": "Pinned cited-method code inspected; does not implement Tastekin selection",
+      "sha256": "6d80144f155ac4475442f6e998f790af9f5aa97152f8105891350b421d4f4ca4",
+      "bytes": 6023,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P39",
+      "path": "results/method_recovery/20261006T220302Z/sources/cited_3_DNa02_downstream.Rmd",
+      "url": "https://raw.githubusercontent.com/flyconnectome/2023neckconnective/94637d7d82920234ef0bfdbf383c000e74a8b45a/code/3_DNa02_downstream.Rmd",
+      "description": "Pinned cited-method code inspected; does not implement Tastekin selection",
+      "sha256": "cea76f7b63d02fce28d7867a814db7d9d43015cdc98cbc8923bb8a65544bcf1e",
+      "bytes": 12333,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P40",
+      "path": "results/method_recovery/20261006T220302Z/sources/cited_4_Dimorphic_neuron_partners_manc.Rmd",
+      "url": "https://raw.githubusercontent.com/flyconnectome/2023neckconnective/94637d7d82920234ef0bfdbf383c000e74a8b45a/code/4_Dimorphic_neuron_partners_manc.Rmd",
+      "description": "Pinned cited-method code inspected; does not implement Tastekin selection",
+      "sha256": "ff4ef5f8f343f36ebb1a90679a7111ba30d751c3426b3160433b451a05d54be9",
+      "bytes": 4997,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P41",
+      "path": "results/method_recovery/20261006T220302Z/sources/cited_5_DN_nr_outputsynapses.Rmd",
+      "url": "https://raw.githubusercontent.com/flyconnectome/2023neckconnective/94637d7d82920234ef0bfdbf383c000e74a8b45a/code/5_DN_nr_outputsynapses.Rmd",
+      "description": "Pinned cited-method code inspected; does not implement Tastekin selection",
+      "sha256": "674b32e1c9098bc4b276f48de4b7154236e4e9c738da0664544d39ace972b7fd",
+      "bytes": 1483,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P42",
+      "path": "results/method_recovery/20261006T220302Z/sources/cited_README",
+      "url": "https://raw.githubusercontent.com/flyconnectome/2023neckconnective/94637d7d82920234ef0bfdbf383c000e74a8b45a/code/README",
+      "description": "Pinned cited-method code inspected; does not implement Tastekin selection",
+      "sha256": "cf0da28bc52b48f08d7eda6fceae4fa1bac6549e3693add37e213af73e1e22c5",
+      "bytes": 752,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P43",
+      "path": "results/method_recovery/20261006T220302Z/sources/indexed_final_methods_search1.txt",
+      "url": null,
+      "description": "Saved search response; primary-source hits only; includes irrelevant hits not used",
+      "sha256": "4bf72ad92de3a44428fe96bbe457b4a927f1e6c71483b10929c3883ae0e7fe02",
+      "bytes": 36735,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P44",
+      "path": "results/method_recovery/20261006T220302Z/sources/indexed_search3.txt",
+      "url": null,
+      "description": "Saved search response; primary-source hits only; includes irrelevant hits not used",
+      "sha256": "395e6d6f199c4a67a191b86b8dc42cb563cc9d3ce966ffaa56080a8a34f57161",
+      "bytes": 35002,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P45",
+      "path": "results/method_recovery/20261006T220302Z/sources/indexed_search6.txt",
+      "url": null,
+      "description": "Saved search response; primary-source hits only; includes irrelevant hits not used",
+      "sha256": "3720230f18c97f8ae02e55bf2c551cc0d5b5b6e467903263dd5851227582c51a",
+      "bytes": 35384,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P46",
+      "path": "results/method_recovery/20261006T220302Z/sources/indexed_search7.txt",
+      "url": null,
+      "description": "Saved search response; primary-source hits only; includes irrelevant hits not used",
+      "sha256": "d1ebdf0edbe3b50f799ef922e030257596a4589f0dfe5f519644de85369ed66a",
+      "bytes": 38541,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P47",
+      "path": "results/method_recovery/20261006T220302Z/sources/indexed_search8.txt",
+      "url": null,
+      "description": "Saved search response; primary-source hits only; includes irrelevant hits not used",
+      "sha256": "ce01d86801b40f5c891ef4f5971166bbd40990838bb61e24888b8e190c219014",
+      "bytes": 30098,
+      "audit_recorded_utc": "2026-10-06T22:15:27.879253+00:00"
+    },
+    {
+      "source_id": "P48",
+      "path": "results/workflow/20261007T221035718347Z/sources/search3.txt",
+      "bytes": 33824,
+      "sha256": "19f701ffc0b84ec6ccfaf2b64caf1da285989779927509df8349b1fa5a8da4e6",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0092867426009438",
+      "description": "Indexed final Resource availability and Methods; only the final Cell hit used; mixed search response preserved",
+      "audit_recorded_utc": "2026-10-07T22:18:43.582985+00:00"
+    },
+    {
+      "source_id": "P49",
+      "path": "results/workflow/20261007T221035718347Z/sources/coconatfly_multihop.R",
+      "bytes": 7041,
+      "sha256": "ee13e42e3b1267596b24e55c9e593aa4dd081e151d21c4f17ad8642dd2b0d572",
+      "url": "https://raw.githubusercontent.com/natverse/coconatfly/c33ae3d7c2f1a9b253384ddd11cf76beb02a81e7/R/multihop.R",
+      "description": "Pinned official software: multihop/min_frac function; not established as Tastekin Figure 6G generator",
+      "audit_recorded_utc": "2026-10-07T22:18:43.582985+00:00"
+    },
+    {
+      "source_id": "P50",
+      "path": "results/workflow/20261007T221035718347Z/sources/malecns_neuprint.R",
+      "bytes": 9204,
+      "sha256": "3719656e53ea5b12d561e1df747bd6466660ad56834e48d5d5a8b65170bac581",
+      "url": "https://raw.githubusercontent.com/natverse/malecns/daf8e2a9849cc77695b14bb6b9d4c02456cd3b3c/R/neuprint.R",
+      "description": "Pinned official package defaults; not evidence of historical paper settings",
+      "audit_recorded_utc": "2026-10-07T22:18:43.582985+00:00"
+    },
+    {
+      "source_id": "P51",
+      "path": "results/workflow/20261007T221035718347Z/sources/coconatfly_multihop_history.json",
+      "bytes": 14272,
+      "sha256": "06976af8c58afe18d96eb8008c5f4dcdbcd681a52d7bc4f15303f8b99de3c878",
+      "url": "https://api.github.com/repos/natverse/coconatfly/commits?path=R/multihop.R&per_page=5",
+      "description": "Bounded function history: July 2026 commits; not proof of use in the paper",
+      "audit_recorded_utc": "2026-10-07T22:18:43.582985+00:00"
+    },
+    {
+      "source_id": "P52",
+      "path": "results/workflow/20261007T221035718347Z/sources/author_repos.json",
+      "bytes": 19055,
+      "sha256": "9baea924698602de1d4b6fa0af78dba523b46c4dd12ea107d44ae7c644bd30a9",
+      "url": "https://api.github.com/users/ibrahimtastekin/repos?per_page=100",
+      "description": "Bounded public author repository listing",
+      "audit_recorded_utc": "2026-10-07T22:18:43.582985+00:00"
+    },
+    {
+      "source_id": "P53",
+      "path": "results/workflow/20261007T221035718347Z/sources/lab_repos.json",
+      "bytes": 27391,
+      "sha256": "447a6e86db2bda5645c9c3c973b0ce86901e83511a1f9d5a333460eab9a86fd2",
+      "url": "https://api.github.com/orgs/ribeiro-lab/repos?per_page=100",
+      "description": "Bounded public lab repository listing",
+      "audit_recorded_utc": "2026-10-07T22:18:43.582985+00:00"
+    }
+  ],
+  "latest_structural_run": "results/structural/20261006T180116Z",
+  "latest_method_audit": "results/method_recovery/20261006T220302Z",
+  "preprint_full_text_status": "V2_XML_RECOVERED",
+  "latest_workflow_audit": "results/workflow/20261007T221035718347Z"
+}

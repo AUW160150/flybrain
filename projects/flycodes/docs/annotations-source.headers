@@ -1,0 +1,21 @@
+HTTP/2 200 
+content-type: application/octet-stream
+x-guploader-uploadid: AP6rU838EMPO1kql9gINnjundmouciZkv-6ZxMbgcPV9uHnOkmVUQ8xLVwtblDUp5mqqihjCHVBq9Yo
+expires: Fri, 09 Oct 2026 17:05:43 GMT
+date: Fri, 09 Oct 2026 16:05:43 GMT
+cache-control: public, max-age=3600
+last-modified: Wed, 03 Jun 2026 13:54:38 GMT
+etag: "50a7718770c57220f160ba4f431ab89e"
+x-goog-generation: 1780494878811468
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 14483314
+content-language: en
+x-goog-hash: crc32c=vjz9cg==
+x-goog-hash: md5=UKdxh3DFciDxYLpPQxq4ng==
+x-goog-storage-class: STANDARD
+accept-ranges: bytes
+content-length: 14483314
+server: UploadServer
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

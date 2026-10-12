@@ -1,0 +1,54 @@
+DRAFT — NOT SENT
+Recipient: Carlos Ribeiro <carlos.ribeiro@neuro.fchampalimaud.org>
+Subject: Figure 6G/S16 analysis code and settings — Tastekin et al., Cell 2026
+
+Dear Professor Ribeiro,
+
+I am working on reproducing the LB3a–d-to-proboscis-motor circuit in your
+paper, “The complete gustatory connectome of adult Drosophila reveals how
+taste guides feeding” (DOI: 10.1016/j.cell.2026.08.016), using current
+MaleCNS v1.0. After validating the reproduction, I plan to apply the same
+method separately to LB3b, LB3c, and their union.
+
+Could you share the code/notebook, exact function calls and configuration
+used for Figure 6G and the relevant Figure S16 panels, ideally with the
+package versions or commit? The final Methods establish the normalized
+matrix propagation and two 80th-percentile criteria, but I have not been
+able to resolve these execution details:
+
+1. Graph and denominators: which bodies and synapses entered the adjacency;
+   how the cleft-score filtering applied to MaleCNS; and whether each
+   postsynaptic input denominator included inputs outside the analyzed
+   neuron set. Which MaleCNS snapshot/export was used?
+
+2. Pooling and normalization: when individual bodies, types and the two
+   sides were pooled; how multiple sensory inputs and motor targets were
+   combined; and which entries defined each layer's mean nonzero score.
+
+3. Percentiles: the comparison population, treatment of zero scores, and
+   quantile estimator for the initial 99th-percentile partners and each
+   80th-percentile selection/pruning step.
+
+4. Iteration: how candidate sets were expanded; the effective-connectivity
+   hop horizon in each direction; the number of layers used for Figure 6G;
+   and how revisited neurons were handled.
+
+The Figure 6G/S16 selected body/node and edge tables, including displayed
+pooled weights, would also allow an auditable comparison. Twelve mapped
+motif totals currently give four exact matches and eight differences in
+our v1.0 raw all-body comparison. We are keeping those differences
+unresolved rather than adjusting thresholds to reproduce the figure.
+
+If these materials are already public, a repository/archive link and the
+relevant script/configuration would be sufficient. Thank you for your help.
+
+[Name and affiliation]
+
+--- Draft provenance, not part of the message ---
+The final paper's Resource availability section names this lead contact
+and directs requests for additional reanalysis details there:
+https://www.sciencedirect.com/science/article/abs/pii/S0092867426009438
+Independently retrieved indexed final text saved in:
+results/workflow/20261007T221035718347Z/sources/search3.txt
+The raw comparison is documented in docs/paper_vs_v1_weight_audit.md.
+No message has been sent. No access credential should accompany it.

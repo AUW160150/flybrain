@@ -1,0 +1,81 @@
+SEQUENTIAL WORKFLOW CHECKPOINT — 2026-10-07
+
+The verified input lists and mathematical core are ready. The main paper
+replication is still BLOCKED — SOURCE REQUIRED because four choices that
+affect selected neurons remain unspecified. No biological selection ran.
+
+1. RECOVER THE EXACT PAPER METHOD — PARTIALLY COMPLETE
+   Final indexed Methods, supplement, Table S1, and full preprint v2 were
+   cross-checked in the earlier audit. This follow-up rechecked the final
+   resource statement, author/lab repositories, and pinned official
+   software. It did not recover the Figure 6G/S16 analysis script/config.
+
+   Remaining details:
+   B01: graph/synapse eligibility and postsynaptic denominator universe;
+        how cleft-score filtering applies to MaleCNS.
+   B02: body/type/bilateral pooling and the reference for mean scaling.
+   B03: reference populations, zeros, and quantile estimator for the
+        initial 99th-percentile and both 80th-percentile filters.
+   B04: candidate expansion, directional hop horizons, stopping depth,
+        and revisited-neuron handling.
+
+   Immediate action: obtain the Figure 6G/S16 generating script and exact
+   calls/configuration, or an equally explicit primary-source description.
+   A focused request to the paper's lead contact is ready in
+   docs/tastekin_methods_request.txt. It has NOT been sent.
+
+2. COMPLETE AND VERIFY ONE ANALYSIS ENGINE — CORE COMPLETE
+   All 27 existing tests passed in this follow-up (21 math/helper tests
+   and 6 weight-audit tests). The exact iterative selector still depends
+   on Step 1. Add hand-calculated iterator cases once its rules are known;
+   do not assign plausible settings and call them the published method.
+
+3. RUN EXPERIMENT 1R — INPUTS PREPARED; NOT RUN
+   LB3a: 17; LB3b: 11; LB3c: 23; LB3d: 26. Total starting bodies: 77.
+   Targets: MN4a 4; MN6 2; MN8 2; MN9 2. Total target bodies: 10.
+   Live male-cns:v1.0 UUID, mutation ID and last-edit identity match the
+   saved structural baseline. Identity lists agree with both the validated
+   body table and structural source/target groups.
+   Run only after B01–B04 are resolved and the completed engine passes.
+   Produce selected nodes/edges, per-hop scores and reasons, then compare
+   to paper membership and weights. Missing reference identities remain
+   explicitly unresolved; do not score them as absent.
+
+4. REVIEW REPLICATION AND FREEZE — WAITING FOR STEP 3
+   Quantify node/edge recovery, named-node and motor recovery, side
+   consistency, and weight differences. Resolve or document differences
+   without tuning thresholds toward the published figure. The prior raw
+   motif audit remains 4/12 exact matches and 8 unresolved differences;
+   these are not post-selection results.
+   Freeze code and configuration hashes only after the scientific
+   checkpoint establishes a defensible method for the sugar extension.
+
+5. RUN THE SUGAR CONDITIONS — INPUTS PREPARED; NOT RUN
+   LB3b only: 11 starting bodies.
+   LB3c only: 23 starting bodies.
+   LB3b + LB3c: 34 starting bodies.
+   Use the same 10 motor targets and frozen graph/method in all conditions.
+   Change only the starting sensory list. Do not delete other GRNs or
+   restrict intermediate nodes to the spreadsheet's four-hop path union.
+
+6. ASSESS CANDIDATES AND EXPORT THE SELECTED ARCHITECTURE — WAITING
+   Track GNG021 without making it an input or requiring its selection.
+   Compare its selected upstream/downstream routes and motor association
+   to the Quasimodo/GNG015 branch. Assess cross-literature candidates
+   separately. Update selected-network tables and visualizations only
+   from the completed experiments. Simulation is a later task.
+
+CURRENT ARTIFACTS
+Audit: results/workflow/20261007T221035718347Z/report.txt
+Inputs: results/workflow/20261007T221035718347Z/prepared_inputs/conditions.json
+Body table: results/workflow/20261007T221035718347Z/prepared_inputs/condition_bodies.csv
+Readiness: config/method_readiness.json
+Method inventory: results/method_recovery/20261006T220302Z/method_parameters.csv
+Earlier synthetic sensitivity: results/method_recovery/20261006T220302Z/selection_ambiguity_examples.json
+
+Why execution stops here: AGENTS.md requires, "If a critical source,
+mapping, equation, body ID, or dataset version cannot be verified, stop
+that analysis and document what is missing." docs/prompt_1.md section 4
+also prohibits replication when missing details materially change node
+selection. This is an evidence dependency; further permission to run
+the already-requested experiments would not resolve it.

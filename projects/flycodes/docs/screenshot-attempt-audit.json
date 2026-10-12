@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-10-09T17:50:10.473329+00:00",
+  "source": "runs/pilot-20261009T161824-s7/interactive/cbc9963b7efa4cb4b0cf43c178f4dc5c.json",
+  "source_sha256": "640ec8a993a20a60ab901993cd7aa0be1f0256b802e01a32539b7ea5e29b8fa4",
+  "problem": "solve(nums, target): return indices [i, j], i < j, whose values sum to target. Exactly one pair exists.",
+  "original_code": "def solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    return solve(nums):\n    ret",
+  "original_judgement": {
+    "status": "syntax_error",
+    "passed": false,
+    "passed_cases": 0,
+    "total_cases": 5,
+    "detail": "invalid syntax (<unknown>, line 2)"
+  },
+  "interpretation": {
+    "status": "repaired",
+    "code": "def solve(nums):\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    return solve(nums)\n    ret\n",
+    "edits": [
+      "line 2: remove trailing colon from simple statement",
+      "line 3: remove trailing colon from simple statement",
+      "line 4: remove trailing colon from simple statement",
+      "line 5: remove trailing colon from simple statement",
+      "line 6: remove trailing colon from simple statement",
+      "line 7: remove trailing colon from simple statement",
+      "line 8: remove trailing colon from simple statement",
+      "line 9: remove trailing colon from simple statement",
+      "line 10: remove trailing colon from simple statement",
+      "line 11: remove trailing colon from simple statement",
+      "line 12: remove trailing colon from simple statement",
+      "line 13: remove trailing colon from simple statement",
+      "line 14: remove trailing colon from simple statement",
+      "line 15: remove trailing colon from simple statement",
+      "line 16: remove trailing colon from simple statement"
+    ],
+    "original_error": "invalid syntax (<syntax-audit>, line 2)",
+    "remaining_error": null,
+    "protected_tokens_preserved": true,
+    "diff": "--- original.py\n+++ syntax-interpretation.py\n@@ -1,17 +1,17 @@\n def solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    return solve(nums):\n-    ret+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    return solve(nums)\n+    ret\n"
+  },
+  "after_syntax_repair": {
+    "status": "runtime_error",
+    "passed": false,
+    "passed_cases": 0,
+    "total_cases": 5,
+    "detail": "Argument count",
+    "cases": []
+  },
+  "scope": "Audit of saved attempt matching the screenshot; no regenerated solution or algorithm changes"
+}

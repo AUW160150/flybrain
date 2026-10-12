@@ -1,0 +1,29 @@
+{
+  "profile": "confirmation",
+  "n": 512,
+  "d": 32,
+  "context": 128,
+  "batch": 8,
+  "updates": 20000,
+  "training_seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "nulls_per_seed": 3,
+  "sampling_seeds": [
+    101
+  ],
+  "validate_every": 1000,
+  "evaluation_batch": 32,
+  "lr": 0.001,
+  "execution": "dense",
+  "device": "cpu",
+  "threads": 2,
+  "protocol": "fixed-bytes",
+  "alpha": 0.5,
+  "weight_decay": 0.0,
+  "gradient_clip": 1.0
+}

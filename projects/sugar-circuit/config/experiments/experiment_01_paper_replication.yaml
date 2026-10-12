@@ -1,0 +1,10 @@
+# Paper replication: fill only from the source paper and record citations.
+experiment_id: experiment_01_paper_replication
+status: draft
+source_paper: "https://doi.org/10.1016/j.cell.2026.08.016"
+dataset: "male-cns:v1.0"
+method: null
+parameters: {}
+outputs: null
+notes: "Incomplete until the paper method is reconstructed."
+execution_allowed: false

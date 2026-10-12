@@ -1,0 +1,15 @@
+
+> flyworld@0.3.0 test:e2e
+> playwright test --list
+
+Listing tests:
+  controls.spec.ts:20:1 › 13-step controls acceptance sequence with captured movement evidence
+  controls.spec.ts:124:1 › focus, typing, pointer movement, and all camera modes
+  foundation.spec.ts:10:1 › world controls, collisions, and explicit educational provenance
+  foundation.spec.ts:34:1 › brain click, region and neuron metadata, layers, focus and return
+  foundation.spec.ts:63:1 › rule tour, synthetic replay, pause, scrub, speed, clear and reset
+  foundation.spec.ts:89:1 › package validation, disabled experiment controls, shortcuts and narrow layout
+  realdata.spec.ts:15:1 › source package, raw body metadata, filtering and saved paths
+  realdata.spec.ts:35:1 › candidate independence, blocked selection, local loader guards and educational mapping
+  realdata.spec.ts:55:1 › geometry provenance, absent anatomy, region context and narrow layout
+Total: 9 tests in 3 files

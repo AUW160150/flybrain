@@ -1,0 +1,68 @@
+{
+  "created_at": "2026-10-09T16:27:35.280923+00:00",
+  "protocol": "curriculum-v2",
+  "source_url": "https://raw.githubusercontent.com/google-research/google-research/master/mbpp/mbpp.jsonl",
+  "source_sha256": "ccf64ceae9c5403bf50a044cb6d505bfd2a2963ee58338ba268fd65beab92a9f",
+  "raw_records": 974,
+  "license": "CC BY 4.0",
+  "attribution": "Austin et al., Google Research, Mostly Basic Python Problems (2021)",
+  "official_splits": {
+    "train": "601..974",
+    "validation": "511..600",
+    "test": "11..510",
+    "unused_prompting": "1..10"
+  },
+  "splits": {
+    "train": {
+      "count": 246,
+      "sha256": "2b1cf22281b6ea280ff541224cd09a5f574db7a53616776e1a5d914f1c36d283",
+      "sources": {
+        "MBPP": 134,
+        "authored_parameter_curriculum": 100,
+        "original_pilot_training": 12
+      }
+    },
+    "validation": {
+      "count": 60,
+      "sha256": "ee5e59ff2de0e5450d1ed5903c820749081835ec2ef59a95735aac6abe0fa38a",
+      "sources": {
+        "MBPP": 40,
+        "authored_parameter_curriculum": 20
+      }
+    },
+    "test": {
+      "count": 209,
+      "sha256": "c1bc16da1ea9a67a44a5e549ba6cb958fa294967adb1bdf1b60dffdf452f6db6",
+      "sources": {
+        "MBPP": 209
+      }
+    },
+    "transfer": {
+      "count": 30,
+      "sha256": "6f0012f0709e4d78a999bdd4bfd1a7a73682965ac1957cbe2682d1dfa9bb1d21",
+      "sources": {
+        "authored_parameter_curriculum": 30
+      }
+    }
+  },
+  "mbpp_retained": {
+    "train": 134,
+    "validation": 40,
+    "test": 209
+  },
+  "exclusion_reasons": {
+    "reference_runtime_error": 11,
+    "requires_imports_or_multiple_definitions": 226,
+    "reference_wrong_answer": 11,
+    "recursion_or_function_reference": 70,
+    "reference_unsupported": 107,
+    "non_json_test_types": 141,
+    "reference_budget_exceeded": 3,
+    "test_setup_required": 2,
+    "malformed node or string on line 1: <ast.Name object at 0x10aeedbd0>": 1,
+    "exact_cross_or_within_split_duplicate": 9
+  },
+  "exclusion_policy": "one renamed function; literal JSON-compatible equality tests; bounded judge supports and passes reference; max reference 1600 chars; exact code/text dedup with test priority",
+  "benchmark_scope": "filtered MBPP subset, not standard full-MBPP score; no claim of semantic decontamination",
+  "transfer_scope": "unseen constants in seen authored templates; interpolation, not new algorithm families"
+}

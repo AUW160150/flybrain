@@ -1,0 +1,212 @@
+{
+  "run_id": "20261006T221533490089Z",
+  "timestamp": "2026-10-06T22:15:38.452833+00:00",
+  "dataset": "male-cns:v1.0",
+  "dataset_uuid": "4b2087c0fbe046bfaf0d60bc970e3e5d",
+  "label": "VISUALIZATION DERIVATIVES ONLY",
+  "source_run": "results/structural/20261006T180116Z",
+  "scientific_results_modified": false,
+  "random_seed": null,
+  "layout": "deterministic; no randomized algorithm",
+  "git_commit": "HEAD",
+  "python": "3.12.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "matplotlib": "3.11.2",
+    "networkx": "3.7",
+    "numpy": "2.5.3",
+    "pillow": "12.3.0"
+  },
+  "input_sha256": {
+    "results/structural/20261006T180116Z/nodes.csv": "41213440d6523d2f684b6f5fbdc0798b8fd2262ef37595af4751bb0b4a72ae93",
+    "results/structural/20261006T180116Z/raw_edges.csv": "be693595005bee186f8b69fd23c06fcaf7965ef613a7d0cb40a2c8c273f6080e",
+    "results/structural/20261006T180116Z/paper_associated_paths.csv": "7ecb11f7ede3ee9687ae49a1d7a3866c50b06d03c7c7d27dca2cbc9d84ab67ac",
+    "results/structural/20261006T180116Z/paper_motif_comparison.csv": "f4764e6ac4be14c171156fd2c8cefc7bbb87d8a122acf18ea633d657b0aff81d",
+    "results/structural/20261006T180116Z/validation_checks.json": "47a5f8b916c315349bd50548d28b8401b8f655822a174ba7f315b83a8e1cd9ed",
+    "results/structural/20261006T180116Z/raw/meta_start.json": "764391995d5ecf8008ded9bad567a22fdaa9ed64c6eb2f1b4799df299db17325",
+    "results/structural/20261006T180116Z/raw/meta_end.json": "c7c17c8b0f7969886ebda2edf7a36cdd19e14706582d669370d6086a389c93be",
+    "results/structural/20261006T180116Z/manifest.json": "b273994a194a923405daf874d4277568322584c99026e5c1e11f22e8d9201ea3",
+    "visualization/anatomy/20261006T215922944362Z/retrieval/retrieval_manifest.json": "34d0842b8e672202d3edb6820e374ed72422dfe6efead6144bdb42b547b32733",
+    "visualization/anatomy/orientation.json": "c08833a82d3928680f72f57395c3ae4d154a4aac35695e58861c5e548f80d09e",
+    "results/method_recovery/20261006T214639Z/audit_snapshot_final/logs/claim_ledger.csv": "7a3f354f714e9704b9707a3f4af842d6c9d4d9c42864f32ec92dedf6729335e9",
+    "paper/supplement/supplemental_information.pdf": "099586a04f8ff0f02bf0fd9bcf8cedfa7531cffced664720e43d6800011d71a7"
+  },
+  "code_sha256": {
+    "visualization/scripts/test_contracts.py": "196bbba7fde1501e9333badac3137913562cd13e76113010b62f2db613743370",
+    "visualization/scripts/build.py": "3cff3ea6382b62f9d18116c8fe957b89515cea85c56eb26750fdaa910a54c17d",
+    "visualization/scripts/test_explorer.cjs": "45739f7eaf2f5e1ce60a316eacb288d039ef8281fecb350e56d1c71976af8c9f",
+    "visualization/scripts/record_audit.py": "d44c203d8880dbf1f5ae331383cad945a0ade19f6128343d7cb8a69661aec29f",
+    "visualization/scripts/fetch_skeletons.py": "0d49858c6067d2a5136189a1c833508fb8bd98e540704a798d7eecad78d6f2ea",
+    "visualization/scripts/anatomy.py": "cb45fc975b581c90ffb23aa4d5e566e012fd0345682f5977d7a5b383f247c6ba",
+    "visualization/scripts/model.py": "77d6546e731b2649f1c903f3b4397ab75642bbbf35f10c408a300f9ac5c99676",
+    "visualization/scripts/validate.py": "160e26c4268e05229d4083bb0abcab843d62204c373fffe4600b8898ac795e8b",
+    "visualization/scripts/figures.py": "6b1a9df2ff5bd6f2362c03d397872e85d4085c8a31ee8164da00f15869b0c01b",
+    "visualization/interactive/explorer.template.html": "096c166256b01af068f9d9c4897e61591143f833803bfc4a5b0bf15ec8b08747",
+    "visualization/interactive/style.css": "8f582821f605bd92e8649686b4fdfc61590e91b79ab94d0ea29b963adba1e68e",
+    "visualization/interactive/explorer.js": "3f8d8e851ae3b2c13054875e822ce82646a6060285358a5dd6a71015405c9bde",
+    "visualization/anatomy/viewer.js": "b4b969a7255985606d982c910132e4f9dfe0b5e5c7e3392ed999fd71e016c101",
+    "visualization/anatomy/viewer.template.html": "43af4ddc42f04c39064cf77739e8314341ec23ee1e8821885c57f82606694766",
+    "visualization/anatomy/orientation.json": "c08833a82d3928680f72f57395c3ae4d154a4aac35695e58861c5e548f80d09e"
+  },
+  "selected_results": null,
+  "graph_exports": [
+    {
+      "name": "raw_focused",
+      "label": "RAW STRUCTURAL",
+      "nodes": 110,
+      "edges": 1923
+    },
+    {
+      "name": "paper_associated",
+      "label": "PAPER-ASSOCIATED",
+      "nodes": 102,
+      "edges": 274
+    },
+    {
+      "name": "candidate_comparison",
+      "label": "CANDIDATE",
+      "nodes": 12,
+      "edges": 0
+    }
+  ],
+  "figures": [
+    {
+      "id": "figure1_paper_same_side",
+      "label": "PAPER-ASSOCIATED",
+      "question": "Which verified current v1.0 bodies instantiate the mapped Figure 6 motifs?",
+      "node_rule": "All 77 LB3 inputs, 15 verified named counterpart bodies and 10 motors. Sensory display cards group subtype+side, with all member IDs retained.",
+      "edge_rule": "Union of frozen paper_associated_paths.csv edges; split by same/opposite endpoint side; sum only sensory-card outgoing counts.",
+      "sources": [
+        "nodes.csv",
+        "raw_edges.csv",
+        "paper_associated_paths.csv",
+        "paper_motif_comparison.csv"
+      ],
+      "layout": "Layered sensory \u2192 second-order \u2192 higher-order / premotor \u2192 body-level motors; left/right columns.",
+      "filters": "same_side; no weight threshold; no guessed Puddle edges; MN6 retained as an unconnected target in this motif subset",
+      "width": "0.7 + 4.3*sqrt(raw_count/panel_max); sensory counts are explicit sums",
+      "limitations": "Not strict replication; eight source discrepancies; sensory aggregation; diagram layers follow paper motifs, not general functional classification; all body pairs available in graph/HTML.",
+      "files": [
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/static/20261006T221533490089Z/figure1_paper_same_side.svg",
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/static/20261006T221533490089Z/figure1_paper_same_side.pdf",
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/static/20261006T221533490089Z/figure1_paper_same_side.png"
+      ]
+    },
+    {
+      "id": "figure1_paper_opposite_side",
+      "label": "PAPER-ASSOCIATED",
+      "question": "Which verified current v1.0 bodies instantiate the mapped Figure 6 motifs?",
+      "node_rule": "All 77 LB3 inputs, 15 verified named counterpart bodies and 10 motors. Sensory display cards group subtype+side, with all member IDs retained.",
+      "edge_rule": "Union of frozen paper_associated_paths.csv edges; split by same/opposite endpoint side; sum only sensory-card outgoing counts.",
+      "sources": [
+        "nodes.csv",
+        "raw_edges.csv",
+        "paper_associated_paths.csv",
+        "paper_motif_comparison.csv"
+      ],
+      "layout": "Layered sensory \u2192 second-order \u2192 higher-order / premotor \u2192 body-level motors; left/right columns.",
+      "filters": "opposite_side; no weight threshold; no guessed Puddle edges; MN6 retained as an unconnected target in this motif subset",
+      "width": "0.7 + 4.3*sqrt(raw_count/panel_max); sensory counts are explicit sums",
+      "limitations": "Not strict replication; eight source discrepancies; sensory aggregation; diagram layers follow paper motifs, not general functional classification; all body pairs available in graph/HTML.",
+      "files": [
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/static/20261006T221533490089Z/figure1_paper_opposite_side.svg",
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/static/20261006T221533490089Z/figure1_paper_opposite_side.pdf",
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/static/20261006T221533490089Z/figure1_paper_opposite_side.png"
+      ]
+    },
+    {
+      "id": "figure2_sugar_panels",
+      "label": "SUGAR-RESTRICTED EFFECTIVE-CONNECTIVITY",
+      "question": "Which bodies and edges are retained independently for LB3b, LB3c and combined inputs?",
+      "node_rule": "Only explicitly listed membership from validated selected-result contract; currently none.",
+      "edge_rule": "Only validated selected-result edges with separately preserved raw counts and effective scores; currently none.",
+      "sources": [
+        "selected_results contract; currently absent"
+      ],
+      "layout": "Four switchable HTML panels; matching four-panel static status sheet.",
+      "filters": "No raw search memberships used. Overlap/difference derives from the independent validated sets.",
+      "width": "HTML supports separate raw sqrt and effective-score sqrt modes; no score fallback.",
+      "limitations": "BLOCKED pending validated Tastekin effective-connectivity results. Status sheet is not a circuit result.",
+      "files": [
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/static/20261006T221533490089Z/figure2_sugar_panels.svg",
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/static/20261006T221533490089Z/figure2_sugar_panels.pdf",
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/static/20261006T221533490089Z/figure2_sugar_panels.png"
+      ]
+    },
+    {
+      "id": "figure3_candidate_comparison",
+      "label": "CANDIDATE",
+      "question": "Why are these six types included, and what are their direct raw sensory/motor connections?",
+      "node_rule": "Exactly six user-requested candidate types; 12 individual bodies with preserved sides.",
+      "edge_rule": "Direct LB3b/LB3c\u2192candidate and candidate\u2192four motor types; table sums across endpoint type bodies.",
+      "sources": [
+        "nodes.csv",
+        "raw_edges.csv",
+        "paper/supplement/supplemental_information.pdf pp17,20",
+        "results/method_recovery/20261006T214639Z/audit_snapshot_final/logs/claim_ledger.csv C061"
+      ],
+      "layout": "Six separate cards with two body rows each; no candidate-to-candidate pathway drawing.",
+      "filters": "Only requested comparison types and direct sensory/motor boundaries; no effective, Shiu or experimental badges without evidence.",
+      "width": "Not applicable: exact raw counts in tables, no drawn edges.",
+      "limitations": "Raw counts are not normalized strengths; order for GNG021/GNG232/DNg67/DNge080 remains unknown; no dynamic validation implied by aliases.",
+      "files": [
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/static/20261006T221533490089Z/figure3_candidate_comparison.svg",
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/static/20261006T221533490089Z/figure3_candidate_comparison.pdf",
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/static/20261006T221533490089Z/figure3_candidate_comparison.png"
+      ]
+    },
+    {
+      "id": "anatomy",
+      "label": "RAW STRUCTURAL / PAPER-ASSOCIATED / CANDIDATE / SUGAR-RESTRICTED EFFECTIVE-CONNECTIVITY (per group)",
+      "question": "What are the actual morphologies of the explicitly requested bodies?",
+      "node_rule": "Only verified paper bodies, explicitly requested candidate bodies, and any later validated selected bodies; maximum 500.",
+      "edge_rule": "Original SWC child-parent cable segments only; not synaptic edges; no healing or inferred connections.",
+      "sources": [
+        "Official native v1.0 per-body SWCs; retrieval_manifest.json; anatomy.json"
+      ],
+      "layout": "3D orthographic interactive orbit with body hover; verified named cameras or explicitly native XYZ projections.",
+      "filters": "LB3b, LB3c, paper downstream, selected downstream, motors, combined paper, comparison candidates; body-side filter.",
+      "width": "Constant cable display width; never encode synapse count as neurite thickness.",
+      "limitations": "Skeleton retrieval status: BLOCKED. Named cameras require verified orientation. No actual anatomical renders are claimed for any blocked group.",
+      "files": [
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/anatomy/20261006T221533490089Z/anatomy_BLOCKED.svg",
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/anatomy/20261006T221533490089Z/anatomy_BLOCKED.pdf",
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/anatomy/20261006T221533490089Z/anatomy_BLOCKED.png",
+        "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/anatomy/20261006T221533490089Z/index.html"
+      ]
+    }
+  ],
+  "anatomy_status": "BLOCKED",
+  "output_sha256": {
+    "visualization/data/20261006T221533490089Z/edges.csv": "a74e44a24cbd0a637dc94b6585553efa917d7e39e612962614721869f167fb6b",
+    "visualization/data/20261006T221533490089Z/model.json": "c451ae1da608f7fdcb5b2897698474f3d2fa99ec315bdc0ead3f04af58896713",
+    "visualization/data/20261006T221533490089Z/nodes.csv": "81a258ca04f911a3c4566f209ac5c4fb2a8f52c4c54206444c0d9a8c9f7532db",
+    "visualization/data/20261006T221533490089Z/paper_edges.csv": "ecd7b9982c9d81f167354efc022768c773da25f14b734e6649488cc677626a8f",
+    "visualization/data/20261006T221533490089Z/selected_results.json": "d469f995245fd27fba0e3ca4a1e06e057df4638ae285616f5191741ecd78d297",
+    "visualization/static/20261006T221533490089Z/figure1_paper_opposite_side.pdf": "9e06cbebd5b81b45ead7cc5acd89ccb40c6156e97b0a2199e551f7191d0c6bfa",
+    "visualization/static/20261006T221533490089Z/figure1_paper_opposite_side.png": "49fce4367a679143a38f3d0eacc73195f91b0acaad8fcd018447146a38d2c32c",
+    "visualization/static/20261006T221533490089Z/figure1_paper_opposite_side.svg": "8d6328f0ae71ecece53927d54ad8b3df5f622037725c9f4bbfd986c1d072632e",
+    "visualization/static/20261006T221533490089Z/figure1_paper_same_side.pdf": "bfd05bcab4555387224913d143df3e48f5c7ef8a9c5138cb4b44ff03915e53f6",
+    "visualization/static/20261006T221533490089Z/figure1_paper_same_side.png": "25d62fb26d80268e6ad5ba7c0cb61af0700ba475d4095ea6502f18b723360170",
+    "visualization/static/20261006T221533490089Z/figure1_paper_same_side.svg": "03286ae5f3ff1e21dff2b5375a7c77c6bf47aa633f806508982640f66ba978af",
+    "visualization/static/20261006T221533490089Z/figure2_sugar_panels.pdf": "cfe4657f61ddba687469a8c27feda165b9c89f9ba091428a41d5c09c3ef449cb",
+    "visualization/static/20261006T221533490089Z/figure2_sugar_panels.png": "32dc50c04836802e9d52e7cb6a3f089cb91e44908fc02df5f0b0a27f2471fcfc",
+    "visualization/static/20261006T221533490089Z/figure2_sugar_panels.svg": "21059e6968b9bb56e8fb0de591313831dd7ba778da450d73bd069f035fe243fb",
+    "visualization/static/20261006T221533490089Z/figure3_candidate_comparison.pdf": "233b1b433ebfc947493ce59e66972f916dca5942f60cad96a96b21a2aa30537e",
+    "visualization/static/20261006T221533490089Z/figure3_candidate_comparison.png": "f4e210ce5bb31b59d556dee716f5d41e2baf27b694291561606e9587b438d4f1",
+    "visualization/static/20261006T221533490089Z/figure3_candidate_comparison.svg": "31c35c3261ee119aac87fcbd6eb7962412defc3a6cdd28b35d73f596cfcdca67",
+    "visualization/interactive/20261006T221533490089Z/index.html": "69ad31e2f7fc459e372662721e72d6c47b17e10e2e67a49e9f54930decc3fd46",
+    "visualization/anatomy/20261006T221533490089Z/anatomy.json": "d60ca203f15610fc1436fa7ff77fe031f3638e498c9771cc29594edd4c7e2594",
+    "visualization/anatomy/20261006T221533490089Z/anatomy_BLOCKED.pdf": "2dfb3d0a4cf542ee5eaf9665658ae2a9799c29a07bf5973a03f31856bcaa9a05",
+    "visualization/anatomy/20261006T221533490089Z/anatomy_BLOCKED.png": "ca8d96315ee585e5fa92e2cb7bc7e1d700fa49c784aa890dc594a7d26338c501",
+    "visualization/anatomy/20261006T221533490089Z/anatomy_BLOCKED.svg": "30a104786ff0e6361ff2bc74b8ed65ea84abcd8a0f38450a218bd423e806c4cf",
+    "visualization/anatomy/20261006T221533490089Z/index.html": "c90af3b5139e6b4d980e87324d5269aff52d1afdab655489492ce4cc2367ae7f",
+    "visualization/anatomy/20261006T221533490089Z/retrieval_manifest.json": "34d0842b8e672202d3edb6820e374ed72422dfe6efead6144bdb42b547b32733",
+    "visualization/graph/20261006T221533490089Z/candidate_comparison.gexf": "07ba04d44744f444450ae5acd92017c54d4d6c0f7bd976f9a22827002db84ca6",
+    "visualization/graph/20261006T221533490089Z/candidate_comparison.graphml": "10319230c45470937ff1d07bc45fde9a3481894949d2ec8dbfbd94f7af55b47f",
+    "visualization/graph/20261006T221533490089Z/paper_associated.gexf": "b35fcad4d889fdaaf38b0dc5dd4a71a03cc119af5dceade548671678b08f085e",
+    "visualization/graph/20261006T221533490089Z/paper_associated.graphml": "ced1db0b5e7a4e8a97f00dd64338cc8acf7ec769e44c3b2e99754083bbea5769",
+    "visualization/graph/20261006T221533490089Z/raw_focused.gexf": "adc7ad9bb219a8e71397b554700066cd28e968b8926a66117242d8e2e2752be0",
+    "visualization/graph/20261006T221533490089Z/raw_focused.graphml": "27ccafa5d532a7433e3ec7a0ea1d39eb5ae3e5ff41b254ff176be125758f18a8"
+  }
+}

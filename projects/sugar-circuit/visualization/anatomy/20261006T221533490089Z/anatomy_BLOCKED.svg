@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-06T18:15:38.107720</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="text_1">
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182d3c" x="40.32" y="22.68" transform="rotate(-0 40.32 22.68)">RAW STRUCTURAL</text>
+  </g>
+  <g id="text_2">
+   <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182d3c" x="40.32" y="42.12" transform="rotate(-0 40.32 42.12)">MaleCNS anatomy · BLOCKED</text>
+  </g>
+  <g id="text_3">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #435465" x="40.32" y="60.264" transform="rotate(-0 40.32 60.264)">No authentic requested SWC geometry is available in this build.</text>
+  </g>
+  <g id="text_4">
+   <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start" x="69.12" y="194.4" transform="rotate(-0 69.12 194.4)">SKELETON RETRIEVAL BLOCKED</text>
+  </g>
+  <g id="text_5">
+   <text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(69.12 256.32)">The official v1.0 per-body download failed in this environment.</text>
+   <text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(69.12 285.12)">No morphology, synapse positions, or anatomical crossings were invented.</text>
+  </g>
+  <g id="text_6">
+   <text style="font-size: 14px; font-family: 'DejaVu Sans'" transform="translate(69.12 374.48)">Prepared groups: LB3b · LB3c · paper downstream · motors · combined paper circuit</text>
+   <text style="font-size: 14px; font-family: 'DejaVu Sans'" transform="translate(69.12 401.08)">Selected sugar downstream: BLOCKED — validated selection required</text>
+   <text style="font-size: 14px; font-family: 'DejaVu Sans'" transform="translate(69.12 427.68)">Prepared cameras: anterior · posterior · dorsal · lateral · interactive native 3D</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(69.12 554.636445)">Named camera orientation is UNVERIFIED; authoritative orientation evidence is also required.</text>
+   <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(69.12 570.24)">See retrieval_manifest.json, the explicit body allowlist, and docs/ANATOMY.md.</text>
+  </g>
+ </g>
+</svg>

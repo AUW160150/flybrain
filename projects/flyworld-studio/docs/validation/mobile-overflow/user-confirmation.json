@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-08",
+  "source": "User message following the focused anatomy/mobile browser rerun request",
+  "userMessage": "yes it passed",
+  "scenario": "geometry provenance, absent anatomy, region context and narrow layout",
+  "status": "PASS_USER_CONFIRMED",
+  "playwrightLastRunSnapshot": {
+    "status": "passed",
+    "failedTests": []
+  },
+  "priorSuitePassed": 8,
+  "scenariosWithPassingEvidenceAcrossRuns": 9,
+  "freshFullSuiteRunConfirmed": false,
+  "humanVisualReview": "PENDING"
+}

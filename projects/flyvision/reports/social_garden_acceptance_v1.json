@@ -1,0 +1,21 @@
+{
+  "scope": "SOFTWARE_AND_REFERENCE_CONSISTENCY",
+  "recording_manifest_sha256": "b3f3f657b368770dbce73af11ea2adc6736b333a3435c37634d8316c9bd1f7b2",
+  "verification_script_sha256": "3e0bf38e30d1d6e75dc75f222ecdc5491d086cf0ac32fc1d565d39ce0abdeb8a",
+  "frames": 90,
+  "rays": 1709,
+  "sample_layout": "frame by ray by RGB",
+  "replayed_frames": [
+    0,
+    45,
+    89
+  ],
+  "max_replay_error": 0.0,
+  "first_last_mean_absolute_difference": 0.1569279283285141,
+  "artifact_hashes_verified": true,
+  "replay_code_hashes_verified": true,
+  "malecns_verified_bindings": 0,
+  "neural_simulation_run": false,
+  "physiological_validation": false,
+  "live_desktop_controls": "UNVERIFIED; agent sandbox exposes no display"
+}

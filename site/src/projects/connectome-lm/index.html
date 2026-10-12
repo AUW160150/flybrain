@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connectome language model — does fly wiring help predict text? · Flybrain</title>
+<meta name="description" content="A 512-neuron MaleCNS subgraph as the recurrent core of a byte-level language model, against degree-preserving rewired controls. 35 runs, frozen before the test. No fly-wiring advantage established.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="wordmark" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="11" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-25 11 13)"/><ellipse cx="21" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(25 21 13)"/><ellipse cx="16" cy="19" rx="4" ry="8" fill="currentColor"/><circle cx="16" cy="9.5" r="3" fill="var(--accent)"/></svg>Flybrain</a>
+  <ul><li><a href="/#projects" data-match="/projects/">Projects</a></li><li class="hide-sm"><a href="/#method">Method</a></li><li><a href="/#about">About</a></li><li><a href="https://github.com/AUW160150/flybrain/tree/main/projects/connectome-lm">Source ↗</a></li><li><a href="#" data-theme-toggle title="Switch light / dark" aria-label="Switch colour theme">◐</a></li></ul>
+</div></header>
+
+<section class="proj-head"><div class="wrap">
+  <p class="eyebrow"><span>Project 04</span><span>Read · experiment</span><span>PyTorch · CPU float32 · preregistered locally</span></p>
+  <h1>Does fly wiring help a network predict text?</h1>
+  <p class="lead">Take 512 real neurons and their 3,061 directed connections from the connectome. Make each connection a trainable weight, feed bytes of Shakespeare through learned embeddings, and train a readout. Compare against the same graph with its edges rewired while preserving every neuron's in- and out-degree. If the anatomy carries useful structure, the fly topology should win. It did not.</p>
+  <div class="cta"><a class="btn primary" href="#result">The result</a><a class="btn" href="#design">The design</a><a class="btn" href="https://github.com/AUW160150/flybrain/tree/main/projects/connectome-lm">Source ↗</a></div>
+  <div class="proj-meta">
+    <div><p class="eyebrow">Graph</p>512 neurons · 3,061 edges · sampling seed 101</div>
+    <div><p class="eyebrow">Confirmation matrix</p>35 runs · 5 seeds · 20,000 updates each · 4.46 h CPU</div>
+    <div><p class="eyebrow">Primary effect</p>−0.0103 BPB, 95% CI [−0.0206, +0.0017]</div>
+    <div><p class="eyebrow">Verdict</p>No fly-wiring advantage established</div>
+  </div>
+</div></section>
+
+<div class="wrap proj-body">
+<div class="prose">
+  <figure style="margin-top:0"><img src="/img/lm-01-results-overview.png" alt="Figure: final test performance per condition and the primary paired comparison, whose interval crosses zero" width="1800"><figcaption>Figure 01. Held-out test bits per byte for all 35 runs (hollow circles) and their means (diamonds); the predeclared paired effect with its 10,000-resample bootstrap interval. The dashed line is the +0.02 BPB practical threshold chosen before training.</figcaption></figure>
+
+  <h2 id="result">The result</h2>
+  <p>On the sealed test split, averaging the three rewired controls for each seed and subtracting the fly model: <strong>mean −0.0103 bits per byte</strong>, 95% paired bootstrap interval [−0.0206, +0.0017]. Four of five seeds favoured rewiring. The interval includes zero, so no clear disadvantage is established either, and it falls well short of the predeclared +0.02 BPB practical advantage. This is one subgraph from one specimen, mostly visual neurons, with about 92% of those neurons' filtered connectivity falling outside the subset. It is a null result for this experiment, not a result about biological learning.</p>
+  <table>
+    <thead><tr><th>Condition</th><th class="num">Runs</th><th class="num">Active params</th><th class="num">Test BPB</th><th class="num">Byte perplexity</th><th class="num">Accuracy</th></tr></thead>
+    <tbody>
+      <tr><td>Fly topology</td><td class="num">5</td><td class="num">52,981</td><td class="num">2.6388</td><td class="num">6.23</td><td class="num">46.92%</td></tr>
+      <tr><td>Degree-rewired control</td><td class="num">15</td><td class="num">52,981</td><td class="num">2.6286</td><td class="num">6.18</td><td class="num">47.11%</td></tr>
+      <tr><td>Random-density control</td><td class="num">5</td><td class="num">52,981</td><td class="num">2.5827</td><td class="num">5.99</td><td class="num">47.65%</td></tr>
+      <tr><td>Parameter-matched GRU</td><td class="num">5</td><td class="num">53,000</td><td class="num">2.5575</td><td class="num">5.89</td><td class="num">49.41%</td></tr>
+      <tr><td>No cross-node recurrence</td><td class="num">5</td><td class="num">50,432</td><td class="num">2.6738</td><td class="num">6.38</td><td class="num">45.92%</td></tr>
+    </tbody>
+  </table>
+  <p class="mono muted" style="font-size:12.5px">Validation-selected checkpoints scored once on 55,769 test positions. Train-only references: unigram 4.8506 BPB, bigram 3.6084 BPB. Lower is better.</p>
+  <figure><img src="/img/lm-02-paired-comparison.png" alt="Figure: all five matched seed comparisons and all 15 rewired test scores" width="1800"><figcaption>Figure 02. Each seed's fly run against its three independently rewired controls.</figcaption></figure>
+
+  <h2 id="design">The design</h2>
+  <ul>
+    <li><strong>Data.</strong> Tiny Shakespeare at a pinned revision, split contiguously 90/5/5 by bytes. An exact duplicate audit found no cross-split spans of 256 bytes or more. The test split was touched by nothing except hashing until the final command.</li>
+    <li><strong>Graph.</strong> All 151,856,684 raw ordered pairs audited (no duplicates); 165,122 traced neurons and 6,235,649 directed pairs with ≥ 5 contacts retained; a 512-neuron neighbourhood sampled with seed 101. Exact body IDs and directions are preserved.</li>
+    <li><strong>Model.</strong> UTF-8 bytes → learned embedding → one trainable parameter per allowed directed edge in the recurrent core (dense execution, masked) → linear readout. Everything learns from scratch; the graph is only a sparsity pattern. Width 32, context 128.</li>
+    <li><strong>Controls.</strong> Degree-preserving directed rewiring (61,220 accepted swaps per control, ≈17% edge overlap with the original), random graphs at the same density, a GRU within 5% of the parameter count, and a diagonal "no cross-node recurrence" ablation.</li>
+    <li><strong>Protocol.</strong> Smoke (5 runs) → pilot (15 runs, 3 seeds) → development grid (30 runs, seeds 901/902, three learning rates, selected on pooled validation only) → frozen confirmation (35 runs, seeds 11–55, lr 0.003) → one explicit <code>final-evaluate</code> command. The analysis plan, code, corpus, graphs and configuration were hashed into a freeze file before the confirmation run.</li>
+  </ul>
+  <figure><img src="/img/lm-07-wiring-and-control.png" alt="Figure: the actual 512-node fly graph and a rewired control, drawn in a common layout, with their adjacency matrices" width="1800"><figcaption>Figure 07. The real 512-node subgraph and one rewired control in a common abstract layout, with directed adjacency matrices. Layout is not anatomy.</figcaption></figure>
+  <div class="gallery">
+    <figure><img src="/img/lm-03-learning-curves.png" alt="Validation curves versus training bytes for every condition"><figcaption>Figure 03. Validation BPB against training-byte exposures, with seed ranges.</figcaption></figure>
+    <figure><img src="/img/lm-06-recurrence-diagnostics.png" alt="Validation-only diagnostics after disrupting recurrence"><figcaption>Figure 06. Zeroing the core, resetting state every byte, or zeroing 10% of coefficients: all conditions depend on their trained recurrence.</figcaption></figure>
+    <figure><img src="/img/lm-05-parameters-and-runtime.png" alt="Parameter accounting and training time per run"><figcaption>Figure 05. Equal parameters and bytes do not mean equal compute: the GRU trained in 141 s on average, the fly core in 509 s.</figcaption></figure>
+    <figure><img src="/img/lm-learning-rate-grid.png" alt="Development grid of learning rates"><figcaption>Development selection: pooled fly + rewired validation BPB by learning rate. 0.003 selected for all graph arms and, separately, for the GRU.</figcaption></figure>
+  </div>
+
+  <h2 id="audit">What was checked</h2>
+  <p>After every stage an audit script replayed the saved validation scores and matched them to the logs within 10⁻⁶ BPB, verified code, plan, corpus and graph hashes, confirmed exact labelled degree preservation in the controls, matched initial edge-slot weights between fly and null arms, checked that every run consumed its full budget, and confirmed that no test loader had been opened. The final audit re-derived the paired bootstrap independently. The unit suite is 31 passed, 2 skipped (no CUDA or MPS in the deterministic CPU configuration).</p>
+
+  <h2 id="run">Reproduce</h2>
+<pre><code>cd projects/connectome-lm
+python3.12 -m venv .venv &amp;&amp; .venv/bin/pip install -r requirements.lock &amp;&amp; .venv/bin/pip install --no-deps -e .
+./fly-lm download --cache-dir ../../data/flat-connectome      # MaleCNS flat files, ~1.07 GB
+./fly-lm prepare --nodes 512 --sampling-seeds 101
+./fly-lm smoke                                               # 5 runs, minutes
+./fly-lm run --config pilot                                  # 15 runs
+./fly-lm tune --config pilot --output configs/development-selection.json
+./fly-lm freeze --config confirmation --selection configs/development-selection.json --output configs/confirmation-frozen.json
+./fly-lm run --config confirmation --freeze configs/confirmation-frozen.json   # 35 runs, ~4.5 h on a laptop CPU
+./fly-lm final-evaluate --freeze configs/confirmation-frozen.json</code></pre>
+  <p>The confirmation reports, final review, audits, per-run values and the figure source are in <code>reports/confirmation-211428f1ca1f/</code>. Checkpoints and prepared graphs are not in the repository.</p>
+
+  <div class="pager"><a href="/projects/flyvision/">← 03 FlyVision</a><a href="/projects/flycodes/">05 Flycodes →</a></div>
+</div>
+<aside class="toc">
+  <p class="eyebrow">On this page</p>
+  <ol><li><a href="#result">The result</a></li><li><a href="#design">The design</a></li><li><a href="#audit">What was checked</a></li><li><a href="#run">Reproduce</a></li></ol>
+  <p class="eyebrow">Files</p>
+  <div class="links"><a href="https://github.com/AUW160150/flybrain/blob/main/projects/connectome-lm/reports/confirmation-211428f1ca1f/final-review.md">Final review</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/connectome-lm/reports/confirmation-211428f1ca1f/report.md">Full run report</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/connectome-lm/docs/STATUS.md">STATUS.md</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/connectome-lm/docs/analysis_plan.md">Analysis plan</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/connectome-lm/docs/LIMITATIONS.md">Limitations</a></div>
+</aside>
+</div>
+
+<footer><div class="wrap">
+  <div><p class="eyebrow">Flybrain</p><p>Hand-written HTML and CSS, one module of JavaScript for the simulation, no framework, no analytics.</p></div>
+  <div><p class="eyebrow">Data</p><ul><li>MaleCNS v1.0 — FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research. <a href="https://male-cns.janelia.org/download/">CC BY 4.0</a></li><li>Tiny Shakespeare (Karpathy)</li></ul></div>
+  <div><p class="eyebrow">Repositories</p><ul><li><a href="https://github.com/AUW160150/flybrain">AUW160150/flybrain</a></li><li><a href="https://github.com/prove-ai/flybrain">prove-ai/flybrain</a></li></ul></div>
+</div></footer>
+<script type="module" src="/js/site.js"></script>
+</body>
+</html>

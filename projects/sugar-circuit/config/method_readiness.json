@@ -1,0 +1,49 @@
+{
+  "status": "FINAL_METHOD_SECTIONS_RECOVERED_SELECTION_DETAILS_UNRESOLVED",
+  "dataset_verified": true,
+  "method_verified": false,
+  "main_final_methods_recovered": true,
+  "official_implementation_recovered": false,
+  "effective_math_tests_passed": true,
+  "raw_weight_audit_tests_passed": true,
+  "paper_reference_complete": false,
+  "unresolved_weight_differences": 8,
+  "experiment_01_allowed": false,
+  "experiment_02_allowed": false,
+  "simulation_allowed": false,
+  "threshold_tuning_allowed": false,
+  "frozen_implementation_commit": null,
+  "source_only_sugar_restriction": true,
+  "parameter_inventory": "results/method_recovery/20261006T220302Z/method_parameters.csv",
+  "complete_final_document_recovered": false,
+  "final_methods_access_mode": "indexed final HTML sections authorized by user source pack",
+  "preprint_v2_full_xml_recovered": true,
+  "final_vs_preprint_diff_completed": true,
+  "effective_math_tests_count": 21,
+  "total_tests_passed": 27,
+  "core_algebra_implemented": true,
+  "significant_path_iterator_implemented": false,
+  "bootstrap_ci_implemented": false,
+  "motif_selector_implemented": false,
+  "selection_blockers": [
+    {
+      "id": "B01",
+      "detail": "Graph neuron eligibility, synapse filtering and input-denominator universe; cleft50 mapping to MaleCNS"
+    },
+    {
+      "id": "B02",
+      "detail": "Source/target body-to-type and bilateral pooling, layer normalization reference axis"
+    },
+    {
+      "id": "B03",
+      "detail": "Initial99 and both80 percentile comparison populations, zeros and estimator"
+    },
+    {
+      "id": "B04",
+      "detail": "Candidate expansion, direction-specific hop horizons, Figure6G depth and revisits"
+    }
+  ],
+  "latest_method_audit": "results/method_recovery/20261006T220302Z",
+  "dataset_metadata": "results/method_recovery/20261006T220302Z/meta_start.json",
+  "method_frozen": false
+}

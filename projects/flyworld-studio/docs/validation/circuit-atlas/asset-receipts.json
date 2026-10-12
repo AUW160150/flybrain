@@ -1,0 +1,377 @@
+[
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/71254.swc",
+    "bytes": 12447,
+    "sha256": "65423364ff57cd2bb7006d2f1e3438cc16c9996a18a273ec12a8057e3b7e468b",
+    "retrievedAt": "2026-10-08T22:24:08.302Z",
+    "etag": "\"73a6e6901f544d89ca9587b77f9c5b37\"",
+    "generation": "1777993456204489",
+    "cachePath": "data/connectome/cache/0251f63696cfc40be66d6b011867b406c91382636fe0bcace9d002a118f358b6/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/0a7.shard",
+    "bytes": 7989,
+    "sha256": "c4ced2c7ea5751405bbc603c0c51634f3360b9e9378480667b8db3e6eb4488eb",
+    "retrievedAt": "2026-10-08T22:27:29.387Z",
+    "range": [
+      149481072,
+      149489061
+    ],
+    "etag": "\"f0cc3a9e95eacbbab40f7c0c95db807f\"",
+    "generation": "1780639907441785",
+    "cachePath": "data/connectome/cache/1cd77d8208fbf8e7b7b4b38bd9594eefd24c3addf673c77aea9c6d52ff7a45f6/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/rois/vnc-neuropil-shell-v2/mesh/1:0",
+    "bytes": 56,
+    "sha256": "c52120a9ed360a86d1f6e79ae04dea2d732482cc9bc42d9ca6a38f090dc46582",
+    "retrievedAt": "2026-10-08T22:27:29.386Z",
+    "etag": "\"b4341dd32886b6beed5ff30aa816cf52\"",
+    "generation": "1774299606789046",
+    "cachePath": "data/connectome/cache/22b489a3b7e81fc63d9a7abc827e6caea520ca235043d80105f2b6bc7de62a89/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/rois/fullbrain-major-shells/mesh/2:0",
+    "bytes": 43,
+    "sha256": "35a84b53b72bdce888c9e617a14d98a8db7df295f8a7228f611cfd53f4fb71d0",
+    "retrievedAt": "2026-10-08T22:27:29.385Z",
+    "etag": "\"a57a47c587b65757ad2911a74f2d71e1\"",
+    "generation": "1758224604447284",
+    "cachePath": "data/connectome/cache/24434968b1b8b6e1c305b92b7d8012c53ee234e92f998401aff4d9e66caacbd1/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/0d5.shard",
+    "bytes": 16,
+    "sha256": "28b2c01ac4bb47afa94d1703e2b81601bf9a24bd54fd8465a4745328930a88c8",
+    "retrievedAt": "2026-10-08T22:24:37.561Z",
+    "range": [
+      48,
+      64
+    ],
+    "etag": "\"04402ff0ca58e3668b9816689c4b1ba0\"",
+    "generation": "1780639892804177",
+    "cachePath": "data/connectome/cache/26ac08e4777f594f5a62b96f7049714e2b2a48db15fd56e9784cd2da4531e4e5/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/0d5.shard",
+    "bytes": 7535,
+    "sha256": "c179a2413a97999c7982af83d9f74637aca883ff8e524f88a1a9fb3156fb9569",
+    "retrievedAt": "2026-10-08T22:27:29.389Z",
+    "range": [
+      26828544,
+      26836079
+    ],
+    "etag": "\"04402ff0ca58e3668b9816689c4b1ba0\"",
+    "generation": "1780639892804177",
+    "cachePath": "data/connectome/cache/32720fb6ea33bfd315798327bed5629a0b9218ce751b266672410a037870a82d/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/info",
+    "bytes": 9221,
+    "sha256": "78b5607bdf3380e037e3edd84aded38a92d6e6ece644ac9f49613d6cd18bdb7c",
+    "retrievedAt": "2026-10-08T22:24:08.305Z",
+    "etag": "\"19aa52901ca38b64e488f6b1f953782e\"",
+    "generation": "1780639830889609",
+    "cachePath": "data/connectome/cache/3e032e2edac859c64903137e733ec37692ffcaffeb2172dfd5e5435030f0c27a/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/info",
+    "bytes": 7591,
+    "sha256": "dfe0bf785574079b40564ba03a2354ce5b2bd96ed8e830422b428182ade5bdf9",
+    "retrievedAt": "2026-10-08T22:24:08.303Z",
+    "etag": "\"c2c6b0e1861d3b9486ab5227773f86ef\"",
+    "generation": "1781007977219972",
+    "cachePath": "data/connectome/cache/421ad59912212fb153c59b8e88b34aed5ee7676729fb994cf04097cfb871f72d/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/0d5.shard",
+    "bytes": 63435,
+    "sha256": "a53f29b75e4dd69b5bdd0293556c01796238b8002d1c82b72b6fe4352df0dead",
+    "retrievedAt": "2026-10-08T22:29:21.745Z",
+    "range": [
+      15345045,
+      15408480
+    ],
+    "etag": "\"04402ff0ca58e3668b9816689c4b1ba0\"",
+    "generation": "1780639892804177",
+    "cachePath": "data/connectome/cache/4711ac35b4e8bb2977c86ff35607a88c5da791f83e2b5a8ee375ac794079c889/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/0a7.shard",
+    "bytes": 119737,
+    "sha256": "62cbb95fb8f31e267216db1e888277f185fa54f4ce723a27401f43e18c2dc72e",
+    "retrievedAt": "2026-10-08T22:29:21.740Z",
+    "range": [
+      144578523,
+      144698260
+    ],
+    "etag": "\"f0cc3a9e95eacbbab40f7c0c95db807f\"",
+    "generation": "1780639907441785",
+    "cachePath": "data/connectome/cache/52198a6da38d887604efd61e270a5211e70d1dfc5e2c0580dcc2f05a375dab72/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/1e5.shard",
+    "bytes": 7678,
+    "sha256": "27b62fe0af7ce48aa5933c3a172429d68c791de8a2a1acb0a0a6c080ebde30ec",
+    "retrievedAt": "2026-10-08T22:27:29.388Z",
+    "range": [
+      59438356,
+      59446034
+    ],
+    "etag": "\"87e304c38b190d5196113637c6e5f38e\"",
+    "generation": "1780639902303245",
+    "cachePath": "data/connectome/cache/5c7bf4849a2e72fffa0772d27d9c06d905b2b10310f5f242c650a61b35ec97db/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/125.shard",
+    "bytes": 6588,
+    "sha256": "1cee710ddb07567eb1610f8b0943682d4144cebafe93d722a0f0b9e56668c042",
+    "retrievedAt": "2026-10-08T22:29:21.741Z",
+    "range": [
+      508697236,
+      508703824
+    ],
+    "etag": "\"2edd8da3f625af44d8b2365ffe3a465c\"",
+    "generation": "1780639913571099",
+    "cachePath": "data/connectome/cache/5e5903be83850770756e4ae79e4d47df891ad552fea48bdcb823a0a2976726e9/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/rois/fullbrain-major-shells/mesh/3:0",
+    "bytes": 43,
+    "sha256": "8e7f15dc44bd83f8c6ab4bb819e893aacb2576e240d0b1d18300842d23e9be44",
+    "retrievedAt": "2026-10-08T22:27:29.385Z",
+    "etag": "\"59df86cf6210bbe22fbd5e851065961f\"",
+    "generation": "1758224604442629",
+    "cachePath": "data/connectome/cache/6afa0ee33805752695ec8c521b89c2bcf58950da0fae1a3fee8b2978a06062fd/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/1e5.shard",
+    "bytes": 16,
+    "sha256": "bf9a96172939ff899b2971800cf940b37efccfe95f556f53b1d81dca0ade5690",
+    "retrievedAt": "2026-10-08T22:24:37.560Z",
+    "range": [
+      16,
+      32
+    ],
+    "etag": "\"87e304c38b190d5196113637c6e5f38e\"",
+    "generation": "1780639902303245",
+    "cachePath": "data/connectome/cache/6e1ee9f99689b38e669aa775012803311dbbbb93c76da052d3571b3192f4016a/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/125.shard",
+    "bytes": 11554,
+    "sha256": "5ad826d1ba46d2d0627e8acbff4df8356931882f533128f147135065e9d2b30b",
+    "retrievedAt": "2026-10-08T22:27:29.387Z",
+    "range": [
+      521603598,
+      521615152
+    ],
+    "etag": "\"2edd8da3f625af44d8b2365ffe3a465c\"",
+    "generation": "1780639913571099",
+    "cachePath": "data/connectome/cache/7e526b6db9c98a87c5e64add5cf03f488ab138e54b968e5bfba3df8b409b1c8d/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/rois/fullbrain-major-shells/mesh/1:0",
+    "bytes": 40,
+    "sha256": "5d75e6a538bb803f4eac0161e3ecc28a7348e4def4be806be2903207fd710ba2",
+    "retrievedAt": "2026-10-08T22:27:29.383Z",
+    "etag": "\"bc19fc8c174413c9c8f1ba31c7c65c45\"",
+    "generation": "1758224604453065",
+    "cachePath": "data/connectome/cache/9221cbdd690f19e89847c13395b5adfc75fc3337dc6d4b8f0114d141bbc595fa/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/0a7.shard",
+    "bytes": 16,
+    "sha256": "3b8c6be34f46afe22c8d964ccbaaf64bdf71f3ca52b86e0c4a73123845a023e1",
+    "retrievedAt": "2026-10-08T22:24:37.559Z",
+    "range": [
+      16,
+      32
+    ],
+    "etag": "\"f0cc3a9e95eacbbab40f7c0c95db807f\"",
+    "generation": "1780639907441785",
+    "cachePath": "data/connectome/cache/9608d34f26388410e317dcf6005facc94fe31f1aca5088ce208be48e99b18078/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/rois/vnc-neuropil-shell-v2/mesh/vnc-neuropil-shell.ngmesh",
+    "bytes": 31846396,
+    "sha256": "bed9861f456bf747ef7e93c38c756ac42c9c11f0a10b30b646d78512edb5e56e",
+    "retrievedAt": "2026-10-08T22:29:21.734Z",
+    "etag": "\"a3c8b2c2e3afe44edc63bf7e147b2b27\"",
+    "generation": "1774299606815582",
+    "cachePath": "data/connectome/cache/98f32d79026a16ef9c407fd5584231367679b3d82c6d4e6fec8ec5f8febaa1a5/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/125.shard",
+    "bytes": 16,
+    "sha256": "4334b51b580f14043552bfcadc945d2a55fb5b1fdb8908952a2a57d716114fcc",
+    "retrievedAt": "2026-10-08T22:24:37.559Z",
+    "range": [
+      0,
+      16
+    ],
+    "etag": "\"2edd8da3f625af44d8b2365ffe3a465c\"",
+    "generation": "1780639913571099",
+    "cachePath": "data/connectome/cache/9dab7042aa5537020bae5433f786d23311e0d28bb8f64facf8c3ce80bef959d8/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/006.shard",
+    "bytes": 65580,
+    "sha256": "87375aa20a3fe0a2d387b982d0874f110e5325fba64cfaf159e3c9d262d74f47",
+    "retrievedAt": "2026-10-08T22:29:21.746Z",
+    "range": [
+      9938992,
+      10004572
+    ],
+    "etag": "\"e11babbe9c3b73ba84f243d02a535ab0\"",
+    "generation": "1780639887673836",
+    "cachePath": "data/connectome/cache/a6c7316b88b463269bacd2bc95115cde083f46aef9d5af756cc4560894b07667/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/rois/fullbrain-major-shells/mesh/OL(R).ngmesh",
+    "bytes": 11856736,
+    "sha256": "9732a316bbdb528d23be0db8afd677d7b8c80e3a1bc700c41325896646c80390",
+    "retrievedAt": "2026-10-08T22:29:21.709Z",
+    "etag": "\"400758ba489c3202a2a8b8c8fab87bc9\"",
+    "generation": "1758224604455273",
+    "cachePath": "data/connectome/cache/ba00d2f4e86412118f12a3688eebc72b8c68f1a846cac098290a863ad91f29d3/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/rois/fullbrain-major-shells/mesh/OL(L).ngmesh",
+    "bytes": 11855368,
+    "sha256": "32734b5d6c7f86eeef1c1d13bbc454b28ad8c827af94fd50421aca631789b58e",
+    "retrievedAt": "2026-10-08T22:29:21.695Z",
+    "etag": "\"387d92709bd5af1ef87fe512660923f6\"",
+    "generation": "1758224604442675",
+    "cachePath": "data/connectome/cache/bb2d0d98e5ee0db676b3245c5947239caba9d78b2cff9f25c429486fd573905b/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/rois/fullbrain-major-shells/mesh/CB.ngmesh",
+    "bytes": 31411312,
+    "sha256": "65cb8de1176b699d292dd60628bee2fe4365af9640e0876dca3d172134ceb5f4",
+    "retrievedAt": "2026-10-08T22:29:21.674Z",
+    "etag": "\"347bed882649583f6d6a05775f1d1672\"",
+    "generation": "1758224604453663",
+    "cachePath": "data/connectome/cache/be57bac8b11f00f1cedf6e628539e1f718f6eaaa8eaa8e46315f7b5383d0ace0/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/18295.swc",
+    "bytes": 85368,
+    "sha256": "6b8929af3dd3c4930d0bcc32fbc2b0f06d9e3965bafbff2902d861eeb4769c39",
+    "retrievedAt": "2026-10-08T22:24:08.300Z",
+    "etag": "\"1babc968aec00f1aee7bfe6309774d8f\"",
+    "generation": "1777993198508747",
+    "cachePath": "data/connectome/cache/c17ee3c618630563193d3aabbd4a633354105b6d1dd34f9142e9a38048e35296/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/006.shard",
+    "bytes": 7109,
+    "sha256": "768678e7f53ae8c193871d8c2a4c65477f35133a7d496f2384469d1d117f97af",
+    "retrievedAt": "2026-10-08T22:27:29.389Z",
+    "range": [
+      25128495,
+      25135604
+    ],
+    "etag": "\"e11babbe9c3b73ba84f243d02a535ab0\"",
+    "generation": "1780639887673836",
+    "cachePath": "data/connectome/cache/c19a61ce38bd7aad7c23a71a28f8490dbef664503851518e98300367727b1fa4/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/rois/vnc-neuropil-shell-v2/segment_properties/info",
+    "bytes": 249,
+    "sha256": "7dcd578ee3af48dded555e3bcd035abc191e5d307e2ad2ef23c3cadda9543c8c",
+    "retrievedAt": "2026-10-08T22:24:08.304Z",
+    "etag": "\"7705a020cfb67201670899be0003603e\"",
+    "generation": "1774299606814316",
+    "cachePath": "data/connectome/cache/d34c9038ceca351b1fda28f988482b13558106bb8098fd3dfe38a994631b828c/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/72059.swc",
+    "bytes": 12514,
+    "sha256": "5ac1a88dcfbea9245e3b57baaf7e15e347e66ff906c1f5419ad8b1816c7169c3",
+    "retrievedAt": "2026-10-08T22:24:08.302Z",
+    "etag": "\"83520e27ce1e3a87be881905cf679f94\"",
+    "generation": "1777993458113288",
+    "cachePath": "data/connectome/cache/de77ccbf7e8f4ab0988d1655968e558bba5b11c0df09f33888e0f3cc139960ea/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/rois/vnc-neuropil-shell-v2/mesh/info",
+    "bytes": 41,
+    "sha256": "d5ba5a9696ef6f78e16210d96fc2387454ac8f2d0d9885bf35565dcf4c094186",
+    "retrievedAt": "2026-10-08T22:24:37.558Z",
+    "etag": "\"3217585ed4ceb837668c74bb61e9e45a\"",
+    "generation": "1774299606817307",
+    "cachePath": "data/connectome/cache/e0cf7584c68ea8b9dc97f4c7ad288cf99c53dc255693fe5e803dad5ba88d7c9a/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/15321.swc",
+    "bytes": 123301,
+    "sha256": "9b659adf0df76ea9d775acc6b9dbd31d6cccd04a5c25846a03ba02a54474a1a9",
+    "retrievedAt": "2026-10-08T22:24:08.295Z",
+    "etag": "\"d42360d61f0eb9ee68d2d7e0707175f7\"",
+    "generation": "1777993166743109",
+    "cachePath": "data/connectome/cache/e2374cc3802a3e4a6523d3538d66c80a9531de3e80ff96a034b7ad25a8dc4628/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/006.shard",
+    "bytes": 16,
+    "sha256": "28616e9cb1bf85782443326e519b1810aecc9c42948cc2179b852891fb8c6cce",
+    "retrievedAt": "2026-10-08T22:24:37.561Z",
+    "range": [
+      32,
+      48
+    ],
+    "etag": "\"e11babbe9c3b73ba84f243d02a535ab0\"",
+    "generation": "1780639887673836",
+    "cachePath": "data/connectome/cache/e36d5c40cc463aa7f2431005dbb0f604112b4465200c3984dfdddd751108a9ec/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/28181.swc",
+    "bytes": 227692,
+    "sha256": "1f2943b02ade56972c2d2746072fd6318f72b4984d7557e34b860cbf3dbcb26c",
+    "retrievedAt": "2026-10-08T22:24:08.301Z",
+    "etag": "\"80f4d9701c9fbeb347728bb3548d4c31\"",
+    "generation": "1777993263519233",
+    "cachePath": "data/connectome/cache/ea5825d8d4d66d8aed3b2c0db54b52b5e1d87ad74c6ca3df4aa969a767a4051b/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/rois/fullbrain-major-shells/mesh/info",
+    "bytes": 41,
+    "sha256": "d5ba5a9696ef6f78e16210d96fc2387454ac8f2d0d9885bf35565dcf4c094186",
+    "retrievedAt": "2026-10-08T22:24:37.555Z",
+    "etag": "\"3217585ed4ceb837668c74bb61e9e45a\"",
+    "generation": "1758224604458715",
+    "cachePath": "data/connectome/cache/ec987378970e63b3e5270b045dc401cdff2e92088d8931732dce6a5ebe5570fd/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/rois/fullbrain-major-shells/segment_properties/info",
+    "bytes": 293,
+    "sha256": "8c8793caa6c9955b5575c4ff944f879cca241951109153976eebfa95f15a2a3f",
+    "retrievedAt": "2026-10-08T22:24:08.304Z",
+    "etag": "\"8392026da6757332e350e290c2fdef80\"",
+    "generation": "1758224604451935",
+    "cachePath": "data/connectome/cache/f2e6afb1206230c1771a1d34f4658720e4cbed929a267b5872f2445cae4e67ee/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0-synapses-precomputed/by_rel_body_pre/1e5.shard",
+    "bytes": 216675,
+    "sha256": "3271352aa584b88480b574699f7ae4c5064626f3d03399cde1c1a6bcd64ba3ef",
+    "retrievedAt": "2026-10-08T22:29:21.742Z",
+    "range": [
+      31053905,
+      31270580
+    ],
+    "etag": "\"87e304c38b190d5196113637c6e5f38e\"",
+    "generation": "1780639902303245",
+    "cachePath": "data/connectome/cache/fc1f83c4cfd60a571f7dd6d45f01c5923b9584fc3a2ebe7a742d643f49c81888/raw.bin"
+  },
+  {
+    "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/male-cns-v1.0.json",
+    "bytes": 60253,
+    "sha256": "390e01b0c78742bb2465f9ec8f89890106c008d6ac1d5b06840b610f532ea754",
+    "retrievedAt": "2026-10-08T22:24:08.303Z",
+    "etag": "\"2ef6ebba1a268b2f532df5c5cb610af6\"",
+    "generation": "1778032077888581",
+    "cachePath": "data/connectome/cache/fdcefaaac369dad404c00cbe76775433a4f7435dd745130fa7ddf5d2b069de45/raw.bin"
+  }
+]

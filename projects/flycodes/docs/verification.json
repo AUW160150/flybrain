@@ -1,0 +1,17 @@
+{
+  "time": "2026-10-09T16:09:20.576628+00:00",
+  "run": "pilot-20261009T155722-s7",
+  "artifact_hashes_checked": 16,
+  "artifact_integrity": "passed",
+  "captured_source_integrity": "passed",
+  "official_source_md5": "passed",
+  "interactive_generation": "passed",
+  "interactive_job": "090120e8e23b4902865e9413a8496ff4",
+  "exact_code_reproduction": true,
+  "http_socket_verification": "blocked: PermissionError binding loopback port",
+  "browser_verification": "blocked: installed Chrome terminated under managed sandbox",
+  "pretrained_llm": "unmeasured: authenticated transport failed DNS",
+  "tests_command": "../../.venv/bin/python -m pytest -q",
+  "pytest": "32 passed in 1.12s",
+  "javascript_syntax": "node --check web/app.js passed"
+}

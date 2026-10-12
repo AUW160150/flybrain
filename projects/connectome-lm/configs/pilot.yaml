@@ -1,0 +1,27 @@
+{
+  "profile": "pilot",
+  "n": 512,
+  "d": 32,
+  "context": 128,
+  "batch": 4,
+  "updates": 2000,
+  "training_seeds": [
+    1,
+    2,
+    3
+  ],
+  "nulls_per_seed": 1,
+  "sampling_seeds": [
+    101
+  ],
+  "validate_every": 100,
+  "evaluation_batch": 32,
+  "lr": 0.001,
+  "execution": "dense",
+  "device": "cpu",
+  "threads": 2,
+  "protocol": "fixed-bytes",
+  "alpha": 0.5,
+  "weight_decay": 0.0,
+  "gradient_clip": 1.0
+}

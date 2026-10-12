@@ -1,0 +1,11 @@
+# Candidate v1: record each proposed change and its rationale before running.
+experiment_id: experiment_03_v1_candidate
+status: draft
+baseline_config: experiment_02_sugar_restricted.yaml
+candidate_changes: []
+dataset: "male-cns:v1.0"
+method: null
+parameters: {}
+outputs: null
+notes: "Candidate settings are not yet defined."
+execution_allowed: false

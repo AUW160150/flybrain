@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "demo-bundled-timeline",
+  "label": "SYNTHETIC_EDUCATIONAL_REPLAY",
+  "durationMs": 24300,
+  "events": [
+    {
+      "id": "bundled-1",
+      "name": "WALK",
+      "startMs": 0,
+      "endMs": 2400,
+      "sourceMode": "RULE_DRIVEN_EDUCATIONAL",
+      "evidence": "RULE_DRIVEN_EDUCATIONAL",
+      "origin": "BUNDLED_DEMO",
+      "values": {
+        "demo-motor-system": 1,
+        "demo-motor-left-01": 1,
+        "demo-motor-right-01": 1
+      },
+      "behavior": "WALK",
+      "notes": "Authored synthetic replay. Educational gesture and display intensity only; no recorded biological activity or measured motion."
+    },
+    {
+      "id": "bundled-2",
+      "name": "TURN LEFT",
+      "startMs": 2700,
+      "endMs": 5100,
+      "sourceMode": "RULE_DRIVEN_EDUCATIONAL",
+      "evidence": "RULE_DRIVEN_EDUCATIONAL",
+      "origin": "BUNDLED_DEMO",
+      "values": {
+        "demo-motor-system": 1,
+        "demo-motor-left-01": 1
+      },
+      "behavior": "TURN_LEFT",
+      "notes": "Authored synthetic replay. Educational gesture and display intensity only; no recorded biological activity or measured motion."
+    },
+    {
+      "id": "bundled-3",
+      "name": "FEED",
+      "startMs": 5400,
+      "endMs": 7800,
+      "sourceMode": "RULE_DRIVEN_EDUCATIONAL",
+      "evidence": "RULE_DRIVEN_EDUCATIONAL",
+      "origin": "BUNDLED_DEMO",
+      "values": {
+        "demo-taste-system": 1,
+        "demo-taste-01": 1,
+        "demo-taste-02": 1,
+        "demo-feed-motor-01": 1
+      },
+      "behavior": "FEED",
+      "notes": "Authored synthetic replay. Educational gesture and display intensity only; no recorded biological activity or measured motion."
+    },
+    {
+      "id": "bundled-4",
+      "name": "GROOM",
+      "startMs": 8100,
+      "endMs": 10500,
+      "sourceMode": "RULE_DRIVEN_EDUCATIONAL",
+      "evidence": "RULE_DRIVEN_EDUCATIONAL",
+      "origin": "BUNDLED_DEMO",
+      "values": {
+        "demo-central-system": 1,
+        "demo-grooming-01": 1
+      },
+      "behavior": "GROOM",
+      "notes": "Authored synthetic replay. Educational gesture and display intensity only; no recorded biological activity or measured motion."
+    },
+    {
+      "id": "bundled-5",
+      "name": "ESCAPE",
+      "startMs": 10800,
+      "endMs": 13200,
+      "sourceMode": "RULE_DRIVEN_EDUCATIONAL",
+      "evidence": "RULE_DRIVEN_EDUCATIONAL",
+      "origin": "BUNDLED_DEMO",
+      "values": {
+        "demo-visual-system": 1,
+        "demo-visual-01": 1,
+        "demo-visual-02": 1,
+        "demo-escape-motor-01": 1
+      },
+      "behavior": "ESCAPE",
+      "notes": "Authored synthetic replay. Educational gesture and display intensity only; no recorded biological activity or measured motion."
+    },
+    {
+      "id": "bundled-6",
+      "name": "COURTSHIP",
+      "startMs": 13500,
+      "endMs": 15900,
+      "sourceMode": "RULE_DRIVEN_EDUCATIONAL",
+      "evidence": "RULE_DRIVEN_EDUCATIONAL",
+      "origin": "BUNDLED_DEMO",
+      "values": {
+        "demo-mating-system": 1,
+        "demo-mating-01": 1,
+        "demo-mating-02": 1
+      },
+      "behavior": "COURTSHIP",
+      "notes": "Authored synthetic replay. Educational gesture and display intensity only; no recorded biological activity or measured motion."
+    },
+    {
+      "id": "bundled-7",
+      "name": "TAKEOFF",
+      "startMs": 16200,
+      "endMs": 18600,
+      "sourceMode": "RULE_DRIVEN_EDUCATIONAL",
+      "evidence": "RULE_DRIVEN_EDUCATIONAL",
+      "origin": "BUNDLED_DEMO",
+      "values": {
+        "demo-motor-system": 1,
+        "demo-flight-motor-01": 1
+      },
+      "behavior": "TAKEOFF",
+      "notes": "Authored synthetic replay. Educational gesture and display intensity only; no recorded biological activity or measured motion."
+    },
+    {
+      "id": "bundled-8",
+      "name": "FLIGHT IDLE",
+      "startMs": 18900,
+      "endMs": 21300,
+      "sourceMode": "RULE_DRIVEN_EDUCATIONAL",
+      "evidence": "RULE_DRIVEN_EDUCATIONAL",
+      "origin": "BUNDLED_DEMO",
+      "values": {
+        "demo-motor-system": 1,
+        "demo-flight-motor-01": 1
+      },
+      "behavior": "FLIGHT_IDLE",
+      "notes": "Authored synthetic replay. Educational gesture and display intensity only; no recorded biological activity or measured motion."
+    },
+    {
+      "id": "bundled-9",
+      "name": "LAND",
+      "startMs": 21600,
+      "endMs": 24000,
+      "sourceMode": "RULE_DRIVEN_EDUCATIONAL",
+      "evidence": "RULE_DRIVEN_EDUCATIONAL",
+      "origin": "BUNDLED_DEMO",
+      "values": {
+        "demo-motor-system": 1,
+        "demo-flight-motor-01": 1
+      },
+      "behavior": "LAND",
+      "notes": "Authored synthetic replay. Educational gesture and display intensity only; no recorded biological activity or measured motion."
+    }
+  ],
+  "sourceRefs": [
+    "/data/demo/timeline.json"
+  ]
+}

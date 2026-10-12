@@ -1,0 +1,23 @@
+Observed browser-check attempts, 7 October 2026.
+These are diagnostic excerpts, not a successful browser test report.
+
+Command:
+FLYWORLD_BROWSER_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" npm run test:e2e
+
+Result: exit code 1 before browser test execution.
+[WebServer] error when starting dev server:
+[WebServer] Error: listen EPERM: operation not permitted 127.0.0.1:5173
+Error: Process from config.webServer was not able to start. Exit code: 1
+
+Independent browser probe:
+Playwright chromium.launch with the same installed Chrome executable,
+headless true, --use-angle=swiftshader, --enable-unsafe-swiftshader.
+No web server was involved in this probe.
+
+Result: exit code 1.
+browserType.launch: Target page, context or browser has been closed
+Chrome process did exit: exitCode=null, signal=SIGABRT.
+
+Conclusion: browser verification is unavailable in the current restricted
+environment. No screenshot or visually verified render is claimed.
+Re-run the documented tests in a local session supporting localhost and Chrome.

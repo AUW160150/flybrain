@@ -1,0 +1,21 @@
+
+> flyworld@0.3.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /Users/Rodela1/Code/Flybrain/sandbox/flyworld
+
+ ✓ tests/contracts.test.ts (27 tests) 14ms
+ ✓ tests/catalog.test.ts (5 tests) 8ms
+ ✓ tests/keyboard.test.ts (18 tests) 17ms
+ ✓ tests/interactive-mvp.test.ts (29 tests) 23ms
+ ✓ tests/state.test.ts (30 tests) 45ms
+ ✓ tests/locomotion.test.ts (19 tests) 33ms
+ ✓ tests/ui-shell.test.ts (3 tests) 9ms
+ ✓ tests/realdata.test.ts (42 tests) 471ms
+
+ Test Files  8 passed (8)
+      Tests  173 passed (173)
+   Start at  13:04:59
+   Duration  1.10s (transform 298ms, setup 0ms, collect 1.68s, tests 621ms, environment 2ms, prepare 450ms)
+

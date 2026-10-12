@@ -1,0 +1,5 @@
+PASS 28 public assets unchanged from pre-repair snapshot.
+PASS 14 published package/catalog/geometry checksums.
+PASS all 22 pinned research source hashes still match.
+PASS source lock, real schema and educational mapping configuration unchanged.
+Scope: public assets plus pinned source files; not a hash audit of the entire research repository.

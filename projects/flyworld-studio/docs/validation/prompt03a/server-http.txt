@@ -1,0 +1,6 @@
+Read-only observation, 8 October 2026:
+Initial curl -I returned HTTP/1.1 200 OK at 14:54:29 GMT.
+A later curl request returned exit 7: could not connect to 127.0.0.1:5173.
+lsof still identifies PID 81908 listening from this FlyWorld directory.
+Playwright could not reuse the existing server and its own bind failed EPERM.
+No listener was killed, restarted, or reconfigured. HTTP availability is not browser acceptance.

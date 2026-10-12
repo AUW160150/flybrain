@@ -1,0 +1,15 @@
+{
+  "verified_at": "2026-10-09T17:51:12.308811+00:00",
+  "server_tests": "16 passed",
+  "javascript": "node --check passed",
+  "ui_state_checks": "outdated/current/snapshot API states and syntax error label passed in Node with a minimal DOM stub",
+  "live_frontend_matches_disk": true,
+  "live_backend_run": "pilot-20261009T161824-s7",
+  "live_backend_pid": 94783,
+  "live_backend_restart_required": true,
+  "replacement_bind": "Operation not permitted on unused 8766; existing process preserved",
+  "screenshot_attempt": "runs/pilot-20261009T161824-s7/interactive/cbc9963b7efa4cb4b0cf43c178f4dc5c.json",
+  "screenshot_repaired_outcome": "runtime_error: Argument count",
+  "snapshot_sha256": "97324496a4073fc0cf8af73813869d250eed3636de57adc9ee0659d75c13e13b",
+  "browser_rendering": "not verified"
+}

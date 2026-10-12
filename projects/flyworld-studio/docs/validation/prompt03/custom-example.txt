@@ -1,0 +1,2 @@
+malecns-custom: 2 bodies, 2 edges, 19873 bytes
+Geometry assets: 0. Read-only source. No network queries. No neural dynamics.

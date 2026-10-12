@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "flyworld-foundation-demo",
+  "name": "Illustrative display volumes",
+  "dataset": "NONE — EDUCATIONAL PLACEHOLDER",
+  "datasetVersion": "demo-1",
+  "label": "EDUCATIONAL_DEMO",
+  "neurons": [],
+  "edges": [],
+  "regions": [
+    {"id": "display-a", "name": "Display volume A", "evidence": ["UNVERIFIED"], "sourceRefs": [], "geometryStatus": "PLACEHOLDER_GEOMETRY"},
+    {"id": "display-b", "name": "Display volume B", "evidence": ["UNVERIFIED"], "sourceRefs": [], "geometryStatus": "PLACEHOLDER_GEOMETRY"},
+    {"id": "display-c", "name": "Display volume C", "evidence": ["UNVERIFIED"], "sourceRefs": [], "geometryStatus": "PLACEHOLDER_GEOMETRY"}
+  ],
+  "metadata": {
+    "warning": "PLACEHOLDER_GEOMETRY — NOT ANATOMICAL DATA",
+    "description": "Arbitrary display volumes. No biological region, identity, circuit membership, or function is asserted.",
+    "geometrySource": "Procedural ellipsoids in src/brain/PlaceholderBrain.tsx"
+  }
+}

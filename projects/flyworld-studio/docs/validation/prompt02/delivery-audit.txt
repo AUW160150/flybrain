@@ -1,0 +1,7 @@
+Inventory: 87 source/document/test files (generated/runtime paths excluded).
+Required Prompt 02 documents: 6/6 present.
+Local Markdown links checked: 32. Missing: 0.
+Master package: 5 regions, 13 generic nodes, 8 illustrative relations.
+Bundled replay: 9 events, 24300 ms.
+Generated production entry: dist/index.html exists.
+Screenshot files: absent; browser/manual acceptance remains pending.

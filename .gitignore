@@ -1,0 +1,16 @@
+.DS_Store
+node_modules
+site/public/
+projects/flyworld-studio/dist/
+projects/flyworld-studio/.cache/
+projects/flyworld-studio/test-results/
+projects/flyworld-studio/playwright-report/
+projects/flyworld-studio/data/connectome/*.sqlite
+projects/flyworld-studio/data/connectome/cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+.env
+.env.*

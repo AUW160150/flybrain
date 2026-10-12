@@ -1,0 +1,10 @@
+{
+  "maxNodes": 500,
+  "maxEdges": 5000,
+  "maxGeometryObjects": 16,
+  "maxPackageBytes": 4194304,
+  "maxPaths": 5000,
+  "maxGeometryPoints": 100000,
+  "maxGeometryBytes": 8388608,
+  "maxRenderedEdges": 300
+}

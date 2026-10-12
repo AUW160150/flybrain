@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "format": "FLYWORLD_EDUCATIONAL_DEMO",
+  "id": "demo-mating-package",
+  "label": "EDUCATIONAL_DEMO",
+  "name": "Mating educational circuit",
+  "regions": [
+    {
+      "id": "demo-mating-system",
+      "name": "Mating / courtship system",
+      "kind": "REGION",
+      "roleCategory": "COURTSHIP",
+      "color": "#CC79A7",
+      "symbol": "C",
+      "position": [
+        0.185,
+        0.13,
+        -0.015
+      ],
+      "scale": [
+        0.125,
+        0.11,
+        0.12
+      ],
+      "description": "Educational role category only. Placement and shape are arbitrary; no anatomical boundary or validated functional assignment.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    }
+  ],
+  "neurons": [
+    {
+      "id": "demo-mating-01",
+      "name": "Courtship demo 01",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "COURTSHIP",
+      "regionId": "demo-mating-system",
+      "position": [
+        0.145,
+        0.155,
+        0.07
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-mating-02",
+      "name": "Courtship demo 02",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "COURTSHIP",
+      "regionId": "demo-mating-system",
+      "position": [
+        0.225,
+        0.105,
+        0.07
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "sourceId": "demo-mating-01",
+      "targetId": "demo-mating-02",
+      "kind": "ILLUSTRATIVE_RELATION",
+      "evidence": [
+        "UNVERIFIED"
+      ]
+    }
+  ],
+  "circuits": [
+    {
+      "id": "demo-mating-circuit",
+      "name": "Mating educational circuit",
+      "entityIds": [
+        "demo-mating-system",
+        "demo-mating-01",
+        "demo-mating-02"
+      ]
+    }
+  ],
+  "sourceRefs": [
+    "/data/demo/circuits/mating.json",
+    "/data/demo/educational-circuits.json"
+  ],
+  "disclaimer": "PLACEHOLDER_GEOMETRY \u2014 NOT ANATOMICAL DATA. Generic demo nodes and illustrative relations; no body IDs, synapse counts, transmitters, verified functions, or real circuit membership."
+}

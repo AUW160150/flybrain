@@ -1,0 +1,24 @@
+{
+  "applicationTests": {
+    "command": "npm test",
+    "passed": 199,
+    "failed": 0
+  },
+  "anatomyTests": {
+    "command": "npm run test:anatomy",
+    "passed": 18,
+    "failed": 0
+  },
+  "preprocessingTests": {
+    "command": "npm run test:preprocess",
+    "passed": 20,
+    "failed": 0
+  },
+  "browser": {
+    "definedScenarios": 11,
+    "newScenario": "tests/e2e/circuit-atlas.spec.ts",
+    "status": "BLOCKED_BEFORE_EXECUTION",
+    "reason": "Vite listen EPERM 127.0.0.1:5173"
+  },
+  "humanVisualReview": "PENDING"
+}

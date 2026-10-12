@@ -1,0 +1,22 @@
+{
+  "format": "FLYWORLD_EDUCATIONAL_BEHAVIOR_MAPPINGS",
+  "schemaVersion": 1,
+  "mappings": [
+    {
+      "behavior": "FEED",
+      "circuitPackage": "malecns-motors",
+      "bodyIds": [],
+      "types": ["MN4a", "MN6", "MN8", "MN9"],
+      "source": ["docs/initial_validation_checkpoint.md: C007/C014", "results/structural/20261006T180116Z/nodes.csv"],
+      "evidence": "USER_DRIVEN_ILLUSTRATION",
+      "disclaimer": "A user-requested educational highlight of source-labelled motor records. It does not assert that all listed bodies generate feeding or that the connectome produced this gesture.",
+      "confidence": "EDUCATIONAL_ONLY — physiological mapping unvalidated",
+      "author": "FlyWorld implementation agent; no scientific reviewer",
+      "date": "2026-10-07",
+      "reviewStatus": "UNREVIEWED_EDUCATIONAL",
+      "enabled": true
+    }
+  ],
+  "unmappedBehaviors": ["WALK", "TURN_LEFT", "TURN_RIGHT", "ESCAPE", "GROOM", "COURTSHIP", "TAKEOFF", "LAND"],
+  "note": "Unmapped behaviors do not highlight imported bodies. Raw scientific package files are never modified by this configuration."
+}

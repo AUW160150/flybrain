@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flybrain — experiments on a fly connectome</title>
+<meta name="description" content="Seven experiments built on the MaleCNS v1.0 connectome of the male fruit fly: a connectome-driven arena game, a browser exploration studio, a first-person fly-eye garden, two learning experiments and two inspection tools. Play them, read the measured results.">
+<meta property="og:title" content="Flybrain — experiments on a fly connectome">
+<meta property="og:description" content="A fly's wiring diagram, put to work. Games, simulations and experiments on 165,122 neurons.">
+<meta property="og:image" content="/img/game-garden.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="wordmark" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="11" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-25 11 13)"/><ellipse cx="21" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(25 21 13)"/><ellipse cx="16" cy="19" rx="4" ry="8" fill="currentColor"/><circle cx="16" cy="9.5" r="3" fill="var(--accent)"/></svg>Flybrain</a>
+  <ul><li><a href="/#projects">Projects</a></li><li class="hide-sm"><a href="/#method">Method</a></li><li><a href="/#about">About</a></li><li><a href="https://github.com/AUW160150/flybrain">Source ↗</a></li><li><a href="#" data-theme-toggle title="Switch light / dark" aria-label="Switch colour theme">◐</a></li></ul>
+</div></header>
+
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <p class="eyebrow">Seven experiments · one connectome · 2026</p>
+    <h1>The fly's wiring diagram, <em>put to work.</em></h1>
+    <p class="lead">Flybrain is a set of experiments built on MaleCNS v1.0, the synapse-level map of a male fruit fly's central nervous system. Some turn the wiring into things you can play: an arena where small flies run on real sub-circuits, a browser studio, a garden seen through a fly's eyes. Others ask hard questions of it and report the answers as measured, including the null results.</p>
+    <div class="cta"><a class="btn primary" href="#projects">Browse the projects</a><a class="btn" href="/projects/flyworld-game/">Drive a fly brain</a><a class="btn" href="/flyworld/">Open the studio</a></div>
+  </div>
+  <div class="brain" data-hero-brain data-base="/assets/circuit/">
+    <div class="brain-top"><span class="live"><i></i><b>Live</b> FlyWorld sub-circuit</span><span>10,203 neurons · 401,680 edges</span></div>
+    <div class="brain-graph"><canvas width="760" height="400" aria-label="The sub-circuit's neurons, lighting up as they spike"></canvas><div class="loading">loading 2.5 MB of synapses…</div><div class="axis"><span>sensory cells</span><span>interneurons</span><span>descending → motor</span></div></div>
+    <div class="brain-actions">
+      <button class="btn small" data-scenario="loomLeft">Loom from the left</button>
+      <button class="btn small" data-scenario="loomRight">Loom from the right</button>
+      <button class="btn small" data-scenario="odour">Food odour</button>
+      <button class="btn small" data-stim="DNp09" aria-pressed="false">Stimulate DNp09 (walk)</button>
+      <button class="btn small" data-stim="MDN" aria-pressed="false">Stimulate MDN (back up)</button>
+      <button class="btn small" data-reset>Reset</button>
+    </div>
+    <div class="brain-readout"><div class="body"><span>decoded body</span><b data-body>still</b></div><div class="rates" data-rates>DNp01 <b>0.0 Hz</b></div></div>
+    <div class="note">Leaky integrate-and-fire, 1 ms steps, event-driven. The same arrays the Python game steps on a GPU, run here on one browser thread (<span data-speed>…</span>). Layout is synaptic depth from the sensory cells, not anatomy. <a href="/projects/flyworld-game/#brain">Full panel →</a></div>
+  </div>
+</div></section>
+
+<div class="stats"><div class="wrap">
+  <div class="stat"><b>165,122</b><span>traced neurons in MaleCNS v1.0</span></div>
+  <div class="stat"><b>25,563,197</b><span>directed neuron-to-neuron connections</span></div>
+  <div class="stat"><b>124,025,046</b><span>synapses between them</span></div>
+  <div class="stat"><b>CC BY 4.0</b><span>FlyEM · HHMI Janelia · Cambridge · MRC LMB · Google</span></div>
+</div></div>
+
+<section class="section" id="projects"><div class="wrap">
+  <div class="section-head"><h2>Projects</h2><span class="mono">01 — 07 · play, learn, inspect</span></div>
+  <ol class="index">
+    <li><a href="/projects/flyworld-game/"><span class="n">01</span><span class="t">FlyWorld<small>Python · panda3d · torch</small></span><span class="d">A garden arena where six small flies are driven by a 10,203-neuron escape-and-feeding circuit extracted from the connectome, and you drive a bigger fly to herd them onto fruit. Loom at them and the giant fiber fires; they jump. Stimulate DNp09 and they walk.</span><span class="k"><b>Play</b><br>brain in your browser<br>desktop game</span></a></li>
+    <li><a href="/projects/flyworld-studio/"><span class="n">02</span><span class="t">FlyWorld Studio<small>React · three.js · TypeScript</small></span><span class="d">A browser exploration studio: fly a procedural avatar through a small world, open its teaching brain, then switch to a real-data workspace with bounded MaleCNS circuit packages, provenance inspection and native-coordinate anatomy.</span><span class="k"><b>Play</b><br>runs in the browser</span></a></li>
+    <li><a href="/projects/flyvision/"><span class="n">03</span><span class="t">FlyVision<small>Python · pygame · numpy</small></span><span class="d">A first-person garden sampled through 1,709 published eye directions from a microCT reference fly, plus a structural atlas that recovers 96.1% of withheld visual column coordinates from wiring alone.</span><span class="k"><b>Play</b><br>desktop · previews here</span></a></li>
+    <li><a href="/projects/connectome-lm/"><span class="n">04</span><span class="t">Connectome language model<small>PyTorch · preregistered protocol</small></span><span class="d">Does fly wiring help a tiny recurrent network predict text? A 512-neuron subgraph against degree-preserving rewired controls, five seeds, 35 runs, frozen before the held-out test. Answer: no advantage established.</span><span class="k"><b class="read">Read</b><br>figures &amp; results</span></a></li>
+    <li><a href="/projects/flycodes/"><span class="n">05</span><span class="t">Flycodes<small>Python · reservoir readout · bounded judge</small></span><span class="d">Can the complete 165,122-neuron graph, used as a fixed reservoir with a trained readout, write code? Trained on 246 curated MBPP examples, scored on LeetCode-style tasks. It scored 0/24, same as its no-recurrence control.</span><span class="k"><b>Explore</b><br>results platform</span></a></li>
+    <li><a href="/projects/connectome-atlas/"><span class="n">06</span><span class="t">MaleCNS atlas<small>Python · SQLite · static report</small></span><span class="d">A read-only inspection of the exact 512-neuron, 3,061-edge graph used in the language experiment: verified identity against the published bulk product, contact matrices, partner lookups, and eight native-space skeletons.</span><span class="k"><b>Explore</b><br>static report</span></a></li>
+    <li><a href="/projects/sugar-circuit/"><span class="n">07</span><span class="t">Sugar circuit audit<small>Python · neuPrint · Tastekin et al. 2026</small></span><span class="d">A reconstruction and audit of the gustatory sensorimotor pathway from a 2026 Cell paper against MaleCNS v1.0: 95 target bodies resolved, 746,910 raw edge weights cross-checked, every discrepancy logged, and an interactive circuit explorer.</span><span class="k"><b>Explore</b><br>circuit explorer</span></a></li>
+  </ol>
+</div></section>
+
+<section class="section" id="method"><div class="wrap">
+  <div class="section-head"><h2>How the work was done</h2><span class="mono">protocols · ledgers · gates</span></div>
+  <div class="two">
+    <div class="prose">
+      <p>Each project started with a written protocol and ended with a status ledger. Learning experiments were preregistered in the local sense: an analysis plan hashed before training, development selection on validation data only, a frozen configuration, and a single explicit command that opened the test split. Where a comparison came out flat, the page says so.</p>
+      <p>Every number on these pages is copied from a saved artifact in the repository: a run manifest, an audit JSON, a figure's sidecar. Nothing is re-derived for the website. The boundaries are stated too: synapse counts are structural weights, not physiological ones; the arena flies are artificial models constrained by real wiring, not emulated animals; the first-person garden is sampled through a female reference eye that has not been registered to the male connectome.</p>
+    </div>
+    <div class="prose">
+      <h3 style="margin-top:0">One dataset, one specimen</h3>
+      <p>All seven projects read the same three files from the MaleCNS v1.0 release: body annotations, body neurotransmitter predictions and the traced-to-traced connection table at confidence ≥ 0.5. The release is pinned by file hash in every project's manifest. The browser demos on this site carry bounded, pre-extracted subsets; the raw tables (about 1.1 GB) stay on the machine that built them.</p>
+      <p class="mono muted" style="font-size:12.5px">male-cns:v1.0 · UUID 4b2087c0fbe046bfaf0d60bc970e3e5d · connectome-weights-male-cns-v1.0-minconf-0.5.feather</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="section" id="about"><div class="wrap">
+  <div class="section-head"><h2>About</h2><span class="mono">Rodela · 2026</span></div>
+  <div class="two">
+    <div class="prose">
+      <p>I'm Rodela. I built Flybrain over September and October 2026 to find out what a complete wiring diagram of a nervous system is actually good for when you treat it as an engineering artifact: as a game engine, as a sensory front end, as an inductive bias for learning, and as a thing to be audited.</p>
+      <p>The code is public in two places: my own GitHub and the prove-ai organisation. Both are the same repository, deployed to the same kind of static site.</p>
+    </div>
+    <div class="prose">
+      <ul style="list-style:none;padding:0">
+        <li><a href="https://github.com/AUW160150/flybrain">github.com/AUW160150/flybrain ↗</a></li>
+        <li><a href="https://github.com/prove-ai/flybrain">github.com/prove-ai/flybrain ↗</a></li>
+        <li><a href="https://male-cns.janelia.org/">male-cns.janelia.org ↗</a> — the dataset</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div><p class="eyebrow">Flybrain</p><p>Hand-written HTML and CSS, one module of JavaScript for the simulation, no framework, no analytics. Browser demos are served as static files; the desktop projects ship with run instructions and screenshots.</p></div>
+  <div><p class="eyebrow">Data</p><ul><li>MaleCNS v1.0 — FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research. <a href="https://male-cns.janelia.org/download/">CC BY 4.0</a></li><li>Eye geometry — <a href="https://github.com/reiserlab/eyemap_T4">reiserlab/eyemap_T4</a></li><li>MBPP — Austin et al., 2021</li></ul></div>
+  <div><p class="eyebrow">Repositories</p><ul><li><a href="https://github.com/AUW160150/flybrain">AUW160150/flybrain</a></li><li><a href="https://github.com/prove-ai/flybrain">prove-ai/flybrain</a></li></ul></div>
+</div></footer>
+<script type="module" src="/js/site.js"></script>
+<script type="module" src="/js/hero.js"></script>
+</body>
+</html>

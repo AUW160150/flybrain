@@ -1,0 +1,24 @@
+'use strict';
+const DATA=JSON.parse(document.getElementById('data').textContent),$=id=>document.getElementById(id),canvas=$('canvas'),ctx=canvas.getContext('2d');
+let yaw=0,pitch=0,zoom=1,drag=null,hit=[],visible=[],hidden=new Set();
+const verifiedOrientation=DATA.orientation.status==='VERIFIED';
+for(const key of Object.keys(DATA.groups)){const opt=document.createElement('option');opt.value=key;opt.textContent=key.replaceAll('_',' ');$('group').append(opt);}
+document.querySelectorAll('[data-camera]').forEach(b=>{b.disabled=!verifiedOrientation||!DATA.morphologies.length;b.title=b.disabled?'BLOCKED — actual skeletons and verified orientation required':'';b.onclick=()=>{[yaw,pitch]=({anterior:[0,0],posterior:[Math.PI,0],dorsal:[0,Math.PI/2],lateral:[Math.PI/2,0]})[b.dataset.camera];zoom=1;draw();};});
+function select(){const group=DATA.groups[$('group').value];$('label').textContent=group.label;
+ visible=DATA.morphologies.filter(m=>group.ids.includes(m.body_id)&&($('side').value==='both'||m.side===$('side').value));hidden=new Set();
+ $('status').textContent=group.status==='VERIFIED'?`${visible.length} actual skeletons. ${verifiedOrientation?'Orientation verified: '+DATA.orientation.orientation_source:'Named anatomical cameras BLOCKED — orientation UNVERIFIED. Native XYZ only.'}`:`${group.status}\n${group.missing_ids.length} of ${group.ids.length} requested bodies lack verified skeletons. This view is withheld until the group is complete. No substitute anatomy is drawn.`;
+ if(group.status!=='VERIFIED')visible=[];
+ $('bodies').replaceChildren();for(const m of visible){const l=document.createElement('label'),c=document.createElement('input');c.type='checkbox';c.checked=true;c.onchange=()=>{c.checked?hidden.delete(m.body_id):hidden.add(m.body_id);draw();};l.append(c,document.createTextNode(m.type+' '+m.body_id+' '+m.side));$('bodies').append(l);}
+ $('axes').textContent=verifiedOrientation?'Coordinates: anatomical right / dorsal / anterior, µm. Original body side labels are retained.':'Native EM X / Y / Z in µm (8 nm SWC coordinates × 0.008). No anatomical handedness is asserted.';draw();}
+function draw(){const rect=canvas.getBoundingClientRect(),dpr=window.devicePixelRatio||1;canvas.width=rect.width*dpr;canvas.height=rect.height*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,rect.width,rect.height);hit=[];
+ const morphs=visible.filter(m=>!hidden.has(m.body_id));if(!morphs.length){ctx.fillStyle='#456072';ctx.font='bold 22px system-ui';ctx.fillText('BLOCKED — no verified geometry to render',30,70);return;}
+ const mins=[Infinity,Infinity,Infinity],maxs=[-Infinity,-Infinity,-Infinity];for(const m of morphs)for(const seg of m.segments)for(const p of seg)for(let i=0;i<3;i++){mins[i]=Math.min(mins[i],p[i]);maxs[i]=Math.max(maxs[i],p[i]);}
+ const center=mins.map((x,i)=>(x+maxs[i])/2),range=Math.max(...maxs.map((x,i)=>x-mins[i]),1),scale=Math.min(rect.width,rect.height)*.8/range*zoom;
+ function project(p){let[x,y,z]=p.map((v,i)=>v-center[i]);let xx=x*Math.cos(yaw)+z*Math.sin(yaw),zz=-x*Math.sin(yaw)+z*Math.cos(yaw),yy=y*Math.cos(pitch)-zz*Math.sin(pitch);return[rect.width/2-xx*scale,rect.height/2-yy*scale];}
+ ctx.lineWidth=1;for(const m of morphs){ctx.strokeStyle=m.color;ctx.beginPath();for(const seg of m.segments){const a=project(seg[0]),b=project(seg[1]);ctx.moveTo(...a);ctx.lineTo(...b);hit.push({a,b,m});}ctx.stroke();}
+ ctx.fillStyle='#183246';ctx.font='13px system-ui';ctx.fillText(DATA.groups[$('group').value].label+' · '+morphs.length+' bodies · '+(verifiedOrientation?'R/D/A coordinates':'native XYZ'),15,24);
+ // A projected axis triad, never unlabeled handedness.
+ const origin=[rect.width-90,rect.height-75];for(let i=0;i<3;i++){const p=[...center];p[i]+=range*.12;const v=project(p),o=project(center);ctx.strokeStyle=['#333','#555','#777'][i];ctx.beginPath();ctx.moveTo(...origin);ctx.lineTo(origin[0]+v[0]-o[0],origin[1]+v[1]-o[1]);ctx.stroke();ctx.fillText((verifiedOrientation?['R','D','A']:['X','Y','Z'])[i],origin[0]+v[0]-o[0],origin[1]+v[1]-o[1]);}}
+canvas.onpointerdown=e=>{drag=[e.clientX,e.clientY];canvas.setPointerCapture(e.pointerId);};canvas.onpointerup=()=>drag=null;
+canvas.onpointermove=e=>{if(drag){yaw+=(e.clientX-drag[0])*.006;pitch+=(e.clientY-drag[1])*.006;drag=[e.clientX,e.clientY];draw();return;}const r=canvas.getBoundingClientRect(),p=[e.clientX-r.left,e.clientY-r.top];let best=7,found=null;for(const h of hit){const dx=h.b[0]-h.a[0],dy=h.b[1]-h.a[1],t=Math.max(0,Math.min(1,((p[0]-h.a[0])*dx+(p[1]-h.a[1])*dy)/(dx*dx+dy*dy||1))),d=Math.hypot(p[0]-h.a[0]-t*dx,p[1]-h.a[1]-t*dy);if(d<best){best=d;found=h.m;}}$('hover').textContent=found?`${found.type} · body ${found.body_id} · ${found.side}\n${found.source}`:'';};
+canvas.onwheel=e=>{e.preventDefault();zoom=Math.max(.2,Math.min(10,zoom*Math.exp(-e.deltaY*.001)));draw();};$('group').onchange=select;$('side').onchange=select;$('native').onclick=()=>{yaw=pitch=0;zoom=1;draw();};window.onresize=draw;select();

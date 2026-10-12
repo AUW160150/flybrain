@@ -1,0 +1,88 @@
+body_id,paper_type,v1_type,type_status,paper_root_side,v1_side_label,v1_side_property,side_label_status,side_semantics,paper_nerve,v1_nerve,nerve_status,paper_reference
+136183,LB3a,LB3a,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 169
+140619,LB3a,LB3a,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 157
+141663,LB3a,LB3a,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 158
+160435,LB3a,LB3a,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 170
+166190,LB3a,LB3a,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 159
+167663,LB3a,LB3a,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 171
+178913,LB3a,LB3a,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 172
+183061,LB3a,LB3a,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 160
+187776,LB3a,LB3a,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 168
+199308,LB3a,LB3a,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 161
+203234,LB3a,LB3a,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 173
+374701,LB3a,LB3a,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 162
+518542,LB3a,LB3a,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 163
+388541892,LB3a,LB3a,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 164
+456838775,LB3a,LB3a,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 165
+553738738,LB3a,LB3a,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 166
+786482749,LB3a,LB3a,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 167
+71254,LB3b,LB3b,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 210
+159772,LB3b,LB3b,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 211
+163597,LB3b,LB3b,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 204
+183084,LB3b,LB3b,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 205
+187492,LB3b,LB3b,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 206
+209155,LB3b,LB3b,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 207
+272263,LB3b,LB3b,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 212
+557646,LB3b,LB3b,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 208
+174444965,LB3b,LB3b,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 214
+213650853,LB3b,LB3b,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 209
+766547228,LB3b,LB3b,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 213
+72059,LB3c,LB3c,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 240
+78240,LB3c,LB3c,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 254
+85806,LB3c,LB3c,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 255
+92440,LB3c,LB3c,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 241
+101087,LB3c,LB3c,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 245
+120303,LB3c,LB3c,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 246
+140015,LB3c,LB3c,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 242
+142827,LB3c,LB3c,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 247
+180314,LB3c,LB3c,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 252
+190769,LB3c,LB3c,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 253
+202888,LB3c,LB3c,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 243
+215556,LB3c,LB3c,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 248
+261450,LB3c,LB3c,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 256
+262567,LB3c,LB3c,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 257
+512551,LB3c,LB3c,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 258
+516217,LB3c,LB3c,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 244
+531237,LB3c,LB3c,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 259
+933317,LB3c,LB3c,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 260
+942168,LB3c,LB3c,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 249
+957530,LB3c,LB3c,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,,MISMATCH,GRNs!row 250
+158893964,LB3c,LB3c,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 261
+349137284,LB3c,LB3c,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 262
+475202322,LB3c,LB3c,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 251
+33339,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 295
+93290,LB3d,LB3d,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 314
+125405,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 301
+129171,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 296
+130693,LB3d,LB3d,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 316
+140851,LB3d,LB3d,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 317
+158537,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 302
+178321,LB3d,LB3d,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 312
+199196,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 297
+201075,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 306
+204726,LB3d,LB3d,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 313
+210344,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 307
+236475,LB3d,LB3d,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 310
+261048,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 308
+312102,LB3d,LB3d,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 318
+317616,LB3d,LB3d,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 319
+512552,LB3d,LB3d,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 315
+516216,LB3d,LB3d,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 320
+516218,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 303
+550065,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 309
+916953,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 304
+147619274,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 299
+245892505,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 305
+422510463,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 298
+581710868,LB3d,LB3d,EXACT_MATCH,L,L,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 311
+885642755,LB3d,LB3d,EXACT_MATCH,R,R,rootSide,EXACT_MATCH,same rootSide property,MxLbN,MxLbN,EXACT_MATCH,GRNs!row 300
+18295,MN4a,MN4a,EXACT_MATCH,L,L,somaSide,EXACT_MATCH,paper Root_Side compared with v1 somaSide; labels only,MxLbN,MxLbN,EXACT_MATCH,MNs!row 36
+27938,MN4a,MN4a,EXACT_MATCH,R,R,somaSide,EXACT_MATCH,paper Root_Side compared with v1 somaSide; labels only,MxLbN,MxLbN,EXACT_MATCH,MNs!row 35
+36368,MN4a,MN4a,EXACT_MATCH,L,L,somaSide,EXACT_MATCH,paper Root_Side compared with v1 somaSide; labels only,MxLbN,MxLbN,EXACT_MATCH,MNs!row 37
+522704,MN4a,MN4a,EXACT_MATCH,R,R,somaSide,EXACT_MATCH,paper Root_Side compared with v1 somaSide; labels only,MxLbN,MxLbN,EXACT_MATCH,MNs!row 34
+519667,MN6,MN6,EXACT_MATCH,R,R,somaSide,EXACT_MATCH,paper Root_Side compared with v1 somaSide; labels only,MxLbN,MxLbN,EXACT_MATCH,MNs!row 50
+924612,MN6,MN6,EXACT_MATCH,L,L,somaSide,EXACT_MATCH,paper Root_Side compared with v1 somaSide; labels only,MxLbN,MxLbN,EXACT_MATCH,MNs!row 51
+16827,MN8,MN8,EXACT_MATCH,L,L,somaSide,EXACT_MATCH,paper Root_Side compared with v1 somaSide; labels only,MxLbN,MxLbN,EXACT_MATCH,MNs!row 63
+20173,MN8,MN8,EXACT_MATCH,R,R,somaSide,EXACT_MATCH,paper Root_Side compared with v1 somaSide; labels only,MxLbN,MxLbN,EXACT_MATCH,MNs!row 62
+10331,MN9,MN9,EXACT_MATCH,L,L,somaSide,EXACT_MATCH,paper Root_Side compared with v1 somaSide; labels only,PhN,PhN,EXACT_MATCH,MNs!row 67
+16949,MN9,MN9,EXACT_MATCH,R,R,somaSide,EXACT_MATCH,paper Root_Side compared with v1 somaSide; labels only,PhN,PhN,EXACT_MATCH,MNs!row 66

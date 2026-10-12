@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlyVision — a garden seen through 1,709 measured eye directions · Flybrain</title>
+<meta name="description" content="A first-person garden sampled through published fruit-fly eye geometry, and a structural atlas that recovers 96.1% of withheld visual column coordinates from wiring alone.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="wordmark" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="11" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-25 11 13)"/><ellipse cx="21" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(25 21 13)"/><ellipse cx="16" cy="19" rx="4" ry="8" fill="currentColor"/><circle cx="16" cy="9.5" r="3" fill="var(--accent)"/></svg>Flybrain</a>
+  <ul><li><a href="/#projects" data-match="/projects/">Projects</a></li><li class="hide-sm"><a href="/#method">Method</a></li><li><a href="/#about">About</a></li><li><a href="https://github.com/AUW160150/flybrain/tree/main/projects/flyvision">Source ↗</a></li><li><a href="#" data-theme-toggle title="Switch light / dark" aria-label="Switch colour theme">◐</a></li></ul>
+</div></header>
+
+<section class="proj-head"><div class="wrap">
+  <p class="eyebrow"><span>Project 03</span><span>Play · desktop</span><span>Python · pygame · numpy · pyarrow</span></p>
+  <h1>FlyVision: the garden through a fly's eyes</h1>
+  <p class="lead">What does the world look like sampled by 1,709 ommatidia? FlyVision ray-traces an authored garden from one pose and shows each pixel as the nearest of the published eye directions from a microCT-scanned reference fly. Walk around, chase the other flies, press Tab to compare with an ordinary camera at the same pose.</p>
+  <div class="cta"><a class="btn primary" href="#run">Run it on your machine</a><a class="btn" href="#atlas">The structural atlas</a><a class="btn" href="https://github.com/AUW160150/flybrain/tree/main/projects/flyvision">Source ↗</a></div>
+  <div class="proj-meta">
+    <div><p class="eyebrow">Eye directions</p>857 left + 852 right, from reiserlab/eyemap_T4</div>
+    <div><p class="eyebrow">Reproduction of published geometry</p>neighbour angles to 3.6 × 10⁻¹⁵ rad</div>
+    <div><p class="eyebrow">Structural holdout</p>4,548 / 4,733 withheld column pairs recovered (96.1%)</div>
+    <div><p class="eyebrow">Neural simulation</p>explicitly off; registration to MaleCNS unresolved</div>
+  </div>
+</div></section>
+
+<div class="wrap proj-body">
+<div class="prose">
+  <img class="hero-img" src="/img/vision-garden-first.jpg" alt="First-person fly view of a garden: a hexagonally sampled scene with a path, bushes, a red fruit and a marker labelled Nearby fly, with a discovery guide in the corner" width="1800" height="1140">
+  <p class="mono muted" style="font-size:12.5px">Fly view. The irregular patches are the measured angular sampling, not a hexagon filter: each screen pixel takes the colour of the nearest published ray from either eye.</p>
+
+  <h2 id="garden">The garden</h2>
+  <p>The window opens straight into the world. Click to capture the mouse, then <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move, <kbd>Space</kbd>/<kbd>Shift</kbd> to fly up and down. Three animated flies share the garden with scripted paths and a deterministic proximity response: get close and they move off. A guide leads you through four discoveries (the nearby fly, then a trail through the fruit grove and flowers); <kbd>G</kbd> hides it. <kbd>Tab</kbd> switches between the fly's sampling and a conventional pinhole camera at exactly the same pose; <kbd>I</kbd> opens the full eye panoramas and the provenance of the geometry.</p>
+  <div class="gallery">
+    <figure><img src="/img/vision-optics.jpg" alt="Fly-eye view of the garden with fruit in the foreground"><figcaption>Earlier optics preview, before the social actors and the discovery trail were added.</figcaption></figure>
+    <figure><img src="/img/vision-about.jpg" alt="About panel showing both eye panoramas and the geometry provenance"><figcaption>The About panel: left and right eye panoramas, 6° display cutoff, pinned source commit.</figcaption></figure>
+  </div>
+  <p>Each session saves its trajectory, raw RGB directional samples, screenshots, discovery events and a parameter/provenance manifest to a new run directory. A verifier replays the first, middle and last frames of a recording and requires the same runtime code hash; the 90-frame acceptance recording reproduces all three exactly.</p>
+
+  <h2 id="honest">What it is not</h2>
+  <p>The eye geometry is from a <em>female</em> microCT specimen related to the FAFB reconstruction (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12488493/">Zhao et al., 2025</a>), pinned to a commit of the authors' repository. There is no verified mapping from those rays to the local MaleCNS photoreceptor identities: all 4,107 local photoreceptor-labelled bodies keep null physical bindings and the registered neuron count is zero. The prototype uses a shared camera origin for both eyes, RGB intensities rather than calibrated spectral radiance (no UV channel), and no optical blur, phototransduction or neural dynamics. The 110° display field and the 6° mask are display choices, not physiology. The social flies are scene animation, not circuit models.</p>
+
+  <h2 id="atlas">The structural atlas</h2>
+  <p>The first milestone built the complete local atlas: 165,122 traced neurons, 25,563,197 raw directed connection rows, 124,025,046 synapses, with neurotransmitter predictions kept as separate fields and never converted to a sign. Visual superclasses contain 103,268 neurons; 23,720 have source hex-coordinate pairs in the eyemap.</p>
+  <p>The test: hide 4,733 known coordinate pairs from the mapping anchors and ask whether one-hop structural support alone recovers them. It recovers the exact pair for 4,548 neurons (96.1%). Recovery varies by type (Tm4: 41.0%), so the overall score must not be applied to every population. A five-seed coordinate-shuffle control that preserves type, side, connectivity and counts recovers 0.11–0.21%.</p>
+  <figure><img src="/img/vision-baseline.png" alt="Baseline plot: source coordinates, coverage, and per-type holdout recovery" width="1800"><figcaption>reports/baseline.png: source coordinates, mapping coverage, and the variation in holdout recovery between cell types.</figcaption></figure>
+  <p>This measures structural consistency within one animal's annotations, which may themselves have been inferred using connectivity. It is not independent evidence of receptive fields or sensory function, and the plan in <code>docs/RESEARCH_PLAN.md</code> says what would be: an eye-to-angle transform verified against published geometry, temporal and synaptic parameters fitted on physiological data, and held-out stimuli before any model is connected to the world.</p>
+
+  <h2 id="run">Run it locally</h2>
+<pre><code>cd projects/flyvision
+python3.12 -m venv .venv &amp;&amp; .venv/bin/pip install -e '.[dev,optics]'
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m flyvision.viewer          # the garden
+.venv/bin/python -m pytest -q                                           # 24 tests
+.venv/bin/python -m flyvision build --out runs/my-baseline --source-dir /path/to/flat-connectome
+.venv/bin/python scripts/verify_optics.py runs/social-garden-preview-v1 --out reports/check.json</code></pre>
+  <p>The garden needs only the pinned eye reference under <code>references/eyemap_T4</code>, which ships with the repository. The atlas build needs the MaleCNS flat files and takes several minutes.</p>
+
+  <div class="pager"><a href="/projects/flyworld-studio/">← 02 FlyWorld Studio</a><a href="/projects/connectome-lm/">04 Connectome language model →</a></div>
+</div>
+<aside class="toc">
+  <p class="eyebrow">On this page</p>
+  <ol><li><a href="#garden">The garden</a></li><li><a href="#honest">What it is not</a></li><li><a href="#atlas">The structural atlas</a></li><li><a href="#run">Run it locally</a></li></ol>
+  <p class="eyebrow">Files</p>
+  <div class="links"><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flyvision/README.md">README</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flyvision/docs/OPTICS_MILESTONE.md">Optics milestone</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flyvision/docs/RESEARCH_PLAN.md">Research plan</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flyvision/runs/baseline/REPORT.md">Baseline report</a></div>
+</aside>
+</div>
+
+<footer><div class="wrap">
+  <div><p class="eyebrow">Flybrain</p><p>Hand-written HTML and CSS, one module of JavaScript for the simulation, no framework, no analytics.</p></div>
+  <div><p class="eyebrow">Data</p><ul><li>MaleCNS v1.0 — FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research. <a href="https://male-cns.janelia.org/download/">CC BY 4.0</a></li><li>Eye geometry — <a href="https://github.com/reiserlab/eyemap_T4">reiserlab/eyemap_T4</a></li></ul></div>
+  <div><p class="eyebrow">Repositories</p><ul><li><a href="https://github.com/AUW160150/flybrain">AUW160150/flybrain</a></li><li><a href="https://github.com/prove-ai/flybrain">prove-ai/flybrain</a></li></ul></div>
+</div></footer>
+<script type="module" src="/js/site.js"></script>
+</body>
+</html>

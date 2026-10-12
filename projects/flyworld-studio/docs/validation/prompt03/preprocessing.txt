@@ -1,0 +1,13 @@
+
+> flyworld@0.3.0 preprocess
+> python3 scripts/preprocess/build_packages.py
+
+malecns-focused: 110 bodies, 1923 edges, 1723513 bytes
+malecns-paper: 102 bodies, 274 edges, 995791 bytes
+malecns-candidates: 12 bodies, 0 edges, 35275 bytes
+malecns-lb3b: 11 bodies, 43 edges, 56490 bytes
+malecns-lb3c: 23 bodies, 221 edges, 161387 bytes
+malecns-motors: 10 bodies, 29 edges, 48925 bytes
+malecns-sugar-selected: 0 bodies, 0 edges, 14906 bytes
+malecns-anatomy: 3 bodies, 0 edges, 19749 bytes
+Geometry assets: 3. Read-only source. No network queries. No neural dynamics.

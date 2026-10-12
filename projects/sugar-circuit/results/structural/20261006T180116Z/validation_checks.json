@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "required_files": 13,
+  "validated_raw_edges": 746910,
+  "validated_raw_nodes": 129125,
+  "path_rows_checked": {
+    "simple_paths": 195120,
+    "shortest_paths": 33851,
+    "lb3b_paths": 22374,
+    "lb3c_paths": 47043,
+    "lb3b_lb3c_combined_paths": 69417,
+    "gng021_candidate_paths": 38127
+  },
+  "all_shortest_paths_saved": true,
+  "simple_examples_cap": 100,
+  "path_counts_and_memberships_not_capped": true,
+  "graphml_nodes": 37246,
+  "graphml_edges": 643834,
+  "minimum_exported_synapse_count": 1,
+  "checks": [
+    "path uniqueness and simplicity",
+    "every saved path weight joined to a live-verified raw edge",
+    "side and neurotransmitter field consistency",
+    "shortest-path completeness against exhaustive bounded counts and full-graph distances",
+    "combined example union",
+    "recurrence SCC certificates",
+    "GraphML referential integrity and exact weight roundtrip",
+    "CSV schema and required files"
+  ],
+  "post_hoc_named_routes_checked": {
+    "paper_associated_paths.csv": 3564,
+    "gng021_overlap_examples.csv": 3264
+  }
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sugar circuit audit — reconstructing a published gustatory pathway in MaleCNS · Flybrain</title>
+<meta name="description" content="A reconstruction and audit of the gustatory sensorimotor pathway from Tastekin et al. (Cell, 2026) against MaleCNS v1.0: 95 bodies resolved, 746,910 edge weights cross-checked, every discrepancy logged, with an interactive circuit explorer.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="wordmark" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="11" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-25 11 13)"/><ellipse cx="21" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(25 21 13)"/><ellipse cx="16" cy="19" rx="4" ry="8" fill="currentColor"/><circle cx="16" cy="9.5" r="3" fill="var(--accent)"/></svg>Flybrain</a>
+  <ul><li><a href="/#projects" data-match="/projects/">Projects</a></li><li class="hide-sm"><a href="/#method">Method</a></li><li><a href="/#about">About</a></li><li><a href="https://github.com/AUW160150/flybrain/tree/main/projects/sugar-circuit">Source ↗</a></li><li><a href="#" data-theme-toggle title="Switch light / dark" aria-label="Switch colour theme">◐</a></li></ul>
+</div></header>
+
+<section class="proj-head"><div class="wrap">
+  <p class="eyebrow"><span>Project 07</span><span>Explore · circuit explorer</span><span>Python · neuPrint · pandas · matplotlib</span></p>
+  <h1>Sugar circuit audit: a published pathway, checked body by body</h1>
+  <p class="lead">Tastekin et al. (Cell, 2026) traced how sugar taste on the fly's labellum reaches the motor neurons that extend its proboscis. This project asks a narrow question of that paper: can its named neurons and motifs be found, exactly, in the public MaleCNS v1.0 release, and where do the two disagree? Every claim is numbered, every mismatch is logged, and the structure is yours to explore.</p>
+  <div class="cta"><a class="btn primary" href="/sugar/interactive/20261006T221533490089Z/index.html">Open the circuit explorer</a><a class="btn" href="#found">What was found</a><a class="btn" href="https://github.com/AUW160150/flybrain/tree/main/projects/sugar-circuit">Source ↗</a></div>
+  <div class="proj-meta">
+    <div><p class="eyebrow">Target bodies</p>95 resolved; 87 sensory/motor IDs corroborated with Table S1</div>
+    <div><p class="eyebrow">Raw edges cross-checked</p>746,910 body-edge weights agree with authenticated neuPrint</div>
+    <div><p class="eyebrow">Ledgers</p>33 claims · 1,274 mismatch entries · 12 unresolved questions</div>
+    <div><p class="eyebrow">Simulation</p>none run; all three experiment configs <code>execution_allowed: false</code></div>
+  </div>
+</div></section>
+
+<div class="wrap proj-body">
+<div class="prose">
+  <figure style="margin-top:0"><img src="/img/sugar-figure1_paper_same_side.png" alt="Layered diagram: LB3 sensory cards feeding second-order, higher-order, premotor and motor neurons on the left and right CNS, with raw synapse counts" width="1800"><figcaption>Figure 1 (PAPER-ASSOCIATED). The paper's Figure 6 motif counterparts drawn from current MaleCNS raw weights, same-side endpoints. Sensory cards pool bodies by subtype and side; every other node is one body ID. Puddle is UNRESOLVED and left out rather than guessed.</figcaption></figure>
+
+  <h2 id="explorer">The explorer</h2>
+  <p>The hosted explorer is a single self-contained HTML file built from the frozen structural run. Choose the raw, paper-associated or candidate-comparison view; filter LB3b, LB3c and other LB3 inputs, the requested candidates, the motor types, evidence badges and sides; click any node for its raw weights, separate transmitter prediction fields, side provenance and evidence status. Edge width is <code>0.7 + 4.3·√(count / visible max)</code> and the minimum-count slider is display-only. Above 260 visible edges the explorer withholds arrows and keeps the full table. Effective-score mode shows an explicit "unavailable" message rather than falling back to raw counts, because no validated selection exists yet.</p>
+  <div class="gallery">
+    <figure><img src="/img/sugar-figure3_candidate_comparison.png" alt="Six candidate neuron comparisons with boundary-count tables"><figcaption>Figure 3 (CANDIDATE): six independent candidate comparisons; the panels do not join the candidates into one pathway.</figcaption></figure>
+    <figure><img src="/img/sugar-figure2_sugar_panels.png" alt="Four framework panels marked blocked pending validated results"><figcaption>Figure 2: the four sugar-restricted effective-connectivity panels, explicitly BLOCKED until validated results exist.</figcaption></figure>
+  </div>
+
+  <h2 id="found">What was found</h2>
+  <ul>
+    <li><strong>Identities.</strong> Authenticated v1.0 metadata verified; 95 target bodies resolved and cross-checked against the official flat files; all 87 sensory and motor IDs and types corroborated with the paper's Table S1. 1,615 exact cross-representation field matches and 190 explained precision differences.</li>
+    <li><strong>Structure.</strong> The full released graph retained with no added synapse threshold. All 746,910 exported raw edge weights agree with authenticated neuPrint. All 770 sensory–motor pairs are reachable in 2–3 hops. GNG021 has no direct LB3 input, but all 154 LB3-candidate pairs have shortest length 2 and both candidate bodies reach every motor.</li>
+    <li><strong>Discrepancies.</strong> Eight pooled paper-versus-current count differences on Figure 6 edges (for example GNG015→MN9: 473 in the paper, 478 in v1.0), one LB3c body (957530) whose entry nerve is missing in v1.0 versus Table S1, and the neuron "Puddle", named in the paper with no body or type mapping in any inspected authoritative record. 976 neurotransmitter field distinctions are preserved as distinctions between supplied fields, not as disagreements.</li>
+    <li><strong>Method recovery.</strong> The paper's effective-connectivity algebra is reconstructed as far as the final STAR Methods allow; a synthetic audit shows that reference, pooling and horizon choices change membership, so selection remains underdetermined and computational replication is BLOCKED rather than approximated.</li>
+  </ul>
+  <table>
+    <thead><tr><th>Figure 6 edge</th><th class="num">Paper</th><th class="num">MaleCNS v1.0</th><th>Ledger</th></tr></thead>
+    <tbody>
+      <tr><td>GNG015 → MN9</td><td class="num">473</td><td class="num">478</td><td>M290</td></tr>
+      <tr><td>ANXXX462a → GNG585</td><td class="num">179</td><td class="num">178</td><td>M291</td></tr>
+      <tr><td>GNG585 → GNG120</td><td class="num">359</td><td class="num">350</td><td>M292</td></tr>
+      <tr><td>GNG108 → MN9</td><td class="num">376</td><td class="num">381</td><td>M293</td></tr>
+      <tr><td>GNG108 → MN4a</td><td class="num">98</td><td class="num">135</td><td>M294</td></tr>
+      <tr><td>GNG120 → MN9</td><td class="num">441</td><td class="num">443</td><td>M295</td></tr>
+      <tr><td>GNG120 → MN4a</td><td class="num">89</td><td class="num">98</td><td>M296</td></tr>
+      <tr><td>GNG472 → MN8</td><td class="num">205</td><td class="num">221</td><td>M297</td></tr>
+    </tbody>
+  </table>
+  <p class="mono muted" style="font-size:12.5px">Both values retained; neuPrint and flat weights agree with each other; whole-body or whole-edge pruning alone does not explain the differences (M1275–M1282).</p>
+
+  <h2 id="how">How it was done</h2>
+  <p>A written research protocol (v0.1, 6 October 2026) came first. Work then proceeded through gates: an initial validation checkpoint (identities and sources), then a structural-connectivity checkpoint (gates 2 and 3), each ending with an artifact-integrity check that re-hashes every source, input and output, scans for credentials, and verifies local links. Source downloads and raw queries carry provenance logs; earlier results are never overwritten, only superseded by new timestamped directories. The three experiments the paper suggests are drafted as configs and deliberately not run: the method gaps above would make any "replication" a guess. Anatomy is likewise marked BLOCKED (0 of 110 requested skeletons in this build) and a status image named <code>anatomy_BLOCKED</code> stands where a morphology render would go.</p>
+
+  <h2 id="run">Run it locally</h2>
+<pre><code>cd projects/sugar-circuit
+python3.12 -m venv .venv &amp;&amp; .venv/bin/pip install -r requirements-validation.txt -r requirements-structural.txt
+.venv/bin/python scripts/04_resolve_neuron_ids.py            # compares saved primary records, writes a timestamped result dir
+MPLCONFIGDIR=/tmp/mpl .venv/bin/python visualization/scripts/build.py   # rebuilds figures + explorer from the frozen run
+.venv/bin/python visualization/scripts/validate.py</code></pre>
+  <p>The frozen structural results (several GB of edge tables and distance arrays) and the raw data are not in the repository; the explorer, figures, build manifests, ledgers and the validation result directory are.</p>
+
+  <div class="pager"><a href="/projects/connectome-atlas/">← 06 MaleCNS atlas</a><a href="/#projects">All projects →</a></div>
+</div>
+<aside class="toc">
+  <p class="eyebrow">On this page</p>
+  <ol><li><a href="#explorer">The explorer</a></li><li><a href="#found">What was found</a></li><li><a href="#how">How it was done</a></li><li><a href="#run">Run it locally</a></li></ol>
+  <p class="eyebrow">Files</p>
+  <div class="links"><a href="/sugar/interactive/20261006T221533490089Z/index.html">Circuit explorer</a><a href="/sugar/anatomy/20261006T221533490089Z/index.html">Anatomy status</a><a href="/sugar/docs/VISUALIZATION_INDEX.md">Figure index</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/sugar-circuit/STATUS.md">STATUS.md</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/sugar-circuit/docs/structural_connectivity_checkpoint.md">Structural checkpoint</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/sugar-circuit/logs/mismatch_ledger.csv">Mismatch ledger</a></div>
+</aside>
+</div>
+
+<footer><div class="wrap">
+  <div><p class="eyebrow">Flybrain</p><p>Hand-written HTML and CSS, one module of JavaScript for the simulation, no framework, no analytics.</p></div>
+  <div><p class="eyebrow">Data</p><ul><li>MaleCNS v1.0 — FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research. <a href="https://male-cns.janelia.org/download/">CC BY 4.0</a></li><li>Tastekin et al., Cell, 2026</li></ul></div>
+  <div><p class="eyebrow">Repositories</p><ul><li><a href="https://github.com/AUW160150/flybrain">AUW160150/flybrain</a></li><li><a href="https://github.com/prove-ai/flybrain">prove-ai/flybrain</a></li></ul></div>
+</div></footer>
+<script type="module" src="/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "repository": "https://github.com/reiserlab/eyemap_T4",
+  "commit": "99d2a43123db636cedb55af9ff31a59657e7d17e",
+  "files": [
+    {
+      "path": "README.md",
+      "git_blob_sha1": "6f16845f556538b6eee25ada88098c661039006f",
+      "bytes": 966,
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/README.md"
+    },
+    {
+      "path": "LICENSE",
+      "git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "bytes": 35149,
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/LICENSE"
+    },
+    {
+      "path": "proc_uCT.R",
+      "git_blob_sha1": "cf229b7c1a9a4b248682019d35979b5504d5ef9f",
+      "bytes": 11235,
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/proc_uCT.R"
+    },
+    {
+      "path": "proc_eyemap.R",
+      "git_blob_sha1": "5a83c5a410b92a03091ba8e569bb417ac65513fc",
+      "bytes": 16098,
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/proc_eyemap.R"
+    },
+    {
+      "path": "data/microCT/20240701.RData",
+      "git_blob_sha1": "78c05b5aac401cfd3d53893a98dd926aac637988",
+      "bytes": 310361,
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/data/microCT/20240701.RData"
+    },
+    {
+      "path": "data/microCT/20240701_nb.RData",
+      "git_blob_sha1": "679f8e05bb8ebe965abca05a0559c062cebdaf7f",
+      "bytes": 69102,
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/data/microCT/20240701_nb.RData"
+    },
+    {
+      "path": "data/eyemap.RData",
+      "git_blob_sha1": "f3ee4a5aeb5be159de7071952dc52eb20d8b42d6",
+      "bytes": 182218,
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/data/eyemap.RData"
+    },
+    {
+      "path": "data/med_ixy.RData",
+      "git_blob_sha1": "66d5b9f1e9d06d65a77bfa04d305396e3ff21a9f",
+      "bytes": 2337,
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/data/med_ixy.RData"
+    },
+    {
+      "path": "data/Mi1_ind.RData",
+      "git_blob_sha1": "bc4933282664a84361c8318d8b4a1d54a728529a",
+      "bytes": 561,
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/data/Mi1_ind.RData"
+    },
+    {
+      "path": "data/neu_PR.RData",
+      "git_blob_sha1": "bdc0d3d3d7df9593058619bd3fac6423c961418b",
+      "bytes": 8113,
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/data/neu_PR.RData"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+Read-only comparison against the Prompt 01 inventory.
+Scope: the 16 inventoried files only; not a full repository audit.
+MATCH AGENTS.md
+MATCH docs/RESEARCH_PROTOCOL.md
+MATCH STATUS.md
+MATCH docs/initial_validation_checkpoint.md
+MATCH docs/structural_connectivity_checkpoint.md
+MATCH visualization/docs/VISUALIZATION_INDEX.md
+MATCH logs/unresolved_questions.md
+MATCH logs/mismatch_ledger.csv
+MATCH config/source_manifest.yaml
+MATCH results/workflow/20261007T221035718347Z/manifest.json
+MATCH results/connection_tables/20261007T220046456321Z/manifest.json
+MATCH results/excel/20261007T220621943039Z/manifest.json
+MATCH results/structural/20261006T180116Z/manifest.json
+MATCH results/structural/20261006T180116Z/raw/edge_schema.json
+MATCH visualization/data/20261006T221533490089Z/build_manifest.json
+MATCH visualization/docs/SELECTED_RESULTS.md
+Result: 16/16 hashes match.

@@ -1,0 +1,10 @@
+{
+  "status": "UNVERIFIED",
+  "coordinate_space": "MaleCNS native EM",
+  "units": "8 nm",
+  "scale_to_micrometers": 0.008,
+  "units_source": "https://male-cns.janelia.org/download/ — native skeletons-swc",
+  "raw_to_right_dorsal_anterior": null,
+  "orientation_source": null,
+  "note": "No guessed camera handedness. Supply an authoritative, independently checked orientation matrix and source before enabling anterior/posterior/dorsal/lateral labels. Native XYZ views may be shown without anatomical camera names. Do not mirror individual bodies to fit their side labels."
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flycodes — can a fixed fly brain learn to write code? · Flybrain</title>
+<meta name="description" content="The complete 165,122-neuron MaleCNS graph as a fixed reservoir with a trained readout, trained on curated MBPP examples and scored on LeetCode-style tasks. 0/24, same as the control. All programs and scores in a self-contained results platform.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="wordmark" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="11" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-25 11 13)"/><ellipse cx="21" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(25 21 13)"/><ellipse cx="16" cy="19" rx="4" ry="8" fill="currentColor"/><circle cx="16" cy="9.5" r="3" fill="var(--accent)"/></svg>Flybrain</a>
+  <ul><li><a href="/#projects" data-match="/projects/">Projects</a></li><li class="hide-sm"><a href="/#method">Method</a></li><li><a href="/#about">About</a></li><li><a href="https://github.com/AUW160150/flybrain/tree/main/projects/flycodes">Source ↗</a></li><li><a href="#" data-theme-toggle title="Switch light / dark" aria-label="Switch colour theme">◐</a></li></ul>
+</div></header>
+
+<section class="proj-head"><div class="wrap">
+  <p class="eyebrow"><span>Project 05</span><span>Explore · results platform</span><span>Python · PyTorch · bounded Python judge</span></p>
+  <h1>Flycodes: can a fixed fly brain learn to write code?</h1>
+  <p class="lead">Load the whole connectome, all 165,122 traced neurons and 25,563,197 directed connections, keep its wiring fixed, and train only a readout on top of its dynamics. Then ask it to solve LeetCode-style problems: Two Sum, valid brackets, maximum subarray. The results platform shows every program it produced, what the judge said, and the activity of its neurons while it wrote them.</p>
+  <div class="cta"><a class="btn primary" href="/flycodes/">Open the results platform</a><a class="btn" href="#result">The result</a><a class="btn" href="https://github.com/AUW160150/flybrain/tree/main/projects/flycodes">Source ↗</a></div>
+  <div class="proj-meta">
+    <div><p class="eyebrow">Network</p>165,122 neurons · 25,563,197 edges · no trainable synapses</div>
+    <div><p class="eyebrow">Training (v2)</p>246 verified MBPP examples · 60 validation · 2 readout seeds</div>
+    <div><p class="eyebrow">Fresh tasks</p>0 / 24 solved, both seeds, same as the no-recurrence control</div>
+    <div><p class="eyebrow">Diagnosis</p>readout barely uses the recurrence; memory improves without rewiring</div>
+  </div>
+</div></section>
+
+<div class="wrap proj-body">
+<div class="prose">
+  <div class="callout" style="margin-top:0"><p class="eyebrow">What you can do in the platform</p><p style="margin:0">The hosted platform is the saved view generated from the latest completed run: pick any problem, read the exact generated program for each model and seed, see its judge outcome case by case, switch to the "after mechanical syntax repair" interpretation, watch recorded neuron activity on the fly avatar, and read the training curves. Starting a <em>new</em> experiment needs the local server and the 500 MB mapped graph (<code>./flycodes.sh serve</code>).</p></div>
+
+  <h2 id="result">The result</h2>
+  <table>
+    <thead><tr><th>Model</th><th class="num">Fresh MBPP subset</th><th class="num">Unseen constants</th><th class="num">Seen training</th><th class="num">Readout params</th></tr></thead>
+    <tbody>
+      <tr><td>Fly · seed 7</td><td class="num">0 / 24</td><td class="num">0 / 30</td><td class="num">1 / 8</td><td class="num">1,325,544</td></tr>
+      <tr><td>Fly · seed 19</td><td class="num">0 / 24</td><td class="num">0 / 30</td><td class="num">0 / 8</td><td class="num">1,325,544</td></tr>
+      <tr><td>No recurrence · seed 7</td><td class="num">0 / 24</td><td class="num">0 / 30</td><td class="num">1 / 8</td><td class="num">1,325,544</td></tr>
+      <tr><td>No recurrence · seed 19</td><td class="num">0 / 24</td><td class="num">0 / 30</td><td class="num">0 / 8</td><td class="num">1,325,544</td></tr>
+    </tbody>
+  </table>
+  <p>Training loss fell from 6.6 to 0.03 while validation loss bottomed out at step 100 and then climbed: the readout memorised the corpus. The one passing program is a reproduction of a seen training example (<code>return sum(nums) + 0</code>). A post-run audit with stronger tests removed three false-positive transfer passes per seed-19 model that had used wrong constants; both the original and corrected scores are retained. Mechanical syntax repair made 25 outputs runnable and produced one more seen-training pass, no new-task success.</p>
+  <p>The earlier pilot (v1, 12 training exercises) scored 0/6 on the six original LeetCode-style problems, as did the no-recurrence control and a tiny Transformer. A pretrained LLM reference was planned and deferred; its blank score is not a zero.</p>
+
+  <h2 id="diagnosis">Why, measured</h2>
+  <figure><img src="/img/codes-backtrace.png" alt="Three panels: delayed-bit memory improves with stronger recurrence gain; next-token accuracy barely changes when recurrence is removed but drops when prompt context is shuffled; validation loss rises after step 100 while training loss keeps falling" width="1800"><figcaption>docs/BACKTRACE_FIGURE.png. A model diagnosis, not a coding-performance improvement.</figcaption></figure>
+  <ul>
+    <li><strong>The readout barely uses the fly connections.</strong> Removing the recurrence changes next-token accuracy from 51.91% to 51.89%; shuffling the prompt context drops it to 42.79%. The readout leans on the artificial prompt memory, not the reservoir.</li>
+    <li><strong>Memory can improve without rewiring.</strong> On a separate delayed-bit task across three random streams, raising the recurrent gain toward 0.9 extended the held-out memory horizon, with no edge changed.</li>
+    <li><strong>Continued fitting overfits.</strong> Validation loss rises monotonically after the selected checkpoint.</li>
+  </ul>
+  <p>The <a href="https://github.com/AUW160150/flybrain/blob/main/projects/flycodes/docs/REDESIGN_PLAN.md">redesign plan</a> proposes fixed-topology dynamics learning and staged primitive-to-program evaluations, with references. The current core has no trainable synaptic weights; whether a different fly-constrained architecture could learn broad algorithmic reasoning is an open question this study cannot settle.</p>
+
+  <h2 id="method">How it was set up</h2>
+  <ul>
+    <li><strong>Graph.</strong> Every Traced neuron including isolated ones; every positive-count edge including weak edges and 101 self-connections. No subsampling, no threshold. <code>nodes.tsv</code> maps array indices to exact body IDs; the manifest records hashes and source URLs.</li>
+    <li><strong>Dynamics.</strong> A calibrated reservoir (recurrent target spectral radius 0.045, leak 0.5, input scale 0.35, chosen on validation only), retained prompt context, a lossless lexical tokenizer and a nonlinear readout. The fly and the control share the same prompt memory, clock features, tokenizer and head; the control removes the recurrence.</li>
+    <li><strong>Data.</strong> MBPP at a pinned immutable commit with SHA-256 and original task IDs; 246 verified training examples, 60 validation, a 24-task sample from the 209 judge-compatible records fixed before training, and 30 authored unseen-constant exercises. Exclusions are recorded.</li>
+    <li><strong>Judge.</strong> Generated code is parsed and interpreted in a bounded Python subset in a timed subprocess, never passed to <code>exec</code>. Unsupported syntax, timeouts, runtime errors and harness errors stay distinguishable. The subset means the score must not be called a full MBPP score.</li>
+  </ul>
+
+  <h2 id="run">Run it locally</h2>
+<pre><code>cd projects/flycodes
+python3.12 -m venv .venv &amp;&amp; .venv/bin/pip install -r requirements.lock
+./flycodes.sh prepare                 # maps the full graph from ../../data/flat-connectome (~500 MB)
+./flycodes.sh prepare-curriculum &amp;&amp; ./flycodes.sh train-curriculum
+./flycodes.sh serve                   # http://127.0.0.1:8765, live platform
+.venv/bin/python scripts/export_snapshot.py   # regenerates the self-contained flycodes.html</code></pre>
+
+  <div class="pager"><a href="/projects/connectome-lm/">← 04 Connectome language model</a><a href="/projects/connectome-atlas/">06 MaleCNS atlas →</a></div>
+</div>
+<aside class="toc">
+  <p class="eyebrow">On this page</p>
+  <ol><li><a href="#result">The result</a></li><li><a href="#diagnosis">Why, measured</a></li><li><a href="#method">How it was set up</a></li><li><a href="#run">Run it locally</a></li></ol>
+  <p class="eyebrow">Files</p>
+  <div class="links"><a href="/flycodes/">Results platform</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flycodes/docs/RESULTS_V2.md">Results v2</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flycodes/docs/PROTOCOL_V2.md">Protocol v2</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flycodes/docs/BACKTRACE_RESULTS.md">Backtrace</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flycodes/docs/SYNTAX_AUDIT_RESULTS.md">Syntax audit</a></div>
+</aside>
+</div>
+
+<footer><div class="wrap">
+  <div><p class="eyebrow">Flybrain</p><p>Hand-written HTML and CSS, one module of JavaScript for the simulation, no framework, no analytics.</p></div>
+  <div><p class="eyebrow">Data</p><ul><li>MaleCNS v1.0 — FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research. <a href="https://male-cns.janelia.org/download/">CC BY 4.0</a></li><li>MBPP — Austin et al., 2021</li></ul></div>
+  <div><p class="eyebrow">Repositories</p><ul><li><a href="https://github.com/AUW160150/flybrain">AUW160150/flybrain</a></li><li><a href="https://github.com/prove-ai/flybrain">prove-ai/flybrain</a></li></ul></div>
+</div></footer>
+<script type="module" src="/js/site.js"></script>
+</body>
+</html>

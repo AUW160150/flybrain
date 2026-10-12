@@ -1,0 +1,5 @@
+PASS 38 local links in changed Markdown documents.
+PASS 43 changed/new files inventoried; no pre-existing files removed.
+PASS no public or config files changed.
+PASS final unit log: 168 tests; preprocessing: 20 tests; strict TypeScript/build pass.
+BLOCKED browser/manual acceptance; no browser screenshots generated.

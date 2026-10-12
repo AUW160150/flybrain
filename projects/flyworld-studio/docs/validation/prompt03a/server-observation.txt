@@ -1,0 +1,2 @@
+COMMAND   PID    USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+node    81908 Rodela1  cwd    DIR   1,15      736 11073809 /Users/Rodela1/Code/Flybrain/sandbox/flyworld

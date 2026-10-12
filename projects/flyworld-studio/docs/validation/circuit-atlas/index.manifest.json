@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "dataset": "male-cns:v1.0",
+  "uuid": "4b2087c0fbe046bfaf0d60bc970e3e5d",
+  "createdAt": "2026-10-08T22:19:09.316119+00:00",
+  "sources": {
+    "annotations": {
+      "name": "body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314
+    },
+    "weights": {
+      "name": "connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 1051241946
+    }
+  },
+  "neuronCount": 165122,
+  "annotationRows": 211577,
+  "edgeCount": 25563197,
+  "synapseCount": 124025046,
+  "sourceEdgeRows": 151856684,
+  "excludedEdgeRows": 126293487,
+  "scope": "Traced neurons and induced raw connections",
+  "synapseConfidence": 0.5,
+  "coordinateSpace": "MaleCNS native EM",
+  "units": "8 nm",
+  "orientationStatus": "ORIENTATION_UNVERIFIED",
+  "scientificLabel": "RAW_STRUCTURAL",
+  "indexSha256": "7ad76a96abe5a99240929887a533c419d040bdcf5a3f1a838d4dc18b93f72f31"
+}

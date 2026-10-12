@@ -1,0 +1,1523 @@
+{
+  "dataset": "male-cns:v1.0",
+  "version": "v1.0",
+  "uuid": "4b2087c0fbe046bfaf0d60bc970e3e5d",
+  "source_path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+  "source_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+  "structural_manifest": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/results/structural/20261006T180116Z/manifest.json",
+  "bodies": {
+    "10029": {
+      "bodyId": "10029",
+      "type": "LoVC16",
+      "instance": "LoVC16_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        31205,
+        23088,
+        37898
+      ],
+      "tosomaLocation": null
+    },
+    "10053": {
+      "bodyId": "10053",
+      "type": "LoVC16",
+      "instance": "LoVC16_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        31534,
+        23804,
+        38105
+      ],
+      "tosomaLocation": null
+    },
+    "10093": {
+      "bodyId": "10093",
+      "type": "Am1",
+      "instance": "Am1_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        28150,
+        31497,
+        42884
+      ],
+      "tosomaLocation": null
+    },
+    "10331": {
+      "bodyId": "10331",
+      "type": "MN9",
+      "instance": "MN9_L",
+      "synonyms": null,
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        55365,
+        36271,
+        15889
+      ],
+      "tosomaLocation": null
+    },
+    "10807": {
+      "bodyId": "10807",
+      "type": "Pm11",
+      "instance": "Pm11_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        28688,
+        34616,
+        26992
+      ],
+      "tosomaLocation": null
+    },
+    "10881": {
+      "bodyId": "10881",
+      "type": "GNG120",
+      "instance": "GNG120_R",
+      "synonyms": "Shiu 2022: Roundtree",
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        34077,
+        39252,
+        27916
+      ],
+      "tosomaLocation": null
+    },
+    "10961": {
+      "bodyId": "10961",
+      "type": "GNG585",
+      "instance": "GNG585_L",
+      "synonyms": "Shiu 2022: Sternum",
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        64452,
+        36836,
+        22265
+      ],
+      "tosomaLocation": null
+    },
+    "11029": {
+      "bodyId": "11029",
+      "type": "Pm13",
+      "instance": "Pm13_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        27869,
+        35756,
+        25691
+      ],
+      "tosomaLocation": null
+    },
+    "11369": {
+      "bodyId": "11369",
+      "type": "DNc01",
+      "instance": "DNc01_L",
+      "synonyms": null,
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        48483,
+        9904,
+        25054
+      ],
+      "tosomaLocation": null
+    },
+    "12364": {
+      "bodyId": "12364",
+      "type": "DNge080",
+      "instance": "DNge080_R",
+      "synonyms": "Shiu 2022: Rounddown",
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        34980,
+        40405,
+        27774
+      ],
+      "tosomaLocation": null
+    },
+    "12402": {
+      "bodyId": "12402",
+      "type": "GNG585",
+      "instance": "GNG585_R",
+      "synonyms": "Shiu 2022: Sternum",
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        32388,
+        37853,
+        24656
+      ],
+      "tosomaLocation": null
+    },
+    "12638": {
+      "bodyId": "12638",
+      "type": "MeLo8",
+      "instance": "MeLo8_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        23188,
+        22397,
+        28046
+      ],
+      "tosomaLocation": null
+    },
+    "12752": {
+      "bodyId": "12752",
+      "type": "DNge080",
+      "instance": "DNge080_L",
+      "synonyms": "Shiu 2022: Rounddown",
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        64480,
+        41106,
+        30364
+      ],
+      "tosomaLocation": null
+    },
+    "12912": {
+      "bodyId": "12912",
+      "type": "MeLo8",
+      "instance": "MeLo8_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        24779,
+        33816,
+        25479
+      ],
+      "tosomaLocation": null
+    },
+    "13611": {
+      "bodyId": "13611",
+      "type": "GNG585",
+      "instance": "GNG585_L",
+      "synonyms": "Shiu 2022: Sternum",
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        63002,
+        37278,
+        21238
+      ],
+      "tosomaLocation": null
+    },
+    "15321": {
+      "bodyId": "15321",
+      "type": "GNG042",
+      "instance": "GNG042_L",
+      "synonyms": "Shiu 2022: Quasimodo",
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        57420,
+        41546,
+        18672
+      ],
+      "tosomaLocation": null
+    },
+    "15734": {
+      "bodyId": "15734",
+      "type": "GNG042",
+      "instance": "GNG042_R",
+      "synonyms": "Shiu 2022: Quasimodo",
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        38562,
+        43777,
+        18874
+      ],
+      "tosomaLocation": null
+    },
+    "16827": {
+      "bodyId": "16827",
+      "type": "MN8",
+      "instance": "MN8_L",
+      "synonyms": null,
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        53718,
+        46343,
+        30205
+      ],
+      "tosomaLocation": null
+    },
+    "16949": {
+      "bodyId": "16949",
+      "type": "MN9",
+      "instance": "MN9_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        41546,
+        38775,
+        15447
+      ],
+      "tosomaLocation": null
+    },
+    "18295": {
+      "bodyId": "18295",
+      "type": "MN4a",
+      "instance": "MN4a_L",
+      "synonyms": null,
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        62568,
+        39140,
+        25322
+      ],
+      "tosomaLocation": null
+    },
+    "19480": {
+      "bodyId": "19480",
+      "type": "ANXXX462a",
+      "instance": "ANXXX462a_R",
+      "synonyms": "Shiu 2022: Clavicle",
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        46503,
+        63563,
+        72717
+      ],
+      "tosomaLocation": null
+    },
+    "20173": {
+      "bodyId": "20173",
+      "type": "MN8",
+      "instance": "MN8_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        45661,
+        48427,
+        26185
+      ],
+      "tosomaLocation": null
+    },
+    "22758": {
+      "bodyId": "22758",
+      "type": "DNg67",
+      "instance": "DNg67_R",
+      "synonyms": "Shiu 2022: Fudog",
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        38375,
+        39849,
+        17955
+      ],
+      "tosomaLocation": null
+    },
+    "26764": {
+      "bodyId": "26764",
+      "type": "GNG108",
+      "instance": "GNG108_R",
+      "synonyms": "Shiu 2022: Roundup",
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        37313,
+        42297,
+        22267
+      ],
+      "tosomaLocation": null
+    },
+    "27203": {
+      "bodyId": "27203",
+      "type": "GNG021",
+      "instance": "GNG021_L",
+      "synonyms": null,
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        56390,
+        45469,
+        26163
+      ],
+      "tosomaLocation": null
+    },
+    "27938": {
+      "bodyId": "27938",
+      "type": "MN4a",
+      "instance": "MN4a_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        41940,
+        46845,
+        23554
+      ],
+      "tosomaLocation": null
+    },
+    "28181": {
+      "bodyId": "28181",
+      "type": "GNG015",
+      "instance": "GNG015_R",
+      "synonyms": "fru-M-600073",
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        34425,
+        40086,
+        30848
+      ],
+      "tosomaLocation": null
+    },
+    "31018": {
+      "bodyId": "31018",
+      "type": "GNG232",
+      "instance": "GNG232_R",
+      "synonyms": "Shiu 2022: G2N-1",
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        38279,
+        44277,
+        25272
+      ],
+      "tosomaLocation": null
+    },
+    "33339": {
+      "bodyId": "33339",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "36368": {
+      "bodyId": "36368",
+      "type": "MN4a",
+      "instance": "MN4a_L",
+      "synonyms": null,
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "46013": {
+      "bodyId": "46013",
+      "type": "GNG472",
+      "instance": "GNG472_L",
+      "synonyms": null,
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        63121,
+        39293,
+        26111
+      ],
+      "tosomaLocation": null
+    },
+    "71254": {
+      "bodyId": "71254",
+      "type": "LB3b",
+      "instance": "LB3b_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "72059": {
+      "bodyId": "72059",
+      "type": "LB3c",
+      "instance": "LB3c_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "78240": {
+      "bodyId": "78240",
+      "type": "LB3c",
+      "instance": "LB3c_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "85806": {
+      "bodyId": "85806",
+      "type": "LB3c",
+      "instance": "LB3c_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "89638": {
+      "bodyId": "89638",
+      "type": "GNG232",
+      "instance": "GNG232_L",
+      "synonyms": "Shiu 2022: G2N-1",
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        58320,
+        43266,
+        25538
+      ],
+      "tosomaLocation": null
+    },
+    "92440": {
+      "bodyId": "92440",
+      "type": "LB3c",
+      "instance": "LB3c_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "93290": {
+      "bodyId": "93290",
+      "type": "LB3d",
+      "instance": "LB3d_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "101087": {
+      "bodyId": "101087",
+      "type": "LB3c",
+      "instance": "LB3c_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "120303": {
+      "bodyId": "120303",
+      "type": "LB3c",
+      "instance": "LB3c_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "125405": {
+      "bodyId": "125405",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "129171": {
+      "bodyId": "129171",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "130693": {
+      "bodyId": "130693",
+      "type": "LB3d",
+      "instance": "LB3d_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "136183": {
+      "bodyId": "136183",
+      "type": "LB3a",
+      "instance": "LB3a_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "140015": {
+      "bodyId": "140015",
+      "type": "LB3c",
+      "instance": "LB3c_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "140619": {
+      "bodyId": "140619",
+      "type": "LB3a",
+      "instance": "LB3a_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "140851": {
+      "bodyId": "140851",
+      "type": "LB3d",
+      "instance": "LB3d_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "141663": {
+      "bodyId": "141663",
+      "type": "LB3a",
+      "instance": "LB3a_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "142827": {
+      "bodyId": "142827",
+      "type": "LB3c",
+      "instance": "LB3c_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "158537": {
+      "bodyId": "158537",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "159772": {
+      "bodyId": "159772",
+      "type": "LB3b",
+      "instance": "LB3b_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "160435": {
+      "bodyId": "160435",
+      "type": "LB3a",
+      "instance": "LB3a_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "163597": {
+      "bodyId": "163597",
+      "type": "LB3b",
+      "instance": "LB3b_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "166190": {
+      "bodyId": "166190",
+      "type": "LB3a",
+      "instance": "LB3a_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "167663": {
+      "bodyId": "167663",
+      "type": "LB3a",
+      "instance": "LB3a_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "178321": {
+      "bodyId": "178321",
+      "type": "LB3d",
+      "instance": "LB3d_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "178913": {
+      "bodyId": "178913",
+      "type": "LB3a",
+      "instance": "LB3a_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "180314": {
+      "bodyId": "180314",
+      "type": "LB3c",
+      "instance": "LB3c_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "183061": {
+      "bodyId": "183061",
+      "type": "LB3a",
+      "instance": "LB3a_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "183084": {
+      "bodyId": "183084",
+      "type": "LB3b",
+      "instance": "LB3b_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "187492": {
+      "bodyId": "187492",
+      "type": "LB3b",
+      "instance": "LB3b_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "187776": {
+      "bodyId": "187776",
+      "type": "LB3a",
+      "instance": "LB3a_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "190769": {
+      "bodyId": "190769",
+      "type": "LB3c",
+      "instance": "LB3c_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "199196": {
+      "bodyId": "199196",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "199308": {
+      "bodyId": "199308",
+      "type": "LB3a",
+      "instance": "LB3a_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "201075": {
+      "bodyId": "201075",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "202888": {
+      "bodyId": "202888",
+      "type": "LB3c",
+      "instance": "LB3c_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "203234": {
+      "bodyId": "203234",
+      "type": "LB3a",
+      "instance": "LB3a_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "204726": {
+      "bodyId": "204726",
+      "type": "LB3d",
+      "instance": "LB3d_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "209155": {
+      "bodyId": "209155",
+      "type": "LB3b",
+      "instance": "LB3b_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "210344": {
+      "bodyId": "210344",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "215556": {
+      "bodyId": "215556",
+      "type": "LB3c",
+      "instance": "LB3c_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "236475": {
+      "bodyId": "236475",
+      "type": "LB3d",
+      "instance": "LB3d_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "261048": {
+      "bodyId": "261048",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "261450": {
+      "bodyId": "261450",
+      "type": "LB3c",
+      "instance": "LB3c_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "262567": {
+      "bodyId": "262567",
+      "type": "LB3c",
+      "instance": "LB3c_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "272263": {
+      "bodyId": "272263",
+      "type": "LB3b",
+      "instance": "LB3b_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "312102": {
+      "bodyId": "312102",
+      "type": "LB3d",
+      "instance": "LB3d_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "317616": {
+      "bodyId": "317616",
+      "type": "LB3d",
+      "instance": "LB3d_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "374701": {
+      "bodyId": "374701",
+      "type": "LB3a",
+      "instance": "LB3a_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "512551": {
+      "bodyId": "512551",
+      "type": "LB3c",
+      "instance": "LB3c_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "512552": {
+      "bodyId": "512552",
+      "type": "LB3d",
+      "instance": "LB3d_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "513162": {
+      "bodyId": "513162",
+      "type": "GNG120",
+      "instance": "GNG120_L",
+      "synonyms": "Shiu 2022: Roundtree",
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "514625": {
+      "bodyId": "514625",
+      "type": "ANXXX462a",
+      "instance": "ANXXX462a_L",
+      "synonyms": "Shiu 2022: Clavicle",
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        53390,
+        60392,
+        69082
+      ],
+      "tosomaLocation": null
+    },
+    "516215": {
+      "bodyId": "516215",
+      "type": "DNg67",
+      "instance": "DNg67_L",
+      "synonyms": "Shiu 2022: Fudog",
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        61858,
+        38562,
+        20397
+      ],
+      "tosomaLocation": null
+    },
+    "516216": {
+      "bodyId": "516216",
+      "type": "LB3d",
+      "instance": "LB3d_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "516217": {
+      "bodyId": "516217",
+      "type": "LB3c",
+      "instance": "LB3c_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "516218": {
+      "bodyId": "516218",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "518542": {
+      "bodyId": "518542",
+      "type": "LB3a",
+      "instance": "LB3a_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "519667": {
+      "bodyId": "519667",
+      "type": "MN6",
+      "instance": "MN6_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        36901,
+        41973,
+        29314
+      ],
+      "tosomaLocation": null
+    },
+    "521222": {
+      "bodyId": "521222",
+      "type": "GNG021",
+      "instance": "GNG021_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        42414,
+        47520,
+        25166
+      ],
+      "tosomaLocation": null
+    },
+    "522704": {
+      "bodyId": "522704",
+      "type": "MN4a",
+      "instance": "MN4a_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        38756,
+        44741,
+        25766
+      ],
+      "tosomaLocation": null
+    },
+    "523040": {
+      "bodyId": "523040",
+      "type": "GNG108",
+      "instance": "GNG108_L",
+      "synonyms": "Shiu 2022: Roundup",
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        56725,
+        41711,
+        19479
+      ],
+      "tosomaLocation": null
+    },
+    "523590": {
+      "bodyId": "523590",
+      "type": "GNG015",
+      "instance": "GNG015_L",
+      "synonyms": "fru-M-600073",
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": [
+        62197,
+        39069,
+        30127
+      ],
+      "tosomaLocation": null
+    },
+    "524254": {
+      "bodyId": "524254",
+      "type": "GNG472",
+      "instance": "GNG472_R",
+      "synonyms": null,
+      "somaSide": "R",
+      "rootSide": null,
+      "somaLocation": [
+        36196,
+        40013,
+        19247
+      ],
+      "tosomaLocation": null
+    },
+    "531237": {
+      "bodyId": "531237",
+      "type": "LB3c",
+      "instance": "LB3c_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "550065": {
+      "bodyId": "550065",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "557646": {
+      "bodyId": "557646",
+      "type": "LB3b",
+      "instance": "LB3b_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "916953": {
+      "bodyId": "916953",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "924612": {
+      "bodyId": "924612",
+      "type": "MN6",
+      "instance": "MN6_L",
+      "synonyms": null,
+      "somaSide": "L",
+      "rootSide": null,
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "933317": {
+      "bodyId": "933317",
+      "type": "LB3c",
+      "instance": "LB3c_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "942168": {
+      "bodyId": "942168",
+      "type": "LB3c",
+      "instance": "LB3c_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "957530": {
+      "bodyId": "957530",
+      "type": "LB3c",
+      "instance": "LB3c_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "147619274": {
+      "bodyId": "147619274",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "158893964": {
+      "bodyId": "158893964",
+      "type": "LB3c",
+      "instance": "LB3c_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "174444965": {
+      "bodyId": "174444965",
+      "type": "LB3b",
+      "instance": "LB3b_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "213650853": {
+      "bodyId": "213650853",
+      "type": "LB3b",
+      "instance": "LB3b_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "245892505": {
+      "bodyId": "245892505",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "349137284": {
+      "bodyId": "349137284",
+      "type": "LB3c",
+      "instance": "LB3c_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "388541892": {
+      "bodyId": "388541892",
+      "type": "LB3a",
+      "instance": "LB3a_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "422510463": {
+      "bodyId": "422510463",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "456838775": {
+      "bodyId": "456838775",
+      "type": "LB3a",
+      "instance": "LB3a_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "475202322": {
+      "bodyId": "475202322",
+      "type": "LB3c",
+      "instance": "LB3c_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "553738738": {
+      "bodyId": "553738738",
+      "type": "LB3a",
+      "instance": "LB3a_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "581710868": {
+      "bodyId": "581710868",
+      "type": "LB3d",
+      "instance": "LB3d_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "766547228": {
+      "bodyId": "766547228",
+      "type": "LB3b",
+      "instance": "LB3b_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "786482749": {
+      "bodyId": "786482749",
+      "type": "LB3a",
+      "instance": "LB3a_L",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "L",
+      "somaLocation": null,
+      "tosomaLocation": null
+    },
+    "885642755": {
+      "bodyId": "885642755",
+      "type": "LB3d",
+      "instance": "LB3d_R",
+      "synonyms": null,
+      "somaSide": null,
+      "rootSide": "R",
+      "somaLocation": null,
+      "tosomaLocation": null
+    }
+  },
+  "requested_body_ids": [
+    "10331",
+    "10881",
+    "10961",
+    "12364",
+    "12402",
+    "12752",
+    "13611",
+    "15321",
+    "15734",
+    "16827",
+    "16949",
+    "18295",
+    "19480",
+    "20173",
+    "22758",
+    "26764",
+    "27203",
+    "27938",
+    "28181",
+    "31018",
+    "33339",
+    "36368",
+    "46013",
+    "71254",
+    "72059",
+    "78240",
+    "85806",
+    "89638",
+    "92440",
+    "93290",
+    "101087",
+    "120303",
+    "125405",
+    "129171",
+    "130693",
+    "136183",
+    "140015",
+    "140619",
+    "140851",
+    "141663",
+    "142827",
+    "158537",
+    "159772",
+    "160435",
+    "163597",
+    "166190",
+    "167663",
+    "178321",
+    "178913",
+    "180314",
+    "183061",
+    "183084",
+    "187492",
+    "187776",
+    "190769",
+    "199196",
+    "199308",
+    "201075",
+    "202888",
+    "203234",
+    "204726",
+    "209155",
+    "210344",
+    "215556",
+    "236475",
+    "261048",
+    "261450",
+    "262567",
+    "272263",
+    "312102",
+    "317616",
+    "374701",
+    "512551",
+    "512552",
+    "513162",
+    "514625",
+    "516215",
+    "516216",
+    "516217",
+    "516218",
+    "518542",
+    "519667",
+    "521222",
+    "522704",
+    "523040",
+    "523590",
+    "524254",
+    "531237",
+    "550065",
+    "557646",
+    "916953",
+    "924612",
+    "933317",
+    "942168",
+    "957530",
+    "147619274",
+    "158893964",
+    "174444965",
+    "213650853",
+    "245892505",
+    "349137284",
+    "388541892",
+    "422510463",
+    "456838775",
+    "475202322",
+    "553738738",
+    "581710868",
+    "766547228",
+    "786482749",
+    "885642755"
+  ],
+  "minimum_requested_type_ids": [
+    "10331",
+    "10881",
+    "10961",
+    "12364",
+    "12402",
+    "12752",
+    "13611",
+    "15321",
+    "15734",
+    "16827",
+    "16949",
+    "18295",
+    "19480",
+    "20173",
+    "22758",
+    "26764",
+    "27203",
+    "27938",
+    "28181",
+    "31018",
+    "36368",
+    "46013",
+    "71254",
+    "72059",
+    "78240",
+    "85806",
+    "89638",
+    "92440",
+    "101087",
+    "120303",
+    "140015",
+    "142827",
+    "159772",
+    "163597",
+    "180314",
+    "183084",
+    "187492",
+    "190769",
+    "202888",
+    "209155",
+    "215556",
+    "261450",
+    "262567",
+    "272263",
+    "512551",
+    "513162",
+    "514625",
+    "516215",
+    "516217",
+    "519667",
+    "521222",
+    "522704",
+    "523040",
+    "523590",
+    "524254",
+    "531237",
+    "557646",
+    "924612",
+    "933317",
+    "942168",
+    "957530",
+    "158893964",
+    "174444965",
+    "213650853",
+    "349137284",
+    "475202322",
+    "766547228"
+  ]
+}

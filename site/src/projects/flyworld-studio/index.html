@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlyWorld Studio — browser exploration and MaleCNS data workspace · Flybrain</title>
+<meta name="description" content="A React and three.js studio: fly a procedural avatar, open its teaching brain, then inspect real MaleCNS circuit packages with full provenance. Runs in the browser.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="wordmark" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="11" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-25 11 13)"/><ellipse cx="21" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(25 21 13)"/><ellipse cx="16" cy="19" rx="4" ry="8" fill="currentColor"/><circle cx="16" cy="9.5" r="3" fill="var(--accent)"/></svg>Flybrain</a>
+  <ul><li><a href="/#projects" data-match="/projects/">Projects</a></li><li class="hide-sm"><a href="/#method">Method</a></li><li><a href="/#about">About</a></li><li><a href="https://github.com/AUW160150/flybrain/tree/main/projects/flyworld-studio">Source ↗</a></li><li><a href="#" data-theme-toggle title="Switch light / dark" aria-label="Switch colour theme">◐</a></li></ul>
+</div></header>
+
+<section class="proj-head"><div class="wrap">
+  <p class="eyebrow"><span>Project 02</span><span>Play · runs in the browser</span><span>React 19 · three.js · TypeScript · Vite</span></p>
+  <h1>FlyWorld Studio: a small world, a closer look</h1>
+  <p class="lead">A browser studio in two halves. <strong>Explore</strong> is a procedural garden with a controllable fly, an educational layered brain and a synthetic activity timeline. <strong>MaleCNS data</strong> is a real-source workspace: bounded circuit packages extracted from the connectome, with every count, side label and warning carrying its provenance.</p>
+  <div class="cta"><a class="btn primary" href="/flyworld/">Open the studio</a><a class="btn" href="#tour">What to do in it</a><a class="btn" href="https://github.com/AUW160150/flybrain/tree/main/projects/flyworld-studio">Source ↗</a></div>
+  <div class="proj-meta">
+    <div><p class="eyebrow">Tests</p>199 application · 20 preprocessing · 18 anatomy · 11 browser scenarios</div>
+    <div><p class="eyebrow">Real-data packages</p>8 bounded packages, 110 bodies, 1,923 raw edges in the focused set</div>
+    <div><p class="eyebrow">Anatomy</p>3 native-coordinate SWC skeletons shipped; 5 more in the local atlas</div>
+    <div><p class="eyebrow">Scope</p>No neural dynamics. Avatar is a placeholder; data is real.</div>
+  </div>
+</div></section>
+
+<div class="wrap proj-body">
+<div class="prose">
+  <img class="hero-img" src="/img/studio-mvp-world.jpg" alt="The FlyWorld Studio interface: a low-poly garden with a transparent-headed fly on a flower, a movement telemetry overlay, an educational brain inspector and a session timeline" width="1800" height="1430">
+  <p class="mono muted" style="font-size:12.5px">Explore mode. Every overlay is labelled USER_DRIVEN_ILLUSTRATION or RULE_DRIVEN_EDUCATIONAL; the status bar says PLACEHOLDER_GEOMETRY — NOT ANATOMICAL DATA.</p>
+
+  <h2 id="tour">What to do in it</h2>
+  <h3>Explore</h3>
+  <p>Click the viewport until it says CONTROLS ACTIVE. Hold <kbd>W</kbd>/<kbd>S</kbd> to walk, <kbd>A</kbd>/<kbd>D</kbd> to turn, <kbd>Shift</kbd> for 1.75× speed, <kbd>Space</kbd> to take off and land. <kbd>F</kbd> <kbd>G</kbd> <kbd>E</kbd> <kbd>C</kbd> play feed, groom, escape and a 2.4-second courtship wing display. <kbd>B</kbd> makes the head transparent; <kbd>Tab</kbd> inspects the brain's five teaching systems and 13 generic nodes. The timeline at the bottom replays a synthetic session; its intensities are normalised display values, never firing rates, and the interface says so.</p>
+  <h3>MaleCNS data</h3>
+  <p>Switch to the real-source workspace and load a package: the focused set, the paper motif subset, the candidate bodies, LB3b, LB3c, the motors, the (empty) sugar selection, or the cached anatomy. Filter by side, type and evidence; isolate partners and paths; open the provenance inspector on any body to see which frozen file and hash each field came from. Partner totals are explicitly IN-PACKAGE ONLY. Custom JSON packages can be imported and are validated against the package schema; bad datasets, missing provenance, impossible counts and oversized files are rejected.</p>
+  <div class="gallery">
+    <figure><img src="/img/studio-realdata-package.jpg" alt="The MaleCNS data workspace listing bodies with side, type, evidence badges and warnings"><figcaption>Real-source workspace: bodies, raw edges, evidence badges, warnings with ledger IDs.</figcaption></figure>
+    <figure><img src="/img/studio-native-anatomy.jpg" alt="Three neuron skeletons rendered in native MaleCNS coordinates"><figcaption>Native-coordinate anatomy for three source-matched bodies. Orientation is marked UNVERIFIED.</figcaption></figure>
+    <figure><img src="/img/studio-controls-brain.jpg" alt="Brain inspection camera with layered educational systems"><figcaption>Brain inspection: five teaching categories, opacity per layer.</figcaption></figure>
+    <figure><img src="/img/studio-mvp-mobile.jpg" alt="The studio on a phone-width layout"><figcaption>Phone-width layout with the on-screen movement pad.</figcaption></figure>
+  </div>
+  <div class="callout"><p class="eyebrow">Hosted copy</p><p style="margin:0">The <em>Real circuit anatomy</em> atlas (search any of the 165,122 neurons, expand upstream and downstream partners, load recorded synapse sites) needs the local development server and its 1.5 GB SQLite index of all 25,563,197 connections. That index is not a browser asset, so the hosted copy shows a message when you open it. Everything else runs here as static files.</p></div>
+
+  <h2 id="data">Where the data comes from</h2>
+  <p>An offline preprocessor (Python standard library only, no network) reads the pinned MaleCNS flat files and the frozen structural results of the <a href="/projects/sugar-circuit/">sugar circuit audit</a>, verifies every input by SHA-256, and writes bounded JSON packages: at most 500 nodes, 5,000 edges, 4 MB. The verified source tuple is <code>male-cns:v1.0 / v1.0 / 4b2087c0fbe046bfaf0d60bc970e3e5d</code>. Scientific provenance stays separate from educational avatar behaviour: the FEED gesture can illustrate source-labelled motor neurons through a separately marked, unreviewed educational mapping, and the interface never implies that imported connectivity produced the behaviour.</p>
+  <table>
+    <thead><tr><th>Package</th><th class="num">Bodies</th><th class="num">Raw edges</th><th>Label</th></tr></thead>
+    <tbody>
+      <tr><td>Focused circuit</td><td class="num">110</td><td class="num">1,923</td><td>RAW_STRUCTURAL</td></tr>
+      <tr><td>Paper motif subset</td><td class="num">102</td><td class="num">274</td><td>PAPER_ASSOCIATED</td></tr>
+      <tr><td>Sugar-selected</td><td class="num">0</td><td class="num">0</td><td>awaiting validated results</td></tr>
+      <tr><td>Cached anatomy</td><td class="num">3</td><td class="num">0</td><td>ANATOMY_ONLY</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="built">How it is built</h2>
+  <p>React 19 with react-three-fiber for the world, zustand for studio state, zod for package validation. The connectome index for the atlas is a Vite dev-server plugin over <code>node:sqlite</code>, with neuroglancer's precomputed formats parsed in TypeScript for skeletons, meshes and synapse shards. 199 vitest tests cover the state machine, validation, controls and decoders; Playwright scenarios cover the browser flows. The checkpoint documents in <code>docs/</code> record what each delivery contained, what was verified where, and what was left unresolved.</p>
+
+  <h2 id="run">Run it locally</h2>
+<pre><code>cd projects/flyworld-studio
+npm ci
+npm run dev           # http://127.0.0.1:5173
+npm test              # 199 application tests
+npm run build         # tsc + vite build
+npm run index:connectome   # optional: build the 1.5 GB atlas index from the MaleCNS flat files</code></pre>
+  <p>The hosted copy differs from the repository in one line: the build sets <code>FLYWORLD_BASE=/flyworld/</code> so the app lives under this site, and asset fetches use that base.</p>
+
+  <div class="pager"><a href="/projects/flyworld-game/">← 01 FlyWorld</a><a href="/projects/flyvision/">03 FlyVision →</a></div>
+</div>
+<aside class="toc">
+  <p class="eyebrow">On this page</p>
+  <ol><li><a href="#tour">What to do in it</a></li><li><a href="#data">Where the data comes from</a></li><li><a href="#built">How it is built</a></li><li><a href="#run">Run it locally</a></li></ol>
+  <p class="eyebrow">Files</p>
+  <div class="links"><a href="/flyworld/">Open the studio</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flyworld-studio/README.md">README</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flyworld-studio/STATUS.md">STATUS.md</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flyworld-studio/docs/SCIENTIFIC_BOUNDARIES.md">Scientific boundaries</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flyworld-studio/docs/CIRCUIT_PACKAGE_FORMAT.md">Package format</a></div>
+</aside>
+</div>
+
+<footer><div class="wrap">
+  <div><p class="eyebrow">Flybrain</p><p>Hand-written HTML and CSS, one module of JavaScript for the simulation, no framework, no analytics.</p></div>
+  <div><p class="eyebrow">Data</p><ul><li>MaleCNS v1.0 — FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research. <a href="https://male-cns.janelia.org/download/">CC BY 4.0</a></li></ul></div>
+  <div><p class="eyebrow">Repositories</p><ul><li><a href="https://github.com/AUW160150/flybrain">AUW160150/flybrain</a></li><li><a href="https://github.com/prove-ai/flybrain">prove-ai/flybrain</a></li></ul></div>
+</div></footer>
+<script type="module" src="/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "format": "FLYWORLD_EDUCATIONAL_DEMO",
+  "id": "demo-taste-package",
+  "label": "EDUCATIONAL_DEMO",
+  "name": "Taste educational circuit",
+  "regions": [
+    {
+      "id": "demo-taste-system",
+      "name": "Gustatory / taste system",
+      "kind": "REGION",
+      "roleCategory": "TASTE",
+      "color": "#E69F00",
+      "symbol": "T",
+      "position": [
+        0.17,
+        -0.1,
+        0.065
+      ],
+      "scale": [
+        0.15,
+        0.1,
+        0.13
+      ],
+      "description": "Educational role category only. Placement and shape are arbitrary; no anatomical boundary or validated functional assignment.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    }
+  ],
+  "neurons": [
+    {
+      "id": "demo-taste-01",
+      "name": "Taste demo 01",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "TASTE",
+      "regionId": "demo-taste-system",
+      "position": [
+        0.13,
+        -0.1,
+        0.155
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-taste-02",
+      "name": "Taste demo 02",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "TASTE",
+      "regionId": "demo-taste-system",
+      "position": [
+        0.23,
+        -0.08,
+        0.135
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "sourceId": "demo-taste-01",
+      "targetId": "demo-taste-02",
+      "kind": "ILLUSTRATIVE_RELATION",
+      "evidence": [
+        "UNVERIFIED"
+      ]
+    }
+  ],
+  "circuits": [
+    {
+      "id": "demo-taste-circuit",
+      "name": "Taste educational circuit",
+      "entityIds": [
+        "demo-taste-system",
+        "demo-taste-01",
+        "demo-taste-02"
+      ]
+    }
+  ],
+  "sourceRefs": [
+    "/data/demo/circuits/taste.json",
+    "/data/demo/educational-circuits.json"
+  ],
+  "disclaimer": "PLACEHOLDER_GEOMETRY \u2014 NOT ANATOMICAL DATA. Generic demo nodes and illustrative relations; no body IDs, synapse counts, transmitters, verified functions, or real circuit membership."
+}

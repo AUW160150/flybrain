@@ -1,0 +1,3 @@
+PASS 28 public assets unchanged from the pre-fix snapshot.
+PASS 14 package/catalog/geometry checksums.
+No scientific package was regenerated or edited.

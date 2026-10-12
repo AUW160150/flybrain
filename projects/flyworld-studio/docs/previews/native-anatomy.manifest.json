@@ -1,0 +1,22 @@
+{
+  "kind": "OFFLINE_NATIVE_XZ_PROJECTION_NOT_BROWSER_SCREENSHOT",
+  "dataset": {
+    "name": "male-cns:v1.0",
+    "version": "v1.0",
+    "uuid": "4b2087c0fbe046bfaf0d60bc970e3e5d"
+  },
+  "geometryInputs": {
+    "10093": "c58ea01514b945236e534d17210ab54019a66d776a5d3e640e5c84e12a1e95b4",
+    "10807": "8396392af5eca350f9a4c7653ced73d2e648d70027518218fb6f1e2e6b07658c",
+    "11369": "bdd02c072c97c08e00b22f8acfce7412c391bfb9e3c5c13bba181702ca209ea2"
+  },
+  "packageSha256": "0d3b18c352e4f8de83caa6a96b9407d2bce6053416b2652e53d68acd2b42dc8f",
+  "scriptSha256": "0511d04bc3bae4f688a82eff894e0632c2baf7875496edb397bbd61c21b0c6d2",
+  "units": "8 nm",
+  "orientation": "UNVERIFIED",
+  "branchesInferred": false,
+  "outputs": {
+    "png": "f53730fbce386d33298a7affe0ef908326b0c86853930ac418894becec8861d4",
+    "svg": "07dabce309c063c1d6bbc23d99c3d0239c10f9b850ada70c04111356e21e504e"
+  }
+}

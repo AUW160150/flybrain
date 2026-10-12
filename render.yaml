@@ -1,0 +1,17 @@
+# Render Blueprint: one static site. Build assembles site/public (see site/build.sh).
+services:
+  - type: web
+    name: flybrain
+    runtime: static
+    buildCommand: bash site/build.sh
+    staticPublishPath: site/public
+    envVars:
+      - key: NODE_VERSION
+        value: 22.20.0
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /assets/circuit/*
+        name: Cache-Control
+        value: public, max-age=604800

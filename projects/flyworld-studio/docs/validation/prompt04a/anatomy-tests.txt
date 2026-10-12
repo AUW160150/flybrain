@@ -1,0 +1,27 @@
+
+> flyworld@0.3.0 test:anatomy
+> PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests/anatomy -v
+
+test_conversion_preserves_every_numeric_field_and_source_checksum (test_audit.AnatomyContractTests) ... ok
+test_coordinate_headers_preserve_native_uuid_not_orientation (test_audit.AnatomyContractTests) ... ok
+test_duplicate_body_geometry_rejected (test_audit.AnatomyContractTests) ... ok
+test_explicit_scale_and_translation_roundtrip (test_audit.AnatomyContractTests) ... ok
+test_filename_is_not_body_identity_evidence (test_audit.AnatomyContractTests) ... ok
+test_immutable_output_cannot_be_overwritten (test_audit.AnatomyContractTests) ... ok
+test_missing_provenance_rejected (test_audit.AnatomyContractTests) ... ok
+test_nonfinite_or_projective_transform_rejected (test_audit.AnatomyContractTests) ... ok
+test_placeholder_cannot_be_verified (test_audit.AnatomyContractTests) ... ok
+test_raw_source_snapshot_detects_mutation_and_removal (test_audit.AnatomyContractTests) ... ok
+test_tampered_source_rejected (test_audit.AnatomyContractTests) ... ok
+test_unverified_orientation_cannot_be_anatomical (test_audit.AnatomyContractTests) ... ok
+test_valid_explicit_mapping (test_audit.AnatomyContractTests) ... ok
+test_wrong_dataset_and_version_rejected (test_audit.AnatomyContractTests) ... ok
+test_wrong_receipt_body_or_release_rejected (test_audit.AnatomyContractTests) ... ok
+test_wrong_units_do_not_silently_change_scale (test_audit.AnatomyContractTests) ... ok
+test_published_mapping_and_conversion_integrity (test_audit.PublishedAuditTests) ... ok
+test_requested_coverage_is_complete_and_separate (test_audit.PublishedAuditTests) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.735s
+
+OK

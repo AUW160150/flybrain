@@ -1,0 +1,1406 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FlyWorld source preview</title><style>:root {
+  font-family: Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color: #e0e7df;
+  background: #111a17;
+  font-synthesis: none;
+  font-weight: 400;
+  font-size: 13px;
+  color-scheme: dark;
+  --muted: #9ba99e;
+  --line: #334039;
+  --lime: #d2e3a1;
+  --surface: #1a2520;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,input,a {
+  -webkit-tap-highlight-color: transparent;
+}
+button,input {
+  font: inherit;
+}
+button,a {
+  touch-action: manipulation;
+}
+button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: none;
+  color: inherit;
+  border-radius: 5px;
+  transition: background .15s,color .15s,border-color .15s;
+}
+button:hover {
+  background: #ffffff0b;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: .4;
+}
+button:focus-visible,a:focus-visible,input:focus-visible,.viewport:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+}
+a {
+  color: var(--lime);
+  text-decoration: none;
+}
+button[aria-pressed=true] {
+  background: #d2e3a115;
+  color: var(--lime);
+  border-color: #d2e3a13b;
+}
+p {
+  line-height: 1.65;
+}
+h1,h2,h3,h4,p {
+  margin: 0;
+}
+kbd {
+  font: 10px ui-monospace,SFMono-Regular,Menlo,monospace;
+  border: 1px solid #506055;
+  border-radius: 3px;
+  padding: 2px 4px;
+  color: #aebbab;
+  white-space: nowrap;
+}
+.tiny-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d3bb83;
+  flex-shrink: 0;
+}
+.tiny-dot.mint {
+  background: #a6d8b8;
+}
+.eyebrow {
+  font: 10px ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing: 1.6px;
+  color: #a8b6a9;
+}
+.muted {
+  color: var(--muted);
+}
+.small {
+  font-size: 11px;
+}
+.studio {
+  max-width: 1920px;
+  margin: auto;
+}
+.topbar {
+  height: 65px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  gap: 24px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f1f3e9;
+  font-size: 22px;
+  font-weight: 620;
+  letter-spacing: -1px;
+}
+.brand svg {
+  color: var(--lime);
+}
+.brand-dot {
+  color: var(--lime);
+}
+.topbar nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  margin-left: 60px;
+  margin-right: auto;
+}
+.topbar nav button {
+  font-size: 12px;
+  border-radius: 0;
+  padding: 0 2px;
+  color: #a8b3a9;
+}
+.topbar nav .nav-active {
+  color: #e4edce;
+  border-bottom: 2px solid var(--lime);
+}
+.soon {
+  font: 8px ui-monospace,monospace;
+  letter-spacing: 1px;
+  color: #93a28e;
+  border: 1px solid #3a493b;
+  padding: 3px 4px;
+  margin-left: 7px;
+  border-radius: 3px;
+}
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.local-status {
+  font: 9px ui-monospace,monospace;
+  letter-spacing: 1.3px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #9caa9a;
+}
+.help-button {
+  height: 26px;
+  width: 26px;
+  border: 1px solid #566153;
+  border-radius: 50%;
+  color: #c8d0bd;
+}
+.workspace-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px 23px;
+  gap: 20px;
+}
+.workspace-heading .eyebrow {
+  font-size: 9px;
+  letter-spacing: 1.6px;
+}
+.workspace-heading .eyebrow span {
+  padding: 0 10px;
+  color: #687762;
+}
+h1 {
+  font-size: 28px;
+  letter-spacing: -1px;
+  font-weight: 450;
+  margin-top: 9px;
+}
+.science-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  font: 10px ui-monospace,monospace;
+  letter-spacing: .6px;
+  padding: 11px 14px;
+  background: #b4b68c08;
+  border: 1px solid #495143;
+}
+.science-badge small {
+  display: block;
+  font: 10px -apple-system,sans-serif;
+  letter-spacing: 0;
+  color: #a7b09b;
+  margin-top: 5px;
+}
+.science-badge>span:last-child {
+  color: #a5b096;
+  padding-left: 16px;
+}
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 312px;
+  margin: 0 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 500px;
+  height: calc(100vh - 377px);
+  max-height: 930px;
+}
+.world {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: #29392f;
+}
+.viewport {
+  position: absolute;
+  inset: 0 0 59px;
+  outline: none!important;
+}
+.viewport:focus-visible {
+  box-shadow: inset 0 0 0 2px #d2e3a1;
+  z-index: 1;
+}
+.viewport canvas {
+  display: block;
+}
+.world-top {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  pointer-events: none;
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #cedbc7;
+}
+.breadcrumb b {
+  font-weight: 300;
+  opacity: .5;
+}
+.mode-code {
+  font: 8px ui-monospace,monospace;
+  color: #b5c1a9;
+  margin-left: 6px;
+  letter-spacing: .3px;
+}
+.control-badge {
+  font: 8px ui-monospace,monospace;
+  letter-spacing: 1px;
+  border: 1px solid #89987d50;
+  padding: 7px 8px;
+  border-radius: 4px;
+  color: #d0dbc2;
+  white-space: nowrap;
+  background: #20302966;
+}
+.scene-label {
+  position: absolute;
+  top: 66px;
+  left: 22px;
+  pointer-events: none;
+}
+.scene-label .eyebrow {
+  font-size: 9px;
+  color: #b8c5a7;
+}
+.scene-label p {
+  font-size: 10px;
+  color: #aebb9f;
+  margin-top: 6px;
+}
+.world-bottom {
+  position: absolute;
+  bottom: 82px;
+  left: 22px;
+  right: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  pointer-events: none;
+}
+.movement-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.movement-block>span {
+  font-size: 10px;
+  color: #c4d0b7;
+}
+.movement-block small {
+  display: block;
+  font-size: 9px;
+  color: #adba9f;
+  margin-top: 5px;
+}
+.movement-pad {
+  display: grid;
+  grid-template-columns: repeat(3,26px);
+  gap: 4px;
+  pointer-events: auto;
+}
+.movement-pad button {
+  width: 26px;
+  height: 25px;
+  border: 1px solid #86977a70;
+  border-radius: 4px;
+  font: 10px ui-monospace,monospace;
+  color: #dae5cb;
+  background: #283b30aa;
+  touch-action: none;
+}
+.movement-pad button:first-child {
+  grid-column: 2;
+}
+.movement-pad button:nth-child(2) {
+  grid-column: 1;
+}
+.camera-controls {
+  display: flex;
+  gap: 3px;
+  padding: 4px;
+  background: #17231dec;
+  border: 1px solid #61735a66;
+  border-radius: 6px;
+  pointer-events: auto;
+}
+.camera-controls button {
+  padding: 7px 11px;
+  font-size: 10px;
+  color: #a9b8a0;
+}
+.camera-controls button[aria-pressed=true] {
+  background: #d2e3a1;
+  color: #253422;
+  border-color: #d2e3a1;
+}
+.back-button {
+  position: absolute;
+  top: 111px;
+  left: 22px;
+  background: #25362c;
+  border: 1px solid #617058;
+  font-size: 10px;
+  padding: 9px 11px;
+}
+.back-button kbd {
+  margin-left: 10px;
+  font-size: 8px;
+}
+.world-status {
+  position: absolute;
+  bottom: 29px;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: #202e26;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-top: 1px solid #46563f;
+  font: 8px ui-monospace,monospace;
+  letter-spacing: .4px;
+  color: #a4b19a;
+  gap: 10px;
+}
+.placeholder-caption {
+  color: #c4c4a2;
+}
+.world-telemetry {
+  position: absolute;
+  bottom: 0;
+  height: 29px;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #17241d;
+  font: 9px ui-monospace,monospace;
+  color: #adba9e;
+}
+.world-telemetry b {
+  font-weight: 400;
+  color: #5d7056;
+  margin: 0 7px;
+}
+.world-telemetry span:last-child {
+  margin-left: auto;
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #c3cead;
+}
+.inspector {
+  border-left: 1px solid var(--line);
+  background: #1b2621;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #53634f transparent;
+  display: flex;
+  flex-direction: column;
+}
+.panel-heading {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #334039;
+  flex-shrink: 0;
+  color: #96a790;
+}
+.panel-heading .eyebrow {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+.specimen-title {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 21px 20px 16px;
+}
+.specimen-index {
+  font: 15px ui-monospace,monospace;
+  color: #b1c298;
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 39px;
+  border: 1px solid #45523f;
+  border-radius: 5px;
+  background: #283426;
+}
+.specimen-title h2 {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -.3px;
+}
+.specimen-title p {
+  color: #97a48f;
+  font-size: 10px;
+  margin-top: 4px;
+}
+.geometry-note {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  padding: 12px 13px;
+  margin: 0 20px 18px;
+  background: #b9a3710b;
+  border: 1px solid #bba87726;
+  border-radius: 4px;
+}
+.geometry-note strong {
+  font-size: 10px;
+  color: #cfbe96;
+  font-weight: 450;
+}
+.geometry-note p {
+  font-size: 10px;
+  color: #aeb099;
+  margin-top: 4px;
+  line-height: 1.6;
+}
+.inspector-section {
+  padding: 17px 20px;
+  border-top: 1px solid var(--line);
+}
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.section-title h3 {
+  font-weight: 500;
+  font-size: 11px;
+}
+.section-title>span:not(.tiny-dot) {
+  font: 8px ui-monospace,monospace;
+  letter-spacing: .6px;
+  color: #9eae90;
+}
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  position: relative;
+  cursor: pointer;
+  font-size: 11px;
+}
+.toggle-row small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.toggle-row input {
+  position: absolute;
+  right: 0;
+  width: 34px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+.switch-track {
+  width: 32px;
+  height: 18px;
+  border: 1px solid #647255;
+  border-radius: 20px;
+  background: #2c3829;
+  pointer-events: none;
+}
+.switch-track:after {
+  content: "";
+  display: block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #88967d;
+  margin: 2px;
+  transition: transform .2s;
+}
+.toggle-row input:checked+.switch-track {
+  background: #c4d996;
+  border-color: #c4d996;
+}
+.toggle-row input:checked+.switch-track:after {
+  transform: translateX(13px);
+  background: #33442d;
+}
+.toggle-row input:focus-visible+.switch-track {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+}
+.inspect-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid #516045;
+  color: #d4dfbf;
+  background: #d2e3a10a;
+  margin-top: 17px;
+  width: 100%;
+  padding: 9px;
+  font-size: 11px;
+}
+.inspect-button svg {
+  width: 15px;
+  height: 15px;
+}
+.inspect-button span {
+  margin-left: auto;
+}
+.volume-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+.volume {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  padding: 8px 10px;
+  background: #15211b;
+  border: 1px solid #354431;
+  text-align: left;
+}
+.volume-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #ffffff0c;
+}
+.volume-letter {
+  margin-left: auto;
+  font: 9px ui-monospace,monospace;
+  color: #94a186;
+}
+.empty-record {
+  font-size: 10px;
+  color: #8c9c84;
+  margin-top: 12px;
+}
+.record {
+  padding: 12px;
+  background: #141f19;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+.record h4 {
+  font-size: 11px;
+  font-weight: 500;
+}
+.record dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 7px;
+  font-size: 9px;
+}
+.record dt {
+  color: var(--muted);
+}
+.record dd {
+  margin: 0;
+  font: 9px ui-monospace,monospace;
+  text-align: right;
+}
+.record p {
+  font: 8px/1.5 ui-monospace,monospace;
+  color: #c4b58d;
+  overflow-wrap: anywhere;
+}
+.source-label {
+  font: 9px/1.6 ui-monospace,monospace;
+  letter-spacing: .2px;
+  color: #c9d7af;
+  background: #afc5930b;
+  border: 1px solid #7d91652b;
+  border-radius: 3px;
+  padding: 7px 9px;
+  overflow-wrap: anywhere;
+  margin-bottom: 10px;
+}
+.record-counts {
+  display: flex;
+  gap: 16px;
+  font-size: 9px;
+  color: #94a08c;
+  margin-top: 14px;
+}
+.record-counts strong {
+  font: 12px ui-monospace,monospace;
+  color: #cad4bd;
+  margin-right: 2px;
+}
+.inspector-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--line);
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #a5b396;
+  font-size: 9px;
+}
+.activity-panel {
+  margin: 15px 30px 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #18231d;
+  overflow: hidden;
+}
+.behavior-row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 11px 17px;
+  border-bottom: 1px solid var(--line);
+}
+.behavior-row>.eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.3px;
+  min-width: 94px;
+}
+.behavior-buttons {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+.behavior-buttons button {
+  padding: 6px 8px;
+  border: 1px solid #3d4c37;
+  font-size: 10px;
+  color: #c2cfb1;
+}
+.behavior-buttons kbd {
+  margin-left: 11px;
+  font-size: 8px;
+  border-color: #3e5034;
+  color: #95a383;
+  padding: 1px 3px;
+}
+.animation-note {
+  font-size: 9px;
+  color: #98a78b;
+  margin-left: auto;
+}
+.timeline-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 13px 17px 15px;
+}
+.pause-button {
+  border: 1px solid #45543d;
+  width: 29px;
+  height: 30px;
+  color: #cddfb4;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.timeline-clock {
+  min-width: 110px;
+}
+.timeline-clock .eyebrow {
+  font-size: 7px;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 5px;
+}
+.timeline-clock strong {
+  font: 17px ui-monospace,monospace;
+  letter-spacing: -.5px;
+  color: #d7e3c2;
+}
+.timeline-clock small {
+  font-size: 10px;
+  color: #859578;
+}
+.event-strip {
+  flex: 1;
+  height: 37px;
+  position: relative;
+  min-width: 50px;
+  background: repeating-linear-gradient(90deg,transparent,transparent calc(5% - 1px),#46553b40 calc(5% - 1px),#46553b40 5%);
+  background-size: 100% 20px;
+  background-repeat: no-repeat;
+}
+.event-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 19px;
+  border-bottom: 1px solid #52634360;
+}
+.event-tick {
+  position: absolute;
+  bottom: 17px;
+  width: 2px;
+  background: #cfdfa0;
+  opacity: .6;
+}
+.strip-caption {
+  position: absolute;
+  top: 27px;
+  font: 8px ui-monospace,monospace;
+  letter-spacing: .3px;
+  color: #92a17f;
+  white-space: nowrap;
+}
+.intensity-bars {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.intensity-bars>div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.intensity-bars span {
+  font: 8px ui-monospace,monospace;
+  color: #a8b699;
+}
+.intensity-bars>div>div {
+  width: 70px;
+  height: 3px;
+  background: #40513780;
+  border-radius: 2px;
+}
+.intensity-bars i {
+  display: block;
+  height: 3px;
+  background: #80cbbb;
+  transition: width .1s linear;
+}
+.intensity-bars>div:nth-child(2) i {
+  background: #c6a2d9;
+}
+.intensity-bars>div:nth-child(3) i {
+  background: #edbf77;
+}
+.rule-button {
+  font-size: 10px;
+  border: 1px solid #46583b;
+  padding: 9px 11px;
+  color: #c7d5ac;
+}
+.rule-button span {
+  margin-left: 10px;
+  color: #aab997;
+}
+.activity-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid #2e3c2a;
+  padding: 8px 17px;
+  font: 8px ui-monospace,monospace;
+  color: #9fae90;
+  letter-spacing: .1px;
+}
+.footer {
+  padding: 14px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 9px;
+  color: #85937b;
+}
+.footer>span:first-child {
+  font: 8px ui-monospace,monospace;
+  letter-spacing: 1px;
+}
+.footer b {
+  font-weight: 400;
+  margin: 0 5px;
+  color: #526247;
+}
+.footer button {
+  font-size: 9px;
+  color: #a1b18e;
+}
+.dialog {
+  background: #1b2820;
+  color: #dde7d2;
+  border: 1px solid #627352;
+  border-radius: 9px;
+  max-width: 580px;
+  width: calc(100% - 40px);
+  padding: 26px;
+  box-shadow: 0 24px 100px #0007;
+}
+.dialog::backdrop {
+  background: #0b150ecb;
+  backdrop-filter: blur(5px);
+}
+.dialog-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  gap: 20px;
+}
+.dialog-heading h2 {
+  font-size: 21px;
+  font-weight: 450;
+  letter-spacing: -.6px;
+}
+.dialog-heading button {
+  font-size: 24px;
+  color: #c2d2aa;
+}
+.dialog p {
+  font-size: 12px;
+  color: #b0c0a2;
+  margin-bottom: 17px;
+}
+.dialog p strong {
+  font: 10px ui-monospace,monospace;
+  color: #d1dfbc;
+}
+.help-grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 13px;
+  margin: 22px 0;
+  font-size: 11px;
+}
+.help-grid dt {
+  font: 10px ui-monospace,monospace;
+  color: #d2e3a1;
+}
+.help-grid dd {
+  margin: 0;
+  color: #b2c29f;
+}
+.package-validator pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: 11px/1.7 ui-monospace,monospace;
+  background: #101c14;
+  border: 1px solid #445738;
+  padding: 14px;
+  border-radius: 5px;
+  max-height: 220px;
+  overflow: auto;
+}
+.file-label {
+  display: block;
+  font-size: 11px;
+  color: #d1dfb8;
+}
+.file-label input {
+  display: block;
+  margin-top: 12px;
+  width: 100%;
+  font-size: 11px;
+}
+.package-validator a {
+  font-size: 11px;
+  display: block;
+  margin-top: 20px;
+}
+.canvas-unavailable {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 45px;
+  background: #223129;
+  gap: 15px;
+}
+.canvas-unavailable h2 {
+  font-size: 21px;
+  font-weight: 400;
+}
+.canvas-unavailable p {
+  max-width: 360px;
+  font-size: 12px;
+  color: #b9c5ab;
+}
+@media(min-width:1500px) {
+  .workspace {
+    grid-template-columns: minmax(0,1fr) 350px;
+  }
+  .inspector-section {
+    padding: 20px 24px;
+  }
+  .specimen-title {
+    padding: 25px 24px 20px;
+  }
+  .geometry-note {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .panel-heading {
+    padding: 0 24px;
+  }
+  .workspace-heading {
+    padding-top: 29px;
+    padding-bottom: 27px;
+  }
+  .world-bottom {
+    left: 28px;
+    right: 28px;
+  }
+  .world-top,.scene-label {
+    left: 28px;
+  }
+  .scene-label {
+    top: 72px;
+  }
+}
+@media(max-width:1100px) {
+  .topbar {
+    padding: 0 20px;
+    gap: 15px;
+  }
+  .topbar nav {
+    margin-left: 20px;
+    gap: 19px;
+  }
+  .workspace-heading {
+    padding: 23px 20px;
+  }
+  .workspace {
+    margin: 0 20px;
+    grid-template-columns: minmax(0,1fr) 275px;
+  }
+  .activity-panel {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .movement-block>span {
+    display: none;
+  }
+  .animation-note {
+    display: none;
+  }
+  .behavior-row {
+    gap: 10px;
+  }
+  .behavior-row>.eyebrow {
+    min-width: 76px;
+  }
+  .activity-footer>span:last-child {
+    max-width: 250px;
+    font-size: 7px;
+  }
+  .mode-code {
+    display: none;
+  }
+  .world-top {
+    left: 15px;
+    right: 15px;
+  }
+  .world-bottom {
+    left: 15px;
+    right: 15px;
+  }
+  .camera-controls button {
+    padding: 7px 9px;
+  }
+  .scene-label {
+    left: 15px;
+  }
+  .source-label {
+    font-size: 8px;
+  }
+}
+@media(max-width:780px) {
+  .topbar {
+    height: 59px;
+    padding: 0 15px;
+    gap: 20px;
+  }
+  .brand {
+    font-size: 20px;
+  }
+  .topbar nav {
+    margin: 0;
+    gap: 12px;
+  }
+  .topbar nav button {
+    font-size: 10px;
+  }
+  .soon,.local-status,.topbar-right {
+    display: none;
+  }
+  .workspace-heading {
+    padding: 22px 15px;
+    gap: 12px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  .workspace-heading .eyebrow {
+    font-size: 8px;
+    letter-spacing: .8px;
+  }
+  .science-badge {
+    padding: 8px;
+    font-size: 8px;
+    gap: 7px;
+  }
+  .science-badge small {
+    font-size: 8px;
+  }
+  .science-badge>span:last-child {
+    display: none;
+  }
+  .workspace {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    height: auto;
+    max-height: none;
+  }
+  .world {
+    height: 520px;
+    flex-shrink: 0;
+  }
+  .inspector {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    max-height: 450px;
+  }
+  .geometry-note {
+    margin-bottom: 15px;
+  }
+  .activity-panel {
+    margin: 13px 15px 0;
+  }
+  .behavior-row {
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .behavior-buttons {
+    gap: 6px;
+  }
+  .behavior-buttons button {
+    font-size: 9px;
+  }
+  .behavior-buttons kbd {
+    margin-left: 7px;
+  }
+  .timeline-row {
+    gap: 12px;
+    padding: 15px 12px;
+  }
+  .timeline-clock {
+    min-width: 75px;
+  }
+  .timeline-clock .eyebrow {
+    font-size: 6px;
+  }
+  .rule-button {
+    font-size: 9px;
+    padding: 8px;
+  }
+  .rule-button span {
+    display: none;
+  }
+  .intensity-bars {
+    display: none;
+  }
+  .activity-footer {
+    font-size: 7px;
+    padding: 9px 12px;
+  }
+  .activity-footer>span:last-child {
+    display: none;
+  }
+  .footer {
+    padding: 15px;
+    font-size: 8px;
+  }
+  .footer>span:nth-child(2) {
+    display: none;
+  }
+  .world-status {
+    font-size: 6px;
+    letter-spacing: 0;
+  }
+  .control-badge {
+    font-size: 7px;
+  }
+  .scene-label p {
+    font-size: 9px;
+  }
+  .camera-controls button {
+    font-size: 9px;
+    padding: 7px 8px;
+  }
+  .world-top {
+    top: 17px;
+  }
+  .back-button {
+    font-size: 9px;
+  }
+  .help-grid {
+    grid-template-columns: 135px 1fr;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  * {
+    scroll-behavior: auto;
+    transition: none!important;
+  }
+}
+
+/* Interactive MVP: modes, accessible layers, selected records, and transport. */
+.mode-toolbar {
+  margin: 0 30px 12px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.mode-switch { display: flex; gap: 4px; padding: 4px; background: #19271e; border: 1px solid #45533b; border-radius: 6px; }
+.mode-switch button { padding: 8px 12px; font: 9px ui-monospace, monospace; letter-spacing: 0.5px; color: #b9c7a9; }
+.mode-switch button[aria-pressed=true] { background: #d2e3a1; color: #26351c; }
+.simulation-badge { font: 8px ui-monospace, monospace; color: #bdb49e; border: 1px solid #68604b; padding: 7px; border-radius: 4px; }
+.display-options { margin-left: auto; display: flex; align-items: center; gap: 14px; font-size: 10px; color: #c1cfb2; }
+.display-options label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+input[type=checkbox], input[type=range] { accent-color: #c4d996; }
+.display-options button { padding: 7px 10px; border: 1px solid #4a5a3e; font-size: 10px; }
+.physics-badge { display: inline-block; font: 8px ui-monospace, monospace; letter-spacing: 0.5px; color: #d0d7bd; margin-top: 11px; padding: 5px 7px; background: #1d2b23bb; border-radius: 3px; }
+.workspace { grid-template-columns: minmax(0, 1fr) 342px; min-height: 570px; height: calc(100vh - 452px); }
+.workspace-heading { padding-top: 22px; padding-bottom: 20px; }
+.brain-navigation { position: absolute; top: 146px; left: 22px; display: flex; gap: 8px; flex-wrap: wrap; max-width: 70%; align-items: center; }
+.brain-navigation button { padding: 8px 10px; font-size: 10px; background: #203027ed; border: 1px solid #738263; }
+.brain-navigation kbd { margin-left: 7px; }
+.brain-navigation span { font-size: 9px; color: #d2ddc0; }
+.inspector-actions { display: flex; gap: 7px; flex-wrap: wrap; margin-top: 12px; }
+.inspector-actions button { font-size: 10px; border: 1px solid #60714f; color: #d6e4c3; padding: 7px 9px; }
+.selected-details { background: #152019; }
+.entity-id { display: block; font: 11px ui-monospace, monospace; color: #dbe6c9; margin: 4px 0 14px; overflow-wrap: anywhere; }
+.metadata-grid { display: grid; grid-template-columns: 93px minmax(0, 1fr); gap: 10px; margin: 12px 0; font-size: 10px; line-height: 1.45; }
+.metadata-grid dt { color: #aebb9f; }
+.metadata-grid dd { margin: 0; font: 9px/1.5 ui-monospace, monospace; color: #dfebce; overflow-wrap: anywhere; }
+.metadata-grid dd small { display: block; font: 9px/1.5 -apple-system, sans-serif; color: #abbc99; }
+.relations { margin-top: 16px; font-size: 10px; }
+.relations h4 { font-size: 10px; color: #c5d3b3; margin: 14px 0 8px; font-weight: 500; }
+.relations span, .relations p { font-size: 9px; color: #aeba9f; }
+.relations button { display: block; padding: 4px 0; text-align: left; color: #d2e3a1; font-size: 10px; }
+.source-references { margin-top: 16px; display: flex; flex-direction: column; gap: 7px; font-size: 9px; color: #b5c5a6; }
+.source-references strong { font-weight: 500; color: #d8e2c6; }
+.region-layers { margin-top: 14px; display: flex; flex-direction: column; gap: 10px; }
+.region-layer { padding: 9px; border: 1px solid #405437; border-radius: 5px; background: #15221a; }
+.region-layer-heading { display: flex; align-items: center; gap: 7px; }
+.region-layer-heading input { width: 13px; height: 13px; flex-shrink: 0; margin: 0; }
+.region-layer-heading button { text-align: left; flex: 1; display: flex; align-items: center; padding: 5px; gap: 8px; font-size: 11px; color: #dce8cf; }
+.system-symbol { font: 11px ui-monospace, monospace; width: 17px; flex-shrink: 0; }
+.opacity-row { display: flex; align-items: center; gap: 10px; font-size: 9px; color: #b5c4a8; margin: 9px 0; }
+.opacity-row input { width: 100%; min-width: 40px; height: 12px; }
+.opacity-row span { font: 8px ui-monospace, monospace; width: 28px; }
+.region-layer summary { cursor: pointer; font-size: 9px; color: #b4c59e; padding: 4px; }
+.neuron-list { display: flex; flex-direction: column; gap: 3px; margin-top: 6px; }
+.neuron-list button { text-align: left; padding: 6px 8px; background: #24331f; font-size: 10px; }
+.inspector-footer small { display: block; font: 7px/1.5 ui-monospace, monospace; color: #c5c6a1; margin-top: 6px; }
+.brain-tooltip { padding: 10px 12px; background: #122017f5; border: 1px solid #93a783; border-radius: 5px; color: #e7efd9; width: 240px; transform: translateY(-100%); box-shadow: 0 8px 24px #0005; }
+.brain-tooltip strong { font-size: 12px; font-weight: 500; }
+.brain-tooltip code, .brain-tooltip span { display: block; font: 9px/1.7 ui-monospace, monospace; margin-top: 4px; color: #b7c8a5; }
+.debug-overlay { position: absolute; top: 66px; right: 18px; background: #122019ee; border: 1px solid #738560; border-radius: 5px; width: 235px; padding: 12px; pointer-events: none; color: #d4e1c3; }
+.debug-overlay>strong { font: 8px ui-monospace, monospace; letter-spacing: 1px; }
+.debug-overlay dl { display: grid; grid-template-columns: 1fr auto; font: 9px ui-monospace, monospace; gap: 7px; }
+.debug-overlay dd { margin: 0; color: #e1f0cf; }
+.debug-overlay>span { font-size: 8px; line-height: 1.5; color: #b5c6a0; }
+.scrubber { flex: 1; min-width: 70px; position: relative; }
+.scrubber input { width: 100%; display: block; margin: 0; height: 17px; cursor: ew-resize; }
+.scrubber>span { display: block; font-size: 8px; color: #b4c3a3; margin-top: 5px; }
+.timeline-events { position: relative; height: 9px; margin: 0 5px 4px; overflow: hidden; background: #3b4d3266; }
+.timeline-events span { position: absolute; height: 7px; background: #a6c082; border-radius: 2px; opacity: .65; top: 1px; }
+.speed-control { display: flex; flex-direction: column; font-size: 9px; color: #b8c7a9; gap: 5px; }
+select { border: 1px solid #5c6c4c; background: #21301e; color: #e0eacd; border-radius: 4px; padding: 5px 7px; font: 10px -apple-system, sans-serif; }
+.timeline-actions { display: flex; flex-direction: column; gap: 4px; }
+.timeline-actions button { font-size: 9px; padding: 5px 9px; border: 1px solid #506240; }
+.timeline-clock { min-width: 125px; }
+.timeline-clock strong { font-size: 16px; }
+.timeline-clock small { font-size: 9px; }
+.timeline-details { display: flex; align-items: center; gap: 20px; padding: 0 17px 12px; flex-wrap: wrap; }
+.system-meters { display: flex; gap: 10px; }
+.system-meters>div { display: flex; align-items: center; gap: 5px; font: 9px ui-monospace, monospace; }
+.system-meters meter { width: 35px; height: 7px; }
+.replay-source { display: flex; align-items: center; gap: 8px; margin-left: auto; font-size: 9px; color: #bdcdac; }
+.experiment-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+.experiment-grid button { padding: 15px; background: #27331e; border: 1px solid #596746; text-align: left; opacity: .65; }
+.experiment-grid span { display: block; margin-top: 8px; font-size: 9px; color: #b4c098; }
+.reduced-motion *, .reduced-motion *::before, .reduced-motion *::after { transition: none !important; animation: none !important; }
+@media(max-width: 1100px) {
+  .workspace { grid-template-columns: minmax(0, 1fr) 300px; }
+  .mode-toolbar { margin-left: 20px; margin-right: 20px; gap: 9px; }
+  .mode-switch button { font-size: 8px; padding: 7px 9px; }
+  .display-options { font-size: 9px; gap: 10px; }
+  .simulation-badge { font-size: 7px; }
+}
+@media(max-width: 780px) {
+  .mode-toolbar { margin: 0 15px 12px; gap: 8px; }
+  .mode-switch { width: 100%; justify-content: space-between; }
+  .display-options { gap: 8px; }
+  .display-options button { font-size: 9px; }
+  .workspace { height: auto; min-height: 0; display: flex; }
+  .world { height: 550px; }
+  .inspector { max-height: 580px; }
+  .brain-navigation { top: 146px; left: 15px; }
+  .timeline-row { flex-wrap: wrap; gap: 12px; }
+  .scrubber { order: 5; width: 100%; flex-basis: 100%; }
+  .timeline-actions { flex-direction: row; margin-left: auto; }
+  .timeline-clock { min-width: 120px; }
+  .timeline-details { gap: 10px; padding: 0 12px 12px; }
+  .timeline-details>.small { font-size: 9px; }
+  .replay-source { margin-left: 0; }
+  .topbar-right { display: block; }
+  .help-button { height: 22px; width: 22px; font-size: 10px; }
+  .topbar { gap: 10px; }
+  .topbar nav { gap: 9px; }
+  .brand { font-size: 18px; gap: 5px; }
+  .brand svg { width: 23px; }
+  .topbar nav button { font-size: 9px; }
+  .debug-overlay { top: 185px; right: 15px; width: 205px; padding: 10px; }
+}
+.system-symbol { color: #eaf2df; border-bottom: 2px solid transparent; text-align: center; padding-bottom: 2px; }
+.demo-downloads { margin-top: 22px; border-top: 1px solid #465739; padding-top: 17px; font-size: 11px; }
+.demo-downloads a { display: inline-block; margin-top: 12px; margin-right: 14px; }
+
+/* Real-source inspection: separate from the educational avatar canvas. */
+.real-workspace { margin: 0 36px; padding: 24px; border: 1px solid #405447; border-radius: 16px; background: #19251f; color: #e8efdf; min-width: 0; }
+.real-workspace h2 { font-size: 24px; font-weight: 500; margin: 10px 0 16px; }
+.real-workspace h3 { font-size: 15px; margin: 22px 0 10px; }
+.real-workspace p { font-size: 12px; line-height: 1.65; overflow-wrap: anywhere; }
+.real-workspace button, .real-workspace select, .real-workspace input { font: inherit; }
+.real-workspace button { border: 1px solid #627265; border-radius: 6px; padding: 8px 11px; color: #e8efdf; background: #29392f; font-size: 12px; }
+.real-workspace button:hover:not(:disabled), .real-workspace button[aria-pressed=true] { background: #45583a; border-color: #c7d6a1; }
+.real-workspace button:disabled { opacity: .5; cursor: not-allowed; }
+.real-workspace :focus-visible { outline: 2px solid #f0e442; outline-offset: 3px; }
+.real-workspace select, .real-workspace input { background: #111e17; color: #eef4e5; border: 1px solid #667966; border-radius: 5px; min-height: 35px; padding: 6px 9px; max-width: 100%; font-size: 12px; }
+.real-workspace label { display: grid; gap: 6px; font-size: 11px; color: #c4d4c5; }
+.real-workspace small { display: block; font-size: 10px; color: #c4d4c5; font-weight: 400; line-height: 1.6; }
+.real-heading, .package-toolbar, .real-notice, .real-actions, .graph-toolbar, .path-controls { display: flex; align-items: center; gap: 12px; justify-content: space-between; flex-wrap: wrap; }
+.package-toolbar { justify-content: flex-start; align-items: end; margin-bottom: 18px; }
+.package-toolbar > label:first-child { min-width: 300px; flex: 1; }
+.package-toolbar .file-label { flex: 1; min-width: 240px; margin: 0; }
+.real-badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0; }
+.real-badges > * { font: 10px/1.4 ui-monospace, monospace; border: 1px solid #647c68; border-radius: 4px; padding: 5px 8px; color: #e3edcc; }
+.real-badges > strong { background: #35472b; }
+.real-notice { font-size: 11px; line-height: 1.6; border-left: 2px solid #cfcc7b; padding: 10px 13px; background: #273429; overflow-wrap: anywhere; }
+.real-muted, .graph-limit { color: #c3d0c2; }
+.real-highlight-status { background: #354e3d; padding: 12px; margin: 10px 0; border: 1px solid #81b3a1; font-size: 12px; }
+.real-error { background: #4a302a; color: #ffe1c9; padding: 12px; white-space: pre-wrap; max-height: 220px; overflow: auto; }
+.real-filters { display: grid; grid-template-columns: .65fr 1.1fr 1fr 1.6fr auto; gap: 12px; align-items: end; margin: 20px 0; }
+.real-filters label { min-width: 0; }
+.real-view-tabs { display: flex; flex-wrap: wrap; gap: 7px; border-bottom: 1px solid #4a5b4a; padding-bottom: 12px; }
+.path-controls { justify-content: flex-start; font-size: 11px; padding: 14px 0; color: #d4dfd1; }
+.path-controls label { display: flex; align-items: center; flex-wrap: wrap; }
+.path-controls input { width: 85px; }
+.real-content { display: grid; grid-template-columns: minmax(0, 1fr) 340px; border: 1px solid #4a5b4a; border-radius: 9px; overflow: hidden; }
+.real-visualization { min-width: 0; background: #101e17; padding: 16px; }
+.real-inspector { border-left: 1px solid #4a5b4a; padding: 20px; max-height: 880px; overflow-y: auto; min-width: 0; }
+.real-inspector h2 { font-size: 23px; }
+.real-inspector ul { padding-left: 17px; font-size: 11px; line-height: 1.7; overflow-wrap: anywhere; }
+.real-metadata, .dataset-grid { margin: 14px 0; }
+.real-metadata > div { padding: 7px 0; border-bottom: 1px solid #334638; }
+.real-metadata dt, .dataset-grid dt { color: #bbcabd; font-size: 10px; margin-bottom: 4px; }
+.real-metadata dd, .dataset-grid dd { font: 11px/1.65 ui-monospace, monospace; margin: 0; overflow-wrap: anywhere; color: #f0f3e5; }
+.real-workspace details { font-size: 12px; margin-top: 12px; }
+.real-workspace summary { cursor: pointer; line-height: 1.6; color: #e5eccf; }
+.real-workspace pre { white-space: pre-wrap; overflow-wrap: anywhere; font: 10px/1.7 ui-monospace, monospace; max-height: 230px; overflow: auto; }
+.real-actions { justify-content: flex-start; font-size: 11px; }
+.partner-list { display: grid; gap: 5px; max-height: 250px; overflow-y: auto; margin-top: 9px; }
+.partner-list button { display: flex; gap: 8px; justify-content: space-between; text-align: left; }
+.partner-list button span { overflow-wrap: anywhere; }
+.graph-toolbar { font-size: 11px; color: #e1eacb; }
+.graph-toolbar > div { display: flex; gap: 5px; }
+.graph-scroll { overflow: auto; max-height: 710px; overscroll-behavior: contain; }
+.graph-scroll svg { display: block; }
+.graph-scroll g[role=button] { cursor: pointer; }
+.graph-scroll g[role=button]:focus circle { stroke: #f0e442; stroke-width: 4px; }
+.raw-table { overflow-x: auto; }
+.raw-table table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 12px 0; }
+.raw-table th { color: #c8d6be; text-align: left; }
+.raw-table td, .raw-table th { padding: 8px; border-bottom: 1px solid #3b4e3f; }
+.raw-table button { padding: 5px 7px; }
+.population-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; }
+.population-grid article { background: #223226; border: 1px solid #4e614f; padding: 13px; border-radius: 7px; }
+.population-grid h3 { margin: 0 0 12px; padding-bottom: 9px; border-bottom: 3px solid; }
+.population-grid button { display: block; width: 100%; text-align: left; margin: 5px 0; font-size: 11px; }
+.region-context-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(140px, 1fr)); gap: 18px; margin: 30px 0; }
+.region-context-grid > div { padding: 28px 16px; border: 2px solid; border-radius: 45%; text-align: center; background: #293c2e; font-size: 12px; }
+.real-empty { min-height: 330px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px; text-align: center; }
+.real-empty strong { color: #e7dbaa; font-size: 17px; line-height: 1.7; }
+.dataset-panel { border: 1px solid #4c614e; border-radius: 8px; padding: 17px; margin-top: 20px !important; }
+.dataset-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.source-hashes { max-height: 320px; overflow: auto; padding: 6px; }
+.source-hashes strong, .source-hashes span, .source-hashes code { display: block; overflow-wrap: anywhere; }
+.source-hashes code { color: #c2d9cc; font-size: 10px; }
+.source-paths { word-break: break-word; }
+.morphology-canvas { height: 540px; background: #0d1914; border: 1px solid #3a4c3f; margin: 12px 0; }
+.real-workspace a { display: inline-block; color: #cce0ba; font-size: 12px; margin: 10px 0; }
+@media (max-width: 1100px) {
+  .real-workspace { margin: 0 22px; padding: 18px; }
+  .real-content { grid-template-columns: minmax(0, 1fr) 290px; }
+  .real-filters { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .topbar nav { gap: 14px; }
+}
+@media (max-width: 780px) {
+  .real-workspace { margin: 0 12px; padding: 14px; }
+  .real-heading h2 { font-size: 21px; }
+  .real-content { display: flex; flex-direction: column; }
+  .real-inspector { border-left: 0; border-top: 1px solid #4a5b4a; max-height: 650px; }
+  .real-filters, .dataset-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .package-toolbar > label:first-child, .package-toolbar .file-label { min-width: 0; width: 100%; flex: auto; }
+  .real-visualization { padding: 10px; }
+  .graph-scroll { max-height: 470px; }
+  .morphology-canvas { height: 410px; }
+  .topbar { flex-wrap: wrap; }
+  .topbar nav { order: 3; width: 100%; justify-content: space-between; gap: 8px; overflow-x: auto; }
+  .topbar nav button { white-space: nowrap; }
+}
+</style></head><body><section class="real-workspace"><h1>FlyWorld — local source preview</h1><p class="real-notice">STATIC SERVER RENDER — not a browser screenshot or interactive acceptance test. Paper-associated, one-hop package view around body 15321. Layout is abstract.</p><div class="real-badges"><strong>PAPER_ASSOCIATED</strong><span>SIMULATION UNAVAILABLE</span></div><div class="real-content"><div class="real-visualization"><div class="raw-graph"><div class="graph-toolbar"><span>71 bodies · 70 raw directed edges</span><div><button aria-label="Zoom out graph">−</button><button>Fit diagram</button><button aria-label="Zoom in graph">+</button></div></div><p class="graph-limit">All filtered edges shown. Arrows show source → target. Width uses √(raw count / visible maximum), not activation strength.</p><div class="graph-scroll"><svg viewBox="0 0 1000 730" style="width:100%;min-width:720px" role="group" aria-label="Abstract body-level raw structural diagram; positions are not anatomical"><defs><marker id="edge-arrow-Rc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#9fb4ab"></path></marker></defs><path d="M 500 50.66666666666667 Q 400 36.66666666666667 311 50.66666666666667" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="3.5" marker-end="url(#edge-arrow-Rc)"><title>15321 → 28181: 88 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 500 50.66666666666667 Q 392.2882090833697 104.98213497480253 309.180703472179 176.60740237502856" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="3.250222806665403" marker-end="url(#edge-arrow-Rc)"><title>15321 → 523590: 73 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 100 517.3333333333334 Q 310.62959243311417 293.1110792283836 492.8412948919843 59.01848929268493" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.8560119533826784" marker-end="url(#edge-arrow-Rc)"><title>33339 → 15321: 15 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 700 284 Q 610.6295924331141 158.2222541049498 507.1587051080157 59.01848929268493" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.4897065047448725" marker-end="url(#edge-arrow-Rc)"><title>71254 → 15321: 7 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 900 284 Q 707.0541943573372 155.2404287207553 509.50156790988274 56.20924794743162" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="2.872974500959038" marker-end="url(#edge-arrow-Rc)"><title>72059 → 15321: 53 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 917.8065868963636 286.44745903504526 Q 715.783893607842 156.3645511554388 509.5798306178278 56.072852506399656" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.5954430086935636" marker-end="url(#edge-arrow-Rc)"><title>78240 → 15321: 9 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 934.2925407023386 293.60831929993174 Q 723.9811018427936 159.91926567811697 509.60003573978605 56.036891410085744" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="2.702271437415744" marker-end="url(#edge-arrow-Rc)"><title>85806 → 15321: 45 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 948.2351736423562 304.9514925475688 Q 731.0256204192486 165.63209016769028 509.56763455955013 56.094407350864984" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="2.2509527863395924" marker-end="url(#edge-arrow-Rc)"><title>92440 → 15321: 27 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 115.79483384297882 519.2511733832139 Q 318.72355260079047 293.8355627604211 493.02549499355075 59.172916128974634" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="2.9336272986089034" marker-end="url(#edge-arrow-Rc)"><title>93290 → 15321: 56 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 958.6004244145568 319.63570750974395 Q 736.3829172446955 173.0749588130796 509.4884650733131 56.231649196065845" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="2.131464602807526" marker-end="url(#edge-arrow-Rc)"><title>101087 → 15321: 23 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 964.6195497870333 336.5719031385262 Q 739.6468692040191 181.69590253521463 509.3683718600857 56.43152648206152" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.9306687021881455" marker-end="url(#edge-arrow-Rc)"><title>120303 → 15321: 17 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 130.67172935488873 524.8932356402215 Q 326.38131474581144 296.3821620778059 493.2411199880014 59.34523457752651" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="2.5399604738837587" marker-end="url(#edge-arrow-Rc)"><title>125405 → 15321: 38 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 143.76609544389248 533.9316239540407 Q 333.15222634793173 300.60610703505375 493.47310150202134 59.521021301369544" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.9306687021881455" marker-end="url(#edge-arrow-Rc)"><title>129171 → 15321: 17 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 154.31693514898132 545.8410600490771 Q 338.6379320957892 306.2677197519089 493.70339854754235 59.68624593340125" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.733968524226395" marker-end="url(#edge-arrow-Rc)"><title>130693 → 15321: 12 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 500 284 Q 514 167.33333333333334 500 61.66666666666667" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.5954430086935636" marker-end="url(#edge-arrow-Rc)"><title>136183 → 15321: 9 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 965.8461387665756 354.50399928206826 Q 740.5712533427117 190.85906834649847 509.2134936361828 56.675954063356826" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.5954430086935636" marker-end="url(#edge-arrow-Rc)"><title>140015 → 15321: 9 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 523.8419499683521 288.4568328593125 Q 525.8511301447805 168.16504750356376 501.0974089181203 61.61178857857017" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.2969620057957092" marker-end="url(#edge-arrow-Rc)"><title>140619 → 15321: 4 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 161.71107201723737 559.9294107885261 Q 342.51711338497677 313.04449682760657 493.9134972071348 59.82933460523372" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.8560119533826784" marker-end="url(#edge-arrow-Rc)"><title>140851 → 15321: 15 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 544.4639124806728 301.2254114634365 Q 536.016587877595 173.49983166887978 501.9220200969921 61.49744866736996" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.5954430086935636" marker-end="url(#edge-arrow-Rc)"><title>141663 → 15321: 9 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 962.1892208598422 372.1020544032851 Q 739.0880460493236 199.890667177379 509.0307590666833 56.94722322476864" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.431126155013931" marker-end="url(#edge-arrow-Rc)"><title>142827 → 15321: 6 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 165.51878569047156 575.377912436482 Q 344.5648000657634 320.5477370703279 494.0871483781222 59.9423437685098" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="0.9984810028978546" marker-end="url(#edge-arrow-Rc)"><title>158537 → 15321: 1 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 559.0807772294341 320.58126851874846 Q 543.2165978133182 182.63042421468577 502.3520697970171 61.41225960842469" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.5954430086935636" marker-end="url(#edge-arrow-Rc)"><title>160435 → 15321: 9 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 565.7184556354723 343.9102882754221 Q 546.520367026445 194.22689691187585 502.40552758220383 61.40041890208074" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.4897065047448725" marker-end="url(#edge-arrow-Rc)"><title>166190 → 15321: 7 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 563.480492449406 368.0617573447575 Q 545.4683634212213 206.6185247987162 502.1573256626396 61.45304446393098" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.6438798074485388" marker-end="url(#edge-arrow-Rc)"><title>167663 → 15321: 10 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 165.51878569047156 591.2887542301847 Q 344.6649731837262 328.34365619922715 494.21247119579886 60.02105121833772" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="2.131464602807526" marker-end="url(#edge-arrow-Rc)"><title>178321 → 15321: 23 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 552.6691370004958 389.7738860010309 Q 540.1686997974497 218.07159970583302 501.6882459220124 61.53634125732524" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.2169842621131974" marker-end="url(#edge-arrow-Rc)"><title>178913 → 15321: 3 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 953.9200129386892 388.0609012595812 Q 735.3116767179934 208.1276990552108 508.82835242764605 57.22869329060506" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.5954430086935636" marker-end="url(#edge-arrow-Rc)"><title>180314 → 15321: 9 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 534.7445227499055 406.11433095815454 Q 531.3058533196461 227.0285092681122 501.07013464194875 61.614488908925686" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.5954430086935636" marker-end="url(#edge-arrow-Rc)"><title>183061 → 15321: 9 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 765.3282151641415 359.3927793260368 Q 643.28169623119 195.90465799504386 507.1696939295991 59.0090577481175" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="0.9984810028978546" marker-end="url(#edge-arrow-Rc)"><title>183084 → 15321: 1 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 749.879471907381 393.2208084403888 Q 636.250262871442 213.6931629770017 506.48259431012764 59.55350924490002" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.3674238124719147" marker-end="url(#edge-arrow-Rc)"><title>187492 → 15321: 5 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 512.1274681758937 414.8762245791375 Q 520.0559792149995 232.30553114097515 500.3660756643712 61.6605735522081" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.122115882408869" marker-end="url(#edge-arrow-Rc)"><title>187776 → 15321: 2 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 941.6518043255195 401.1969451864917 Q 729.5293098307067 214.96591813919397 508.6160546900884 57.50505840576776" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.122115882408869" marker-end="url(#edge-arrow-Rc)"><title>190769 → 15321: 2 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 161.71107201723737 606.7372558781407 Q 342.81611923850534 335.9782548894146 494.2829121580628 60.06426777586333" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.3674238124719147" marker-end="url(#edge-arrow-Rc)"><title>199196 → 15321: 5 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 487.8725318241064 414.8762245791375 Q 507.9285110391059 233.23736010482904 499.6339243356288 61.6605735522081" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.2169842621131974" marker-end="url(#edge-arrow-Rc)"><title>199308 → 15321: 3 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 154.31693514898132 620.8256066175896 Q 339.1300067499789 343.00439054852666 494.29708621640117 60.072876018836034" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.431126155013931" marker-end="url(#edge-arrow-Rc)"><title>201075 → 15321: 6 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 926.294471929852 410.5359458993599 Q 722.1781160894568 219.90349322723614 508.4054245438249 57.762358193083664" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.8168136493044518" marker-end="url(#edge-arrow-Rc)"><title>202888 → 15321: 14 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 465.2554772500945 406.11433095815454 Q 496.56133056974056 229.75248835670902 498.92986535805125 61.614488908925686" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.3674238124719147" marker-end="url(#edge-arrow-Rc)"><title>203234 → 15321: 5 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 143.76609544389248 632.7350427126261 Q 333.8241944666798 349.00900181602105 494.25788440070556 60.048996251814465" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.431126155013931" marker-end="url(#edge-arrow-Rc)"><title>204726 → 15321: 6 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 130.67172935488875 641.7734310264452 Q 327.2088650472171 353.63839517302085 494.1712993149204 59.995452671488124" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.8560119533826784" marker-end="url(#edge-arrow-Rc)"><title>210344 → 15321: 15 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 908.9869988403523 415.3852724383978 Q 713.8113448206755 222.57715349077708 508.2097840485219 57.98783090991617" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.9306687021881455" marker-end="url(#edge-arrow-Rc)"><title>215556 → 15321: 17 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 115.7948338429788 647.4154932834529 Q 319.6687003618666 356.61979267355287 494.04529716546966 59.91553222696305" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.6438798074485388" marker-end="url(#edge-arrow-Rc)"><title>236475 → 15321: 10 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 99.99999999999997 649.3333333333334 Q 311.6407207806742 357.7777644414304 493.8888993674475 59.81294728005355" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.2169842621131974" marker-end="url(#edge-arrow-Rc)"><title>261048 → 15321: 3 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 891.0130011596477 415.3852724383978 Q 705.0557811287522 222.78823342593373 508.0439355280417 58.16967281225317" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.4897065047448725" marker-end="url(#edge-arrow-Rc)"><title>261450 → 15321: 7 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 873.705528070148 410.5359458993599 Q 696.5638134135887 220.5168866185979 507.9234725934692 58.29677689264258" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.8939240115914184" marker-end="url(#edge-arrow-Rc)"><title>262567 → 15321: 16 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 681.4056512484657 413.3265362585568 Q 603.223760470798 225.73351990733306 504.9209926505761 60.50454404611067" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.2169842621131974" marker-end="url(#edge-arrow-Rc)"><title>272263 → 15321: 3 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 84.20516615702121 647.4154932834529 Q 303.58925001639 357.044609362663 493.711512624026 59.691904975000476" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.122115882408869" marker-end="url(#edge-arrow-Rc)"><title>312102 → 15321: 2 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 69.3282706451113 641.7734310264452 Q 295.9793712926686 354.4641640168251 493.52248093764564 59.55720921461255" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.3674238124719147" marker-end="url(#edge-arrow-Rc)"><title>317616 → 15321: 5 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 447.33086299950423 389.773886001031 Q 487.4995627969539 222.3689529618646 498.3117540779876 61.53634125732524" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="0.9984810028978546" marker-end="url(#edge-arrow-Rc)"><title>374701 → 15321: 1 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 858.3481956744805 401.1969451864917 Q 688.9638201421927 215.92374231807256 507.8634785495409 58.35859133484366" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="2.789367020284982" marker-end="url(#edge-arrow-Rc)"><title>512551 → 15321: 49 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 56.23390455610753 632.7350427126261 Q 289.2503639959475 350.1889135678509 493.33081088141074 59.41434730215461" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="2.034847624943829" marker-end="url(#edge-arrow-Rc)"><title>512552 → 15321: 20 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 45.68306485101868 620.8256066175896 Q 283.7906326065524 344.4706541202173 493.1450219815014 59.26953109462905" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.2969620057957092" marker-end="url(#edge-arrow-Rc)"><title>516216 → 15321: 4 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 846.0799870613108 388.0609012595812 Q 682.8128942119249 209.33929333895537 507.87638549041816 58.34537434480694" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.8168136493044518" marker-end="url(#edge-arrow-Rc)"><title>516217 → 15321: 14 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 38.28892798276263 606.7372558781408 Q 279.9155591563925 337.6453112569606 492.973082154991 59.129670010603995" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.8560119533826784" marker-end="url(#edge-arrow-Rc)"><title>516218 → 15321: 15 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 436.51950755059397 368.0617573447575 Q 481.9878709718152 212.10989921270797 497.8426743373604 61.45304446393098" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.544231764817738" marker-end="url(#edge-arrow-Rc)"><title>518542 → 15321: 8 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 837.8107791401578 372.1020544032851 Q 678.5560085305019 201.24209482751567 507.9689230558616 58.249295849856196" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="2.4146428199482246" marker-end="url(#edge-arrow-Rc)"><title>531237 → 15321: 33 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 34.48121430952844 591.2887542301847 Q 277.84953437630344 330.1128439016427 492.8223951439009 59.00225234073318" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.6899494936611665" marker-end="url(#edge-arrow-Rc)"><title>550065 → 15321: 11 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 650.120528092619 393.22080844038885 Q 587.8829853376774 216.32432311037627 504.4152542053333 60.741661967027184" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.3674238124719147" marker-end="url(#edge-arrow-Rc)"><title>557646 → 15321: 5 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 34.48121430952844 575.377912436482 Q 277.71316526779856 322.3134426860953 492.6998082514478 58.89510518405078" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="2.001048528198419" marker-end="url(#edge-arrow-Rc)"><title>916953 → 15321: 19 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 834.1538612334244 354.50399928206826 Q 676.4953865888166 192.2271146381124 508.1386001213433 58.06688207332012" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="3.4840454541743906" marker-end="url(#edge-arrow-Rc)"><title>933317 → 15321: 87 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 835.3804502129667 336.5719031385262 Q 676.77263507304 182.96518572906731 508.3710779220586 57.802845926103984" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.122115882408869" marker-end="url(#edge-arrow-Rc)"><title>942168 → 15321: 2 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 841.3995755854432 319.635707509744 Q 679.3637516648016 174.15410883881148 508.6405614816666 57.474066851872415" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.122115882408869" marker-end="url(#edge-arrow-Rc)"><title>957530 → 15321: 2 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 38.28892798276262 559.9294107885261 Q 279.51633828323634 314.7014542599419 492.6116020817285 58.81599646740989" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.2969620057957092" marker-end="url(#edge-arrow-Rc)"><title>147619274 → 15321: 4 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 851.7648263576439 304.9514925475688 Q 684.0842075676703 166.46313016235754 508.91467456374016 57.11093368647615" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.5954430086935636" marker-end="url(#edge-arrow-Rc)"><title>158893964 → 15321: 9 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 639.9642883066018 322.58260914187554 Q 582.4299047991981 180.21735650710636 505.03429252634373 60.44705003130017" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="0.9984810028978546" marker-end="url(#edge-arrow-Rc)"><title>213650853 → 15321: 1 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 45.683064851018635 545.8410600490771 Q 283.1574650830348 307.7186155155038 492.5634090190035 58.77204232615099" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.122115882408869" marker-end="url(#edge-arrow-Rc)"><title>245892505 → 15321: 2 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 865.7074592976614 293.60831929993174 Q 690.6004635453105 160.47609881548502 509.1625239889969 56.75338615675794" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.3674238124719147" marker-end="url(#edge-arrow-Rc)"><title>349137284 → 15321: 5 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 434.2815443645277 343.91028827542203 Q 480.80191139097263 200.3500580302129 497.59447241779617 61.40041890208074" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.431126155013931" marker-end="url(#edge-arrow-Rc)"><title>388541892 → 15321: 6 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 56.2339045561075 533.9316239540407 Q 288.42888799213944 301.76825201735426 492.55998758735666 58.768901870591144" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.2169842621131974" marker-end="url(#edge-arrow-Rc)"><title>422510463 → 15321: 3 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 440.91922277056585 320.5812685187485 Q 484.135820583884 188.6175109707294 497.6479302029829 61.41225960842469" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.122115882408869" marker-end="url(#edge-arrow-Rc)"><title>456838775 → 15321: 2 raw synapses · IN-PACKAGE ONLY</title></path><path d="M 69.32827064511129 524.8932356402215 Q 295.0281174846587 297.19206429256485 492.6047682478337 58.809795508319084" fill="none" stroke="#9fb4ab" opacity="0.95" stroke-width="1.4897065047448725" marker-end="url(#edge-arrow-Rc)"><title>581710868 → 15321: 7 raw synapses · IN-PACKAGE ONLY</title></path><g transform="translate(500,50.66666666666667)" role="button" tabindex="0" aria-label="GNG042 body 15321" aria-pressed="true"><title>GNG042 · 15321 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#fff" stroke-width="3"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">GNG042</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">15321 L</text></g><g transform="translate(300,50.66666666666667)" role="button" tabindex="0" aria-label="GNG015 body 28181" aria-pressed="false"><title>GNG015 · 28181 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">GNG015</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">28181 R</text></g><g transform="translate(100,517.3333333333334)" role="button" tabindex="0" aria-label="LB3d body 33339" aria-pressed="false"><title>LB3d · 33339 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">33339 R</text></g><g transform="translate(700,284)" role="button" tabindex="0" aria-label="LB3b body 71254" aria-pressed="false"><title>LB3b · 71254 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#56b4e9" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3b</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">71254 L</text></g><g transform="translate(900,284)" role="button" tabindex="0" aria-label="LB3c body 72059" aria-pressed="false"><title>LB3c · 72059 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">72059 R</text></g><g transform="translate(917.8065868963636,286.44745903504526)" role="button" tabindex="0" aria-label="LB3c body 78240" aria-pressed="false"><title>LB3c · 78240 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">78240 L</text></g><g transform="translate(934.2925407023386,293.60831929993174)" role="button" tabindex="0" aria-label="LB3c body 85806" aria-pressed="false"><title>LB3c · 85806 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">85806 L</text></g><g transform="translate(948.2351736423562,304.9514925475688)" role="button" tabindex="0" aria-label="LB3c body 92440" aria-pressed="false"><title>LB3c · 92440 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">92440 R</text></g><g transform="translate(115.79483384297882,519.2511733832139)" role="button" tabindex="0" aria-label="LB3d body 93290" aria-pressed="false"><title>LB3d · 93290 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">93290 L</text></g><g transform="translate(958.6004244145568,319.63570750974395)" role="button" tabindex="0" aria-label="LB3c body 101087" aria-pressed="false"><title>LB3c · 101087 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">101087 R</text></g><g transform="translate(964.6195497870333,336.5719031385262)" role="button" tabindex="0" aria-label="LB3c body 120303" aria-pressed="false"><title>LB3c · 120303 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">120303 R</text></g><g transform="translate(130.67172935488873,524.8932356402215)" role="button" tabindex="0" aria-label="LB3d body 125405" aria-pressed="false"><title>LB3d · 125405 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">125405 R</text></g><g transform="translate(143.76609544389248,533.9316239540407)" role="button" tabindex="0" aria-label="LB3d body 129171" aria-pressed="false"><title>LB3d · 129171 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">129171 R</text></g><g transform="translate(154.31693514898132,545.8410600490771)" role="button" tabindex="0" aria-label="LB3d body 130693" aria-pressed="false"><title>LB3d · 130693 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">130693 L</text></g><g transform="translate(500,284)" role="button" tabindex="0" aria-label="LB3a body 136183" aria-pressed="false"><title>LB3a · 136183 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">136183 L</text></g><g transform="translate(965.8461387665756,354.50399928206826)" role="button" tabindex="0" aria-label="LB3c body 140015" aria-pressed="false"><title>LB3c · 140015 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">140015 R</text></g><g transform="translate(523.8419499683521,288.4568328593125)" role="button" tabindex="0" aria-label="LB3a body 140619" aria-pressed="false"><title>LB3a · 140619 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">140619 R</text></g><g transform="translate(161.71107201723737,559.9294107885261)" role="button" tabindex="0" aria-label="LB3d body 140851" aria-pressed="false"><title>LB3d · 140851 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">140851 L</text></g><g transform="translate(544.4639124806728,301.2254114634365)" role="button" tabindex="0" aria-label="LB3a body 141663" aria-pressed="false"><title>LB3a · 141663 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">141663 R</text></g><g transform="translate(962.1892208598422,372.1020544032851)" role="button" tabindex="0" aria-label="LB3c body 142827" aria-pressed="false"><title>LB3c · 142827 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">142827 R</text></g><g transform="translate(165.51878569047156,575.377912436482)" role="button" tabindex="0" aria-label="LB3d body 158537" aria-pressed="false"><title>LB3d · 158537 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">158537 R</text></g><g transform="translate(559.0807772294341,320.58126851874846)" role="button" tabindex="0" aria-label="LB3a body 160435" aria-pressed="false"><title>LB3a · 160435 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">160435 L</text></g><g transform="translate(565.7184556354723,343.9102882754221)" role="button" tabindex="0" aria-label="LB3a body 166190" aria-pressed="false"><title>LB3a · 166190 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">166190 R</text></g><g transform="translate(563.480492449406,368.0617573447575)" role="button" tabindex="0" aria-label="LB3a body 167663" aria-pressed="false"><title>LB3a · 167663 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">167663 L</text></g><g transform="translate(165.51878569047156,591.2887542301847)" role="button" tabindex="0" aria-label="LB3d body 178321" aria-pressed="false"><title>LB3d · 178321 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">178321 L</text></g><g transform="translate(552.6691370004958,389.7738860010309)" role="button" tabindex="0" aria-label="LB3a body 178913" aria-pressed="false"><title>LB3a · 178913 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">178913 L</text></g><g transform="translate(953.9200129386892,388.0609012595812)" role="button" tabindex="0" aria-label="LB3c body 180314" aria-pressed="false"><title>LB3c · 180314 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">180314 L</text></g><g transform="translate(534.7445227499055,406.11433095815454)" role="button" tabindex="0" aria-label="LB3a body 183061" aria-pressed="false"><title>LB3a · 183061 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">183061 R</text></g><g transform="translate(765.3282151641415,359.3927793260368)" role="button" tabindex="0" aria-label="LB3b body 183084" aria-pressed="false"><title>LB3b · 183084 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#56b4e9" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3b</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">183084 R</text></g><g transform="translate(749.879471907381,393.2208084403888)" role="button" tabindex="0" aria-label="LB3b body 187492" aria-pressed="false"><title>LB3b · 187492 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#56b4e9" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3b</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">187492 R</text></g><g transform="translate(512.1274681758937,414.8762245791375)" role="button" tabindex="0" aria-label="LB3a body 187776" aria-pressed="false"><title>LB3a · 187776 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">187776 L</text></g><g transform="translate(941.6518043255195,401.1969451864917)" role="button" tabindex="0" aria-label="LB3c body 190769" aria-pressed="false"><title>LB3c · 190769 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">190769 L</text></g><g transform="translate(161.71107201723737,606.7372558781407)" role="button" tabindex="0" aria-label="LB3d body 199196" aria-pressed="false"><title>LB3d · 199196 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">199196 R</text></g><g transform="translate(487.8725318241064,414.8762245791375)" role="button" tabindex="0" aria-label="LB3a body 199308" aria-pressed="false"><title>LB3a · 199308 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">199308 R</text></g><g transform="translate(154.31693514898132,620.8256066175896)" role="button" tabindex="0" aria-label="LB3d body 201075" aria-pressed="false"><title>LB3d · 201075 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">201075 R</text></g><g transform="translate(926.294471929852,410.5359458993599)" role="button" tabindex="0" aria-label="LB3c body 202888" aria-pressed="false"><title>LB3c · 202888 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">202888 R</text></g><g transform="translate(465.2554772500945,406.11433095815454)" role="button" tabindex="0" aria-label="LB3a body 203234" aria-pressed="false"><title>LB3a · 203234 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">203234 L</text></g><g transform="translate(143.76609544389248,632.7350427126261)" role="button" tabindex="0" aria-label="LB3d body 204726" aria-pressed="false"><title>LB3d · 204726 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">204726 L</text></g><g transform="translate(130.67172935488875,641.7734310264452)" role="button" tabindex="0" aria-label="LB3d body 210344" aria-pressed="false"><title>LB3d · 210344 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">210344 R</text></g><g transform="translate(908.9869988403523,415.3852724383978)" role="button" tabindex="0" aria-label="LB3c body 215556" aria-pressed="false"><title>LB3c · 215556 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">215556 R</text></g><g transform="translate(115.7948338429788,647.4154932834529)" role="button" tabindex="0" aria-label="LB3d body 236475" aria-pressed="false"><title>LB3d · 236475 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">236475 L</text></g><g transform="translate(99.99999999999997,649.3333333333334)" role="button" tabindex="0" aria-label="LB3d body 261048" aria-pressed="false"><title>LB3d · 261048 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">261048 R</text></g><g transform="translate(891.0130011596477,415.3852724383978)" role="button" tabindex="0" aria-label="LB3c body 261450" aria-pressed="false"><title>LB3c · 261450 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">261450 L</text></g><g transform="translate(873.705528070148,410.5359458993599)" role="button" tabindex="0" aria-label="LB3c body 262567" aria-pressed="false"><title>LB3c · 262567 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">262567 L</text></g><g transform="translate(681.4056512484657,413.3265362585568)" role="button" tabindex="0" aria-label="LB3b body 272263" aria-pressed="false"><title>LB3b · 272263 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#56b4e9" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3b</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">272263 L</text></g><g transform="translate(84.20516615702121,647.4154932834529)" role="button" tabindex="0" aria-label="LB3d body 312102" aria-pressed="false"><title>LB3d · 312102 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">312102 L</text></g><g transform="translate(69.3282706451113,641.7734310264452)" role="button" tabindex="0" aria-label="LB3d body 317616" aria-pressed="false"><title>LB3d · 317616 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">317616 L</text></g><g transform="translate(447.33086299950423,389.773886001031)" role="button" tabindex="0" aria-label="LB3a body 374701" aria-pressed="false"><title>LB3a · 374701 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">374701 R</text></g><g transform="translate(858.3481956744805,401.1969451864917)" role="button" tabindex="0" aria-label="LB3c body 512551" aria-pressed="false"><title>LB3c · 512551 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">512551 L</text></g><g transform="translate(56.23390455610753,632.7350427126261)" role="button" tabindex="0" aria-label="LB3d body 512552" aria-pressed="false"><title>LB3d · 512552 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">512552 L</text></g><g transform="translate(45.68306485101868,620.8256066175896)" role="button" tabindex="0" aria-label="LB3d body 516216" aria-pressed="false"><title>LB3d · 516216 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">516216 L</text></g><g transform="translate(846.0799870613108,388.0609012595812)" role="button" tabindex="0" aria-label="LB3c body 516217" aria-pressed="false"><title>LB3c · 516217 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">516217 R</text></g><g transform="translate(38.28892798276263,606.7372558781408)" role="button" tabindex="0" aria-label="LB3d body 516218" aria-pressed="false"><title>LB3d · 516218 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">516218 R</text></g><g transform="translate(436.51950755059397,368.0617573447575)" role="button" tabindex="0" aria-label="LB3a body 518542" aria-pressed="false"><title>LB3a · 518542 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">518542 R</text></g><g transform="translate(300,182.66666666666669)" role="button" tabindex="0" aria-label="GNG015 body 523590" aria-pressed="false"><title>GNG015 · 523590 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">GNG015</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">523590 L</text></g><g transform="translate(837.8107791401578,372.1020544032851)" role="button" tabindex="0" aria-label="LB3c body 531237" aria-pressed="false"><title>LB3c · 531237 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">531237 L</text></g><g transform="translate(34.48121430952844,591.2887542301847)" role="button" tabindex="0" aria-label="LB3d body 550065" aria-pressed="false"><title>LB3d · 550065 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">550065 R</text></g><g transform="translate(650.120528092619,393.22080844038885)" role="button" tabindex="0" aria-label="LB3b body 557646" aria-pressed="false"><title>LB3b · 557646 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#56b4e9" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3b</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">557646 R</text></g><g transform="translate(34.48121430952844,575.377912436482)" role="button" tabindex="0" aria-label="LB3d body 916953" aria-pressed="false"><title>LB3d · 916953 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">916953 R</text></g><g transform="translate(834.1538612334244,354.50399928206826)" role="button" tabindex="0" aria-label="LB3c body 933317" aria-pressed="false"><title>LB3c · 933317 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">933317 L</text></g><g transform="translate(835.3804502129667,336.5719031385262)" role="button" tabindex="0" aria-label="LB3c body 942168" aria-pressed="false"><title>LB3c · 942168 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">942168 R</text></g><g transform="translate(841.3995755854432,319.635707509744)" role="button" tabindex="0" aria-label="LB3c body 957530" aria-pressed="false"><title>LB3c · 957530 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">957530 R</text></g><g transform="translate(38.28892798276262,559.9294107885261)" role="button" tabindex="0" aria-label="LB3d body 147619274" aria-pressed="false"><title>LB3d · 147619274 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">147619274 R</text></g><g transform="translate(851.7648263576439,304.9514925475688)" role="button" tabindex="0" aria-label="LB3c body 158893964" aria-pressed="false"><title>LB3c · 158893964 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">158893964 L</text></g><g transform="translate(639.9642883066018,322.58260914187554)" role="button" tabindex="0" aria-label="LB3b body 213650853" aria-pressed="false"><title>LB3b · 213650853 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#56b4e9" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3b</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">213650853 R</text></g><g transform="translate(45.683064851018635,545.8410600490771)" role="button" tabindex="0" aria-label="LB3d body 245892505" aria-pressed="false"><title>LB3d · 245892505 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">245892505 R</text></g><g transform="translate(865.7074592976614,293.60831929993174)" role="button" tabindex="0" aria-label="LB3c body 349137284" aria-pressed="false"><title>LB3c · 349137284 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#009e73" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3c</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">349137284 L</text></g><g transform="translate(434.2815443645277,343.91028827542203)" role="button" tabindex="0" aria-label="LB3a body 388541892" aria-pressed="false"><title>LB3a · 388541892 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">388541892 R</text></g><g transform="translate(56.2339045561075,533.9316239540407)" role="button" tabindex="0" aria-label="LB3d body 422510463" aria-pressed="false"><title>LB3d · 422510463 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">422510463 R</text></g><g transform="translate(440.91922277056585,320.5812685187485)" role="button" tabindex="0" aria-label="LB3a body 456838775" aria-pressed="false"><title>LB3a · 456838775 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3a</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">456838775 L</text></g><g transform="translate(69.32827064511129,524.8932356402215)" role="button" tabindex="0" aria-label="LB3d body 581710868" aria-pressed="false"><title>LB3d · 581710868 · RAW_STRUCTURAL / LITERATURE_ASSOCIATED · ANATOMY UNAVAILABLE FOR THIS BODY</title><circle r="9" fill="#cc79a7" stroke="#162820" stroke-width="1.5"></circle><text y="-14" text-anchor="middle" fill="#f1f4e9" font-size="10">LB3d</text><text y="23" text-anchor="middle" fill="#d0ddd4" font-size="9">581710868 L</text></g></svg></div><p class="real-notice">ABSTRACT LAYOUT — NOT ANATOMICAL COORDINATES. Grouping by type is a display choice.</p></div></div><aside class="real-inspector" aria-label="Real neuron inspector" data-testid="real-inspector"><div class="eyebrow">SOURCE RECORD / BODY</div><h2>GNG042 <small>15321</small></h2><div class="real-badges"><span>RAW_STRUCTURAL</span><span>LITERATURE_ASSOCIATED</span></div><p class="real-notice">ANATOMY UNAVAILABLE FOR THIS BODY</p><dl class="real-metadata"><div><dt>Body ID</dt><dd>15321</dd></div><div><dt>Type</dt><dd>GNG042</dd></div><div><dt>Aliases (source)</dt><dd>Shiu 2022: Quasimodo</dd></div><div><dt>Display alias</dt><dd>Quasimodo</dd></div><div><dt>Side</dt><dd>L</dd></div><div><dt>Side source</dt><dd>somaSide</dd></div><div><dt>Root side</dt><dd>UNRESOLVED / not supplied</dd></div><div><dt>Soma side</dt><dd>L</dd></div><div><dt>Class</dt><dd>UNRESOLVED / not supplied</dd></div><div><dt>Superclass</dt><dd>cb_intrinsic</dd></div><div><dt>Source classification</dt><dd>interneuron_or_projection_neuron</dd></div><div><dt>Entry nerve</dt><dd>UNRESOLVED / not supplied</dd></div><div><dt>Exit nerve</dt><dd>UNRESOLVED / not supplied</dd></div><div><dt>NT body prediction</dt><dd>gaba</dd></div><div><dt>Prediction confidence</dt><dd>0.8688142291013635</dd></div><div><dt>Transmitter consensus</dt><dd>gaba</dd></div><div><dt>Cell-type prediction</dt><dd>gaba</dd></div><div><dt>Cell-type confidence</dt><dd>0.871862152024117</dd></div></dl><p class="real-notice">PREDICTED TRANSMITTER — NOT DIRECT PHYSIOLOGICAL VALIDATION</p><h3>Package membership</h3><ul><li>malecns-focused</li><li>malecns-paper</li><li>malecns-candidates</li></ul><p>Source search memberships: A, B, C, D, E. These are bounded raw-search sets, not effective selection.</p><h3>Inspect raw partners <small>IN-PACKAGE ONLY</small></h3><div class="real-actions"><button>Incoming</button><button>Outgoing</button><button>One hop</button><button>Full package</button></div><details open=""><summary>Incoming: 68 partners · 878 raw synapses</summary><div class="partner-list"><button><span>LB3d · 33339</span><b>15</b></button><button><span>LB3b · 71254</span><b>7</b></button><button><span>LB3c · 72059</span><b>53</b></button><button><span>LB3c · 78240</span><b>9</b></button><button><span>LB3c · 85806</span><b>45</b></button><button><span>LB3c · 92440</span><b>27</b></button><button><span>LB3d · 93290</span><b>56</b></button><button><span>LB3c · 101087</span><b>23</b></button><button><span>LB3c · 120303</span><b>17</b></button><button><span>LB3d · 125405</span><b>38</b></button><button><span>LB3d · 129171</span><b>17</b></button><button><span>LB3d · 130693</span><b>12</b></button><button><span>LB3a · 136183</span><b>9</b></button><button><span>LB3c · 140015</span><b>9</b></button><button><span>LB3a · 140619</span><b>4</b></button><button><span>LB3d · 140851</span><b>15</b></button><button><span>LB3a · 141663</span><b>9</b></button><button><span>LB3c · 142827</span><b>6</b></button><button><span>LB3d · 158537</span><b>1</b></button><button><span>LB3a · 160435</span><b>9</b></button><button><span>LB3a · 166190</span><b>7</b></button><button><span>LB3a · 167663</span><b>10</b></button><button><span>LB3d · 178321</span><b>23</b></button><button><span>LB3a · 178913</span><b>3</b></button><button><span>LB3c · 180314</span><b>9</b></button><button><span>LB3a · 183061</span><b>9</b></button><button><span>LB3b · 183084</span><b>1</b></button><button><span>LB3b · 187492</span><b>5</b></button><button><span>LB3a · 187776</span><b>2</b></button><button><span>LB3c · 190769</span><b>2</b></button><button><span>LB3d · 199196</span><b>5</b></button><button><span>LB3a · 199308</span><b>3</b></button><button><span>LB3d · 201075</span><b>6</b></button><button><span>LB3c · 202888</span><b>14</b></button><button><span>LB3a · 203234</span><b>5</b></button><button><span>LB3d · 204726</span><b>6</b></button><button><span>LB3d · 210344</span><b>15</b></button><button><span>LB3c · 215556</span><b>17</b></button><button><span>LB3d · 236475</span><b>10</b></button><button><span>LB3d · 261048</span><b>3</b></button><button><span>LB3c · 261450</span><b>7</b></button><button><span>LB3c · 262567</span><b>16</b></button><button><span>LB3b · 272263</span><b>3</b></button><button><span>LB3d · 312102</span><b>2</b></button><button><span>LB3d · 317616</span><b>5</b></button><button><span>LB3a · 374701</span><b>1</b></button><button><span>LB3c · 512551</span><b>49</b></button><button><span>LB3d · 512552</span><b>20</b></button><button><span>LB3d · 516216</span><b>4</b></button><button><span>LB3c · 516217</span><b>14</b></button><button><span>LB3d · 516218</span><b>15</b></button><button><span>LB3a · 518542</span><b>8</b></button><button><span>LB3c · 531237</span><b>33</b></button><button><span>LB3d · 550065</span><b>11</b></button><button><span>LB3b · 557646</span><b>5</b></button><button><span>LB3d · 916953</span><b>19</b></button><button><span>LB3c · 933317</span><b>87</b></button><button><span>LB3c · 942168</span><b>2</b></button><button><span>LB3c · 957530</span><b>2</b></button><button><span>LB3d · 147619274</span><b>4</b></button><button><span>LB3c · 158893964</span><b>9</b></button><button><span>LB3b · 213650853</span><b>1</b></button><button><span>LB3d · 245892505</span><b>2</b></button><button><span>LB3c · 349137284</span><b>5</b></button><button><span>LB3a · 388541892</span><b>6</b></button><button><span>LB3d · 422510463</span><b>3</b></button><button><span>LB3a · 456838775</span><b>2</b></button><button><span>LB3d · 581710868</span><b>7</b></button></div></details><details open=""><summary>Outgoing: 2 partners · 161 raw synapses</summary><div class="partner-list"><button><span>GNG015 · 28181</span><b>88</b></button><button><span>GNG015 · 523590</span><b>73</b></button></div></details><h3>Mismatch warnings</h3><details><summary>M112 · predictedNtConfidence for body 15321 (RESOLVED)</summary><p>P10: 0.8688142291013635</p><p>P12: 0.86881422996521</p><p>EXPLAINED_DIFFERENCE; original values and signed difference retained</p></details><details><summary>M113 · celltypePredictedNtConfidence for body 15321 (RESOLVED)</summary><p>P10: 0.871862152024117</p><p>P12: 0.8718621730804443</p><p>EXPLAINED_DIFFERENCE; original values and signed difference retained</p></details><h3>Unresolved fields</h3><p>root_side, cell_class, entry_nerve</p><h3>Evidence and sources</h3><p>Verified input/target or named current counterpart in inspected Figure 6/S16/S17; exact paper-selected body inventory not recovered</p><ul class="source-paths"><li>results/structural/20261006T180116Z/nodes.csv</li><li>visualization/data/20261006T221533490089Z/model.json</li></ul><details><summary>Original evidence and annotation references</summary><pre>{
+  &quot;evidence&quot;: {
+    &quot;R&quot;: &quot;results/structural/20261006T180116Z/nodes.csv&quot;,
+    &quot;P&quot;: &quot;docs/structural_connectivity_checkpoint.md; paper/primary/figure6.jpg I/J; C037-C040; docs/initial_validation_checkpoint.md; C006-C008,C013,C020-C021&quot;
+  },
+  &quot;annotation&quot;: &quot;data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather&quot;,
+  &quot;neurotransmitter&quot;: &quot;data/raw/body-neurotransmitters-male-cns-v1.0.feather&quot;
+}</pre></details></aside></div><details class="dataset-panel" open="" data-testid="dataset-panel"><summary>Dataset and package provenance</summary><dl class="dataset-grid"><div><dt>Loaded package</dt><dd>Paper-associated structural motif</dd></div><div><dt>Scientific label</dt><dd>PAPER_ASSOCIATED</dd></div><div><dt>Dataset / version</dt><dd>male-cns:v1.0 / v1.0</dd></div><div><dt>UUID</dt><dd>4b2087c0fbe046bfaf0d60bc970e3e5d</dd></div><div><dt>Bodies / edges</dt><dd>102 / 274</dd></div><div><dt>Package size</dt><dd>995,791 bytes</dd></div><div><dt>Source run</dt><dd>results/structural/20261006T180116Z</dd></div><div><dt>Visualization run</dt><dd>visualization/data/20261006T221533490089Z</dd></div><div><dt>Anatomy</dt><dd>0/102 source-backed local SWCs</dd></div><div><dt>Effective selection</dt><dd>UNAVAILABLE — no validated result</dd></div><div><dt>Simulation</dt><dd>UNAVAILABLE</dd></div><div><dt>Import assurance</dt><dd>Generated locally from the checked package; static preview</dd></div></dl><p>Union of saved paper-associated path edges and all source-defined paper counterparts; not strict replication.</p><p>Generated 2026-10-08T00:24:31.828775+00:00. Partner scope: <strong>IN-PACKAGE ONLY</strong>.</p><details><summary>Source hashes and preprocessing scripts</summary><div class="source-hashes"><p><strong>results/structural/20261006T180116Z/manifest.json</strong><code>b273994a194a923405daf874d4277568322584c99026e5c1e11f22e8d9201ea3</code><small>SHA256_MATCH · 88,788 bytes</small></p><p><strong>results/structural/20261006T180116Z/nodes.csv</strong><code>41213440d6523d2f684b6f5fbdc0798b8fd2262ef37595af4751bb0b4a72ae93</code><small>SHA256_MATCH · 67,882,012 bytes</small></p><p><strong>results/structural/20261006T180116Z/raw_edges.csv</strong><code>be693595005bee186f8b69fd23c06fcaf7965ef613a7d0cb40a2c8c273f6080e</code><small>SHA256_MATCH · 347,210,171 bytes</small></p><p><strong>results/structural/20261006T180116Z/paper_associated_paths.csv</strong><code>7ecb11f7ede3ee9687ae49a1d7a3866c50b06d03c7c7d27dca2cbc9d84ab67ac</code><small>SHA256_MATCH · 1,245,787 bytes</small></p><p><strong>results/structural/20261006T180116Z/paper_motif_comparison.csv</strong><code>f4764e6ac4be14c171156fd2c8cefc7bbb87d8a122acf18ea633d657b0aff81d</code><small>SHA256_MATCH · 2,901 bytes</small></p><p><strong>results/structural/20261006T180116Z/validation_checks.json</strong><code>47a5f8b916c315349bd50548d28b8401b8f655822a174ba7f315b83a8e1cd9ed</code><small>SHA256_MATCH · 1,087 bytes</small></p><p><strong>results/structural/20261006T180116Z/raw/meta_start.json</strong><code>764391995d5ecf8008ded9bad567a22fdaa9ed64c6eb2f1b4799df299db17325</code><small>SHA256_MATCH · 635 bytes</small></p><p><strong>results/structural/20261006T180116Z/raw/meta_end.json</strong><code>c7c17c8b0f7969886ebda2edf7a36cdd19e14706582d669370d6086a389c93be</code><small>SHA256_MATCH · 757 bytes</small></p><p><strong>results/structural/20261006T180116Z/named_neuron_edge_validation.csv</strong><code>bfa6163c550361cb7ee7d0dc4a5e715fadef36f81481a5d39e18980d54c76981</code><small>SHA256_MATCH · 353,660 bytes</small></p><p><strong>results/structural/20261006T180116Z/important_intermediates.csv</strong><code>69bf4d44674846904ae650f1bc07c65f16ce32f7b51bd95e747725dbc388ea4f</code><small>SHA256_MATCH · 198,061 bytes</small></p><p><strong>visualization/data/20261006T221533490089Z/build_manifest.json</strong><code>c41ad7f164a0b7d216515b3eaded868f861b0d5ab43ecc02659c2317f178b300</code><small>SHA256_MATCH · 16,776 bytes</small></p><p><strong>visualization/data/20261006T221533490089Z/model.json</strong><code>c451ae1da608f7fdcb5b2897698474f3d2fa99ec315bdc0ead3f04af58896713</code><small>SHA256_MATCH · 1,772,110 bytes</small></p><p><strong>visualization/data/20261006T221533490089Z/validation.json</strong><code>1fb5ced8eacc86479b6153f14e40399628e7f403dc6fe42d16dbae5f9b4d5a37</code><small>SHA256_MATCH · 1,890 bytes</small></p><p><strong>results/workflow/20261007T221035718347Z/manifest.json</strong><code>fa358124b47066e61409dbdc9a6a9ee66c909f6acd43c0293946f129c65fad92</code><small>SHA256_MATCH · 12,872 bytes</small></p><p><strong>config/source_manifest.yaml</strong><code>697f535bb850cd6f1ff73aa8b64473bd8b397e15a8696b7c15cba2c8b4c9c9f3</code><small>SHA256_MATCH · 25,140 bytes</small></p><p><strong>config/method_readiness.json</strong><code>d75cc7ea017ac9e1ee8c6275fdf2c873fa7bdb054926e6446810fe19719bf1a7</code><small>SHA256_MATCH · 1,888 bytes</small></p><p><strong>logs/claim_ledger.csv</strong><code>57e421da4f2e0e6029e4ce2533219a5c8946565a1d0ec6a9ff39dacd764a9e72</code><small>SHA256_MATCH · 50,066 bytes</small></p><p><strong>logs/mismatch_ledger.csv</strong><code>98b40b903ba43fd072da4ccd8facdbdbce43d5ffb4ca55d444e70684d3f53015</code><small>SHA256_MATCH · 741,035 bytes</small></p><p><strong>logs/unresolved_questions.md</strong><code>35865229fa1b3ff2b20ce726d40cd6fc68ebfd0aa4f4805905b26d4dc26f0c10</code><small>SHA256_MATCH · 14,283 bytes</small></p><p><strong>visualization/anatomy/orientation.json</strong><code>c08833a82d3928680f72f57395c3ae4d154a4aac35695e58861c5e548f80d09e</code><small>SHA256_MATCH · 578 bytes</small></p><p><strong>visualization/anatomy/20261006T221533490089Z/retrieval_manifest.json</strong><code>34d0842b8e672202d3edb6820e374ed72422dfe6efead6144bdb42b547b32733</code><small>SHA256_MATCH · 42,420 bytes</small></p><p><strong>paper/primary/malecns_download.html</strong><code>51144922891ccdc5cda2490d55b39ef69222134ed6944bbff2766379e403ad3c</code><small>SHA256_MATCH · 44,208 bytes</small></p><p><strong>data/raw/connectome-weights-male-cns-v1.0-minconf-0.5.feather</strong><code>e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1</code><small>RECORDED_IN_FROZEN_MANIFEST · 1,051,241,946 bytes</small></p><p><strong>data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather</strong><code>2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2</code><small>RECORDED_IN_FROZEN_MANIFEST · 14,483,314 bytes</small></p><p><strong>data/raw/body-neurotransmitters-male-cns-v1.0.feather</strong><code>95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621</code><small>RECORDED_IN_FROZEN_MANIFEST · 43,282,834 bytes</small></p><p><strong>scripts/preprocess/build_packages.py</strong><code>a840662602f17956a368e365190960f2086d8572e9d16e1fd98e2cd8261dc0a5</code></p><p><strong>scripts/preprocess/anatomy.py</strong><code>8a4499012520c2bf420c17a8d34b12724445b81c75441305e4498db9297cb10a</code></p></div></details><details><summary>Unresolved warnings and scientific limits (53)</summary><p><strong>Puddle: UNRESOLVED</strong> — Authoritative body/type mapping absent; Q-013 / M298</p><p><strong>effective selection: UNRESOLVED</strong> — No validated selected result; workflow B01–B04 remain unresolved</p><ul><li>Raw synapse counts are structural metrics, not activation strengths.</li><li>Body-side fields do not locate anatomical midline crossings.</li><li>Transmitter prediction and consensus are separate; no physiological sign assigned.</li><li>Paper-associated support is not strict replication or effective-connectivity selection.</li><li>Abstract layout positions are not anatomical coordinates. Source-backed SWCs retain native coordinates and uncertain orientation.</li></ul><div class="source-hashes"><p><strong>M290: Figure 6 pooled label versus current raw GNG015-&gt;MN9</strong><span>473 / 478</span><small>Both values retained; neuPrint and flat weights agree; structural phase proceeds</small></p><p><strong>M291: Figure 6 pooled label versus current raw ANXXX462a-&gt;GNG585</strong><span>179 / 178</span><small>Both values retained; neuPrint and flat weights agree; structural phase proceeds</small></p><p><strong>M292: Figure 6 pooled label versus current raw GNG585-&gt;GNG120</strong><span>359 / 350</span><small>Both values retained; neuPrint and flat weights agree; structural phase proceeds</small></p><p><strong>M293: Figure 6 pooled label versus current raw GNG108-&gt;MN9</strong><span>376 / 381</span><small>Both values retained; neuPrint and flat weights agree; structural phase proceeds</small></p><p><strong>M294: Figure 6 pooled label versus current raw GNG108-&gt;MN4a</strong><span>98 / 135</span><small>Both values retained; neuPrint and flat weights agree; structural phase proceeds</small></p><p><strong>M295: Figure 6 pooled label versus current raw GNG120-&gt;MN9</strong><span>441 / 443</span><small>Both values retained; neuPrint and flat weights agree; structural phase proceeds</small></p><p><strong>M296: Figure 6 pooled label versus current raw GNG120-&gt;MN4a</strong><span>89 / 98</span><small>Both values retained; neuPrint and flat weights agree; structural phase proceeds</small></p><p><strong>M297: Figure 6 pooled label versus current raw GNG472-&gt;MN8</strong><span>205 / 221</span><small>Both values retained; neuPrint and flat weights agree; structural phase proceeds</small></p><p><strong>M298: Puddle named in paper; MaleCNS type/body mapping absent from inspected authoritative records</strong><span>Puddle; branch labels 590 and 186 / Zero alias/instance matches live; zero matches in six flat annotation fields</span><small>Unassigned raw Quasimodo-MN8 bridge table retained; Puddle label withheld</small></p><p><strong>M1275: GNG015-&gt;MN9 pooling explanation follow-up</strong><span>473 / 478</span><small>Whole-body/whole-raw-edge pruning alone excluded; historical M290-M297 preserved unresolved</small></p><p><strong>M1276: ANXXX462a-&gt;GNG585 pooling explanation follow-up</strong><span>179 / 178</span><small>Whole-body/whole-raw-edge pruning alone excluded; historical M290-M297 preserved unresolved</small></p><p><strong>M1277: GNG585-&gt;GNG120 pooling explanation follow-up</strong><span>359 / 350</span><small>Whole-body/whole-raw-edge pruning alone excluded; historical M290-M297 preserved unresolved</small></p><p><strong>M1278: GNG108-&gt;MN9 pooling explanation follow-up</strong><span>376 / 381</span><small>Whole-body/whole-raw-edge pruning alone excluded; historical M290-M297 preserved unresolved</small></p><p><strong>M1279: GNG108-&gt;MN4a pooling explanation follow-up</strong><span>98 / 135</span><small>Whole-body/whole-raw-edge pruning alone excluded; historical M290-M297 preserved unresolved</small></p><p><strong>M1280: GNG120-&gt;MN9 pooling explanation follow-up</strong><span>441 / 443</span><small>Whole-body/whole-raw-edge pruning alone excluded; historical M290-M297 preserved unresolved</small></p><p><strong>M1281: GNG120-&gt;MN4a pooling explanation follow-up</strong><span>89 / 98</span><small>Whole-body/whole-raw-edge pruning alone excluded; historical M290-M297 preserved unresolved</small></p><p><strong>M1282: GNG472-&gt;MN8 pooling explanation follow-up</strong><span>205 / 221</span><small>Whole-body/whole-raw-edge pruning alone excluded; historical M290-M297 preserved unresolved</small></p><p><strong>M1288: Selection remains underdetermined after core-method recovery</strong><span>Threshold values and matrix algebra specified / Reference/pooling/horizon choices change membership</span><small>Implement verified algebra only; keep replication disabled.</small></p><p><strong>M1289: Disinhibitory motif percentage in indexed final Results</strong><span>approximately48%;16/31 / 16/31=51.61290322580645%</span><small>Preserve both; do not correct counts or rerun significance.</small></p></div></details></details></section></body></html>

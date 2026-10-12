@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-08T22:41:33.736381+00:00",
+  "protectedFilesUnchanged": 1180,
+  "researchFilesUnchanged": 968,
+  "publicAssetsUnchanged": 28,
+  "pinnedResearchFiles": 22,
+  "pinnedFlatSources": 2,
+  "generatedIndexSha256": "7ad76a96abe5a99240929887a533c419d040bdcf5a3f1a838d4dc18b93f72f31",
+  "cachedResponsesChecked": 35,
+  "rawCacheBytes": 88022965,
+  "requestedBodyCoverage": {
+    "total": 110,
+    "recovered": 5,
+    "notRequested": 105
+  }
+}

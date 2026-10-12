@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "dataset": "male-cns:v1.0",
+  "bodies": 110,
+  "edges": 1923,
+  "paper_edges": 274,
+  "frozen_input_hashes_verified": 12,
+  "output_hashes_verified": 30,
+  "graph_roundtrips": [
+    "raw_focused.graphml",
+    "raw_focused.gexf",
+    "paper_associated.graphml",
+    "paper_associated.gexf",
+    "candidate_comparison.graphml",
+    "candidate_comparison.gexf"
+  ],
+  "png_checks": [
+    {
+      "file": "visualization/static/20261006T221533490089Z/figure1_paper_same_side.png",
+      "pixels": [
+        8320,
+        5120
+      ],
+      "dpi": [
+        319.9892,
+        319.9892
+      ]
+    },
+    {
+      "file": "visualization/static/20261006T221533490089Z/figure2_sugar_panels.png",
+      "pixels": [
+        5760,
+        3840
+      ],
+      "dpi": [
+        319.9892,
+        319.9892
+      ]
+    },
+    {
+      "file": "visualization/static/20261006T221533490089Z/figure3_candidate_comparison.png",
+      "pixels": [
+        6400,
+        4800
+      ],
+      "dpi": [
+        319.9892,
+        319.9892
+      ]
+    },
+    {
+      "file": "visualization/static/20261006T221533490089Z/figure1_paper_opposite_side.png",
+      "pixels": [
+        8320,
+        5120
+      ],
+      "dpi": [
+        319.9892,
+        319.9892
+      ]
+    },
+    {
+      "file": "visualization/anatomy/20261006T221533490089Z/anatomy_BLOCKED.png",
+      "pixels": [
+        5120,
+        2880
+      ],
+      "dpi": [
+        319.9892,
+        319.9892
+      ]
+    }
+  ],
+  "anatomy_status": "BLOCKED",
+  "checks": [
+    "exact raw-weight/source join",
+    "paper-route edge union",
+    "side and both NT fields preserved",
+    "no guessed Puddle identity",
+    "no premature E/D/X badges or selected graph",
+    "directed GraphML and GEXF body/weight roundtrip",
+    "SVG scientific labels",
+    "PNG >=300 DPI",
+    "source results unchanged",
+    "anatomy fail-closed state"
+  ]
+}

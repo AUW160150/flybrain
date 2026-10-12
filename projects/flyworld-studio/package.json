@@ -1,0 +1,42 @@
+{
+  "name": "flyworld",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "index:connectome": "node scripts/connectome/index.mjs",
+    "recover:connectome": "node scripts/connectome/recover.ts",
+    "preprocess": "python3 scripts/preprocess/build_packages.py",
+    "test:preprocess": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests/preprocess -v",
+    "test:anatomy": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests/anatomy -v"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.4.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "^0.180.0",
+    "zod": "^4.1.12",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.180.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.12",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "requested_bodies": 110,
+  "minimum_requested_type_bodies": 67,
+  "requested_verified_geometry": 0,
+  "separate_verified_cache_bodies": 8,
+  "currently_loaded_body_ids": [
+    "10093",
+    "10807",
+    "11369"
+  ],
+  "reference_meshes_verified": 0,
+  "orientation": "ORIENTATION_UNVERIFIED",
+  "retrieval_status": "BLOCKED \u2014 AUTHORITATIVE GEOMETRY SOURCE REQUIRED",
+  "probe": {
+    "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/10029.probe.swc",
+    "sha256": "1a03b734ad50843b66b803280c31caf6654f241132c6ece6816cbfab420666a8",
+    "canonical_10029_sha256": "1a03b734ad50843b66b803280c31caf6654f241132c6ece6816cbfab420666a8",
+    "mapping_status": "VERIFIED_BODY_GEOMETRY",
+    "reason": "Byte-identical duplicate of receipt-verified canonical 10029; not an additional body or independent acquisition."
+  },
+  "requested_type_counts": {
+    "MN9": 2,
+    "GNG120": 2,
+    "GNG585": 3,
+    "DNge080": 2,
+    "GNG042": 2,
+    "MN8": 2,
+    "MN4a": 4,
+    "ANXXX462a": 2,
+    "DNg67": 2,
+    "GNG108": 2,
+    "GNG021": 2,
+    "GNG015": 2,
+    "GNG232": 2,
+    "LB3d": 26,
+    "GNG472": 2,
+    "LB3b": 11,
+    "LB3c": 23,
+    "LB3a": 17,
+    "MN6": 2
+  }
+}

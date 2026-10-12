@@ -1,0 +1,6 @@
+Listing tests:
+  foundation.spec.ts:9:1 › world controls, collisions, and explicit educational provenance
+  foundation.spec.ts:32:1 › brain click, region and neuron metadata, layers, focus and return
+  foundation.spec.ts:61:1 › rule tour, synthetic replay, pause, scrub, speed, clear and reset
+  foundation.spec.ts:78:1 › package validation, disabled experiment controls, shortcuts and narrow layout
+Total: 4 tests in 1 file

@@ -1,0 +1,68 @@
+{
+  "kind": "WITHIN_TYPE_AND_SIDE_ANCHOR_COORDINATE_SHUFFLE",
+  "baseline_manifest_sha256": "56439d2a8f0d8aad168d465dc97ed540c017d2f1cc22300d30df981719e44348",
+  "script_sha256": "5b7e66ed7cf8ad7ab817fb5726150244e0f74b5c2297b9a84ba715719a6dfdce",
+  "inputs": {
+    "atlas.parquet": {
+      "bytes": 10718659,
+      "sha256": "803080576da21d059f04e56223d783d1545a35b1e39a4349a3d7a99ebf51f383"
+    },
+    "edges.parquet": {
+      "bytes": 202953153,
+      "sha256": "7a7595a37d8378009e3deff20adb3274f001c599325aebe707cd6a3b9965c093"
+    },
+    "source_columns.csv": {
+      "bytes": 28404,
+      "sha256": "f2d8a363c9f6d67349bbb8d096d3f5b7781fbcfe9b6ffe774c236bfd48cdddf9"
+    },
+    "holdout_validation.json": {
+      "bytes": 7998,
+      "sha256": "89c510d087bb09a9d9a45aeddbf7a8b1c40e264a9890f71fae4664abb5afcd30"
+    }
+  },
+  "observed": {
+    "exact_hex_matches": 4548,
+    "heldout": 4733,
+    "supported": 4720,
+    "exact_rate_all_heldout": 0.9609127403338263
+  },
+  "controls": [
+    {
+      "seed": 101,
+      "exact_hex_matches": 10,
+      "heldout": 4733,
+      "supported": 4720,
+      "exact_rate_all_heldout": 0.0021128248468201987
+    },
+    {
+      "seed": 202,
+      "exact_hex_matches": 9,
+      "heldout": 4733,
+      "supported": 4720,
+      "exact_rate_all_heldout": 0.0019015423621381788
+    },
+    {
+      "seed": 303,
+      "exact_hex_matches": 9,
+      "heldout": 4733,
+      "supported": 4720,
+      "exact_rate_all_heldout": 0.0019015423621381788
+    },
+    {
+      "seed": 404,
+      "exact_hex_matches": 5,
+      "heldout": 4733,
+      "supported": 4720,
+      "exact_rate_all_heldout": 0.0010564124234100994
+    },
+    {
+      "seed": 505,
+      "exact_hex_matches": 10,
+      "heldout": 4733,
+      "supported": 4720,
+      "exact_rate_all_heldout": 0.0021128248468201987
+    }
+  ],
+  "physiological_validation": false,
+  "interpretation": "Tests sensitivity to anchor-coordinate assignment within this dataset; five exploratory shuffles are not a physiological validation or a formal significance test."
+}

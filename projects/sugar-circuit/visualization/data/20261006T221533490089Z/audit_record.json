@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-06T22:17:20.683764+00:00",
+  "run_id": "20261006T221533490089Z",
+  "status": "COMPLETE_FRAMEWORK_WITH_ANATOMY_BLOCKED",
+  "prior_evidence_audit": "visualization/data/20261006T221324540396Z/audit_record.json",
+  "claims": [
+    "C069",
+    "C070",
+    "C071",
+    "C072",
+    "C073"
+  ],
+  "mismatches": [
+    "M1286",
+    "M1290"
+  ],
+  "python_tests": 8,
+  "offline_js_checks": 36,
+  "authentic_anatomy": "BLOCKED",
+  "browser_visual_test": "UNVERIFIED \u2014 Chrome exit 134",
+  "input_hashes_verified": 12,
+  "code_hashes_verified": 15,
+  "output_hashes_verified": 30
+}

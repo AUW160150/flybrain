@@ -1,0 +1,90 @@
+[
+  {
+    "body_id": "10029",
+    "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/10029.json",
+    "sha256": "3e8044001f68b95c66e7b30f60b00a25c0bcf7324c4c426557fa3790867a1d3e",
+    "source_sha256": "1a03b734ad50843b66b803280c31caf6654f241132c6ece6816cbfab420666a8",
+    "scale": 0.008,
+    "max_coordinate_error_um": 0.0,
+    "topology_exact": true,
+    "point_count": 16415,
+    "source": "S-SWC-10029"
+  },
+  {
+    "body_id": "10053",
+    "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/10053.json",
+    "sha256": "f9c83f588b16fb7073cbd98965df408d7f7706d4c47209b5e5fb6f5dc5ad1f16",
+    "source_sha256": "7edc3e057bcb0ff65effe6321b514249b9de4007717993ed04dd56914a1a0018",
+    "scale": 0.008,
+    "max_coordinate_error_um": 0.0,
+    "topology_exact": true,
+    "point_count": 15957,
+    "source": "S-SWC-10053"
+  },
+  {
+    "body_id": "10093",
+    "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/10093.json",
+    "sha256": "ccde87bce250e24545163090866e167e3403a77d6ca151b303089edd94f9a740",
+    "source_sha256": "7a1b5efb8be358dc0cafadaae248514bc6495408e5f6c62132b25b8ef62ce924",
+    "scale": 0.008,
+    "max_coordinate_error_um": 0.0,
+    "topology_exact": true,
+    "point_count": 54204,
+    "source": "S-SWC-10093"
+  },
+  {
+    "body_id": "10807",
+    "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/10807.json",
+    "sha256": "5705ff0f19bbed1241943024d4a627296979699fdb9f8d6e24cab42337f94672",
+    "source_sha256": "41e96979c7c8b0e5e08a2de424cabb15caf9798e989087462ce07ddc09d275ab",
+    "scale": 0.008,
+    "max_coordinate_error_um": 0.0,
+    "topology_exact": true,
+    "point_count": 23636,
+    "source": "S-SWC-10807"
+  },
+  {
+    "body_id": "11029",
+    "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/11029.json",
+    "sha256": "020e52fc721c36230cbc6feb19177cd7c63b5afc68996a1d23821e22fe1ba094",
+    "source_sha256": "2a86557a73807402cca89b1954de4070deec06210589bc916306da421ae1b48f",
+    "scale": 0.008,
+    "max_coordinate_error_um": 0.0,
+    "topology_exact": true,
+    "point_count": 26810,
+    "source": "S-SWC-11029"
+  },
+  {
+    "body_id": "11369",
+    "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/11369.json",
+    "sha256": "461bb5cdd12ef45a8bb86001c7d4ee141965f9a3f9c7a5e78e79e3366033d657",
+    "source_sha256": "10cb3852a833bec4c7e4cecd43eeb6cbb50d83e05e5c6882a04418f657f9802d",
+    "scale": 0.008,
+    "max_coordinate_error_um": 0.0,
+    "topology_exact": true,
+    "point_count": 18539,
+    "source": "S-SWC-11369"
+  },
+  {
+    "body_id": "12638",
+    "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/12638.json",
+    "sha256": "cb16234f5b753ba20bd5592e5c9343c2ebe254274cc833cb1dcb049b186c78de",
+    "source_sha256": "e215bd06c6338e809cf7e4aca18f211b7b8a66ad1a6236cd9ad89468f894698b",
+    "scale": 0.008,
+    "max_coordinate_error_um": 0.0,
+    "topology_exact": true,
+    "point_count": 11738,
+    "source": "S-SWC-12638"
+  },
+  {
+    "body_id": "12912",
+    "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/12912.json",
+    "sha256": "f40b3283643d19510edb0630207983bd0fb0a88f7e9c049721da11adfa98a9a6",
+    "source_sha256": "1791f4d1981460903e99c263e74a57ca97fd00162d92f6a9c9eeb5d13e18c838",
+    "scale": 0.008,
+    "max_coordinate_error_um": 0.0,
+    "topology_exact": true,
+    "point_count": 38691,
+    "source": "S-SWC-12912"
+  }
+]

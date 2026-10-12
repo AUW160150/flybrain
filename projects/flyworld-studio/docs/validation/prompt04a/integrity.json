@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "protected_files_unchanged": 1180,
+  "public_assets_unchanged": 28,
+  "source_manifest_entries_checked": 50,
+  "verified_body_mappings": 8,
+  "raw_copy_checks": 16,
+  "source_scope": "All nonexcluded files in the six recorded roots; no claim about excluded/private/dependency paths.",
+  "research_files_unchanged": 968
+}

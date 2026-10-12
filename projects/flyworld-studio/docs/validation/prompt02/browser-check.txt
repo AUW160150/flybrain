@@ -1,0 +1,13 @@
+Prompt 02 browser smoke attempt — 7 October 2026.
+Diagnostic excerpt; not a successful browser report.
+
+Command:
+FLYWORLD_BROWSER_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" npm run test:e2e
+
+Result: exit 1 before any of the four browser scenarios executed.
+[WebServer] error when starting dev server:
+[WebServer] Error: listen EPERM: operation not permitted 127.0.0.1:5173
+Error: Process from config.webServer was not able to start. Exit code: 1
+
+No browser screenshots, manual visual acceptance, or measured Mac FPS are claimed.
+The two UI shell tests use server rendering without WebGL and do not replace this check.

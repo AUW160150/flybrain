@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MaleCNS · Gustatory circuit explorer</title><style>/*__STYLE__*/</style></head>
+<body><header><div><span class="eyebrow">MALECNS v1.0 · GUSTATORY SENSORIMOTOR PROJECT</span><h1>Circuit evidence explorer</h1></div><span id="scientificLabel" class="status">PAPER-ASSOCIATED</span></header>
+<div class="notice">Raw structure does not establish the biologically selected sugar pathway. Puddle is <strong>UNRESOLVED</strong>. Effective selection, Shiu validation and experimental support remain unpopulated unless validated evidence is supplied.</div>
+<nav aria-label="Views"><button data-view="paper" class="active">1 · Paper-associated</button><button data-view="sugar">2 · Sugar selection</button><button data-view="candidate">3 · Candidate comparison</button><button data-view="raw">Raw structure</button><a href="../../anatomy/__RUN__/index.html">Anatomy / skeletons ↗</a></nav>
+<div class="workspace"><aside><h2>Display controls</h2><fieldset><legend>Inputs &amp; comparison neurons</legend><div id="groups"></div></fieldset>
+<details><summary>Additional verified paper counterparts</summary><div id="paperGroups"></div></details>
+<fieldset><legend>Motor targets</legend><div id="motors"></div></fieldset>
+<label class="field">Evidence selector<select id="evidence"><option value="all">All available evidence</option><option value="R">Raw structure · R</option><option value="P">Paper support · P</option><option value="E">Effective connectivity · E</option><option value="D">Shiu dynamic support · D</option><option value="X">Experimental support · X</option></select></label>
+<label class="field">Side<select id="side"><option value="both">Both</option><option value="L">Left</option><option value="R">Right</option></select></label>
+<label class="field">Edge display<select id="weight"><option value="raw">RAW SYNAPSE COUNT</option><option value="effective">EFFECTIVE CONNECTIVITY SCORE</option></select></label>
+<label class="field">Minimum raw count (display only)<input type="number" id="minimum" min="1" value="1"></label>
+<label class="check"><input type="checkbox" id="counts">Show exact edge labels</label>
+<label class="check"><input type="checkbox" id="focus">Only edges touching clicked body</label>
+<button id="reset">Reset display</button>
+<p class="muted">P · paper-selected/support<br>R · raw MaleCNS structure<br>E · effective selection<br>D · dynamic/Shiu evidence<br>X · experimental evidence</p>
+<div id="legend"></div></aside>
+<main><div id="sugarTabs" hidden><div class="tabs"><button data-panel="lb3b_only">A · LB3b</button><button data-panel="lb3c_only">B · LB3c</button><button data-panel="lb3b_lb3c_combined">C · LB3b + LB3c</button><button data-panel="difference">D · overlap/difference</button></div></div>
+<div class="toolbar"><span id="summary" aria-live="polite"></span><label>Zoom <input id="zoom" type="range" min="50" max="160" value="100"></label><button id="download">Download visible SVG</button></div>
+<div id="message" role="status"></div><div id="candidateCards" hidden></div><div id="graphwrap"><svg id="graph" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Directed body-level circuit graph"></svg></div>
+<p class="caption">Arrow direction is pre → post. Width = 0.7 + 4.3 √(value / visible maximum). Raw counts and effective scores are separate fields. Curves retain reciprocal/recurrent edges; arrowheads do not imply physiological sign. LEFT/RIGHT use original soma/root labels. Opposite-side endpoints do not locate anatomical midline crossings.</p>
+<details><summary>Paper/current count discrepancies and scope</summary><div id="discrepancies"></div><p>These are descriptive comparisons. The paper snapshot, pooling and exact computational method remain unresolved. Matching totals do not establish replication.</p></details>
+<details><summary>Visible body-edge records</summary><div class="table-scroll"><table id="edgeTable"></table></div></details>
+</main><section class="inspector" aria-label="Body details"><h2>Body record</h2><p class="muted">Click a node, or select a body in a comparison card. Keyboard: Tab then Enter.</p><div id="details"></div></section></div>
+<footer><a href="../../docs/VISUALIZATION_INDEX.md">Visualization index</a> · <a href="../../data/__RUN__/model.json">Data and provenance JSON</a> · <a href="../../graph/__RUN__/raw_focused.graphml">GraphML</a> · <a href="../../graph/__RUN__/raw_focused.gexf">GEXF</a><p>No external scripts, telemetry, or network requests. Display filters do not alter frozen scientific results.</p></footer>
+<script id="model" type="application/json">/*__MODEL__*/</script><script>/*__SCRIPT__*/</script></body></html>

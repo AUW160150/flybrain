@@ -1,0 +1,18 @@
+# Sugar-restricted experiment: document how this differs from paper replication.
+experiment_id: experiment_02_sugar_restricted
+status: draft
+baseline_config: experiment_01_paper_replication.yaml
+restriction_definition: "Change starting sensory bodies only; retain all other MaleCNS graph nodes and edges"
+dataset: "male-cns:v1.0"
+method: null
+parameters: {}
+outputs: null
+notes: "Specify and cite the restriction before running."
+execution_allowed: false
+conditions:
+  lb3b_only: [LB3b]
+  lb3c_only: [LB3c]
+  lb3b_lb3c_combined: [LB3b, LB3c]
+motor_targets: [MN4a, MN6, MN8, MN9]
+no_other_grn_relay_primary: false
+requires_passed_experiment_01_checkpoint: true

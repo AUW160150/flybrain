@@ -1,0 +1,7 @@
+server/murmur.ts incorporates the 64-bit-input MurmurHash3_x86_128 implementation
+from Google Neuroglancer, src/util/hash.ts.
+Copyright 2016 Google Inc. Licensed under Apache License 2.0.
+Source: https://github.com/google/neuroglancer/blob/master/src/util/hash.ts
+The unrelated hash functions and imports were omitted; the retained algorithm
+is unchanged. The original copyright/license header is retained.
+See LICENSE.neuroglancer for the full license.

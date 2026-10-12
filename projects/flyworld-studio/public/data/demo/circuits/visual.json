@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "format": "FLYWORLD_EDUCATIONAL_DEMO",
+  "id": "demo-visual-package",
+  "label": "EDUCATIONAL_DEMO",
+  "name": "Visual educational circuit",
+  "regions": [
+    {
+      "id": "demo-visual-system",
+      "name": "Visual system",
+      "kind": "REGION",
+      "roleCategory": "VISUAL",
+      "color": "#56B4E9",
+      "symbol": "V",
+      "position": [
+        -0.215,
+        0.05,
+        0.035
+      ],
+      "scale": [
+        0.135,
+        0.17,
+        0.14
+      ],
+      "description": "Educational role category only. Placement and shape are arbitrary; no anatomical boundary or validated functional assignment.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    }
+  ],
+  "neurons": [
+    {
+      "id": "demo-visual-01",
+      "name": "Visual demo 01",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "VISUAL",
+      "regionId": "demo-visual-system",
+      "position": [
+        -0.265,
+        0.09,
+        0.135
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-visual-02",
+      "name": "Visual demo 02",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "VISUAL",
+      "regionId": "demo-visual-system",
+      "position": [
+        -0.165,
+        0.02,
+        0.135
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "sourceId": "demo-visual-01",
+      "targetId": "demo-visual-02",
+      "kind": "ILLUSTRATIVE_RELATION",
+      "evidence": [
+        "UNVERIFIED"
+      ]
+    }
+  ],
+  "circuits": [
+    {
+      "id": "demo-visual-circuit",
+      "name": "Visual educational circuit",
+      "entityIds": [
+        "demo-visual-system",
+        "demo-visual-01",
+        "demo-visual-02"
+      ]
+    }
+  ],
+  "sourceRefs": [
+    "/data/demo/circuits/visual.json",
+    "/data/demo/educational-circuits.json"
+  ],
+  "disclaimer": "PLACEHOLDER_GEOMETRY \u2014 NOT ANATOMICAL DATA. Generic demo nodes and illustrative relations; no body IDs, synapse counts, transmitters, verified functions, or real circuit membership."
+}

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "format": "FLYWORLD_EDUCATIONAL_DEMO",
+  "id": "demo-motor-package",
+  "label": "EDUCATIONAL_DEMO",
+  "name": "Motor educational circuit",
+  "regions": [
+    {
+      "id": "demo-motor-system",
+      "name": "Motor / descending system",
+      "kind": "REGION",
+      "roleCategory": "MOTOR",
+      "color": "#009E73",
+      "symbol": "M",
+      "position": [
+        -0.035,
+        -0.16,
+        -0.07
+      ],
+      "scale": [
+        0.18,
+        0.085,
+        0.1
+      ],
+      "description": "Educational role category only. Placement and shape are arbitrary; no anatomical boundary or validated functional assignment.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    }
+  ],
+  "neurons": [
+    {
+      "id": "demo-motor-left-01",
+      "name": "Left-turn motor demo",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "MOTOR",
+      "regionId": "demo-motor-system",
+      "position": [
+        -0.14,
+        -0.145,
+        -0.005
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-motor-right-01",
+      "name": "Right-turn motor demo",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "MOTOR",
+      "regionId": "demo-motor-system",
+      "position": [
+        0.07,
+        -0.145,
+        -0.005
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-feed-motor-01",
+      "name": "Feeding motor demo",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "MOTOR",
+      "regionId": "demo-motor-system",
+      "position": [
+        0.005,
+        -0.18,
+        0.005
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-escape-motor-01",
+      "name": "Escape motor demo",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "MOTOR",
+      "regionId": "demo-motor-system",
+      "position": [
+        -0.075,
+        -0.18,
+        0.005
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    }
+  ],
+  "relations": [],
+  "circuits": [
+    {
+      "id": "demo-motor-circuit",
+      "name": "Motor educational circuit",
+      "entityIds": [
+        "demo-motor-system",
+        "demo-motor-left-01",
+        "demo-motor-right-01",
+        "demo-feed-motor-01",
+        "demo-escape-motor-01"
+      ]
+    }
+  ],
+  "sourceRefs": [
+    "/data/demo/circuits/motor.json",
+    "/data/demo/educational-circuits.json"
+  ],
+  "disclaimer": "PLACEHOLDER_GEOMETRY \u2014 NOT ANATOMICAL DATA. Generic demo nodes and illustrative relations; no body IDs, synapse counts, transmitters, verified functions, or real circuit membership."
+}

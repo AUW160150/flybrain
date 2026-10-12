@@ -1,0 +1,9 @@
+Listing tests:
+  foundation.spec.ts:9:1 › world controls, collisions, and explicit educational provenance
+  foundation.spec.ts:32:1 › brain click, region and neuron metadata, layers, focus and return
+  foundation.spec.ts:61:1 › rule tour, synthetic replay, pause, scrub, speed, clear and reset
+  foundation.spec.ts:78:1 › package validation, disabled experiment controls, shortcuts and narrow layout
+  realdata.spec.ts:10:1 › source package, raw body metadata, filtering and saved paths
+  realdata.spec.ts:30:1 › candidate independence, blocked selection, local loader guards and educational mapping
+  realdata.spec.ts:50:1 › geometry provenance, absent anatomy, region context and narrow layout
+Total: 7 tests in 2 files

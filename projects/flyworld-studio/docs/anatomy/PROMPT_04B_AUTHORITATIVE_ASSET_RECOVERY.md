@@ -1,0 +1,16 @@
+# Proposed Prompt 04B — Authoritative asset recovery and coordinate evidence
+
+Prepared by Prompt 04A. This prompt has not been executed.
+
+Continue in the existing FlyWorld repository. Read AGENTS.md, STATUS.md, docs/SCIENTIFIC_BOUNDARIES.md, docs/CHECKPOINT_04A_ANATOMY_AUDIT.md and all docs/anatomy ledgers/manifests. Treat the separate MaleCNS research repository and existing source assets as read-only. Preserve every historical claim and retrieval attempt.
+
+1. Reverify the local source lock and exact male-cns:v1.0 release identity. Keep the neuPrint dataset UUID separate from segmentation UUIDs. Do not assume current mutation state matches saved metadata.
+2. In an environment that can reach the official source, retrieve only the prepared native SWC test set: LB3b 71254, LB3c 72059, GNG042/Quasimodo 15321, GNG015 28181 and MN4a 18295. Recheck each body/type against the authoritative inventory before requesting it. Use the documented official v1.0 native per-body route; do not substitute mirrored/template files. Save bounded request/response records, timestamps, hashes and release evidence in a new immutable retrieval directory. Stop after a transport failure and record unattempted bodies separately. If neuPrint authentication is necessary, use an environment variable without logging its value.
+3. Validate source format, body-to-response mapping, parent topology, numeric finiteness, units, point/resource budgets and raw checksum preservation. Convert only into data/anatomy/converted with full provenance. Do not overwrite public data or the prior raw cache.
+4. Retrieve bounded official reference metadata: the release scene, segmentation metadata and brain/VNC ROI descriptions. Establish available reference geometry, voxel resolution, offsets, storage axis order and exact source/version. Do not download full image/segmentation volumes. Do not represent an ROI label volume as a ready surface mesh without a reproducible, separately identified conversion.
+5. Seek authoritative anatomical axis-direction/handedness/origin evidence. Keep ORIENTATION_UNVERIFIED wherever it is absent. Record any official transform with its source, frame, units, inverse and round-trip validation. Numerical reversibility alone does not verify anatomical correctness.
+6. Reconcile historical SWC mutation/segmentation identifiers with release provenance where evidence permits; retain gaps explicitly. Distinguish soma points, skeleton cables, synapse locations and body-to-body edges.
+7. Append claims, mismatches and retrieval outcomes. Update the coverage and coordinate ledgers and add tests for any newly supported source format or transform. Run anatomy tests, application tests and the production build.
+8. Write docs/CHECKPOINT_04B_ASSET_RECOVERY.md with exact recovered/missing counts and readiness for a later native coordinate-faithful viewer. If source access is still blocked, complete the evidence report without fabricated assets.
+
+Stop after this five-body recovery and coordinate/reference evidence checkpoint. No bulk retrieval of the other requested bodies, new runtime anatomy integration, avatar registration, inferred mirroring, visual warping or neural simulation is authorized by this proposed prompt.

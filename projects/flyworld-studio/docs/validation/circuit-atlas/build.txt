@@ -1,0 +1,38 @@
+
+> flyworld@0.3.0 build
+> tsc --noEmit && vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+node_modules/zod/v4/core/util.js (400:0): A comment
+
+"// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle."
+
+in "node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/zod/v4/core/regexes.js (74:0): A comment
+
+"/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+ * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+ * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+
+in "node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+✓ 728 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                              0.76 kB │ gzip:   0.41 kB
+dist/assets/index-CmweQJHH.css              35.53 kB │ gzip:   8.41 kB
+dist/assets/CircuitScene-C4kNxASE.js         3.04 kB │ gzip:   1.48 kB
+dist/assets/MorphologyView-CO4FTUEo.js       4.82 kB │ gzip:   2.37 kB
+dist/assets/WorkspaceDialog-BEZ-gZRu.js      6.43 kB │ gzip:   2.65 kB
+dist/assets/schema-BFglKJ2i.js               7.92 kB │ gzip:   3.34 kB
+dist/assets/CircuitExplorer-Bmd8lX8z.js     16.71 kB │ gzip:   5.79 kB
+dist/assets/RealDataWorkspace-VkK36dO7.js   26.22 kB │ gzip:   8.99 kB
+dist/assets/index-DrrEwUs8.js              173.31 kB │ gzip:  49.45 kB
+dist/assets/renderer-BoYFfPyZ.js           453.11 kB │ gzip: 141.49 kB
+dist/assets/three-CoMAwHS-.js              703.93 kB │ gzip: 180.33 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.65s

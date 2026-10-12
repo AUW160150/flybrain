@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 1,
+  "format": "FLYWORLD_EDUCATIONAL_DEMO",
+  "id": "demo-educational-circuits",
+  "label": "EDUCATIONAL_DEMO",
+  "name": "FlyWorld educational display circuits",
+  "regions": [
+    {
+      "id": "demo-visual-system",
+      "name": "Visual system",
+      "kind": "REGION",
+      "roleCategory": "VISUAL",
+      "color": "#56B4E9",
+      "symbol": "V",
+      "position": [
+        -0.215,
+        0.05,
+        0.035
+      ],
+      "scale": [
+        0.135,
+        0.17,
+        0.14
+      ],
+      "description": "Educational role category only. Placement and shape are arbitrary; no anatomical boundary or validated functional assignment.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-taste-system",
+      "name": "Gustatory / taste system",
+      "kind": "REGION",
+      "roleCategory": "TASTE",
+      "color": "#E69F00",
+      "symbol": "T",
+      "position": [
+        0.17,
+        -0.1,
+        0.065
+      ],
+      "scale": [
+        0.15,
+        0.1,
+        0.13
+      ],
+      "description": "Educational role category only. Placement and shape are arbitrary; no anatomical boundary or validated functional assignment.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-motor-system",
+      "name": "Motor / descending system",
+      "kind": "REGION",
+      "roleCategory": "MOTOR",
+      "color": "#009E73",
+      "symbol": "M",
+      "position": [
+        -0.035,
+        -0.16,
+        -0.07
+      ],
+      "scale": [
+        0.18,
+        0.085,
+        0.1
+      ],
+      "description": "Educational role category only. Placement and shape are arbitrary; no anatomical boundary or validated functional assignment.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-mating-system",
+      "name": "Mating / courtship system",
+      "kind": "REGION",
+      "roleCategory": "COURTSHIP",
+      "color": "#CC79A7",
+      "symbol": "C",
+      "position": [
+        0.185,
+        0.13,
+        -0.015
+      ],
+      "scale": [
+        0.125,
+        0.11,
+        0.12
+      ],
+      "description": "Educational role category only. Placement and shape are arbitrary; no anatomical boundary or validated functional assignment.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-central-system",
+      "name": "Central integration / other",
+      "kind": "REGION",
+      "roleCategory": "INTEGRATION",
+      "color": "#F0E442",
+      "symbol": "I",
+      "position": [
+        -0.035,
+        0.08,
+        -0.1
+      ],
+      "scale": [
+        0.14,
+        0.13,
+        0.105
+      ],
+      "description": "Educational role category only. Placement and shape are arbitrary; no anatomical boundary or validated functional assignment.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    }
+  ],
+  "neurons": [
+    {
+      "id": "demo-visual-01",
+      "name": "Visual demo 01",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "VISUAL",
+      "regionId": "demo-visual-system",
+      "position": [
+        -0.265,
+        0.09,
+        0.135
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-visual-02",
+      "name": "Visual demo 02",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "VISUAL",
+      "regionId": "demo-visual-system",
+      "position": [
+        -0.165,
+        0.02,
+        0.135
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-taste-01",
+      "name": "Taste demo 01",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "TASTE",
+      "regionId": "demo-taste-system",
+      "position": [
+        0.13,
+        -0.1,
+        0.155
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-taste-02",
+      "name": "Taste demo 02",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "TASTE",
+      "regionId": "demo-taste-system",
+      "position": [
+        0.23,
+        -0.08,
+        0.135
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-motor-left-01",
+      "name": "Left-turn motor demo",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "MOTOR",
+      "regionId": "demo-motor-system",
+      "position": [
+        -0.14,
+        -0.145,
+        -0.005
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-motor-right-01",
+      "name": "Right-turn motor demo",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "MOTOR",
+      "regionId": "demo-motor-system",
+      "position": [
+        0.07,
+        -0.145,
+        -0.005
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-feed-motor-01",
+      "name": "Feeding motor demo",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "MOTOR",
+      "regionId": "demo-motor-system",
+      "position": [
+        0.005,
+        -0.18,
+        0.005
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-escape-motor-01",
+      "name": "Escape motor demo",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "MOTOR",
+      "regionId": "demo-motor-system",
+      "position": [
+        -0.075,
+        -0.18,
+        0.005
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-grooming-01",
+      "name": "Grooming demo",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "INTEGRATION",
+      "regionId": "demo-central-system",
+      "position": [
+        -0.025,
+        0.025,
+        -0.015
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-central-01",
+      "name": "Integration demo 01",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "INTEGRATION",
+      "regionId": "demo-central-system",
+      "position": [
+        -0.09,
+        0.095,
+        -0.02
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-flight-motor-01",
+      "name": "Flight motor demo",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "INTEGRATION",
+      "regionId": "demo-central-system",
+      "position": [
+        0.02,
+        0.125,
+        -0.02
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-mating-01",
+      "name": "Courtship demo 01",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "COURTSHIP",
+      "regionId": "demo-mating-system",
+      "position": [
+        0.145,
+        0.155,
+        0.07
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    },
+    {
+      "id": "demo-mating-02",
+      "name": "Courtship demo 02",
+      "kind": "DEMO_NEURON",
+      "roleCategory": "COURTSHIP",
+      "regionId": "demo-mating-system",
+      "position": [
+        0.225,
+        0.105,
+        0.07
+      ],
+      "description": "Generic display node for an educational animation. Not a reconstructed neuron; no biological identity or function is asserted.",
+      "geometryStatus": "PLACEHOLDER_GEOMETRY",
+      "evidence": [
+        "UNVERIFIED"
+      ],
+      "sourceRefs": [
+        "/data/demo/educational-circuits.json"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "sourceId": "demo-visual-01",
+      "targetId": "demo-visual-02",
+      "kind": "ILLUSTRATIVE_RELATION",
+      "evidence": [
+        "UNVERIFIED"
+      ]
+    },
+    {
+      "sourceId": "demo-visual-02",
+      "targetId": "demo-escape-motor-01",
+      "kind": "ILLUSTRATIVE_RELATION",
+      "evidence": [
+        "UNVERIFIED"
+      ]
+    },
+    {
+      "sourceId": "demo-taste-01",
+      "targetId": "demo-taste-02",
+      "kind": "ILLUSTRATIVE_RELATION",
+      "evidence": [
+        "UNVERIFIED"
+      ]
+    },
+    {
+      "sourceId": "demo-taste-02",
+      "targetId": "demo-feed-motor-01",
+      "kind": "ILLUSTRATIVE_RELATION",
+      "evidence": [
+        "UNVERIFIED"
+      ]
+    },
+    {
+      "sourceId": "demo-central-01",
+      "targetId": "demo-motor-left-01",
+      "kind": "ILLUSTRATIVE_RELATION",
+      "evidence": [
+        "UNVERIFIED"
+      ]
+    },
+    {
+      "sourceId": "demo-central-01",
+      "targetId": "demo-motor-right-01",
+      "kind": "ILLUSTRATIVE_RELATION",
+      "evidence": [
+        "UNVERIFIED"
+      ]
+    },
+    {
+      "sourceId": "demo-central-01",
+      "targetId": "demo-grooming-01",
+      "kind": "ILLUSTRATIVE_RELATION",
+      "evidence": [
+        "UNVERIFIED"
+      ]
+    },
+    {
+      "sourceId": "demo-mating-01",
+      "targetId": "demo-mating-02",
+      "kind": "ILLUSTRATIVE_RELATION",
+      "evidence": [
+        "UNVERIFIED"
+      ]
+    }
+  ],
+  "circuits": [
+    {
+      "id": "demo-visual-circuit",
+      "name": "Visual educational circuit",
+      "entityIds": [
+        "demo-visual-system",
+        "demo-visual-01",
+        "demo-visual-02"
+      ]
+    },
+    {
+      "id": "demo-taste-circuit",
+      "name": "Taste educational circuit",
+      "entityIds": [
+        "demo-taste-system",
+        "demo-taste-01",
+        "demo-taste-02"
+      ]
+    },
+    {
+      "id": "demo-motor-circuit",
+      "name": "Motor educational circuit",
+      "entityIds": [
+        "demo-motor-system",
+        "demo-motor-left-01",
+        "demo-motor-right-01",
+        "demo-feed-motor-01",
+        "demo-escape-motor-01"
+      ]
+    },
+    {
+      "id": "demo-mating-circuit",
+      "name": "Mating educational circuit",
+      "entityIds": [
+        "demo-mating-system",
+        "demo-mating-01",
+        "demo-mating-02"
+      ]
+    },
+    {
+      "id": "demo-central-circuit",
+      "name": "Central educational circuit",
+      "entityIds": [
+        "demo-central-system",
+        "demo-grooming-01",
+        "demo-central-01",
+        "demo-flight-motor-01"
+      ]
+    }
+  ],
+  "sourceRefs": [
+    "/data/demo/educational-circuits.json"
+  ],
+  "disclaimer": "PLACEHOLDER_GEOMETRY \u2014 NOT ANATOMICAL DATA. Generic demo nodes and illustrative relations; no body IDs, synapse counts, transmitters, verified functions, or real circuit membership."
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "SOFTWARE_AND_REFERENCE_CONSISTENCY",
+  "frames": 90,
+  "ray_count": 1709,
+  "max_replay_error": 0.0,
+  "first_last_mean_absolute_difference": 0.18873393535614014,
+  "source_hashes_verified": true,
+  "run_artifact_hashes_verified": true,
+  "malecns_verified_bindings": 0,
+  "neural_simulation_run": false,
+  "physiological_validation": false,
+  "unit_tests_passed": 14
+}

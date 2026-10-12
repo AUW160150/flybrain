@@ -1,0 +1,113 @@
+{
+  "timestamp": "2026-10-06T17:19:22.291172+00:00",
+  "scope": "INITIAL_VALIDATION_ONLY",
+  "dataset": "male-cns:v1.0",
+  "server": "https://neuprint.janelia.org",
+  "dataset_uuid": "4b2087c0fbe046bfaf0d60bc970e3e5d",
+  "metadata_last_mod": "2026-03-28 11:56:30.222612573-04:00 / 2026-06-08T01:31:39-04:00 (segment property update)",
+  "dataset_listing_verified": true,
+  "authenticated_custom_query_verified": true,
+  "custom_query_http_status": 200,
+  "neuprint_comparison_counts": {
+    "EXACT_MATCH": 1615,
+    "EXPLAINED_DIFFERENCE": 190
+  },
+  "neuprint_unexplained_mismatches": [],
+  "annotation_rows": 211577,
+  "resolved_body_count": 95,
+  "counts": {
+    "LB3a": 17,
+    "LB3b": 11,
+    "LB3c": 23,
+    "LB3d": 26,
+    "GNG042": 2,
+    "ANXXX462a": 2,
+    "GNG015": 2,
+    "GNG021": 2,
+    "MN4": 0,
+    "MN4a": 4,
+    "MN6": 2,
+    "MN8": 2,
+    "MN9": 2
+  },
+  "side_counts": {
+    "LB3a": {
+      "L": 9,
+      "R": 8
+    },
+    "LB3b": {
+      "L": 5,
+      "R": 6
+    },
+    "LB3c": {
+      "R": 11,
+      "L": 12
+    },
+    "LB3d": {
+      "R": 15,
+      "L": 11
+    },
+    "GNG042": {
+      "L": 1,
+      "R": 1
+    },
+    "ANXXX462a": {
+      "R": 1,
+      "L": 1
+    },
+    "GNG015": {
+      "R": 1,
+      "L": 1
+    },
+    "GNG021": {
+      "L": 1,
+      "R": 1
+    },
+    "MN4": {},
+    "MN4a": {
+      "L": 2,
+      "R": 2
+    },
+    "MN6": {
+      "R": 1,
+      "L": 1
+    },
+    "MN8": {
+      "L": 1,
+      "R": 1
+    },
+    "MN9": {
+      "L": 1,
+      "R": 1
+    }
+  },
+  "paper_target_body_count": 87,
+  "paper_ids_missing_from_selected": [],
+  "target_sensory_motor_ids_not_in_table": [],
+  "type_mismatches": [],
+  "side_label_mismatches": [],
+  "nerve_mismatches": [
+    {
+      "body_id": "957530",
+      "paper_type": "LB3c",
+      "v1_type": "LB3c",
+      "type_status": "EXACT_MATCH",
+      "paper_root_side": "R",
+      "v1_side_label": "R",
+      "v1_side_property": "rootSide",
+      "side_label_status": "EXACT_MATCH",
+      "side_semantics": "same rootSide property",
+      "paper_nerve": "MxLbN",
+      "v1_nerve": null,
+      "nerve_status": "MISMATCH",
+      "paper_reference": "GRNs!row 250"
+    }
+  ],
+  "nt_difference_counts": {
+    "BODY_UNCLEAR_CONSENSUS_ASSIGNED": 22,
+    "BODY_PREDICTION_DIFFERS_FROM_CONSENSUS": 11
+  },
+  "nt_missing_bodies": [],
+  "experiments_run": false,
+  "simulations_run": false
+}

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlyWorld — a garden arena driven by the fly connectome · Flybrain</title>
+<meta name="description" content="Six small flies run on a 10,203-neuron sub-circuit of the MaleCNS connectome; you drive a bigger fly to herd them onto fruit. Drive the same brain in your browser.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="wordmark" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="11" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-25 11 13)"/><ellipse cx="21" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(25 21 13)"/><ellipse cx="16" cy="19" rx="4" ry="8" fill="currentColor"/><circle cx="16" cy="9.5" r="3" fill="var(--accent)"/></svg>Flybrain</a>
+  <ul><li><a href="/#projects" data-match="/projects/">Projects</a></li><li class="hide-sm"><a href="/#method">Method</a></li><li><a href="/#about">About</a></li><li><a href="https://github.com/AUW160150/flybrain/tree/main/projects/flyworld-game">Source ↗</a></li><li><a href="#" data-theme-toggle title="Switch light / dark" aria-label="Switch colour theme">◐</a></li></ul>
+</div></header>
+
+<section class="proj-head"><div class="wrap">
+  <p class="eyebrow"><span>Project 01</span><span>Play</span><span>Python · panda3d · PyTorch (MPS)</span></p>
+  <h1>FlyWorld: a garden arena where the flies have real wiring</h1>
+  <p class="lead">Six small flies, each running a sub-circuit of the MaleCNS connectome as a spiking network. One big fly you drive with the arrow keys. A timer, four fruit patches, and a single rule: get them to eat. Their escape and feeding are the circuit's own behaviour, measured in calibration, not scripted.</p>
+  <div class="cta"><a class="btn primary" href="#brain">Drive the brain in your browser</a><a class="btn" href="#run">Run the desktop game</a><a class="btn" href="https://github.com/AUW160150/flybrain/tree/main/projects/flyworld-game">Source ↗</a></div>
+  <div class="proj-meta">
+    <div><p class="eyebrow">Neurons per small fly</p>10,203 (sub-circuit) or 165,122 (whole CNS, press W)</div>
+    <div><p class="eyebrow">Synaptic edges</p>401,680 with ≥ 5 synapses</div>
+    <div><p class="eyebrow">Model</p>Leaky integrate-and-fire, 1 ms steps, event-driven</div>
+    <div><p class="eyebrow">Speed</p>≈ 2,500 steps/s for six brains on Apple MPS</div>
+  </div>
+</div></section>
+
+<div class="wrap proj-body">
+<div class="prose">
+  <img class="hero-img" src="/img/game-garden.jpg" alt="The FlyWorld garden: a lawn with flowers, a picket fence, fruit patches, six named small flies, the big white fly Nick in front, and a live neuron panel on each side" width="1800" height="1125">
+  <p class="mono muted" style="font-size:12.5px">3D chase camera. Left: every neuron group of the selected fly with its firing rate. Right: one LED row per fly, and a 200 ms spike raster of the selected fly.</p>
+
+  <h2 id="brain">The brain, in your browser</h2>
+  <p>This is the same circuit the small flies run on, ported from the game's <code>brain.py</code> and <code>decoder.py</code> to JavaScript and stepped on one thread of your browser. Stimulate a group and watch what reaches the descending neurons; silence one and watch a behaviour disappear. The little fly on the right moves according to the decoded descending-neuron output, exactly as the game decodes it.</p>
+
+  <div class="panel" data-brain-panel data-base="/assets/circuit/">
+    <div class="panel-left">
+      <div class="panel-ctrl">
+        <button class="btn small" data-scenario="loomLeft">Loom left</button>
+        <button class="btn small" data-scenario="loomRight">Loom right</button>
+        <button class="btn small" data-scenario="odour">Food odour</button>
+        <button class="btn small" data-scenario="taste">On food (taste)</button>
+        <button class="btn small" data-scenario="conspecific">Fly nearby</button>
+        <button class="btn small" data-clear>Clear</button>
+        <button class="btn small" data-reset>Reset</button>
+      </div>
+      <div class="brain-graph"><canvas data-graph width="700" height="380" aria-label="The sub-circuit's neurons, lighting up as they spike"></canvas><div class="loading">loading 2.5 MB of synapses…</div><div class="axis"><span>sensory</span><span>interneurons</span><span>descending → motor</span></div></div>
+      <div class="arena"><canvas data-arena width="150" height="150" aria-label="A small arena showing the decoded fly movement"></canvas><div><div class="body"><b data-body>still</b><span>decoded body</span></div><div class="cmd" data-cmd>v 0.00 u/s · ω 0°/s</div><div class="cmd muted" data-perf>…</div></div></div>
+      <div class="panel-ctrl"><label>stim amp <input type="range" data-amp min="0.02" max="0.30" step="0.01" value="0.15"> <span data-amp-out>0.15</span></label><label>clock <select data-speed-select><option value="1" selected>1× real time</option><option value="0.3">0.3× (the game's clock)</option><option value="3">3×</option></select></label></div>
+    </div>
+    <div class="panel-right">
+      <h4><span>neuron groups</span><span>n · Hz · stim / silence</span></h4>
+      <ul class="groups" data-groups></ul>
+      <h4><span>spikes</span><span>per group, last 200 ms</span></h4>
+      <div class="raster"><canvas data-raster width="460" height="270" aria-label="Spike raster, one row per neuron group"></canvas></div>
+    </div>
+  </div>
+  <div class="callout"><p class="eyebrow">Things to try</p>
+    <ul style="margin:0">
+      <li><strong>Loom left.</strong> An object approaches from the front-left over 0.6 s. LC4/LPLC2/LC16/LC6 fire, the giant fiber DNp01 spikes within about 9 ms, and the decoder calls a jump away from the threat.</li>
+      <li><strong>Stimulate DNp09.</strong> Forward walking at about 100 Hz. Notice DNa02_L fires too: a walk-coupled asymmetry the circuit produces, which calibration measures and the decoder removes.</li>
+      <li><strong>Stimulate DNp09, then silence DNa02.</strong> The fly still walks but can no longer steer.</li>
+      <li><strong>Food odour, then On food.</strong> Odour (ORN_DM1) drives the proboscis motor neuron MN9 and suppresses walking; standing on food (LB3c) adds taste. In the game this is why a fly stops on a patch and eats.</li>
+      <li><strong>MDN.</strong> Backward walking. <strong>DNg11.</strong> Grooming, with hysteresis.</li>
+    </ul>
+  </div>
+
+  <h2 id="play">Playing the desktop game</h2>
+  <p>Shepherd mode: get the six flies to eat all four fruit patches (20 units of food) before the three-minute timer runs out. You have two tools, both of which go through the flies' real circuits.</p>
+  <ol>
+    <li><strong>Loom at them.</strong> Walk the big fly at a small fly. Its looming detectors fire the giant fiber and it jumps away. Approach from the side opposite the food to push it there.</li>
+    <li><strong>Drive their brains.</strong> Select a fly, put the cursor on DNp09 and press S: it walks forward. DNa02 left or right makes it turn. MDN backs it up.</li>
+  </ol>
+  <p>Within about two units of food, odour shuts down walking and drives MN9, so the fly stops on the patch and eats. That stop-when-you-smell-food behaviour is the circuit's own.</p>
+  <div class="keys">
+    <span><kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd></span><span>drive the big fly</span>
+    <span><kbd>Tab</kbd></span><span>select the next small fly</span>
+    <span><kbd>[</kbd> <kbd>]</kbd></span><span>move the cursor through the neuron groups</span>
+    <span><kbd>S</kbd> / <kbd>X</kbd></span><span>stimulate / silence the group under the cursor</span>
+    <span><kbd>+</kbd> <kbd>-</kbd></span><span>change the stimulation amplitude</span>
+    <span><kbd>W</kbd></span><span>switch the selected fly to the whole CNS (165,122 neurons) and back</span>
+    <span><kbd>R</kbd> / <kbd>H</kbd> / <kbd>Esc</kbd></span><span>restart / hide help / quit</span>
+  </div>
+  <div class="gallery">
+    <figure><img src="/img/game-topdown.jpg" alt="Top-down pygame view of the arena with Kathy's brain panel showing LC4 and LPLC2 stimulated and DNp01 at 210 Hz"><figcaption>Top-down renderer (<code>--renderer pygame</code>). LC4 and LPLC2 stimulated: DNp01 at 210 Hz, the fly jumps.</figcaption></figure>
+    <figure><img src="/img/game-kathy.jpg" alt="Close view of Kathy, the pink round fly"><figcaption>Kathy. Females are drawn larger with a pointed abdomen; males smaller with a dark rounded tip.</figcaption></figure>
+  </div>
+
+  <h2 id="how">How it works</h2>
+  <ul>
+    <li><strong>Extraction.</strong> From the whole traced connectome, keep edges with at least five synapses and every neuron on a path of at most three hops from the looming cells (four from odour and taste cells) to the target descending neurons, excluding optic-lobe columnar cells. Result: 10,203 neurons and 401,680 edges. The whole-CNS option uses all 165,122 traced neurons.</li>
+    <li><strong>Dynamics.</strong> A batched leaky integrate-and-fire model: 1 ms steps, 20 ms membrane time constant, 2 ms refractory period, synapse count × transmitter sign as the weight, gain 0.005. Propagation is event-driven, so cost scales with activity (1 to 3% of cells). Six sub-circuit brains step together at about 2,500 steps/s on Apple MPS at rest; the whole CNS at about 600.</li>
+    <li><strong>Encoders.</strong> Angular expansion of an approaching object drives LC4 and LC6; angular size drives LPLC2 and LC16; food odour decays with distance onto ORN_DM1/DM4/DC1; standing on food drives LB3c.</li>
+    <li><strong>Decoder.</strong> DNp09 (forward), MDN (backward), DNa02/DNa01 left minus right (turning), DNp01 (jump), DNg11 (groom), MN9 (eat), with hysteresis and a calibrated correction for the walk-coupled turning asymmetry.</li>
+    <li><strong>Calibration.</strong> A sweep over gain and amplitude picks a point where rest is silent, DNp09 stimulation walks without recruiting more than 50 descending neurons, and looming reaches DNp01 within 20 ms. The measured latency is 9 ms.</li>
+  </ul>
+  <table>
+    <thead><tr><th>Stimulus (calibration)</th><th class="num">DNp01 L / R</th><th class="num">DNp09</th><th class="num">MDN</th><th class="num">MN9</th><th class="num">active cells</th></tr></thead>
+    <tbody>
+      <tr><td>rest</td><td class="num">0 / 0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0.00%</td></tr>
+      <tr><td>loom (both sides)</td><td class="num">325 / 310 Hz</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0.83%</td></tr>
+      <tr><td>LC4 right only</td><td class="num">175 / 310 Hz</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0.30%</td></tr>
+      <tr><td>stimulate DNp09</td><td class="num">0 / 0</td><td class="num">97.5 Hz</td><td class="num">0</td><td class="num">0</td><td class="num">0.03%</td></tr>
+      <tr><td>stimulate MDN</td><td class="num">0 / 0</td><td class="num">0</td><td class="num">106 Hz</td><td class="num">0</td><td class="num">0.03%</td></tr>
+      <tr><td>food odour (ORN_DM1)</td><td class="num">0 / 0</td><td class="num">0</td><td class="num">0</td><td class="num">92.5 Hz</td><td class="num">1.85%</td></tr>
+      <tr><td>taste (LB3c)</td><td class="num">0 / 0</td><td class="num">0</td><td class="num">0</td><td class="num">32.5 Hz</td><td class="num">0.14%</td></tr>
+    </tbody>
+  </table>
+  <p class="mono muted" style="font-size:12.5px">From processed/calibration.json. Rates are mean per-neuron firing over a 50 ms window; "active" is the fraction of the 10,203 cells spiking per step.</p>
+
+  <h2 id="limits">Limits</h2>
+  <p>Odour does not steer the flies toward food through this circuit (it drives MN9 and suppresses walking instead), which is why the player has to bring them there. The brains run at 0.3× biological speed relative to the wall clock in the game (10 ms of brain per 33 ms frame); the browser port above runs at 1× by default. There is no plasticity. Synapse counts are used as weights with a predicted transmitter sign; that is a structural proxy, not measured physiology. "Wander" is the one scripted behaviour: after two seconds of brain silence a fly drifts slowly so it does not look dead.</p>
+
+  <h2 id="run">Run it locally</h2>
+  <p>Needs the MaleCNS v1.0 flat files (about 1.1 GB, <a href="https://male-cns.janelia.org/download/">from Janelia</a>) in <code>data/flat-connectome/</code>, Python 3.12 and a GPU-capable torch (MPS or CUDA; CPU works but slower).</p>
+<pre><code>cd projects/flyworld-game
+python -m venv .venv &amp;&amp; .venv/bin/pip install torch numpy pyarrow panda3d==1.10.16 pygame-ce pytest
+.venv/bin/python scripts/extract_circuits.py --verify   # builds processed/circuit_npc.npz (shipped)
+.venv/bin/python scripts/calibrate.py                   # writes processed/calibration.json (shipped)
+.venv/bin/python -m flyworld.game                       # 3D chase camera
+.venv/bin/python -m flyworld.game --renderer pygame     # top-down view
+.venv/bin/python -m flyworld.game --headless --script "focus 2; isolate; stim DNp09; run 150; assert rate DNp09 &gt;= 50; report"</code></pre>
+  <p>The extracted circuit, calibration and group tables are included in the repository, so the game runs without the raw download; only re-extraction needs it. The verification ledger is in <code>GATES.md</code>: eight gates from environment to scripted behaviour, each with its check command and recorded evidence.</p>
+
+  <div class="pager"><a href="/#projects">← All projects</a><a href="/projects/flyworld-studio/">02 FlyWorld Studio →</a></div>
+</div>
+<aside class="toc">
+  <p class="eyebrow">On this page</p>
+  <ol><li><a href="#brain">Brain in your browser</a></li><li><a href="#play">Playing the game</a></li><li><a href="#how">How it works</a></li><li><a href="#limits">Limits</a></li><li><a href="#run">Run it locally</a></li></ol>
+  <p class="eyebrow">Files</p>
+  <div class="links"><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flyworld-game/README.md">README</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flyworld-game/GATES.md">GATES.md</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flyworld-game/NEURON_CHOICES.md">NEURON_CHOICES.md</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/flyworld-game/DATASET_ANALYSIS.md">DATASET_ANALYSIS.md</a><a href="https://github.com/AUW160150/flybrain/blob/main/site/src/js/brain.js">brain.js (this page's port)</a></div>
+</aside>
+</div>
+
+<footer><div class="wrap">
+  <div><p class="eyebrow">Flybrain</p><p>Hand-written HTML and CSS, one module of JavaScript for the simulation, no framework, no analytics.</p></div>
+  <div><p class="eyebrow">Data</p><ul><li>MaleCNS v1.0 — FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research. <a href="https://male-cns.janelia.org/download/">CC BY 4.0</a></li></ul></div>
+  <div><p class="eyebrow">Repositories</p><ul><li><a href="https://github.com/AUW160150/flybrain">AUW160150/flybrain</a></li><li><a href="https://github.com/prove-ai/flybrain">prove-ai/flybrain</a></li></ul></div>
+</div></footer>
+<script type="module" src="/js/site.js"></script>
+<script type="module" src="/js/panel.js"></script>
+</body>
+</html>

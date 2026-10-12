@@ -1,0 +1,25 @@
+{
+  "profile": "smoke",
+  "n": 64,
+  "d": 16,
+  "context": 32,
+  "batch": 2,
+  "updates": 20,
+  "training_seeds": [
+    1
+  ],
+  "nulls_per_seed": 1,
+  "sampling_seeds": [
+    101
+  ],
+  "validate_every": 10,
+  "evaluation_batch": 32,
+  "lr": 0.001,
+  "execution": "dense",
+  "device": "cpu",
+  "threads": 2,
+  "protocol": "fixed-bytes",
+  "alpha": 0.5,
+  "weight_decay": 0.0,
+  "gradient_clip": 1.0
+}

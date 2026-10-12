@@ -1,0 +1,184 @@
+{
+  "readAtUtc": "2026-10-07T23:22:11.478106+00:00",
+  "sourceRepository": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1",
+  "access": "READ_ONLY",
+  "purpose": "Context inspection only; no scientific analysis or dataset integration",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "status": "AVAILABLE",
+      "bytes": 3046,
+      "sha256": "ab9b46f58ff2864102e0b181c2a3259b45a3b5d779929f374655b13391d41b4a"
+    },
+    {
+      "path": "docs/RESEARCH_PROTOCOL.md",
+      "status": "AVAILABLE",
+      "bytes": 28210,
+      "sha256": "fd9ec17863381e927b00741d76fc83c43f0474a477165b5e6c8fde31b1d439ee"
+    },
+    {
+      "path": "STATUS.md",
+      "status": "AVAILABLE",
+      "bytes": 20214,
+      "sha256": "fc9e7ec49cc8ff8dfde9ee85c40ea6ca5d96254fd0cf832cfc4a53dc28e29f0a"
+    },
+    {
+      "path": "docs/initial_validation_checkpoint.md",
+      "status": "AVAILABLE",
+      "bytes": 6156,
+      "sha256": "50920b36a76a8a8be0ab7f14442c593b5c9772304fe2a0eacde5734532c33d10"
+    },
+    {
+      "path": "docs/structural_connectivity_checkpoint.md",
+      "status": "AVAILABLE",
+      "bytes": 30209,
+      "sha256": "6359a9afd45cf8d294ab5f9ae4e5a0eea96c7ee93312e041deb8d02d7324bd3c"
+    },
+    {
+      "path": "visualization/docs/VISUALIZATION_INDEX.md",
+      "status": "AVAILABLE",
+      "bytes": 14959,
+      "sha256": "b99383aa611e94fdb8ad92b3f0b292446e8d78b397ed6e7449c7f4adda419cef"
+    },
+    {
+      "path": "logs/unresolved_questions.md",
+      "status": "AVAILABLE",
+      "bytes": 14283,
+      "sha256": "35865229fa1b3ff2b20ce726d40cd6fc68ebfd0aa4f4805905b26d4dc26f0c10"
+    },
+    {
+      "path": "logs/mismatch_ledger.csv",
+      "status": "AVAILABLE",
+      "bytes": 741035,
+      "sha256": "98b40b903ba43fd072da4ccd8facdbdbce43d5ffb4ca55d444e70684d3f53015"
+    },
+    {
+      "path": "config/source_manifest.yaml",
+      "status": "AVAILABLE",
+      "bytes": 25140,
+      "sha256": "697f535bb850cd6f1ff73aa8b64473bd8b397e15a8696b7c15cba2c8b4c9c9f3"
+    },
+    {
+      "path": "results/workflow/20261007T221035718347Z/manifest.json",
+      "status": "AVAILABLE",
+      "bytes": 12872,
+      "sha256": "fa358124b47066e61409dbdc9a6a9ee66c909f6acd43c0293946f129c65fad92"
+    },
+    {
+      "path": "results/connection_tables/20261007T220046456321Z/manifest.json",
+      "status": "AVAILABLE",
+      "bytes": 6312,
+      "sha256": "508f583bfd168e3d87ebeae0a60a0d667fe8241b37bfb0aae7a5949281ded33f"
+    },
+    {
+      "path": "results/excel/20261007T220621943039Z/manifest.json",
+      "status": "AVAILABLE",
+      "bytes": 9564,
+      "sha256": "2cbb5d3b4a176a65913c0e3ebf0470d22f3984c715726836e424ec6a7ade243f"
+    },
+    {
+      "path": "results/structural/20261006T180116Z/manifest.json",
+      "status": "AVAILABLE",
+      "bytes": 88788,
+      "sha256": "b273994a194a923405daf874d4277568322584c99026e5c1e11f22e8d9201ea3"
+    },
+    {
+      "path": "results/structural/20261006T180116Z/raw/edge_schema.json",
+      "status": "AVAILABLE",
+      "bytes": 468270,
+      "sha256": "7849f8f01429ac744ddd1b613f2d4fab5b637c3868d28e9a0b38654ff7627104"
+    },
+    {
+      "path": "visualization/data/20261006T221533490089Z/build_manifest.json",
+      "status": "AVAILABLE",
+      "bytes": 16776,
+      "sha256": "c41ad7f164a0b7d216515b3eaded868f861b0d5ab43ecc02659c2317f178b300"
+    },
+    {
+      "path": "visualization/docs/SELECTED_RESULTS.md",
+      "status": "AVAILABLE",
+      "bytes": 4095,
+      "sha256": "4bda894c46f60e8c7718d62b4b162f3a97495983a9b96dfe6a4cc9ccc6003a54"
+    }
+  ],
+  "schemaHeaders": {
+    "results/structural/20261006T180116Z/nodes.csv": [
+      "body_id",
+      "type",
+      "instance",
+      "synonyms",
+      "annotation",
+      "annotation_present",
+      "side",
+      "side_source",
+      "soma_side",
+      "root_side",
+      "sensory_subtype",
+      "classification",
+      "superclass",
+      "cell_class",
+      "status",
+      "status_label",
+      "entry_nerve",
+      "exit_nerve",
+      "predicted_neurotransmitter",
+      "predicted_nt_confidence",
+      "total_nt_predictions",
+      "ground_truth",
+      "celltype_predicted_nt",
+      "celltype_predicted_nt_confidence",
+      "consensus_nt",
+      "circuit_membership",
+      "source_subtype_membership",
+      "named_in_inspected_paper_panels",
+      "discovered_structurally",
+      "candidate_under_test",
+      "bc_comparison",
+      "scc_export_graph",
+      "scc_export_graph_size",
+      "dataset",
+      "dataset_uuid",
+      "annotation_provenance",
+      "nt_provenance",
+      "evidence"
+    ],
+    "results/structural/20261006T180116Z/raw_edges.csv": [
+      "source",
+      "source_type",
+      "source_name",
+      "source_side",
+      "target",
+      "target_type",
+      "target_name",
+      "target_side",
+      "direction",
+      "weight",
+      "neuprint_weightHP",
+      "neuprint_weightHR",
+      "source_predicted_neurotransmitter",
+      "source_nt_confidence",
+      "source_consensus_nt",
+      "target_predicted_neurotransmitter",
+      "target_consensus_nt",
+      "side_relationship",
+      "anatomical_midline_crossing",
+      "recurrence_status",
+      "recurrent_circuits",
+      "reciprocal_context",
+      "self_loop",
+      "circuit_membership",
+      "context_circuit_membership",
+      "source_subtype_membership",
+      "minimum_bounded_path_hops",
+      "bc_comparison",
+      "known_paper_motif",
+      "raw_scope",
+      "query_provenance",
+      "flat_provenance",
+      "dataset",
+      "dataset_uuid",
+      "verification_status",
+      "evidence"
+    ]
+  }
+}

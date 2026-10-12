@@ -1,0 +1,65 @@
+{
+  "reportedByUser": {
+    "passed": 3,
+    "failed": 6
+  },
+  "failedScenarios": [
+    "realdata-geometry-provenan-1918b-n-context-and-narrow-layout",
+    "foundation-rule-tour-synth-b6e3b-scrub-speed-clear-and-reset",
+    "realdata-candidate-indepen-5f130-rds-and-educational-mapping",
+    "controls-focus-typing-pointer-movement-and-all-camera-modes",
+    "realdata-source-package-ra-6d262-a-filtering-and-saved-paths",
+    "controls-13-step-controls--1c34b--captured-movement-evidence"
+  ],
+  "controlsSteps": [
+    {
+      "step": "1. Start in Follow mode",
+      "result": "PASS"
+    },
+    {
+      "step": "2. Click the 3D viewport",
+      "result": "PASS"
+    },
+    {
+      "step": "3. Hold W for 2 seconds",
+      "result": "PASS"
+    },
+    {
+      "step": "4. Confirm advancing position; capture rendered scene",
+      "result": "PASS"
+    },
+    {
+      "step": "5. Hold A while still holding W",
+      "result": "PASS"
+    },
+    {
+      "step": "6. Confirm curved left path",
+      "result": "PASS"
+    },
+    {
+      "step": "7. Repeat with ArrowUp + ArrowRight",
+      "result": "PASS"
+    },
+    {
+      "step": "8. Walk into the tree",
+      "result": "PASS"
+    },
+    {
+      "step": "9. Confirm collision prevents penetration",
+      "result": "PASS"
+    },
+    {
+      "step": "10. Turn away and move again",
+      "result": "PASS"
+    },
+    {
+      "step": "11. Enter Brain mode",
+      "result": "PASS"
+    },
+    {
+      "step": "12. Confirm locomotion pauses",
+      "result": "FAIL"
+    }
+  ],
+  "archive": ".cache/browser-fix-user-run (original traces and screenshots, not overwritten by reruns)"
+}

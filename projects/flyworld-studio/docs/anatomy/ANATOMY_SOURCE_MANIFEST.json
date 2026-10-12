@@ -1,0 +1,582 @@
+{
+  "format": "FLYWORLD_ANATOMY_AUDIT",
+  "schema_version": 1,
+  "timestamp": "2026-10-08T17:50:02.258536+00:00",
+  "dataset": "male-cns:v1.0",
+  "version": "v1.0",
+  "neuprint_uuid": "4b2087c0fbe046bfaf0d60bc970e3e5d",
+  "authority_scope": "Saved v1.0 release receipts and pinned source records; not a current mutation-state query",
+  "missing_expected_files": [],
+  "required_context_files": [
+    "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/AGENTS.md",
+    "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/STATUS.md",
+    "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/docs/RESEARCH_PROTOCOL.md",
+    "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/docs/initial_validation_checkpoint.md",
+    "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/docs/structural_connectivity_checkpoint.md",
+    "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/docs/VISUALIZATION_INDEX.md",
+    "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/AGENTS.md",
+    "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/STATUS.md",
+    "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/docs/PRODUCT_NORTH_STAR.md",
+    "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/docs/SCIENTIFIC_BOUNDARIES.md",
+    "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/docs/CHECKPOINT_01_FOUNDATION.md",
+    "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/docs/CHECKPOINT_02_MVP.md",
+    "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/docs/CHECKPOINT_03_REAL_DATA.md",
+    "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/docs/DECISIONS.md",
+    "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/docs/UNRESOLVED.md"
+  ],
+  "sources": {
+    "S-ANNOTATIONS": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "size_bytes": 14483314,
+      "purpose": "Official full v1.0 annotation table; body identity, not morphology",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather"
+    },
+    "S-STRUCTURAL": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/results/structural/20261006T180116Z/manifest.json",
+      "sha256": "b273994a194a923405daf874d4277568322584c99026e5c1e11f22e8d9201ea3",
+      "size_bytes": 88788,
+      "purpose": "Frozen structural run identity and hashes"
+    },
+    "S-NODES": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/results/structural/20261006T180116Z/nodes.csv",
+      "sha256": "41213440d6523d2f684b6f5fbdc0798b8fd2262ef37595af4751bb0b4a72ae93",
+      "size_bytes": 67882012,
+      "purpose": "Verified structural body records"
+    },
+    "S-VISUAL": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/data/20261006T221533490089Z/build_manifest.json",
+      "sha256": "c41ad7f164a0b7d216515b3eaded868f861b0d5ab43ecc02659c2317f178b300",
+      "size_bytes": 16776,
+      "purpose": "Latest immutable visualization manifest"
+    },
+    "S-REQUESTED": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/data/20261006T221533490089Z/model.json",
+      "sha256": "c451ae1da608f7fdcb5b2897698474f3d2fa99ec315bdc0ead3f04af58896713",
+      "size_bytes": 1772110,
+      "purpose": "Exact 110 requested bodies"
+    },
+    "S-DOWNLOAD": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/paper/primary/malecns_download.html",
+      "sha256": "51144922891ccdc5cda2490d55b39ef69222134ed6944bbff2766379e403ad3c",
+      "size_bytes": 44208,
+      "purpose": "Saved authoritative native/template unit and volume documentation",
+      "url": "https://male-cns.janelia.org/download/"
+    },
+    "S-ORIENTATION": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/visualization/anatomy/orientation.json",
+      "sha256": "c08833a82d3928680f72f57395c3ae4d154a4aac35695e58861c5e548f80d09e",
+      "size_bytes": 578,
+      "purpose": "Explicitly missing anatomical orientation matrix"
+    },
+    "S-META": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/results/structural/20261006T180116Z/raw/meta_start.json",
+      "sha256": "764391995d5ecf8008ded9bad567a22fdaa9ed64c6eb2f1b4799df299db17325",
+      "size_bytes": 635,
+      "purpose": "Saved authenticated dataset identity; no new live refresh"
+    },
+    "S-RESEARCH-SOURCES": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/config/source_manifest.yaml",
+      "sha256": "697f535bb850cd6f1ff73aa8b64473bd8b397e15a8696b7c15cba2c8b4c9c9f3",
+      "size_bytes": 25140,
+      "purpose": "Official document and raw-table acquisition provenance"
+    },
+    "S-CLAIMS": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/logs/claim_ledger.csv",
+      "sha256": "57e421da4f2e0e6029e4ce2533219a5c8946565a1d0ec6a9ff39dacd764a9e72",
+      "size_bytes": 50066,
+      "purpose": "Historical claims including C068/C073"
+    },
+    "S-MISMATCHES": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/logs/mismatch_ledger.csv",
+      "sha256": "98b40b903ba43fd072da4ccd8facdbdbce43d5ffb4ca55d444e70684d3f53015",
+      "size_bytes": 741035,
+      "purpose": "Historical unresolved and corrected discrepancies"
+    },
+    "S-QUESTIONS": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/logs/unresolved_questions.md",
+      "sha256": "35865229fa1b3ff2b20ce726d40cd6fc68ebfd0aa4f4805905b26d4dc26f0c10",
+      "size_bytes": 14283,
+      "purpose": "Current gaps, including Q019/Q020"
+    },
+    "S-WORKFLOW": {
+      "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/results/workflow/20261007T221035718347Z/manifest.json",
+      "sha256": "fa358124b47066e61409dbdc9a6a9ee66c909f6acd43c0293946f129c65fad92",
+      "size_bytes": 12872,
+      "purpose": "Latest immutable workflow status"
+    },
+    "S-PLACEHOLDER": {
+      "path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/src/brain/PlaceholderBrain.tsx",
+      "sha256": "7e3c97898e4b2f0febf1d4691b73267ce8b793bea354951d4bdb5228fbfeab2c",
+      "size_bytes": 5704,
+      "purpose": "Procedural educational volumes, not MaleCNS geometry"
+    },
+    "S-RENDERER": {
+      "path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/src/realdata/MorphologyView.tsx",
+      "sha256": "7cd7a72b08f43a154b5fe96d0e26ea89965cf65f3dea45c391fdab00470efded",
+      "size_bytes": 6492,
+      "purpose": "Validated selected-body loader; float32 display-buffer centering"
+    },
+    "S-PACKAGES": {
+      "path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/public/data/malecns/manifest.json",
+      "sha256": "6fe06a55dd4669a3c2e01669b91ea2537437cc48a63d215adecbcdd2e4cc0644",
+      "size_bytes": 2114,
+      "purpose": "Current browser package catalog"
+    },
+    "S-PARSER": {
+      "path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/scripts/preprocess/anatomy.py",
+      "sha256": "8a4499012520c2bf420c17a8d34b12724445b81c75441305e4498db9297cb10a",
+      "size_bytes": 4369,
+      "purpose": "Existing SWC topology parser reused without modification"
+    },
+    "S-CONVERTER": {
+      "path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/scripts/anatomy/contracts.py",
+      "sha256": "5e6e7746b313a45e7d74913e68cde1c116ae7aabba3848253291e7699bb9228b",
+      "size_bytes": 7141,
+      "purpose": "Lossless audit-cache conversion and guards"
+    },
+    "S-AUDIT": {
+      "path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/scripts/anatomy/audit.py",
+      "sha256": "c011a0572ad2210787e9ae785fcef14bb43ba1ac61d205c60663ff387f1e65c0",
+      "size_bytes": 29850,
+      "purpose": "Reproducible audit tables"
+    },
+    "S-DISCOVERY": {
+      "path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/scripts/anatomy/discover.py",
+      "sha256": "fab38a17d88ec073dfc16b006165738766354b5d3e0ea4f075fbdde99133c5c8",
+      "size_bytes": 9305,
+      "purpose": "Bounded local discovery implementation"
+    },
+    "S-INVENTORY": {
+      "path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/docs/anatomy/LOCAL_ASSET_INVENTORY.csv",
+      "sha256": "de6f8f3ef4591d6165e348291924d85f1893866b3ace4687d79f65b27b40ddaa",
+      "size_bytes": 295809,
+      "purpose": "Candidate inventory; absence claims limited to these roots"
+    },
+    "S-RETRIEVAL": {
+      "path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/docs/anatomy/ANATOMY_RETRIEVAL_LOG.jsonl",
+      "sha256": "9327d7c708cf594edc5207b6c2b88955bc8ebf9f1f8798d849a398420481fca0",
+      "size_bytes": 4626,
+      "purpose": "Actual bounded request outcome and unattempted test bodies"
+    },
+    "S-SWC-10029": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10029.swc",
+      "sha256": "1a03b734ad50843b66b803280c31caf6654f241132c6ece6816cbfab420666a8",
+      "size_bytes": 572604,
+      "purpose": "Verified native SWC 10029",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10029.swc"
+    },
+    "S-RECEIPT-10029": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10029.source.json",
+      "sha256": "f4fcdca3079be2c13c80e4f5e1cd331b6be81791807eae6630f2885179e390e6",
+      "size_bytes": 361,
+      "purpose": "Official per-body URL/acquisition hash receipt"
+    },
+    "S-UM-10029": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/10029.json",
+      "sha256": "3e8044001f68b95c66e7b30f60b00a25c0bcf7324c4c426557fa3790867a1d3e",
+      "size_bytes": 1617853,
+      "purpose": "Existing micrometer display derivative; all points/branches cross-checked"
+    },
+    "S-SWC-10053": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10053.swc",
+      "sha256": "7edc3e057bcb0ff65effe6321b514249b9de4007717993ed04dd56914a1a0018",
+      "size_bytes": 555588,
+      "purpose": "Verified native SWC 10053",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10053.swc"
+    },
+    "S-RECEIPT-10053": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10053.source.json",
+      "sha256": "b836bc06565917030782ce885a8b54ae6c1bb8bf735f0c923637c85605d52433",
+      "size_bytes": 361,
+      "purpose": "Official per-body URL/acquisition hash receipt"
+    },
+    "S-UM-10053": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/10053.json",
+      "sha256": "f9c83f588b16fb7073cbd98965df408d7f7706d4c47209b5e5fb6f5dc5ad1f16",
+      "size_bytes": 1568529,
+      "purpose": "Existing micrometer display derivative; all points/branches cross-checked"
+    },
+    "S-SWC-10093": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10093.swc",
+      "sha256": "7a1b5efb8be358dc0cafadaae248514bc6495408e5f6c62132b25b8ef62ce924",
+      "size_bytes": 1928352,
+      "purpose": "Verified native SWC 10093",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10093.swc"
+    },
+    "S-RECEIPT-10093": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10093.source.json",
+      "sha256": "0f223f27162fe9c1baf39937010cd5a7c155949f719f066b92b5c9dbbf1d8879",
+      "size_bytes": 361,
+      "purpose": "Official per-body URL/acquisition hash receipt"
+    },
+    "S-UM-10093": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/10093.json",
+      "sha256": "ccde87bce250e24545163090866e167e3403a77d6ca151b303089edd94f9a740",
+      "size_bytes": 5324612,
+      "purpose": "Existing micrometer display derivative; all points/branches cross-checked"
+    },
+    "S-SWC-10807": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10807.swc",
+      "sha256": "41e96979c7c8b0e5e08a2de424cabb15caf9798e989087462ce07ddc09d275ab",
+      "size_bytes": 828662,
+      "purpose": "Verified native SWC 10807",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10807.swc"
+    },
+    "S-RECEIPT-10807": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10807.source.json",
+      "sha256": "ce2a4c1716c33a057b759b9ebfab9990540f3a3af8791781bdc3822f86a8d745",
+      "size_bytes": 361,
+      "purpose": "Official per-body URL/acquisition hash receipt"
+    },
+    "S-UM-10807": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/10807.json",
+      "sha256": "5705ff0f19bbed1241943024d4a627296979699fdb9f8d6e24cab42337f94672",
+      "size_bytes": 2322442,
+      "purpose": "Existing micrometer display derivative; all points/branches cross-checked"
+    },
+    "S-SWC-11029": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/11029.swc",
+      "sha256": "2a86557a73807402cca89b1954de4070deec06210589bc916306da421ae1b48f",
+      "size_bytes": 935973,
+      "purpose": "Verified native SWC 11029",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/11029.swc"
+    },
+    "S-RECEIPT-11029": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/11029.source.json",
+      "sha256": "de190a9852d0fda5a45e711ef5dbb123687992a31b0e1c9af05e842f6c60aee7",
+      "size_bytes": 361,
+      "purpose": "Official per-body URL/acquisition hash receipt"
+    },
+    "S-UM-11029": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/11029.json",
+      "sha256": "020e52fc721c36230cbc6feb19177cd7c63b5afc68996a1d23821e22fe1ba094",
+      "size_bytes": 2622816,
+      "purpose": "Existing micrometer display derivative; all points/branches cross-checked"
+    },
+    "S-SWC-11369": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/11369.swc",
+      "sha256": "10cb3852a833bec4c7e4cecd43eeb6cbb50d83e05e5c6882a04418f657f9802d",
+      "size_bytes": 633834,
+      "purpose": "Verified native SWC 11369",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/11369.swc"
+    },
+    "S-RECEIPT-11369": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/11369.source.json",
+      "sha256": "8282d4758c140f167370a00422e7a648426751c07a104dc7b35fcc34d02652e1",
+      "size_bytes": 361,
+      "purpose": "Official per-body URL/acquisition hash receipt"
+    },
+    "S-UM-11369": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/11369.json",
+      "sha256": "461bb5cdd12ef45a8bb86001c7d4ee141965f9a3f9c7a5e78e79e3366033d657",
+      "size_bytes": 1812510,
+      "purpose": "Existing micrometer display derivative; all points/branches cross-checked"
+    },
+    "S-SWC-12638": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/12638.swc",
+      "sha256": "e215bd06c6338e809cf7e4aca18f211b7b8a66ad1a6236cd9ad89468f894698b",
+      "size_bytes": 400479,
+      "purpose": "Verified native SWC 12638",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/12638.swc"
+    },
+    "S-RECEIPT-12638": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/12638.source.json",
+      "sha256": "6534f19a2e2a0a3c1b63d99dd7b8a0b2748a735b59f7499893f455d2a27377f1",
+      "size_bytes": 361,
+      "purpose": "Official per-body URL/acquisition hash receipt"
+    },
+    "S-UM-12638": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/12638.json",
+      "sha256": "cb16234f5b753ba20bd5592e5c9343c2ebe254274cc833cb1dcb049b186c78de",
+      "size_bytes": 1132125,
+      "purpose": "Existing micrometer display derivative; all points/branches cross-checked"
+    },
+    "S-SWC-12912": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/12912.swc",
+      "sha256": "1791f4d1981460903e99c263e74a57ca97fd00162d92f6a9c9eeb5d13e18c838",
+      "size_bytes": 1393799,
+      "purpose": "Verified native SWC 12912",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/12912.swc"
+    },
+    "S-RECEIPT-12912": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/12912.source.json",
+      "sha256": "f8f37ca1cf43d47bfb9c196d012f26bec16be0a2b948ce982ba572ee213aa0ee",
+      "size_bytes": 361,
+      "purpose": "Official per-body URL/acquisition hash receipt"
+    },
+    "S-UM-12912": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/geometry/12912.json",
+      "sha256": "f40b3283643d19510edb0630207983bd0fb0a88f7e9c049721da11adfa98a9a6",
+      "size_bytes": 3792949,
+      "purpose": "Existing micrometer display derivative; all points/branches cross-checked"
+    },
+    "S-LOADED-10093": {
+      "path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/public/data/geometry/c58ea01514b945236e534d17210ab54019a66d776a5d3e640e5c84e12a1e95b4.json",
+      "sha256": "c58ea01514b945236e534d17210ab54019a66d776a5d3e640e5c84e12a1e95b4",
+      "size_bytes": 2445667,
+      "purpose": "Current native-coordinate browser cache"
+    },
+    "S-LOADED-10807": {
+      "path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/public/data/geometry/8396392af5eca350f9a4c7653ced73d2e648d70027518218fb6f1e2e6b07658c.json",
+      "sha256": "8396392af5eca350f9a4c7653ced73d2e648d70027518218fb6f1e2e6b07658c",
+      "size_bytes": 1054485,
+      "purpose": "Current native-coordinate browser cache"
+    },
+    "S-LOADED-11369": {
+      "path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/public/data/geometry/bdd02c072c97c08e00b22f8acfce7412c391bfb9e3c5c13bba181702ca209ea2.json",
+      "sha256": "bdd02c072c97c08e00b22f8acfce7412c391bfb9e3c5c13bba181702ca209ea2",
+      "size_bytes": 817561,
+      "purpose": "Current native-coordinate browser cache"
+    },
+    "S-PROBE": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/10029.probe.swc",
+      "sha256": "1a03b734ad50843b66b803280c31caf6654f241132c6ece6816cbfab420666a8",
+      "size_bytes": 572604,
+      "purpose": "Byte-identical duplicate of canonical 10029; no independent acquisition claim"
+    }
+  },
+  "summary": {
+    "requested_bodies": 110,
+    "minimum_requested_type_bodies": 67,
+    "requested_verified_geometry": 0,
+    "separate_verified_cache_bodies": 8,
+    "currently_loaded_body_ids": [
+      "10093",
+      "10807",
+      "11369"
+    ],
+    "reference_meshes_verified": 0,
+    "orientation": "ORIENTATION_UNVERIFIED",
+    "retrieval_status": "BLOCKED \u2014 AUTHORITATIVE GEOMETRY SOURCE REQUIRED",
+    "probe": {
+      "path": "/Users/Rodela1/Code/Flybrain/visualization/cache/10029.probe.swc",
+      "sha256": "1a03b734ad50843b66b803280c31caf6654f241132c6ece6816cbfab420666a8",
+      "canonical_10029_sha256": "1a03b734ad50843b66b803280c31caf6654f241132c6ece6816cbfab420666a8",
+      "mapping_status": "VERIFIED_BODY_GEOMETRY",
+      "reason": "Byte-identical duplicate of receipt-verified canonical 10029; not an additional body or independent acquisition."
+    },
+    "requested_type_counts": {
+      "MN9": 2,
+      "GNG120": 2,
+      "GNG585": 3,
+      "DNge080": 2,
+      "GNG042": 2,
+      "MN8": 2,
+      "MN4a": 4,
+      "ANXXX462a": 2,
+      "DNg67": 2,
+      "GNG108": 2,
+      "GNG021": 2,
+      "GNG015": 2,
+      "GNG232": 2,
+      "LB3d": 26,
+      "GNG472": 2,
+      "LB3b": 11,
+      "LB3c": 23,
+      "LB3a": 17,
+      "MN6": 2
+    }
+  },
+  "discovery": {
+    "roots": [
+      "/Users/Rodela1/Code/Flybrain/data",
+      "/Users/Rodela1/Code/Flybrain/processed",
+      "/Users/Rodela1/Code/Flybrain/runs",
+      "/Users/Rodela1/Code/Flybrain/visualization",
+      "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1",
+      "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/public"
+    ],
+    "excluded_directories": [
+      ".cache",
+      ".git",
+      ".pytest_cache",
+      ".venv",
+      "__pycache__",
+      "dist",
+      "node_modules"
+    ],
+    "excluded_files": "Environment/credential files and symlinks; no traversal outside authorized roots.",
+    "inventory_rows": 703,
+    "protected_files": 1180,
+    "archives": [
+      {
+        "path": "/Users/Rodela1/Code/Flybrain/processed/circuit_npc.npz",
+        "sha256": "b050e39d1e3752c82c8eb00883d49a56e7563d388d9d56e9cc43376fd888608a",
+        "members": [
+          "pre.npy",
+          "post.npy",
+          "weight.npy",
+          "orig_index.npy",
+          "body_id.npy",
+          "type.npy",
+          "superclass.npy",
+          "side.npy"
+        ],
+        "geometry_members": []
+      },
+      {
+        "path": "/Users/Rodela1/Code/Flybrain/processed/malecns_v1.0_traced_minw1.npz",
+        "sha256": "5990c26af160e8cbd5ad575fa56b884ae76806dfaf97dec6543115a56d06c2c3",
+        "members": [
+          "pre.npy",
+          "post.npy",
+          "weight.npy",
+          "body_id.npy",
+          "type.npy",
+          "superclass.npy",
+          "cls.npy",
+          "side.npy",
+          "nt.npy"
+        ],
+        "geometry_members": []
+      },
+      {
+        "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/visualization-source-80827efbc94a.zip",
+        "sha256": "2a26bb4f4184d06611ae2dee98e22fc9460e3f6f089523382916be46412828a8",
+        "members": [
+          "AGENTS.md",
+          "README.md",
+          "configs/view.json",
+          "docs/DATA_SOURCES.md",
+          "docs/ERRORS.md",
+          "docs/LIMITATIONS.md",
+          "docs/METHODS.md",
+          "docs/STATUS.md",
+          "pyproject.toml",
+          "requirements.lock",
+          "src/connectome_viz/__init__.py",
+          "src/connectome_viz/app.py",
+          "src/connectome_viz/baselines_schematic.py",
+          "src/connectome_viz/cli.py",
+          "src/connectome_viz/discover_run.py",
+          "src/connectome_viz/indexing.py",
+          "src/connectome_viz/ingest.py",
+          "src/connectome_viz/model_inspection.py",
+          "src/connectome_viz/morphology.py",
+          "src/connectome_viz/provenance.py",
+          "src/connectome_viz/raster.py",
+          "src/connectome_viz/render.py",
+          "src/connectome_viz/validation.py",
+          "src/connectome_viz/web/app.js",
+          "src/connectome_viz/web/index.html",
+          "src/connectome_viz/web/style.css",
+          "tests/browser.cjs",
+          "tests/test_inspection.py",
+          "viz"
+        ],
+        "geometry_members": []
+      },
+      {
+        "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/visualization-source-f27023f28757.zip",
+        "sha256": "874d7808b27ea56065487a5de598ea8852ff5423f1797690eebd161400635a9a",
+        "members": [
+          "AGENTS.md",
+          "README.md",
+          "configs/view.json",
+          "docs/DATA_SOURCES.md",
+          "docs/ERRORS.md",
+          "docs/LIMITATIONS.md",
+          "docs/METHODS.md",
+          "docs/STATUS.md",
+          "pyproject.toml",
+          "requirements.lock",
+          "src/connectome_viz/__init__.py",
+          "src/connectome_viz/app.py",
+          "src/connectome_viz/baselines_schematic.py",
+          "src/connectome_viz/cli.py",
+          "src/connectome_viz/discover_run.py",
+          "src/connectome_viz/indexing.py",
+          "src/connectome_viz/ingest.py",
+          "src/connectome_viz/model_inspection.py",
+          "src/connectome_viz/morphology.py",
+          "src/connectome_viz/provenance.py",
+          "src/connectome_viz/raster.py",
+          "src/connectome_viz/render.py",
+          "src/connectome_viz/validation.py",
+          "src/connectome_viz/web/app.js",
+          "src/connectome_viz/web/index.html",
+          "src/connectome_viz/web/style.css",
+          "tests/browser.cjs",
+          "tests/test_inspection.py",
+          "viz"
+        ],
+        "geometry_members": []
+      },
+      {
+        "path": "/Users/Rodela1/Code/Flybrain/visualization/reports/current/tables/G3-exact-matrices.npz",
+        "sha256": "bd9c8e8f58961de386158b650dd319d1a6543a48dd67444467b7b0b017e54ea3",
+        "members": [
+          "body_ids.npy",
+          "model_index.npy",
+          "adjacency.npy",
+          "synapse_count.npy"
+        ],
+        "geometry_members": []
+      },
+      {
+        "path": "/Users/Rodela1/Code/Flybrain/visualization/snapshots/source/3c1424882f2da4d318df8d757c95b060c6019da2ff410e7be7414e8b07b3ab48.zip",
+        "sha256": "3c1424882f2da4d318df8d757c95b060c6019da2ff410e7be7414e8b07b3ab48",
+        "members": [
+          "src/fly_connectome_lm/__init__.py",
+          "src/fly_connectome_lm/cli.py",
+          "src/fly_connectome_lm/data_download.py",
+          "src/fly_connectome_lm/diagnostics.py",
+          "src/fly_connectome_lm/evaluate.py",
+          "src/fly_connectome_lm/experiment.py",
+          "src/fly_connectome_lm/final_evaluation.py",
+          "src/fly_connectome_lm/graph_controls.py",
+          "src/fly_connectome_lm/graph_extract.py",
+          "src/fly_connectome_lm/import_cache.py",
+          "src/fly_connectome_lm/models/__init__.py",
+          "src/fly_connectome_lm/models/diagonal_lm.py",
+          "src/fly_connectome_lm/models/graph_rnn.py",
+          "src/fly_connectome_lm/models/gru_lm.py",
+          "src/fly_connectome_lm/models/transformer_lm.py",
+          "src/fly_connectome_lm/report.py",
+          "src/fly_connectome_lm/statistics.py",
+          "src/fly_connectome_lm/text_data.py",
+          "src/fly_connectome_lm/train.py",
+          "src/fly_connectome_lm/tuning.py",
+          "src/fly_connectome_lm/util.py",
+          "tests/test_correctness.py",
+          "tests/test_pipeline.py",
+          "configs/confirmation.yaml",
+          "configs/pilot.yaml",
+          "configs/replication.yaml",
+          "configs/smoke.yaml",
+          "docs/DATA_SOURCES.md",
+          "docs/LIMITATIONS.md",
+          "docs/METHODS.md",
+          "docs/STATUS.md",
+          "docs/analysis_plan.md",
+          "pyproject.toml",
+          "requirements.lock",
+          "README.md",
+          "AGENTS.md",
+          "fly-lm"
+        ],
+        "geometry_members": []
+      },
+      {
+        "path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/results/structural/20261006T180116Z/analysis/graph.npz",
+        "sha256": "9961fe5c1d665841cf29ca722745f7883cbc0b3827048f7eaf4f75f71b63f261",
+        "members": [
+          "indices.npy",
+          "indptr.npy",
+          "format.npy",
+          "shape.npy",
+          "data.npy"
+        ],
+        "geometry_members": []
+      }
+    ],
+    "directory_containers_found": [],
+    "content_scope": "CSV headers; JSON <=8 MiB sampled keys; columnar schemas; NPY headers; archive directory and bounded members. UNKNOWN is not absence."
+  },
+  "geometry_manifest": "data/anatomy/manifests/geometry-mappings.json",
+  "conversion_manifest": "data/anatomy/manifests/conversions.json",
+  "no_runtime_changes": true,
+  "no_avatar_registration": true,
+  "no_simulation": true
+}

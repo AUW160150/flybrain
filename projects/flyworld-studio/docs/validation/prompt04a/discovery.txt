@@ -1,0 +1,1 @@
+{"inventory_rows": 703, "protected_files": 1180, "archives": 7}

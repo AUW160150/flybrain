@@ -1,0 +1,26 @@
+stage: core_math_validated_selection_rules_unresolved
+target_dataset: "male-cns:v1.0"
+server: "https://neuprint.janelia.org"
+dataset_uuid: "4b2087c0fbe046bfaf0d60bc970e3e5d"
+active_dataset_verified: true
+paper_analysis_snapshot: null
+paper_method_verified: false
+experiments_enabled: false
+simulations_enabled: false
+latest_validation: "results/validation/20261006T171922Z"
+method_parameters: "results/method_recovery/20261006T220302Z/method_parameters.csv"
+analysis_confidence_threshold: null
+notes: "Verified algebra core passes 21 tests; full selection iterator remains source-gated. No biological experiment runner or invented defaults."
+
+
+latest_structural: "results/structural/20261006T180116Z"
+gates_2_3_completed_with_declared_bounds: true
+max_simple_path_hops: 4
+strict_replication_claimed: false
+structural_only: true
+
+latest_method_audit: "results/method_recovery/20261006T220302Z"
+method_readiness: "config/method_readiness.json"
+
+latest_workflow_audit: "results/workflow/20261007T221035718347Z"
+prepared_condition_inputs: "results/workflow/20261007T221035718347Z/prepared_inputs/conditions.json"

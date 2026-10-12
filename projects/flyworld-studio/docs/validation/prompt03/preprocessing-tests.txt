@@ -1,0 +1,29 @@
+
+> flyworld@0.3.0 test:preprocess
+> PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests/preprocess -v
+
+test_exact_native_coordinates_and_parent_links (test_pipeline.AnatomyTests) ... ok
+test_geometry_caps (test_pipeline.AnatomyTests) ... ok
+test_no_branch_repair_or_cycles_or_duplicates (test_pipeline.AnatomyTests) ... ok
+test_receipt_hash_release_and_body_guard (test_pipeline.AnatomyTests) ... ok
+test_custom_generation_uses_real_frozen_source_without_source_mutation (test_pipeline.PipelineTests) ... ok
+test_custom_selector_rejects_unknown_body_and_type (test_pipeline.PipelineTests) ... ok
+test_edge_missing_body_duplicate_invalid_weight_rejected (test_pipeline.PipelineTests) ... ok
+test_exact_target (test_pipeline.PipelineTests) ... ok
+test_generated_catalog_counts_sizes_checksums (test_pipeline.PipelineTests) ... ok
+test_hash_provenance_preserved (test_pipeline.PipelineTests) ... ok
+test_no_guessed_puddle_or_selected_result (test_pipeline.PipelineTests) ... ok
+test_oversized_one_hop_rejects_before_publication (test_pipeline.PipelineTests) ... ok
+test_raw_weight_precision_and_missing_values (test_pipeline.PipelineTests) ... ok
+test_resource_limits_reject_without_truncation (test_pipeline.PipelineTests) ... ok
+test_selected_label_rejected (test_pipeline.PipelineTests) ... ok
+test_side_class_and_unresolved_fields_not_backfilled (test_pipeline.PipelineTests) ... ok
+test_source_path_escape_rejected (test_pipeline.PipelineTests) ... ok
+test_tampered_source_hash_rejected (test_pipeline.PipelineTests) ... ok
+test_unpinned_source_run_rejected (test_pipeline.PipelineTests) ... ok
+test_wrong_release_uuid_version_rejected (test_pipeline.PipelineTests) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 5.170s
+
+OK

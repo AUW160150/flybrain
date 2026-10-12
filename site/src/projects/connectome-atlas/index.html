@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MaleCNS atlas — inspecting the exact graph behind the experiment · Flybrain</title>
+<meta name="description" content="A read-only inspection of the 512-neuron, 3,061-edge MaleCNS subgraph used by the language experiment: identity verified against the published bulk product, contact matrices, partner lookups, and native-space skeletons.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="wordmark" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="11" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-25 11 13)"/><ellipse cx="21" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(25 21 13)"/><ellipse cx="16" cy="19" rx="4" ry="8" fill="currentColor"/><circle cx="16" cy="9.5" r="3" fill="var(--accent)"/></svg>Flybrain</a>
+  <ul><li><a href="/#projects" data-match="/projects/">Projects</a></li><li class="hide-sm"><a href="/#method">Method</a></li><li><a href="/#about">About</a></li><li><a href="https://github.com/AUW160150/flybrain/tree/main/projects/connectome-atlas">Source ↗</a></li><li><a href="#" data-theme-toggle title="Switch light / dark" aria-label="Switch colour theme">◐</a></li></ul>
+</div></header>
+
+<section class="proj-head"><div class="wrap">
+  <p class="eyebrow"><span>Project 06</span><span>Explore · static report</span><span>Python · SQLite · Pillow · static HTML</span></p>
+  <h1>MaleCNS atlas: the exact graph behind the experiment</h1>
+  <p class="lead">Before trusting a null result you should be able to see the graph it was computed on. This project is a read-only inspection layer over the <a href="/projects/connectome-lm/">language experiment</a>: it verifies that the saved 512-neuron graph is what the published connectome says it is, and lets you look at it from every angle without touching the experiment's files.</p>
+  <div class="cta"><a class="btn primary" href="/atlas/">Open the static report</a><a class="btn" href="#what">What it verifies</a><a class="btn" href="https://github.com/AUW160150/flybrain/tree/main/projects/connectome-atlas">Source ↗</a></div>
+  <div class="proj-meta">
+    <div><p class="eyebrow">Saved graph</p>512 IDs · 3,061 directed pairs · 38,708 contacts</div>
+    <div><p class="eyebrow">Pre-threshold graph</p>7,405 pairs · 47,404 contacts on the same IDs</div>
+    <div><p class="eyebrow">Partner index</p>259,286 curated pairs incident to the saved IDs</div>
+    <div><p class="eyebrow">Skeletons</p>8 of 512 in native space, explicitly partial</div>
+  </div>
+</div></section>
+
+<div class="wrap proj-body">
+<div class="prose">
+  <figure style="margin-top:0"><img src="/img/atlas-G3-wiring.jpg" alt="Wiring diagram of the 512-neuron subgraph in a fixed topological layout" width="1600"><figcaption>G3 wiring: the saved 512-neuron graph in a fixed topological layout, coloured by superclass. Positions are not anatomy.</figcaption></figure>
+
+  <h2 id="what">What it verifies</h2>
+  <ul>
+    <li><strong>Identity.</strong> The graph hash <code>354ccf91…534b</code> matches the saved parent arrays and the matching published bulk product. Exact model-index and parameter-index CSV exports; zero structural weights remain among the allowed edges.</li>
+    <li><strong>Scope.</strong> The 512 neurons are one sampled neighbourhood. The whole release has 151,856,684 ordered pairs; the interface exposes separate blocked scopes (G0/G1/G2) with the exact command to populate each, rather than pretending whole-graph statistics exist.</li>
+    <li><strong>Partners.</strong> Exact incoming and outgoing partner access for each selected neuron, including partners outside the subset, from a complete raw-file scan.</li>
+    <li><strong>Architecture.</strong> Executed-source predictor diagrams, folded and unrolled, with the dense interfaces and 52,981 active parameters; untrained MLP, causal CNN and transformer references instantiated with shape and causal-prefix tests, no performance comparison.</li>
+    <li><strong>Non-interference.</strong> The experiment's environment, graph, configurations, checkpoints and corpus are protected inputs. A separate virtualenv, read-only reuse of installed packages, CPU only, one thread, lower process priority, and a receipt proving nothing in the experiment changed.</li>
+  </ul>
+  <div class="gallery">
+    <figure><img src="/img/atlas-G3-contacts.png" alt="Contact-count matrix of the 512-neuron graph"><figcaption>Contact matrix, 512 × 512, log-binned.</figcaption></figure>
+    <figure><img src="/img/atlas-native-skeletons.png" alt="Eight neuron skeletons in native coordinates"><figcaption>Eight native-space skeletons, acquired with bounded calls; 8/512 coverage stated.</figcaption></figure>
+    <figure><img src="/img/atlas-folded.png" alt="Folded diagram of the recurrent predictor"><figcaption>The predictor, folded: embedding, masked recurrent core, readout.</figcaption></figure>
+    <figure><img src="/img/atlas-selection-boundary.png" alt="Selection boundary of the 512-neuron neighbourhood"><figcaption>Selection boundary: ≈92% of the selected neurons' filtered connectivity lies outside the subset.</figcaption></figure>
+  </div>
+
+  <h2 id="blocked">What is deliberately blocked</h2>
+  <p>Learned-weight and activity overlays are not shown. Eleven completed FLY-TOPOLOGY checkpoints were copied to content-addressed snapshots, but <code>torch.load(weights_only=True)</code> rejects their NumPy RNG pickle state, and no unsafe fallback or guessed initialisation was used. The report says exactly what a safe export would need. Whole-release ingestion (64 GiB of SQLite planning, 512 MiB RSS guard) is implemented and tested on fixtures but has not been run on the production tables.</p>
+
+  <h2 id="run">Run it locally</h2>
+<pre><code>cd projects/connectome-atlas
+./viz inspect-workspace
+./viz verify-run --run-dir ../connectome-lm/runs/&lt;a completed run&gt;
+./viz ingest-subset --rss-mib 512 --max-seconds 120
+./viz build-views &amp;&amp; ./viz validate
+./viz serve --host 127.0.0.1 --port 8765        # the interactive viewer
+./viz export-neuron --scope G3 --id 10029</code></pre>
+  <p>The static report hosted here is <code>reports/current/index.html</code> with its figures; the interactive viewer, geometry and exact matrices need the local build.</p>
+
+  <div class="pager"><a href="/projects/flycodes/">← 05 Flycodes</a><a href="/projects/sugar-circuit/">07 Sugar circuit audit →</a></div>
+</div>
+<aside class="toc">
+  <p class="eyebrow">On this page</p>
+  <ol><li><a href="#what">What it verifies</a></li><li><a href="#blocked">What is blocked</a></li><li><a href="#run">Run it locally</a></li></ol>
+  <p class="eyebrow">Files</p>
+  <div class="links"><a href="/atlas/">Static report</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/connectome-atlas/README.md">README</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/connectome-atlas/docs/METHODS.md">Methods</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/connectome-atlas/docs/LIMITATIONS.md">Limitations</a><a href="https://github.com/AUW160150/flybrain/blob/main/projects/connectome-atlas/docs/ERRORS.md">Errors</a></div>
+</aside>
+</div>
+
+<footer><div class="wrap">
+  <div><p class="eyebrow">Flybrain</p><p>Hand-written HTML and CSS, one module of JavaScript for the simulation, no framework, no analytics.</p></div>
+  <div><p class="eyebrow">Data</p><ul><li>MaleCNS v1.0 — FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research. <a href="https://male-cns.janelia.org/download/">CC BY 4.0</a></li></ul></div>
+  <div><p class="eyebrow">Repositories</p><ul><li><a href="https://github.com/AUW160150/flybrain">AUW160150/flybrain</a></li><li><a href="https://github.com/prove-ai/flybrain">prove-ai/flybrain</a></li></ul></div>
+</div></footer>
+<script type="module" src="/js/site.js"></script>
+</body>
+</html>

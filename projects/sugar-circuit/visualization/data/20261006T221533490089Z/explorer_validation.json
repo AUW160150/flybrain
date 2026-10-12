@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checks": 36,
+  "scope": "Offline DOM harness tests of emitted HTML behavior; full browser layout not tested",
+  "run_id": "20261006T221533490089Z"
+}

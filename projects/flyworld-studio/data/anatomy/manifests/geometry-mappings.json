@@ -1,0 +1,386 @@
+[
+  {
+    "body_id": "10029",
+    "dataset": "male-cns:v1.0",
+    "version": "v1.0",
+    "status": "VERIFIED_BODY_GEOMETRY",
+    "geometry_kind": "NATIVE_SWC",
+    "source_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10029.swc",
+    "source_sha256": "1a03b734ad50843b66b803280c31caf6654f241132c6ece6816cbfab420666a8",
+    "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10029.swc",
+    "receipt_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10029.source.json",
+    "receipt_sha256": "f4fcdca3079be2c13c80e4f5e1cd331b6be81791807eae6630f2885179e390e6",
+    "annotation_path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "annotation_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "mapping_evidence": "Exact official v1.0 per-body URL + checksum-matched acquisition receipt + authoritative annotation bodyId",
+    "coordinate_evidence": "S-DOWNLOAD native skeletons-swc section; S-ORIENTATION",
+    "units": "8 nm",
+    "scale_to_micrometers": 0.008,
+    "orientation_status": "ORIENTATION_UNVERIFIED",
+    "orientation_labels": null,
+    "transform": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "source_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/1a03b734ad50843b66b803280c31caf6654f241132c6ece6816cbfab420666a8.swc",
+    "receipt_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/f4fcdca3079be2c13c80e4f5e1cd331b6be81791807eae6630f2885179e390e6.json"
+  },
+  {
+    "body_id": "10053",
+    "dataset": "male-cns:v1.0",
+    "version": "v1.0",
+    "status": "VERIFIED_BODY_GEOMETRY",
+    "geometry_kind": "NATIVE_SWC",
+    "source_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10053.swc",
+    "source_sha256": "7edc3e057bcb0ff65effe6321b514249b9de4007717993ed04dd56914a1a0018",
+    "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10053.swc",
+    "receipt_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10053.source.json",
+    "receipt_sha256": "b836bc06565917030782ce885a8b54ae6c1bb8bf735f0c923637c85605d52433",
+    "annotation_path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "annotation_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "mapping_evidence": "Exact official v1.0 per-body URL + checksum-matched acquisition receipt + authoritative annotation bodyId",
+    "coordinate_evidence": "S-DOWNLOAD native skeletons-swc section; S-ORIENTATION",
+    "units": "8 nm",
+    "scale_to_micrometers": 0.008,
+    "orientation_status": "ORIENTATION_UNVERIFIED",
+    "orientation_labels": null,
+    "transform": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "source_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/7edc3e057bcb0ff65effe6321b514249b9de4007717993ed04dd56914a1a0018.swc",
+    "receipt_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/b836bc06565917030782ce885a8b54ae6c1bb8bf735f0c923637c85605d52433.json"
+  },
+  {
+    "body_id": "10093",
+    "dataset": "male-cns:v1.0",
+    "version": "v1.0",
+    "status": "VERIFIED_BODY_GEOMETRY",
+    "geometry_kind": "NATIVE_SWC",
+    "source_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10093.swc",
+    "source_sha256": "7a1b5efb8be358dc0cafadaae248514bc6495408e5f6c62132b25b8ef62ce924",
+    "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10093.swc",
+    "receipt_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10093.source.json",
+    "receipt_sha256": "0f223f27162fe9c1baf39937010cd5a7c155949f719f066b92b5c9dbbf1d8879",
+    "annotation_path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "annotation_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "mapping_evidence": "Exact official v1.0 per-body URL + checksum-matched acquisition receipt + authoritative annotation bodyId",
+    "coordinate_evidence": "S-DOWNLOAD native skeletons-swc section; S-ORIENTATION",
+    "units": "8 nm",
+    "scale_to_micrometers": 0.008,
+    "orientation_status": "ORIENTATION_UNVERIFIED",
+    "orientation_labels": null,
+    "transform": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "source_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/7a1b5efb8be358dc0cafadaae248514bc6495408e5f6c62132b25b8ef62ce924.swc",
+    "receipt_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/0f223f27162fe9c1baf39937010cd5a7c155949f719f066b92b5c9dbbf1d8879.json"
+  },
+  {
+    "body_id": "10807",
+    "dataset": "male-cns:v1.0",
+    "version": "v1.0",
+    "status": "VERIFIED_BODY_GEOMETRY",
+    "geometry_kind": "NATIVE_SWC",
+    "source_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10807.swc",
+    "source_sha256": "41e96979c7c8b0e5e08a2de424cabb15caf9798e989087462ce07ddc09d275ab",
+    "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10807.swc",
+    "receipt_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/10807.source.json",
+    "receipt_sha256": "ce2a4c1716c33a057b759b9ebfab9990540f3a3af8791781bdc3822f86a8d745",
+    "annotation_path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "annotation_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "mapping_evidence": "Exact official v1.0 per-body URL + checksum-matched acquisition receipt + authoritative annotation bodyId",
+    "coordinate_evidence": "S-DOWNLOAD native skeletons-swc section; S-ORIENTATION",
+    "units": "8 nm",
+    "scale_to_micrometers": 0.008,
+    "orientation_status": "ORIENTATION_UNVERIFIED",
+    "orientation_labels": null,
+    "transform": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "source_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/41e96979c7c8b0e5e08a2de424cabb15caf9798e989087462ce07ddc09d275ab.swc",
+    "receipt_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/ce2a4c1716c33a057b759b9ebfab9990540f3a3af8791781bdc3822f86a8d745.json"
+  },
+  {
+    "body_id": "11029",
+    "dataset": "male-cns:v1.0",
+    "version": "v1.0",
+    "status": "VERIFIED_BODY_GEOMETRY",
+    "geometry_kind": "NATIVE_SWC",
+    "source_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/11029.swc",
+    "source_sha256": "2a86557a73807402cca89b1954de4070deec06210589bc916306da421ae1b48f",
+    "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/11029.swc",
+    "receipt_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/11029.source.json",
+    "receipt_sha256": "de190a9852d0fda5a45e711ef5dbb123687992a31b0e1c9af05e842f6c60aee7",
+    "annotation_path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "annotation_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "mapping_evidence": "Exact official v1.0 per-body URL + checksum-matched acquisition receipt + authoritative annotation bodyId",
+    "coordinate_evidence": "S-DOWNLOAD native skeletons-swc section; S-ORIENTATION",
+    "units": "8 nm",
+    "scale_to_micrometers": 0.008,
+    "orientation_status": "ORIENTATION_UNVERIFIED",
+    "orientation_labels": null,
+    "transform": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "source_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/2a86557a73807402cca89b1954de4070deec06210589bc916306da421ae1b48f.swc",
+    "receipt_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/de190a9852d0fda5a45e711ef5dbb123687992a31b0e1c9af05e842f6c60aee7.json"
+  },
+  {
+    "body_id": "11369",
+    "dataset": "male-cns:v1.0",
+    "version": "v1.0",
+    "status": "VERIFIED_BODY_GEOMETRY",
+    "geometry_kind": "NATIVE_SWC",
+    "source_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/11369.swc",
+    "source_sha256": "10cb3852a833bec4c7e4cecd43eeb6cbb50d83e05e5c6882a04418f657f9802d",
+    "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/11369.swc",
+    "receipt_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/11369.source.json",
+    "receipt_sha256": "8282d4758c140f167370a00422e7a648426751c07a104dc7b35fcc34d02652e1",
+    "annotation_path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "annotation_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "mapping_evidence": "Exact official v1.0 per-body URL + checksum-matched acquisition receipt + authoritative annotation bodyId",
+    "coordinate_evidence": "S-DOWNLOAD native skeletons-swc section; S-ORIENTATION",
+    "units": "8 nm",
+    "scale_to_micrometers": 0.008,
+    "orientation_status": "ORIENTATION_UNVERIFIED",
+    "orientation_labels": null,
+    "transform": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "source_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/10cb3852a833bec4c7e4cecd43eeb6cbb50d83e05e5c6882a04418f657f9802d.swc",
+    "receipt_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/8282d4758c140f167370a00422e7a648426751c07a104dc7b35fcc34d02652e1.json"
+  },
+  {
+    "body_id": "12638",
+    "dataset": "male-cns:v1.0",
+    "version": "v1.0",
+    "status": "VERIFIED_BODY_GEOMETRY",
+    "geometry_kind": "NATIVE_SWC",
+    "source_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/12638.swc",
+    "source_sha256": "e215bd06c6338e809cf7e4aca18f211b7b8a66ad1a6236cd9ad89468f894698b",
+    "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/12638.swc",
+    "receipt_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/12638.source.json",
+    "receipt_sha256": "6534f19a2e2a0a3c1b63d99dd7b8a0b2748a735b59f7499893f455d2a27377f1",
+    "annotation_path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "annotation_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "mapping_evidence": "Exact official v1.0 per-body URL + checksum-matched acquisition receipt + authoritative annotation bodyId",
+    "coordinate_evidence": "S-DOWNLOAD native skeletons-swc section; S-ORIENTATION",
+    "units": "8 nm",
+    "scale_to_micrometers": 0.008,
+    "orientation_status": "ORIENTATION_UNVERIFIED",
+    "orientation_labels": null,
+    "transform": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "source_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/e215bd06c6338e809cf7e4aca18f211b7b8a66ad1a6236cd9ad89468f894698b.swc",
+    "receipt_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/6534f19a2e2a0a3c1b63d99dd7b8a0b2748a735b59f7499893f455d2a27377f1.json"
+  },
+  {
+    "body_id": "12912",
+    "dataset": "male-cns:v1.0",
+    "version": "v1.0",
+    "status": "VERIFIED_BODY_GEOMETRY",
+    "geometry_kind": "NATIVE_SWC",
+    "source_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/12912.swc",
+    "source_sha256": "1791f4d1981460903e99c263e74a57ca97fd00162d92f6a9c9eeb5d13e18c838",
+    "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/12912.swc",
+    "receipt_path": "/Users/Rodela1/Code/Flybrain/visualization/cache/morphology/12912.source.json",
+    "receipt_sha256": "f8f37ca1cf43d47bfb9c196d012f26bec16be0a2b948ce982ba572ee213aa0ee",
+    "annotation_path": "/Users/Rodela1/Code/Flybrain/Sugar/malecns_sugar_circuit_v1/data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "annotation_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "mapping_evidence": "Exact official v1.0 per-body URL + checksum-matched acquisition receipt + authoritative annotation bodyId",
+    "coordinate_evidence": "S-DOWNLOAD native skeletons-swc section; S-ORIENTATION",
+    "units": "8 nm",
+    "scale_to_micrometers": 0.008,
+    "orientation_status": "ORIENTATION_UNVERIFIED",
+    "orientation_labels": null,
+    "transform": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "source_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/1791f4d1981460903e99c263e74a57ca97fd00162d92f6a9c9eeb5d13e18c838.swc",
+    "receipt_cache_path": "/Users/Rodela1/Code/Flybrain/sandbox/flyworld/data/anatomy/raw_refs/f8f37ca1cf43d47bfb9c196d012f26bec16be0a2b948ce982ba572ee213aa0ee.json"
+  }
+]

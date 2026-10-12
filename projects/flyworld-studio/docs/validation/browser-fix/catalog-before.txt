@@ -1,0 +1,85 @@
+
+> flyworld@0.3.0 test
+> vitest run tests/catalog.test.ts
+
+
+ RUN  v3.2.7 /Users/Rodela1/Code/Flybrain/sandbox/flyworld
+
+ ❯ tests/catalog.test.ts (5 tests | 1 failed) 4ms
+   × the actual browser package catalog > accepts all eight published entries, including LB3b and LB3c filenames 3ms
+     → [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^malecns-[a-z-]+\\.json$/",
+    "path": [
+      "packages",
+      3,
+      "file"
+    ],
+    "message": "Invalid string: must match pattern /^malecns-[a-z-]+\\.json$/"
+  },
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^malecns-[a-z-]+\\.json$/",
+    "path": [
+      "packages",
+      4,
+      "file"
+    ],
+    "message": "Invalid string: must match pattern /^malecns-[a-z-]+\\.json$/"
+  }
+]
+   ✓ the actual browser package catalog > still refuses nonlocal filename ../malecns-focused.json 0ms
+   ✓ the actual browser package catalog > still refuses nonlocal filename https://example.com/malecns-focused.json 0ms
+   ✓ the actual browser package catalog > still refuses nonlocal filename malecns-focused.json?x=1 0ms
+   ✓ the actual browser package catalog > still refuses nonlocal filename malecns-%2e%2e.json 0ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/catalog.test.ts > the actual browser package catalog > accepts all eight published entries, including LB3b and LB3c filenames
+ZodError: [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^malecns-[a-z-]+\\.json$/",
+    "path": [
+      "packages",
+      3,
+      "file"
+    ],
+    "message": "Invalid string: must match pattern /^malecns-[a-z-]+\\.json$/"
+  },
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^malecns-[a-z-]+\\.json$/",
+    "path": [
+      "packages",
+      4,
+      "file"
+    ],
+    "message": "Invalid string: must match pattern /^malecns-[a-z-]+\\.json$/"
+  }
+]
+ ❯ tests/catalog.test.ts:8:35
+      6| describe('the actual browser package catalog', () => {
+      7|   it('accepts all eight published entries, including LB3b and LB3c fil…
+      8|     const catalog = catalogSchema.parse(manifest);
+       |                                   ^
+      9|     expect(catalog.packages).toHaveLength(8);
+     10|     expect(catalog.packages.map(entry => entry.file)).toEqual(expect.a…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 4 passed (5)
+   Start at  12:13:15
+   Duration  170ms (transform 19ms, setup 0ms, collect 54ms, tests 4ms, environment 0ms, prepare 28ms)
+

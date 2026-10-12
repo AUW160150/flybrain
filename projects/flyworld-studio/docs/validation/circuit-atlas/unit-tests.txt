@@ -1,0 +1,24 @@
+
+> flyworld@0.3.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /Users/Rodela1/Code/Flybrain/sandbox/flyworld
+
+ ✓ tests/contracts.test.ts (27 tests) 12ms
+ ✓ tests/keyboard.test.ts (18 tests) 14ms
+ ✓ tests/behaviors.test.ts (4 tests) 16ms
+ ✓ tests/interactive-mvp.test.ts (29 tests) 24ms
+ ✓ tests/state.test.ts (30 tests) 23ms
+ ✓ tests/locomotion.test.ts (19 tests) 16ms
+ ✓ tests/catalog.test.ts (5 tests) 3ms
+ ✓ tests/ui-shell.test.ts (3 tests) 9ms
+ ✓ tests/realdata.test.ts (42 tests) 455ms
+ ✓ tests/connectome.test.ts (22 tests) 1834ms
+   ✓ pinned real catalogue and recovered official anatomy > validates all four official reference surfaces in the same native frame  1581ms
+
+ Test Files  10 passed (10)
+      Tests  199 passed (199)
+   Start at  18:38:49
+   Duration  2.08s (transform 363ms, setup 0ms, collect 1.67s, tests 2.41s, environment 1ms, prepare 397ms)
+

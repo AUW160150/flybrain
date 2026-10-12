@@ -1,0 +1,13 @@
+{
+  "browserScenariosPassed": 8,
+  "browserScenariosFailed": 1,
+  "controlsAcceptanceStepsPassed": 13,
+  "pageErrors": [],
+  "remainingFailure": "documentElement.scrollWidth > window.innerWidth at 390x844 in anatomy view",
+  "observedCanvasBounds": {
+    "left": 39,
+    "right": 351,
+    "width": 312
+  },
+  "originalTraceAndScreenshot": ".cache/mobile-overflow-user-run"
+}

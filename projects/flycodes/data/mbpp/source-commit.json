@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+    "node_id": "C_kwDOCQmIhdoAKGY4MjA0NmJhNWFhYmJiYjQyN2RiZmQzOGEyNTRkMjZiZmYwOGI1MzM",
+    "commit": {
+      "author": {
+        "name": "Alex Polozov",
+        "email": "polozov@google.com",
+        "date": "2022-03-31T16:10:43Z"
+      },
+      "committer": {
+        "name": "Copybara-Service",
+        "email": "copybara-worker@google.com",
+        "date": "2022-03-31T16:16:34Z"
+      },
+      "message": "Upgrade MBPP to avoid dependency on Python 3.7-specific behavior\n\nPiperOrigin-RevId: 438583102",
+      "tree": {
+        "sha": "b3669cebc61a25796cd184167a4a967595a49b34",
+        "url": "https://api.github.com/repos/google-research/google-research/git/trees/b3669cebc61a25796cd184167a4a967595a49b34"
+      },
+      "url": "https://api.github.com/repos/google-research/google-research/git/commits/f82046ba5aabbbb427dbfd38a254d26bff08b533",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/google-research/google-research/commits/f82046ba5aabbbb427dbfd38a254d26bff08b533",
+    "html_url": "https://github.com/google-research/google-research/commit/f82046ba5aabbbb427dbfd38a254d26bff08b533",
+    "comments_url": "https://api.github.com/repos/google-research/google-research/commits/f82046ba5aabbbb427dbfd38a254d26bff08b533/comments",
+    "author": {
+      "login": "alexpolozov",
+      "id": 852687,
+      "node_id": "MDQ6VXNlcjg1MjY4Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/852687?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexpolozov",
+      "html_url": "https://github.com/alexpolozov",
+      "followers_url": "https://api.github.com/users/alexpolozov/followers",
+      "following_url": "https://api.github.com/users/alexpolozov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexpolozov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexpolozov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexpolozov/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexpolozov/orgs",
+      "repos_url": "https://api.github.com/users/alexpolozov/repos",
+      "events_url": "https://api.github.com/users/alexpolozov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexpolozov/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "copybara-github",
+      "id": 32201506,
+      "node_id": "MDQ6VXNlcjMyMjAxNTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32201506?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/copybara-github",
+      "html_url": "https://github.com/copybara-github",
+      "followers_url": "https://api.github.com/users/copybara-github/followers",
+      "following_url": "https://api.github.com/users/copybara-github/following{/other_user}",
+      "gists_url": "https://api.github.com/users/copybara-github/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/copybara-github/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/copybara-github/subscriptions",
+      "organizations_url": "https://api.github.com/users/copybara-github/orgs",
+      "repos_url": "https://api.github.com/users/copybara-github/repos",
+      "events_url": "https://api.github.com/users/copybara-github/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/copybara-github/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5bf4d9bb4a03fc618c897ad4e90b7454c08dc76d",
+        "url": "https://api.github.com/repos/google-research/google-research/commits/5bf4d9bb4a03fc618c897ad4e90b7454c08dc76d",
+        "html_url": "https://github.com/google-research/google-research/commit/5bf4d9bb4a03fc618c897ad4e90b7454c08dc76d"
+      }
+    ]
+  }
+]

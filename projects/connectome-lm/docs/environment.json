@@ -1,0 +1,23 @@
+{
+  "cpus": 10,
+  "cuda_available": false,
+  "disk_free_bytes": 695729287168,
+  "git_revision": null,
+  "machine": "arm64",
+  "mps_available": false,
+  "os": "macOS-26.6.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.12.13",
+  "ram_bytes": 34359738368,
+  "ram_note": null,
+  "utc": "2026-10-05T17:06:45.430556+00:00",
+  "versions": {
+    "matplotlib": "3.11.2",
+    "networkx": "3.7",
+    "numpy": "2.5.3",
+    "pyarrow": "25.0.1",
+    "pytest": "9.1.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.0"
+  }
+}

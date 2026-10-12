@@ -1,0 +1,137 @@
+{
+  "kind": "AUTOMATED_BROWSER_SEQUENCE",
+  "humanVisualReview": "PENDING",
+  "results": [
+    {
+      "name": "1. Start in Follow mode",
+      "status": "PASS",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "yaw": 0
+      }
+    },
+    {
+      "name": "2. Click the 3D viewport",
+      "status": "PASS",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "yaw": 0
+      }
+    },
+    {
+      "name": "3. Hold W for 2 seconds",
+      "status": "PASS",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "z": 2.625,
+        "yaw": 0
+      }
+    },
+    {
+      "name": "4. Confirm advancing position; capture rendered scene",
+      "status": "PASS",
+      "pose": {
+        "x": 0,
+        "y": 0,
+        "z": 3.394230000000002,
+        "yaw": 0
+      }
+    },
+    {
+      "name": "5. Hold A while still holding W",
+      "status": "PASS",
+      "pose": {
+        "x": 0.22477509213175784,
+        "y": 0,
+        "z": 4.129563279672148,
+        "yaw": 0.6665999999999985
+      }
+    },
+    {
+      "name": "6. Confirm curved left path",
+      "status": "PASS",
+      "pose": {
+        "x": 0.6370560260038332,
+        "y": 0,
+        "z": 4.445719700763508,
+        "yaw": 1.1665999999999985
+      }
+    },
+    {
+      "name": "7. Repeat with ArrowUp + ArrowRight",
+      "status": "PASS",
+      "pose": {
+        "x": 1.210525389309673,
+        "y": 0,
+        "z": 5.051263979168028,
+        "yaw": 0.34979999999999933
+      }
+    },
+    {
+      "name": "8. Walk into the tree",
+      "status": "PASS",
+      "pose": {
+        "x": -1.73484715733043,
+        "y": 0,
+        "z": 3.5201028514360364,
+        "yaw": -2.0502000000000016
+      }
+    },
+    {
+      "name": "9. Confirm collision prevents penetration",
+      "status": "PASS",
+      "pose": {
+        "x": -1.7349248555762702,
+        "y": 0,
+        "z": 3.5200624597599957,
+        "yaw": -2.0502000000000016
+      }
+    },
+    {
+      "name": "10. Turn away and move again",
+      "status": "PASS",
+      "pose": {
+        "x": -1.7526183042831252,
+        "y": 0,
+        "z": 5.056595703042627,
+        "yaw": 0.1499999999999998
+      }
+    },
+    {
+      "name": "11. Enter Brain mode",
+      "status": "PASS",
+      "pose": {
+        "x": -1.7526183042831252,
+        "y": 0,
+        "z": 5.056595703042627,
+        "yaw": 0.1499999999999998
+      }
+    },
+    {
+      "name": "12. Confirm locomotion pauses",
+      "status": "PASS",
+      "pose": {
+        "x": -1.7526183042831252,
+        "y": 0,
+        "z": 5.056595703042627,
+        "yaw": 0.1499999999999998
+      }
+    },
+    {
+      "name": "13. Return to Follow mode and move again",
+      "status": "PASS",
+      "pose": {
+        "x": -1.6270902730053012,
+        "y": 0,
+        "z": 5.8871634085089,
+        "yaw": 0.1499999999999998
+      }
+    }
+  ],
+  "pageErrors": []
+}

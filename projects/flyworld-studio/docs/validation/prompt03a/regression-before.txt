@@ -1,0 +1,94 @@
+
+> flyworld@0.3.0 test
+> vitest run tests/locomotion.test.ts
+
+
+ RUN  v3.2.7 /Users/Rodela1/Code/Flybrain/sandbox/flyworld
+
+ ❯ tests/locomotion.test.ts (6 tests | 4 failed) 10ms
+   ✓ holding W advances continuously from one keydown without browser repeats 2ms
+   × ArrowUp moves exactly like W 4ms
+     → expected { heading: +0, x: +0, z: +0, y: +0 } to deeply equal { heading: +0, x: +0, …(2) }
+   × ArrowDown moves backward 1ms
+     → expected +0 to be close to -2.1, received difference is 2.1, but expected 0.005
+   × W remains usable with Shift held 1ms
+     → expected 0 to be greater than 2
+   × world boundary contact is reported, with recovery after turning away 1ms
+     → expected false to be true // Object.is equality
+   ✓ tree blocks penetration but never permanently disables motion 1ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/locomotion.test.ts > ArrowUp moves exactly like W
+AssertionError: expected { heading: +0, x: +0, z: +0, y: +0 } to deeply equal { heading: +0, x: +0, …(2) }
+
+- Expected
++ Received
+
+  {
+    "heading": 0,
+    "x": 0,
+    "y": 0,
+-   "z": 2.0999999999999988,
++   "z": 0,
+  }
+
+ ❯ tests/locomotion.test.ts:24:52
+     22|   down('KeyW'); advance(); const w = state().pose;
+     23|   useStudio.setState(useStudio.getInitialState(), true);
+     24|   down('ArrowUp'); advance(); expect(state().pose).toEqual(w);
+       |                                                    ^
+     25| });
+     26| it('ArrowDown moves backward', () => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  tests/locomotion.test.ts > ArrowDown moves backward
+AssertionError: expected +0 to be close to -2.1, received difference is 2.1, but expected 0.005
+ ❯ tests/locomotion.test.ts:27:56
+     25| });
+     26| it('ArrowDown moves backward', () => {
+     27|   down('ArrowDown'); advance(); expect(state().pose.z).toBeCloseTo(-2.…
+       |                                                        ^
+     28| });
+     29| it('W remains usable with Shift held', () => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  tests/locomotion.test.ts > W remains usable with Shift held
+AssertionError: expected 0 to be greater than 2
+ ❯ tests/locomotion.test.ts:30:57
+     28| });
+     29| it('W remains usable with Shift held', () => {
+     30|   down('KeyW', true); advance(); expect(state().pose.z).toBeGreaterTha…
+       |                                                         ^
+     31| });
+     32| it('world boundary contact is reported, with recovery after turning aw…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  tests/locomotion.test.ts > world boundary contact is reported, with recovery after turning away
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ tests/locomotion.test.ts:34:53
+     32| it('world boundary contact is reported, with recovery after turning aw…
+     33|   useStudio.setState({ pose: { x: 0, y: 0, z: WORLD_LIMIT, heading: 0 …
+     34|   down('KeyW'); advance(); expect(state().collided).toBe(true);
+       |                                                     ^
+     35|   expect(state().pose.z).toBe(WORLD_LIMIT);
+     36|   state().releaseMotion(); down('KeyS'); advance(); expect(state().pos…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed | 2 passed (6)
+   Start at  10:56:06
+   Duration  190ms (transform 31ms, setup 0ms, collect 62ms, tests 10ms, environment 0ms, prepare 26ms)
+

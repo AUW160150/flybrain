@@ -1,0 +1,30 @@
+{
+  "time": "2026-10-09T16:39:10.574423+00:00",
+  "tests": "40 passed in 8.97s",
+  "javascript": "node --check web/app.js passed",
+  "core_sources_match_snapshot": true,
+  "mbpp_source": {
+    "verified_at": "2026-10-09T16:35:31.435532+00:00",
+    "sha256": "ccf64ceae9c5403bf50a044cb6d505bfd2a2963ee58338ba268fd65beab92a9f",
+    "commit": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+    "immutable_url": "https://raw.githubusercontent.com/google-research/google-research/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/mbpp.jsonl",
+    "matched": true
+  },
+  "source_note": "Training core unchanged; UI/CLI integration and separately labeled post-run evaluation audit added after source capture",
+  "browser_qa": "not re-attempted: managed sandbox previously denied browser launch",
+  "hosted_llm": "deferred by user; no calls",
+  "verified_at": "2026-10-09T16:47:50.752719+00:00",
+  "run": "curriculum-20261009T163310",
+  "artifact_hashes_checked": 66,
+  "artifact_integrity": "passed",
+  "source_snapshot_integrity": "passed",
+  "evaluation_freeze": "passed",
+  "graph_integrity": "passed",
+  "interactive_backend_exact_reproduction": true,
+  "reproduced_problem": "mbpp-431",
+  "test_audit_integrity": "passed",
+  "test_audit_preserves_original_candidates": true,
+  "snapshot_sha256": "ed4a26597b53c878f28dc5de2e394bd11c8ace5970830b392f1ddc336afaf3a3",
+  "snapshot_verified_at": "2026-10-09T16:49:10.424879+00:00",
+  "dashboard_integration": "4 models, 62 problems, audited scores and linked report verified"
+}

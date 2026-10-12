@@ -1,0 +1,15 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.cache/
+.DS_Store
+*.log
+.env*
+__pycache__/
+*.py[cod]
+data/connectome/*.sqlite
+data/connectome/cache/
+data/connectome/recovery/*.download
+data/connectome/recovery/*.headers
+data/connectome/recovery/requests.*

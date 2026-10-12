@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+project_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if [ -x "$project_dir/.venv/bin/python" ]; then
+    project_python="$project_dir/.venv/bin/python"
+elif [ -x "$project_dir/../.venv/bin/python" ]; then
+    project_python="$project_dir/../.venv/bin/python"
+else
+    project_python=python3
+fi
+export PYTHONPATH="$project_dir/src${PYTHONPATH:+:$PYTHONPATH}"
+export MPLCONFIGDIR="${MPLCONFIGDIR:-/tmp/fly-lm-matplotlib}"
+exec "$project_python" -m fly_connectome_lm.cli "$@"

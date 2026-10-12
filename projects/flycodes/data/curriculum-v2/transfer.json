@@ -1,0 +1,1800 @@
+[
+  {
+    "id": "curr-add-each--2",
+    "family": "add-each",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Add -2 to every integer in nums. Return the new list.",
+    "solution": "def solve(nums):\n    return [x + -2 for x in nums]\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": [
+          -8,
+          -3,
+          -2,
+          0,
+          5
+        ]
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": [
+          1,
+          1,
+          -4
+        ]
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          -2
+        ]
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": [
+          8,
+          -12,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curr-multiply-each--2",
+    "family": "multiply-each",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Multiply every integer in nums by -2. Return the new list.",
+    "solution": "def solve(nums):\n    return [x * -2 for x in nums]\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": [
+          12,
+          2,
+          0,
+          -4,
+          -14
+        ]
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": [
+          -6,
+          -6,
+          4
+        ]
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": [
+          -20,
+          20,
+          -8
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curr-keep-above--2",
+    "family": "keep-above",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Keep only integers strictly greater than -2, in original order.",
+    "solution": "def solve(nums):\n    return [x for x in nums if x > -2]\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": [
+          -1,
+          0,
+          2,
+          7
+        ]
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": [
+          3,
+          3
+        ]
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": [
+          10,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curr-keep-below--2",
+    "family": "keep-below",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Keep only integers strictly less than -2, in original order.",
+    "solution": "def solve(nums):\n    return [x for x in nums if x < -2]\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": [
+          -6
+        ]
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": [
+          -10
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curr-count-above--2",
+    "family": "count-above",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Count the integers strictly greater than -2.",
+    "solution": "def solve(nums):\n    return sum(x > -2 for x in nums)\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 2
+      }
+    ]
+  },
+  {
+    "id": "curr-sum-above--2",
+    "family": "sum-above",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Sum only the integers strictly greater than -2.",
+    "solution": "def solve(nums):\n    return sum(x for x in nums if x > -2)\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 8
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 6
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 14
+      }
+    ]
+  },
+  {
+    "id": "curr-contains-number--2",
+    "family": "contains-number",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Return whether nums contains the integer -2.",
+    "solution": "def solve(nums):\n    return -2 in nums\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": false
+      }
+    ]
+  },
+  {
+    "id": "curr-count-number--2",
+    "family": "count-number",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Count how often the integer -2 occurs in nums.",
+    "solution": "def solve(nums):\n    return nums.count(-2)\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 0
+      }
+    ]
+  },
+  {
+    "id": "curr-offset-sum--2",
+    "family": "offset-sum",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Add -2 to the sum of all numbers in nums.",
+    "solution": "def solve(nums):\n    return sum(nums) + -2\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": -2
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": -2
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 2
+      }
+    ]
+  },
+  {
+    "id": "curr-offset-length--2",
+    "family": "offset-length",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Add -2 to the number of elements in nums.",
+    "solution": "def solve(nums):\n    return len(nums) + -2\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": -2
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": -1
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 1
+      }
+    ]
+  },
+  {
+    "id": "curr-add-each-6",
+    "family": "add-each",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Add 6 to every integer in nums. Return the new list.",
+    "solution": "def solve(nums):\n    return [x + 6 for x in nums]\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": [
+          0,
+          5,
+          6,
+          8,
+          13
+        ]
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": [
+          9,
+          9,
+          4
+        ]
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          6
+        ]
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": [
+          16,
+          -4,
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curr-multiply-each-6",
+    "family": "multiply-each",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Multiply every integer in nums by 6. Return the new list.",
+    "solution": "def solve(nums):\n    return [x * 6 for x in nums]\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": [
+          -36,
+          -6,
+          0,
+          12,
+          42
+        ]
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": [
+          18,
+          18,
+          -12
+        ]
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": [
+          60,
+          -60,
+          24
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curr-keep-above-6",
+    "family": "keep-above",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Keep only integers strictly greater than 6, in original order.",
+    "solution": "def solve(nums):\n    return [x for x in nums if x > 6]\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": [
+          7
+        ]
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": [
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curr-keep-below-6",
+    "family": "keep-below",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Keep only integers strictly less than 6, in original order.",
+    "solution": "def solve(nums):\n    return [x for x in nums if x < 6]\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": [
+          -6,
+          -1,
+          0,
+          2
+        ]
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": [
+          3,
+          3,
+          -2
+        ]
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": [
+          -10,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curr-count-above-6",
+    "family": "count-above",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Count the integers strictly greater than 6.",
+    "solution": "def solve(nums):\n    return sum(x > 6 for x in nums)\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 1
+      }
+    ]
+  },
+  {
+    "id": "curr-sum-above-6",
+    "family": "sum-above",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Sum only the integers strictly greater than 6.",
+    "solution": "def solve(nums):\n    return sum(x for x in nums if x > 6)\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 7
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 10
+      }
+    ]
+  },
+  {
+    "id": "curr-contains-number-6",
+    "family": "contains-number",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Return whether nums contains the integer 6.",
+    "solution": "def solve(nums):\n    return 6 in nums\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": false
+      }
+    ]
+  },
+  {
+    "id": "curr-count-number-6",
+    "family": "count-number",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Count how often the integer 6 occurs in nums.",
+    "solution": "def solve(nums):\n    return nums.count(6)\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 0
+      }
+    ]
+  },
+  {
+    "id": "curr-offset-sum-6",
+    "family": "offset-sum",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Add 6 to the sum of all numbers in nums.",
+    "solution": "def solve(nums):\n    return sum(nums) + 6\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 8
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 6
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 10
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 6
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 10
+      }
+    ]
+  },
+  {
+    "id": "curr-offset-length-6",
+    "family": "offset-length",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Add 6 to the number of elements in nums.",
+    "solution": "def solve(nums):\n    return len(nums) + 6\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 11
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 6
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 9
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 7
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 9
+      }
+    ]
+  },
+  {
+    "id": "curr-add-each-9",
+    "family": "add-each",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Add 9 to every integer in nums. Return the new list.",
+    "solution": "def solve(nums):\n    return [x + 9 for x in nums]\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": [
+          3,
+          8,
+          9,
+          11,
+          16
+        ]
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": [
+          12,
+          12,
+          7
+        ]
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          9
+        ]
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": [
+          19,
+          -1,
+          13
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curr-multiply-each-9",
+    "family": "multiply-each",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Multiply every integer in nums by 9. Return the new list.",
+    "solution": "def solve(nums):\n    return [x * 9 for x in nums]\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": [
+          -54,
+          -9,
+          0,
+          18,
+          63
+        ]
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": [
+          27,
+          27,
+          -18
+        ]
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": [
+          90,
+          -90,
+          36
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curr-keep-above-9",
+    "family": "keep-above",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Keep only integers strictly greater than 9, in original order.",
+    "solution": "def solve(nums):\n    return [x for x in nums if x > 9]\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": [
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curr-keep-below-9",
+    "family": "keep-below",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Keep only integers strictly less than 9, in original order.",
+    "solution": "def solve(nums):\n    return [x for x in nums if x < 9]\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": [
+          -6,
+          -1,
+          0,
+          2,
+          7
+        ]
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": [
+          3,
+          3,
+          -2
+        ]
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": [
+          -10,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curr-count-above-9",
+    "family": "count-above",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Count the integers strictly greater than 9.",
+    "solution": "def solve(nums):\n    return sum(x > 9 for x in nums)\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 1
+      }
+    ]
+  },
+  {
+    "id": "curr-sum-above-9",
+    "family": "sum-above",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Sum only the integers strictly greater than 9.",
+    "solution": "def solve(nums):\n    return sum(x for x in nums if x > 9)\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 10
+      }
+    ]
+  },
+  {
+    "id": "curr-contains-number-9",
+    "family": "contains-number",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Return whether nums contains the integer 9.",
+    "solution": "def solve(nums):\n    return 9 in nums\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": false
+      }
+    ]
+  },
+  {
+    "id": "curr-count-number-9",
+    "family": "count-number",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Count how often the integer 9 occurs in nums.",
+    "solution": "def solve(nums):\n    return nums.count(9)\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 0
+      }
+    ]
+  },
+  {
+    "id": "curr-offset-sum-9",
+    "family": "offset-sum",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Add 9 to the sum of all numbers in nums.",
+    "solution": "def solve(nums):\n    return sum(nums) + 9\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 11
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 9
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 13
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 9
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 13
+      }
+    ]
+  },
+  {
+    "id": "curr-offset-length-9",
+    "family": "offset-length",
+    "source": "authored_parameter_curriculum",
+    "statement": "solve(nums): Add 9 to the number of elements in nums.",
+    "solution": "def solve(nums):\n    return len(nums) + 9\n",
+    "cases": [
+      {
+        "args": [
+          [
+            -6,
+            -1,
+            0,
+            2,
+            7
+          ]
+        ],
+        "expected": 14
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 9
+      },
+      {
+        "args": [
+          [
+            3,
+            3,
+            -2
+          ]
+        ],
+        "expected": 12
+      },
+      {
+        "args": [
+          [
+            0
+          ]
+        ],
+        "expected": 10
+      },
+      {
+        "args": [
+          [
+            10,
+            -10,
+            4
+          ]
+        ],
+        "expected": 12
+      }
+    ]
+  }
+]
