@@ -2,6 +2,8 @@
 
 Seven experiments on one fly connectome, MaleCNS v1.0, and the site that presents them.
 
+**Live site: https://flybrain-q2h5.onrender.com/**
+
 The question behind all of them: what is a complete, synapse-level wiring diagram of a nervous system actually good for when you treat it as an engineering artifact? Four answers were tried: as a game engine (FlyWorld, FlyWorld Studio), as a sensory front end (FlyVision), as an inductive bias for learning (connectome language model, Flycodes), and as a thing to be audited (MaleCNS atlas, sugar circuit audit). Two of the learning experiments came out as null results; they are reported as measured.
 
 Contents
@@ -223,12 +225,13 @@ render.yaml      Render Blueprint (static site)
 
 ## Build and run locally
 
+The site is deployed at https://flybrain-q2h5.onrender.com/ (Render static site; every push to `main` rebuilds it in a few minutes). To build it yourself:
+
 ```sh
 bash site/build.sh                     # needs Node >= 22.18 (node:sqlite) and npm; python not required
-cd site/public && python3 -m http.server 8787
 ```
 
-Open http://127.0.0.1:8787. `site/build.sh` copies `site/src`, builds the studio with `FLYWORLD_BASE=/flyworld/`, and copies the three static explorers into place. Each project's own README covers running it from source.
+Serve `site/public` with any static file server. `site/build.sh` copies `site/src`, builds the studio with `FLYWORLD_BASE=/flyworld/`, and copies the three static explorers into place. Each project's own README covers running it from source.
 
 ## Data
 
