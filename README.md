@@ -40,7 +40,9 @@ Open http://127.0.0.1:8787. `site/build.sh` copies `site/src`, builds the studio
 
 ## Deploy
 
-Render: **New → Blueprint** on this repository, or **New → Static Site** with build command `bash site/build.sh`, publish directory `site/public`, and `NODE_VERSION=22.20.0`. Nothing else is needed; there is no server and no environment secret.
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/AUW160150/flybrain)
+
+Render reads `render.yaml` (a static site: build `bash site/build.sh`, publish `site/public`, `NODE_VERSION=22.20.0`). The same Blueprint deploys the mirror at https://github.com/prove-ai/flybrain from the prove-ai workspace: https://render.com/deploy?repo=https://github.com/prove-ai/flybrain. There is no server and no environment secret; a first build takes a few minutes (npm install plus the Vite build).
 
 ## Data
 
