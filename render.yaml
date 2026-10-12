@@ -5,6 +5,8 @@ services:
     runtime: static
     buildCommand: bash site/build.sh
     staticPublishPath: site/public
+    autoDeploy: true
+    branch: main
     envVars:
       - key: NODE_VERSION
         value: 22.20.0
