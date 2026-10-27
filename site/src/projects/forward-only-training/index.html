@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forward-only training — can the circuit learn without backpropagation? · Flybrain</title>
+<meta name="description" content="A pilot of training the fly steering circuit with forward-only learning rules. Results varied between random starting points about four and a half times more than planned for, past the stopping limit set in advance, so the main study stopped itself.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="wordmark" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="11" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-25 11 13)"/><ellipse cx="21" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(25 21 13)"/><ellipse cx="16" cy="19" rx="4" ry="8" fill="currentColor"/><circle cx="16" cy="9.5" r="3" fill="var(--accent)"/></svg>Flybrain</a>
+  <ul><li><a href="/#projects" data-match="/projects/">Projects</a></li><li class="hide-sm"><a href="/#method">Method</a></li><li><a href="#" data-theme-toggle title="Switch light / dark" aria-label="Switch colour theme">◐</a></li></ul>
+</div></header>
+
+<section class="proj-head"><div class="wrap">
+  <p class="eyebrow"><span>Project 09</span><span>Read · experiment</span><span>Python · rules fixed in advance</span></p>
+  <h1>Can the circuit learn without backpropagation?</h1>
+  <p class="lead">Most artificial networks learn by backpropagation: an error signal is sent backwards through every connection to work out how each one should change. Brains almost certainly do not learn this way. This experiment planned to train the same fly steering circuit with forward-only rules, which jiggle the neurons a little, keep the changes that improve the result, and never send anything backwards, and then to compare those rules fairly. A small pilot came first, to measure how much results vary from one random starting point to the next. They varied far too much, and the experiment stopped itself, as its own rules required.</p>
+  <div class="cta"><a class="btn primary" href="#stop">Why it stopped</a><a class="btn" href="/results/">All three experiments</a></div>
+  <div class="proj-meta">
+    <div><p class="eyebrow">Pilot</p>10 training runs: 5 random starts, 2 training modes</div>
+    <div><p class="eyebrow">Variability</p>0.1348 measured, against 0.03 planned for</div>
+    <div><p class="eyebrow">Stop line set in advance</p>0.045</div>
+    <div><p class="eyebrow">Verdict</p>Stopped before the main study</div>
+  </div>
+</div></section>
+
+<div class="wrap res-body">
+  <ul class="res-toc"><li><a href="#question">The question</a></li><li><a href="#stop">Why it stopped</a></li><li><a href="#meaning">What the numbers mean</a></li><li><a href="#not">What this does not show</a></li><li><a href="#how">How it was run</a></li></ul>
+
+  <h2 id="question">The question</h2>
+  <div class="prose">
+    <p>The circuit is the same 443-neuron steering circuit as in <a href="/projects/steering-circuit/">project 08</a>, driving the same simulated robot. Forward-only learning was tried in two modes. In the first, the robot learns by copying recorded demonstrations from a teacher. In the second, it learns from its own driving, scored by a reward. The main study would have made 240 training runs and compared forward-only rules with each other and with backpropagation.</p>
+    <p>A comparison like that is only worth running if results are steady enough between training runs that a real difference can stand out. The plan's run counts assumed a run-to-run variability of 0.03 on the main score, a figure carried over from runs trained with backpropagation. Forward-only training is noisier by design, so the pilot measured it directly first, with a rule fixed in advance: below 0.025, go ahead as planned; from 0.025 up to 0.045, recompute how many runs are needed; at 0.045 or above, stop.</p>
+  </div>
+
+  <h2 id="stop">Why it stopped</h2>
+  <figure class="rfig lead" id="fig-exp2">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp2-variability-stop.svg" width="720" height="400" alt="Top: five dots, the gap between the two training modes for each random start, from −0.7 to −32.4 points. Bottom: the planned study's chance of a clear answer falls from 89% at variability 0.03 to 16% at 0.10; the stop line is at 0.045 and the measured variability at 0.1348."><img class="rfig-sm" src="/img/results/exp2-variability-stop-sm.svg" width="330" height="670" alt="Top: five dots, the gap between the two training modes for each random start, from −0.7 to −32.4 points. Bottom: the planned study's chance of a clear answer falls from 89% at variability 0.03 to 16% at 0.10; the stop line is at 0.045 and the measured variability at 0.1348."></div>
+    <figcaption>Start with the five dots: in five otherwise identical pilots, the gap between the two training modes ranged from under one point to 32 points. Training this circuit without backpropagation produced results that varied wildly from one random starting point to another, about four and a half times more than planned for and three times past the limit we had set in advance for continuing. The experiment stopped itself.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json">pilot_analysis.json</a>, fields gate and per_seed_rows · <a href="/results/sources/fly_track/reports/exp2_conditional_power.json">exp2_conditional_power.json</a> · <a href="/results/sources/fly_track/reports/exp2_conditional_report.md">pilot report</a></p>
+  </figure>
+
+  <h2 id="meaning">What the numbers mean</h2>
+  <div class="prose">
+    <p>“Variability” here is the typical amount by which one random start's result differs from another's, measured on the gap between the two training modes. The line in the lower panel is the planned study's chance of giving a clear answer, worked out before the pilot for a range of variabilities: 89% at the planned 0.03, falling to 16% at 0.10. The measured value, 0.1348, is beyond the last point that was worked out, so no chance is drawn for it; it can only be lower.</p>
+    <p>Collisions told the same story: their variability came out at 0.0598, also above the stop line. In all five starts, learning from its own driving ended with a lower main score than copying the teacher. With five starts that is a description, not a test.</p>
+  </div>
+
+  <details class="nums"><summary>The precise numbers</summary>
+    <table>
+      <thead><tr><th>Quantity</th><th class="num">Value</th></tr></thead>
+      <tbody>
+        <tr><td>Measured variability, main score</td><td class="num">0.1348</td></tr>
+        <tr><td>Measured variability, post collisions</td><td class="num">0.0598</td></tr>
+        <tr><td>Planned for</td><td class="num">0.03</td></tr>
+        <tr><td>Recompute run counts from</td><td class="num">0.025</td></tr>
+        <tr><td>Stop at or above</td><td class="num">0.045</td></tr>
+        <tr><td>Decision</td><td class="num">stop</td></tr>
+      </tbody>
+    </table>
+    <p>Gap between the two modes on the main score, per random start, each scored on the same 2,000 fresh scenes: −0.7, −8.7, −15.6, −29.4 and −32.4 points. Variability is the standard deviation of these gaps, corrected for the scene-to-scene noise they share.</p>
+  </details>
+
+  <h2 id="not">What this does not show</h2>
+  <div class="prose"><ul>
+    <li>It does not show that forward-only learning cannot train this circuit. Every pilot run finished its 4,000 updates and none failed; the problem is how much the results differ between runs.</li>
+    <li>It does not say which training rule is better. That comparison is the main study, and it was never run.</li>
+    <li>Five pairs of runs give only a rough estimate of variability. The estimate would have to be very far off, though, to fall back under the stop line.</li>
+    <li>The pilot used one version of the circuit and one learning setting. Other settings might be steadier; that was not tested.</li>
+  </ul></div>
+
+  <h2 id="how">How it was run</h2>
+  <div class="prose">
+    <p>The stopping rule, the run counts it would govern and the pilot's own settings were fixed and fingerprinted before any pilot run, and the pilot's scenes were fresh. The rule was applied automatically when the last run finished, and it was not adjusted afterwards. The pilot runs are excluded from any later study.</p>
+    <p>Sources: <a href="/results/sources/fly_track/reports/exp2_conditional_report.md">pilot report</a>, <a href="/results/sources/fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json">pilot analysis</a>, <a href="/results/sources/fly_track/reports/exp2_conditional_power.json">power calculations</a>.</p>
+  </div>
+
+  <div class="pager"><a href="/projects/steering-circuit/">← 08 Steering circuit</a><a href="/projects/fly-retrieval/">10 Fly-inspired search →</a></div>
+</div>
+
+<footer><div class="wrap">
+  <div><p class="eyebrow">Flybrain</p><p>Hand-written HTML and CSS, one module of JavaScript for the simulation, no framework, no analytics.</p></div>
+  <div><p class="eyebrow">Data</p><ul><li>MaleCNS v1.0 — FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research. <a href="https://male-cns.janelia.org/download/">CC BY 4.0</a></li></ul></div>
+</div></footer>
+<script type="module" src="/js/site.js"></script>
+<script type="module" src="/js/results.js"></script>
+</body>
+</html>

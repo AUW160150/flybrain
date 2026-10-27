@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="rf rf-exp1-not-inert" viewBox="0 0 720 322" width="720" height="322" role="img" aria-labelledby="exp1-not-inert-lg-t exp1-not-inert-lg-d"><title id="exp1-not-inert-lg-t">How far the fly circuit is ahead or behind on the main score</title><desc id="exp1-not-inert-lg-d">Dots with 95% ranges. Against the crude two-signal summary the circuit is about 10 points ahead in both conditions. Against the direct connection it is 2.1 points behind with the target visible and level with it, within the uncertainty, with the target hidden.</desc><style>
+.rf{--rf-bg:#f4f1ea;--rf-ink:#1a1a12;--rf-ink2:#4b4a40;--rf-ink3:#6f6d62;--rf-line:#d5d0c2;--rf-grid:#e4dfd2;
+--rf-s1:#c2412a;--rf-s2:#2a78d6;--rf-s3:#138a5f;--rf-s4:#6250d6;--rf-s5:#a86f00;--rf-s6:#87857a;
+--rf-band:#ebe7dc;--rf-good:#e9e1cf;font-family:'IBM Plex Sans',-apple-system,'Segoe UI',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rf,.rf:root:not([data-theme="light"]){
+--rf-bg:#15150f;--rf-ink:#ede9df;--rf-ink2:#bdb9ad;--rf-ink3:#9a978b;--rf-line:#3a3a2f;--rf-grid:#26261d;
+--rf-s1:#e5664d;--rf-s2:#3987e5;--rf-s3:#199e70;--rf-s4:#9085e9;--rf-s5:#c98500;--rf-s6:#8a887c;
+--rf-band:#1e1e16;--rf-good:#262619}}
+:root[data-theme="dark"] .rf{--rf-bg:#15150f;--rf-ink:#ede9df;--rf-ink2:#bdb9ad;--rf-ink3:#9a978b;
+--rf-line:#3a3a2f;--rf-grid:#26261d;--rf-s1:#e5664d;--rf-s2:#3987e5;--rf-s3:#199e70;--rf-s4:#9085e9;
+--rf-s5:#c98500;--rf-s6:#8a887c;--rf-band:#1e1e16;--rf-good:#262619}
+.rf .bg{fill:var(--rf-bg)}.rf text{fill:var(--rf-ink2)}.rf .t1{fill:var(--rf-ink);font-weight:500}
+.rf .t3,.rf .tk{fill:var(--rf-ink3)}.rf .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+.rf .ax{stroke:var(--rf-ink3);stroke-width:1;fill:none}.rf .gr{stroke:var(--rf-grid);stroke-width:1;fill:none}
+.rf .zero{stroke:var(--rf-ink2);stroke-width:1.2;fill:none}.rf .band{fill:var(--rf-band)}.rf .good{fill:var(--rf-good)}
+.rf .ref{stroke:var(--rf-ink2);stroke-width:1.2;stroke-dasharray:5 4;fill:none}
+.rf .pred{stroke:var(--rf-ink3);stroke-width:1.5;stroke-dasharray:2 4;fill:none;opacity:.8}
+.rf .f1{fill:var(--rf-s1)}.rf .s1{stroke:var(--rf-s1);fill:none}.rf .h1{fill:var(--rf-bg);stroke:var(--rf-s1)}.rf .f2{fill:var(--rf-s2)}.rf .s2{stroke:var(--rf-s2);fill:none}.rf .h2{fill:var(--rf-bg);stroke:var(--rf-s2)}.rf .f3{fill:var(--rf-s3)}.rf .s3{stroke:var(--rf-s3);fill:none}.rf .h3{fill:var(--rf-bg);stroke:var(--rf-s3)}.rf .f4{fill:var(--rf-s4)}.rf .s4{stroke:var(--rf-s4);fill:none}.rf .h4{fill:var(--rf-bg);stroke:var(--rf-s4)}.rf .f5{fill:var(--rf-s5)}.rf .s5{stroke:var(--rf-s5);fill:none}.rf .h5{fill:var(--rf-bg);stroke:var(--rf-s5)}.rf .f6{fill:var(--rf-s6)}.rf .s6{stroke:var(--rf-s6);fill:none}.rf .h6{fill:var(--rf-bg);stroke:var(--rf-s6)}</style><rect class="bg" x="0" y="0" width="720" height="322"/>
+<text x="12" y="20" font-size="13" class="t1">Fly circuit&#x27;s lead on the main score, in points</text>
+<text x="12" y="37" font-size="12" class="t3">dot: best estimate · line: range we can be 95% confident about · filled: reliably not zero</text>
+<g data-sx="{&quot;v0&quot;: -0.05, &quot;v1&quot;: 0.15, &quot;p0&quot;: 290, &quot;p1&quot;: 640, &quot;log&quot;: false}">
+<line x1="290" y1="60" x2="290" y2="248" class="gr"/>
+<line x1="377.5" y1="60" x2="377.5" y2="248" class="zero"/>
+<line x1="465" y1="60" x2="465" y2="248" class="gr"/>
+<line x1="552.5" y1="60" x2="552.5" y2="248" class="gr"/>
+<line x1="640" y1="60" x2="640" y2="248" class="gr"/>
+<text x="278" y="71" font-size="12" text-anchor="end">against the two-signal summary</text>
+<text x="278" y="88" font-size="12" text-anchor="end" class="t3">Target always visible</text>
+<line x1="500.23" y1="76" x2="627.21" y2="76" class="s1" stroke-width="2" data-enc="[[&quot;x1&quot;, &quot;x&quot;, 0.07013254761904775, &quot;json:fly_track/reports/exp1c/g1.json#/bio_minus_other_arms_tracked_frac/two_unit/ci95/0&quot;, &quot;&quot;], [&quot;x2&quot;, &quot;x&quot;, 0.14268912797619046, &quot;json:fly_track/reports/exp1c/g1.json#/bio_minus_other_arms_tracked_frac/two_unit/ci95/1&quot;, &quot;&quot;]]"/>
+<circle cx="559.73" cy="76" r="5.5" class="f1" stroke-width="2" data-enc="[[&quot;cx&quot;, &quot;x&quot;, 0.10413178571428572, &quot;json:fly_track/reports/exp1c/g1.json#/bio_minus_other_arms_tracked_frac/two_unit/diff&quot;, &quot;&quot;]]"></circle>
+<text x="635.21" y="80" font-size="12" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.10413178571428572, &quot;json:fly_track/reports/exp1c/g1.json#/bio_minus_other_arms_tracked_frac/two_unit/diff&quot;, &quot;x100&quot;]]">+10.4 pts</text>
+<text x="278" y="115" font-size="12" text-anchor="end">against the direct connection</text>
+<text x="278" y="132" font-size="12" text-anchor="end" class="t3">Target always visible</text>
+<line x1="315.79" y1="120" x2="364.51" y2="120" class="s2" stroke-width="2" data-enc="[[&quot;x1&quot;, &quot;x&quot;, -0.03526449404761903, &quot;json:fly_track/reports/exp1c/g1.json#/tracked_frac/ci95/0&quot;, &quot;&quot;], [&quot;x2&quot;, &quot;x&quot;, -0.00742437797619035, &quot;json:fly_track/reports/exp1c/g1.json#/tracked_frac/ci95/1&quot;, &quot;&quot;]]"/>
+<path d="M335.65 115.33 L345 115.33 L345 124.67 L335.65 124.67 Z" cx="340.33" cy="120" class="f2" stroke-width="2" data-enc="[[&quot;cx&quot;, &quot;x&quot;, -0.02124261904761915, &quot;json:fly_track/reports/exp1c/g1.json#/tracked_frac/diff&quot;, &quot;&quot;]]"></path>
+<text x="372.51" y="124" font-size="12" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, -0.02124261904761915, &quot;json:fly_track/reports/exp1c/g1.json#/tracked_frac/diff&quot;, &quot;x100&quot;]]">−2.1 pts</text>
+<text x="278" y="159" font-size="12" text-anchor="end">against the two-signal summary</text>
+<text x="278" y="176" font-size="12" text-anchor="end" class="t3">Target hidden for two 1–2 s spells</text>
+<line x1="510.73" y1="164" x2="597.1" y2="164" class="s1" stroke-width="2" data-enc="[[&quot;x1&quot;, &quot;x&quot;, 0.07613266852678563, &quot;json:fly_track/reports/exp1c/g1b.json#/bio_minus_other_arms_tracked_frac/two_unit/ci95/0&quot;, &quot;&quot;], [&quot;x2&quot;, &quot;x&quot;, 0.12548712165178574, &quot;json:fly_track/reports/exp1c/g1b.json#/bio_minus_other_arms_tracked_frac/two_unit/ci95/1&quot;, &quot;&quot;]]"/>
+<circle cx="552.29" cy="164" r="5.5" class="f1" stroke-width="2" data-enc="[[&quot;cx&quot;, &quot;x&quot;, 0.09988184523809518, &quot;json:fly_track/reports/exp1c/g1b.json#/bio_minus_other_arms_tracked_frac/two_unit/diff&quot;, &quot;&quot;]]"></circle>
+<text x="605.1" y="168" font-size="12" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.09988184523809518, &quot;json:fly_track/reports/exp1c/g1b.json#/bio_minus_other_arms_tracked_frac/two_unit/diff&quot;, &quot;x100&quot;]]">+10.0 pts</text>
+<text x="278" y="203" font-size="12" text-anchor="end">against the direct connection</text>
+<text x="278" y="220" font-size="12" text-anchor="end" class="t3">Target hidden for two 1–2 s spells</text>
+<line x1="368.54" y1="208" x2="411.66" y2="208" class="s2" stroke-width="2" data-enc="[[&quot;x1&quot;, &quot;x&quot;, -0.005117773437500003, &quot;json:fly_track/reports/exp1c/g1b.json#/tracked_frac/ci95/0&quot;, &quot;&quot;], [&quot;x2&quot;, &quot;x&quot;, 0.01951961383928568, &quot;json:fly_track/reports/exp1c/g1b.json#/tracked_frac/ci95/1&quot;, &quot;&quot;]]"/>
+<path d="M385.02 203.32 L394.37 203.32 L394.37 212.68 L385.02 212.68 Z" cx="389.7" cy="208" class="h2" stroke-width="2" data-enc="[[&quot;cx&quot;, &quot;x&quot;, 0.006970267857142831, &quot;json:fly_track/reports/exp1c/g1b.json#/tracked_frac/diff&quot;, &quot;&quot;]]"></path>
+<text x="419.66" y="212" font-size="12" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.006970267857142831, &quot;json:fly_track/reports/exp1c/g1b.json#/tracked_frac/diff&quot;, &quot;x100&quot;]]">+0.7 pts</text>
+</g>
+<text x="290" y="266" font-size="12" text-anchor="middle" class="tk">−5</text>
+<text x="377.5" y="266" font-size="12" text-anchor="middle" class="tk">0</text>
+<text x="465" y="266" font-size="12" text-anchor="middle" class="tk">+5</text>
+<text x="552.5" y="266" font-size="12" text-anchor="middle" class="tk">+10</text>
+<text x="640" y="266" font-size="12" text-anchor="middle" class="tk">+15</text>
+<text x="371.5" y="284" font-size="12" text-anchor="end" class="t3">← circuit behind</text>
+<text x="383.5" y="284" font-size="12" class="t3">circuit ahead →</text>
+</svg>

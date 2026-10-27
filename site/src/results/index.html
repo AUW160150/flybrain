@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results — what three experiments on the fly connectome found · Flybrain</title>
+<meta name="description" content="Three experiments asked whether the fly's wiring helps a robot steer, whether it can be trained without backpropagation, and whether fly-brain ideas make search faster. Each was decided by rules fixed in advance, and the answers were mostly no.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="wordmark" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="11" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-25 11 13)"/><ellipse cx="21" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(25 21 13)"/><ellipse cx="16" cy="19" rx="4" ry="8" fill="currentColor"/><circle cx="16" cy="9.5" r="3" fill="var(--accent)"/></svg>Flybrain</a>
+  <ul><li><a href="/#projects" data-match="/projects/">Projects</a></li><li class="hide-sm"><a href="/#method">Method</a></li><li><a href="#" data-theme-toggle title="Switch light / dark" aria-label="Switch colour theme">◐</a></li></ul>
+</div></header>
+
+<section class="proj-head"><div class="wrap">
+  <p class="eyebrow"><span>Results</span><span>Projects 08 – 10</span><span>Experiments 1, 2 and 3</span></p>
+  <h1>What three experiments on the fly's wiring found</h1>
+  <p class="lead">Three experiments put the fly connectome, the full map of the fly's nerve cells and their connections, to practical tests: steering a robot, learning without backpropagation, and finding similar items fast. Each one fixed its rules before it started, including what result would count as a win and when to stop. The answers were mostly no. This page shows what was found, including where the fly's wiring lost.</p>
+</div></section>
+
+<div class="wrap res-body">
+  <h2 id="lead">The clearest finding: a short memory that helps and hurts</h2>
+  <figure class="rfig lead" id="fig-memory">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp1-memory-dissociation.svg" width="720" height="440" alt="Slope chart. Post collisions: 13.2% for the circuit and 13.3% for the direct connection with the target visible; 18.2% against 21.4% with it hidden. Wall collisions: 7.4% against 4.5% visible, 25.5% against 22.8% hidden."><img class="rfig-sm" src="/img/results/exp1-memory-dissociation-sm.svg" width="330" height="770" alt="Slope chart. Post collisions: 13.2% for the circuit and 13.3% for the direct connection with the target visible; 18.2% against 21.4% with it hidden. Wall collisions: 7.4% against 4.5% visible, 25.5% against 22.8% hidden."></div>
+    <figcaption>A simulated robot follows a target past posts and walls, steered either by a fly circuit with loops or by a direct connection with none. With walls, the circuit is about 2.8 points worse whether or not the target is visible; with posts, it is level while the target is visible and 3.2 points better once it is hidden. The fly circuit's loops give it a short memory. The simplest reading is that the memory helps it hold a course past obstacles while the target is out of sight, and makes it slower to react to a wall right in front of it, so with the target hidden the two effects roughly cancel out. That reading fits the pattern but was not tested directly.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_track/reports/stage1_headroom.md">stage1_headroom.md</a> · <a href="/results/sources/fly_track/reports/stage1b_occlusion.md">stage1b_occlusion.md</a> · <a href="/projects/steering-circuit/">full write-up</a></p>
+  </figure>
+
+  <h2 id="verdicts">The four verdicts</h2>
+  <figure class="rfig" id="fig-verdicts">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/verdicts.svg" width="720" height="388" alt="Four cards. Robot steering: no clear help. Training without backpropagation: stopped before the main test. Memory filter: only where nothing works. Similarity search: no."><img class="rfig-sm" src="/img/results/verdicts-sm.svg" width="330" height="840" alt="Four cards. Robot steering: no clear help. Training without backpropagation: stopped before the main test. Memory filter: only where nothing works. Similarity search: no."></div>
+    <figcaption>Each card gives the question in plain words and the answer its rules produced. Three of the four answers are no, and the fourth is a win only in a setting where no method does the job.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_track/reports/exp1c/g1.json">g1.json</a> · <a href="/results/sources/fly_track/reports/exp1c/g1b.json">g1b.json</a> · <a href="/results/sources/fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json">pilot_analysis.json</a> · <a href="/results/sources/fly_retrieval/docs/exp3_analysis.md">exp3_analysis.md</a></p>
+  </figure>
+
+  <h2 id="each">The three experiments</h2>
+  <div class="prose">
+    <h3><a href="/projects/steering-circuit/">08 · Does the fly's steering circuit help a robot follow a target?</a></h3>
+    <p>Trained until it stopped improving, a 443-neuron circuit from the fly was not clearly better than a direct connection. With the target visible it was slightly worse; with the target hidden the test could not decide. Three randomly rewired copies of the circuit did as well as the real one, so what helped was having loops at all, not the fly's particular wiring. The real circuit also turned out to be quieter than every scrambled version of itself before any training, a difference earlier comparisons had not corrected for.</p>
+    <h3><a href="/projects/forward-only-training/">09 · Can the circuit learn without backpropagation?</a></h3>
+    <p>A pilot of forward-only learning, which never sends an error signal backwards, found results swinging between random starting points about four and a half times more than planned for. That is past the stopping limit fixed in advance, so the main comparison of learning rules was never run.</p>
+    <h3><a href="/projects/fly-retrieval/">10 · Can fly-brain ideas make search and memory faster?</a></h3>
+    <p>The fly Bloom filter beat conventional methods only at memory budgets so small that no method worked. The fly's real odour wiring was no better than scrambled wiring when missing data were set to zero, but it was better when they were filled with averages. An idea proposed to rescue it was contradicted. On the standard search benchmark, FlyHash answered about one question for every 200 the best conventional index answered.</p>
+  </div>
+
+  <h2 id="how">How these were run</h2>
+  <div class="prose">
+    <p>All three experiments were preregistered: before running anything that would produce its results, each wrote down what it would compare, how many runs it would make, what result would count as a win, what would count as ruling an effect out, and when it would stop. The analysis code was frozen and fingerprinted, and checked against that fingerprint before every analysis. Each stage ran only once the previous gate's verdict was in. Two of the three ended at a gate: Experiment 1's second test came back unclear, leaving too little to explain for its next stage to be informative, and Experiment 2's pilot tripped its own stopping rule.</p>
+    <p>That is the methodological point of the work. With the rules fixed in advance, a negative result cannot be argued away afterwards, and a positive one could not have been manufactured by trying analyses until one worked.</p>
+  </div>
+
+  <h2 id="not">What these results do not say</h2>
+  <div class="prose"><ul>
+    <li>They do not say that the fly's wiring is unimportant to the fly. They test whether pieces of it help with engineering tasks, under one set of conditions each.</li>
+    <li>An unclear result is not a negative one. Experiment 1 with the target hidden could not rule out a small benefit.</li>
+    <li>Stopping is not failure to learn. Experiment 2's pilot runs all trained; they just disagreed with each other too much to compare methods fairly.</li>
+    <li>Every number on these pages comes from a saved result file, linked under each figure. The figure files record, for each number, the field it was read from, and the list of every source file with its fingerprint is in the repository.</li>
+  </ul></div>
+
+  <div class="pager"><a href="/projects/fly-retrieval/">← 10 Fly-inspired search</a><a href="/#projects">All projects →</a></div>
+</div>
+
+<footer><div class="wrap">
+  <div><p class="eyebrow">Flybrain</p><p>Hand-written HTML and CSS, one module of JavaScript for the simulation, no framework, no analytics.</p></div>
+  <div><p class="eyebrow">Data</p><ul><li>MaleCNS v1.0 — FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research. <a href="https://male-cns.janelia.org/download/">CC BY 4.0</a></li></ul></div>
+</div></footer>
+<script type="module" src="/js/site.js"></script>
+<script type="module" src="/js/results.js"></script>
+</body>
+</html>
