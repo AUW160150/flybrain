@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="rf rf-verdicts" viewBox="0 0 720 388" width="720" height="388" role="img" aria-labelledby="verdicts-lg-t verdicts-lg-d"><title id="verdicts-lg-t">The four verdicts</title><desc id="verdicts-lg-d">Four cards, one per question: what was asked, the short answer and one sentence on what was found.</desc><style>
+.rf{--rf-bg:#f4f1ea;--rf-ink:#1a1a12;--rf-ink2:#4b4a40;--rf-ink3:#6f6d62;--rf-line:#d5d0c2;--rf-grid:#e4dfd2;
+--rf-s1:#c2412a;--rf-s2:#2a78d6;--rf-s3:#138a5f;--rf-s4:#6250d6;--rf-s5:#a86f00;--rf-s6:#87857a;
+--rf-band:#ebe7dc;--rf-good:#e9e1cf;font-family:'IBM Plex Sans',-apple-system,'Segoe UI',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rf,.rf:root:not([data-theme="light"]){
+--rf-bg:#15150f;--rf-ink:#ede9df;--rf-ink2:#bdb9ad;--rf-ink3:#9a978b;--rf-line:#3a3a2f;--rf-grid:#26261d;
+--rf-s1:#e5664d;--rf-s2:#3987e5;--rf-s3:#199e70;--rf-s4:#9085e9;--rf-s5:#c98500;--rf-s6:#8a887c;
+--rf-band:#1e1e16;--rf-good:#262619}}
+:root[data-theme="dark"] .rf{--rf-bg:#15150f;--rf-ink:#ede9df;--rf-ink2:#bdb9ad;--rf-ink3:#9a978b;
+--rf-line:#3a3a2f;--rf-grid:#26261d;--rf-s1:#e5664d;--rf-s2:#3987e5;--rf-s3:#199e70;--rf-s4:#9085e9;
+--rf-s5:#c98500;--rf-s6:#8a887c;--rf-band:#1e1e16;--rf-good:#262619}
+.rf .bg{fill:var(--rf-bg)}.rf text{fill:var(--rf-ink2)}.rf .t1{fill:var(--rf-ink);font-weight:500}
+.rf .t3,.rf .tk{fill:var(--rf-ink3)}.rf .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+.rf .ax{stroke:var(--rf-ink3);stroke-width:1;fill:none}.rf .gr{stroke:var(--rf-grid);stroke-width:1;fill:none}
+.rf .zero{stroke:var(--rf-ink2);stroke-width:1.2;fill:none}.rf .band{fill:var(--rf-band)}.rf .good{fill:var(--rf-good)}
+.rf .ref{stroke:var(--rf-ink2);stroke-width:1.2;stroke-dasharray:5 4;fill:none}
+.rf .pred{stroke:var(--rf-ink3);stroke-width:1.5;stroke-dasharray:2 4;fill:none;opacity:.8}
+.rf .f1{fill:var(--rf-s1)}.rf .s1{stroke:var(--rf-s1);fill:none}.rf .h1{fill:var(--rf-bg);stroke:var(--rf-s1)}.rf .f2{fill:var(--rf-s2)}.rf .s2{stroke:var(--rf-s2);fill:none}.rf .h2{fill:var(--rf-bg);stroke:var(--rf-s2)}.rf .f3{fill:var(--rf-s3)}.rf .s3{stroke:var(--rf-s3);fill:none}.rf .h3{fill:var(--rf-bg);stroke:var(--rf-s3)}.rf .f4{fill:var(--rf-s4)}.rf .s4{stroke:var(--rf-s4);fill:none}.rf .h4{fill:var(--rf-bg);stroke:var(--rf-s4)}.rf .f5{fill:var(--rf-s5)}.rf .s5{stroke:var(--rf-s5);fill:none}.rf .h5{fill:var(--rf-bg);stroke:var(--rf-s5)}.rf .f6{fill:var(--rf-s6)}.rf .s6{stroke:var(--rf-s6);fill:none}.rf .h6{fill:var(--rf-bg);stroke:var(--rf-s6)}</style><rect class="bg" x="0" y="0" width="720" height="388"/>
+<rect x="12" y="8" width="342" height="178" class="band" rx="4"></rect>
+<rect x="12" y="8" width="4" height="178" class="f1"></rect>
+<text x="28" y="32" font-size="12" class="t3 mono">ROBOT STEERING · EXPERIMENT 1</text>
+<text x="28" y="54" font-size="12">Does the fly&#x27;s steering circuit help a</text>
+<text x="28" y="70.2" font-size="12">simulated robot follow a target better than</text>
+<text x="28" y="86.4" font-size="12">a direct connection?</text>
+<text x="28" y="116.6" font-size="14.5" class="t1">No clear help.</text>
+<text x="28" y="140.18" font-size="12">Its loops add a short memory that trades</text>
+<text x="28" y="156.38" font-size="12">fewer obstacle hits for more wall hits;</text>
+<text x="28" y="172.57" font-size="12">rewired copies do just as well.</text>
+<rect x="366" y="8" width="342" height="178" class="band" rx="4"></rect>
+<rect x="366" y="8" width="4" height="178" class="f1"></rect>
+<text x="382" y="32" font-size="12" class="t3 mono">LEARNING RULES · EXPERIMENT 2</text>
+<text x="382" y="54" font-size="12">Can the circuit be trained with forward-only</text>
+<text x="382" y="70.2" font-size="12">learning steadily enough to compare methods?</text>
+<text x="382" y="100.4" font-size="14.5" class="t1">Stopped before the main test.</text>
+<text x="382" y="123.98" font-size="12">Results swung so much between random starts</text>
+<text x="382" y="140.18" font-size="12">that the planned study could not have given</text>
+<text x="382" y="156.38" font-size="12">a clear answer.</text>
+<rect x="12" y="198" width="342" height="178" class="band" rx="4"></rect>
+<rect x="12" y="198" width="4" height="178" class="f1"></rect>
+<text x="28" y="222" font-size="12" class="t3 mono">MEMORY FILTER · EXPERIMENT 3</text>
+<text x="28" y="244" font-size="12">Does the fly-inspired familiarity filter</text>
+<text x="28" y="260.2" font-size="12">beat the methods used in practice?</text>
+<text x="28" y="290.4" font-size="14.5" class="t1">Only where nothing works.</text>
+<text x="28" y="313.97" font-size="12">It wins at the tiniest memory budgets, where</text>
+<text x="28" y="330.17" font-size="12">every method misses most familiar items;</text>
+<text x="28" y="346.37" font-size="12">with more memory a simple fingerprint wins.</text>
+<rect x="366" y="198" width="342" height="178" class="band" rx="4"></rect>
+<rect x="366" y="198" width="4" height="178" class="f1"></rect>
+<text x="382" y="222" font-size="12" class="t3 mono">SIMILARITY SEARCH · EXPERIMENT 3</text>
+<text x="382" y="244" font-size="12">Does the fly&#x27;s real wiring, or a</text>
+<text x="382" y="260.2" font-size="12">fly-inspired index, help find similar items?</text>
+<text x="382" y="290.4" font-size="14.5" class="t1">No.</text>
+<text x="382" y="313.97" font-size="12">The real wiring is no better than scrambled</text>
+<text x="382" y="330.17" font-size="12">wiring, and fly-inspired search runs at</text>
+<text x="382" y="346.37" font-size="12">about one two-hundredth of the speed of the</text>
+<text x="382" y="362.57" font-size="12">best conventional index.</text>
+</svg>

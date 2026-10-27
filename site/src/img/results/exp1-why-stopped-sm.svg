@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="rf rf-exp1-why-stopped" viewBox="0 0 330 350" width="330" height="350" role="img" aria-labelledby="exp1-why-stopped-sm-t exp1-why-stopped-sm-d"><title id="exp1-why-stopped-sm-t">The planned next test&#x27;s finest measurement against the whole gap it would have searched</title><desc id="exp1-why-stopped-sm-d">A ruler from 0 to 3 points of the main score. The circuit&#x27;s whole lead over the direct connection with the target hidden was 0.70 points. The planned next test could reliably detect only differences of 2.0 points or more in the most favourable case, 2.8 points in a less favourable one.</desc><style>
+.rf{--rf-bg:#f4f1ea;--rf-ink:#1a1a12;--rf-ink2:#4b4a40;--rf-ink3:#6f6d62;--rf-line:#d5d0c2;--rf-grid:#e4dfd2;
+--rf-s1:#c2412a;--rf-s2:#2a78d6;--rf-s3:#138a5f;--rf-s4:#6250d6;--rf-s5:#a86f00;--rf-s6:#87857a;
+--rf-band:#ebe7dc;--rf-good:#e9e1cf;font-family:'IBM Plex Sans',-apple-system,'Segoe UI',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rf,.rf:root:not([data-theme="light"]){
+--rf-bg:#15150f;--rf-ink:#ede9df;--rf-ink2:#bdb9ad;--rf-ink3:#9a978b;--rf-line:#3a3a2f;--rf-grid:#26261d;
+--rf-s1:#e5664d;--rf-s2:#3987e5;--rf-s3:#199e70;--rf-s4:#9085e9;--rf-s5:#c98500;--rf-s6:#8a887c;
+--rf-band:#1e1e16;--rf-good:#262619}}
+:root[data-theme="dark"] .rf{--rf-bg:#15150f;--rf-ink:#ede9df;--rf-ink2:#bdb9ad;--rf-ink3:#9a978b;
+--rf-line:#3a3a2f;--rf-grid:#26261d;--rf-s1:#e5664d;--rf-s2:#3987e5;--rf-s3:#199e70;--rf-s4:#9085e9;
+--rf-s5:#c98500;--rf-s6:#8a887c;--rf-band:#1e1e16;--rf-good:#262619}
+.rf .bg{fill:var(--rf-bg)}.rf text{fill:var(--rf-ink2)}.rf .t1{fill:var(--rf-ink);font-weight:500}
+.rf .t3,.rf .tk{fill:var(--rf-ink3)}.rf .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+.rf .ax{stroke:var(--rf-ink3);stroke-width:1;fill:none}.rf .gr{stroke:var(--rf-grid);stroke-width:1;fill:none}
+.rf .zero{stroke:var(--rf-ink2);stroke-width:1.2;fill:none}.rf .band{fill:var(--rf-band)}.rf .good{fill:var(--rf-good)}
+.rf .ref{stroke:var(--rf-ink2);stroke-width:1.2;stroke-dasharray:5 4;fill:none}
+.rf .pred{stroke:var(--rf-ink3);stroke-width:1.5;stroke-dasharray:2 4;fill:none;opacity:.8}
+.rf .f1{fill:var(--rf-s1)}.rf .s1{stroke:var(--rf-s1);fill:none}.rf .h1{fill:var(--rf-bg);stroke:var(--rf-s1)}.rf .f2{fill:var(--rf-s2)}.rf .s2{stroke:var(--rf-s2);fill:none}.rf .h2{fill:var(--rf-bg);stroke:var(--rf-s2)}.rf .f3{fill:var(--rf-s3)}.rf .s3{stroke:var(--rf-s3);fill:none}.rf .h3{fill:var(--rf-bg);stroke:var(--rf-s3)}.rf .f4{fill:var(--rf-s4)}.rf .s4{stroke:var(--rf-s4);fill:none}.rf .h4{fill:var(--rf-bg);stroke:var(--rf-s4)}.rf .f5{fill:var(--rf-s5)}.rf .s5{stroke:var(--rf-s5);fill:none}.rf .h5{fill:var(--rf-bg);stroke:var(--rf-s5)}.rf .f6{fill:var(--rf-s6)}.rf .s6{stroke:var(--rf-s6);fill:none}.rf .h6{fill:var(--rf-bg);stroke:var(--rf-s6)}</style><rect class="bg" x="0" y="0" width="330" height="350"/>
+<text x="12" y="20" font-size="12.5" class="t1">The main score, in points</text>
+<text x="12" y="37" font-size="11.5" class="t3">Share of time the target stayed in view at</text>
+<text x="12" y="52.52" font-size="11.5" class="t3">the right distance (1 point = 0.01)</text>
+<g data-sx="{&quot;v0&quot;: 0, &quot;v1&quot;: 0.03, &quot;p0&quot;: 16, &quot;p1&quot;: 314, &quot;log&quot;: false}">
+<line x1="16" y1="68" x2="16" y2="242" class="gr"/>
+<line x1="65.67" y1="68" x2="65.67" y2="242" class="gr"/>
+<line x1="115.33" y1="68" x2="115.33" y2="242" class="gr"/>
+<line x1="165" y1="68" x2="165" y2="242" class="gr"/>
+<line x1="214.67" y1="68" x2="214.67" y2="242" class="gr"/>
+<line x1="264.33" y1="68" x2="264.33" y2="242" class="gr"/>
+<line x1="314" y1="68" x2="314" y2="242" class="gr"/>
+<text x="16" y="82" font-size="11.5" class="t1">Everything the next test could hope to find</text>
+<text x="16" y="97" font-size="11.5" class="t3">the circuit&#x27;s whole lead over the direct</text>
+<text x="16" y="112.53" font-size="11.5" class="t3">connection, target hidden</text>
+<rect x="16" y="122.05" width="69.24" height="22" class="f1" data-enc="[[&quot;x2&quot;, &quot;x&quot;, 0.006970267857142831, &quot;json:fly_track/reports/exp1c/g1b.json#/tracked_frac/diff&quot;, &quot;&quot;]]"></rect>
+<text x="91.24" y="137.05" font-size="11.5" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.006970267857142831, &quot;json:fly_track/reports/exp1c/g1b.json#/tracked_frac/diff&quot;, &quot;x100&quot;]]">0.70 points</text>
+<text x="16" y="186.05" font-size="11.5" class="t1">Smallest difference the next test could reliably detect</text>
+<text x="16" y="201.05" font-size="11.5" class="t3">20 scrambled circuits × 5 training runs each</text>
+<rect x="219.25" y="215.58" width="72.72" height="12" class="h2" stroke-dasharray="3 3" stroke-width="1.2" data-enc="[[&quot;x2&quot;, &quot;x&quot;, 0.027782452092951233, &quot;json:fly_track/reports/exp1c/power.json#/stage2_table/7/mde80_two_sided&quot;, &quot;&quot;]]"></rect>
+<rect x="16" y="210.58" width="203.25" height="22" class="f2" data-enc="[[&quot;x2&quot;, &quot;x&quot;, 0.020461306318302876, &quot;json:fly_track/reports/exp1c/power.json#/stage2_table/4/mde80_two_sided&quot;, &quot;&quot;]]"></rect>
+<text x="16" y="248.58" font-size="11.5" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.020461306318302876, &quot;json:fly_track/reports/exp1c/power.json#/stage2_table/4/mde80_two_sided&quot;, &quot;x100&quot;]]">2.0 points in the best case</text>
+<text x="16" y="264.1" font-size="11.5" class="t3" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.027782452092951233, &quot;json:fly_track/reports/exp1c/power.json#/stage2_table/7/mde80_two_sided&quot;, &quot;x100&quot;]]">2.8 points if the scrambled circuits differ more</text>
+</g>
+<text x="16" y="336" font-size="11.5" text-anchor="middle" class="tk">0</text>
+<text x="115.33" y="336" font-size="11.5" text-anchor="middle" class="tk">1 pt</text>
+<text x="214.67" y="336" font-size="11.5" text-anchor="middle" class="tk">2 pt</text>
+<text x="314" y="336" font-size="11.5" text-anchor="middle" class="tk">3 pt</text>
+</svg>

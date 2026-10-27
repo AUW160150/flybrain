@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="rf rf-exp1-loops-not-wiring" viewBox="0 0 720 380" width="720" height="380" role="img" aria-labelledby="exp1-loops-not-wiring-lg-t exp1-loops-not-wiring-lg-d"><title id="exp1-loops-not-wiring-lg-t">Post collisions with the target hidden, all six versions of the controller</title><desc id="exp1-loops-not-wiring-lg-d">Horizontal bars, sorted. The four versions with loops (the real wiring and three rewired copies) sit between 17.8% and 18.3% of episodes; the two without loops sit at 21.4% and 22.1%.</desc><style>
+.rf{--rf-bg:#f4f1ea;--rf-ink:#1a1a12;--rf-ink2:#4b4a40;--rf-ink3:#6f6d62;--rf-line:#d5d0c2;--rf-grid:#e4dfd2;
+--rf-s1:#c2412a;--rf-s2:#2a78d6;--rf-s3:#138a5f;--rf-s4:#6250d6;--rf-s5:#a86f00;--rf-s6:#87857a;
+--rf-band:#ebe7dc;--rf-good:#e9e1cf;font-family:'IBM Plex Sans',-apple-system,'Segoe UI',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rf,.rf:root:not([data-theme="light"]){
+--rf-bg:#15150f;--rf-ink:#ede9df;--rf-ink2:#bdb9ad;--rf-ink3:#9a978b;--rf-line:#3a3a2f;--rf-grid:#26261d;
+--rf-s1:#e5664d;--rf-s2:#3987e5;--rf-s3:#199e70;--rf-s4:#9085e9;--rf-s5:#c98500;--rf-s6:#8a887c;
+--rf-band:#1e1e16;--rf-good:#262619}}
+:root[data-theme="dark"] .rf{--rf-bg:#15150f;--rf-ink:#ede9df;--rf-ink2:#bdb9ad;--rf-ink3:#9a978b;
+--rf-line:#3a3a2f;--rf-grid:#26261d;--rf-s1:#e5664d;--rf-s2:#3987e5;--rf-s3:#199e70;--rf-s4:#9085e9;
+--rf-s5:#c98500;--rf-s6:#8a887c;--rf-band:#1e1e16;--rf-good:#262619}
+.rf .bg{fill:var(--rf-bg)}.rf text{fill:var(--rf-ink2)}.rf .t1{fill:var(--rf-ink);font-weight:500}
+.rf .t3,.rf .tk{fill:var(--rf-ink3)}.rf .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+.rf .ax{stroke:var(--rf-ink3);stroke-width:1;fill:none}.rf .gr{stroke:var(--rf-grid);stroke-width:1;fill:none}
+.rf .zero{stroke:var(--rf-ink2);stroke-width:1.2;fill:none}.rf .band{fill:var(--rf-band)}.rf .good{fill:var(--rf-good)}
+.rf .ref{stroke:var(--rf-ink2);stroke-width:1.2;stroke-dasharray:5 4;fill:none}
+.rf .pred{stroke:var(--rf-ink3);stroke-width:1.5;stroke-dasharray:2 4;fill:none;opacity:.8}
+.rf .f1{fill:var(--rf-s1)}.rf .s1{stroke:var(--rf-s1);fill:none}.rf .h1{fill:var(--rf-bg);stroke:var(--rf-s1)}.rf .f2{fill:var(--rf-s2)}.rf .s2{stroke:var(--rf-s2);fill:none}.rf .h2{fill:var(--rf-bg);stroke:var(--rf-s2)}.rf .f3{fill:var(--rf-s3)}.rf .s3{stroke:var(--rf-s3);fill:none}.rf .h3{fill:var(--rf-bg);stroke:var(--rf-s3)}.rf .f4{fill:var(--rf-s4)}.rf .s4{stroke:var(--rf-s4);fill:none}.rf .h4{fill:var(--rf-bg);stroke:var(--rf-s4)}.rf .f5{fill:var(--rf-s5)}.rf .s5{stroke:var(--rf-s5);fill:none}.rf .h5{fill:var(--rf-bg);stroke:var(--rf-s5)}.rf .f6{fill:var(--rf-s6)}.rf .s6{stroke:var(--rf-s6);fill:none}.rf .h6{fill:var(--rf-bg);stroke:var(--rf-s6)}</style><rect class="bg" x="0" y="0" width="720" height="380"/>
+<text x="12" y="20" font-size="13" class="t1">Share of episodes with a post collision, target hidden</text>
+<g data-sx="{&quot;v0&quot;: 0, &quot;v1&quot;: 0.25, &quot;p0&quot;: 198, &quot;p1&quot;: 650, &quot;log&quot;: false}">
+<rect x="4" y="40" width="712" height="142" class="band"></rect>
+<text x="10" y="54" font-size="12" class="t3 mono">VERSIONS WITH LOOPS</text>
+<rect x="4" y="192" width="712" height="82" class="band"></rect>
+<text x="10" y="206" font-size="12" class="t3 mono">VERSIONS WITHOUT LOOPS</text>
+<line x1="198" y1="38" x2="198" y2="280" class="gr"/>
+<line x1="288.4" y1="38" x2="288.4" y2="280" class="gr"/>
+<line x1="378.8" y1="38" x2="378.8" y2="280" class="gr"/>
+<line x1="469.2" y1="38" x2="469.2" y2="280" class="gr"/>
+<line x1="559.6" y1="38" x2="559.6" y2="280" class="gr"/>
+<line x1="650" y1="38" x2="650" y2="280" class="gr"/>
+<rect x="198" y="66" width="321.52" height="18" class="f1" fill-opacity="0.55" data-enc="[[&quot;x2&quot;, &quot;x&quot;, 0.17783333333333334, &quot;json:fly_track/reports/exp1c/g1b.json#/descriptives/rew1003/post_collision&quot;, &quot;&quot;]]"><title>Rewired copy 3: 17.8% of episodes</title></rect>
+<text x="190" y="81" font-size="12" text-anchor="end">Rewired copy 3</text>
+<text x="525.52" y="81" font-size="12" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.17783333333333334, &quot;json:fly_track/reports/exp1c/g1b.json#/descriptives/rew1003/post_collision&quot;, &quot;x100&quot;]]">17.8%</text>
+<rect x="198" y="96" width="325.5" height="18" class="f1" fill-opacity="0.55" data-enc="[[&quot;x2&quot;, &quot;x&quot;, 0.18003333333333332, &quot;json:fly_track/reports/exp1c/g1b.json#/descriptives/rew1002/post_collision&quot;, &quot;&quot;]]"><title>Rewired copy 2: 18.0% of episodes</title></rect>
+<text x="190" y="111" font-size="12" text-anchor="end">Rewired copy 2</text>
+<text x="529.5" y="111" font-size="12" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.18003333333333332, &quot;json:fly_track/reports/exp1c/g1b.json#/descriptives/rew1002/post_collision&quot;, &quot;x100&quot;]]">18.0%</text>
+<rect x="198" y="126" width="328.56" height="18" class="f1" data-enc="[[&quot;x2&quot;, &quot;x&quot;, 0.181725, &quot;json:fly_track/reports/exp1c/g1b.json#/descriptives/bio/post_collision&quot;, &quot;&quot;]]"><title>Real fly wiring: 18.2% of episodes</title></rect>
+<text x="190" y="141" font-size="12" text-anchor="end" class="t1">Real fly wiring</text>
+<text x="532.56" y="141" font-size="12" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.181725, &quot;json:fly_track/reports/exp1c/g1b.json#/descriptives/bio/post_collision&quot;, &quot;x100&quot;]]">18.2%</text>
+<rect x="198" y="156" width="331.65" height="18" class="f1" fill-opacity="0.55" data-enc="[[&quot;x2&quot;, &quot;x&quot;, 0.18343333333333334, &quot;json:fly_track/reports/exp1c/g1b.json#/descriptives/rew1001/post_collision&quot;, &quot;&quot;]]"><title>Rewired copy 1: 18.3% of episodes</title></rect>
+<text x="190" y="171" font-size="12" text-anchor="end">Rewired copy 1</text>
+<text x="535.65" y="171" font-size="12" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.18343333333333334, &quot;json:fly_track/reports/exp1c/g1b.json#/descriptives/rew1001/post_collision&quot;, &quot;x100&quot;]]">18.3%</text>
+<rect x="198" y="218" width="386.19" height="18" class="f2" data-enc="[[&quot;x2&quot;, &quot;x&quot;, 0.2136, &quot;json:fly_track/reports/exp1c/g1b.json#/descriptives/bypass/post_collision&quot;, &quot;&quot;]]"><title>Direct connection: 21.4% of episodes</title></rect>
+<text x="190" y="233" font-size="12" text-anchor="end">Direct connection</text>
+<text x="590.19" y="233" font-size="12" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.2136, &quot;json:fly_track/reports/exp1c/g1b.json#/descriptives/bypass/post_collision&quot;, &quot;x100&quot;]]">21.4%</text>
+<rect x="198" y="248" width="399.39" height="18" class="f2" data-enc="[[&quot;x2&quot;, &quot;x&quot;, 0.2209, &quot;json:fly_track/reports/exp1c/g1b.json#/descriptives/two_unit/post_collision&quot;, &quot;&quot;]]"><title>Two-signal summary: 22.1% of episodes</title></rect>
+<text x="190" y="263" font-size="12" text-anchor="end">Two-signal summary</text>
+<text x="603.39" y="263" font-size="12" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.2209, &quot;json:fly_track/reports/exp1c/g1b.json#/descriptives/two_unit/post_collision&quot;, &quot;x100&quot;]]">22.1%</text>
+</g>
+<text x="198" y="294" font-size="12" text-anchor="middle" class="tk">0%</text>
+<text x="378.8" y="294" font-size="12" text-anchor="middle" class="tk">10%</text>
+<text x="559.6" y="294" font-size="12" text-anchor="middle" class="tk">20%</text>
+<text x="12" y="316" font-size="12" class="t3">Rewired copies: the same neurons and number of connections, with the connections shuffled while</text>
+<text x="12" y="332.2" font-size="12" class="t3">keeping each neuron&#x27;s count of inputs and outputs.</text>
+</svg>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steering circuit — does the fly's wiring help a robot follow a target? · Flybrain</title>
+<meta name="description" content="A 443-neuron fly steering circuit, trained to the end of learning, against the same controller with the circuit removed. 260 runs, rules fixed in advance. The circuit did not clearly help; its loops act as a short memory that cuts obstacle hits when the target is hidden and adds wall hits.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="wordmark" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="11" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-25 11 13)"/><ellipse cx="21" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(25 21 13)"/><ellipse cx="16" cy="19" rx="4" ry="8" fill="currentColor"/><circle cx="16" cy="9.5" r="3" fill="var(--accent)"/></svg>Flybrain</a>
+  <ul><li><a href="/#projects" data-match="/projects/">Projects</a></li><li class="hide-sm"><a href="/#method">Method</a></li><li><a href="#" data-theme-toggle title="Switch light / dark" aria-label="Switch colour theme">◐</a></li></ul>
+</div></header>
+
+<section class="proj-head"><div class="wrap">
+  <p class="eyebrow"><span>Project 08</span><span>Read · experiment</span><span>PyTorch · rules fixed in advance</span></p>
+  <h1>Does the fly's steering circuit help a robot follow a target?</h1>
+  <p class="lead">A simulated robot has to keep a moving target in view while it steers around posts and walls. Its controller was wired with a 443-neuron circuit taken from the fly's connectome, the full map of the fly's nerve cells and their connections, and trained until it stopped improving. It was then compared with the same controller with the circuit taken out. The circuit did not clearly help. What it did do is more interesting: its loops act as a short memory, and that memory both helps and hurts.</p>
+  <div class="cta"><a class="btn primary" href="#memory">The main finding</a><a class="btn" href="/results/">All three experiments</a></div>
+  <div class="proj-meta">
+    <div><p class="eyebrow">Training runs</p>260, every one trained until it stopped improving</div>
+    <div><p class="eyebrow">Target visible</p>Circuit ruled out as clearly better</div>
+    <div><p class="eyebrow">Target hidden</p>Unclear: a benefit could be neither confirmed nor ruled out</div>
+    <div><p class="eyebrow">Next stage</p>Not run: too little left to explain</div>
+  </div>
+</div></section>
+
+<div class="wrap res-body">
+  <ul class="res-toc"><li><a href="#memory">The finding</a></li><li><a href="#question">The question</a></li><li><a href="#score">The main score</a></li><li><a href="#wiring">Loops, not wiring</a></li><li><a href="#activity">A hidden difference</a></li><li><a href="#stopped">Why we stopped</a></li><li><a href="#not">What this does not show</a></li><li><a href="#how">How it was run</a></li></ul>
+
+  <h2 id="memory">The finding in one picture</h2>
+  <div class="prose"><p>The robot sees the world through a one-row strip of light sensors, like a single line of pixels. Two versions of its controller are compared here. One routes the signal through the fly circuit, which has loops: neurons feed back into each other, so the circuit's state carries a trace of what it saw a moment ago. The other, the direct connection, maps what the eye sees straight to the steering, with no loops and so no memory. Each version was trained 30 or 40 times from different random starting points and scored on fresh scenes it had never seen.</p></div>
+
+  <figure class="rfig lead" id="fig-memory">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp1-memory-dissociation.svg" width="720" height="440" alt="Slope chart. Post collisions: 13.2% for the circuit and 13.3% for the direct connection with the target visible; 18.2% against 21.4% with it hidden. Wall collisions: 7.4% against 4.5% visible, 25.5% against 22.8% hidden."><img class="rfig-sm" src="/img/results/exp1-memory-dissociation-sm.svg" width="330" height="770" alt="Slope chart. Post collisions: 13.2% for the circuit and 13.3% for the direct connection with the target visible; 18.2% against 21.4% with it hidden. Wall collisions: 7.4% against 4.5% visible, 25.5% against 22.8% hidden."></div>
+    <figcaption>Compare the gap between the two lines in each panel. With walls, the fly circuit is about 2.8 points worse whether or not the target is visible; with posts, the two are level while the target is visible, and the circuit is 3.2 points better once it is hidden. The circuit's loops give it a short memory, and the simplest reading is that the memory helps it hold a sensible course past posts while the target is out of sight and makes it slower to react to a wall right in front of it. With the target hidden, the two effects roughly cancel out. Only the target is ever hidden, never the posts or walls, and this explanation fits the pattern but was not tested directly.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_track/reports/stage1_headroom.md">stage1_headroom.md</a> · <a href="/results/sources/fly_track/reports/stage1b_occlusion.md">stage1b_occlusion.md</a> · <a href="/results/sources/fly_track/reports/exp1c/g1.json">g1.json</a> · <a href="/results/sources/fly_track/reports/exp1c/g1b.json">g1b.json</a></p>
+  </figure>
+
+  <details class="nums"><summary>The precise numbers behind this picture</summary>
+    <p>Share of evaluation episodes with at least one collision. Target visible: 1,000 fresh scenes, 30 training runs per version. Target hidden: 2,000 fresh scenes, 40 runs per version. A difference is called reliable when we can be 95% confident it is not zero.</p>
+    <table>
+      <thead><tr><th>Collision, condition</th><th class="num">Circuit</th><th class="num">Direct</th><th>Circuit minus direct (95% range)</th></tr></thead>
+      <tbody>
+        <tr><td>Post, visible</td><td class="num">13.2%</td><td class="num">13.3%</td><td>−0.1 points (−1.3 to +1.1)</td></tr>
+        <tr><td>Wall, visible</td><td class="num">7.4%</td><td class="num">4.5%</td><td>+2.8 points (+1.8 to +4.0)</td></tr>
+        <tr><td>Post, hidden</td><td class="num">18.2%</td><td class="num">21.4%</td><td>−3.2 points (−4.4 to −2.1)</td></tr>
+        <tr><td>Wall, hidden</td><td class="num">25.5%</td><td class="num">22.8%</td><td>+2.8 points (+1.4 to +4.1)</td></tr>
+      </tbody>
+    </table>
+  </details>
+
+  <h2 id="question">The question</h2>
+  <div class="prose">
+    <p>In an earlier experiment, a controller built on this circuit did no better than the same controller with the circuit removed, and a hand-written classical tracker beat both: it succeeded in 92.5% of test scenes, against 70.9% for the fly circuit. One objection was that the circuit had been given a fixed, short training budget and might simply not have finished learning. This experiment trained every version until it stopped improving and asked again: does the circuit beat the direct connection?</p>
+    <p>Two tests were fixed in advance. The first used the normal task. The second hid the target for two spells of 1 to 2 seconds in every scene, the one situation where a memory should give the circuit a real reason to win. The circuit counted as clearly better only if it led by at least 3 points on the main score and we could be confident the lead was above zero. It counted as ruled out if we could be 95% confident its lead was below 3 points, on both the main score and the success rate. Only a clear win would have opened the next stage, which asks whether it is the fly's exact wiring that matters.</p>
+  </div>
+
+  <h2 id="score">The main score</h2>
+  <div class="prose">
+    <p>The main score is the share of time the robot kept the target in view at the right distance. A scene counts as a success when the robot kept it in view most of the time, never lost it for long, and hit nothing.</p>
+    <p class="finding"><strong>Target visible: ruled out.</strong> The circuit scored 88.9% against the direct connection's 91.0%, so it was 2.1 points behind. We can be 95% confident the true gap is between 0.7 and 3.5 points in the direct connection's favour. Its success rate was also lower.</p>
+    <p class="finding"><strong>Target hidden: unclear.</strong> The circuit scored 69.2% against 68.5%, 0.7 points ahead. We can be 95% confident the true difference lies between 0.5 points behind and 2.0 points ahead, so a lead could not be confirmed. Its success rate was 2.5 points higher, and that lead is reliably above zero, but its range reaches 4.1 points, above the 3-point bar, so a worthwhile benefit could not be ruled out either. After the first round came back unclear, the plan allowed one extension, to 40 runs per version and 2,000 test scenes. It stayed unclear, and that verdict is final.</p>
+    <p>The training runs varied more than planned for: up to about 1.86 times the planned spread, for the circuit's success rate. So this unclear result should not be read as weak evidence that there is no effect. It is a test that could not decide.</p>
+  </div>
+
+  <figure class="rfig" id="fig-inert">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp1-not-inert.svg" width="720" height="322" alt="Dot and range chart: circuit minus two-signal summary +10.4 and +10.0 points; circuit minus direct connection −2.1 and +0.7 points."><img class="rfig-sm" src="/img/results/exp1-not-inert-sm.svg" width="330" height="372" alt="Dot and range chart: circuit minus two-signal summary +10.4 and +10.0 points; circuit minus direct connection −2.1 and +0.7 points."></div>
+    <figcaption>The red dots sit far to the right in both conditions: the circuit is about 10 points ahead of a crude version that only adds up the left and right halves of the eye into two signals. It clearly does more than a crude two-signal summary. It is beaten by a simple direct connection, not by nothing.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_track/reports/stage1_headroom.md">stage1_headroom.md</a> · <a href="/results/sources/fly_track/reports/stage1b_occlusion.md">stage1b_occlusion.md</a></p>
+  </figure>
+
+  <details class="nums"><summary>The precise numbers: main score and success</summary>
+    <table>
+      <thead><tr><th>Circuit minus…</th><th>Target visible</th><th>Target hidden</th></tr></thead>
+      <tbody>
+        <tr><td>direct connection, main score</td><td>−2.1 points (−3.5 to −0.7)</td><td>+0.7 points (−0.5 to +2.0)</td></tr>
+        <tr><td>direct connection, success rate</td><td>−2.3 points (−4.0 to −0.5)</td><td>+2.5 points (+0.8 to +4.1)</td></tr>
+        <tr><td>two-signal summary, main score</td><td>+10.4 points (+7.0 to +14.3)</td><td>+10.0 points (+7.6 to +12.5)</td></tr>
+      </tbody>
+    </table>
+    <p>Ranges are 95% ranges from resampling training runs and scenes, 10,000 times. Main score with the target visible: circuit 88.9%, direct 91.0%. Hidden: 69.2% and 68.5%.</p>
+  </details>
+
+  <h2 id="wiring">The loops help, not the fly's wiring</h2>
+  <div class="prose"><p>If the post advantage came from the fly's particular wiring, a scrambled copy of the circuit should lose it. Three rewired copies were trained alongside: the same neurons and the same number of connections, with the connections shuffled so that each neuron keeps its count of inputs and outputs.</p></div>
+
+  <figure class="rfig" id="fig-loops">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp1-loops-not-wiring.svg" width="720" height="380" alt="Bar chart of post collisions with the target hidden: rewired copies 17.8%, 18.0%, 18.3%, real wiring 18.2%, direct connection 21.4%, two-signal summary 22.1%."><img class="rfig-sm" src="/img/results/exp1-loops-not-wiring-sm.svg" width="330" height="380" alt="Bar chart of post collisions with the target hidden: rewired copies 17.8%, 18.0%, 18.3%, real wiring 18.2%, direct connection 21.4%, two-signal summary 22.1%."></div>
+    <figcaption>The four versions with loops all hit posts in about 18% of scenes (17.8% to 18.3%); the two without loops hit them in 21.4% and 22.1%. Three randomly rewired versions of the fly's circuit do just as well as the real one. The benefit comes from having loops at all, not from the fly's particular wiring.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_track/reports/stage1b_occlusion.md">stage1b_occlusion.md</a>, table “Every arm” · <a href="/results/sources/fly_track/reports/exp1c/g1b.json">g1b.json</a></p>
+  </figure>
+  <div class="prose"><p>The rewired copies were trained 15 times each, against 40 for the real circuit and the direct connection, and they were compared only descriptively: no test was set in advance for them. On the main score none of them scored reliably worse than the real circuit, and one, rewired copy 3, did slightly better with the target visible: the real circuit was 1.8 points behind it, and we can be 95% confident that gap is above zero.</p></div>
+
+  <h2 id="activity">A difference that was there before any training</h2>
+  <div class="prose"><p>Before training, every connection's starting strength is set from its synapse count, the number of physical contacts between the two neurons. That turned out to matter on its own. Measured before any learning, with identical settings, the real circuit is quieter than every one of 64 scrambled versions of itself.</p></div>
+
+  <figure class="rfig" id="fig-activity">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp1-activity.svg" width="720" height="340" alt="Strip chart of 64 scrambled circuits' extra output activity before training. Keeping each block's synapse strengths: 0.2% to 8.2%. Shuffling the strengths within blocks: 3.0% to 102.5%. The earlier experiment's rewired copies: 108.8% to 186.0%."><img class="rfig-sm" src="/img/results/exp1-activity-sm.svg" width="330" height="446" alt="Strip chart of 64 scrambled circuits' extra output activity before training. Keeping each block's synapse strengths: 0.2% to 8.2%. Shuffling the strengths within blocks: 3.0% to 102.5%. The earlier experiment's rewired copies: 108.8% to 186.0%."></div>
+    <figcaption>Every dot is right of zero: the real circuit is quieter than every scrambled version of itself before any learning happens. Scrambles that keep the synapse strengths of each group of connections come within 0.2% to 8.2% of it; scrambles that keep the same groups but shuffle the strengths range from 3.0% to 102.5%. So the difference tracks which connections carry the largest synapse counts. Earlier comparisons that did not correct for this were comparing two different things.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_track/reports/exp1c/activity.json">activity.json</a> · <a href="/results/sources/fly_track/docs/exp1_continuation_preregistration.md">preregistration, section 6</a></p>
+  </figure>
+  <div class="prose"><p>The earlier experiment's rewired copies, and the three in the figure above, started 108.8% to 186.0% more active than the real circuit. The planned next stage would have matched every scrambled circuit's starting activity to the real one before training, and also kept the unmatched versions, so the size of this effect would stay visible.</p></div>
+
+  <details class="nums"><summary>The precise numbers: activity before training</summary>
+    <table>
+      <thead><tr><th>Scrambling keeps…</th><th class="num">Graphs</th><th>Extra output activity</th></tr></thead>
+      <tbody>
+        <tr><td>each block's synapse strengths</td><td class="num">10</td><td>+0.2% to +8.2%</td></tr>
+        <tr><td>cell-type and side blocks</td><td class="num">20</td><td>+3.0% to +102.5%</td></tr>
+        <tr><td>cell-type blocks</td><td class="num">10</td><td>+69.7% to +121.2%</td></tr>
+        <tr><td>each neuron's number of links</td><td class="num">10</td><td>+20.2% to +108.1%</td></tr>
+        <tr><td>excitatory and inhibitory counts</td><td class="num">10</td><td>+8.8% to +91.9%</td></tr>
+        <tr><td>earlier rewired copies</td><td class="num">3</td><td>+108.8% to +186.0%</td></tr>
+        <tr><td>earlier random copy</td><td class="num">1</td><td>+40.0%</td></tr>
+      </tbody>
+    </table>
+    <p>Mean output-neuron activity over 50 fixed scenes, averaged over 10 starting points, relative to the real circuit. The direct connection, which has no circuit to scramble, is not shown; it was 29.0% less active.</p>
+  </details>
+
+  <h2 id="curves">Training really did finish</h2>
+  <figure class="rfig" id="fig-curves">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp1-learning-curves.svg" width="720" height="450" alt="Learning curves for every version in both conditions. All versions level off by about 4,000 training steps."><img class="rfig-sm" src="/img/results/exp1-learning-curves-sm.svg" width="330" height="680" alt="Learning curves for every version in both conditions. All versions level off by about 4,000 training steps."></div>
+    <figcaption>Every version levels off by about step 4,000, and the order between them is set early. Up to that step every run is still training; the hollow points after it rest on the few runs that had not yet stopped, with their count shown, so they say little. All 260 runs stopped under the rule set in advance, and none reached the 16,000-step limit.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_track/reports/stage1_headroom.md">stage1_headroom.md</a> and <a href="/results/sources/fly_track/reports/stage1b_occlusion.md">stage1b_occlusion.md</a>, tables “Convergence” and “Mean validation tracked fraction by step”</p>
+  </figure>
+
+  <h2 id="stopped">Why we stopped</h2>
+  <div class="prose"><p>The next stage would have asked how much of the circuit's lead comes from the fly's exact wiring, by comparing it with 20 scrambled circuits, each trained 5 times. That only makes sense if there is a lead to explain.</p></div>
+  <figure class="rfig" id="fig-stopped">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp1-why-stopped.svg" width="720" height="320" alt="Two bars: the circuit's whole lead with the target hidden, 0.70 points; the smallest difference the planned test could reliably detect, 2.0 points in the best case and 2.8 points in a less favourable one."><img class="rfig-sm" src="/img/results/exp1-why-stopped-sm.svg" width="330" height="350" alt="Two bars: the circuit's whole lead with the target hidden, 0.70 points; the smallest difference the planned test could reliably detect, 2.0 points in the best case and 2.8 points in a less favourable one."></div>
+    <figcaption>To find out whether the fly's exact wiring matters, we would have needed a measurement finer than the thing being measured. The planned test could reliably detect differences of two points or more. The whole gap it was looking inside was less than one point.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_track/reports/exp1c/power.json">power.json</a>, Stage 2 table · <a href="/results/sources/fly_track/reports/stage1b_occlusion.md">stage1b_occlusion.md</a>, verdict table</p>
+  </figure>
+  <div class="prose"><p>“Reliably detect” means the planned test would catch a real difference of that size four times out of five. The plan did not say what to do after a final unclear result at the second test, so the next stage was not started.</p></div>
+
+  <h2 id="not">What this does not show</h2>
+  <div class="prose"><ul>
+    <li>It does not show that the fly's wiring is unimportant to the fly. This is one 443-neuron circuit, in a simple simulator with a one-row eye and a scripted target, trained by copying a teacher.</li>
+    <li>It does not rule out a small benefit with the target hidden: we can be 95% confident only that it is below 2.0 points on the main score.</li>
+    <li>The memory explanation of the collision pattern is a reading of the results, not something that was tested directly.</li>
+    <li>The rewired copies were not matched for starting activity, so they show that the real wiring is not needed for the post advantage; they are not a clean test of whether the real wiring matters.</li>
+  </ul></div>
+
+  <h2 id="how">How it was run</h2>
+  <div class="prose">
+    <p>The plan was written and fixed before any training run: the versions to compare, the number of runs, the fresh test scenes, the thresholds for a clear win and for ruling out, the single extension, and the analysis code, which was frozen and checked by its fingerprint before each analysis. Test scenes could only be scored through one guarded script. Every number on this page is rendered from the saved result files linked below; nothing is re-derived for the site.</p>
+    <p>Sources: <a href="/results/sources/fly_track/reports/stage1_headroom.md">first test report</a>, <a href="/results/sources/fly_track/reports/stage1b_occlusion.md">second test report</a>, <a href="/results/sources/fly_track/docs/exp1_continuation_preregistration.md">preregistration</a>, <a href="/results/sources/fly_track/reports/report.md">earlier experiment's report</a>.</p>
+  </div>
+
+  <div class="pager"><a href="/projects/sugar-circuit/">← 07 Sugar circuit audit</a><a href="/projects/forward-only-training/">09 Forward-only training →</a></div>
+</div>
+
+<footer><div class="wrap">
+  <div><p class="eyebrow">Flybrain</p><p>Hand-written HTML and CSS, one module of JavaScript for the simulation, no framework, no analytics.</p></div>
+  <div><p class="eyebrow">Data</p><ul><li>MaleCNS v1.0 — FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research. <a href="https://male-cns.janelia.org/download/">CC BY 4.0</a></li></ul></div>
+</div></footer>
+<script type="module" src="/js/site.js"></script>
+<script type="module" src="/js/results.js"></script>
+</body>
+</html>

@@ -1,0 +1,719 @@
+{
+ "about": "Every figure on the EXP1-EXP3 result pages, the exact fields it reads and the SHA-256 of each source file at read time. Paths are relative to the Flybrain workspace; copies are served from /results/sources/. See scripts/write_manifest.py for the selector grammar.",
+ "files": {
+  "fly_retrieval/b2/export.csv": {
+   "sha256": "8eeace98556ea4619e1b4ce23420034d0d7ac765ee6d89baf4aa9054616f057b",
+   "served_at": "/results/sources/fly_retrieval/b2/export.csv",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_retrieval/b2/flyhash_candidates_touched.csv": {
+   "sha256": "e0413675983b5d151582b5fd0ff19ce5237d16df42b6c24b36dd8c8d7a040533",
+   "served_at": "/results/sources/fly_retrieval/b2/flyhash_candidates_touched.csv",
+   "origin": "derived verbatim from HDF5 attributes by scripts/extract_b2_touched.py"
+  },
+  "fly_retrieval/docs/exp3_analysis.md": {
+   "sha256": "74f3c9c6d3d3f20ed0a12504c569a385779507ee80ec5170dab272836d7e208f",
+   "served_at": "/results/sources/fly_retrieval/docs/exp3_analysis.md",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_retrieval/docs/exp3_preregistration.md": {
+   "sha256": "511c884f725ee7018aa42d6e1ea2d5954cad2a88c499bf37e9b14196b868f43f",
+   "served_at": "/results/sources/fly_retrieval/docs/exp3_preregistration.md",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_retrieval/reports/exp3_trackA_novelty.md": {
+   "sha256": "e8e198c661cb84c433efd64f22840249a64827adf6971172c9ae1f6cbb5ff903",
+   "served_at": "/results/sources/fly_retrieval/reports/exp3_trackA_novelty.md",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_retrieval/reports/exp3_trackB_connectome.md": {
+   "sha256": "3cf4fd9a8b1fca84f3cccfa054553d0262e8f298aa041202d65b09ca4c12a053",
+   "served_at": "/results/sources/fly_retrieval/reports/exp3_trackB_connectome.md",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_retrieval/reports/exp3_trackC_skew.md": {
+   "sha256": "4ae1c369da8fa2cc9d0fe07120bf5ab04bb278e1a8fe1375dfac85e3c00b7398",
+   "served_at": "/results/sources/fly_retrieval/reports/exp3_trackC_skew.md",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_retrieval/reports/trackA_summary.json": {
+   "sha256": "70182364f1d993f152be48990c56ff58f16f2b0c4062e80c066907bbc8cd30a2",
+   "served_at": "/results/sources/fly_retrieval/reports/trackA_summary.json",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_retrieval/reports/trackB2_summary.json": {
+   "sha256": "56ad6c171cc80a4ca7b0a85ffdabd558aa7b90dec7f0d5b9cf5928ce16b814a8",
+   "served_at": "/results/sources/fly_retrieval/reports/trackB2_summary.json",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_retrieval/reports/trackC_summary.json": {
+   "sha256": "30285a9fc216b6d7d43414911521e3aed16c65bbaed1574688e594535fc0c3b7",
+   "served_at": "/results/sources/fly_retrieval/reports/trackC_summary.json",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_track/docs/exp1_continuation_preregistration.md": {
+   "sha256": "203e38c0c25d3a55e0940a0d822a1d4c9b6ba8eb18ab5fe885b35f14c5f84483",
+   "served_at": "/results/sources/fly_track/docs/exp1_continuation_preregistration.md",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json": {
+   "sha256": "c2671093f7bec1c9934588d5b808fe67400e3aa86649805af9a9d953e947d044",
+   "served_at": "/results/sources/fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_track/reports/exp1c/activity.json": {
+   "sha256": "a30feb4d2d1da7e78e863f009e71486a65f970a3f39aca350869b450320e7e04",
+   "served_at": "/results/sources/fly_track/reports/exp1c/activity.json",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_track/reports/exp1c/g1.json": {
+   "sha256": "7e6aceb3c6bb8d2fc9949b4bc0b0b8559ba14ad8f3d9b38d2b0aa644b562044d",
+   "served_at": "/results/sources/fly_track/reports/exp1c/g1.json",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_track/reports/exp1c/g1b.json": {
+   "sha256": "c0d81421a5f9942c4d1785676107e577236d6e5b0c5dc296683fc6a2174cdecc",
+   "served_at": "/results/sources/fly_track/reports/exp1c/g1b.json",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_track/reports/exp1c/power.json": {
+   "sha256": "b2186b5b5fb35f678bdf138ca14fa5f73145a61465e746d69d7f6b7b77309d4c",
+   "served_at": "/results/sources/fly_track/reports/exp1c/power.json",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_track/reports/exp2_conditional_power.json": {
+   "sha256": "ecb3e2b34e04e90d30b86a90dcf0a983c7a352155bd693ce3756b36a8f2d31c9",
+   "served_at": "/results/sources/fly_track/reports/exp2_conditional_power.json",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_track/reports/exp2_conditional_report.md": {
+   "sha256": "edd1358a083d21f26dd2b4a735cde42a88567777d14b690ebeeff4616ccfb540",
+   "served_at": "/results/sources/fly_track/reports/exp2_conditional_report.md",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_track/reports/report.md": {
+   "sha256": "3acb96b3e18e8a7dfe27d2e946bbf2f15fbd5832f72027788313fe797e926e84",
+   "served_at": "/results/sources/fly_track/reports/report.md",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_track/reports/stage1_headroom.md": {
+   "sha256": "e0c6e945a099d91761ea45d09006d424fa25c2585b95a07903093c578ad3024d",
+   "served_at": "/results/sources/fly_track/reports/stage1_headroom.md",
+   "origin": "workspace file, copied byte for byte"
+  },
+  "fly_track/reports/stage1b_occlusion.md": {
+   "sha256": "b14b0e111921add7d91e497cfd87d1af1a16415612aeacc82c8d5b3c7dff196a",
+   "served_at": "/results/sources/fly_track/reports/stage1b_occlusion.md",
+   "origin": "workspace file, copied byte for byte"
+  }
+ },
+ "figures": [
+  {
+   "id": "exp1-memory-dissociation",
+   "title": "The memory dissociation: post and wall collisions, circuit against direct connection",
+   "page": "/projects/steering-circuit/",
+   "lead": true,
+   "sources": [
+    "fly_track/reports/exp1c/g1.json",
+    "fly_track/reports/exp1c/g1b.json",
+    "fly_track/reports/stage1_headroom.md",
+    "fly_track/reports/stage1b_occlusion.md"
+   ],
+   "fields": [
+    "json:fly_track/reports/exp1c/g1.json#/descriptives/bio/post_collision",
+    "json:fly_track/reports/exp1c/g1.json#/descriptives/bio/wall_collision",
+    "json:fly_track/reports/exp1c/g1.json#/descriptives/bypass/post_collision",
+    "json:fly_track/reports/exp1c/g1.json#/descriptives/bypass/wall_collision",
+    "json:fly_track/reports/exp1c/g1b.json#/descriptives/bio/post_collision",
+    "json:fly_track/reports/exp1c/g1b.json#/descriptives/bio/wall_collision",
+    "json:fly_track/reports/exp1c/g1b.json#/descriptives/bypass/post_collision",
+    "json:fly_track/reports/exp1c/g1b.json#/descriptives/bypass/wall_collision",
+    "json:fly_track/reports/exp1c/g1.json#/secondary/post_collision/diff",
+    "json:fly_track/reports/exp1c/g1.json#/secondary/post_collision/ci95",
+    "json:fly_track/reports/exp1c/g1.json#/secondary/wall_collision/diff",
+    "json:fly_track/reports/exp1c/g1.json#/secondary/wall_collision/ci95",
+    "json:fly_track/reports/exp1c/g1b.json#/secondary/post_collision/diff",
+    "json:fly_track/reports/exp1c/g1b.json#/secondary/post_collision/ci95",
+    "json:fly_track/reports/exp1c/g1b.json#/secondary/wall_collision/diff",
+    "json:fly_track/reports/exp1c/g1b.json#/secondary/wall_collision/ci95"
+   ],
+   "rendered_tables": [
+    "fly_track/reports/stage1_headroom.md: 'Every arm (descriptive)' and 'Bio minus bypass, secondary endpoints'",
+    "fly_track/reports/stage1b_occlusion.md: the same two tables"
+   ],
+   "notes": "Reliable = 95% interval excludes zero (ci95 field). Rates drawn as % of evaluation episodes."
+  },
+  {
+   "id": "exp1-loops-not-wiring",
+   "title": "Post-collision rate for all six arms under occlusion",
+   "page": "/projects/steering-circuit/",
+   "sources": [
+    "fly_track/reports/exp1c/g1b.json",
+    "fly_track/reports/stage1b_occlusion.md"
+   ],
+   "fields": [
+    "json:fly_track/reports/exp1c/g1b.json#/descriptives/bio/post_collision",
+    "json:fly_track/reports/exp1c/g1b.json#/descriptives/bypass/post_collision",
+    "json:fly_track/reports/exp1c/g1b.json#/descriptives/rew1001/post_collision",
+    "json:fly_track/reports/exp1c/g1b.json#/descriptives/rew1002/post_collision",
+    "json:fly_track/reports/exp1c/g1b.json#/descriptives/rew1003/post_collision",
+    "json:fly_track/reports/exp1c/g1b.json#/descriptives/two_unit/post_collision",
+    "json:fly_track/reports/exp1c/g1b.json#/seeds_per_arm/bio",
+    "json:fly_track/reports/exp1c/g1b.json#/seeds_per_arm/bypass",
+    "json:fly_track/reports/exp1c/g1b.json#/seeds_per_arm/rew1001",
+    "json:fly_track/reports/exp1c/g1b.json#/seeds_per_arm/rew1002",
+    "json:fly_track/reports/exp1c/g1b.json#/seeds_per_arm/rew1003",
+    "json:fly_track/reports/exp1c/g1b.json#/seeds_per_arm/two_unit"
+   ],
+   "rendered_tables": [
+    "fly_track/reports/stage1b_occlusion.md: 'Every arm (descriptive)', column 'Post-collision episodes'"
+   ]
+  },
+  {
+   "id": "exp1-why-stopped",
+   "title": "The planned Stage 2 test's smallest detectable difference against the whole gap it would search",
+   "page": "/projects/steering-circuit/",
+   "sources": [
+    "fly_track/reports/exp1c/power.json",
+    "fly_track/reports/exp1c/g1b.json",
+    "fly_track/docs/exp1_continuation_preregistration.md",
+    "fly_track/reports/stage1b_occlusion.md"
+   ],
+   "fields": [
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/0/graphs",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/0/seeds_per_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/0/sd_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/0/mde80_two_sided",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/1/graphs",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/1/seeds_per_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/1/sd_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/1/mde80_two_sided",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/2/graphs",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/2/seeds_per_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/2/sd_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/2/mde80_two_sided",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/3/graphs",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/3/seeds_per_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/3/sd_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/3/mde80_two_sided",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/4/graphs",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/4/seeds_per_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/4/sd_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/4/mde80_two_sided",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/5/graphs",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/5/seeds_per_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/5/sd_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/5/mde80_two_sided",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/6/graphs",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/6/seeds_per_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/6/sd_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/6/mde80_two_sided",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/7/graphs",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/7/seeds_per_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/7/sd_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/7/mde80_two_sided",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/8/graphs",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/8/seeds_per_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/8/sd_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/8/mde80_two_sided",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/9/graphs",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/9/seeds_per_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/9/sd_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/9/mde80_two_sided",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/10/graphs",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/10/seeds_per_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/10/sd_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/10/mde80_two_sided",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/11/graphs",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/11/seeds_per_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/11/sd_graph",
+    "json:fly_track/reports/exp1c/power.json#/stage2_table/11/mde80_two_sided",
+    "json:fly_track/reports/exp1c/g1b.json#/tracked_frac/diff",
+    "json:fly_track/reports/exp1c/g1b.json#/tracked_frac/ci95"
+   ],
+   "rendered_tables": [
+    "fly_track/docs/exp1_continuation_preregistration.md: section 4.4 Stage 2 power table (20 x 5 rows)",
+    "fly_track/reports/stage1b_occlusion.md: Verdict table, tracked fraction row"
+   ],
+   "notes": "Planned design 20 null graphs x 5 seeds (the 5-seed remedy in prereg 4.4). 0.020 is its graph-SD 0 row, the most favourable; graph SD 0.03 gives 0.028."
+  },
+  {
+   "id": "exp1-not-inert",
+   "title": "Circuit minus crude two-unit summary, against circuit minus direct connection",
+   "page": "/projects/steering-circuit/",
+   "sources": [
+    "fly_track/reports/exp1c/g1.json",
+    "fly_track/reports/exp1c/g1b.json",
+    "fly_track/reports/stage1_headroom.md",
+    "fly_track/reports/stage1b_occlusion.md"
+   ],
+   "fields": [
+    "json:fly_track/reports/exp1c/g1.json#/bio_minus_other_arms_tracked_frac/two_unit/diff",
+    "json:fly_track/reports/exp1c/g1.json#/bio_minus_other_arms_tracked_frac/two_unit/ci95",
+    "json:fly_track/reports/exp1c/g1b.json#/bio_minus_other_arms_tracked_frac/two_unit/diff",
+    "json:fly_track/reports/exp1c/g1b.json#/bio_minus_other_arms_tracked_frac/two_unit/ci95",
+    "json:fly_track/reports/exp1c/g1.json#/tracked_frac/diff",
+    "json:fly_track/reports/exp1c/g1.json#/tracked_frac/ci95",
+    "json:fly_track/reports/exp1c/g1b.json#/tracked_frac/diff",
+    "json:fly_track/reports/exp1c/g1b.json#/tracked_frac/ci95"
+   ],
+   "rendered_tables": [
+    "fly_track/reports/stage1_headroom.md and fly_track/reports/stage1b_occlusion.md: 'Bio minus each other arm' (bio - two_unit) and the Verdict table"
+   ]
+  },
+  {
+   "id": "exp1-learning-curves",
+   "title": "Mean validation tracked fraction by training step, every arm, both conditions",
+   "page": "/projects/steering-circuit/",
+   "sources": [
+    "fly_track/reports/stage1_headroom.md",
+    "fly_track/reports/stage1b_occlusion.md",
+    "fly_track/reports/exp1c/g1.json",
+    "fly_track/reports/exp1c/g1b.json"
+   ],
+   "fields": [
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|bio|1000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|bio|2000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|bio|4000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|bio|8000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|bio|12000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|bio|16000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|bypass|1000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|bypass|2000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|bypass|4000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|bypass|8000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|bypass|12000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|bypass|16000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1001|1000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1001|2000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1001|4000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1001|8000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1001|12000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1001|16000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1002|1000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1002|2000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1002|4000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1002|8000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1002|12000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1002|16000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1003|1000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1003|2000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1003|4000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1003|8000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1003|12000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|rew1003|16000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|two_unit|1000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|two_unit|2000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|two_unit|4000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|two_unit|8000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|two_unit|12000",
+    "md:fly_track/reports/stage1_headroom.md#Mean validation tracked fraction by step|two_unit|16000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|bio|1000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|bio|2000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|bio|4000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|bio|8000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|bio|12000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|bio|16000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|bypass|1000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|bypass|2000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|bypass|4000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|bypass|8000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|bypass|12000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|bypass|16000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1001|1000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1001|2000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1001|4000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1001|8000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1001|12000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1001|16000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1002|1000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1002|2000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1002|4000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1002|8000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1002|12000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1002|16000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1003|1000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1003|2000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1003|4000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1003|8000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1003|12000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|rew1003|16000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|two_unit|1000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|two_unit|2000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|two_unit|4000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|two_unit|8000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|two_unit|12000",
+    "md:fly_track/reports/stage1b_occlusion.md#Mean validation tracked fraction by step|two_unit|16000",
+    "json:fly_track/reports/exp1c/g1.json#/convergence/*/stop_reason",
+    "json:fly_track/reports/exp1c/g1b.json#/convergence/*/stop_reason"
+   ],
+   "rendered_tables": [
+    "fly_track/reports/stage1_headroom.md and fly_track/reports/stage1b_occlusion.md: 'Convergence' and 'Mean validation tracked fraction by step'"
+   ],
+   "notes": "Each point carries the number of runs still training (n=...). Only the six tabulated steps exist in the reports; nothing between them is drawn as data."
+  },
+  {
+   "id": "exp1-activity",
+   "title": "Pre-training output-rate offset of every null graph against the real circuit",
+   "page": "/projects/steering-circuit/",
+   "sources": [
+    "fly_track/reports/exp1c/activity.json",
+    "fly_track/docs/exp1_continuation_preregistration.md"
+   ],
+   "fields": [
+    "json:fly_track/reports/exp1c/activity.json#/graphs/*/rel_offset_unnormalized",
+    "json:fly_track/reports/exp1c/activity.json#/bio/rate_output",
+    "json:fly_track/reports/exp1c/activity.json#/n_flagged"
+   ],
+   "rendered_tables": [
+    "fly_track/docs/exp1_continuation_preregistration.md: section 6 activity table"
+   ],
+   "notes": "64 null graphs: L0-L4 (60) plus the parent's four rewired graphs. The bypass entry (no graph) is excluded from the plot and mentioned in the page's detail block."
+  },
+  {
+   "id": "exp2-variability-stop",
+   "title": "Measured seed-to-seed variability against the planning value and the stop threshold",
+   "page": "/projects/forward-only-training/",
+   "sources": [
+    "fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json",
+    "fly_track/reports/exp2_conditional_power.json",
+    "fly_track/reports/exp2_conditional_report.md"
+   ],
+   "fields": [
+    "json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/tracking_seed_sd",
+    "json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/collision_seed_sd",
+    "json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/effective_stop_threshold_inclusive",
+    "json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/effective_recompute_threshold_inclusive",
+    "json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/nominal_boundaries",
+    "json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/decision",
+    "json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/per_seed_rows/*/metric",
+    "json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/per_seed_rows/*/train_seed",
+    "json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/per_seed_rows/*/paired_CL_minus_OL",
+    "json:fly_track/reports/exp2_conditional_power.json#/condition1_exact_model/tracking_seed_sd",
+    "json:fly_track/reports/exp2_conditional_power.json#/scenario_rows/*/scientific_seed_pairs",
+    "json:fly_track/reports/exp2_conditional_power.json#/scenario_rows/*/episodes",
+    "json:fly_track/reports/exp2_conditional_power.json#/scenario_rows/*/tracking_shared_episode_sd",
+    "json:fly_track/reports/exp2_conditional_power.json#/scenario_rows/*/tracking_seed_sd",
+    "json:fly_track/reports/exp2_conditional_power.json#/scenario_rows/*/tracking_guardrail_power_true_difference_zero"
+   ],
+   "rendered_tables": [
+    "fly_track/reports/exp2_conditional_report.md: Condition 2 gate block"
+   ],
+   "notes": "Power curve = scenario rows at the planned design (20 seed pairs, 2000 episodes, episode SD 0.2). The rows stop at seed SD 0.1, so the measured 0.1348 is marked on the axis with no power value attached."
+  },
+  {
+   "id": "exp3-frontier",
+   "title": "Recall@10 against queries per second, six methods, SIFT and GloVe",
+   "page": "/projects/fly-retrieval/",
+   "sources": [
+    "fly_retrieval/b2/export.csv",
+    "fly_retrieval/reports/trackB2_summary.json",
+    "fly_retrieval/reports/exp3_trackB_connectome.md"
+   ],
+   "fields": [
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=flyhash|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=flyhash|qps",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=flyhash|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=densefly|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=densefly|qps",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=densefly|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=hnswlib|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=hnswlib|qps",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=hnswlib|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=scann|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=scann|qps",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=scann|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=faiss-ivfpq|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=faiss-ivfpq|qps",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=faiss-ivfpq|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=faiss-ivfpqfs|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=faiss-ivfpqfs|qps",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=faiss-ivfpqfs|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=flyhash|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=flyhash|qps",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=flyhash|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=densefly|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=densefly|qps",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=densefly|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=hnswlib|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=hnswlib|qps",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=hnswlib|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=scann|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=scann|qps",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=scann|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=faiss-ivfpq|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=faiss-ivfpq|qps",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=faiss-ivfpq|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=faiss-ivfpqfs|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=faiss-ivfpqfs|qps",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=faiss-ivfpqfs|parameters",
+    "json:fly_retrieval/reports/trackB2_summary.json#/sift-128-euclidean/algorithms/*/max_recall",
+    "json:fly_retrieval/reports/trackB2_summary.json#/glove-100-angular/algorithms/*/max_recall",
+    "json:fly_retrieval/reports/trackB2_summary.json#/sift-128-euclidean/algorithms/*/front",
+    "json:fly_retrieval/reports/trackB2_summary.json#/glove-100-angular/algorithms/*/front",
+    "json:fly_retrieval/reports/trackB2_summary.json#/sift-128-euclidean/readout/0.9/best_baseline_qps",
+    "json:fly_retrieval/reports/trackB2_summary.json#/sift-128-euclidean/readout/0.9/fly",
+    "json:fly_retrieval/reports/trackB2_summary.json#/glove-100-angular/readout/0.9/best_baseline_qps",
+    "json:fly_retrieval/reports/trackB2_summary.json#/glove-100-angular/readout/0.9/fly"
+   ],
+   "rendered_tables": [
+    "fly_retrieval/reports/exp3_trackB_connectome.md: generated B2 tables"
+   ],
+   "notes": "Each method's line joins only its exported Pareto points (computed from export.csv and asserted equal to the analysis' own 'front'). DenseFly's line ends at its last point."
+  },
+  {
+   "id": "exp3-candidates-touched",
+   "title": "FlyHash candidates touched per query against the database size",
+   "page": "/projects/fly-retrieval/",
+   "sources": [
+    "fly_retrieval/b2/flyhash_candidates_touched.csv",
+    "fly_retrieval/b2/export.csv",
+    "fly_retrieval/docs/exp3_preregistration.md",
+    "fly_retrieval/reports/exp3_trackB_connectome.md"
+   ],
+   "fields": [
+    "csv:fly_retrieval/b2/flyhash_candidates_touched.csv#dataset=sift-128-euclidean|name",
+    "csv:fly_retrieval/b2/flyhash_candidates_touched.csv#dataset=sift-128-euclidean|candidates_touched_per_query",
+    "csv:fly_retrieval/b2/flyhash_candidates_touched.csv#dataset=glove-100-angular|name",
+    "csv:fly_retrieval/b2/flyhash_candidates_touched.csv#dataset=glove-100-angular|candidates_touched_per_query",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=flyhash|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=sift-128-euclidean,algorithm=flyhash|k-nn",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=flyhash|parameters",
+    "csv:fly_retrieval/b2/export.csv#dataset=glove-100-angular,algorithm=flyhash|k-nn",
+    "md:fly_retrieval/docs/exp3_preregistration.md#**Benchmark data:**|Dataset=`sift-128-euclidean`|Train × dim",
+    "md:fly_retrieval/docs/exp3_preregistration.md#**Benchmark data:**|Dataset=`glove-100-angular`|Train × dim"
+   ],
+   "rendered_tables": [
+    "fly_retrieval/reports/exp3_trackB_connectome.md: 'Why the fly methods are slow'",
+    "fly_retrieval/docs/exp3_preregistration.md: dataset table (train sizes)"
+   ],
+   "notes": "fly_retrieval/b2/flyhash_candidates_touched.csv is copied verbatim from the HDF5 attributes of the 108 FlyHash result files by scripts/extract_b2_touched.py; each row carries its result file's SHA-256."
+  },
+  {
+   "id": "exp3-novelty-filter",
+   "title": "Fly Bloom filter minus best production baseline, and misses at a 1% false-alarm rate",
+   "page": "/projects/fly-retrieval/",
+   "sources": [
+    "fly_retrieval/reports/trackA_summary.json",
+    "fly_retrieval/reports/exp3_trackA_novelty.md"
+   ],
+   "fields": [
+    "json:fly_retrieval/reports/trackA_summary.json#/cells/*/dataset",
+    "json:fly_retrieval/reports/trackA_summary.json#/cells/*/B",
+    "json:fly_retrieval/reports/trackA_summary.json#/cells/*/delta",
+    "json:fly_retrieval/reports/trackA_summary.json#/cells/*/delta_ci",
+    "json:fly_retrieval/reports/trackA_summary.json#/cells/*/best_production_on_val",
+    "json:fly_retrieval/reports/trackA_summary.json#/cells/*/methods/*/fnr_at_fpr_1pct"
+   ],
+   "rendered_tables": [
+    "fly_retrieval/reports/exp3_trackA_novelty.md: Δ table and 'Every method, every cell' (FNR @FPR 1%)"
+   ]
+  },
+  {
+   "id": "exp3-null-ladder-imputation",
+   "title": "Real wiring against each scrambled control, zero-filled and mean-imputed, both hemispheres",
+   "page": "/projects/fly-retrieval/",
+   "sources": [
+    "fly_retrieval/reports/exp3_trackB_connectome.md"
+   ],
+   "fields": [
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_L,level=N0|Δ zero-filled [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_L,level=N0|Δ mean-imputed [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_L,level=N1|Δ zero-filled [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_L,level=N1|Δ mean-imputed [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_L,level=N3|Δ zero-filled [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_L,level=N3|Δ mean-imputed [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_L,level=NQ|Δ zero-filled [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_L,level=NQ|Δ mean-imputed [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_R,level=N0|Δ zero-filled [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_R,level=N0|Δ mean-imputed [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_R,level=N1|Δ zero-filled [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_R,level=N1|Δ mean-imputed [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_R,level=N3|Δ zero-filled [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_R,level=N3|Δ mean-imputed [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_R,level=NQ|Δ zero-filled [95% CI]",
+    "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_R,level=NQ|Δ mean-imputed [95% CI]"
+   ],
+   "rendered_tables": [
+    "fly_retrieval/reports/exp3_trackB_connectome.md: 'Odours: BIO against each null' (generated B1 table), rows w5_L and w5_R"
+   ],
+   "notes": "Primary threshold w >= 5. Rows are matched on (matrix, level), since the matrix column repeats."
+  },
+  {
+   "id": "exp3-skew",
+   "title": "Real wiring's advantage over its degree-preserving null as queries concentrate",
+   "page": "/projects/fly-retrieval/",
+   "sources": [
+    "fly_retrieval/reports/trackC_summary.json",
+    "fly_retrieval/reports/exp3_trackC_skew.md"
+   ],
+   "fields": [
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/0.0|matched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/0.0|matched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/0.0|mismatched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/0.0|mismatched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/0.5|matched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/0.5|matched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/0.5|mismatched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/0.5|mismatched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/1.0|matched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/1.0|matched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/1.0|mismatched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/1.0|mismatched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/1.5|matched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/1.5|matched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/1.5|mismatched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/1.5|mismatched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/2.0|matched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/2.0|matched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/2.0|mismatched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/L/cells/2.0|mismatched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/0.0|matched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/0.0|matched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/0.0|mismatched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/0.0|mismatched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/0.5|matched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/0.5|matched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/0.5|mismatched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/0.5|mismatched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/1.0|matched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/1.0|matched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/1.0|mismatched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/1.0|mismatched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/1.5|matched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/1.5|matched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/1.5|mismatched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/1.5|mismatched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/2.0|matched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/2.0|matched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/2.0|mismatched|N1/delta",
+    "json:fly_retrieval/reports/trackC_summary.json#/hemispheres/R/cells/2.0|mismatched|N1/ci",
+    "json:fly_retrieval/reports/trackC_summary.json#/sesoi"
+   ],
+   "rendered_tables": [
+    "fly_retrieval/reports/exp3_trackC_skew.md: generated table, 'Δ vs N1 [95% CI]' column"
+   ]
+  },
+  {
+   "id": "verdicts",
+   "title": "The four verdicts",
+   "page": "/results/",
+   "sources": [
+    "fly_track/reports/exp1c/g1.json",
+    "fly_track/reports/exp1c/g1b.json",
+    "fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json",
+    "fly_retrieval/reports/trackA_summary.json",
+    "fly_retrieval/reports/trackB2_summary.json",
+    "fly_retrieval/reports/trackC_summary.json",
+    "fly_retrieval/docs/exp3_analysis.md"
+   ],
+   "fields": [
+    "json:fly_track/reports/exp1c/g1.json#/verdict",
+    "json:fly_track/reports/exp1c/g1b.json#/verdict",
+    "json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/decision",
+    "json:fly_retrieval/reports/trackA_summary.json#/verdict/verdict",
+    "json:fly_retrieval/reports/trackB2_summary.json#/sift-128-euclidean/verdict",
+    "json:fly_retrieval/reports/trackB2_summary.json#/glove-100-angular/verdict",
+    "json:fly_retrieval/reports/trackC_summary.json#/overall"
+   ],
+   "rendered_tables": [
+    "fly_retrieval/docs/exp3_analysis.md: 'Verdicts, as predeclared'"
+   ],
+   "notes": "Text only; no numbers are drawn."
+  }
+ ],
+ "pages": {
+  "/projects/steering-circuit/": [
+   "md:fly_track/reports/report.md#Cost and frontier|group=classical,impl=np|success [95% CI]",
+   "md:fly_track/reports/report.md#Cost and frontier|group=fly_bio,impl=dense|success [95% CI]",
+   "json:fly_track/reports/exp1c/g1.json#/tracked_frac/mean_a",
+   "json:fly_track/reports/exp1c/g1.json#/tracked_frac/mean_b",
+   "json:fly_track/reports/exp1c/g1b.json#/tracked_frac/mean_a",
+   "json:fly_track/reports/exp1c/g1b.json#/tracked_frac/mean_b",
+   "json:fly_track/reports/exp1c/g1.json#/success/diff",
+   "json:fly_track/reports/exp1c/g1.json#/success/ci95",
+   "json:fly_track/reports/exp1c/g1b.json#/success/diff",
+   "json:fly_track/reports/exp1c/g1b.json#/success/ci95",
+   "md:fly_track/reports/stage1b_occlusion.md#Realized precision|Endpoint=success,Arm=bio|Ratio",
+   "json:fly_track/reports/exp1c/g1.json#/bio_minus_other_arms_tracked_frac/rew1003/diff"
+  ],
+  "/projects/forward-only-training/": [],
+  "/projects/fly-retrieval/": [
+   "json:fly_retrieval/reports/trackB2_summary.json#/sift-128-euclidean/readout/0.9/fly/flyhash/ratio_to_best_baseline",
+   "json:fly_retrieval/reports/trackB2_summary.json#/glove-100-angular/readout/0.9/fly/flyhash/ratio_to_best_baseline",
+   "mdtext:fly_retrieval/reports/exp3_trackB_connectome.md#with his filter reproduced exactly: 35 glomeruli, 172 odorants, ([0-9.]+)% unmeasured",
+   "mdtext:fly_retrieval/reports/exp3_trackB_connectome.md#His odour primary is \\*\\*([^*]+)%\\*\\*",
+   "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w1_R,level=N1|Δ zero-filled [95% CI]",
+   "md:fly_retrieval/reports/exp3_trackB_connectome.md#Odours: BIO against each null|matrix=w5_L,level=N1|Δ zero-filled [95% CI]"
+  ],
+  "/results/": [],
+  "/": []
+ },
+ "constants": [
+  {
+   "value": 0.95,
+   "why": "the confidence level of every interval ('95% confident', '95% range')",
+   "source": "md:fly_track/reports/stage1_headroom.md#**G1: NO-GO**|Tracked fraction (primary)|Estimate [95% CI]"
+  },
+  {
+   "value": 0.9,
+   "why": "the 90% accuracy (recall@10 0.9) readout level",
+   "source": "json:fly_retrieval/reports/trackB2_summary.json#/sift-128-euclidean/readout/0.9/best_baseline_qps"
+  },
+  {
+   "value": 0.95,
+   "why": "the 95% accuracy readout level FlyHash never reaches on GloVe",
+   "source": "json:fly_retrieval/reports/trackB2_summary.json#/glove-100-angular/readout/0.95/best_baseline_qps"
+  },
+  {
+   "value": 0.01,
+   "why": "the 1% false-alarm rate of the miss-rate comparison",
+   "source": "json:fly_retrieval/reports/trackA_summary.json#/cells/0/methods/FBF/fnr_at_fpr_1pct"
+  },
+  {
+   "value": 0.025,
+   "why": "the +2.5% benefit margin set in advance (EXP3 B1 and C)",
+   "source": "json:fly_retrieval/reports/trackC_summary.json#/sesoi"
+  }
+ ],
+ "inventory_only": [
+  {
+   "file": "fly_track/reports/stage0_diagnostics.md",
+   "sha256": "fa5f3412d4d069b52ca3349b8476edbfec8573ab52981af0db5107985b476d70",
+   "use": "context for the activity confound (finding 6) and post/wall split"
+  },
+  {
+   "file": "fly_track/reports/exp1c/ladder.json",
+   "sha256": "57c7f5b5c1073c738d7aa6d3cda69e3a9a0f2af108066ef6d22b2a7d40c83f0b",
+   "use": "null-ladder rung properties; rung labels only"
+  },
+  {
+   "file": "fly_track/reports/exp1c/evalsets.json",
+   "sha256": "e6848741be77538b032ad03bcf44440a880e0fc5ac18185f2bf51bd5a5e68b6c",
+   "use": "fresh evaluation-set definitions"
+  },
+  {
+   "file": "fly_track/reports/report.md",
+   "sha256": "3acb96b3e18e8a7dfe27d2e946bbf2f15fbd5832f72027788313fe797e926e84",
+   "use": "parent experiment results; cited in page text only"
+  },
+  {
+   "file": "fly_track/analysis.md",
+   "sha256": "3eb0b5401cb9de48d717545e659913bf947efa9699e033e3fb3c6f086d85b5b0",
+   "use": "parent analysis (the brief's docs/analysis.md does not exist; this is the file)"
+  },
+  {
+   "file": "fly_retrieval/reports/trackB2_costs.json",
+   "sha256": "350750aeb0af7ab72cd50fa937d88e0aa48a272fa91e2599e34aeebf0a423930",
+   "use": "insertion and encoding costs; cited in page details only"
+  }
+ ],
+ "expected_but_not_found": {
+  "fly_track/docs/analysis.md": "does not exist; the parent analysis is fly_track/analysis.md",
+  "fly_retrieval/reports/exp3_analysis.md": "does not exist; the synthesis is fly_retrieval/docs/exp3_analysis.md"
+ },
+ "not_plotted": {
+  "fly_track/raw_results_exp1c/stage1/": "per-episode data; every plotted EXP1 number is the frozen analysis' aggregate in g1.json, so nothing is re-derived from episodes",
+  "fly_track/raw_results_exp1c/stage1b/": "as above, for g1b.json"
+ }
+}

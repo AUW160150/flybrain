@@ -50,7 +50,7 @@
 </div></div>
 
 <section class="section" id="projects"><div class="wrap">
-  <div class="section-head"><h2>Projects</h2><span class="mono">01 — 07 · play, learn, inspect</span></div>
+  <div class="section-head"><h2>Projects</h2><span class="mono">01 — 10 · play, learn, inspect, read</span></div>
   <ol class="index">
     <li><a href="/projects/flyworld-game/"><span class="n">01</span><span class="t">FlyWorld<small>Python · panda3d · torch</small></span><span class="d">A garden arena where six small flies are driven by a 10,203-neuron escape-and-feeding circuit extracted from the connectome, and you drive a bigger fly to herd them onto fruit. Loom at them and the giant fiber fires; they jump. Stimulate DNp09 and they walk.</span><span class="k"><b>Play</b><br>brain in your browser<br>desktop game</span></a></li>
     <li><a href="/projects/flyworld-studio/"><span class="n">02</span><span class="t">FlyWorld Studio<small>React · three.js · TypeScript</small></span><span class="d">A browser exploration studio: fly a procedural avatar through a small world, open its teaching brain, then switch to a real-data workspace with bounded MaleCNS circuit packages, provenance inspection and native-coordinate anatomy.</span><span class="k"><b>Play</b><br>runs in the browser</span></a></li>
@@ -59,7 +59,19 @@
     <li><a href="/projects/flycodes/"><span class="n">05</span><span class="t">Flycodes<small>Python · reservoir readout · bounded judge</small></span><span class="d">Can the complete 165,122-neuron graph, used as a fixed reservoir with a trained readout, write code? Trained on 246 curated MBPP examples, scored on LeetCode-style tasks. It scored 0/24, same as its no-recurrence control.</span><span class="k"><b>Explore</b><br>results platform</span></a></li>
     <li><a href="/projects/connectome-atlas/"><span class="n">06</span><span class="t">MaleCNS atlas<small>Python · SQLite · static report</small></span><span class="d">A read-only inspection of the exact 512-neuron, 3,061-edge graph used in the language experiment: verified identity against the published bulk product, contact matrices, partner lookups, and eight native-space skeletons.</span><span class="k"><b>Explore</b><br>static report</span></a></li>
     <li><a href="/projects/sugar-circuit/"><span class="n">07</span><span class="t">Sugar circuit audit<small>Python · neuPrint · Tastekin et al. 2026</small></span><span class="d">A reconstruction and audit of the gustatory sensorimotor pathway from a 2026 Cell paper against MaleCNS v1.0: 95 target bodies resolved, 746,910 raw edge weights cross-checked, every discrepancy logged, and an interactive circuit explorer.</span><span class="k"><b>Explore</b><br>circuit explorer</span></a></li>
+    <li><a href="/projects/steering-circuit/"><span class="n">08</span><span class="t">Steering circuit<small>PyTorch · rules fixed in advance</small></span><span class="d">Trained until it stops improving, does a 443-neuron fly steering circuit keep a robot on target better than a direct connection? 260 runs. Not clearly: its loops act as a short memory that cuts obstacle hits when the target is hidden and adds wall hits, and rewired copies do just as well.</span><span class="k"><b class="read">Read</b><br>figures &amp; results</span></a></li>
+    <li><a href="/projects/forward-only-training/"><span class="n">09</span><span class="t">Forward-only training<small>Python · node perturbation · pilot gate</small></span><span class="d">Can the same circuit learn without backpropagation steadily enough to compare learning rules? A 10-run pilot found results swinging between random starts about four and a half times more than planned for, past the limit set in advance, so the main study stopped itself.</span><span class="k"><b class="read">Read</b><br>figures &amp; results</span></a></li>
+    <li><a href="/projects/fly-retrieval/"><span class="n">10</span><span class="t">Fly-inspired search<small>Python · numpy · Docker</small></span><span class="d">FlyHash and the fly Bloom filter against the methods real systems use, the fly's own odour wiring and the standard search benchmark. The filter wins only at memory budgets where nothing works; FlyHash answers about one question for every 200 the best index does.</span><span class="k"><b class="read">Read</b><br>figures &amp; results</span></a></li>
   </ol>
+</div></section>
+
+<section class="section" id="results"><div class="wrap">
+  <div class="section-head"><h2>Results</h2><span class="mono">08 — 10 · measured, mostly negative</span></div>
+  <figure class="rfig lead">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp1-memory-dissociation.svg" width="720" height="440" alt="Slope chart. Post collisions: 13.2% for the circuit and 13.3% for the direct connection with the target visible; 18.2% against 21.4% with it hidden. Wall collisions: 7.4% against 4.5% visible, 25.5% against 22.8% hidden."><img class="rfig-sm" src="/img/results/exp1-memory-dissociation-sm.svg" width="330" height="770" alt="Slope chart. Post collisions: 13.2% for the circuit and 13.3% for the direct connection with the target visible; 18.2% against 21.4% with it hidden. Wall collisions: 7.4% against 4.5% visible, 25.5% against 22.8% hidden."></div>
+    <figcaption>The clearest finding of projects 08 to 10: the fly circuit's loops give a simulated robot a short memory, which helps it miss posts while its target is hidden and makes it hit walls more often, by about the same 2.8 points whether the target is hidden or not. With the target hidden the two effects roughly cancel out, and the circuit is not clearly better than a direct connection with no loops.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_track/reports/stage1_headroom.md">stage1_headroom.md</a> · <a href="/results/sources/fly_track/reports/stage1b_occlusion.md">stage1b_occlusion.md</a> · <a href="/results/">all results and the four verdicts →</a></p>
+  </figure>
 </div></section>
 
 <section class="section" id="method"><div class="wrap">
@@ -67,6 +79,7 @@
   <div class="two">
     <div class="prose">
       <p>Each project started with a written protocol and ended with a status ledger. Learning experiments were preregistered in the local sense: an analysis plan hashed before training, development selection on validation data only, a frozen configuration, and a single explicit command that opened the test split. Where a comparison came out flat, the page says so.</p>
+      <p>The three latest experiments (08 to 10) went further: each was preregistered with its analysis code frozen and fingerprinted, and with gates decided in advance, the results that would count as a win, as ruling an effect out, or as a reason to stop. Two of them ended at such a gate. That discipline, more than any single number, is what this work establishes.</p>
       <p>Every number on these pages is copied from a saved artifact in the repository: a run manifest, an audit JSON, a figure's sidecar. Nothing is re-derived for the website. The boundaries are stated too: synapse counts are structural weights, not physiological ones; the arena flies are artificial models constrained by real wiring, not emulated animals; the first-person garden is sampled through a female reference eye that has not been registered to the male connectome.</p>
     </div>
     <div class="prose">
@@ -84,5 +97,6 @@
 </div></footer>
 <script type="module" src="/js/site.js"></script>
 <script type="module" src="/js/hero.js"></script>
+<script type="module" src="/js/results.js"></script>
 </body>
 </html>
