@@ -33,7 +33,7 @@
 
   <h2 id="question">The question</h2>
   <div class="prose">
-    <p>The circuit is the same 443-neuron steering circuit as in <a href="/projects/steering-circuit/">project 08</a>, driving the same simulated robot. Forward-only learning was tried in two modes. In the first, the robot learns by copying recorded demonstrations from a teacher. In the second, it learns from its own driving, scored by a reward. The main study would have made 240 training runs and compared forward-only rules with each other and with backpropagation.</p>
+    <p>The circuit is the same 443-neuron steering circuit as in <a href="/projects/steering-circuit/">project 08</a>, driving the same simulated robot. Forward-only learning was tried in two modes. In the first, the robot learns by copying recorded demonstrations from a teacher. In the second, it learns from its own driving, scored by a reward. The main study would have made 260 training runs, plus 182 short runs to tune learning rates, and compared forward-only rules with each other and with backpropagation.</p>
     <p>A comparison like that is only worth running if results are steady enough between training runs that a real difference can stand out. The plan's run counts assumed a run-to-run variability of 0.03 on the main score, a figure carried over from runs trained with backpropagation. Forward-only training is noisier by design, so the pilot measured it directly first, with a rule fixed in advance: below 0.025, go ahead as planned; from 0.025 up to 0.045, recompute how many runs are needed; at 0.045 or above, stop.</p>
   </div>
 

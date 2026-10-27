@@ -809,7 +809,8 @@ def fig_exp2(D: Data, layout: str) -> str:
     f.text(sx(plan) - 4, bot - 8 - f.fs["s"] * 1.3, f"{plan:.2f}", "s", "t1", "end", enc=[enc("text", "", plan, plan_s)])
     f.text(sx(stop) + 4, top + 14, "stop line", "s", "t1")
     f.text(sx(stop) + 4, top + 14 + f.fs["s"] * 1.3, f"{stop:.3f}", "s", "t1", enc=[enc("text", "", stop, stop_s)])
-    for v, sel, lab, w, yy in ((coll, coll_s, "measured, collisions", 1.6, 0.62), (meas, meas_s, "measured, main score", 3, 0.88)):
+    for v, sel, lab, w, yy in ((coll, coll_s, "measured, collisions", 1.6, 0.45 if sm else 0.62),
+                               (meas, meas_s, "measured, main score", 3, 0.7 if sm else 0.88)):
         f.line(sx(v), top, sx(v), bot, "s1", f' stroke-width="{w}"', enc=[enc("x1", "x", v, sel)])
         anchor = "end" if v > 0.1 else "start"
         tx = sx(v) + (-5 if anchor == "end" else 5)
@@ -1133,7 +1134,7 @@ def fig_skew(D: Data, layout: str) -> str:
                           ("square", "h2", "Questions on the opposite channels (mismatched)", True),
                           (None, "s6", "What the idea predicted", True)], W - 24)
     ph = 200 if sm else 240
-    boxes = ([(48, y + 22, W - 64), (48, y + 22 + ph + 80, W - 64)] if sm
+    boxes = ([(48, y + 22, W - 72), (48, y + 22 + ph + 80, W - 72)] if sm
              else [(56, y + 22, 280), (56 + 280 + 70, y + 22, 280)])
     betas = ["0.0", "0.5", "1.0", "1.5", "2.0"]
     for (h, hname), (bx, by, bw) in zip((("L", "Left hemisphere"), ("R", "Right hemisphere")), boxes):

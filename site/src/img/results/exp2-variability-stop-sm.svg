@@ -62,11 +62,11 @@
 <text x="130.4" y="274.1" font-size="11.5" class="t1">stop line</text>
 <text x="130.4" y="289.05" font-size="11.5" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.045, &quot;json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/effective_stop_threshold_inclusive&quot;, &quot;&quot;]]">0.045</text>
 <line x1="152.86" y1="260.1" x2="152.86" y2="574" class="s1" stroke-width="1.6" data-enc="[[&quot;x1&quot;, &quot;x&quot;, 0.05981002106093639, &quot;json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/collision_seed_sd&quot;, &quot;&quot;]]"/>
-<text x="157.86" y="379.38" font-size="11.5" class="t1">measured, collisions</text>
-<text x="157.86" y="394.33" font-size="11.5" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.05981002106093639, &quot;json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/collision_seed_sd&quot;, &quot;&quot;]]">0.0598</text>
+<text x="157.86" y="432.75" font-size="11.5" class="t1">measured, collisions</text>
+<text x="157.86" y="447.69" font-size="11.5" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.05981002106093639, &quot;json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/collision_seed_sd&quot;, &quot;&quot;]]">0.0598</text>
 <line x1="286.83" y1="260.1" x2="286.83" y2="574" class="s1" stroke-width="3" data-enc="[[&quot;x1&quot;, &quot;x&quot;, 0.13479470508499508, &quot;json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/tracking_seed_sd&quot;, &quot;&quot;]]"/>
-<text x="281.83" y="297.77" font-size="11.5" text-anchor="end" class="t1">measured, main score</text>
-<text x="281.83" y="312.72" font-size="11.5" text-anchor="end" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.13479470508499508, &quot;json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/tracking_seed_sd&quot;, &quot;&quot;]]">0.1348</text>
+<text x="281.83" y="354.27" font-size="11.5" text-anchor="end" class="t1">measured, main score</text>
+<text x="281.83" y="369.22" font-size="11.5" text-anchor="end" class="t1" data-enc="[[&quot;text&quot;, &quot;&quot;, 0.13479470508499508, &quot;json:fly_track/raw_results/exp2/conditional_seed_pilot/pilot_analysis.json#/gate/tracking_seed_sd&quot;, &quot;&quot;]]">0.1348</text>
 </g>
 <text x="46" y="590" font-size="11.5" text-anchor="middle" class="tk">0</text>
 <text x="135.33" y="590" font-size="11.5" text-anchor="middle" class="tk">0.05</text>
