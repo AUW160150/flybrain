@@ -222,3 +222,31 @@ footer li { margin-bottom: 6px; }
 .panel-ctrl label { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); }
 .panel-ctrl input[type=range] { width: 90px; accent-color: var(--accent); }
 .panel-ctrl select { font-family: var(--mono); font-size: 12px; background: var(--paper); color: var(--ink); border: 1px solid var(--line); border-radius: 3px; padding: 3px 6px; }
+
+/* ---- result pages (EXP1-EXP3): one reading column, figures inlined by /js/results.js ---- */
+.res-body { max-width: 860px; padding-top: 40px; padding-bottom: 72px; }
+.res-body > .prose, .res-body .prose { max-width: 70ch; }
+.res-body h2 { margin: 56px 0 14px; font-size: clamp(26px, 2.6vw, 34px); }
+.res-body h2:first-child { margin-top: 0; }
+.res-toc { font-family: var(--mono); font-size: 13px; display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0 0 32px; padding: 0; list-style: none; }
+.res-toc a { color: var(--ink-2); text-decoration: none; }
+.res-toc a:hover { color: var(--accent); }
+.rfig { margin: 28px 0 36px; }
+.rfig-art { border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); padding: 4px; }
+.rfig-art img, .rfig-art svg { width: 100%; height: auto; display: block; }
+.rfig-sm { display: none !important; }
+@media (max-width: 719px) {
+  .rfig-lg { display: none !important; }
+  .rfig-sm { display: block !important; max-width: 480px; margin: 0 auto; }
+}
+.rfig figcaption { font-family: var(--sans); font-size: 16px; color: var(--ink); margin-top: 12px; line-height: 1.5; max-width: 70ch; }
+.rfig .rfig-src { font-family: var(--mono); font-size: 12px; color: var(--ink-3); margin: 6px 0 0; }
+.rfig .rfig-src a { color: inherit; }
+.rfig.lead .rfig-art { border-color: var(--ink-3); }
+details.nums { border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper-2); padding: 0 16px; margin: 0 0 1.6em; font-size: 15px; }
+details.nums summary { cursor: pointer; font-family: var(--mono); font-size: 13px; padding: 12px 0; color: var(--ink-2); }
+details.nums[open] summary { border-bottom: 1px solid var(--line); margin-bottom: 12px; }
+details.nums table { font-size: 14px; }
+details.nums .scroll { overflow-x: auto; }
+.finding { border-left: 2px solid var(--accent); padding: 2px 0 2px 16px; margin: 0 0 1.2em; }
+.verdict-line { font-family: var(--serif); font-size: clamp(22px, 2.2vw, 28px); line-height: 1.2; margin: 0 0 12px; }

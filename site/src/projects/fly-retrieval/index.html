@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fly-inspired search — can fly-brain ideas make search and memory faster? · Flybrain</title>
+<meta name="description" content="FlyHash, DenseFly and the fly Bloom filter against the methods real systems use, against the fly's own odour wiring, and on the standard speed-versus-accuracy benchmark. The filter wins only where no method works; fly-inspired search answers about one question for every 200 the best index does.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="wordmark" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="11" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-25 11 13)"/><ellipse cx="21" cy="13" rx="8" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(25 21 13)"/><ellipse cx="16" cy="19" rx="4" ry="8" fill="currentColor"/><circle cx="16" cy="9.5" r="3" fill="var(--accent)"/></svg>Flybrain</a>
+  <ul><li><a href="/#projects" data-match="/projects/">Projects</a></li><li class="hide-sm"><a href="/#method">Method</a></li><li><a href="#" data-theme-toggle title="Switch light / dark" aria-label="Switch colour theme">◐</a></li></ul>
+</div></header>
+
+<section class="proj-head"><div class="wrap">
+  <p class="eyebrow"><span>Project 10</span><span>Read · experiment</span><span>Python · Docker · rules fixed in advance</span></p>
+  <h1>Can fly-brain ideas make search and memory faster?</h1>
+  <p class="lead">The fly's sense of smell inspired two well-known computing tricks. FlyHash turns each item into a short tag of active cells, so that similar items get similar tags and can be found quickly. The fly Bloom filter is a memory-saving way to check whether something has been seen before. This experiment tested them where they had never been tested: against the methods real systems use, against the fly's actual wiring, and on the standard speed-against-accuracy benchmark for search. Mostly, they lost.</p>
+  <div class="cta"><a class="btn primary" href="#search">The search benchmark</a><a class="btn" href="/results/">All three experiments</a></div>
+  <div class="proj-meta">
+    <div><p class="eyebrow">Memory filter</p>Wins only at budgets where no method works</div>
+    <div><p class="eyebrow">Real wiring</p>No better than scrambled wiring, unless missing data are filled in differently</div>
+    <div><p class="eyebrow">Skewed questions</p>The prediction was contradicted</div>
+    <div><p class="eyebrow">Search speed</p>About 1 question for every 200 the best index answers</div>
+  </div>
+</div></section>
+
+<div class="wrap res-body">
+  <ul class="res-toc"><li><a href="#background">Background</a></li><li><a href="#search">Search benchmark</a></li><li><a href="#cost">Why it is slow</a></li><li><a href="#filter">Memory filter</a></li><li><a href="#wiring">Real wiring</a></li><li><a href="#skew">Skewed questions</a></li><li><a href="#not">What this does not show</a></li><li><a href="#how">How it was run</a></li></ul>
+
+  <h2 id="background">Background</h2>
+  <div class="prose">
+    <p>In the fly, a few dozen odour channels feed a much larger layer of cells, and each of those cells listens to only a handful of channels. Only the most strongly driven cells stay active, so each smell becomes a small set of active cells. In 2017 that design was turned into FlyHash, a method for finding similar items; in 2018 it was extended into DenseFly and into the fly Bloom filter. This experiment had four parts, each with its outcome stated in advance: a search benchmark, a memory-filter contest, a test of the fly's real wiring, and a test of one idea that could have rescued it.</p>
+  </div>
+
+  <h2 id="search">On the standard search benchmark</h2>
+  <div class="prose"><p>The benchmark asks each method to find, for 10,000 questions, the 10 most similar items in a large collection, and it measures two things: how many of the 10 true answers come back (accuracy) and how many questions are answered per second (speed). It was run on two standard collections: SIFT, a set of one million image descriptors, and GloVe, a set of 1.2 million word vectors. The fly methods were up against four conventional ones: HNSW (hierarchical navigable small world), a graph-based index; ScaNN, Google's search library; and two versions of IVF-PQ (inverted file with product quantisation) from FAISS, Meta's similarity-search library. Every method was given its full published or registered range of settings.</p></div>
+
+  <figure class="rfig lead" id="fig-frontier">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp3-frontier.svg" width="720" height="470" alt="Speed against accuracy for six methods on SIFT and GloVe. The four conventional methods run at thousands to tens of thousands of questions per second; FlyHash at about 100; DenseFly's line ends at accuracy 0.525 and 0.420."><img class="rfig-sm" src="/img/results/exp3-frontier-sm.svg" width="330" height="760" alt="Speed against accuracy for six methods on SIFT and GloVe. The four conventional methods run at thousands to tens of thousands of questions per second; FlyHash at about 100; DenseFly's line ends at accuracy 0.525 and 0.420."></div>
+    <figcaption>Higher is faster and further right is more accurate. At the same accuracy, the fly-inspired search methods answer about one question for every two hundred the best conventional method answers. One of them, DenseFly, never reaches the 90% accuracy level at all: its line stops at 52.5% on SIFT and 42.0% on GloVe.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_retrieval/b2/export.csv">export.csv</a> (every exported setting; each line joins only that method's best points) · <a href="/results/sources/fly_retrieval/reports/trackB2_summary.json">trackB2_summary.json</a> · <a href="/results/sources/fly_retrieval/reports/exp3_trackB_connectome.md">report, part B2</a></p>
+  </figure>
+
+  <details class="nums"><summary>The precise numbers at 90% accuracy</summary>
+    <table>
+      <thead><tr><th>Collection</th><th class="num">FlyHash, per second</th><th class="num">Best conventional, per second</th><th class="num">FlyHash's share</th></tr></thead>
+      <tbody>
+        <tr><td>SIFT</td><td class="num">92</td><td class="num">21,131 (ScaNN)</td><td class="num">0.43%</td></tr>
+        <tr><td>GloVe</td><td class="num">54</td><td class="num">10,556 (ScaNN)</td><td class="num">0.52%</td></tr>
+      </tbody>
+    </table>
+    <p>That is one question for every 231 on SIFT and every 194 on GloVe. FlyHash never reaches 95% on GloVe. Each method ran on one pinned processor core in the same container setup. The fly methods had at most as many settings as the most-tuned conventional method: 54 for FlyHash, 36 for DenseFly, 81 for HNSW.</p>
+  </details>
+
+  <h2 id="cost">Why FlyHash is slow</h2>
+  <div class="prose"><p>The fly methods were written in Python with the numpy library, and the conventional ones in C++, so part of the speed gap is the programming language. To separate the method from the language, the fly code counted how much work each question takes, which does not depend on the language.</p></div>
+  <figure class="rfig" id="fig-touched">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp3-candidates-touched.svg" width="720" height="380" alt="Bars: list entries FlyHash examines per question for each of its 54 settings on each collection, against the database size. Every setting that reaches 90% accuracy is above the database line."><img class="rfig-sm" src="/img/results/exp3-candidates-touched-sm.svg" width="330" height="670" alt="Bars: list entries FlyHash examines per question for each of its 54 settings on each collection, against the database size. Every setting that reaches 90% accuracy is above the database line."></div>
+    <figcaption>Each bar is one FlyHash setting, and the dashed line is the number of items in the database. Every setting that reaches 90% accuracy (red) examines more candidate entries per question than the database contains: 1,278,276 for the one-million-item SIFT and 4,884,445 for the 1.2-million-item GloVe. That is a property of the method, not of the programming language it was written in, so a faster implementation would make each step quicker but would not reduce the number of steps.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_retrieval/b2/flyhash_candidates_touched.csv">flyhash_candidates_touched.csv</a>, copied from the 108 FlyHash result files · <a href="/results/sources/fly_retrieval/b2/export.csv">export.csv</a> · <a href="/results/sources/fly_retrieval/docs/exp3_preregistration.md">collection sizes</a></p>
+  </figure>
+  <div class="prose"><p>An entry is one appearance of an item in one of FlyHash's lookup lists, and an item appears in several lists, which is how a question can touch more entries than there are items. A version written in C++ would have to be about 230 times faster on SIFT, and 195 times on GloVe, just to match the best conventional method. Whether it would still lose was not tested, but it would still touch more entries per question than the database holds items.</p></div>
+
+  <h2 id="filter">The memory filter</h2>
+  <div class="prose"><p>A familiarity filter answers “have I seen this, or something very like it, before?” using a fixed amount of memory per stored item. The fly Bloom filter was compared with the methods production systems use: a store of short SimHash fingerprints (compact codes that similar items share), MinHash (a sketch for estimating overlap between items), and a count-min sketch, a compact table of counters. The datasets were fly odour responses, SIFT image descriptors, MNIST handwritten digits, random data, and news articles from the New York Times. The score measures how well each method's rating ranks items by how new they really are.</p></div>
+  <figure class="rfig" id="fig-filter">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp3-novelty-filter.svg" width="720" height="610" alt="Top: the fly filter's score minus the best conventional method's at 3, 10, 30 and 100 bits per item, for five datasets. Bottom: share of familiar items each method misses at a 1% false-alarm rate; at 10 bits and below no method misses fewer than 83.9%."><img class="rfig-sm" src="/img/results/exp3-novelty-filter-sm.svg" width="330" height="730" alt="Top: the fly filter's score minus the best conventional method's at 3, 10, 30 and 100 bits per item, for five datasets. Bottom: share of familiar items each method misses at a 1% false-alarm rate; at 10 bits and below no method misses fewer than 83.9%."></div>
+    <figcaption>In the top panel, points above zero mean the fly filter was better: it leads at 3 and 10 bits of memory per item and mostly trails at 30 and 100. The bottom panel shows why the lead does not help: at 10 bits and below, every method misses more than four out of five familiar items once false alarms are held to 1%. The fly method is better at the smallest memory budgets, and at those budgets no method is usable for the job. Where the task is actually solvable, a simple conventional fingerprint wins.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_retrieval/reports/trackA_summary.json">trackA_summary.json</a> · <a href="/results/sources/fly_retrieval/reports/exp3_trackA_novelty.md">report, part A</a></p>
+  </figure>
+  <div class="prose"><p>Two exceptions are visible in the top panel. On random data the fly filter still leads slightly at 30 bits. The odour dataset has only 110 items, too few to tell either way at any budget. The fly filter's wins also cost at least 8 times more arithmetic per item than the method it beat, and its cost per item grows as more items are stored.</p></div>
+
+  <h2 id="wiring">Does the fly's real wiring help?</h2>
+  <div class="prose"><p>FlyHash usually connects its input channels to cells at random. The fly's own connections are not random, so a natural question is whether using the real wiring, taken here from MaleCNS v1.0, the map of the male fruit fly's central nervous system, makes the tags better. A 2026 preprint, a paper not yet peer reviewed, by a single author, found it made them slightly worse: −2.06% against a shuffled version. This part repeated that test independently, on odour responses from DoOR, the Database of Odorant Responses, and compared the real wiring against four kinds of scrambling, each keeping more of the real structure.</p></div>
+  <figure class="rfig" id="fig-wiring">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp3-null-ladder-imputation.svg" width="720" height="520" alt="Dot and range chart, left and right hemisphere: the real wiring's score against four scrambled controls, with missing odour data set to zero and filled with averages. With averages, the left hemisphere beats the standard shuffle by 3.38%."><img class="rfig-sm" src="/img/results/exp3-null-ladder-imputation-sm.svg" width="330" height="790" alt="Dot and range chart, left and right hemisphere: the real wiring's score against four scrambled controls, with missing odour data set to zero and filled with averages. With averages, the left hemisphere beats the standard shuffle by 3.38%."></div>
+    <figcaption>Look first at the circles, where missing odour measurements are set to zero: none reaches the shaded zone where the real wiring would be at least 2.5% better than a scrambled version. Now the squares, where the gaps are filled with averages: the left side of the brain jumps to 3.38% better than the standard shuffle. Whether the fly's real wiring beats a scrambled version depends on how the missing 28.7% of the odour measurements is filled in. That dependence is itself the finding.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_retrieval/reports/exp3_trackB_connectome.md">report, part B1</a>, table “Odours: BIO against each null”, rows w5_L and w5_R</p>
+  </figure>
+  <div class="prose"><p>On the same data the preprint used, this experiment measured −2.09%, which reproduces its result. The main analysis, decided in advance, used zero-filling, so the official verdict is that the preprint was replicated: the real wiring gives no benefit as large as 2.5%. The strictest scrambling, which also keeps how strongly inputs converge on each channel, comes closest to the real wiring, which suggests that convergence pattern is what pulls the real wiring's score down; that reading was not part of the plan.</p></div>
+
+  <h2 id="skew">One idea that could have rescued it</h2>
+  <div class="prose"><p>The real wiring over-connects some odour channels. The experiment's author proposed that this might pay off when questions are concentrated on exactly those channels, the way natural smells might be. The idea and its definition were written down and fingerprinted before any number existed, and then tested.</p></div>
+  <figure class="rfig" id="fig-skew">
+    <div class="rfig-art"><img class="rfig-lg" src="/img/results/exp3-skew.svg" width="720" height="400" alt="Line chart, left and right hemisphere: real wiring's advantage over its shuffle as questions concentrate. Left, matched: falls to −7.17%. Right, matched: rises to +1.62%, below the mismatched line and the +2.5% band."><img class="rfig-sm" src="/img/results/exp3-skew-sm.svg" width="330" height="640" alt="Line chart, left and right hemisphere: real wiring's advantage over its shuffle as questions concentrate. Left, matched: falls to −7.17%. Right, matched: rises to +1.62%, below the mismatched line and the +2.5% band."></div>
+    <figcaption>The idea was that the fly's unusual wiring might pay off when questions are concentrated on the channels it over-connects, so the solid line should climb into the shaded band. The opposite happened. On the left side of the brain it fell to 7.17% worse; on the right it rose only to 1.62% better, below the band and below the dashed line for the opposite channels.</figcaption>
+    <p class="rfig-src">Data: <a href="/results/sources/fly_retrieval/reports/trackC_summary.json">trackC_summary.json</a> · <a href="/results/sources/fly_retrieval/reports/exp3_trackC_skew.md">report, part C</a></p>
+  </figure>
+
+  <details class="nums"><summary>The precise numbers: real wiring against the standard shuffle</summary>
+    <table>
+      <thead><tr><th>Comparison</th><th>Left hemisphere</th><th>Right hemisphere</th></tr></thead>
+      <tbody>
+        <tr><td>Missing data set to zero</td><td>−0.55% (−1.30% to +0.20%)</td><td>−2.38% (−3.16% to −1.60%)</td></tr>
+        <tr><td>Missing data filled with averages</td><td>+3.38% (+2.61% to +4.15%)</td><td>−0.63% (−1.43% to +0.19%)</td></tr>
+        <tr><td>Strongest concentration, matched channels</td><td>−5.54% (−5.84% to −5.23%)</td><td>+1.62% (+1.35% to +1.88%)</td></tr>
+        <tr><td>Strongest concentration, opposite channels</td><td>+0.02% (−0.32% to +0.38%)</td><td>+2.34% (+1.99% to +2.68%)</td></tr>
+      </tbody>
+    </table>
+    <p>Ranges are 95% ranges. Connections count only with at least 5 synapses. The lowest point on the left, −7.17%, is at moderate concentration.</p>
+  </details>
+
+  <h2 id="not">What this does not show</h2>
+  <div class="prose"><ul>
+    <li>The wiring test covers one connectome, MaleCNS, and both of its hemispheres; other fly connectomes were not re-tested.</li>
+    <li>The search benchmark covers two collections. Others were not run, because the first two showed nothing unexpected, as the plan specified.</li>
+    <li>A compiled FlyHash was not built. The work it does per question is the reason to expect it would still lose, but that was not measured.</li>
+    <li>The skew test rules out the idea as defined, not every possible notion of “natural” smells.</li>
+    <li>Neither the memory filter nor the wiring test used a learning stage like the one in the fly's brain; both use fixed readouts.</li>
+  </ul></div>
+
+  <h2 id="how">How it was run</h2>
+  <div class="prose">
+    <p>The plan, each part's possible verdicts and the analysis code were fixed before the first measurement and signed off; every later change is one of 16 logged amendments. The search benchmark ran in the standard benchmark harness, in Docker containers with one processor core each.</p>
+    <p>Sources: <a href="/results/sources/fly_retrieval/docs/exp3_analysis.md">synthesis</a>, <a href="/results/sources/fly_retrieval/reports/exp3_trackA_novelty.md">part A</a>, <a href="/results/sources/fly_retrieval/reports/exp3_trackB_connectome.md">parts B1 and B2</a>, <a href="/results/sources/fly_retrieval/reports/exp3_trackC_skew.md">part C</a>, <a href="/results/sources/fly_retrieval/docs/exp3_preregistration.md">preregistration</a>.</p>
+  </div>
+
+  <div class="pager"><a href="/projects/forward-only-training/">← 09 Forward-only training</a><a href="/results/">All results →</a></div>
+</div>
+
+<footer><div class="wrap">
+  <div><p class="eyebrow">Flybrain</p><p>Hand-written HTML and CSS, one module of JavaScript for the simulation, no framework, no analytics.</p></div>
+  <div><p class="eyebrow">Data</p><ul><li>MaleCNS v1.0 — FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research. <a href="https://male-cns.janelia.org/download/">CC BY 4.0</a></li><li>DoOR 2.0 odour responses; SIFT and GloVe from ann-benchmarks.com</li></ul></div>
+</div></footer>
+<script type="module" src="/js/site.js"></script>
+<script type="module" src="/js/results.js"></script>
+</body>
+</html>
