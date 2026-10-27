@@ -1,0 +1,470 @@
+{
+ "sift-128-euclidean/flyhash": {
+  "rule": "max QPS at recall >= 0.9",
+  "result_file": "euclidean_20_32_5000",
+  "recall": 0.96617,
+  "qps": 91.60746750217106,
+  "build_args": [
+   20,
+   32
+  ],
+  "query_args": [
+   5000
+  ],
+  "costs": {
+   "dataset": "sift-128-euclidean",
+   "method": "flyhash",
+   "build_args": [
+    20,
+    32
+   ],
+   "query_args": [
+    5000
+   ],
+   "n_base": 990000,
+   "n_insert": 10000,
+   "build_s": 64.94362600901513,
+   "reimplementation_agrees_on_50_queries": 50,
+   "deletion": {
+    "support": "supported (list/bucket removal + tombstone)",
+    "n_deleted": 100,
+    "still_returned": 0,
+    "s_per_item": 0.005324284780072048
+   },
+   "insert_s_per_item": 0.0002680798395012971,
+   "encode_ns_per_item": 111950.11849922594,
+   "encode_arithmetic": "m*ceil(0.1d) = 2560*13 = 33,280 additions, 0 multiplications; top-32 of 2560",
+   "total_s": 82.5976006280107
+  }
+ },
+ "sift-128-euclidean/densefly": {
+  "rule": "max recall (0.9 not reached)",
+  "result_file": "euclidean_20_16_5000",
+  "recall": 0.5246999999999999,
+  "qps": 30.132306136691064,
+  "build_args": [
+   20,
+   16
+  ],
+  "query_args": [
+   5000
+  ],
+  "costs": {
+   "dataset": "sift-128-euclidean",
+   "method": "densefly",
+   "build_args": [
+    20,
+    16
+   ],
+   "query_args": [
+    5000
+   ],
+   "n_base": 990000,
+   "n_insert": 10000,
+   "build_s": 29.448763096996117,
+   "reimplementation_agrees_on_50_queries": 50,
+   "deletion": {
+    "support": "supported (list/bucket removal + tombstone)",
+    "n_deleted": 100,
+    "still_returned": 0,
+    "s_per_item": 0.0005246306597837247
+   },
+   "insert_s_per_item": 8.896820880181622e-05,
+   "encode_ns_per_item": 30094.483998254873,
+   "encode_arithmetic": "m*ceil(0.1d) = 2560*13 = 33,280 additions, 0 multiplications; sign + 16 block sums",
+   "total_s": 45.29571209300775
+  }
+ },
+ "sift-128-euclidean/faiss-ivfpqfs": {
+  "rule": "max QPS at recall >= 0.9",
+  "result_file": "euclidean_512_10_10",
+  "recall": 0.91342,
+  "qps": 14662.368720309894,
+  "build_args": [
+   512
+  ],
+  "query_args": [
+   10,
+   10
+  ],
+  "costs": {
+   "dataset": "sift-128-euclidean",
+   "method": "faiss-ivfpqfs",
+   "build_args": [
+    512
+   ],
+   "query_args": [
+    10,
+    10
+   ],
+   "n_base": 990000,
+   "n_insert": 10000,
+   "build_s": 19.020709345000796,
+   "deletion": {
+    "support": "supported (remove_ids)",
+    "n_deleted": 100,
+    "still_returned": 0,
+    "s_per_item": 0.0024618183900020087
+   },
+   "insert_s_per_item": 5.270835759874899e-05,
+   "encode_ns_per_item": 11991.92670173943,
+   "encode_arithmetic": "coarse nlist*d = 65,536 + PQ 16*d = 2,048 multiply-adds (4-bit fast scan)",
+   "total_s": 19.958282334002433
+  }
+ },
+ "sift-128-euclidean/scann": {
+  "rule": "max QPS at recall >= 0.9",
+  "result_file": "600_NaN_2_squared_l2_10_82",
+  "recall": 0.9029999999999999,
+  "qps": 21131.464051405084,
+  "build_args": [
+   600,
+   null,
+   2,
+   "squared_l2"
+  ],
+  "query_args": [
+   [
+    10,
+    82
+   ]
+  ],
+  "costs": {
+   "dataset": "sift-128-euclidean",
+   "method": "scann",
+   "build_args": [
+    600,
+    null,
+    2,
+    "squared_l2"
+   ],
+   "query_args": [
+    [
+     10,
+     82
+    ]
+   ],
+   "n_base": 990000,
+   "n_insert": 10000,
+   "build_s": 49.72857727998053,
+   "deletion": {
+    "support": "supported (delete)",
+    "n_deleted": 100,
+    "still_returned": 0,
+    "s_per_item": 0.00011744921997888014
+   },
+   "insert_s_per_item": 4.763728730031289e-05,
+   "encode_ns_per_item": null,
+   "encode_arithmetic": "not exposed by the API; included in insertion",
+   "total_s": 50.27299771399703
+  }
+ },
+ "sift-128-euclidean/faiss-ivfpq": {
+  "rule": "max recall (0.9 not reached)",
+  "result_file": "euclidean_16384_32_200",
+  "recall": 0.75187,
+  "qps": 1785.6146511622067,
+  "build_args": [
+   16384,
+   32
+  ],
+  "query_args": [
+   200
+  ],
+  "costs": {
+   "dataset": "sift-128-euclidean",
+   "method": "faiss-ivfpq",
+   "build_args": [
+    16384,
+    32
+   ],
+   "query_args": [
+    200
+   ],
+   "n_base": 990000,
+   "n_insert": 10000,
+   "build_s": 745.0331220439984,
+   "deletion": {
+    "support": "supported (remove_ids)",
+    "n_deleted": 100,
+    "still_returned": 0,
+    "s_per_item": 0.0014345795899862424
+   },
+   "insert_s_per_item": 0.00016689376340073067,
+   "encode_ns_per_item": 86767.03079836443,
+   "encode_arithmetic": "coarse nlist*d = 2,097,152 + PQ 256*d = 32,768 multiply-adds",
+   "total_s": 747.858593195997
+  }
+ },
+ "sift-128-euclidean/hnswlib": {
+  "rule": "max QPS at recall >= 0.9",
+  "result_file": "euclidean_M_48_efConstruction_500_20",
+  "recall": 0.91917,
+  "qps": 6038.33126671524,
+  "build_args": {
+   "M": 48,
+   "efConstruction": 500
+  },
+  "query_args": [
+   20
+  ],
+  "costs": {
+   "dataset": "sift-128-euclidean",
+   "method": "hnswlib",
+   "build_args": {
+    "M": 48,
+    "efConstruction": 500
+   },
+   "query_args": [
+    20
+   ],
+   "n_base": 990000,
+   "n_insert": 10000,
+   "build_s": 1990.8163513430045,
+   "deletion": {
+    "support": "supported (mark_deleted)",
+    "n_deleted": 100,
+    "still_returned": 0,
+    "s_per_item": 2.6396999601274727e-06
+   },
+   "insert_s_per_item": 0.0031611342035001142,
+   "encode_ns_per_item": null,
+   "encode_arithmetic": "n/a: stores raw vectors, no encoding step",
+   "total_s": 2022.5167376669997
+  }
+ },
+ "glove-100-angular/flyhash": {
+  "rule": "max QPS at recall >= 0.9",
+  "result_file": "angular_10_64_5000",
+  "recall": 0.90594,
+  "qps": 54.457551692239505,
+  "build_args": [
+   10,
+   64
+  ],
+  "query_args": [
+   5000
+  ],
+  "costs": {
+   "dataset": "glove-100-angular",
+   "method": "flyhash",
+   "build_args": [
+    10,
+    64
+   ],
+   "query_args": [
+    5000
+   ],
+   "n_base": 1173514,
+   "n_insert": 10000,
+   "build_s": 24.34005397898727,
+   "reimplementation_agrees_on_50_queries": 50,
+   "deletion": {
+    "support": "supported (list/bucket removal + tombstone)",
+    "n_deleted": 100,
+    "still_returned": 0,
+    "s_per_item": 0.008532707940030377
+   },
+   "insert_s_per_item": 6.202587139850948e-05,
+   "encode_ns_per_item": 16341.635698336177,
+   "encode_arithmetic": "m*ceil(0.1d) = 1000*10 = 10,000 additions, 0 multiplications; top-64 of 1000",
+   "total_s": 43.94587414499256
+  }
+ },
+ "glove-100-angular/densefly": {
+  "rule": "max recall (0.9 not reached)",
+  "result_file": "angular_20_16_5000",
+  "recall": 0.42044,
+  "qps": 34.06518226024257,
+  "build_args": [
+   20,
+   16
+  ],
+  "query_args": [
+   5000
+  ],
+  "costs": {
+   "dataset": "glove-100-angular",
+   "method": "densefly",
+   "build_args": [
+    20,
+    16
+   ],
+   "query_args": [
+    5000
+   ],
+   "n_base": 1173514,
+   "n_insert": 10000,
+   "build_s": 34.10261564000393,
+   "reimplementation_agrees_on_50_queries": 50,
+   "deletion": {
+    "support": "supported (list/bucket removal + tombstone)",
+    "n_deleted": 100,
+    "still_returned": 0,
+    "s_per_item": 0.0011206648300867528
+   },
+   "insert_s_per_item": 0.0001222286158998031,
+   "encode_ns_per_item": 28909.163500065915,
+   "encode_arithmetic": "m*ceil(0.1d) = 2000*10 = 20,000 additions, 0 multiplications; sign + 16 block sums",
+   "total_s": 61.89884082999197
+  }
+ },
+ "glove-100-angular/faiss-ivfpqfs": {
+  "rule": "max QPS at recall >= 0.9",
+  "result_file": "angular_1204_100_10",
+  "recall": 0.9080299999999999,
+  "qps": 4652.6485006889725,
+  "build_args": [
+   1204
+  ],
+  "query_args": [
+   100,
+   10
+  ],
+  "costs": {
+   "dataset": "glove-100-angular",
+   "method": "faiss-ivfpqfs",
+   "build_args": [
+    1204
+   ],
+   "query_args": [
+    100,
+    10
+   ],
+   "n_base": 1173514,
+   "n_insert": 10000,
+   "build_s": 16.20891986900824,
+   "deletion": {
+    "support": "supported (remove_ids)",
+    "n_deleted": 100,
+    "still_returned": 0,
+    "s_per_item": 0.0013308585199411026
+   },
+   "insert_s_per_item": 2.1772004500962795e-05,
+   "encode_ns_per_item": 6015.3164027724415,
+   "encode_arithmetic": "coarse nlist*d = 120,400 + PQ 16*d = 1,600 multiply-adds (4-bit fast scan)",
+   "total_s": 16.67094295899733
+  }
+ },
+ "glove-100-angular/scann": {
+  "rule": "max QPS at recall >= 0.9",
+  "result_file": "2000_0_2_2_dot_product_55_95",
+  "recall": 0.9069900000000001,
+  "qps": 10555.574570207351,
+  "build_args": [
+   2000,
+   0.2,
+   2,
+   "dot_product"
+  ],
+  "query_args": [
+   [
+    55,
+    95
+   ]
+  ],
+  "costs": {
+   "dataset": "glove-100-angular",
+   "method": "scann",
+   "build_args": [
+    2000,
+    0.2,
+    2,
+    "dot_product"
+   ],
+   "query_args": [
+    [
+     55,
+     95
+    ]
+   ],
+   "n_base": 1173514,
+   "n_insert": 10000,
+   "build_s": 92.456004467007,
+   "deletion": {
+    "support": "supported (delete)",
+    "n_deleted": 100,
+    "still_returned": 0,
+    "s_per_item": 3.136532992357388e-05
+   },
+   "insert_s_per_item": 3.233328440110199e-05,
+   "encode_ns_per_item": null,
+   "encode_arithmetic": "not exposed by the API; included in insertion",
+   "total_s": 92.815592458006
+  }
+ },
+ "glove-100-angular/faiss-ivfpq": {
+  "rule": "max recall (0.9 not reached)",
+  "result_file": "angular_1024_25_200",
+  "recall": 0.6237,
+  "qps": 702.052784784964,
+  "build_args": [
+   1024,
+   25
+  ],
+  "query_args": [
+   200
+  ],
+  "costs": {
+   "dataset": "glove-100-angular",
+   "method": "faiss-ivfpq",
+   "build_args": [
+    1024,
+    25
+   ],
+   "query_args": [
+    200
+   ],
+   "n_base": 1173514,
+   "n_insert": 10000,
+   "build_s": 28.89231376099633,
+   "deletion": {
+    "support": "supported (remove_ids)",
+    "n_deleted": 100,
+    "still_returned": 0,
+    "s_per_item": 0.001453544200048782
+   },
+   "insert_s_per_item": 2.6526496501173823e-05,
+   "encode_ns_per_item": 18161.87559743412,
+   "encode_arithmetic": "coarse nlist*d = 102,400 + PQ 256*d = 25,600 multiply-adds",
+   "total_s": 29.75158789398847
+  }
+ },
+ "glove-100-angular/hnswlib": {
+  "rule": "max QPS at recall >= 0.9",
+  "result_file": "angular_M_64_efConstruction_500_80",
+  "recall": 0.91966,
+  "qps": 1187.1600818871636,
+  "build_args": {
+   "M": 64,
+   "efConstruction": 500
+  },
+  "query_args": [
+   80
+  ],
+  "costs": {
+   "dataset": "glove-100-angular",
+   "method": "hnswlib",
+   "build_args": {
+    "M": 64,
+    "efConstruction": 500
+   },
+   "query_args": [
+    80
+   ],
+   "n_base": 1173514,
+   "n_insert": 10000,
+   "build_s": 5063.667317884974,
+   "deletion": {
+    "support": "supported (mark_deleted)",
+    "n_deleted": 100,
+    "still_returned": 0,
+    "s_per_item": 3.370890044607222e-06
+   },
+   "insert_s_per_item": 0.004409801109498949,
+   "encode_ns_per_item": null,
+   "encode_arithmetic": "n/a: stores raw vectors, no encoding step",
+   "total_s": 5107.941393603978
+  }
+ }
+}

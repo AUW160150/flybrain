@@ -1,0 +1,5078 @@
+{
+ "cells": [
+  {
+   "dataset": "odors",
+   "B": 3,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 10,
+      "s": 6
+     },
+     "val_rho": 0.3829313343713182,
+     "rho": 0.2644509674476584,
+     "rho_ci": [
+      0.02517056746660634,
+      0.4628477345783914
+     ],
+     "rho_heldout": 0.21703789998588188,
+     "pearson_heldout": 0.3089010274114331,
+     "encode_madds_per_item": 1386,
+     "bits": 231,
+     "auroc": 0.6044921875,
+     "auprc": 0.6904648196487897,
+     "fpr_at_val_threshold": 0.609375,
+     "fnr_at_val_threshold": 0.1875,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 5
+     },
+     "val_rho": 0.34418557034803166,
+     "rho": 0.3138900618993526,
+     "rho_ci": [
+      0.08838624204178173,
+      0.474270589716458
+     ],
+     "rho_heldout": 0.2928575401498753,
+     "pearson_heldout": 0.34102049492445546,
+     "encode_madds_per_item": 5544,
+     "bits": 231,
+     "auroc": 0.6077008928571428,
+     "auprc": 0.690570923329544,
+     "fpr_at_val_threshold": 0.75,
+     "fnr_at_val_threshold": 0.03571428571428571,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 4,
+      "r": 12
+     },
+     "val_rho": 0.4224999800961731,
+     "rho": 0.37223387822128784,
+     "rho_ci": [
+      0.12904279017117284,
+      0.5700612286017995
+     ],
+     "rho_heldout": 0.3433498030641253,
+     "pearson_heldout": 0.36075456974552567,
+     "encode_madds_per_item": 1152,
+     "bits": 228,
+     "auroc": 0.6736886160714286,
+     "auprc": 0.7318337399349437,
+     "fpr_at_val_threshold": 0.359375,
+     "fnr_at_val_threshold": 0.36607142857142855,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": -0.06960575579871306,
+     "rho": 0.017571673676673893,
+     "rho_ci": [
+      -0.2027085944528237,
+      0.2396379570347538
+     ],
+     "rho_heldout": 0.10520026861458032,
+     "pearson_heldout": 0.10381067945474788,
+     "encode_madds_per_item": 0,
+     "bits": 231,
+     "auroc": 0.5424107142857143,
+     "auprc": 0.6588715338715339,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 3
+     },
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 72,
+     "bits": 231,
+     "auroc": 0.5,
+     "auprc": 0.6363636363636364,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "MinHash": {
+     "selected": {
+      "b": 8,
+      "r": 2
+     },
+     "val_rho": 0.28544207507255914,
+     "rho": 0.15897841519086675,
+     "rho_ci": [
+      -0.09175764153976389,
+      0.38380912346057533
+     ],
+     "rho_heldout": 0.012667460770144405,
+     "pearson_heldout": 0.026443905941395986,
+     "encode_madds_per_item": 384,
+     "bits": 224,
+     "auroc": 0.61669921875,
+     "auprc": 0.6959659322725418,
+     "fpr_at_val_threshold": 0.59375,
+     "fnr_at_val_threshold": 0.1875,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 768,
+     "bits": 224,
+     "auroc": 0.5,
+     "auprc": 0.6363636363636364,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "MinHash",
+   "delta": 0.10547255225679164,
+   "delta_ci": [
+    -0.20694859966483067,
+    0.41442606716222574
+   ],
+   "fbf_minus_gbf": -0.0494390944516942,
+   "fbf_minus_gbf_ci": [
+    -0.321290079261507,
+    0.2626388445009287
+   ],
+   "fbf_minus_lsbf_ci": [
+    -0.411300522620037,
+    0.2070559513119946
+   ]
+  },
+  {
+   "dataset": "odors",
+   "B": 10,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 10,
+      "s": 3
+     },
+     "val_rho": 0.404446997213533,
+     "rho": 0.25143579271204775,
+     "rho_ci": [
+      0.007416737773450018,
+      0.4633766647217093
+     ],
+     "rho_heldout": 0.1333074313187395,
+     "pearson_heldout": 0.2662106888329503,
+     "encode_madds_per_item": 2310,
+     "bits": 770,
+     "auroc": 0.6482282366071429,
+     "auprc": 0.7194904078418919,
+     "fpr_at_val_threshold": 0.40625,
+     "fnr_at_val_threshold": 0.3482142857142857,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 20
+     },
+     "val_rho": 0.5179439828478839,
+     "rho": 0.30377790856975484,
+     "rho_ci": [
+      0.03185116049554833,
+      0.5175664416839479
+     ],
+     "rho_heldout": 0.3673649233149744,
+     "pearson_heldout": 0.35321007907319735,
+     "encode_madds_per_item": 18480,
+     "bits": 770,
+     "auroc": 0.6382533482142857,
+     "auprc": 0.7082913489469862,
+     "fpr_at_val_threshold": 0.609375,
+     "fnr_at_val_threshold": 0.13392857142857142,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 8,
+      "r": 16
+     },
+     "val_rho": 0.6557251480566848,
+     "rho": 0.4234069950818105,
+     "rho_ci": [
+      0.17136265788618432,
+      0.6193731040067757
+     ],
+     "rho_heldout": 0.34786356990203776,
+     "pearson_heldout": 0.31081658687776026,
+     "encode_madds_per_item": 3072,
+     "bits": 768,
+     "auroc": 0.7708565848214286,
+     "auprc": 0.8205611529609528,
+     "fpr_at_val_threshold": 0.53125,
+     "fnr_at_val_threshold": 0.125,
+     "fnr_at_fpr_1pct": 0.9017857142857143
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.06848300870011594,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 0,
+     "bits": 770,
+     "auroc": 0.5,
+     "auprc": 0.6363636363636364,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 10
+     },
+     "val_rho": 0.6194816733883182,
+     "rho": 0.23090795468095152,
+     "rho_ci": [
+      -0.019981452960539995,
+      0.44910679268084824
+     ],
+     "rho_heldout": 0.45121633122942323,
+     "pearson_heldout": 0.5370632111365543,
+     "encode_madds_per_item": 240,
+     "bits": 770,
+     "auroc": 0.6276506696428572,
+     "auprc": 0.701598340838345,
+     "fpr_at_val_threshold": 0.53125,
+     "fnr_at_val_threshold": 0.26785714285714285,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "MinHash": {
+     "selected": {
+      "b": 16,
+      "r": 8
+     },
+     "val_rho": 0.5731261896896361,
+     "rho": 0.4559630744302265,
+     "rho_ci": [
+      0.2447726292478753,
+      0.6148676512982931
+     ],
+     "rho_heldout": 0.09167253793741735,
+     "pearson_heldout": 0.1535262388825881,
+     "encode_madds_per_item": 3072,
+     "bits": 768,
+     "auroc": 0.7114955357142858,
+     "auprc": 0.782215835917283,
+     "fpr_at_val_threshold": 0.265625,
+     "fnr_at_val_threshold": 0.375,
+     "fnr_at_fpr_1pct": 0.8392857142857143
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.23418038837533217,
+     "rho": 0.17112490520258075,
+     "rho_ci": [
+      0.0,
+      0.307424581269
+     ],
+     "rho_heldout": 0.09636256939080244,
+     "pearson_heldout": 0.1548705285904171,
+     "encode_madds_per_item": 768,
+     "bits": 768,
+     "auroc": 0.5424107142857143,
+     "auprc": 0.6566222239299162,
+     "fpr_at_val_threshold": 0.90625,
+     "fnr_at_val_threshold": 0.008928571428571428,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "SimHash",
+   "delta": 0.02052783803109623,
+   "delta_ci": [
+    -0.27656180362244476,
+    0.3100463043782436
+   ],
+   "fbf_minus_gbf": -0.052342115857707094,
+   "fbf_minus_gbf_ci": [
+    -0.3270552108713459,
+    0.2278223304424954
+   ],
+   "fbf_minus_lsbf_ci": [
+    -0.45002354354333896,
+    0.12194819945759236
+   ]
+  },
+  {
+   "dataset": "odors",
+   "B": 30,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 10,
+      "s": 6
+     },
+     "val_rho": 0.42422842513000386,
+     "rho": 0.41437873573921796,
+     "rho_ci": [
+      0.1674641683444192,
+      0.6036011134551406
+     ],
+     "rho_heldout": 0.21279490007152455,
+     "pearson_heldout": 0.23729814637872298,
+     "encode_madds_per_item": 13860,
+     "bits": 2310,
+     "auroc": 0.7077985491071429,
+     "auprc": 0.7642449546150765,
+     "fpr_at_val_threshold": 0.390625,
+     "fnr_at_val_threshold": 0.3482142857142857,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 5
+     },
+     "val_rho": 0.34071326227173887,
+     "rho": 0.2362977296266009,
+     "rho_ci": [
+      -0.0019079974528410154,
+      0.43246719336962114
+     ],
+     "rho_heldout": 0.2789814045429133,
+     "pearson_heldout": 0.34801541340226355,
+     "encode_madds_per_item": 55440,
+     "bits": 2310,
+     "auroc": 0.58203125,
+     "auprc": 0.6767644557823129,
+     "fpr_at_val_threshold": 0.703125,
+     "fnr_at_val_threshold": 0.15178571428571427,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 32,
+      "r": 16
+     },
+     "val_rho": 0.7136559158288376,
+     "rho": 0.6719726942151611,
+     "rho_ci": [
+      0.49828246759488903,
+      0.766590870650217
+     ],
+     "rho_heldout": 0.5016015964493997,
+     "pearson_heldout": 0.5018488736002198,
+     "encode_madds_per_item": 12288,
+     "bits": 2304,
+     "auroc": 0.8904157366071428,
+     "auprc": 0.910098465358557,
+     "fpr_at_val_threshold": 0.140625,
+     "fnr_at_val_threshold": 0.23214285714285715,
+     "fnr_at_fpr_1pct": 0.9285714285714286
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 0,
+     "bits": 2310,
+     "auroc": 0.5,
+     "auprc": 0.6363636363636364,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 30
+     },
+     "val_rho": 0.7033679414598523,
+     "rho": 0.6066474265516455,
+     "rho_ci": [
+      0.38197364126559236,
+      0.7517126610575625
+     ],
+     "rho_heldout": 0.6205568549584398,
+     "pearson_heldout": 0.6513908190611738,
+     "encode_madds_per_item": 720,
+     "bits": 2310,
+     "auroc": 0.8540736607142857,
+     "auprc": 0.8686589082362264,
+     "fpr_at_val_threshold": 0.546875,
+     "fnr_at_val_threshold": 0.026785714285714284,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "MinHash": {
+     "selected": {
+      "b": 32,
+      "r": 4
+     },
+     "val_rho": 0.5849968974336398,
+     "rho": 0.5099243403592993,
+     "rho_ci": [
+      0.2755336491033294,
+      0.6681066640339045
+     ],
+     "rho_heldout": 0.33559738814284223,
+     "pearson_heldout": 0.365880303584129,
+     "encode_madds_per_item": 3072,
+     "bits": 2304,
+     "auroc": 0.8033621651785714,
+     "auprc": 0.833282734093191,
+     "fpr_at_val_threshold": 0.140625,
+     "fnr_at_val_threshold": 0.5178571428571429,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "CMS": {
+     "selected": {
+      "D": 4,
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.4615891119309473,
+     "rho": 0.3093385659497764,
+     "rho_ci": [
+      0.022920549545308484,
+      0.5399921280055623
+     ],
+     "rho_heldout": 0.38371472305343024,
+     "pearson_heldout": 0.41960415385313626,
+     "encode_madds_per_item": 768,
+     "bits": 2304,
+     "auroc": 0.6673409598214286,
+     "auprc": 0.7279447859832475,
+     "fpr_at_val_threshold": 0.5,
+     "fnr_at_val_threshold": 0.16964285714285715,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "SimHash",
+   "delta": -0.19226869081242753,
+   "delta_ci": [
+    -0.4228641714613859,
+    0.044008432609495884
+   ],
+   "fbf_minus_gbf": 0.17808100611261707,
+   "fbf_minus_gbf_ci": [
+    -0.09153992875786318,
+    0.4488838179270478
+   ],
+   "fbf_minus_lsbf_ci": [
+    -0.4975940610324211,
+    -0.02029671470690416
+   ]
+  },
+  {
+   "dataset": "odors",
+   "B": 100,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 10,
+      "s": 6
+     },
+     "val_rho": 0.6237041370596278,
+     "rho": 0.5814957526394193,
+     "rho_ci": [
+      0.37263970534561625,
+      0.7178403109751731
+     ],
+     "rho_heldout": 0.389323339102165,
+     "pearson_heldout": 0.4360627501619293,
+     "encode_madds_per_item": 46200,
+     "bits": 7700,
+     "auroc": 0.8422154017857143,
+     "auprc": 0.8544718434646494,
+     "fpr_at_val_threshold": 0.1875,
+     "fnr_at_val_threshold": 0.3125,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 30
+     },
+     "val_rho": 0.6021016490811887,
+     "rho": 0.4550398559090615,
+     "rho_ci": [
+      0.22081832232042872,
+      0.6386970454307601
+     ],
+     "rho_heldout": 0.43944632293555674,
+     "pearson_heldout": 0.4993493113212266,
+     "encode_madds_per_item": 184800,
+     "bits": 7700,
+     "auroc": 0.7526506696428572,
+     "auprc": 0.781883315049491,
+     "fpr_at_val_threshold": 0.25,
+     "fnr_at_val_threshold": 0.45535714285714285,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 16,
+      "r": 24
+     },
+     "val_rho": 0.7105611396723381,
+     "rho": 0.609254864284263,
+     "rho_ci": [
+      0.4072553694659774,
+      0.7316270853645327
+     ],
+     "rho_heldout": 0.2667589158908916,
+     "pearson_heldout": 0.2226322032767568,
+     "encode_madds_per_item": 9216,
+     "bits": 7696,
+     "auroc": 0.8913922991071428,
+     "auprc": 0.9253042428130623,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 0.5535714285714286,
+     "fnr_at_fpr_1pct": 0.5535714285714286
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 0,
+     "bits": 7700,
+     "auroc": 0.5,
+     "auprc": 0.6363636363636364,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 100
+     },
+     "val_rho": 0.7436492359836097,
+     "rho": 0.7536966484191748,
+     "rho_ci": [
+      0.5877792502863436,
+      0.8403578096821583
+     ],
+     "rho_heldout": 0.6532664815473646,
+     "pearson_heldout": 0.7129225751641839,
+     "encode_madds_per_item": 2400,
+     "bits": 7700,
+     "auroc": 0.9446149553571429,
+     "auprc": 0.9605122824007778,
+     "fpr_at_val_threshold": 0.15625,
+     "fnr_at_val_threshold": 0.07142857142857142,
+     "fnr_at_fpr_1pct": 0.5
+    },
+    "MinHash": {
+     "selected": {
+      "b": 16,
+      "r": 8
+     },
+     "val_rho": 0.6746371344670677,
+     "rho": 0.6392611019792903,
+     "rho_ci": [
+      0.4447074039669838,
+      0.753434093683283
+     ],
+     "rho_heldout": 0.25185607444101626,
+     "pearson_heldout": 0.26954651190575707,
+     "encode_madds_per_item": 3072,
+     "bits": 7696,
+     "auroc": 0.82470703125,
+     "auprc": 0.8863050186432236,
+     "fpr_at_val_threshold": 0.3125,
+     "fnr_at_val_threshold": 0.19642857142857142,
+     "fnr_at_fpr_1pct": 0.7053571428571429
+    },
+    "CMS": {
+     "selected": {
+      "D": 4,
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.6322878862921774,
+     "rho": 0.44920178989090703,
+     "rho_ci": [
+      0.18454282549339251,
+      0.6501947494974966
+     ],
+     "rho_heldout": 0.4899374509341834,
+     "pearson_heldout": 0.520432306691352,
+     "encode_madds_per_item": 768,
+     "bits": 7680,
+     "auroc": 0.7787388392857143,
+     "auprc": 0.8057306644248609,
+     "fpr_at_val_threshold": 0.1875,
+     "fnr_at_val_threshold": 0.4375,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "SimHash",
+   "delta": -0.1722008957797555,
+   "delta_ci": [
+    -0.3638295624568561,
+    0.015951757072577562
+   ],
+   "fbf_minus_gbf": 0.12645589673035784,
+   "fbf_minus_gbf_ci": [
+    -0.09214700207679465,
+    0.3522360241022868
+   ],
+   "fbf_minus_lsbf_ci": [
+    -0.2504433535850171,
+    0.1985825698310611
+   ]
+  },
+  {
+   "dataset": "sift",
+   "B": 3,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 20,
+      "s": 6
+     },
+     "val_rho": 0.36177385358895686,
+     "rho": 0.34194372423474473,
+     "rho_ci": [
+      0.30465931008101066,
+      0.37678777951328807
+     ],
+     "rho_heldout": 0.45881726717549043,
+     "pearson_heldout": 0.4274402433269276,
+     "encode_madds_per_item": 63000,
+     "bits": 10500,
+     "auroc": 0.6041211541557076,
+     "auprc": 0.5657375256591802,
+     "fpr_at_val_threshold": 0.6828897338403042,
+     "fnr_at_val_threshold": 0.11787916152897657,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 10
+     },
+     "val_rho": 0.18182397018984478,
+     "rho": 0.15185016838608115,
+     "rho_ci": [
+      0.11773004053733808,
+      0.18619231939426592
+     ],
+     "rho_heldout": 0.21091252260690202,
+     "pearson_heldout": 0.21269169013975214,
+     "encode_madds_per_item": 1344000,
+     "bits": 10500,
+     "auroc": 0.5312187147882647,
+     "auprc": 0.523051507490847,
+     "fpr_at_val_threshold": 0.8684410646387832,
+     "fnr_at_val_threshold": 0.06979038224414304,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 4,
+      "r": 16
+     },
+     "val_rho": 0.24401065989609932,
+     "rho": 0.21811328279521416,
+     "rho_ci": [
+      0.1785236318319804,
+      0.25772648811476323
+     ],
+     "rho_heldout": 0.26807672304283175,
+     "pearson_heldout": 0.2591304747119403,
+     "encode_madds_per_item": 8192,
+     "bits": 10500,
+     "auroc": 0.5901824563706576,
+     "auprc": 0.5603487003624976,
+     "fpr_at_val_threshold": 0.39340937896070977,
+     "fnr_at_val_threshold": 0.46263871763255243,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": -0.017240480620679458,
+     "rho": -0.00011131837500499798,
+     "rho_ci": [
+      -0.03342955277597405,
+      0.03187357885942989
+     ],
+     "rho_heldout": 0.01600906162378604,
+     "pearson_heldout": 0.012858424351385959,
+     "encode_madds_per_item": 0,
+     "bits": 10500,
+     "auroc": 0.4996007057584325,
+     "auprc": 0.5066757207329663,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 3
+     },
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 384,
+     "bits": 10500,
+     "auroc": 0.5,
+     "auprc": 0.506875,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "MinHash": {
+     "selected": {
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.13446915143040228,
+     "rho": 0.14841023516766166,
+     "rho_ci": [
+      0.11046848434975874,
+      0.18495564784919158
+     ],
+     "rho_heldout": 0.13335415257257582,
+     "pearson_heldout": 0.13175695969637216,
+     "encode_madds_per_item": 4096,
+     "bits": 10500,
+     "auroc": 0.5665828070619601,
+     "auprc": 0.547606464779113,
+     "fpr_at_val_threshold": 0.3181242078580482,
+     "fnr_at_val_threshold": 0.5785450061652281,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "CMS": {
+     "selected": {
+      "D": 4,
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.040157878219131415,
+     "rho": 0.008775943404415214,
+     "rho_ci": [
+      -0.024346763610346153,
+      0.04157067128483256
+     ],
+     "rho_heldout": 0.02545947858144472,
+     "pearson_heldout": 0.02718410820828824,
+     "encode_madds_per_item": 4096,
+     "bits": 10496,
+     "auroc": 0.49990763878795835,
+     "auprc": 0.5068288323408662,
+     "fpr_at_val_threshold": 0.9977186311787072,
+     "fnr_at_val_threshold": 0.002466091245376079,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "MinHash",
+   "delta": 0.19353348906708306,
+   "delta_ci": [
+    0.14259454474508887,
+    0.24426632639205342
+   ],
+   "fbf_minus_gbf": 0.19009355584866358,
+   "fbf_minus_gbf_ci": [
+    0.14232998186916848,
+    0.23541464555705743
+   ],
+   "fbf_minus_lsbf_ci": [
+    0.07547828383349324,
+    0.17244676121164412
+   ]
+  },
+  {
+   "dataset": "sift",
+   "B": 10,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 50,
+      "s": 13
+     },
+     "val_rho": 0.43381044801082935,
+     "rho": 0.4309221942426552,
+     "rho_ci": [
+      0.39548986427177474,
+      0.46581582377322983
+     ],
+     "rho_heldout": 0.6545108666781807,
+     "pearson_heldout": 0.578951739505474,
+     "encode_madds_per_item": 455000,
+     "bits": 35000,
+     "auroc": 0.6569353580911391,
+     "auprc": 0.6039934034491126,
+     "fpr_at_val_threshold": 0.43548795944233204,
+     "fnr_at_val_threshold": 0.3156596794081381,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 30
+     },
+     "val_rho": 0.23298927329955224,
+     "rho": 0.2244311267560979,
+     "rho_ci": [
+      0.1870240657858115,
+      0.26213230652397224
+     ],
+     "rho_heldout": 0.3267011959959202,
+     "pearson_heldout": 0.3223230007715464,
+     "encode_madds_per_item": 4480000,
+     "bits": 35000,
+     "auroc": 0.5643355384377359,
+     "auprc": 0.5417415165972579,
+     "fpr_at_val_threshold": 0.7084917617237009,
+     "fnr_at_val_threshold": 0.17336621454993834,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 8,
+      "r": 20
+     },
+     "val_rho": 0.3803283996800834,
+     "rho": 0.3694889952957828,
+     "rho_ci": [
+      0.33736074747286815,
+      0.4005962834262016
+     ],
+     "rho_heldout": 0.3024257927176969,
+     "pearson_heldout": 0.3170819491431427,
+     "encode_madds_per_item": 20480,
+     "bits": 35000,
+     "auroc": 0.6898076355060879,
+     "auprc": 0.6510872838606678,
+     "fpr_at_val_threshold": 0.32496831432192647,
+     "fnr_at_val_threshold": 0.3869297163995068,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.0016838875467747674,
+     "rho": -0.005507768237235023,
+     "rho_ci": [
+      -0.04000685634728643,
+      0.03032835553804371
+     ],
+     "rho_heldout": -0.015390659543057187,
+     "pearson_heldout": -0.013345688101940258,
+     "encode_madds_per_item": 0,
+     "bits": 35000,
+     "auroc": 0.5001434646237805,
+     "auprc": 0.5069480281213953,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 0.9921085080147966
+    },
+    "SimHash": {
+     "selected": {
+      "b": 10
+     },
+     "val_rho": 0.05977668028069586,
+     "rho": 0.07590146458559141,
+     "rho_ci": [
+      0.03845084003208497,
+      0.1127080193054767
+     ],
+     "rho_heldout": 0.08347505236119009,
+     "pearson_heldout": 0.0767023059891688,
+     "encode_madds_per_item": 1280,
+     "bits": 35000,
+     "auroc": 0.5123951559591735,
+     "auprc": 0.513150870553493,
+     "fpr_at_val_threshold": 0.9406844106463879,
+     "fnr_at_val_threshold": 0.0345252774352651,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "MinHash": {
+     "selected": {
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.27542402325487697,
+     "rho": 0.25387748059756055,
+     "rho_ci": [
+      0.2217290122165035,
+      0.2858329868712514
+     ],
+     "rho_heldout": 0.23722705990036774,
+     "pearson_heldout": 0.254253301413919,
+     "encode_madds_per_item": 4096,
+     "bits": 35000,
+     "auroc": 0.6241114023119996,
+     "auprc": 0.594958395638659,
+     "fpr_at_val_threshold": 0.5569074778200254,
+     "fnr_at_val_threshold": 0.26633785450061653,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 8,
+      "r": 8
+     },
+     "val_rho": 0.08294668651918678,
+     "rho": 0.07379606202886559,
+     "rho_ci": [
+      0.03434225354611271,
+      0.11149855660753934
+     ],
+     "rho_heldout": 0.09759796844996237,
+     "pearson_heldout": 0.09801519137895282,
+     "encode_madds_per_item": 8192,
+     "bits": 34992,
+     "auroc": 0.507028078746138,
+     "auprc": 0.510414943900334,
+     "fpr_at_val_threshold": 0.9726235741444867,
+     "fnr_at_val_threshold": 0.013316892725030826,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "MinHash",
+   "delta": 0.17704471364509466,
+   "delta_ci": [
+    0.13282837263374467,
+    0.2213473903784574
+   ],
+   "fbf_minus_gbf": 0.20649106748655732,
+   "fbf_minus_gbf_ci": [
+    0.15978205398553436,
+    0.2533968443517254
+   ],
+   "fbf_minus_lsbf_ci": [
+    0.019877106483154515,
+    0.10314289070347576
+   ]
+  },
+  {
+   "dataset": "sift",
+   "B": 30,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 40,
+      "s": 6
+     },
+     "val_rho": 0.5005931535110942,
+     "rho": 0.4996851957350226,
+     "rho_ci": [
+      0.47119976330191443,
+      0.5267574173196014
+     ],
+     "rho_heldout": 0.7245902727771758,
+     "pearson_heldout": 0.6461303269572694,
+     "encode_madds_per_item": 630000,
+     "bits": 105000,
+     "auroc": 0.703887516233538,
+     "auprc": 0.6394122722057171,
+     "fpr_at_val_threshold": 0.5728770595690748,
+     "fnr_at_val_threshold": 0.09223181257706535,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 50
+     },
+     "val_rho": 0.30375244515590294,
+     "rho": 0.2889015254918807,
+     "rho_ci": [
+      0.2502083431001788,
+      0.3264829147099874
+     ],
+     "rho_heldout": 0.41853893257105457,
+     "pearson_heldout": 0.3993837467628152,
+     "encode_madds_per_item": 13440000,
+     "bits": 105000,
+     "auroc": 0.6042013255631142,
+     "auprc": 0.5678517591627555,
+     "fpr_at_val_threshold": 0.4877059569074778,
+     "fnr_at_val_threshold": 0.34500616522811345,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 16,
+      "r": 20
+     },
+     "val_rho": 0.516628467963085,
+     "rho": 0.5529800377761357,
+     "rho_ci": [
+      0.5305311684476846,
+      0.5744487753130759
+     ],
+     "rho_heldout": 0.4420404142088128,
+     "pearson_heldout": 0.4848442017115455,
+     "encode_madds_per_item": 40960,
+     "bits": 104992,
+     "auroc": 0.7914159708319854,
+     "auprc": 0.7535430527583176,
+     "fpr_at_val_threshold": 0.24258555133079848,
+     "fnr_at_val_threshold": 0.3242909987669544,
+     "fnr_at_fpr_1pct": 0.9408138101109741
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 0,
+     "bits": 105000,
+     "auroc": 0.5,
+     "auprc": 0.506875,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 30
+     },
+     "val_rho": 0.5743256862145647,
+     "rho": 0.5971740801246639,
+     "rho_ci": [
+      0.5733769383176356,
+      0.618629462680545
+     ],
+     "rho_heldout": 0.515486429923055,
+     "pearson_heldout": 0.5230234233642157,
+     "encode_madds_per_item": 3840,
+     "bits": 105000,
+     "auroc": 0.8147203455653335,
+     "auprc": 0.7722517844949737,
+     "fpr_at_val_threshold": 0.3690747782002535,
+     "fnr_at_val_threshold": 0.15561035758323058,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "MinHash": {
+     "selected": {
+      "b": 8,
+      "r": 8
+     },
+     "val_rho": 0.3469162556885022,
+     "rho": 0.36691185489981615,
+     "rho_ci": [
+      0.33310961305990444,
+      0.40035727326853054
+     ],
+     "rho_heldout": 0.34145678924991707,
+     "pearson_heldout": 0.3616092335148745,
+     "encode_madds_per_item": 8192,
+     "bits": 105000,
+     "auroc": 0.6774883063829255,
+     "auprc": 0.6434841956905247,
+     "fpr_at_val_threshold": 0.3105196451204056,
+     "fnr_at_val_threshold": 0.42983970406905053,
+     "fnr_at_fpr_1pct": 0.9963008631319359
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 4,
+      "r": 16
+     },
+     "val_rho": 0.2383031639172229,
+     "rho": 0.21400644421310794,
+     "rho_ci": [
+      0.1804752942961977,
+      0.24657453100186752
+     ],
+     "rho_heldout": 0.2580442892953886,
+     "pearson_heldout": 0.2562159639957314,
+     "encode_madds_per_item": 8192,
+     "bits": 104992,
+     "auroc": 0.5901385105621533,
+     "auprc": 0.5606350436176899,
+     "fpr_at_val_threshold": 0.38479087452471483,
+     "fnr_at_val_threshold": 0.47151664611590627,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "SimHash",
+   "delta": -0.09748888438964126,
+   "delta_ci": [
+    -0.1275065899141386,
+    -0.06786883911230214
+   ],
+   "fbf_minus_gbf": 0.21078367024314193,
+   "fbf_minus_gbf_ci": [
+    0.16786348137039608,
+    0.25400643994614364
+   ],
+   "fbf_minus_lsbf_ci": [
+    -0.08445644362635792,
+    -0.02170520571367632
+   ]
+  },
+  {
+   "dataset": "sift",
+   "B": 100,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 30,
+      "s": 6
+     },
+     "val_rho": 0.5381824073295817,
+     "rho": 0.5547156537135816,
+     "rho_ci": [
+      0.5260469325417207,
+      0.5811313111699131
+     ],
+     "rho_heldout": 0.7652051007747733,
+     "pearson_heldout": 0.6985161838948211,
+     "encode_madds_per_item": 2100000,
+     "bits": 350000,
+     "auroc": 0.7455981834065504,
+     "auprc": 0.677528346508222,
+     "fpr_at_val_threshold": 0.43802281368821294,
+     "fnr_at_val_threshold": 0.1595561035758323,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 30
+     },
+     "val_rho": 0.34562566707352893,
+     "rho": 0.3292093376735326,
+     "rho_ci": [
+      0.29640439923914913,
+      0.3612233050032336
+     ],
+     "rho_heldout": 0.47997636456903237,
+     "pearson_heldout": 0.46007721900164517,
+     "encode_madds_per_item": 44800000,
+     "bits": 350000,
+     "auroc": 0.6266865454249944,
+     "auprc": 0.5830002820224549,
+     "fpr_at_val_threshold": 0.6679340937896071,
+     "fnr_at_val_threshold": 0.12971639950678174,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 32,
+      "r": 20
+     },
+     "val_rho": 0.6831891880927595,
+     "rho": 0.6984049162203769,
+     "rho_ci": [
+      0.6796654534916378,
+      0.7151009411868763
+     ],
+     "rho_heldout": 0.6328880949269728,
+     "pearson_heldout": 0.6770694495873062,
+     "encode_madds_per_item": 81920,
+     "bits": 349984,
+     "auroc": 0.8695998149650169,
+     "auprc": 0.8315709776855654,
+     "fpr_at_val_threshold": 0.22610899873257287,
+     "fnr_at_val_threshold": 0.18224414303329223,
+     "fnr_at_fpr_1pct": 0.9208384710234279
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 0,
+     "bits": 350000,
+     "auroc": 0.5,
+     "auprc": 0.506875,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 100
+     },
+     "val_rho": 0.8564812735753301,
+     "rho": 0.8518936241903445,
+     "rho_ci": [
+      0.8400505539143288,
+      0.86214253329377
+     ],
+     "rho_heldout": 0.7373564060095859,
+     "pearson_heldout": 0.7547482706239279,
+     "encode_madds_per_item": 12800,
+     "bits": 350000,
+     "auroc": 0.9935895380220323,
+     "auprc": 0.9917048588342978,
+     "fpr_at_val_threshold": 0.03193916349809886,
+     "fnr_at_val_threshold": 0.045376078914919855,
+     "fnr_at_fpr_1pct": 0.28064118372379776
+    },
+    "MinHash": {
+     "selected": {
+      "b": 32,
+      "r": 8
+     },
+     "val_rho": 0.4394732491246211,
+     "rho": 0.49233438501667426,
+     "rho_ci": [
+      0.4646043994970764,
+      0.5177133378812204
+     ],
+     "rho_heldout": 0.4526430758582918,
+     "pearson_heldout": 0.4842099531879057,
+     "encode_madds_per_item": 32768,
+     "bits": 349984,
+     "auroc": 0.7406586870330172,
+     "auprc": 0.7033684155958915,
+     "fpr_at_val_threshold": 0.3285171102661597,
+     "fnr_at_val_threshold": 0.3025893958076449,
+     "fnr_at_fpr_1pct": 0.9595561035758323
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 8,
+      "r": 16
+     },
+     "val_rho": 0.39528356625288685,
+     "rho": 0.4129820382452102,
+     "rho_ci": [
+      0.3832699004678482,
+      0.44254000944245986
+     ],
+     "rho_heldout": 0.48058887838383824,
+     "pearson_heldout": 0.4743337188170648,
+     "encode_madds_per_item": 16384,
+     "bits": 350000,
+     "auroc": 0.6899907013669773,
+     "auprc": 0.6441484980330587,
+     "fpr_at_val_threshold": 0.4238276299112801,
+     "fnr_at_val_threshold": 0.2848335388409371,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "SimHash",
+   "delta": -0.297177970476763,
+   "delta_ci": [
+    -0.3243254191362631,
+    -0.2702857879411541
+   ],
+   "fbf_minus_gbf": 0.22550631604004895,
+   "fbf_minus_gbf_ci": [
+    0.19192493200275798,
+    0.25803254074665494
+   ],
+   "fbf_minus_lsbf_ci": [
+    -0.1695388396293532,
+    -0.1185262850111493
+   ]
+  },
+  {
+   "dataset": "mnist",
+   "B": 3,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 20,
+      "s": 79
+     },
+     "val_rho": 0.19531370406620188,
+     "rho": 0.17717568657810084,
+     "rho_ci": [
+      0.1415250600896106,
+      0.21186009701319142
+     ],
+     "rho_heldout": 0.1797175814294762,
+     "pearson_heldout": 0.18185522722236144,
+     "encode_madds_per_item": 829500,
+     "bits": 10500,
+     "auroc": 0.5634750968127258,
+     "auprc": 0.5735311705115927,
+     "fpr_at_val_threshold": 0.7632364919902254,
+     "fnr_at_val_threshold": 0.11443131804493861,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 10
+     },
+     "val_rho": 0.14117409956820864,
+     "rho": 0.15142480348704263,
+     "rho_ci": [
+      0.11579452854086925,
+      0.1866887811768061
+     ],
+     "rho_heldout": 0.1542525495304661,
+     "pearson_heldout": 0.15104857217299383,
+     "encode_madds_per_item": 8232000,
+     "bits": 10500,
+     "auroc": 0.5497570334081343,
+     "auprc": 0.5658097036282488,
+     "fpr_at_val_threshold": 0.7996198751018192,
+     "fnr_at_val_threshold": 0.10308084317813296,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 4,
+      "r": 16
+     },
+     "val_rho": 0.21139108707724957,
+     "rho": 0.19161219735545204,
+     "rho_ci": [
+      0.15782414982776746,
+      0.2241959785848757
+     ],
+     "rho_heldout": 0.12252675591818668,
+     "pearson_heldout": 0.15154692844346046,
+     "encode_madds_per_item": 50176,
+     "bits": 10500,
+     "auroc": 0.6185509730456489,
+     "auprc": 0.6124331442345707,
+     "fpr_at_val_threshold": 0.32011946782514256,
+     "fnr_at_val_threshold": 0.4943247625665972,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": -0.005655782740533064,
+     "rho": 0.0043792847666519145,
+     "rho_ci": [
+      -0.02953107705381126,
+      0.0397624283802422
+     ],
+     "rho_heldout": 0.02080800240486403,
+     "pearson_heldout": 0.009768010520539433,
+     "encode_madds_per_item": 0,
+     "bits": 10500,
+     "auroc": 0.49800239139430136,
+     "auprc": 0.5386402953775062,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 3
+     },
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 2352,
+     "bits": 10500,
+     "auroc": 0.5,
+     "auprc": 0.539625,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "MinHash": {
+     "selected": {
+      "b": 16,
+      "r": 8
+     },
+     "val_rho": 0.04337554740696917,
+     "rho": -0.006477221494535286,
+     "rho_ci": [
+      -0.03897492655047901,
+      0.02529788195460797
+     ],
+     "rho_heldout": 0.04934684622964816,
+     "pearson_heldout": 0.058225923901834724,
+     "encode_madds_per_item": 100352,
+     "bits": 10496,
+     "auroc": 0.49800761168063595,
+     "auprc": 0.5386292819863273,
+     "fpr_at_val_threshold": 0.8669562856367092,
+     "fnr_at_val_threshold": 0.1369006254343294,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.030783552711613794,
+     "rho": -0.0014751278553370756,
+     "rho_ci": [
+      -0.03433960564565584,
+      0.032249154070997016
+     ],
+     "rho_heldout": 0.02970324473365615,
+     "pearson_heldout": 0.02663397176673814,
+     "encode_madds_per_item": 25088,
+     "bits": 10496,
+     "auroc": 0.4999477971366541,
+     "auprc": 0.5395990637498309,
+     "fpr_at_val_threshold": 0.997556339940266,
+     "fnr_at_val_threshold": 0.0025480657864257587,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "MinHash",
+   "delta": 0.18365290807263612,
+   "delta_ci": [
+    0.1357471896917364,
+    0.23242248289786777
+   ],
+   "fbf_minus_gbf": 0.02575088309105822,
+   "fbf_minus_gbf_ci": [
+    -0.016802676899882324,
+    0.06665365198923365
+   ],
+   "fbf_minus_lsbf_ci": [
+    -0.0650585199295783,
+    0.035442785043958876
+   ]
+  },
+  {
+   "dataset": "mnist",
+   "B": 10,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 20,
+      "s": 79
+     },
+     "val_rho": 0.23162182050962324,
+     "rho": 0.2866519275005708,
+     "rho_ci": [
+      0.24510133931354006,
+      0.3286089551185613
+     ],
+     "rho_heldout": 0.27178846385979727,
+     "pearson_heldout": 0.2702916176560092,
+     "encode_madds_per_item": 2765000,
+     "bits": 35000,
+     "auroc": 0.6352484362569389,
+     "auprc": 0.6190387527873158,
+     "fpr_at_val_threshold": 0.5185989682324192,
+     "fnr_at_val_threshold": 0.24484595784109336,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 30
+     },
+     "val_rho": 0.1870545592809361,
+     "rho": 0.18688305696199817,
+     "rho_ci": [
+      0.1440172565438286,
+      0.22925115521432263
+     ],
+     "rho_heldout": 0.19221253057235338,
+     "pearson_heldout": 0.19527017991836426,
+     "encode_madds_per_item": 27440000,
+     "bits": 35000,
+     "auroc": 0.5907018461133805,
+     "auprc": 0.590874190871026,
+     "fpr_at_val_threshold": 0.577518327450448,
+     "fnr_at_val_threshold": 0.2643039147556173,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 16,
+      "r": 16
+     },
+     "val_rho": 0.3507123664687459,
+     "rho": 0.3235620202755803,
+     "rho_ci": [
+      0.29293576061648086,
+      0.3545326630630729
+     ],
+     "rho_heldout": 0.2392328249211177,
+     "pearson_heldout": 0.283529598662129,
+     "encode_madds_per_item": 200704,
+     "bits": 34992,
+     "auroc": 0.707968062665575,
+     "auprc": 0.6954593732522215,
+     "fpr_at_val_threshold": 0.3638338311159381,
+     "fnr_at_val_threshold": 0.3222145008107482,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.03562273280851816,
+     "rho": -0.0009134583789805716,
+     "rho_ci": [
+      -0.03885417660690125,
+      0.03720258442665813
+     ],
+     "rho_heldout": -0.0267511964649847,
+     "pearson_heldout": -0.02650949272923175,
+     "encode_madds_per_item": 0,
+     "bits": 35000,
+     "auroc": 0.5000607251380247,
+     "auprc": 0.5396554086455426,
+     "fpr_at_val_threshold": 0.0070594623947868584,
+     "fnr_at_val_threshold": 0.9928190873291638,
+     "fnr_at_fpr_1pct": 0.9928190873291638
+    },
+    "SimHash": {
+     "selected": {
+      "b": 10
+     },
+     "val_rho": 0.08840841122034193,
+     "rho": 0.06099353108416104,
+     "rho_ci": [
+      0.011882222095788932,
+      0.1090404088113233
+     ],
+     "rho_heldout": 0.06968518324172909,
+     "pearson_heldout": 0.06755387372909982,
+     "encode_madds_per_item": 7840,
+     "bits": 35000,
+     "auroc": 0.5128289165622766,
+     "auprc": 0.5460783340796486,
+     "fpr_at_val_threshold": 0.937279391800163,
+     "fnr_at_val_threshold": 0.037062775075283765,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "MinHash": {
+     "selected": {
+      "b": 8,
+      "r": 8
+     },
+     "val_rho": -0.027589800486077162,
+     "rho": -0.034817883610293435,
+     "rho_ci": [
+      -0.0772140003019695,
+      0.01123021774289408
+     ],
+     "rho_heldout": 0.22417897635568002,
+     "pearson_heldout": 0.26924250834127295,
+     "encode_madds_per_item": 50176,
+     "bits": 35000,
+     "auroc": 0.4803469427455976,
+     "auprc": 0.5278147377528031,
+     "fpr_at_val_threshold": 0.7974477328265002,
+     "fnr_at_val_threshold": 0.21959694232105628,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "CMS": {
+     "selected": {
+      "D": 4,
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.015903311611097124,
+     "rho": 0.01288790892325769,
+     "rho_ci": [
+      -0.025459991872787264,
+      0.050118506939439485
+     ],
+     "rho_heldout": 0.04249128500456269,
+     "pearson_heldout": 0.04139243211052049,
+     "encode_madds_per_item": 25088,
+     "bits": 34976,
+     "auroc": 0.5004547624137623,
+     "auprc": 0.5398510481285453,
+     "fpr_at_val_threshold": 0.995384197664947,
+     "fnr_at_val_threshold": 0.003706277507528376,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "SimHash",
+   "delta": 0.22565839641640972,
+   "delta_ci": [
+    0.1629482111376755,
+    0.29110590641361805
+   ],
+   "fbf_minus_gbf": 0.09976887053857261,
+   "fbf_minus_gbf_ci": [
+    0.057485167788899165,
+    0.1446433855505617
+   ],
+   "fbf_minus_lsbf_ci": [
+    -0.09049691725727287,
+    0.01654169701360413
+   ]
+  },
+  {
+   "dataset": "mnist",
+   "B": 30,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 20,
+      "s": 79
+     },
+     "val_rho": 0.31246643367102767,
+     "rho": 0.3278058439479843,
+     "rho_ci": [
+      0.2964232903367634,
+      0.3579510778745515
+     ],
+     "rho_heldout": 0.3395226244254351,
+     "pearson_heldout": 0.32659541124028424,
+     "encode_madds_per_item": 8295000,
+     "bits": 105000,
+     "auroc": 0.6657035238379345,
+     "auprc": 0.6422598258718817,
+     "fpr_at_val_threshold": 0.6166168884061906,
+     "fnr_at_val_threshold": 0.13041463979615472,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 40
+     },
+     "val_rho": 0.20700682827955533,
+     "rho": 0.2385066723258366,
+     "rho_ci": [
+      0.2013458730980896,
+      0.2755707373332137
+     ],
+     "rho_heldout": 0.22444304760394648,
+     "pearson_heldout": 0.22039974986283273,
+     "encode_madds_per_item": 82320000,
+     "bits": 105000,
+     "auroc": 0.6216335835737339,
+     "auprc": 0.612086647682432,
+     "fpr_at_val_threshold": 0.6147162639152864,
+     "fnr_at_val_threshold": 0.187167014130183,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 32,
+      "r": 16
+     },
+     "val_rho": 0.5671609079129244,
+     "rho": 0.5471282085431783,
+     "rho_ci": [
+      0.5209857250300802,
+      0.5716594157187338
+     ],
+     "rho_heldout": 0.3746311792947955,
+     "pearson_heldout": 0.47590007858923544,
+     "encode_madds_per_item": 401408,
+     "bits": 104992,
+     "auroc": 0.8492514015053672,
+     "auprc": 0.8452668566523311,
+     "fpr_at_val_threshold": 0.18083084442030953,
+     "fnr_at_val_threshold": 0.28515172573546443,
+     "fnr_at_fpr_1pct": 0.8573083159601576
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 0,
+     "bits": 105000,
+     "auroc": 0.5,
+     "auprc": 0.539625,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 30
+     },
+     "val_rho": 0.6516828647130125,
+     "rho": 0.6439593209111084,
+     "rho_ci": [
+      0.6212434562992948,
+      0.6646554037782861
+     ],
+     "rho_heldout": 0.36631870648501186,
+     "pearson_heldout": 0.46644641236022416,
+     "encode_madds_per_item": 23520,
+     "bits": 105000,
+     "auroc": 0.9014474092945373,
+     "auprc": 0.8871293408685277,
+     "fpr_at_val_threshold": 0.12055389628020635,
+     "fnr_at_val_threshold": 0.21450081074820476,
+     "fnr_at_fpr_1pct": 0.8186240444753301
+    },
+    "MinHash": {
+     "selected": {
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": -0.06844996113741267,
+     "rho": -0.06444808713222523,
+     "rho_ci": [
+      -0.10150151847073316,
+      -0.027659623102856634
+     ],
+     "rho_heldout": 0.23218458446728107,
+     "pearson_heldout": 0.3157529265338226,
+     "encode_madds_per_item": 25088,
+     "bits": 105000,
+     "auroc": 0.47325295098698317,
+     "auprc": 0.5272297675117839,
+     "fpr_at_val_threshold": 0.01683410263372251,
+     "fnr_at_val_threshold": 0.9777623349548298,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 4,
+      "r": 16
+     },
+     "val_rho": 0.183754252060451,
+     "rho": 0.18533577315625205,
+     "rho_ci": [
+      0.15213691730243364,
+      0.2185866888262733
+     ],
+     "rho_heldout": 0.1387202247445633,
+     "pearson_heldout": 0.16611341092643694,
+     "encode_madds_per_item": 50176,
+     "bits": 104992,
+     "auroc": 0.6115984950732133,
+     "auprc": 0.6074011256554064,
+     "fpr_at_val_threshold": 0.3529731197393429,
+     "fnr_at_val_threshold": 0.4644429001621496,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "SimHash",
+   "delta": -0.3161534769631241,
+   "delta_ci": [
+    -0.3522871073016589,
+    -0.28014325636569737
+   ],
+   "fbf_minus_gbf": 0.08929917162214768,
+   "fbf_minus_gbf_ci": [
+    0.05274183032726843,
+    0.12396832176865298
+   ],
+   "fbf_minus_lsbf_ci": [
+    -0.2556580060327272,
+    -0.18372299159548722
+   ]
+  },
+  {
+   "dataset": "mnist",
+   "B": 100,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 10,
+      "s": 79
+     },
+     "val_rho": 0.3786549566297465,
+     "rho": 0.38321495615338896,
+     "rho_ci": [
+      0.35121061688857763,
+      0.41411990989585407
+     ],
+     "rho_heldout": 0.3461613295774313,
+     "pearson_heldout": 0.3498130792350797,
+     "encode_madds_per_item": 27650000,
+     "bits": 350000,
+     "auroc": 0.7059397927395377,
+     "auprc": 0.6729426822365823,
+     "fpr_at_val_threshold": 0.5555253869128428,
+     "fnr_at_val_threshold": 0.12462358119064165,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 30
+     },
+     "val_rho": 0.2705469480195692,
+     "rho": 0.2924118343836608,
+     "rho_ci": [
+      0.25116683917979243,
+      0.33254763059052417
+     ],
+     "rho_heldout": 0.2877383710783912,
+     "pearson_heldout": 0.29057181558532785,
+     "encode_madds_per_item": 274400000,
+     "bits": 350000,
+     "auroc": 0.6625344012152323,
+     "auprc": 0.6425496643795807,
+     "fpr_at_val_threshold": 0.45940809122997556,
+     "fnr_at_val_threshold": 0.2886263608987723,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 32,
+      "r": 20
+     },
+     "val_rho": 0.6798479345931001,
+     "rho": 0.6989142892448797,
+     "rho_ci": [
+      0.6811471020794043,
+      0.7150019891579524
+     ],
+     "rho_heldout": 0.3777295471746026,
+     "pearson_heldout": 0.5563097905527389,
+     "encode_madds_per_item": 501760,
+     "bits": 349984,
+     "auroc": 0.9451658922088862,
+     "auprc": 0.9421890045699485,
+     "fpr_at_val_threshold": 0.09367363562313331,
+     "fnr_at_val_threshold": 0.15913829047949965,
+     "fnr_at_fpr_1pct": 0.5990271021542738
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 0,
+     "bits": 350000,
+     "auroc": 0.5,
+     "auprc": 0.539625,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 100
+     },
+     "val_rho": 0.8264232324001024,
+     "rho": 0.8234205499661149,
+     "rho_ci": [
+      0.8124271839574735,
+      0.8327408698200799
+     ],
+     "rho_heldout": 0.6184323297594624,
+     "pearson_heldout": 0.7124448871123499,
+     "encode_madds_per_item": 78400,
+     "bits": 350000,
+     "auroc": 0.9959300006144843,
+     "auprc": 0.9951341033361939,
+     "fpr_at_val_threshold": 0.031496062992125984,
+     "fnr_at_val_threshold": 0.014825110030113504,
+     "fnr_at_fpr_1pct": 0.10840861709520501
+    },
+    "MinHash": {
+     "selected": {
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": -0.07813613456924948,
+     "rho": -0.06300329737807456,
+     "rho_ci": [
+      -0.10281082443706387,
+      -0.023531533250797345
+     ],
+     "rho_heldout": 0.2682498382781449,
+     "pearson_heldout": 0.3605800160131004,
+     "encode_madds_per_item": 25088,
+     "bits": 350000,
+     "auroc": 0.4699548621338102,
+     "auprc": 0.5271076651896753,
+     "fpr_at_val_threshold": 0.07195221286994298,
+     "fnr_at_val_threshold": 0.9295807273569608,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "CMS": {
+     "selected": {
+      "D": 4,
+      "b": 4,
+      "r": 16
+     },
+     "val_rho": 0.40360135706497413,
+     "rho": 0.3934730552813708,
+     "rho_ci": [
+      0.3643495063284179,
+      0.4209459561097083
+     ],
+     "rho_heldout": 0.2836782609167729,
+     "pearson_heldout": 0.3615194027050331,
+     "encode_madds_per_item": 50176,
+     "bits": 349984,
+     "auroc": 0.7462693349499867,
+     "auprc": 0.731331394615391,
+     "fpr_at_val_threshold": 0.4732554982351344,
+     "fnr_at_val_threshold": 0.17859624739402363,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "SimHash",
+   "delta": -0.44020559381272595,
+   "delta_ci": [
+    -0.47194361250782413,
+    -0.4079885956711212
+   ],
+   "fbf_minus_gbf": 0.09080312176972816,
+   "fbf_minus_gbf_ci": [
+    0.04862124007851766,
+    0.1327444957334522
+   ],
+   "fbf_minus_lsbf_ci": [
+    -0.34673366285386903,
+    -0.2842206306856252
+   ]
+  },
+  {
+   "dataset": "random",
+   "B": 3,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 5,
+      "s": 6
+     },
+     "val_rho": 0.42729525253096834,
+     "rho": 0.39336419371487075,
+     "rho_ci": [
+      0.3252085076487165,
+      0.455743652795178
+     ],
+     "rho_heldout": -0.035470136062866295,
+     "pearson_heldout": -0.04235624563264557,
+     "encode_madds_per_item": 12600,
+     "bits": 2100,
+     "auroc": 0.7255373471084193,
+     "auprc": 0.6536079975520962,
+     "fpr_at_val_threshold": 0.37343358395989973,
+     "fnr_at_val_threshold": 0.2119700748129676,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 50
+     },
+     "val_rho": 0.22669216390787275,
+     "rho": 0.19706517187642678,
+     "rho_ci": [
+      0.11056362216922391,
+      0.2764005554344133
+     ],
+     "rho_heldout": 0.14273634560894294,
+     "pearson_heldout": 0.15786632769710202,
+     "encode_madds_per_item": 42000,
+     "bits": 2100,
+     "auroc": 0.5516878230488941,
+     "auprc": 0.5287257660901924,
+     "fpr_at_val_threshold": 0.8145363408521303,
+     "fnr_at_val_threshold": 0.08354114713216958,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 4,
+      "r": 12
+     },
+     "val_rho": 0.23763613509332024,
+     "rho": 0.22783899369230037,
+     "rho_ci": [
+      0.14942140564813922,
+      0.3009936373851633
+     ],
+     "rho_heldout": 0.04770746770363465,
+     "pearson_heldout": 0.04404229996375507,
+     "encode_madds_per_item": 960,
+     "bits": 2100,
+     "auroc": 0.6223882649266558,
+     "auprc": 0.5772835060389367,
+     "fpr_at_val_threshold": 0.37844611528822053,
+     "fnr_at_val_threshold": 0.4139650872817955,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.033336970370723064,
+     "rho": 0.018265350631707925,
+     "rho_ci": [
+      -0.07638055413795639,
+      0.11174876925228479
+     ],
+     "rho_heldout": -0.055025409016683596,
+     "pearson_heldout": -0.05314502372709645,
+     "encode_madds_per_item": 0,
+     "bits": 2100,
+     "auroc": 0.5112891330570817,
+     "auprc": 0.5071657315045719,
+     "fpr_at_val_threshold": 0.22305764411027568,
+     "fnr_at_val_threshold": 0.7543640897755611,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 3
+     },
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 60,
+     "bits": 2100,
+     "auroc": 0.5,
+     "auprc": 0.50125,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "MinHash": {
+     "selected": {
+      "b": 8,
+      "r": 8
+     },
+     "val_rho": 0.19140447079188852,
+     "rho": 0.15879835509897494,
+     "rho_ci": [
+      0.08521021432708517,
+      0.23207978446149496
+     ],
+     "rho_heldout": -0.0016441241773454702,
+     "pearson_heldout": -0.0013114717951401358,
+     "encode_madds_per_item": 1280,
+     "bits": 2096,
+     "auroc": 0.5842544328402051,
+     "auprc": 0.5509737723000996,
+     "fpr_at_val_threshold": 0.5263157894736842,
+     "fnr_at_val_threshold": 0.3104738154613466,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.0,
+     "rho": 0.005448511651568889,
+     "rho_ci": [
+      0.0,
+      0.02110839040436231
+     ],
+     "rho_heldout": -0.0063106305678111195,
+     "pearson_heldout": -0.006081184768424685,
+     "encode_madds_per_item": 640,
+     "bits": 2096,
+     "auroc": 0.5006265664160401,
+     "auprc": 0.5015634771732332,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "MinHash",
+   "delta": 0.2345658386158958,
+   "delta_ci": [
+    0.13441413283883366,
+    0.3299935678927899
+   ],
+   "fbf_minus_gbf": 0.19629902183844397,
+   "fbf_minus_gbf_ci": [
+    0.09087264848846122,
+    0.29947350502290593
+   ],
+   "fbf_minus_lsbf_ci": [
+    0.06872432091917911,
+    0.26161918625426145
+   ]
+  },
+  {
+   "dataset": "random",
+   "B": 10,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 5,
+      "s": 6
+     },
+     "val_rho": 0.6743385651241377,
+     "rho": 0.6463615080447205,
+     "rho_ci": [
+      0.602100325000434,
+      0.6819155239058475
+     ],
+     "rho_heldout": 0.03459814523716254,
+     "pearson_heldout": 0.03334289857085135,
+     "encode_madds_per_item": 42000,
+     "bits": 7000,
+     "auroc": 0.9061611322570766,
+     "auprc": 0.8708484052944143,
+     "fpr_at_val_threshold": 0.12155388471177944,
+     "fnr_at_val_threshold": 0.21072319201995013,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 50
+     },
+     "val_rho": 0.2531728397398783,
+     "rho": 0.20170340386127417,
+     "rho_ci": [
+      0.12299437809144009,
+      0.27870215292847594
+     ],
+     "rho_heldout": 0.11485362377986938,
+     "pearson_heldout": 0.15424103852688353,
+     "encode_madds_per_item": 140000,
+     "bits": 7000,
+     "auroc": 0.5822020762629766,
+     "auprc": 0.5472732625756179,
+     "fpr_at_val_threshold": 0.6228070175438597,
+     "fnr_at_val_threshold": 0.22942643391521197,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 8,
+      "r": 12
+     },
+     "val_rho": 0.47318339343198274,
+     "rho": 0.4203112100189855,
+     "rho_ci": [
+      0.35248235660052296,
+      0.48261156879669254
+     ],
+     "rho_heldout": 0.11386984982654388,
+     "pearson_heldout": 0.09935688901876619,
+     "encode_madds_per_item": 1920,
+     "bits": 7000,
+     "auroc": 0.740728067050419,
+     "auprc": 0.6945620294396553,
+     "fpr_at_val_threshold": 0.23308270676691728,
+     "fnr_at_val_threshold": 0.42144638403990026,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": -0.032951863594142844,
+     "rho": -0.012897529192418098,
+     "rho_ci": [
+      -0.05949356381302125,
+      0.03926757645979304
+     ],
+     "rho_heldout": -0.0012387211516162889,
+     "pearson_heldout": 0.0048966571570400515,
+     "encode_madds_per_item": 0,
+     "bits": 7000,
+     "auroc": 0.49873749210932566,
+     "auprc": 0.5007777431421446,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 0.9962593516209476
+    },
+    "SimHash": {
+     "selected": {
+      "b": 10
+     },
+     "val_rho": 0.21391174147688807,
+     "rho": 0.1825828190399288,
+     "rho_ci": [
+      0.10793660055157175,
+      0.25220542926383516
+     ],
+     "rho_heldout": 0.07525994008063142,
+     "pearson_heldout": 0.07920171325885231,
+     "encode_madds_per_item": 200,
+     "bits": 7000,
+     "auroc": 0.5636253976587353,
+     "auprc": 0.535744899876837,
+     "fpr_at_val_threshold": 0.7130325814536341,
+     "fnr_at_val_threshold": 0.1596009975062344,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "MinHash": {
+     "selected": {
+      "b": 8,
+      "r": 8
+     },
+     "val_rho": 0.36202495963178083,
+     "rho": 0.34255350780333665,
+     "rho_ci": [
+      0.2712252604572184,
+      0.40779943222798193
+     ],
+     "rho_heldout": 0.055421181038304915,
+     "pearson_heldout": 0.06240682274016422,
+     "encode_madds_per_item": 1280,
+     "bits": 7000,
+     "auroc": 0.6944293401833762,
+     "auprc": 0.655487133354064,
+     "fpr_at_val_threshold": 0.2894736842105263,
+     "fnr_at_val_threshold": 0.4251870324189526,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.15805295279846066,
+     "rho": 0.07275809809677168,
+     "rho_ci": [
+      -0.011062875955919696,
+      0.1502976309502353
+     ],
+     "rho_heldout": 0.06918350319078653,
+     "pearson_heldout": 0.08328216703079933,
+     "encode_madds_per_item": 640,
+     "bits": 6992,
+     "auroc": 0.5146297789361184,
+     "auprc": 0.5086766270972007,
+     "fpr_at_val_threshold": 0.9273182957393483,
+     "fnr_at_val_threshold": 0.043640897755610975,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "MinHash",
+   "delta": 0.3038080002413838,
+   "delta_ci": [
+    0.23057556240332927,
+    0.37699206751535574
+   ],
+   "fbf_minus_gbf": 0.4446581041834463,
+   "fbf_minus_gbf_ci": [
+    0.35620029213466,
+    0.5299646336173173
+   ],
+   "fbf_minus_lsbf_ci": [
+    0.14927113051627958,
+    0.30267930670480353
+   ]
+  },
+  {
+   "dataset": "random",
+   "B": 30,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 20,
+      "s": 6
+     },
+     "val_rho": 0.7512921671870982,
+     "rho": 0.7435453735221338,
+     "rho_ci": [
+      0.7115039621342083,
+      0.7687868813084522
+     ],
+     "rho_heldout": 0.09069756248491656,
+     "pearson_heldout": 0.07031075340054165,
+     "encode_madds_per_item": 126000,
+     "bits": 21000,
+     "auroc": 0.9693435583972401,
+     "auprc": 0.9616954312292268,
+     "fpr_at_val_threshold": 0.12531328320802004,
+     "fnr_at_val_threshold": 0.06109725685785536,
+     "fnr_at_fpr_1pct": 0.513715710723192
+    },
+    "GBF": {
+     "selected": {
+      "k": 50
+     },
+     "val_rho": 0.2754909195151184,
+     "rho": 0.32690904567203416,
+     "rho_ci": [
+      0.24964807277738552,
+      0.3988295574828746
+     ],
+     "rho_heldout": 0.23385251532916224,
+     "pearson_heldout": 0.25449243511958053,
+     "encode_madds_per_item": 420000,
+     "bits": 21000,
+     "auroc": 0.6464431027693923,
+     "auprc": 0.5925216582885748,
+     "fpr_at_val_threshold": 0.45112781954887216,
+     "fnr_at_val_threshold": 0.2967581047381546,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 16,
+      "r": 12
+     },
+     "val_rho": 0.6620718501366867,
+     "rho": 0.5881273883765699,
+     "rho_ci": [
+      0.5323120551468242,
+      0.6348665978584145
+     ],
+     "rho_heldout": 0.09327692276822466,
+     "pearson_heldout": 0.09411802964852098,
+     "encode_madds_per_item": 3840,
+     "bits": 20992,
+     "auroc": 0.8538428365177282,
+     "auprc": 0.8276164479524336,
+     "fpr_at_val_threshold": 0.3458646616541353,
+     "fnr_at_val_threshold": 0.128428927680798,
+     "fnr_at_fpr_1pct": 0.8615960099750624
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 0,
+     "bits": 21000,
+     "auroc": 0.5,
+     "auprc": 0.50125,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 30
+     },
+     "val_rho": 0.6712909884887976,
+     "rho": 0.6877204683210366,
+     "rho_ci": [
+      0.641144808304446,
+      0.7253000329551715
+     ],
+     "rho_heldout": 0.06065892818839397,
+     "pearson_heldout": 0.05618019910293881,
+     "encode_madds_per_item": 600,
+     "bits": 21000,
+     "auroc": 0.9281433008956305,
+     "auprc": 0.9105608539579291,
+     "fpr_at_val_threshold": 0.21052631578947367,
+     "fnr_at_val_threshold": 0.09476309226932668,
+     "fnr_at_fpr_1pct": 0.8154613466334164
+    },
+    "MinHash": {
+     "selected": {
+      "b": 16,
+      "r": 8
+     },
+     "val_rho": 0.5237155882618026,
+     "rho": 0.5053870285476451,
+     "rho_ci": [
+      0.4478042796293785,
+      0.5567591627382249
+     ],
+     "rho_heldout": 0.12180338818289635,
+     "pearson_heldout": 0.13544859129115192,
+     "encode_madds_per_item": 2560,
+     "bits": 20992,
+     "auroc": 0.7890752442202764,
+     "auprc": 0.7710834799604983,
+     "fpr_at_val_threshold": 0.19423558897243107,
+     "fnr_at_val_threshold": 0.3778054862842893,
+     "fnr_at_fpr_1pct": 0.9513715710723192
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.21536684343042162,
+     "rho": 0.14959971001768702,
+     "rho_ci": [
+      0.07388155069436636,
+      0.2233639871470087
+     ],
+     "rho_heldout": 0.10002569771153413,
+     "pearson_heldout": 0.10433040772271303,
+     "encode_madds_per_item": 640,
+     "bits": 20992,
+     "auroc": 0.5554745654660342,
+     "auprc": 0.5309154596782778,
+     "fpr_at_val_threshold": 0.7744360902255639,
+     "fnr_at_val_threshold": 0.11596009975062344,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "SimHash",
+   "delta": 0.055824905201097175,
+   "delta_ci": [
+    0.0073176925782757005,
+    0.10445390450061426
+   ],
+   "fbf_minus_gbf": 0.41663632785009963,
+   "fbf_minus_gbf_ci": [
+    0.33445788782239544,
+    0.498014325843148
+   ],
+   "fbf_minus_lsbf_ci": [
+    0.10052250191660776,
+    0.21431513770138944
+   ]
+  },
+  {
+   "dataset": "random",
+   "B": 100,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 40,
+      "s": 6
+     },
+     "val_rho": 0.7820095491446962,
+     "rho": 0.7648194383392783,
+     "rho_ci": [
+      0.7398214011069429,
+      0.7822133380035482
+     ],
+     "rho_heldout": 0.05796247080360291,
+     "pearson_heldout": 0.06227054005994206,
+     "encode_madds_per_item": 420000,
+     "bits": 70000,
+     "auroc": 0.9871366383539898,
+     "auprc": 0.9863336161909821,
+     "fpr_at_val_threshold": 0.09022556390977443,
+     "fnr_at_val_threshold": 0.02743142144638404,
+     "fnr_at_fpr_1pct": 0.24438902743142144
+    },
+    "GBF": {
+     "selected": {
+      "k": 50
+     },
+     "val_rho": 0.38073589773394784,
+     "rho": 0.3970302609645754,
+     "rho_ci": [
+      0.3265601807324998,
+      0.4605757289383276
+     ],
+     "rho_heldout": 0.29236014377539155,
+     "pearson_heldout": 0.2785761598818325,
+     "encode_madds_per_item": 1400000,
+     "bits": 70000,
+     "auroc": 0.6948309051931575,
+     "auprc": 0.6345981469074387,
+     "fpr_at_val_threshold": 0.2506265664160401,
+     "fnr_at_val_threshold": 0.486284289276808,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 32,
+      "r": 16
+     },
+     "val_rho": 0.7468909451272235,
+     "rho": 0.7495508053536358,
+     "rho_ci": [
+      0.7139260518549284,
+      0.7761077086129637
+     ],
+     "rho_heldout": 0.09273478875209425,
+     "pearson_heldout": 0.10162858461682792,
+     "encode_madds_per_item": 10240,
+     "bits": 69984,
+     "auroc": 0.963445865286658,
+     "auprc": 0.9622656224345602,
+     "fpr_at_val_threshold": 0.07769423558897243,
+     "fnr_at_val_threshold": 0.11596009975062344,
+     "fnr_at_fpr_1pct": 0.3491271820448878
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 0,
+     "bits": 70000,
+     "auroc": 0.5,
+     "auprc": 0.50125,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 100
+     },
+     "val_rho": 0.8153639557384191,
+     "rho": 0.8004840486729012,
+     "rho_ci": [
+      0.7716858153611559,
+      0.8197204802750491
+     ],
+     "rho_heldout": 0.1878935360758236,
+     "pearson_heldout": 0.18497287336427135,
+     "encode_madds_per_item": 2000,
+     "bits": 70000,
+     "auroc": 0.9969335745848411,
+     "auprc": 0.9962070545253245,
+     "fpr_at_val_threshold": 0.02882205513784461,
+     "fnr_at_val_threshold": 0.014962593516209476,
+     "fnr_at_fpr_1pct": 0.1059850374064838
+    },
+    "MinHash": {
+     "selected": {
+      "b": 32,
+      "r": 8
+     },
+     "val_rho": 0.6751900212916434,
+     "rho": 0.6743456423924717,
+     "rho_ci": [
+      0.6286853580172824,
+      0.7112612164003227
+     ],
+     "rho_heldout": 0.0715163973500396,
+     "pearson_heldout": 0.08860955909313897,
+     "encode_madds_per_item": 5120,
+     "bits": 69984,
+     "auroc": 0.9016689166807293,
+     "auprc": 0.8973701645707017,
+     "fpr_at_val_threshold": 0.08646616541353383,
+     "fnr_at_val_threshold": 0.27805486284289277,
+     "fnr_at_fpr_1pct": 0.713216957605985
+    },
+    "CMS": {
+     "selected": {
+      "D": 4,
+      "b": 4,
+      "r": 16
+     },
+     "val_rho": 0.5271703942176341,
+     "rho": 0.4744060873031696,
+     "rho_ci": [
+      0.4065872867438464,
+      0.5339437698869511
+     ],
+     "rho_heldout": 0.0556232454219415,
+     "pearson_heldout": 0.05568679982885041,
+     "encode_madds_per_item": 1280,
+     "bits": 69984,
+     "auroc": 0.7710806005037532,
+     "auprc": 0.7318461834154365,
+     "fpr_at_val_threshold": 0.38220551378446116,
+     "fnr_at_val_threshold": 0.19825436408977556,
+     "fnr_at_fpr_1pct": 0.8591022443890274
+    }
+   },
+   "best_production_on_val": "SimHash",
+   "delta": -0.03566461033362289,
+   "delta_ci": [
+    -0.0646505289315252,
+    -0.006061076936796079
+   ],
+   "fbf_minus_gbf": 0.36778917737470296,
+   "fbf_minus_gbf_ci": [
+    0.29531239564220463,
+    0.44053982651914303
+   ],
+   "fbf_minus_lsbf_ci": [
+    -0.016538620306161603,
+    0.04842073628499493
+   ]
+  },
+  {
+   "dataset": "nytimes",
+   "B": 3,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 5,
+      "s": 26
+     },
+     "val_rho": 0.2759401750216931,
+     "rho": 0.2573245137825446,
+     "rho_ci": [
+      0.22088832696284819,
+      0.2931460152414837
+     ],
+     "rho_heldout": 0.04232834598287927,
+     "pearson_heldout": 0.061057010892403625,
+     "encode_madds_per_item": 273000,
+     "bits": 10500,
+     "auroc": 0.6367188601953646,
+     "auprc": 0.5968803546382931,
+     "fpr_at_val_threshold": 0.4638538718806277,
+     "fnr_at_val_threshold": 0.29175784099197666,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 20
+     },
+     "val_rho": 0.06868630877717054,
+     "rho": 0.02139325445591895,
+     "rho_ci": [
+      -0.01746870090475715,
+      0.05993936732302561
+     ],
+     "rho_heldout": -0.018333797114005096,
+     "pearson_heldout": -0.016299741874226805,
+     "encode_madds_per_item": 2688000,
+     "bits": 10500,
+     "auroc": 0.5026207477705177,
+     "auprc": 0.5154376916162967,
+     "fpr_at_val_threshold": 0.9886802161049653,
+     "fnr_at_val_threshold": 0.006078288353999514,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 8,
+      "r": 16
+     },
+     "val_rho": 0.13429569579768194,
+     "rho": 0.07436859388108677,
+     "rho_ci": [
+      0.03585652757552988,
+      0.10939565555543745
+     ],
+     "rho_heldout": 0.004908640581414348,
+     "pearson_heldout": 0.025078535654453435,
+     "encode_madds_per_item": 32768,
+     "bits": 10496,
+     "auroc": 0.5394220550137794,
+     "auprc": 0.5356749078560827,
+     "fpr_at_val_threshold": 0.5533830717777206,
+     "fnr_at_val_threshold": 0.37758327255044977,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.02758170064787267,
+     "rho": 0.01467326495905177,
+     "rho_ci": [
+      -0.01864737914066681,
+      0.04818068602502749
+     ],
+     "rho_heldout": 0.017426763438572235,
+     "pearson_heldout": 0.0440928953195262,
+     "encode_madds_per_item": 0,
+     "bits": 10500,
+     "auroc": 0.5025171963800361,
+     "auprc": 0.5153950353351983,
+     "fpr_at_val_threshold": 0.24466169282222794,
+     "fnr_at_val_threshold": 0.7503039144177,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "SimHash": {
+     "selected": {
+      "b": 3
+     },
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 768,
+     "bits": 10500,
+     "auroc": 0.5,
+     "auprc": 0.514125,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "MinHash": {
+     "selected": {
+      "b": 4,
+      "r": 4
+     },
+     "val_rho": 0.12047076228296134,
+     "rho": 0.12390979017122072,
+     "rho_ci": [
+      0.09083389559244809,
+      0.1560101110111031
+     ],
+     "rho_heldout": 0.029782405746883362,
+     "pearson_heldout": 0.046088199073592406,
+     "encode_madds_per_item": 4096,
+     "bits": 10500,
+     "auroc": 0.5669181235950116,
+     "auprc": 0.553684937696305,
+     "fpr_at_val_threshold": 0.39696423977360434,
+     "fnr_at_val_threshold": 0.4894237782640408,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 4,
+      "r": 8
+     },
+     "val_rho": 0.0,
+     "rho": 0.0,
+     "rho_ci": [
+      0.0,
+      0.0
+     ],
+     "rho_heldout": 0.0,
+     "pearson_heldout": 0.0,
+     "encode_madds_per_item": 8192,
+     "bits": 10496,
+     "auroc": 0.5,
+     "auprc": 0.514125,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 1.0,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "MinHash",
+   "delta": 0.1334147236113239,
+   "delta_ci": [
+    0.08854645225281554,
+    0.1797746650743521
+   ],
+   "fbf_minus_gbf": 0.23593125932662568,
+   "fbf_minus_gbf_ci": [
+    0.18705616541984582,
+    0.285397963981911
+   ],
+   "fbf_minus_lsbf_ci": [
+    0.1292953126612497,
+    0.2388153608465979
+   ]
+  },
+  {
+   "dataset": "nytimes",
+   "B": 10,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 5,
+      "s": 26
+     },
+     "val_rho": 0.4310956990626125,
+     "rho": 0.4402778195753446,
+     "rho_ci": [
+      0.410598040295654,
+      0.46763598551847657
+     ],
+     "rho_heldout": 0.10634003111111001,
+     "pearson_heldout": 0.1414745359902294,
+     "encode_madds_per_item": 910000,
+     "bits": 35000,
+     "auroc": 0.7593950134329077,
+     "auprc": 0.7107120025988944,
+     "fpr_at_val_threshold": 0.3604322099305377,
+     "fnr_at_val_threshold": 0.22732798443958183,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "GBF": {
+     "selected": {
+      "k": 30
+     },
+     "val_rho": 0.06047514497188546,
+     "rho": 0.03862787545103074,
+     "rho_ci": [
+      0.0028365712697339123,
+      0.07356906138046033
+     ],
+     "rho_heldout": -0.01539891771144579,
+     "pearson_heldout": -0.011947966236142487,
+     "encode_madds_per_item": 8960000,
+     "bits": 35000,
+     "auroc": 0.5066287901888701,
+     "auprc": 0.5174585495580318,
+     "fpr_at_val_threshold": 0.9711860046308207,
+     "fnr_at_val_threshold": 0.015560418186238755,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 4,
+      "r": 16
+     },
+     "val_rho": 0.2445152771580606,
+     "rho": 0.24665704725561222,
+     "rho_ci": [
+      0.21432814183114496,
+      0.2770162730787176
+     ],
+     "rho_heldout": 0.039863740483778026,
+     "pearson_heldout": 0.08419693988045893,
+     "encode_madds_per_item": 16384,
+     "bits": 35000,
+     "auroc": 0.6396328107099972,
+     "auprc": 0.6166840236462191,
+     "fpr_at_val_threshold": 0.47928994082840237,
+     "fnr_at_val_threshold": 0.31193775832725507,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.09033736344771127,
+     "rho": 0.0457024477847998,
+     "rho_ci": [
+      0.0027160222014757287,
+      0.08585077324361653
+     ],
+     "rho_heldout": 0.054020153120961256,
+     "pearson_heldout": 0.1917339503574142,
+     "encode_madds_per_item": 0,
+     "bits": 35000,
+     "auroc": 0.5029769382828083,
+     "auprc": 0.5160535598508794,
+     "fpr_at_val_threshold": 0.006688963210702341,
+     "fnr_at_val_threshold": 0.987357160223681,
+     "fnr_at_fpr_1pct": 0.987357160223681
+    },
+    "SimHash": {
+     "selected": {
+      "b": 10
+     },
+     "val_rho": 0.046919362801537794,
+     "rho": 0.04336003954951579,
+     "rho_ci": [
+      0.013141731987950192,
+      0.0727616451181576
+     ],
+     "rho_heldout": -0.006320321333463514,
+     "pearson_heldout": 0.002662861744966361,
+     "encode_madds_per_item": 2560,
+     "bits": 35000,
+     "auroc": 0.5093309466786338,
+     "auprc": 0.5188306894042671,
+     "fpr_at_val_threshold": 0.9524054540776948,
+     "fnr_at_val_threshold": 0.028932652565037686,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "MinHash": {
+     "selected": {
+      "b": 16,
+      "r": 4
+     },
+     "val_rho": 0.2071678106850018,
+     "rho": 0.2103049887458786,
+     "rho_ci": [
+      0.16958015011252103,
+      0.25071251615023843
+     ],
+     "rho_heldout": 0.03435660946561413,
+     "pearson_heldout": 0.06683317705574256,
+     "encode_madds_per_item": 16384,
+     "bits": 34992,
+     "auroc": 0.6269608852214621,
+     "auprc": 0.6036505023526784,
+     "fpr_at_val_threshold": 0.4278363776691536,
+     "fnr_at_val_threshold": 0.3795283248237296,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 4,
+      "r": 16
+     },
+     "val_rho": 0.03618569642107074,
+     "rho": 0.03220848956733104,
+     "rho_ci": [
+      0.0009862909861737966,
+      0.06109566448930341
+     ],
+     "rho_heldout": -0.003040515570782965,
+     "pearson_heldout": -0.007213543014335615,
+     "encode_madds_per_item": 16384,
+     "bits": 34992,
+     "auroc": 0.5042774449183851,
+     "auprc": 0.5162710256255766,
+     "fpr_at_val_threshold": 0.9814767172626705,
+     "fnr_at_val_threshold": 0.009968392900559203,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "MinHash",
+   "delta": 0.229972830829466,
+   "delta_ci": [
+    0.17806018331980683,
+    0.27949946837955275
+   ],
+   "fbf_minus_gbf": 0.4016499441243139,
+   "fbf_minus_gbf_ci": [
+    0.3520903867103736,
+    0.45067366242924733
+   ],
+   "fbf_minus_lsbf_ci": [
+    0.15244533850170494,
+    0.23361659804602825
+   ]
+  },
+  {
+   "dataset": "nytimes",
+   "B": 30,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 20,
+      "s": 26
+     },
+     "val_rho": 0.6242615368155549,
+     "rho": 0.6171409171678891,
+     "rho_ci": [
+      0.593989210407171,
+      0.6384626487094787
+     ],
+     "rho_heldout": 0.07984508547445573,
+     "pearson_heldout": 0.16219510541805698,
+     "encode_madds_per_item": 2730000,
+     "bits": 105000,
+     "auroc": 0.8887807088044202,
+     "auprc": 0.8653414571977038,
+     "fpr_at_val_threshold": 0.21636223308464111,
+     "fnr_at_val_threshold": 0.16192560175054704,
+     "fnr_at_fpr_1pct": 0.7821541453926574
+    },
+    "GBF": {
+     "selected": {
+      "k": 30
+     },
+     "val_rho": 0.06076624825237054,
+     "rho": 0.05395863657348632,
+     "rho_ci": [
+      0.020325177529420743,
+      0.08673981064853942
+     ],
+     "rho_heldout": 0.04088521883843374,
+     "pearson_heldout": 0.03807573317531707,
+     "encode_madds_per_item": 26880000,
+     "bits": 105000,
+     "auroc": 0.5073067374831827,
+     "auprc": 0.5178019400295267,
+     "fpr_at_val_threshold": 0.9688705942886545,
+     "fnr_at_val_threshold": 0.016532944322878676,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 16,
+      "r": 16
+     },
+     "val_rho": 0.4053915130849178,
+     "rho": 0.389569597429015,
+     "rho_ci": [
+      0.3577904893257024,
+      0.4206124120384024
+     ],
+     "rho_heldout": 0.020436877820540655,
+     "pearson_heldout": 0.12102675709221172,
+     "encode_madds_per_item": 65536,
+     "bits": 104992,
+     "auroc": 0.7401852140623977,
+     "auprc": 0.7227504457678489,
+     "fpr_at_val_threshold": 0.2467198353485979,
+     "fnr_at_val_threshold": 0.4026258205689278,
+     "fnr_at_fpr_1pct": 0.9610989545344031
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.1337609979288962,
+     "rho": 0.07904694614277458,
+     "rho_ci": [
+      0.03303184029456299,
+      0.10383713508187425
+     ],
+     "rho_heldout": 0.11164456474839629,
+     "pearson_heldout": 0.3248025935096438,
+     "encode_madds_per_item": 0,
+     "bits": 105000,
+     "auroc": 0.5021881838074398,
+     "auprc": 0.5162513676148798,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 0.9956236323851203,
+     "fnr_at_fpr_1pct": 0.9956236323851203
+    },
+    "SimHash": {
+     "selected": {
+      "b": 30
+     },
+     "val_rho": 0.6501514775160909,
+     "rho": 0.6682991838945334,
+     "rho_ci": [
+      0.6448286377895446,
+      0.6900291924373544
+     ],
+     "rho_heldout": 0.09973580174612587,
+     "pearson_heldout": 0.23567474149216278,
+     "encode_madds_per_item": 7680,
+     "bits": 105000,
+     "auroc": 0.9123097989889557,
+     "auprc": 0.9080460083831772,
+     "fpr_at_val_threshold": 0.17674298945201955,
+     "fnr_at_val_threshold": 0.13980063214198882,
+     "fnr_at_fpr_1pct": 0.5341599805494772
+    },
+    "MinHash": {
+     "selected": {
+      "b": 32,
+      "r": 4
+     },
+     "val_rho": 0.3430337335457238,
+     "rho": 0.3507205776530802,
+     "rho_ci": [
+      0.3169005698674709,
+      0.3829267819427552
+     ],
+     "rho_heldout": 0.05453302307522473,
+     "pearson_heldout": 0.1225214940372891,
+     "encode_madds_per_item": 32768,
+     "bits": 104992,
+     "auroc": 0.7115103297125062,
+     "auprc": 0.6945847443293038,
+     "fpr_at_val_threshold": 0.2824800617442758,
+     "fnr_at_val_threshold": 0.4026258205689278,
+     "fnr_at_fpr_1pct": 0.9513736931680039
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 4,
+      "r": 16
+     },
+     "val_rho": 0.13312404259600846,
+     "rho": 0.12743370713359056,
+     "rho_ci": [
+      0.09543421362594758,
+      0.15950043913349055
+     ],
+     "rho_heldout": 0.040153444156904194,
+     "pearson_heldout": 0.0651335019236455,
+     "encode_madds_per_item": 16384,
+     "bits": 104992,
+     "auroc": 0.5687870213422199,
+     "auprc": 0.5556818073116092,
+     "fpr_at_val_threshold": 0.35425778235142785,
+     "fnr_at_val_threshold": 0.5307561390712375,
+     "fnr_at_fpr_1pct": 1.0
+    }
+   },
+   "best_production_on_val": "SimHash",
+   "delta": -0.05115826672664425,
+   "delta_ci": [
+    -0.084778895159624,
+    -0.0166273603833095
+   ],
+   "fbf_minus_gbf": 0.5631822805944028,
+   "fbf_minus_gbf_ci": [
+    0.5231509432188832,
+    0.6027245523441985
+   ],
+   "fbf_minus_lsbf_ci": [
+    0.1870989904184882,
+    0.2670306565789704
+   ]
+  },
+  {
+   "dataset": "nytimes",
+   "B": 100,
+   "methods": {
+    "FBF": {
+     "selected": {
+      "k": 30,
+      "s": 26
+     },
+     "val_rho": 0.7449407498558769,
+     "rho": 0.7428175148626786,
+     "rho_ci": [
+      0.729982328385915,
+      0.7544119317515022
+     ],
+     "rho_heldout": 0.13070937284037792,
+     "pearson_heldout": 0.24652925724911398,
+     "encode_madds_per_item": 9100000,
+     "bits": 350000,
+     "auroc": 0.9649213800688813,
+     "auprc": 0.9596924414870766,
+     "fpr_at_val_threshold": 0.0967326987393877,
+     "fnr_at_val_threshold": 0.09068806224167275,
+     "fnr_at_fpr_1pct": 0.5353756382202771
+    },
+    "GBF": {
+     "selected": {
+      "k": 20
+     },
+     "val_rho": 0.06066120053362017,
+     "rho": 0.03683865741446518,
+     "rho_ci": [
+      -0.0017888537414961013,
+      0.07417269105733955
+     ],
+     "rho_heldout": 0.006822183588147545,
+     "pearson_heldout": 0.014532258328533618,
+     "encode_madds_per_item": 89600000,
+     "bits": 350000,
+     "auroc": 0.5062059840131166,
+     "auprc": 0.5172453376568361,
+     "fpr_at_val_threshold": 0.9732441471571907,
+     "fnr_at_val_threshold": 0.014344760515438853,
+     "fnr_at_fpr_1pct": 1.0
+    },
+    "LSBF": {
+     "selected": {
+      "L": 32,
+      "r": 16
+     },
+     "val_rho": 0.6178629943485152,
+     "rho": 0.6083908721711544,
+     "rho_ci": [
+      0.583628297498317,
+      0.6318702618536253
+     ],
+     "rho_heldout": 0.04119639578107026,
+     "pearson_heldout": 0.21151892899732389,
+     "encode_madds_per_item": 131072,
+     "bits": 349984,
+     "auroc": 0.876867670205053,
+     "auprc": 0.8695201322267659,
+     "fpr_at_val_threshold": 0.1934653974787754,
+     "fnr_at_val_threshold": 0.21711646000486262,
+     "fnr_at_fpr_1pct": 0.8271334792122538
+    },
+    "BF": {
+     "selected": {},
+     "val_rho": 0.1337609979288962,
+     "rho": 0.07904694614277458,
+     "rho_ci": [
+      0.032370144315939944,
+      0.10433081864296533
+     ],
+     "rho_heldout": 0.11164456474839629,
+     "pearson_heldout": 0.3248025935096438,
+     "encode_madds_per_item": 0,
+     "bits": 350000,
+     "auroc": 0.5021881838074398,
+     "auprc": 0.5162513676148798,
+     "fpr_at_val_threshold": 0.0,
+     "fnr_at_val_threshold": 0.9956236323851203,
+     "fnr_at_fpr_1pct": 0.9956236323851203
+    },
+    "SimHash": {
+     "selected": {
+      "b": 100
+     },
+     "val_rho": 0.8073659228536652,
+     "rho": 0.8120226810403772,
+     "rho_ci": [
+      0.8025810332161583,
+      0.8199930964370474
+     ],
+     "rho_heldout": 0.3230529623072385,
+     "pearson_heldout": 0.5934543007830606,
+     "encode_madds_per_item": 25600,
+     "bits": 350000,
+     "auroc": 0.9982812533327379,
+     "auprc": 0.9985413775983031,
+     "fpr_at_val_threshold": 0.0012863390789812194,
+     "fnr_at_val_threshold": 0.015560418186238755,
+     "fnr_at_fpr_1pct": 0.00899586676391928
+    },
+    "MinHash": {
+     "selected": {
+      "b": 32,
+      "r": 4
+     },
+     "val_rho": 0.44993490150654003,
+     "rho": 0.4614226714675783,
+     "rho_ci": [
+      0.42689882796766243,
+      0.4937037759983019
+     ],
+     "rho_heldout": 0.07783315603393948,
+     "pearson_heldout": 0.17428027459407863,
+     "encode_madds_per_item": 32768,
+     "bits": 349984,
+     "auroc": 0.78296760708593,
+     "auprc": 0.7673612116845983,
+     "fpr_at_val_threshold": 0.21764857216362232,
+     "fnr_at_val_threshold": 0.3700461949914904,
+     "fnr_at_fpr_1pct": 0.9511305616338439
+    },
+    "CMS": {
+     "selected": {
+      "D": 2,
+      "b": 4,
+      "r": 16
+     },
+     "val_rho": 0.2919847448930295,
+     "rho": 0.2881679155389797,
+     "rho_ci": [
+      0.2585237507125364,
+      0.31771466382145613
+     ],
+     "rho_heldout": -0.003831088136752232,
+     "pearson_heldout": 0.07403589972418909,
+     "encode_madds_per_item": 16384,
+     "bits": 350000,
+     "auroc": 0.672184570298634,
+     "auprc": 0.645662890548185,
+     "fpr_at_val_threshold": 0.2956007203498842,
+     "fnr_at_val_threshold": 0.43690736688548504,
+     "fnr_at_fpr_1pct": 0.9654753221492828
+    }
+   },
+   "best_production_on_val": "SimHash",
+   "delta": -0.06920516617769867,
+   "delta_ci": [
+    -0.08369470084233804,
+    -0.05504604926062956
+   ],
+   "fbf_minus_gbf": 0.7059788574482133,
+   "fbf_minus_gbf_ci": [
+    0.6659139218416967,
+    0.7468639848080182
+   ],
+   "fbf_minus_lsbf_ci": [
+    0.10894940208292217,
+    0.15980123667718754
+   ]
+  }
+ ],
+ "verdict": {
+  "verdict": "MIXED",
+  "budgets_won_per_dataset": {
+   "odors": 0,
+   "sift": 2,
+   "mnist": 2,
+   "random": 3,
+   "nytimes": 2
+  },
+  "budgets_lost_per_dataset": {
+   "odors": 0,
+   "sift": 2,
+   "mnist": 2,
+   "random": 1,
+   "nytimes": 2
+  },
+  "datasets_won": [
+   "random"
+  ],
+  "datasets_lost": []
+ },
+ "reproduction_anchor": {
+  "spearman_heldout": {
+   "FBF": 0.7245902727771758,
+   "LSBF": 0.4420404142088128,
+   "BF": 0.0
+  },
+  "pearson_heldout": {
+   "FBF": 0.6461303269572694,
+   "LSBF": 0.4848442017115455,
+   "BF": 0.0
+  },
+  "order_reproduced": true,
+  "published_2018_sift": {
+   "FBF": 0.535,
+   "LSBF": 0.345,
+   "BF": 0.002
+  }
+ },
+ "gbf_ge_fbf_cells": 0,
+ "fbf_gt_gbf_cells": 15,
+ "n_cells": 20,
+ "cost": {
+  "_header": {
+   "machine": "arm64",
+   "cpu": "Apple M5",
+   "threads": 1,
+   "precision": "float32 projections, float64 data",
+   "batch": "all items per call",
+   "host_note": "unrelated pc-printjob-spooler process held ~1 core at 99% throughout (A6.10)",
+   "numpy": "2.5.4"
+  },
+  "odors|3|FBF": {
+   "config": {
+    "k": 10,
+    "s": 6
+   },
+   "encode_ns": 5976.136363636364,
+   "insert_ns": 92.53246753246754,
+   "query_ns": 160.36363636363637,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|3|GBF": {
+   "config": {
+    "k": 5
+   },
+   "encode_ns": 5328.027272727273,
+   "insert_ns": 76.2987012987013,
+   "query_ns": 164.15151515151516,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|3|LSBF": {
+   "config": {
+    "L": 4,
+    "r": 12
+   },
+   "encode_ns": 37.11818181818182,
+   "insert_ns": 902.5974025974026,
+   "query_ns": 24.0,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|3|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 804.6623376623377,
+   "query_ns": 1027.7575757575758,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|3|SimHash": {
+   "config": {
+    "b": 3
+   },
+   "encode_ns": 21.21818181818182,
+   "insert_ns": 129.33766233766235,
+   "query_ns": 94.66666666666667,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|3|MinHash": {
+   "config": {
+    "b": 8,
+    "r": 2
+   },
+   "encode_ns": 2140215.909090909,
+   "insert_ns": 5081.168831168831,
+   "query_ns": 1.2727272727272727,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|3|CMS": {
+   "config": {
+    "D": 2,
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 51.50909090909091,
+   "insert_ns": 2319.2597402597403,
+   "query_ns": 0.0,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "odors|10|FBF": {
+   "config": {
+    "k": 10,
+    "s": 3
+   },
+   "encode_ns": 14299.245454545455,
+   "insert_ns": 95.23376623376623,
+   "query_ns": 176.75757575757575,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|10|GBF": {
+   "config": {
+    "k": 20
+   },
+   "encode_ns": 9214.39090909091,
+   "insert_ns": 90.9090909090909,
+   "query_ns": 185.6060606060606,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|10|LSBF": {
+   "config": {
+    "L": 8,
+    "r": 16
+   },
+   "encode_ns": 74.24545454545455,
+   "insert_ns": 1776.5064935064936,
+   "query_ns": 0.0,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|10|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 1085.4935064935064,
+   "query_ns": 1506.3333333333333,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|10|SimHash": {
+   "config": {
+    "b": 10
+   },
+   "encode_ns": 26.136363636363637,
+   "insert_ns": 127.7012987012987,
+   "query_ns": 780.3333333333334,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|10|MinHash": {
+   "config": {
+    "b": 16,
+    "r": 8
+   },
+   "encode_ns": 584173.8636363636,
+   "insert_ns": 30880.415584415583,
+   "query_ns": 440.6666666666667,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|10|CMS": {
+   "config": {
+    "D": 2,
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 36.36363636363637,
+   "insert_ns": 2206.7012987012986,
+   "query_ns": 0.0,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "odors|30|FBF": {
+   "config": {
+    "k": 10,
+    "s": 6
+   },
+   "encode_ns": 32496.590909090908,
+   "insert_ns": 108.23376623376623,
+   "query_ns": 199.5151515151515,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|30|GBF": {
+   "config": {
+    "k": 5
+   },
+   "encode_ns": 24094.7,
+   "insert_ns": 97.40259740259741,
+   "query_ns": 193.1818181818182,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|30|LSBF": {
+   "config": {
+    "L": 32,
+    "r": 16
+   },
+   "encode_ns": 232.2,
+   "insert_ns": 6940.467532467533,
+   "query_ns": 447.0,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|30|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 1733.2337662337663,
+   "query_ns": 3015.151515151515,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|30|SimHash": {
+   "config": {
+    "b": 30
+   },
+   "encode_ns": 33.71818181818182,
+   "insert_ns": 138.5194805194805,
+   "query_ns": 946.969696969697,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|30|MinHash": {
+   "config": {
+    "b": 32,
+    "r": 4
+   },
+   "encode_ns": 601038.2545454545,
+   "insert_ns": 34686.142857142855,
+   "query_ns": 474.75757575757575,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|30|CMS": {
+   "config": {
+    "D": 4,
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 32.57272727272727,
+   "insert_ns": 3524.3506493506493,
+   "query_ns": 0.0,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "odors|100|FBF": {
+   "config": {
+    "k": 10,
+    "s": 6
+   },
+   "encode_ns": 93252.27272727272,
+   "insert_ns": 127.15584415584415,
+   "query_ns": 268.93939393939394,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|100|GBF": {
+   "config": {
+    "k": 30
+   },
+   "encode_ns": 44206.06363636364,
+   "insert_ns": 140.14285714285714,
+   "query_ns": 282.8181818181818,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|100|LSBF": {
+   "config": {
+    "L": 16,
+    "r": 24
+   },
+   "encode_ns": 193.1818181818182,
+   "insert_ns": 3434.5194805194806,
+   "query_ns": 218.45454545454547,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|100|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 3844.688311688312,
+   "query_ns": 7640.151515151515,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|100|SimHash": {
+   "config": {
+    "b": 100
+   },
+   "encode_ns": 70.07272727272728,
+   "insert_ns": 147.72727272727272,
+   "query_ns": 1574.4848484848485,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|100|MinHash": {
+   "config": {
+    "b": 16,
+    "r": 8
+   },
+   "encode_ns": 590717.0454545454,
+   "insert_ns": 32089.285714285714,
+   "query_ns": 0.0,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "odors|100|CMS": {
+   "config": {
+    "D": 4,
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 32.57272727272727,
+   "insert_ns": 3576.2987012987014,
+   "query_ns": 102.27272727272727,
+   "n_stored_timed": 77,
+   "n_query_timed": 33,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "sift|3|FBF": {
+   "config": {
+    "k": 20,
+    "s": 6
+   },
+   "encode_ns": 114921.646,
+   "insert_ns": 28.333,
+   "query_ns": 40.166,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|3|GBF": {
+   "config": {
+    "k": 10
+   },
+   "encode_ns": 98496.875,
+   "insert_ns": 21.292,
+   "query_ns": 28.333,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|3|LSBF": {
+   "config": {
+    "L": 4,
+    "r": 16
+   },
+   "encode_ns": 56.896,
+   "insert_ns": 142.417,
+   "query_ns": 72.625,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|3|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 897.125,
+   "query_ns": 849.209,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|3|SimHash": {
+   "config": {
+    "b": 3
+   },
+   "encode_ns": 18.396,
+   "insert_ns": 14.917,
+   "query_ns": 1281.791,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|3|MinHash": {
+   "config": {
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 156192.8955,
+   "insert_ns": 786.459,
+   "query_ns": 190.583,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|3|CMS": {
+   "config": {
+    "D": 4,
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 32.0,
+   "insert_ns": 383.292,
+   "query_ns": 111.833,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "sift|10|FBF": {
+   "config": {
+    "k": 50,
+    "s": 13
+   },
+   "encode_ns": 358909.4795,
+   "insert_ns": 51.75,
+   "query_ns": 68.167,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|10|GBF": {
+   "config": {
+    "k": 30
+   },
+   "encode_ns": 319698.6875,
+   "insert_ns": 49.458,
+   "query_ns": 64.542,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|10|LSBF": {
+   "config": {
+    "L": 8,
+    "r": 20
+   },
+   "encode_ns": 124.333,
+   "insert_ns": 292.75,
+   "query_ns": 171.625,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|10|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 920.375,
+   "query_ns": 869.917,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|10|SimHash": {
+   "config": {
+    "b": 10
+   },
+   "encode_ns": 20.2915,
+   "insert_ns": 22.458,
+   "query_ns": 9460.376,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|10|MinHash": {
+   "config": {
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 156191.354,
+   "insert_ns": 810.292,
+   "query_ns": 187.416,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|10|CMS": {
+   "config": {
+    "D": 2,
+    "b": 8,
+    "r": 8
+   },
+   "encode_ns": 56.7705,
+   "insert_ns": 535.125,
+   "query_ns": 160.75,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "sift|30|FBF": {
+   "config": {
+    "k": 40,
+    "s": 6
+   },
+   "encode_ns": 1082635.396,
+   "insert_ns": 82.916,
+   "query_ns": 106.959,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|30|GBF": {
+   "config": {
+    "k": 50
+   },
+   "encode_ns": 977813.875,
+   "insert_ns": 80.167,
+   "query_ns": 92.375,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|30|LSBF": {
+   "config": {
+    "L": 16,
+    "r": 20
+   },
+   "encode_ns": 265.4585,
+   "insert_ns": 588.0,
+   "query_ns": 342.125,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|30|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 1010.792,
+   "query_ns": 945.667,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|30|SimHash": {
+   "config": {
+    "b": 30
+   },
+   "encode_ns": 32.458,
+   "insert_ns": 27.209,
+   "query_ns": 12185.875,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|30|MinHash": {
+   "config": {
+    "b": 8,
+    "r": 8
+   },
+   "encode_ns": 305599.9165,
+   "insert_ns": 1570.292,
+   "query_ns": 360.75,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|30|CMS": {
+   "config": {
+    "D": 2,
+    "b": 4,
+    "r": 16
+   },
+   "encode_ns": 57.2295,
+   "insert_ns": 325.041,
+   "query_ns": 93.459,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "sift|100|FBF": {
+   "config": {
+    "k": 30,
+    "s": 6
+   },
+   "encode_ns": 3620521.958,
+   "insert_ns": 168.0,
+   "query_ns": 179.166,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|100|GBF": {
+   "config": {
+    "k": 30
+   },
+   "encode_ns": 3105013.6665,
+   "insert_ns": 166.291,
+   "query_ns": 184.666,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|100|LSBF": {
+   "config": {
+    "L": 32,
+    "r": 20
+   },
+   "encode_ns": 540.4585,
+   "insert_ns": 1177.041,
+   "query_ns": 673.543,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|100|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 1224.291,
+   "query_ns": 1238.166,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|100|SimHash": {
+   "config": {
+    "b": 100
+   },
+   "encode_ns": 93.5835,
+   "insert_ns": 35.042,
+   "query_ns": 18813.875,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|100|MinHash": {
+   "config": {
+    "b": 32,
+    "r": 8
+   },
+   "encode_ns": 1221471.646,
+   "insert_ns": 6459.0,
+   "query_ns": 1404.0,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "sift|100|CMS": {
+   "config": {
+    "D": 2,
+    "b": 8,
+    "r": 16
+   },
+   "encode_ns": 112.604,
+   "insert_ns": 913.625,
+   "query_ns": 153.125,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "mnist|3|FBF": {
+   "config": {
+    "k": 20,
+    "s": 79
+   },
+   "encode_ns": 238188.833,
+   "insert_ns": 28.083,
+   "query_ns": 40.333,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|3|GBF": {
+   "config": {
+    "k": 10
+   },
+   "encode_ns": 105843.8335,
+   "insert_ns": 21.25,
+   "query_ns": 27.75,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|3|LSBF": {
+   "config": {
+    "L": 4,
+    "r": 16
+   },
+   "encode_ns": 311.9375,
+   "insert_ns": 137.583,
+   "query_ns": 71.292,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|3|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 2758.833,
+   "query_ns": 2855.584,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|3|SimHash": {
+   "config": {
+    "b": 3
+   },
+   "encode_ns": 101.5,
+   "insert_ns": 14.334,
+   "query_ns": 1345.291,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|3|MinHash": {
+   "config": {
+    "b": 16,
+    "r": 8
+   },
+   "encode_ns": 794270.9585,
+   "insert_ns": 3109.959,
+   "query_ns": 726.416,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|3|CMS": {
+   "config": {
+    "D": 2,
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 191.3125,
+   "insert_ns": 251.042,
+   "query_ns": 80.042,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "mnist|10|FBF": {
+   "config": {
+    "k": 20,
+    "s": 79
+   },
+   "encode_ns": 806750.1875,
+   "insert_ns": 38.75,
+   "query_ns": 51.417,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|10|GBF": {
+   "config": {
+    "k": 30
+   },
+   "encode_ns": 363630.875,
+   "insert_ns": 45.125,
+   "query_ns": 62.083,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|10|LSBF": {
+   "config": {
+    "L": 16,
+    "r": 16
+   },
+   "encode_ns": 1054.6875,
+   "insert_ns": 545.0,
+   "query_ns": 303.375,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|10|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 2884.417,
+   "query_ns": 2872.208,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|10|SimHash": {
+   "config": {
+    "b": 10
+   },
+   "encode_ns": 126.667,
+   "insert_ns": 23.875,
+   "query_ns": 10068.084,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|10|MinHash": {
+   "config": {
+    "b": 8,
+    "r": 8
+   },
+   "encode_ns": 399341.1665,
+   "insert_ns": 1577.125,
+   "query_ns": 365.125,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|10|CMS": {
+   "config": {
+    "D": 4,
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 179.5,
+   "insert_ns": 395.709,
+   "query_ns": 99.999,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "mnist|30|FBF": {
+   "config": {
+    "k": 20,
+    "s": 79
+   },
+   "encode_ns": 2429844.625,
+   "insert_ns": 65.834,
+   "query_ns": 79.25,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|30|GBF": {
+   "config": {
+    "k": 40
+   },
+   "encode_ns": 1110670.4375,
+   "insert_ns": 81.25,
+   "query_ns": 106.083,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|30|LSBF": {
+   "config": {
+    "L": 32,
+    "r": 16
+   },
+   "encode_ns": 2064.167,
+   "insert_ns": 1111.417,
+   "query_ns": 634.541,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|30|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 2983.583,
+   "query_ns": 2969.916,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|30|SimHash": {
+   "config": {
+    "b": 30
+   },
+   "encode_ns": 172.7085,
+   "insert_ns": 28.542,
+   "query_ns": 12251.624,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|30|MinHash": {
+   "config": {
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 203096.125,
+   "insert_ns": 823.666,
+   "query_ns": 159.876,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|30|CMS": {
+   "config": {
+    "D": 2,
+    "b": 4,
+    "r": 16
+   },
+   "encode_ns": 307.2085,
+   "insert_ns": 330.084,
+   "query_ns": 92.916,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "mnist|100|FBF": {
+   "config": {
+    "k": 10,
+    "s": 79
+   },
+   "encode_ns": 8022181.458,
+   "insert_ns": 145.625,
+   "query_ns": 152.125,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|100|GBF": {
+   "config": {
+    "k": 30
+   },
+   "encode_ns": 3613507.3335,
+   "insert_ns": 164.041,
+   "query_ns": 177.917,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|100|LSBF": {
+   "config": {
+    "L": 32,
+    "r": 20
+   },
+   "encode_ns": 2501.4375,
+   "insert_ns": 1196.875,
+   "query_ns": 730.125,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|100|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 3249.625,
+   "query_ns": 3152.333,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|100|SimHash": {
+   "config": {
+    "b": 100
+   },
+   "encode_ns": 488.0625,
+   "insert_ns": 36.708,
+   "query_ns": 18662.209,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|100|MinHash": {
+   "config": {
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 201570.771,
+   "insert_ns": 781.833,
+   "query_ns": 187.167,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "mnist|100|CMS": {
+   "config": {
+    "D": 4,
+    "b": 4,
+    "r": 16
+   },
+   "encode_ns": 321.5625,
+   "insert_ns": 582.459,
+   "query_ns": 117.125,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "random|3|FBF": {
+   "config": {
+    "k": 5,
+    "s": 6
+   },
+   "encode_ns": 22223.75,
+   "insert_ns": 18.86857142857143,
+   "query_ns": 35.833333333333336,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|3|GBF": {
+   "config": {
+    "k": 50
+   },
+   "encode_ns": 22469.583,
+   "insert_ns": 40.238571428571426,
+   "query_ns": 67.08333333333333,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|3|LSBF": {
+   "config": {
+    "L": 4,
+    "r": 12
+   },
+   "encode_ns": 18.25,
+   "insert_ns": 167.26285714285714,
+   "query_ns": 66.52666666666667,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|3|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 595.2971428571428,
+   "query_ns": 619.4466666666667,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|3|SimHash": {
+   "config": {
+    "b": 3
+   },
+   "encode_ns": 6.292,
+   "insert_ns": 18.035714285714285,
+   "query_ns": 944.3066666666666,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|3|MinHash": {
+   "config": {
+    "b": 8,
+    "r": 8
+   },
+   "encode_ns": 293754.208,
+   "insert_ns": 2163.75,
+   "query_ns": 155.97333333333333,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|3|CMS": {
+   "config": {
+    "D": 2,
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 14.291,
+   "insert_ns": 329.4642857142857,
+   "query_ns": 75.27666666666667,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "random|10|FBF": {
+   "config": {
+    "k": 5,
+    "s": 6
+   },
+   "encode_ns": 63883.084,
+   "insert_ns": 20.417142857142856,
+   "query_ns": 41.666666666666664,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|10|GBF": {
+   "config": {
+    "k": 50
+   },
+   "encode_ns": 63334.083,
+   "insert_ns": 41.667142857142856,
+   "query_ns": 72.36,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|10|LSBF": {
+   "config": {
+    "L": 8,
+    "r": 12
+   },
+   "encode_ns": 31.75,
+   "insert_ns": 319.16714285714284,
+   "query_ns": 151.66333333333333,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|10|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 643.2142857142857,
+   "query_ns": 686.8033333333333,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|10|SimHash": {
+   "config": {
+    "b": 10
+   },
+   "encode_ns": 8.459,
+   "insert_ns": 28.452857142857145,
+   "query_ns": 7050.276666666667,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|10|MinHash": {
+   "config": {
+    "b": 8,
+    "r": 8
+   },
+   "encode_ns": 292335.417,
+   "insert_ns": 2162.44,
+   "query_ns": 162.36,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|10|CMS": {
+   "config": {
+    "D": 2,
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 17.75,
+   "insert_ns": 359.70142857142855,
+   "query_ns": 78.47333333333333,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "random|30|FBF": {
+   "config": {
+    "k": 20,
+    "s": 6
+   },
+   "encode_ns": 194309.875,
+   "insert_ns": 39.464285714285715,
+   "query_ns": 79.58333333333333,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|30|GBF": {
+   "config": {
+    "k": 50
+   },
+   "encode_ns": 195069.959,
+   "insert_ns": 51.54857142857143,
+   "query_ns": 93.75,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|30|LSBF": {
+   "config": {
+    "L": 16,
+    "r": 12
+   },
+   "encode_ns": 63.75,
+   "insert_ns": 630.4171428571428,
+   "query_ns": 305.97,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|30|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 731.8457142857143,
+   "query_ns": 867.22,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|30|SimHash": {
+   "config": {
+    "b": 30
+   },
+   "encode_ns": 13.583,
+   "insert_ns": 32.38142857142857,
+   "query_ns": 8907.636666666667,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|30|MinHash": {
+   "config": {
+    "b": 16,
+    "r": 8
+   },
+   "encode_ns": 585703.584,
+   "insert_ns": 4081.308571428571,
+   "query_ns": 765.4166666666666,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|30|CMS": {
+   "config": {
+    "D": 2,
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 17.916,
+   "insert_ns": 361.07142857142856,
+   "query_ns": 81.66666666666667,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "random|100|FBF": {
+   "config": {
+    "k": 40,
+    "s": 6
+   },
+   "encode_ns": 634511.666,
+   "insert_ns": 82.44,
+   "query_ns": 174.30666666666667,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|100|GBF": {
+   "config": {
+    "k": 50
+   },
+   "encode_ns": 597471.291,
+   "insert_ns": 79.10714285714286,
+   "query_ns": 154.44333333333333,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|100|LSBF": {
+   "config": {
+    "L": 32,
+    "r": 16
+   },
+   "encode_ns": 176.042,
+   "insert_ns": 1338.1542857142856,
+   "query_ns": 639.8633333333333,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|100|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 1081.37,
+   "query_ns": 1479.1666666666667,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|100|SimHash": {
+   "config": {
+    "b": 100
+   },
+   "encode_ns": 34.875,
+   "insert_ns": 42.082857142857144,
+   "query_ns": 12856.113333333333,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|100|MinHash": {
+   "config": {
+    "b": 32,
+    "r": 8
+   },
+   "encode_ns": 1169098.291,
+   "insert_ns": 8333.332857142857,
+   "query_ns": 1494.0266666666666,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "random|100|CMS": {
+   "config": {
+    "D": 4,
+    "b": 4,
+    "r": 16
+   },
+   "encode_ns": 28.417,
+   "insert_ns": 613.69,
+   "query_ns": 118.19666666666667,
+   "n_stored_timed": 700,
+   "n_query_timed": 300,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "nytimes|3|FBF": {
+   "config": {
+    "k": 5,
+    "s": 26
+   },
+   "encode_ns": 136594.75,
+   "insert_ns": 18.708,
+   "query_ns": 24.041,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|3|GBF": {
+   "config": {
+    "k": 20
+   },
+   "encode_ns": 109157.771,
+   "insert_ns": 28.75,
+   "query_ns": 42.834,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|3|LSBF": {
+   "config": {
+    "L": 8,
+    "r": 16
+   },
+   "encode_ns": 189.1875,
+   "insert_ns": 281.083,
+   "query_ns": 148.625,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|3|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 1201.917,
+   "query_ns": 1225.375,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|3|SimHash": {
+   "config": {
+    "b": 3
+   },
+   "encode_ns": 35.208,
+   "insert_ns": 14.25,
+   "query_ns": 1343.292,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|3|MinHash": {
+   "config": {
+    "b": 4,
+    "r": 4
+   },
+   "encode_ns": 105819.792,
+   "insert_ns": 430.708,
+   "query_ns": 93.083,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|3|CMS": {
+   "config": {
+    "D": 2,
+    "b": 4,
+    "r": 8
+   },
+   "encode_ns": 62.896,
+   "insert_ns": 269.625,
+   "query_ns": 68.25,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "nytimes|10|FBF": {
+   "config": {
+    "k": 5,
+    "s": 26
+   },
+   "encode_ns": 449461.854,
+   "insert_ns": 27.833,
+   "query_ns": 33.583,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|10|GBF": {
+   "config": {
+    "k": 30
+   },
+   "encode_ns": 328594.1045,
+   "insert_ns": 47.042,
+   "query_ns": 64.0,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|10|LSBF": {
+   "config": {
+    "L": 4,
+    "r": 16
+   },
+   "encode_ns": 98.979,
+   "insert_ns": 136.208,
+   "query_ns": 71.667,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|10|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 1250.625,
+   "query_ns": 1236.958,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|10|SimHash": {
+   "config": {
+    "b": 10
+   },
+   "encode_ns": 38.375,
+   "insert_ns": 23.666,
+   "query_ns": 10068.459,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|10|MinHash": {
+   "config": {
+    "b": 16,
+    "r": 4
+   },
+   "encode_ns": 395888.271,
+   "insert_ns": 1629.791,
+   "query_ns": 407.792,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|10|CMS": {
+   "config": {
+    "D": 2,
+    "b": 4,
+    "r": 16
+   },
+   "encode_ns": 101.333,
+   "insert_ns": 285.792,
+   "query_ns": 91.583,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "nytimes|30|FBF": {
+   "config": {
+    "k": 20,
+    "s": 26
+   },
+   "encode_ns": 1335992.625,
+   "insert_ns": 65.459,
+   "query_ns": 79.542,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|30|GBF": {
+   "config": {
+    "k": 30
+   },
+   "encode_ns": 1029117.3125,
+   "insert_ns": 73.334,
+   "query_ns": 91.083,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|30|LSBF": {
+   "config": {
+    "L": 16,
+    "r": 16
+   },
+   "encode_ns": 369.521,
+   "insert_ns": 558.042,
+   "query_ns": 291.541,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|30|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 1381.125,
+   "query_ns": 1383.5,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|30|SimHash": {
+   "config": {
+    "b": 30
+   },
+   "encode_ns": 60.1875,
+   "insert_ns": 28.791,
+   "query_ns": 12615.042,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|30|MinHash": {
+   "config": {
+    "b": 32,
+    "r": 4
+   },
+   "encode_ns": 783530.1875,
+   "insert_ns": 3335.583,
+   "query_ns": 871.084,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|30|CMS": {
+   "config": {
+    "D": 2,
+    "b": 4,
+    "r": 16
+   },
+   "encode_ns": 108.3335,
+   "insert_ns": 353.709,
+   "query_ns": 94.041,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": true,
+   "insert_supported": true
+  },
+  "nytimes|100|FBF": {
+   "config": {
+    "k": 30,
+    "s": 26
+   },
+   "encode_ns": 4431508.6875,
+   "insert_ns": 164.875,
+   "query_ns": 179.917,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|100|GBF": {
+   "config": {
+    "k": 20
+   },
+   "encode_ns": 3260341.229,
+   "insert_ns": 151.916,
+   "query_ns": 164.583,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|100|LSBF": {
+   "config": {
+    "L": 32,
+    "r": 16
+   },
+   "encode_ns": 748.229,
+   "insert_ns": 1059.083,
+   "query_ns": 666.917,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|100|BF": {
+   "config": {},
+   "encode_ns": 0.0,
+   "insert_ns": 1655.75,
+   "query_ns": 1605.625,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|100|SimHash": {
+   "config": {
+    "b": 100
+   },
+   "encode_ns": 160.9585,
+   "insert_ns": 37.583,
+   "query_ns": 18847.5,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|100|MinHash": {
+   "config": {
+    "b": 32,
+    "r": 4
+   },
+   "encode_ns": 785125.25,
+   "insert_ns": 3301.542,
+   "query_ns": 761.25,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": false,
+   "insert_supported": true
+  },
+  "nytimes|100|CMS": {
+   "config": {
+    "D": 2,
+    "b": 4,
+    "r": 16
+   },
+   "encode_ns": 107.1455,
+   "insert_ns": 459.5,
+   "query_ns": 98.667,
+   "n_stored_timed": 1000,
+   "n_query_timed": 1000,
+   "deletion_supported": true,
+   "insert_supported": true
+  }
+ },
+ "n_boot": 10000
+}
