@@ -1,7 +1,7 @@
 // Browser check for the EXP1-EXP3 result pages: serves site/src locally and loads every new page (and the
 // landing page) in headless Chromium at phone and desktop width, light and dark.
 //
-//   node scripts/check_results_render.mjs [--shots DIR]
+//   node scripts/check_results_render.mjs [--shots DIR] [--base https://flybrain-q2h5.onrender.com]
 //
 // Fails unless, for every page and setting: no horizontal page overflow; every figure image was replaced by
 // its inline SVG; the visible figure's text renders at >= 11 px and stays inside the figure without
@@ -29,8 +29,10 @@ const server = http.createServer((req, res) => {
   res.writeHead(200, { 'content-type': types[path.extname(f)] || 'application/octet-stream' });
   fs.createReadStream(f).pipe(res);
 });
-await new Promise(r => server.listen(0, '127.0.0.1', r));
-const base = `http://127.0.0.1:${server.address().port}`;
+const baseArg = process.argv.indexOf('--base');
+let base;
+if (baseArg > 0) base = process.argv[baseArg + 1].replace(/\/$/, '');
+else { await new Promise(r => server.listen(0, '127.0.0.1', r)); base = `http://127.0.0.1:${server.address().port}`; }
 
 function chromePath() {
   const cache = path.join(os.homedir(), 'Library/Caches/ms-playwright');
@@ -106,7 +108,7 @@ for (const url of pages) {
     }
   }
 }
-await browser.close(); server.close();
-console.log(`${pages.length} pages x 2 widths x 2 themes; ${figuresSeen} visible figures, ${textsMeasured} text elements measured; screenshots in ${shots}`);
+await browser.close(); if (server.listening) server.close();
+console.log(`${base}: ${pages.length} pages x 2 widths x 2 themes; ${figuresSeen} visible figures, ${textsMeasured} text elements measured; screenshots in ${shots}`);
 if (problems.length) { console.log(problems.slice(0, 60).join('\n')); console.log(`${problems.length} problem(s)`); process.exit(1); }
 console.log('RENDER OK');
